@@ -123,7 +123,8 @@ App.carousel = (id, o) => {
   const alt = o.alt != null ? o.alt : App.spName(id);
   const nav = n > 1 ? `<button type="button" class="car-btn prev" data-car-step="-1" aria-label="${L('Foto anterior', 'Previous photo')}">‹</button><button type="button" class="car-btn next" data-car-step="1" aria-label="${L('Foto siguiente', 'Next photo')}">›</button><span class="car-count" aria-hidden="true">${idx + 1} / ${n}</span>` : '';
   const credit = o.credit === true ? `<div class="car-credit" data-live="1">${App.credit(p)}</div>` : o.credit === 'later' ? `<div class="car-credit">${LATER()}</div>` : '';
-  return `<div class="car" data-car="${esc(o.key || '')}" data-sp="${esc(id)}" data-idx="${idx}" role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}"><div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>${o.inner || ''}${nav}</div>${credit}`;
+  const zoom = o.key === 'zoom' ? '' : `<button type="button" class="car-zoom" data-car-zoom aria-label="${L('Ver la foto en grande', 'View the photo larger')}">⤢</button>`;
+  return `<div class="car" data-car="${esc(o.key || '')}" data-sp="${esc(id)}" data-idx="${idx}" data-credit="${o.credit === true ? 'live' : ''}" role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}"><div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>${o.inner || ''}${nav}${zoom}</div>${credit}`;
 };
 /* Show photo i in a widget, in place, and tell its view. */
 App.carouselShow = (car, i) => {
@@ -140,12 +141,37 @@ App.carouselShow = (car, i) => {
   const fn = App.carouselStep[car.dataset.car]; if (fn) fn(i, car);
 };
 function carouselGo(car, step) { if (car) App.carouselShow(car, +car.dataset.idx + step); }
+/* The same widget, large, in a modal dialog. It opens on the photo on show, keeps the source's alt text and
+   credit rule (a quiz photo stays anonymous), and the source follows what is flipped here. */
+let zoomSrc = null;
+const zoomDlg = () => {
+  let d = document.getElementById('zoom');
+  if (!d) {
+    d = document.createElement('dialog'); d.id = 'zoom'; d.className = 'zoom';
+    d.addEventListener('click', e => { if (e.target === d || e.target.closest('[data-zoom-close]')) d.close(); });
+    d.addEventListener('close', () => { zoomSrc = null; d.innerHTML = ''; });
+    document.body.appendChild(d);
+  }
+  return d;
+};
+App.carouselStep.zoom = i => { if (zoomSrc && zoomSrc.isConnected) App.carouselShow(zoomSrc, i); };
+App.openZoom = car => {
+  const d = zoomDlg(), img = car.querySelector('.car-frame img');
+  zoomSrc = car;
+  d.innerHTML = `<button type="button" class="zoom-close" data-zoom-close aria-label="${L('Cerrar', 'Close')}">✕</button>${App.carousel(car.dataset.sp, { key: 'zoom', idx: +car.dataset.idx, alt: img ? img.alt : '', credit: car.dataset.credit === 'live' || undefined })}`;
+  d.setAttribute('aria-label', L('Foto en grande', 'Large photo'));
+  d.showModal();
+};
 document.addEventListener('click', e => {
   const b = e.target.closest && e.target.closest('[data-car-step]');
-  if (b) carouselGo(b.closest('.car'), +b.dataset.carStep);
+  if (b) { carouselGo(b.closest('.car'), +b.dataset.carStep); return; }
+  const z = e.target.closest && (e.target.closest('[data-car-zoom]') || e.target.closest('.car-frame'));
+  const car = z && z.closest('.car');
+  if (car && car.dataset.car !== 'zoom' && Date.now() - (App.lastSwipe || 0) > 500) App.openZoom(car);
 });
 document.addEventListener('keydown', e => {
-  const car = e.target.closest && e.target.closest('.car');
+  const dlg = document.getElementById('zoom');
+  const car = (dlg && dlg.open && dlg.querySelector('.car')) || (e.target.closest && e.target.closest('.car'));
   if (car && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { e.preventDefault(); carouselGo(car, e.key === 'ArrowLeft' ? -1 : 1); }
 });
 let swipe = null;

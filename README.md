@@ -18,7 +18,7 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   - **Hard:** you type with no help, like the exam.
 
   Each question opens on a random photo of the animal, and you can flip through all its photos,
-  so you learn the animal rather than one picture. Spelling and accents count; capital letters
+  so you learn the animal rather than one picture. Tap a photo to see it large. Spelling and accents count; capital letters
   don't.
 - **Spaced repetition** ([FSRS](https://github.com/open-spaced-repetition/ts-fsrs)): what
   you're about to forget comes back first.
