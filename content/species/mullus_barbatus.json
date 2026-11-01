@@ -22,6 +22,10 @@
       "It uses its barbels as sense organs to find prey on the bottom."
     ]
   },
+  "etymology": {
+    "es": "Mullus es el nombre antiguo de los salmonetes, usado ya por Aristóteles; barbatus es latín, «barbudo», por su par de largas barbillas en el mentón.",
+    "en": "Mullus is the ancient name for red mullets, used since Aristotle; barbatus is Latin for 'bearded', for its pair of long chin barbels."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Mullus barbatus",
@@ -33,6 +37,12 @@
       "title": "Wikipedia (EN): Mullus barbatus",
       "url": "https://en.wikipedia.org/wiki/Mullus_barbatus",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Mullidae",
+      "url": "https://etyfish.org/syngnathiformes2",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

@@ -19,6 +19,10 @@
     "es": "Se parecen al avestruz, pero son más pequeños y tienen tres dedos en vez de dos.",
     "en": "They resemble the ostrich, but are smaller and have three toes instead of two."
   },
+  "etymology": {
+    "es": "«Con forma de Rhea», el ñandú; nombre tomado de Rea, la titánide madre de Zeus en la mitología griega.",
+    "en": "'Shaped like Rhea', the rhea; named after Rhea, the mother of Zeus in Greek mythology."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Rheiformes",
@@ -41,6 +45,12 @@
     {
       "title": "Wikipedia (es): Rhea americana",
       "url": "https://es.wikipedia.org/wiki/Rhea_americana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Rhea",
+      "url": "https://en.wiktionary.org/wiki/Rhea",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

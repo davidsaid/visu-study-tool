@@ -39,6 +39,10 @@
       "Its black 30–36 cm tongue is long enough to clean its own ears."
     ]
   },
+  "etymology": {
+    "es": "Okapia viene de okapi, nombre en lengua mbuba (o o'api en lese karo); johnstoni honra a sir Harry Johnston, explorador y administrador colonial británico que consiguió el primer ejemplar para la ciencia.",
+    "en": "Okapia comes from okapi, its Mbuba name (or o'api in Lese Karo); johnstoni honours Sir Harry Johnston, the British explorer and colonial administrator who first obtained a specimen for science."
+  },
   "sources": [
     {
       "title": "Okapia johnstoni — Wikipedia (es)",
@@ -61,6 +65,18 @@
     {
       "title": "Plains zebra — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Plains_zebra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Okapi",
+      "url": "https://en.wikipedia.org/wiki/Okapia_johnstoni",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Harry Johnston",
+      "url": "https://en.wikipedia.org/wiki/Harry_Johnston",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -23,6 +23,10 @@
     "es": "No confundir con las rayas (Rajiformes), con las que antes se agrupaban: los miliobatiformes se distinguen por sus aletas pélvicas de un solo lóbulo, la falta de aleta dorsal y los aguijones de la cola.",
     "en": "Do not confuse with skates (Rajiformes), with which they were formerly grouped: stingrays differ in their single-lobed pelvic fins, lack of a dorsal fin and tail stings."
   },
+  "etymology": {
+    "es": "«Con forma de Myliobatis», el águila marina; del griego myle, «molino», por sus dientes anchos y planos que trituran conchas, y batis, «raya».",
+    "en": "'Shaped like Myliobatis', the eagle ray; from Greek myle, 'mill', for its broad, flat teeth that crush shells, and batis, 'ray'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Myliobatiformes",
@@ -33,6 +37,18 @@
     {
       "title": "Wikipedia (es): Myliobatiformes",
       "url": "https://es.wikipedia.org/wiki/Myliobatiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Myliobatidae (Myliobatis)",
+      "url": "https://etyfish.org/myliobatidae",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Myliobatiformes",
+      "url": "https://en.wiktionary.org/wiki/Myliobatiformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

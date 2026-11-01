@@ -14,6 +14,10 @@
     ]
   },
   "lookalikes": [],
+  "etymology": {
+    "es": "Nilssonia honra a Sven Nilsson, zoólogo sueco (1787–1883); gangetica es latín, «del Ganges».",
+    "en": "Nilssonia honours Sven Nilsson, a Swedish zoologist (1787–1883); gangetica is Latin for 'of the Ganges'."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Indian softshell turtle",
@@ -24,6 +28,24 @@
     {
       "title": "Wikipedia (ES): Trionychidae",
       "url": "https://es.wikipedia.org/wiki/Trionychidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Nilssonia (turtle)",
+      "url": "https://en.wikipedia.org/wiki/Nilssonia_(turtle)",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Sven Nilsson",
+      "url": "https://en.wikipedia.org/wiki/Sven_Nilsson",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: gangeticus",
+      "url": "https://en.wiktionary.org/wiki/gangeticus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

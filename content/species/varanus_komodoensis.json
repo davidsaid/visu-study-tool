@@ -26,6 +26,10 @@
     "es": "Los machos suelen ser mayores, pero no hay diferencias morfológicas evidentes entre sexos.",
     "en": "Males are usually larger, but there are no obvious morphological differences between the sexes."
   },
+  "etymology": {
+    "es": "Varanus procede del árabe waral; komodoensis significa «de Komodo», la isla indonesia de la que es endémico.",
+    "en": "Varanus comes from Arabic waral; komodoensis means 'from Komodo', the Indonesian island to which it is endemic."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Varanus komodoensis",
@@ -42,6 +46,24 @@
     {
       "title": "Wikipedia (EN): Nile monitor",
       "url": "https://en.wikipedia.org/wiki/Nile_monitor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Varanus",
+      "url": "https://en.wiktionary.org/wiki/Varanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Varanus komodoensis",
+      "url": "https://www.monaconatureencyclopedia.com/varanus-komodoensis/?lang=en",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: komodoensis",
+      "url": "https://en.wiktionary.org/wiki/komodoensis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

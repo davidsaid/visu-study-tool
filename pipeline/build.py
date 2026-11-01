@@ -344,9 +344,11 @@ def build_species(species, snap, classify, corrections, videos, report):
 
 # --------------------------------------------------------------------------- content and media
 
-def compile_content(tree, warnings, registry, report, used_ids):
-    """The content files of this collection's tree nodes. used_ids collects every id used by some collection,
-    so files that belong to none can be reported once."""
+def compile_content(tree, warnings, registry, report, used_ids, classes=()):
+    """The content files of this collection's tree nodes, plus those of the list's classes that are not tree
+    nodes (the grade Reptilia), whose etymology the cards show. used_ids collects every id used by some
+    collection, so files that belong to none can be reported once."""
+    extra = {f"class:{c}" for c in classes}
     content = {"species": OrderedDict(), "groups": OrderedDict()}
     for kind, folder in (("species", CONTENT / "species"), ("groups", CONTENT / "groups")):
         for path in sorted(folder.glob("*.json")) if folder.exists() else []:
@@ -355,7 +357,7 @@ def compile_content(tree, warnings, registry, report, used_ids):
             except json.JSONDecodeError as e:
                 raise BuildError(f"{path.relative_to(ROOT)}: invalid JSON: {e}")
             nid = path.stem if kind == "species" else path.stem.replace("__", ":", 1)
-            if nid not in tree["nodes"]:
+            if nid not in tree["nodes"] and nid not in extra:
                 continue
             used_ids.add(f"content/{kind}/{path.name}")
             content[kind][nid] = obj
@@ -579,7 +581,7 @@ def build(out=ROOT, collections_dir=COLLECTIONS, snapshot_dir=SNAPSHOT):
         col_corr = [c for c in corrections if not c["species_id"] or c["species_id"] in ids]
         species_out = build_species(species, snap, classify, col_corr, col["videos"], report)
         tree = build_tree(species, warnings, clade_rows, col["name"])
-        content = compile_content(tree, warnings, registry, report, used_content)
+        content = compile_content(tree, warnings, registry, report, used_content, {s["class"] for s in species_out.values()})
         for s in species_out.values():
             for f in s["facts"]:
                 for x in f["src"]:

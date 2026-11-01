@@ -21,6 +21,10 @@
     "es": "No confundir con el jurel (Carangiformes), que tiene escudos espinosos a lo largo de la línea lateral.",
     "en": "Do not confuse with the horse mackerel (Carangiformes), which has spiny scutes along the lateral line."
   },
+  "etymology": {
+    "es": "«Con forma de Scomber», la caballa; scomber es «caballa» en latín, del griego skombros.",
+    "en": "'Shaped like Scomber'; scomber is Latin for 'mackerel', from Greek skombros."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Scombriformes",
@@ -49,6 +53,12 @@
     {
       "title": "Wikipedia (es): Carangidae",
       "url": "https://es.wikipedia.org/wiki/Carangidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Scomber",
+      "url": "https://en.wiktionary.org/wiki/Scomber",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

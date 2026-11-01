@@ -23,6 +23,10 @@
     "es": "Sus parientes más cercanos son los loros (Psittaciformes), que se distinguen por sus patas zigodáctilas y su pico ganchudo.",
     "en": "Their closest relatives are the parrots (Psittaciformes), which differ in their zygodactyl feet and hooked bill."
   },
+  "etymology": {
+    "es": "«Con forma de Passer», el gorrión común (Passer domesticus); passer es la palabra latina para «gorrión».",
+    "en": "'Shaped like Passer', the house sparrow (Passer domesticus); passer is the Latin word for 'sparrow'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Passerine",
@@ -39,6 +43,12 @@
     {
       "title": "Wikipedia (en): Falconiformes",
       "url": "https://en.wikipedia.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Passer",
+      "url": "https://en.wiktionary.org/wiki/Passer",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

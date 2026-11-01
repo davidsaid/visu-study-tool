@@ -23,6 +23,10 @@
     "es": "No confundir con lombrices ni serpientes: a diferencia de las lombrices tienen cráneo, mandíbulas y dientes, y a diferencia de las serpientes tienen la piel lisa y húmeda dividida en anillos, sin escamas visibles por fuera.",
     "en": "Do not confuse with earthworms or snakes: unlike earthworms they have a skull, jaws and teeth, and unlike snakes their skin is smooth, moist and ringed, without external scales."
   },
+  "etymology": {
+    "es": "Del griego gymnos, «desnudo», y ophis, «serpiente»: «serpientes desnudas».",
+    "en": "From Greek gymnos, 'naked', and ophis, 'snake': 'naked snakes'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Caecilian",
@@ -33,6 +37,18 @@
     {
       "title": "Wikipedia (es): Gymnophiona",
       "url": "https://es.wikipedia.org/wiki/Gymnophiona",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: γυμνός",
+      "url": "https://en.wiktionary.org/wiki/%CE%B3%CF%85%CE%BC%CE%BD%CF%8C%CF%82",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ὄφις",
+      "url": "https://en.wiktionary.org/wiki/%E1%BD%84%CF%86%CE%B9%CF%82",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

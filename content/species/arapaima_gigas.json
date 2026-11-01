@@ -36,6 +36,10 @@
       "Its Brazilian name, pirarucu, comes from Tupi and means 'red fish'."
     ]
   },
+  "etymology": {
+    "es": "Arapaima procede probablemente de warapaima, su nombre entre los macuxi (lengua caribe) de Guyana y Brasil; gigas es griego, «gigante»: es el mayor pez de agua dulce del Amazonas.",
+    "en": "Arapaima probably comes from warapaima, its name among the Macushi people (a Carib language) of Guyana and Brazil; gigas is Greek for 'giant': the largest freshwater fish of the Amazon."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Arapaima gigas",
@@ -53,6 +57,12 @@
       "title": "Wikipedia (ES): Lepisosteus osseus",
       "url": "https://es.wikipedia.org/wiki/Lepisosteus_osseus",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Arapaimidae",
+      "url": "https://etyfish.org/arapaimidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

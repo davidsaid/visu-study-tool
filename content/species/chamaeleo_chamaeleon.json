@@ -28,6 +28,10 @@
       "It is the only chameleon whose natural range reaches Europe; in Spain it lives at a few southern coastal sites."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite: viene del griego chamai, «en el suelo», y leon, «león»: un «león rastrero», por su destreza como depredador.",
+    "en": "The name repeats: it comes from Greek chamai, 'on the ground', and leon, 'lion': a 'crawling lion', for its skill as a predator."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Chamaeleo chamaeleon",
@@ -39,6 +43,24 @@
       "title": "Wikipedia (EN): Common chameleon",
       "url": "https://en.wikipedia.org/wiki/Common_chameleon",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: chamaeleon",
+      "url": "https://en.wiktionary.org/wiki/chamaeleon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Chamaeleo",
+      "url": "https://en.wiktionary.org/wiki/Chamaeleo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Chamaeleo chamaeleon",
+      "url": "https://www.monaconatureencyclopedia.com/chamaeleo-chamaeleon/?lang=en",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

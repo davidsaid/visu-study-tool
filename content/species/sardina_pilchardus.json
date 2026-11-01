@@ -22,6 +22,10 @@
       "en": "The anchovy is slimmer, with a projecting pointed snout and a mouth slit reaching behind the eye."
     }
   ],
+  "etymology": {
+    "es": "Sardina procede del latín sardina, un pez que se pescaba cerca de Cerdeña y se conservaba en salmuera; pilchardus latiniza pilchard, antiguo nombre inglés de este pez, de origen desconocido.",
+    "en": "Sardina comes from Latin sardina, a fish caught near Sardinia and pickled; pilchardus latinises pilchard, an old English name for this fish of unknown origin."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Sardina pilchardus",
@@ -39,6 +43,12 @@
       "title": "Wikipedia (EN): European anchovy",
       "url": "https://en.wikipedia.org/wiki/European_anchovy",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Alosidae",
+      "url": "http://etyfish.org/alosidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

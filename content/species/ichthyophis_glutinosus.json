@@ -30,6 +30,10 @@
       "The female coils around her eggs and guards them until they hatch."
     ]
   },
+  "etymology": {
+    "es": "Ichthyophis une el griego ichthys, «pez», y ophis, «serpiente»: «pez serpiente»; glutinosus es latín, «pegajoso, viscoso», de gluten, «cola».",
+    "en": "Ichthyophis joins Greek ichthys, 'fish', and ophis, 'snake': 'fish snake'; glutinosus is Latin for 'gluey, viscous', from gluten, 'glue'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Ichthyophis glutinosus",
@@ -46,6 +50,18 @@
     {
       "title": "Wikipedia (ES): Blanus cinereus",
       "url": "https://es.wikipedia.org/wiki/Blanus_cinereus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Ichthyophis",
+      "url": "https://en.wikipedia.org/wiki/Ichthyophis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: glutinosus",
+      "url": "https://en.wiktionary.org/wiki/glutinosus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

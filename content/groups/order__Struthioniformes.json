@@ -21,6 +21,10 @@
     "es": "No confundir con el ñandú (Rheiformes), sudamericano, más pequeño y con tres dedos, ni con el casuario, que tiene casco en la cabeza.",
     "en": "Do not confuse with rheas (Rheiformes), which are South American, smaller and three-toed, or with cassowaries, which have a casque on the head."
   },
+  "etymology": {
+    "es": "«Con forma de Struthio», el avestruz; struthio es «avestruz» en latín.",
+    "en": "'Shaped like Struthio'; struthio is Latin for 'ostrich'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Struthioniformes",
@@ -43,6 +47,12 @@
     {
       "title": "Wikipedia (es): Struthio camelus",
       "url": "https://es.wikipedia.org/wiki/Struthio_camelus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Struthio",
+      "url": "https://en.wiktionary.org/wiki/Struthio",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

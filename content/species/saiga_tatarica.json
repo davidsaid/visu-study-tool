@@ -24,6 +24,10 @@
     "es": "Solo el macho tiene cuernos y es más grande que la hembra.",
     "en": "Only the male has horns, and it is larger than the female."
   },
+  "etymology": {
+    "es": "Saiga se tomó del ruso saigá; tatarica significa «tártara»; Linneo la llamó Capra tatarica en 1766.",
+    "en": "Saiga is borrowed from Russian saiga; tatarica means 'Tatar'; Linnaeus named it Capra tatarica in 1766."
+  },
   "sources": [
     {
       "title": "Saiga tatarica — Wikipedia (es)",
@@ -40,6 +44,24 @@
     {
       "title": "Tibetan antelope — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Tibetan_antelope",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Saiga",
+      "url": "https://en.wiktionary.org/wiki/Saiga",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: tataricus",
+      "url": "https://en.wiktionary.org/wiki/tataricus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Saiga antelope",
+      "url": "https://en.wikipedia.org/wiki/Saiga_tatarica",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

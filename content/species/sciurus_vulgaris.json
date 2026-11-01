@@ -20,6 +20,10 @@
       "en": "The eastern grey squirrel is larger and less red, and lacks ear tufts."
     }
   ],
+  "etymology": {
+    "es": "Sciurus es el latín sciurus, del griego skíouros, «ardilla»; vulgaris es latín, «común».",
+    "en": "Sciurus is Latin sciurus, from Greek skiouros, 'squirrel'; vulgaris is Latin for 'common'."
+  },
   "sources": [
     {
       "title": "Sciurus vulgaris — Wikipedia (es)",
@@ -30,6 +34,18 @@
     {
       "title": "Red squirrel — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Red_squirrel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sciurus",
+      "url": "https://en.wiktionary.org/wiki/Sciurus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: vulgaris",
+      "url": "https://en.wiktionary.org/wiki/vulgaris",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

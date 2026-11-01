@@ -26,6 +26,10 @@
     "es": "El macho tiene la cabeza característicamente ancha y es de colores más vivos que la hembra.",
     "en": "The male has a characteristically broad head and is more brightly coloured than the female."
   },
+  "etymology": {
+    "es": "lepidus es latín, «agradable, encantador».",
+    "en": "lepidus is Latin for 'pleasant, charming'."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Ocellated lizard",
@@ -42,6 +46,12 @@
     {
       "title": "Wikipedia (ES): Podarcis muralis",
       "url": "https://es.wikipedia.org/wiki/Podarcis_muralis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: lepidus",
+      "url": "https://en.wiktionary.org/wiki/lepidus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

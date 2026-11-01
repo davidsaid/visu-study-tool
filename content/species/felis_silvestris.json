@@ -24,6 +24,10 @@
     "es": "El macho es algo mayor que la hembra (un 15–25 %).",
     "en": "The male is slightly larger than the female (by 15–25%)."
   },
+  "etymology": {
+    "es": "Felis es latín, «gato»; silvestris es latín, «del bosque, salvaje», de silva, «bosque».",
+    "en": "Felis is Latin for 'cat'; silvestris is Latin for 'of the forest, wild', from silva, 'forest'."
+  },
   "sources": [
     {
       "title": "Felis silvestris — Wikipedia (es)",
@@ -34,6 +38,18 @@
     {
       "title": "European wildcat — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/European_wildcat",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Felis",
+      "url": "https://en.wiktionary.org/wiki/Felis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: silvestris",
+      "url": "https://en.wiktionary.org/wiki/silvestris",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

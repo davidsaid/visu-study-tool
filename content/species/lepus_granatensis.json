@@ -31,6 +31,10 @@
     "es": "Las hembras son de mayor tamaño y más pesadas que los machos.",
     "en": "Females are larger and heavier than males."
   },
+  "etymology": {
+    "es": "Lepus es latín, «liebre»; granatensis alude a Granada: en inglés se la llama Granada hare, «liebre de Granada».",
+    "en": "Lepus is Latin for 'hare'; granatensis refers to Granada: in English it is called the Granada hare."
+  },
   "sources": [
     {
       "title": "Lepus granatensis — Wikipedia (es)",
@@ -47,6 +51,12 @@
     {
       "title": "European rabbit — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/European_rabbit",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Lepus",
+      "url": "https://en.wiktionary.org/wiki/Lepus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

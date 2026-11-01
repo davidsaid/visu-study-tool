@@ -34,6 +34,10 @@
       "It is called the 'human fish' for its flesh-coloured skin, and was once believed to be a dragon's offspring."
     ]
   },
+  "etymology": {
+    "es": "Proteus es Proteo, el dios marino griego que cambiaba de forma a voluntad; anguinus es latín, «de serpiente, serpentino», de anguis, «serpiente».",
+    "en": "Proteus is the Greek sea god who could change his shape at will; anguinus is Latin for 'snaky, snake-like', from anguis, 'snake'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Proteus anguinus",
@@ -50,6 +54,18 @@
     {
       "title": "Wikipedia (EN): Axolotl",
       "url": "https://en.wikipedia.org/wiki/Axolotl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Proteus",
+      "url": "https://en.wiktionary.org/wiki/Proteus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: anguinus",
+      "url": "https://en.wiktionary.org/wiki/anguinus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

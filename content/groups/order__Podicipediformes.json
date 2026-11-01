@@ -21,6 +21,10 @@
     "es": "No confundir con patos (Anseriformes), que tienen patas palmeadas y pico ancho con laminillas, ni con fochas (Gruiformes), que tienen escudo frontal.",
     "en": "Do not confuse with ducks (Anseriformes), which have webbed feet and a broad lamellate bill, or with coots (Gruiformes), which have a frontal shield."
   },
+  "etymology": {
+    "es": "«Con forma de Podiceps», el somormujo; nombre acuñado por John Latham (1787) con el latín podex, «trasero», y pes, «pie»: los pies están muy atrás en el cuerpo.",
+    "en": "'Shaped like Podiceps', the grebe; coined by John Latham (1787) from Latin podex, 'rump', and pes, 'foot': the feet are set far back on the body."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Grebe",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Coot",
       "url": "https://en.wikipedia.org/wiki/Coot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Podiceps",
+      "url": "https://en.wiktionary.org/wiki/Podiceps",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

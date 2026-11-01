@@ -26,6 +26,10 @@
     "es": "Los machos son más grandes, tienen grandes cuernos, una gorguera de pelo en cuello y pecho y una coloración más oscura.",
     "en": "Males are larger, carry large horns, have a ruff of hair on the neck and chest and are darker overall."
   },
+  "etymology": {
+    "es": "Ovis es latín, «oveja».",
+    "en": "Ovis is Latin for 'sheep'."
+  },
   "sources": [
     {
       "title": "Ovis orientalis musimon — Wikipedia (es)",
@@ -42,6 +46,12 @@
     {
       "title": "Capra pyrenaica — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Capra_pyrenaica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Ovis",
+      "url": "https://en.wiktionary.org/wiki/Ovis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

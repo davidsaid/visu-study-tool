@@ -17,6 +17,10 @@
       "Streamlined, wedge-shaped body"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Spheniscus»; del griego spheniskos, «cuña pequeña», diminutivo de sphen, «cuña», por la forma de sus alas.",
+    "en": "'Shaped like Spheniscus'; from Greek spheniskos, 'small wedge', diminutive of sphen, 'wedge', after the shape of their wings."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Penguin",
@@ -27,6 +31,12 @@
     {
       "title": "Wikipedia (es): Spheniscidae",
       "url": "https://es.wikipedia.org/wiki/Spheniscidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Spheniscus",
+      "url": "https://en.wiktionary.org/wiki/Spheniscus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

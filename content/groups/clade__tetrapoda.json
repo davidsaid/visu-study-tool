@@ -21,6 +21,10 @@
     "es": "Una serpiente, una cecilia o una ballena son tetrápodos aunque no tengan cuatro patas: lo que cuenta es descender de antepasados con cuatro extremidades.",
     "en": "A snake, a caecilian or a whale is a tetrapod despite lacking four legs: what counts is descent from four-limbed ancestors."
   },
+  "etymology": {
+    "es": "Del griego tetra, «cuatro», y pous (podos), «pie»: «cuatro patas», aunque incluye descendientes sin patas como las serpientes.",
+    "en": "From Greek tetra-, 'four', and pous (podos), 'foot': 'four-footed', though it includes legless descendants such as snakes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Tetrapod",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Tetrapoda",
       "url": "https://es.wikipedia.org/wiki/Tetrapoda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Tetrapoda",
+      "url": "https://en.wiktionary.org/wiki/Tetrapoda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: tetrapod",
+      "url": "https://en.wiktionary.org/wiki/tetrapod",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -22,6 +22,10 @@
       "en": "The conger has pectoral fins, large gill openings and a row of white dots on the lateral line."
     }
   ],
+  "etymology": {
+    "es": "Muraena procede del griego myraina, nombre de esta morena; helena honra a Helena de Troya: según Müller, por la belleza de su marmoleado y su carne exquisita.",
+    "en": "Muraena comes from Greek myraina, the name of this moray; helena honours Helen of Troy: according to Müller, for its beautiful marbling and exquisite flesh."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Muraena helena",
@@ -39,6 +43,12 @@
       "title": "Wikipedia (EN): European conger",
       "url": "https://en.wikipedia.org/wiki/European_conger",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Muraenidae",
+      "url": "https://etyfish.org/muraenidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

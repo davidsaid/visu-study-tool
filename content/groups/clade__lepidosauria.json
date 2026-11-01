@@ -21,6 +21,10 @@
     "es": "Las tortugas y los cocodrilos no son lepidosaurios: pertenecen a Archelosauria, el grupo hermano, junto con las aves.",
     "en": "Turtles and crocodilians are not lepidosaurs: they belong to Archelosauria, the sister group, together with birds."
   },
+  "etymology": {
+    "es": "Del griego: «lagartos con escamas». Incluye a los escamosos y al tuátara.",
+    "en": "From Greek: 'scaled lizards'. It includes the squamates and the tuatara."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Lepidosauria",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Rhynchocephalia",
       "url": "https://en.wikipedia.org/wiki/Rhynchocephalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Lepidosauria",
+      "url": "https://en.wiktionary.org/wiki/Lepidosauria",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

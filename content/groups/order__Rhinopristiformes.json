@@ -21,6 +21,10 @@
     "es": "A medio camino entre tiburón y raya: se distingue de los tiburones porque sus hendiduras branquiales se abren en la cara ventral.",
     "en": "Halfway between a shark and a ray: it differs from sharks in having its gill slits on the underside."
   },
+  "etymology": {
+    "es": "Lleva el nombre de dos géneros típicos: Rhina, del griego rhine, «pez de hocico», de rhis, «nariz», y Pristis, del griego pristis, «pez sierra», de prio, «serrar».",
+    "en": "Named after two typical genera: Rhina, from Greek rhine, 'snout-nosed fish', from rhis, 'nose', and Pristis, Greek for 'sawfish', from prio, 'to saw'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Rhinopristiformes",
@@ -37,6 +41,24 @@
     {
       "title": "Wikipedia (en): Batomorphi",
       "url": "https://en.wikipedia.org/wiki/Batomorphi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Rhinopristiformes",
+      "url": "https://en.wiktionary.org/wiki/Rhinopristiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Rhina",
+      "url": "https://en.wiktionary.org/wiki/Rhina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Pristis",
+      "url": "https://en.wiktionary.org/wiki/Pristis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

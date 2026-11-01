@@ -17,6 +17,10 @@
       "Huge head on a short neck, and pillar-like legs"
     ]
   },
+  "etymology": {
+    "es": "Del latín proboscis, «trompa», a su vez del griego pro, «delante», y bosko, «alimentar».",
+    "en": "From Latin proboscis, 'trunk', itself from Greek pro, 'in front', and bosko, 'to feed'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Proboscidea",
@@ -27,6 +31,12 @@
     {
       "title": "Wikipedia (es): Proboscidea",
       "url": "https://es.wikipedia.org/wiki/Proboscidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Proboscidea",
+      "url": "https://en.wiktionary.org/wiki/Proboscidea",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

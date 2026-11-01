@@ -22,6 +22,10 @@
       "en": "The paddlefish has smooth skin without bony plates and a flat paddle-shaped snout a third of its body length."
     }
   ],
+  "etymology": {
+    "es": "Acipenser es el nombre latino del esturión, de origen discutido (quizá del griego akkipesios); sturio es la palabra del latín medieval para «esturión».",
+    "en": "Acipenser is the Latin name for the sturgeon, of disputed origin (perhaps from Greek akkipesios); sturio is the Medieval Latin word for 'sturgeon'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Acipenser sturio",
@@ -39,6 +43,12 @@
       "title": "Wikipedia (EN): American paddlefish",
       "url": "https://en.wikipedia.org/wiki/American_paddlefish",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Acipenseridae",
+      "url": "https://etyfish.org/acipenseridae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

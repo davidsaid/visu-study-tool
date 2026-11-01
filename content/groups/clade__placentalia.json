@@ -21,6 +21,10 @@
     "es": "No confundir con los marsupiales: también tienen placenta, pero breve y rudimentaria, y las crías nacen muy inmaduras.",
     "en": "Do not confuse with marsupials: they also have a placenta, but a brief, rudimentary one, and their young are born very immature."
   },
+  "etymology": {
+    "es": "Del latín placenta, «torta», por la forma plana y redonda de la placenta.",
+    "en": "From Latin placenta, 'flat cake', for the flat, round shape of the afterbirth."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Placentalia",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Placentalia",
       "url": "https://es.wikipedia.org/wiki/Placentalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Placentalia",
+      "url": "https://en.wiktionary.org/wiki/Placentalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: placenta",
+      "url": "https://en.wiktionary.org/wiki/placenta",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

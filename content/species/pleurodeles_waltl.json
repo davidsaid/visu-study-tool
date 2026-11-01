@@ -34,6 +34,10 @@
       "When attacked it pushes its rib tips out through its sides and secretes poison, though it is harmless to people."
     ]
   },
+  "etymology": {
+    "es": "Pleurodeles une el griego pleura, «costado, costilla», y deleeis, «dañino»; waltl honra a Joseph Waltl, médico y naturalista alemán, colega de Michahelles, que describió la especie.",
+    "en": "Pleurodeles joins Greek pleura, 'side, rib', and deleeis, 'harmful'; waltl honours Joseph Waltl, a German physician and naturalist, colleague of Michahelles, who described the species."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Pleurodeles waltl",
@@ -50,6 +54,24 @@
     {
       "title": "Wikipedia (ES): Lissotriton boscai",
       "url": "https://es.wikipedia.org/wiki/Lissotriton_boscai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (PL): Pleurodeles",
+      "url": "https://pl.wikipedia.org/wiki/Pleurodeles",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: πλευρά",
+      "url": "https://en.wiktionary.org/wiki/πλευρά",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Joseph Waltl",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Waltl",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

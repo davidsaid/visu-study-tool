@@ -31,6 +31,10 @@
     "es": "Los machos son alrededor de un 10 % mayores que las hembras.",
     "en": "Males are about 10% larger than females."
   },
+  "etymology": {
+    "es": "Genetta genetta repite el nombre, de origen incierto: quizá del árabe; el español gineta pasó al francés antiguo genete.",
+    "en": "Genetta genetta repeats the name, of uncertain origin: perhaps Arabic; Spanish gineta passed into Old French as genete."
+  },
   "sources": [
     {
       "title": "Genetta genetta — Wikipedia (es)",
@@ -41,6 +45,18 @@
     {
       "title": "Common genet — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Common_genet",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Genetta",
+      "url": "https://en.wiktionary.org/wiki/Genetta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Genet (animal)",
+      "url": "https://en.wikipedia.org/wiki/Genet_(animal)",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

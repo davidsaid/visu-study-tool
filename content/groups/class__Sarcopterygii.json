@@ -21,6 +21,10 @@
     "es": "Es una agrupación clásica, no un clado: los tetrápodos descienden de peces sarcopterigios y el clado Sarcopterygii los incluye. No confundir con los actinopterigios, cuyas aletas solo tienen radios óseos cubiertos de piel, sin lóbulo carnoso.",
     "en": "This is a classical grouping, not a clade: tetrapods descend from lobe-finned fishes and the clade Sarcopterygii includes them. Do not confuse with ray-finned fishes, whose fins have only skin-covered bony rays and no fleshy lobe."
   },
+  "etymology": {
+    "es": "Del griego sarx, «carne», y pteryx, «ala» o «aleta»: peces de aletas carnosas o lobuladas.",
+    "en": "From Greek sarx, 'flesh', and pteryx, 'wing, fin': the fleshy-finned (lobe-finned) fishes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Sarcopterygii",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Sarcopterygii",
       "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sarcopterygii",
+      "url": "https://en.wiktionary.org/wiki/Sarcopterygii",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -7,6 +7,10 @@
     "es": "Su grupo hermano es Laurasiatheria (carnívoros, ungulados, murciélagos, insectívoros), del que se separó hace unos 100 millones de años.",
     "en": "Its sister group is Laurasiatheria (carnivorans, ungulates, bats, insectivores), from which it split about 100 million years ago."
   },
+  "etymology": {
+    "es": "Une Euarchonta (del griego eu, «verdadero», y archonta, «gobernantes»: primates y afines) y Glires (latín glis, «lirón»: roedores y conejos).",
+    "en": "Joins Euarchonta (Greek eu, 'true', and archonta, 'rulers': primates and kin) and Glires (Latin glis, 'dormouse': rodents and rabbits)."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Euarchontoglires",
@@ -17,6 +21,24 @@
     {
       "title": "Wikipedia (es): Euarchontoglires",
       "url": "https://es.wikipedia.org/wiki/Euarchontoglires",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Euarchontoglires",
+      "url": "https://en.wiktionary.org/wiki/Euarchontoglires",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Euarchonta",
+      "url": "https://en.wiktionary.org/wiki/Euarchonta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Glires",
+      "url": "https://en.wiktionary.org/wiki/Glires",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

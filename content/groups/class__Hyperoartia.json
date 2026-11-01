@@ -21,6 +21,10 @@
     "es": "Parecen anguilas, pero no tienen mandíbulas, ni escamas, ni aletas pares; y frente a los mixinos, carecen de barbillas y tienen boca en ventosa.",
     "en": "They look like eels but have no jaws, scales or paired fins; unlike hagfishes, they lack barbels and have a sucker mouth."
   },
+  "etymology": {
+    "es": "Del griego hyperoia, «paladar», y artios, «completo»: las lampreas.",
+    "en": "From Greek hyperoia, 'palate', and artios, 'complete': the lampreys."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Lamprey",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Hyperoartia",
       "url": "https://es.wikipedia.org/wiki/Hyperoartia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Merriam-Webster: Hyperoartia",
+      "url": "https://www.merriam-webster.com/dictionary/Hyperoartia",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ὑπερῴα",
+      "url": "https://en.wiktionary.org/wiki/%E1%BD%91%CF%80%CE%B5%CF%81%E1%BF%B4%CE%B1",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

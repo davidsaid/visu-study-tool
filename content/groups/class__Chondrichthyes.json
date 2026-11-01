@@ -23,6 +23,10 @@
     "es": "No confundir con los peces óseos (Osteichthyes), que tienen esqueleto de hueso, un opérculo que cubre las branquias y, en general, vejiga natatoria.",
     "en": "Do not confuse with bony fishes (Osteichthyes), which have a bony skeleton, an operculum covering the gills and usually a swim bladder."
   },
+  "etymology": {
+    "es": "Del griego chondros, «grano» o «cartílago», e ichthys, «pez»: los peces cartilaginosos.",
+    "en": "From Greek chondros, 'grain, cartilage', and ichthys, 'fish': the cartilaginous fishes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Chondrichthyes",
@@ -33,6 +37,12 @@
     {
       "title": "Wikipedia (es): Chondrichthyes",
       "url": "https://es.wikipedia.org/wiki/Chondrichthyes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Chondrichthyes",
+      "url": "https://en.wiktionary.org/wiki/Chondrichthyes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -32,6 +32,10 @@
       "It can squeak, which is unusual for a lizard."
     ]
   },
+  "etymology": {
+    "es": "Psammodromus une el griego psammos, «arena», y dromos, «carrera»: «corredor de la arena»; algirus es latín, «argelino», por Argelia, donde es frecuente.",
+    "en": "Psammodromus joins Greek psammos, 'sand', and dromos, 'running': 'sand runner'; algirus is Latin for 'Algerian', after Algeria, where it is common."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Psammodromus algirus",
@@ -43,6 +47,12 @@
       "title": "Wikipedia (EN): Psammodromus algirus",
       "url": "https://en.wikipedia.org/wiki/Psammodromus_algirus",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Psammodromus algirus",
+      "url": "https://www.monaconatureencyclopedia.com/psammodromus-algirus/?lang=en",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

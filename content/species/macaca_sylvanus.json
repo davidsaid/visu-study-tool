@@ -32,6 +32,10 @@
       "Many of Galen's anatomical errors arose because he dissected Barbary macaques instead of humans."
     ]
   },
+  "etymology": {
+    "es": "Macaca viene del portugués macaca, femenino de macaco, «mono», quizá de una lengua del Congo; sylvanus remite a Silvano, dios romano de los bosques, de silva, «bosque».",
+    "en": "Macaca is from Portuguese macaca, feminine of macaco, 'monkey', thought to come from a Congo-region language; sylvanus recalls Silvanus, Roman god of the woods, from silva, 'forest'."
+  },
   "sources": [
     {
       "title": "Macaca sylvanus — Wikipedia (es)",
@@ -42,6 +46,18 @@
     {
       "title": "Barbary macaque — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Barbary_macaque",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Macaca",
+      "url": "https://en.wiktionary.org/wiki/Macaca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Silvanus",
+      "url": "https://en.wiktionary.org/wiki/Silvanus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

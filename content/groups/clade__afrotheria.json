@@ -21,6 +21,10 @@
     "es": "Muchos afroterios se parecen a animales de otros linajes por convergencia: la musaraña elefante a las musarañas, el damán a los roedores, el cerdo hormiguero a los osos hormigueros.",
     "en": "Many afrotheres resemble animals of other lineages through convergence: elephant shrews look like shrews, hyraxes like rodents, the aardvark like anteaters."
   },
+  "etymology": {
+    "es": "Del latín afro-, «de África», y del griego therion, «fiera»: mamíferos placentarios de origen africano.",
+    "en": "From Latin Afro-, 'of Africa', and Greek therion, 'wild beast': placental mammals of African origin."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Afrotheria",
@@ -43,6 +47,12 @@
     {
       "title": "Wikipedia (es): Tubulidentata",
       "url": "https://es.wikipedia.org/wiki/Tubulidentata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Theria",
+      "url": "https://en.wiktionary.org/wiki/Theria",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -7,6 +7,10 @@
     "es": "Su grupo hermano es Euarchontoglires (primates, roedores, lagomorfos, colugos y tupayas); juntos forman Boreoeutheria.",
     "en": "Its sister group is Euarchontoglires (primates, rodents, lagomorphs, colugos and treeshrews); together they form Boreoeutheria."
   },
+  "etymology": {
+    "es": "De Laurasia, el supercontinente donde se originó el grupo, y del griego therion, «fiera».",
+    "en": "From Laurasia, the supercontinent where the group originated, and Greek therion, 'wild beast'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Laurasiatheria",
@@ -17,6 +21,18 @@
     {
       "title": "Wikipedia (es): Laurasiatheria",
       "url": "https://es.wikipedia.org/wiki/Laurasiatheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Laurasiatheria",
+      "url": "https://en.wiktionary.org/wiki/Laurasiatheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Theria",
+      "url": "https://en.wiktionary.org/wiki/Theria",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

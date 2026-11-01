@@ -28,6 +28,10 @@
       "In the dry season it burrows into the mud in a chamber with air holes and seals itself in mucus."
     ]
   },
+  "etymology": {
+    "es": "Lepidosiren une el griego lepis, «escama», y Siren, género de salamandras: una «salamandra con escamas»; paradoxa es latín, «contraria a lo esperado», por esa paradoja.",
+    "en": "Lepidosiren joins Greek lepis, 'scale', and Siren, a salamander genus: a 'scaly salamander'; paradoxa is Latin for 'contrary to expectation', for that paradox."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): South American lungfish",
@@ -45,6 +49,12 @@
       "title": "Wikipedia (ES): Anguilla anguilla",
       "url": "https://es.wikipedia.org/wiki/Anguilla_anguilla",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Lepidosirenidae",
+      "url": "https://etyfish.org/lepidosirenidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

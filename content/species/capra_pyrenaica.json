@@ -31,6 +31,10 @@
     "es": "Fuerte: los machos pesan hasta 120 kg (hembras 30–45 kg) y sus cuernos pueden triplicar en longitud a los de las hembras.",
     "en": "Strong: males weigh up to 120 kg (females 30–45 kg) and their horns can be three times as long as females'."
   },
+  "etymology": {
+    "es": "Capra es latín, «cabra»; pyrenaica significa «pirenaica», de los Pirineos.",
+    "en": "Capra is Latin for 'goat'; pyrenaica means 'Pyrenean', of the Pyrenees."
+  },
   "sources": [
     {
       "title": "Capra pyrenaica — Wikipedia (es)",
@@ -41,6 +45,18 @@
     {
       "title": "Iberian ibex — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Iberian_ibex",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Capra",
+      "url": "https://en.wiktionary.org/wiki/Capra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: pyrenaicus",
+      "url": "https://en.wiktionary.org/wiki/pyrenaicus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

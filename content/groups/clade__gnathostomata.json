@@ -23,6 +23,10 @@
     "es": "Se oponen a los ciclóstomos (mixinos y lampreas), vertebrados sin mandíbulas cuya boca circular lleva estructuras córneas en lugar de dientes verdaderos.",
     "en": "They contrast with the cyclostomes (hagfishes and lampreys), jawless vertebrates whose round mouth bears horny structures instead of true teeth."
   },
+  "etymology": {
+    "es": "Del griego gnathos, «mandíbula», y stoma, «boca»: vertebrados con boca con mandíbulas.",
+    "en": "From Greek gnathos, 'jaw', and stoma, 'mouth': the jawed vertebrates."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Gnathostomata",
@@ -39,6 +43,12 @@
     {
       "title": "Wikipedia (en): Cyclostomi",
       "url": "https://en.wikipedia.org/wiki/Cyclostomi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Gnathostomata",
+      "url": "https://en.wiktionary.org/wiki/Gnathostomata",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

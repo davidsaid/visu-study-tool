@@ -17,6 +17,10 @@
       "Both parents feed the young on 'crop milk'"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Columba»: columba es «paloma» en latín, del griego kolymbos, «buceador», por el movimiento de «nado» de sus alas al volar.",
+    "en": "'Shaped like Columba': columba is Latin for 'dove', from Greek kolymbos, 'diver', for the 'swimming' motion of its wings in flight."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Columbidae",
@@ -27,6 +31,18 @@
     {
       "title": "Wikipedia (es): Columbiformes",
       "url": "https://es.wikipedia.org/wiki/Columbiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Columba (genus)",
+      "url": "https://en.wikipedia.org/wiki/Columba_%28genus%29",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -39,6 +39,10 @@
       "It is rear-fanged and venomous, but not dangerous to people."
     ]
   },
+  "etymology": {
+    "es": "El origen de Malpolon es incierto: quizá una lengua de Sri Lanka, o el latín mal, «malo», y el griego polos, «palo», por su postura erguida; monspessulanus es Montpellier en latín.",
+    "en": "The origin of Malpolon is uncertain: perhaps a Sri Lankan language, or Latin mal, 'bad', plus Greek polos, 'pole', for its upright posture; monspessulanus is Latin for Montpellier."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Malpolon monspessulanus",
@@ -62,6 +66,12 @@
       "title": "Wikipedia (EN): Natrix astreptophora",
       "url": "https://en.wikipedia.org/wiki/Natrix_astreptophora",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Malpolon monspessulanus",
+      "url": "https://www.monaconatureencyclopedia.com/malpolon-monspessulanus/?lang=en",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

@@ -15,6 +15,10 @@
       "Freshwater only; a typical Gondwanan distribution"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Osteoglossum», la arowana: del griego osteon, «hueso», y glossa, «lengua», por su lengua ósea con dientes que muerden contra el techo de la boca.",
+    "en": "'Shaped like Osteoglossum', the arowana: Greek osteon, 'bone', and glossa, 'tongue', for its toothed bony tongue that bites against the roof of the mouth."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Osteoglossiformes",
@@ -26,6 +30,12 @@
       "title": "Wikipedia (es): Osteoglossiformes",
       "url": "https://es.wikipedia.org/wiki/Osteoglossiformes",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Osteoglossidae (Osteoglossum)",
+      "url": "https://etyfish.org/osteoglossidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

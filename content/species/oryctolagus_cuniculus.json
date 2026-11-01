@@ -24,6 +24,10 @@
     "es": "Los machos son más corpulentos y tienen la cabeza más ancha que las hembras.",
     "en": "Males are more heavily built and have a broader head than females."
   },
+  "etymology": {
+    "es": "Oryctolagus viene del griego oryktós, «excavado», y lagós, «liebre», por sus hábitos excavadores; cuniculus es latín, «conejo», de una palabra prerromana de la península ibérica.",
+    "en": "Oryctolagus is from Greek oryktos, 'dug, burrowing', and lagos, 'hare', for its digging habits; cuniculus is Latin for 'rabbit', from a pre-Roman word of the Iberian Peninsula."
+  },
   "sources": [
     {
       "title": "Oryctolagus cuniculus — Wikipedia (es)",
@@ -34,6 +38,12 @@
     {
       "title": "European rabbit — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/European_rabbit",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: cuniculus",
+      "url": "https://en.wiktionary.org/wiki/cuniculus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

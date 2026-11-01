@@ -21,6 +21,10 @@
     "es": "No confundir con los lamniformes (tiburón blanco, marrajo), que tienen el mismo número de hendiduras y aletas pero carecen de membrana nictitante.",
     "en": "Do not confuse with mackerel sharks (Lamniformes: great white, mako), which have the same gill-slit and fin count but lack a nictitating membrane."
   },
+  "etymology": {
+    "es": "«Con forma de Carcharhinus»: del griego karcharos, «dentado como una sierra», por sus dientes, y rhinos, antiguo nombre de los tiburones.",
+    "en": "'Shaped like Carcharhinus': from Greek karcharos, 'jagged, saw-like', for its teeth, and rhinos, an ancient name for sharks."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Carcharhiniformes",
@@ -37,6 +41,18 @@
     {
       "title": "Wikipedia (en): Lamniformes",
       "url": "https://en.wikipedia.org/wiki/Lamniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Carcharhinidae",
+      "url": "https://etyfish.org/carcharhinidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

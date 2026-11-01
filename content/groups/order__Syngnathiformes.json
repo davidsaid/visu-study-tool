@@ -17,6 +17,10 @@
       "Frequent cryptic camouflage"
     ]
   },
+  "etymology": {
+    "es": "Del griego syn, «junto», y gnathos, «mandíbula» (de Syngnathus, la aguja de mar).",
+    "en": "From Greek syn, 'together', and gnathos, 'jaw' (after Syngnathus, the pipefish)."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Syngnathiformes",
@@ -27,6 +31,12 @@
     {
       "title": "Wikipedia (es): Syngnathiformes",
       "url": "https://es.wikipedia.org/wiki/Syngnathiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Syngnathus",
+      "url": "https://en.wiktionary.org/wiki/Syngnathus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -21,6 +21,10 @@
     "es": "No confundir con el pangolín (Pholidota), cubierto de escamas córneas superpuestas, sin placas óseas y sin dientes.",
     "en": "Do not confuse with the pangolin (Pholidota), covered in overlapping horny scales, with no bony plates and no teeth."
   },
+  "etymology": {
+    "es": "Del latín cingulatus, «ceñido, con cinturón», de cingulum, «cinturón».",
+    "en": "From Latin cingulatus, 'girdled, belted', from cingulum, 'belt'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Cingulata",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Cingulata",
       "url": "https://es.wikipedia.org/wiki/Cingulata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: cingulatus",
+      "url": "https://en.wiktionary.org/wiki/cingulatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: cingulum",
+      "url": "https://en.wiktionary.org/wiki/cingulum",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

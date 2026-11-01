@@ -21,6 +21,10 @@
     "es": "No confundir con el lucio (Esociformes): en inglés se les llama a veces «garpike», pero no están emparentados; el pejelagarto va acorazado con escamas ganoideas.",
     "en": "Do not confuse with pikes (Esociformes): gars are sometimes called 'garpike' but are not closely related; a gar is armoured with ganoid scales."
   },
+  "etymology": {
+    "es": "«Con forma de Lepisosteus»: del griego lepis, «escama», y osteon, «hueso», por sus escamas ganoideas, duras como hueso.",
+    "en": "'Shaped like Lepisosteus': from Greek lepis, 'scale', and osteon, 'bone', for its bone-like ganoid scales."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Lepisosteiformes",
@@ -43,6 +47,30 @@
     {
       "title": "Wikipedia (es): Lepisosteidae",
       "url": "https://es.wikipedia.org/wiki/Lepisosteidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Lepisosteiformes",
+      "url": "https://en.wiktionary.org/wiki/Lepisosteiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Lepisosteus",
+      "url": "https://en.wikipedia.org/wiki/Lepisosteus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Lepisosteidae",
+      "url": "https://etyfish.org/lepisosteidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

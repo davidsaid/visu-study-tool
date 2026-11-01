@@ -30,6 +30,10 @@
       "It may be the sea-going form of the brook lamprey (Lampetra planeri), from which it differs in its larger size and more widely separated dorsal fins."
     ]
   },
+  "etymology": {
+    "es": "Lampetra une el latín lambere, «lamer», y el griego petra, «piedra»: se adhiere con la boca a las rocas; fluviatilis es latín, «de río», por su migración río arriba para desovar.",
+    "en": "Lampetra joins Latin lambere, 'to lick', and Greek petra, 'rock': it attaches its mouth to stones; fluviatilis is Latin for 'of a river', for its upstream spawning run."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Lampetra fluviatilis",
@@ -41,6 +45,12 @@
       "title": "Wikipedia (EN): European river lamprey",
       "url": "https://en.wikipedia.org/wiki/European_river_lamprey",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Petromyzontidae",
+      "url": "https://etyfish.org/petromyzontidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

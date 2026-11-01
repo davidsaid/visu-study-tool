@@ -21,6 +21,10 @@
     "es": "No confundir con las lampreas (Petromyzontiformes), que tienen boca en ventosa, siete poros branquiales a cada lado y carecen de barbillas.",
     "en": "Do not confuse with lampreys (Petromyzontiformes), which have a sucker mouth, seven gill pores on each side and no barbels."
   },
+  "etymology": {
+    "es": "«Con forma de Myxine», el mixino; del griego myxinos, nombre de un «pez baboso».",
+    "en": "'Shaped like Myxine', the hagfish; from Greek myxinos, a 'slime-fish'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Hagfish",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Myxini",
       "url": "https://es.wikipedia.org/wiki/Myxini",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Myxine",
+      "url": "https://en.wiktionary.org/wiki/Myxine",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Myxiniformes",
+      "url": "https://en.wiktionary.org/wiki/Myxiniformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

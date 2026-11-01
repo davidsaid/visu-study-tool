@@ -120,6 +120,12 @@ class BuildOutput(unittest.TestCase):
             self.assertEqual(nodes[f"order:{o}"]["grade"], "Reptilia")
         self.assertNotIn("class:Reptilia", nodes)
 
+    def test_the_grade_reptilia_keeps_its_class_text(self):
+        """Reptilia is not a tree node, but its class text (with the etymology the cards show) is published."""
+        content = load_js("data/vertebrados/content.js", "content", self.out)
+        self.assertNotIn("class:Reptilia", self.data["tree"]["nodes"])
+        self.assertIn("etymology", content["groups"]["class:Reptilia"])
+
     def test_no_parent_of_split_values(self):
         snap = build.load_snapshot()
         species = parse_species(VERT / "species.csv")

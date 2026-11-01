@@ -30,6 +30,10 @@
       "It can raise its body temperature, letting it range from cold to tropical waters."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite en dos grafías: Thunnus y thynnus proceden del griego thynnos, «atún».",
+    "en": "The name repeats in two spellings: Thunnus and thynnus both come from Greek thynnos, 'tuna'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Thunnus thynnus",
@@ -47,6 +51,12 @@
       "title": "Wikipedia (EN): Albacore",
       "url": "https://en.wikipedia.org/wiki/Albacore",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Scombridae",
+      "url": "https://etyfish.org/scombriformes1",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

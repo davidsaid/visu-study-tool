@@ -17,6 +17,10 @@
     "es": "Su grupo hermano es Galloanserae (gallináceas y anátidas); juntos forman los neognatos.",
     "en": "Its sister group is Galloanserae (gamebirds and waterfowl); together they form the neognaths."
   },
+  "etymology": {
+    "es": "Del prefijo neo-, «nuevo», y Aves: las «aves nuevas».",
+    "en": "From neo-, 'new', and Aves: the 'new birds'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Neoaves",
@@ -33,6 +37,12 @@
     {
       "title": "Wikipedia (en): Anseriformes",
       "url": "https://en.wikipedia.org/wiki/Anseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Neoaves",
+      "url": "https://en.wiktionary.org/wiki/Neoaves",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

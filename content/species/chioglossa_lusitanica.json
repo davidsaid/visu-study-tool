@@ -28,6 +28,10 @@
       "It runs like a lizard and can shed its tail when threatened."
     ]
   },
+  "etymology": {
+    "es": "lusitanica es latín, «lusitana, portuguesa».",
+    "en": "lusitanica is Latin for 'Lusitanian, Portuguese'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Chioglossa lusitanica",
@@ -44,6 +48,12 @@
     {
       "title": "Wikipedia (ES): Salamandra salamandra",
       "url": "https://es.wikipedia.org/wiki/Salamandra_salamandra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Lusitanicus",
+      "url": "https://en.wiktionary.org/wiki/Lusitanicus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

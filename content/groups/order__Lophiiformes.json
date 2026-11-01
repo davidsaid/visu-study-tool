@@ -17,6 +17,10 @@
       "Naked skin; pectoral fins borne on a short 'arm'"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Lophius», el rape; del griego lophos, «cresta» o «crin», probablemente por las primeras espinas de la aleta dorsal, largas como tentáculos.",
+    "en": "'Shaped like Lophius', the angler; from Greek lophos, 'crest' or 'mane', probably for the long, tentacle-like first spines of the dorsal fin."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Anglerfish",
@@ -27,6 +31,18 @@
     {
       "title": "Wikipedia (es): Lophiiformes",
       "url": "https://es.wikipedia.org/wiki/Lophiiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Lophius",
+      "url": "https://en.wiktionary.org/wiki/Lophius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Lophius",
+      "url": "https://en.wikipedia.org/wiki/Lophius",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

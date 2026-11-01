@@ -21,6 +21,10 @@
     "es": "No confundir con los condrictios (tiburones, rayas, quimeras), de esqueleto cartilaginoso y con válvula espiral en el intestino, en lugar de ciegos pilóricos.",
     "en": "Do not confuse with cartilaginous fishes (sharks, rays, chimaeras), which have a cartilage skeleton and a spiral valve in the intestine instead of pyloric caeca."
   },
+  "etymology": {
+    "es": "Del griego osteon, «hueso», e ichthys, «pez»: los peces óseos.",
+    "en": "From Greek osteon, 'bone', and ichthys, 'fish': the bony fishes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Osteichthyes",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Osteichthyes",
       "url": "https://es.wikipedia.org/wiki/Osteichthyes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Osteichthyes",
+      "url": "https://en.wiktionary.org/wiki/Osteichthyes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

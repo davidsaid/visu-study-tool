@@ -21,6 +21,10 @@
     "es": "Antes se pensaba que los chotacabras eran parientes de las rapaces nocturnas (Strigiformes), e incluso se incluían en ellas; hoy se agrupan con vencejos y colibríes.",
     "en": "Nightjars were once thought to be close to owls (Strigiformes) and were even placed within them; today they are grouped with swifts and hummingbirds."
   },
+  "etymology": {
+    "es": "«Con forma de Caprimulgus»: del latín capra, «cabra», y mulgere, «ordeñar»: «chotacabras», por el viejo mito de que maman la leche de las cabras.",
+    "en": "'Shaped like Caprimulgus': from Latin capra, 'nanny goat', and mulgere, 'to milk': 'goatsucker', after an old myth that nightjars suck milk from goats."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Nightjar",
@@ -55,6 +59,18 @@
     {
       "title": "Wikipedia (es): Apodiformes",
       "url": "https://es.wikipedia.org/wiki/Apodiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Caprimulgus",
+      "url": "https://en.wikipedia.org/wiki/Caprimulgus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

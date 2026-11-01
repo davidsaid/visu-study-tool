@@ -21,6 +21,10 @@
     "es": "No confundir con los carcarriniformes, como la pintarroja, que tienen aleta anal, membrana nictitante y aletas dorsales sin espinas.",
     "en": "Do not confuse with ground sharks such as the catshark, which have an anal fin, a nictitating membrane and spineless dorsal fins."
   },
+  "etymology": {
+    "es": "«Con forma de Squalus»; squalus es «tiburón» en latín.",
+    "en": "'Shaped like Squalus'; squalus is Latin for 'shark'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Squaliformes",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Carcharhiniformes",
       "url": "https://en.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Squalus",
+      "url": "https://en.wiktionary.org/wiki/Squalus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

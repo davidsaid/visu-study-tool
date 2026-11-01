@@ -35,6 +35,10 @@
       "It is born in the Sargasso Sea and reaches Europe as a larva carried by the Gulf Stream."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite: anguilla es el latín para «anguila», derivado de anguis, «serpiente», por su cuerpo serpentiforme.",
+    "en": "The name repeats: anguilla is Latin for 'eel', from anguis, 'snake', referring to its snake-like body."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Anguilla anguilla",
@@ -58,6 +62,12 @@
       "title": "Wikipedia (EN): Mediterranean moray",
       "url": "https://en.wikipedia.org/wiki/Mediterranean_moray",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Anguillidae",
+      "url": "https://etyfish.org/anguillidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

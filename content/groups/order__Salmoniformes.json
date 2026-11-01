@@ -21,6 +21,10 @@
     "es": "No confundir con los lucios (Esociformes): carecen de aleta adiposa y tienen las aletas dorsal y anal muy retrasadas, cerca de la cola.",
     "en": "Do not confuse with pikes (Esociformes): they lack an adipose fin and have the dorsal and anal fins set far back, near the tail."
   },
+  "etymology": {
+    "es": "«Con forma de Salmo»; salmo es la palabra latina para «salmón».",
+    "en": "'Shaped like Salmo'; salmo is the Latin word for 'salmon'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Salmoniformes",
@@ -43,6 +47,12 @@
     {
       "title": "Wikipedia (es): Esociformes",
       "url": "https://es.wikipedia.org/wiki/Esociformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Salmo",
+      "url": "https://en.wiktionary.org/wiki/Salmo",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

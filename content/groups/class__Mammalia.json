@@ -19,6 +19,10 @@
       "Almost always seven neck vertebrae"
     ]
   },
+  "etymology": {
+    "es": "Del latín mamma, «mama». Lo acuñó Linneo en 1758 para sustituir su antigua clase Quadrupedia.",
+    "en": "From Latin mamma, 'breast'. Coined by Carl Linnaeus in 1758 to replace his earlier class Quadrupedia."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Mammal",
@@ -29,6 +33,12 @@
     {
       "title": "Wikipedia (es): Mammalia",
       "url": "https://es.wikipedia.org/wiki/Mammalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Mammalia",
+      "url": "https://en.wiktionary.org/wiki/Mammalia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

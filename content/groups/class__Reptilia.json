@@ -21,6 +21,10 @@
     "es": "En la clasificación cladística, Reptilia solo es un grupo natural si incluye a las aves (clado Sauropsida, o Reptilia redefinido). El grupo del bestiario agrupa a los saurópsidos que no son aves.",
     "en": "In cladistic classification Reptilia is only a natural group if it includes birds (clade Sauropsida, or Reptilia redefined). The bestiary's group gathers the sauropsids that are not birds."
   },
+  "etymology": {
+    "es": "Del latín reptilis, «que repta», de repere, «arrastrarse».",
+    "en": "From Latin reptilis, 'creeping', from repere, 'to creep'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Reptile",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Reptilia",
       "url": "https://es.wikipedia.org/wiki/Reptilia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Reptilia",
+      "url": "https://en.wiktionary.org/wiki/Reptilia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

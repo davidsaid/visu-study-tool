@@ -28,6 +28,10 @@
       "It warns of danger with a series of loud whistles."
     ]
   },
+  "etymology": {
+    "es": "Marmota marmota repite el nombre, de origen incierto: quizá del galorrománico marm-, «murmurar», o del latín tardío mus montanus, «ratón de montaña».",
+    "en": "Marmota marmota repeats the name, of uncertain origin: perhaps Gallo-Romance marm-, 'to murmur', or Late Latin mus montanus, 'mountain mouse'."
+  },
   "sources": [
     {
       "title": "Marmota marmota — Wikipedia (es)",
@@ -44,6 +48,18 @@
     {
       "title": "Sciurus vulgaris — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Sciurus_vulgaris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Marmota",
+      "url": "https://en.wikipedia.org/wiki/Marmota",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Marmota",
+      "url": "https://es.wikipedia.org/wiki/Marmota",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

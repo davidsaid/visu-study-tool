@@ -21,6 +21,10 @@
     "es": "No confundir con las garzas (Pelecaniformes): las cigüeñas vuelan con el cuello estirado, y las garzas lo recogen en S.",
     "en": "Do not confuse with herons (Pelecaniformes): storks fly with the neck outstretched, while herons fold it into an S."
   },
+  "etymology": {
+    "es": "«Con forma de Ciconia»: ciconia es «cigüeña» en latín.",
+    "en": "'Shaped like Ciconia': ciconia is Latin for 'stork'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Stork",
@@ -37,6 +41,18 @@
     {
       "title": "Wikipedia (en): Heron",
       "url": "https://en.wikipedia.org/wiki/Heron",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ciconia",
+      "url": "https://en.wiktionary.org/wiki/ciconia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

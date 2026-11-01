@@ -19,6 +19,10 @@
     "es": "No confundir con los salmónidos (truchas, salmones), que tienen aleta adiposa.",
     "en": "Do not confuse with salmonids (trout, salmon), which have an adipose fin."
   },
+  "etymology": {
+    "es": "«Con forma de Esox»: esox era, en Plinio, un gran pez del Rin; la palabra parece emparentada con voces celtas para «pez».",
+    "en": "'Shaped like Esox': esox was Pliny's name for a large fish of the Rhine; the word appears to be related to Celtic words for 'fish'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Esocoidei",
@@ -35,6 +39,30 @@
     {
       "title": "Wikipedia (en): Salmonidae",
       "url": "https://en.wikipedia.org/wiki/Salmonidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Esociformes",
+      "url": "https://en.wiktionary.org/wiki/Esociformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Esox",
+      "url": "https://en.wikipedia.org/wiki/Esox",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Esocidae",
+      "url": "https://etyfish.org/esocidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

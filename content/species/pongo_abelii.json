@@ -24,6 +24,10 @@
     "es": "Los machos son mucho mayores (≈90 kg) que las hembras (≈45 kg) y tienen rebordes faciales y barba.",
     "en": "Males are much larger (≈90 kg) than females (≈45 kg) and have cheek flanges and a beard."
   },
+  "etymology": {
+    "es": "Pongo viene del kikongo mpongi; abelii honra a Clarke Abel, cirujano y naturalista británico, el primer científico occidental que informó de orangutanes en Sumatra.",
+    "en": "Pongo comes from Kongo mpongi; abelii honours Clarke Abel, a British surgeon and naturalist, the first Western scientist to report orangutans on Sumatra."
+  },
   "sources": [
     {
       "title": "Sumatran orangutan — Wikipedia (en)",
@@ -34,6 +38,18 @@
     {
       "title": "Pongo abelii — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Pongo_abelii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Pongo",
+      "url": "https://en.wiktionary.org/wiki/Pongo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Clarke Abel",
+      "url": "https://en.wikipedia.org/wiki/Clarke_Abel",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

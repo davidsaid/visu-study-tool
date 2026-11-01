@@ -23,6 +23,10 @@
     "es": "No confundir con los perisodáctilos (caballos, rinocerontes, tapires), que cargan el peso sobre el tercer dedo, en número impar, y fermentan la celulosa en el intestino.",
     "en": "Do not confuse with perissodactyls (horses, rhinos, tapirs), which bear their weight on the third toe, an odd number of toes, and ferment cellulose in the hindgut."
   },
+  "etymology": {
+    "es": "Fusión de Cetacea (latín cetus, «ballena», del griego ketos, «monstruo marino») y Artiodactyla (griego artios, «par», y daktylos, «dedo»): cetáceos más ungulados de dedos pares.",
+    "en": "A blend of Cetacea (Latin cetus, 'whale', from Greek ketos, 'sea monster') and Artiodactyla (Greek artios, 'even', and daktylos, 'finger, toe'): whales plus even-toed ungulates."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Artiodactyla",
@@ -33,6 +37,18 @@
     {
       "title": "Wikipedia (es): Artiodactyla",
       "url": "https://es.wikipedia.org/wiki/Artiodactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Cetartiodactyla",
+      "url": "https://en.wiktionary.org/wiki/Cetartiodactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Cetacean",
+      "url": "https://en.wikipedia.org/wiki/Cetacean",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

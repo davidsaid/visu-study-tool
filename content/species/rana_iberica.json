@@ -26,6 +26,10 @@
     "es": "Las hembras tienden a ser más grandes que los machos.",
     "en": "Females tend to be larger than males."
   },
+  "etymology": {
+    "es": "Rana es latín, «rana», una palabra que imita su croar; iberica es latín, «ibérica».",
+    "en": "Rana is Latin for 'frog', a word imitating its croaking; iberica is Latin for 'Iberian'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Rana iberica",
@@ -42,6 +46,18 @@
     {
       "title": "Wikipedia (ES): Pelophylax perezi",
       "url": "https://es.wikipedia.org/wiki/Pelophylax_perezi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: rana",
+      "url": "https://en.wiktionary.org/wiki/rana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ibericus",
+      "url": "https://en.wiktionary.org/wiki/ibericus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

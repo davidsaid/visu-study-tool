@@ -29,6 +29,10 @@
     "es": "Los machos adultos tienen más manchas negras y el vientre más coloreado que las hembras.",
     "en": "Adult males have more black spotting and a more colourful belly than females."
   },
+  "etymology": {
+    "es": "Podarcis procede del griego podarkes, «de pies rápidos», por la gran velocidad de estas lagartijas; muralis es latín, «de los muros», uno de sus hábitats preferidos.",
+    "en": "Podarcis comes from Greek podarkes, 'swift-footed', for the great speed of these lizards; muralis is Latin for 'of walls', one of its favourite habitats."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Podarcis muralis",
@@ -51,6 +55,18 @@
     {
       "title": "Wikipedia (EN): Ocellated lizard",
       "url": "https://en.wikipedia.org/wiki/Ocellated_lizard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Podarcis muralis",
+      "url": "https://www.monaconatureencyclopedia.com/podarcis-muralis/?lang=en",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: muralis",
+      "url": "https://en.wiktionary.org/wiki/muralis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

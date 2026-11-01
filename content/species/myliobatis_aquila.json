@@ -31,6 +31,10 @@
     "es": "Las hembras crecen más que los machos.",
     "en": "Females grow larger than males."
   },
+  "etymology": {
+    "es": "Myliobatis une el griego myle, «molino», por sus dientes planos que trituran conchas, y batis, «raya»; aquila es latín, «águila», por sus aletas pectorales como alas.",
+    "en": "Myliobatis joins Greek myle, 'mill', for its flat shell-crushing teeth, and batis, 'ray'; aquila is Latin for 'eagle', for its wing-like pectoral fins."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Myliobatis aquila",
@@ -54,6 +58,12 @@
       "title": "Wikipedia (EN): Common stingray",
       "url": "https://en.wikipedia.org/wiki/Common_stingray",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Myliobatidae",
+      "url": "https://etyfish.org/myliobatidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

@@ -30,6 +30,10 @@
       "It reached Spain in 1974, when fry from the Danube were released at Mequinenza on the Ebro."
     ]
   },
+  "etymology": {
+    "es": "Silurus procede del griego silouros, nombre antiguo de un pez que acabó aplicándose a este siluro; glanis es otro nombre griego antiguo de los siluros, usado ya por Aristóteles.",
+    "en": "Silurus comes from Greek silouros, an ancient fish name later applied to this catfish; glanis is another ancient Greek name for catfishes, used since Aristotle."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Wels catfish",
@@ -47,6 +51,12 @@
       "title": "Wikipedia (ES): Cyprinus carpio",
       "url": "https://es.wikipedia.org/wiki/Cyprinus_carpio",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Siluridae",
+      "url": "https://etyfish.org/siluridae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

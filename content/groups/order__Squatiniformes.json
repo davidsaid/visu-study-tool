@@ -19,6 +19,10 @@
     "es": "Parece una raya, pero es un tiburón: en las rayas (Batoidea) las aletas pectorales están soldadas a la cabeza y las hendiduras branquiales se abren en la cara ventral, mientras que en los tiburones están a los lados de la cabeza.",
     "en": "It looks like a ray but is a shark: in rays (Batoidea) the pectoral fins are fused to the head and the gill slits open on the underside, whereas in sharks they are on the sides of the head."
   },
+  "etymology": {
+    "es": "«Con forma de Squatina», el angelote; del latín squatus, nombre del angelote ya en Plinio, y el griego rhine, «lima», ambos aludiendo a su piel áspera.",
+    "en": "'Shaped like Squatina', the angelshark; from Latin squatus, Pliny's name for angelsharks, and Greek rhine, 'rasp', both apparently alluding to its rough skin."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Squatiniformes",
@@ -42,6 +46,12 @@
       "title": "Wikipedia (es): Batomorphi",
       "url": "https://es.wikipedia.org/wiki/Batomorphi",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Squatinidae (Squatina)",
+      "url": "https://etyfish.org/squatinidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

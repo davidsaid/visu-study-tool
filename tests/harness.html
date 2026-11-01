@@ -75,7 +75,7 @@ const SCENARIOS = {
   'misspelling': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('ciconia_ciconia', 'common'); await answerTyped('Cigueña blanca', 'sure'); },
   'cual': async () => { seedStorage(seen); await open('hoy'); App().set().level = 2; await go('cual-es'); await click('[data-pick]:nth-child(2)'); await click('[data-conf="unsure"]'); },
   'explore': async () => { seedStorage(seen); await open('explorar'); await go('grupo-class-Mammalia'); await click('.trow.kid[data-row="order:Carnivora"]'); await sleep(200); },
-  'species': async () => { seedStorage(seen); await open('ficha-lynx_pardinus'); const h = doc.getElementById('card-m'); if (h && W < 1000) h.scrollIntoView(); },
+  'species': async () => { seedStorage(seen); await open('ficha-' + (Q.get('sp') || 'lynx_pardinus')); const h = doc.getElementById('card-m'); if (h && W < 1000) h.scrollIntoView(); },
   'group': async () => { seedStorage(seen); await open('grupo-order-Accipitriformes'); const h = doc.getElementById('card-m'); if (h && W < 1000) h.scrollIntoView(); },
   'easy': async () => {
     seedStorage(seen); await open('hoy'); App().set().level = 1; win.VISU_STORE.save();
@@ -202,6 +202,24 @@ const SCENARIOS = {
     await go('hoy'); await go('ficha-lynx_pardinus');
     const noBackLater = !doc.querySelector('.back-to-practice');
     report({ scenario: 'cardlink', links, nameLink, card, viaButton, viaBrowserBack, noBackLater });
+  },
+  /* "What the name says": on the species card, the group card, and after a miss, a misspelling and a wrong pick. */
+  'names': async () => {
+    seedStorage(seen); await open('ficha-milvus_milvus');
+    const exp = (sp, k) => (App().nameMeaning(sp, k) || {}).text || '';
+    const dd = [...doc.querySelectorAll('.names-dl dd')].map(d => d.textContent);
+    const card = { rows: dd.length, matches: ['class', 'order', 'genus'].every(k => !exp('milvus_milvus', k) || dd.some(t => t.startsWith(exp('milvus_milvus', k)))) };
+    await go('grupo-order-Accipitriformes');
+    const gEt = (App().M.content.groups['order:Accipitriformes'] || {}).etymology;
+    const groupShown = !!doc.querySelector('.plate .name-key') === !!gEt;
+    await go('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'order'); await answerTyped('wrong');
+    const keyText = () => (doc.querySelector('.session-wrap .name-key') || {}).textContent || '';
+    const missOrder = !exp('milvus_milvus', 'order') || keyText().includes(exp('milvus_milvus', 'order'));
+    await click('#nextbtn'); setItem('ciconia_ciconia', 'common'); await answerTyped('Cigueña blanca');
+    const spelling = !!doc.querySelector('.diffrow') && keyText().includes(exp('ciconia_ciconia', 'genus'));
+    await click('#nextbtn'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro');
+    const wrongSpecies = !!doc.querySelector('.twoup') && keyText().includes(exp('milvus_milvus', 'genus')) && keyText().includes(exp('milvus_migrans', 'genus'));
+    report({ scenario: 'names', card, groupShown, missOrder, spelling, wrongSpecies });
   },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },

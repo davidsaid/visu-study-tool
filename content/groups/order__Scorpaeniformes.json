@@ -17,6 +17,10 @@
       "Rounded, sometimes huge, pectoral fins; tail usually rounded"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Scorpaena»; del griego skorpaina, de «escorpión», por las espinas venenosas que ya mencionó Linneo.",
+    "en": "'Shaped like Scorpaena', the scorpionfish; from Greek skorpaina, from 'scorpion', alluding to the venomous spines Linnaeus mentioned."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Scorpaeniformes",
@@ -27,6 +31,18 @@
     {
       "title": "Wikipedia (es): Scorpaeniformes",
       "url": "https://es.wikipedia.org/wiki/Scorpaeniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Scorpaena",
+      "url": "https://en.wiktionary.org/wiki/Scorpaena",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Scorpaena",
+      "url": "https://en.wikipedia.org/wiki/Scorpaena",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

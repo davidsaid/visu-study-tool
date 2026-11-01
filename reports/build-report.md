@@ -2,7 +2,7 @@
 
 Snapshot retrieved 2026-11-01; links checked 2026-11-01. 1 collection(s).
 
-Content files used by no collection: content/groups/class__Reptilia.json.
+Content files used by no collection: none.
 
 # Collection «Vertebrados» (vertebrados)
 

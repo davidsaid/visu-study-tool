@@ -21,6 +21,10 @@
     "es": "No confundir con el cerdo hormiguero (Tubulidentata), un afroterio con molares y grandes orejas cuyo parecido con los osos hormigueros es convergente.",
     "en": "Do not confuse with the aardvark (Tubulidentata), an afrothere with molars and large ears whose resemblance to anteaters is convergent."
   },
+  "etymology": {
+    "es": "Del latín pilosa, «peluda».",
+    "en": "From Latin pilosa, 'hairy'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Pilosa",
@@ -43,6 +47,12 @@
     {
       "title": "Wikipedia (en): Sloth",
       "url": "https://en.wikipedia.org/wiki/Sloth",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Pilosa",
+      "url": "https://en.wiktionary.org/wiki/Pilosa",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

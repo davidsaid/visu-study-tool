@@ -31,6 +31,10 @@
     "es": "No hay apenas dimorfismo: los machos (2,6 m, 160 kg) son solo algo mayores que las hembras (2,4 m, 150 kg).",
     "en": "Hardly any dimorphism: males (2.6 m, 160 kg) are only slightly larger than females (2.4 m, 150 kg)."
   },
+  "etymology": {
+    "es": "Stenella es diminutivo de Steno, género cuyo nombre viene del griego stenós, «estrecho», por su hocico; coeruleoalba une caeruleus, «azul oscuro», y albus, «blanco».",
+    "en": "Stenella is a diminutive of Steno, a genus named from Greek stenos, 'narrow', for its beak; coeruleoalba joins caeruleus, 'deep blue', and albus, 'white'."
+  },
   "sources": [
     {
       "title": "Stenella coeruleoalba — Wikipedia (es)",
@@ -47,6 +51,36 @@
     {
       "title": "Orcinus orca — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Orcinus_orca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Stenella",
+      "url": "https://en.wiktionary.org/wiki/Stenella",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Stenella",
+      "url": "https://en.wikipedia.org/wiki/Stenella",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Rough-toothed dolphin",
+      "url": "https://en.wikipedia.org/wiki/Steno_(genus)",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: caeruleus",
+      "url": "https://en.wiktionary.org/wiki/caeruleus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: albus",
+      "url": "https://en.wiktionary.org/wiki/albus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

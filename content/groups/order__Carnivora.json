@@ -21,6 +21,10 @@
     "es": "Feliformes y caniformes se distinguen por el hocico: corto y con menos dientes en los feliformes, largo y con muchos dientes en los caniformes. Las focas y lobos marinos son carnívoros, no parientes de los sirenios ni de los cetáceos.",
     "en": "Feliforms and caniforms differ in the snout: short with fewer teeth in feliforms, long with many teeth in caniforms. Seals and sea lions are carnivorans, not relatives of sirenians or whales."
   },
+  "etymology": {
+    "es": "Del latín caro (carn-), «carne», y vorare, «devorar»: «devoradores de carne».",
+    "en": "From Latin caro (carn-), 'flesh', and vorare, 'to devour': 'flesh-devourers'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Carnivora",

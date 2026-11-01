@@ -17,6 +17,10 @@
     "es": "Su grupo hermano son los paleognatos (ratites y tinamúes), cuyo paladar «antiguo» es en realidad uno de sus pocos caracteres derivados.",
     "en": "Their sister group is the palaeognaths (ratites and tinamous), whose 'old' palate is actually one of their few derived traits."
   },
+  "etymology": {
+    "es": "Del griego neo-, «nuevo», y gnathos, «mandíbula»: «mandíbulas nuevas», por contraste con las paleognatas.",
+    "en": "From Greek neo-, 'new', and gnathos, 'jaw': 'new jaws', in contrast with the palaeognaths."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Neognathae",
@@ -27,6 +31,12 @@
     {
       "title": "Wikipedia (es): Neognathae",
       "url": "https://es.wikipedia.org/wiki/Neognathae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Neognathae",
+      "url": "https://en.wiktionary.org/wiki/Neognathae",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -23,6 +23,10 @@
     "es": "Los demás órdenes de tiburones del bestiario tienen cinco hendiduras branquiales y una aleta dorsal principal en mitad del dorso, que aquí falta.",
     "en": "The other shark orders in the bestiary have five gill slits and a main dorsal fin in mid-back, which is missing here."
   },
+  "etymology": {
+    "es": "«Con forma de Hexanchus»: del griego hex, «seis», y quizá ancho, «estrangular», por sus seis aberturas branquiales que llegan hasta la garganta.",
+    "en": "'Shaped like Hexanchus': from Greek hex, 'six', and perhaps ancho, 'to throttle', for its six gill slits extending onto the throat."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Hexanchiformes",
@@ -45,6 +49,18 @@
     {
       "title": "Wikipedia (en): Carcharhiniformes",
       "url": "https://en.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Hexanchidae",
+      "url": "https://etyfish.org/hexanchidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

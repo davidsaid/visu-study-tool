@@ -31,6 +31,10 @@
     "es": "Solo los machos tienen astas; pesan 380–700 kg frente a 200–490 kg de las hembras.",
     "en": "Only bulls have antlers; they weigh 380–700 kg against 200–490 kg for cows."
   },
+  "etymology": {
+    "es": "Alces alces repite el nombre: Alces es la palabra latina alces, «alce».",
+    "en": "Alces alces repeats the name: Alces is the Latin alces, 'elk'."
+  },
   "sources": [
     {
       "title": "Alces alces — Wikipedia (es)",
@@ -41,6 +45,12 @@
     {
       "title": "Moose — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Moose",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Alces",
+      "url": "https://en.wiktionary.org/wiki/Alces",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

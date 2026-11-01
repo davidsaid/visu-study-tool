@@ -27,6 +27,10 @@
       "en": "The galago has a long tail and very large ears; the loris has almost no tail."
     }
   ],
+  "etymology": {
+    "es": "Loris viene del francés loris, quizá del neerlandés loeris, «bobo»; lydekkerianus honra al naturalista británico Richard Lydekker, a quien Ángel Cabrera dedicó la especie en 1908.",
+    "en": "Loris is from French loris, believed to come from Dutch loeris, 'simpleton'; lydekkerianus honours British naturalist Richard Lydekker; Ángel Cabrera dedicated it to him in 1908."
+  },
   "sources": [
     {
       "title": "Loris lydekkerianus — Wikipedia (es)",
@@ -37,6 +41,24 @@
     {
       "title": "Gray slender loris — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Gray_slender_loris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Loris",
+      "url": "https://en.wiktionary.org/wiki/Loris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Gray slender loris",
+      "url": "https://en.wikipedia.org/wiki/Loris_lydekkerianus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Richard Lydekker",
+      "url": "https://en.wikipedia.org/wiki/Richard_Lydekker",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

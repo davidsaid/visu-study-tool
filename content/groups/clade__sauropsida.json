@@ -19,6 +19,10 @@
     "es": "Su grupo hermano son los sinápsidos, cuyo único linaje vivo son los mamíferos: los antiguos «reptiles mamiferoides» están más emparentados con los mamíferos que con cualquier reptil actual.",
     "en": "Their sister group is Synapsida, whose only living lineage is the mammals: the old 'mammal-like reptiles' are closer to mammals than to any living reptile."
   },
+  "etymology": {
+    "es": "Del griego sauros, «lagarto», y ops, «cara»: «cara de lagarto».",
+    "en": "From Greek sauros, 'lizard', and ops, 'face': 'lizard face'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Sauropsida",
@@ -29,6 +33,12 @@
     {
       "title": "Wikipedia (es): Sauropsida",
       "url": "https://es.wikipedia.org/wiki/Sauropsida",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sauropsida",
+      "url": "https://en.wiktionary.org/wiki/Sauropsida",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

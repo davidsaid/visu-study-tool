@@ -23,6 +23,10 @@
     "es": "El equidna recuerda a un erizo (Eulipotyphla) por sus púas, pero tiene hocico tubular sin dientes y pone huevos.",
     "en": "The echidna resembles a hedgehog (Eulipotyphla) because of its spines, but it has a toothless tubular snout and lays eggs."
   },
+  "etymology": {
+    "es": "Del griego monos, «único», y trema, «agujero»: una sola abertura, la cloaca, para la orina, las heces y la reproducción.",
+    "en": "From Greek monos, 'single', and trema, 'hole': a single opening, the cloaca, for urine, faeces and reproduction."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Monotreme",
@@ -39,6 +43,12 @@
     {
       "title": "Wikipedia (en): Mammal",
       "url": "https://en.wikipedia.org/wiki/Mammal",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Monotremata",
+      "url": "https://en.wiktionary.org/wiki/Monotremata",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

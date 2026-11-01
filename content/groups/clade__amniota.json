@@ -21,6 +21,10 @@
     "es": "Frente a los anfibios (lisanfibios), el otro linaje vivo de tetrápodos, los amniotas no necesitan agua para poner los huevos y no pasan por una fase de renacuajo.",
     "en": "Unlike amphibians (lissamphibians), the other living tetrapod lineage, amniotes do not need water to lay their eggs and have no tadpole stage."
   },
+  "etymology": {
+    "es": "Por el amnios, la membrana que envuelve al embrión; del griego amnion, cuenco donde se recogía la sangre de los sacrificios, de amnos, «cordero».",
+    "en": "Named after the amnion, the membrane around the embryo; from Greek amnion, a bowl for the blood of sacrificed animals, from amnos, 'lamb'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Amniote",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Amniota",
       "url": "https://es.wikipedia.org/wiki/Amniota",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Amniota",
+      "url": "https://en.wiktionary.org/wiki/Amniota",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

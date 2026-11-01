@@ -31,6 +31,10 @@
     "es": "Las hembras son más claras, más pequeñas y tienen cuernos menores, sin escudo frontal.",
     "en": "Females are paler and smaller, with smaller horns and no frontal boss."
   },
+  "etymology": {
+    "es": "Syncerus viene del griego syn, «juntos», y kéras, «cuerno», por los cuernos unidos en la base; caffer viene del latín moderno cafer, «de Cafrería», en el sur de África.",
+    "en": "Syncerus is from Greek syn, 'together', and keras, 'horn', for horns that meet at the base; caffer comes from New Latin cafer, 'of Caffraria', in southern Africa."
+  },
   "sources": [
     {
       "title": "Syncerus caffer — Wikipedia (es)",
@@ -53,6 +57,18 @@
     {
       "title": "Blue wildebeest — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Blue_wildebeest",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "San Diego Zoo Wildlife Alliance Library: Forest Buffalo, Taxonomy",
+      "url": "https://ielc.libguides.com/sdzg/factsheets/forestbuffalo/taxonomy",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: caffer",
+      "url": "https://en.wiktionary.org/wiki/caffer",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

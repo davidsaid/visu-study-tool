@@ -34,6 +34,10 @@
       "It breathes air using its swim bladder as a lung."
     ]
   },
+  "etymology": {
+    "es": "Amia era un nombre antiguo de un pez sin identificar; calva es latín, «calva», probablemente por su cabeza sin escamas.",
+    "en": "Amia was an ancient name for an unidentified fish; calva is Latin for 'bald', probably referring to its scaleless head."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Amia calva",
@@ -51,6 +55,12 @@
       "title": "Wikipedia (EN): Longnose gar",
       "url": "https://en.wikipedia.org/wiki/Longnose_gar",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Amiidae",
+      "url": "https://etyfish.org/amiidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

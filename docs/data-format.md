@@ -154,8 +154,14 @@ or `Public domain` (Commons only). Every photo is listed in the generated `media
     status: "draft" | "checked" } },
   groups: { "order:Accipitriformes": {
     summary: { es, en }, traits: { es: [..], en: [..] }, contrast: { es, en },
-    sources: [...], status } } }
+    etymology: { es, en }, sources: [...], status } } }
 ```
 
 `content/species/<id>.json` and `content/groups/<node_id>.json` contain exactly one of
 these objects. In group file names the colon becomes `__`: `order__Accipitriformes.json`.
+
+`etymology` is "what the name says": for a species, the meaning of the genus and the epithet;
+for a group, the roots of its name. The app shows it as a memory aid on the cards (class, order
+and scientific name together on the species card) and after a wrong answer, for the box that was
+missed. A class of the list that is not a tree node (the grade Reptilia) still gets its group
+file, `class__Reptilia.json`, so its etymology can be shown.

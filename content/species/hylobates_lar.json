@@ -19,6 +19,10 @@
     "es": "Apenas hay dimorfismo: ambos sexos presentan todas las variantes de color y casi no difieren en tamaño.",
     "en": "Hardly any dimorphism: both sexes occur in all colour variants and barely differ in size."
   },
+  "etymology": {
+    "es": "Hylobates significa «el que camina por el bosque», del griego hýle, «bosque», y bátes, «el que pisa».",
+    "en": "Hylobates means 'forest walker', from Greek hyle, 'forest', and bates, 'one who treads'."
+  },
   "sources": [
     {
       "title": "Hylobates lar — Wikipedia (es)",
@@ -29,6 +33,18 @@
     {
       "title": "Lar gibbon — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Lar_gibbon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Hylobates",
+      "url": "https://en.wiktionary.org/wiki/Hylobates",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Hylobates",
+      "url": "https://en.wikipedia.org/wiki/Hylobates",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

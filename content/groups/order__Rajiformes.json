@@ -23,6 +23,10 @@
     "es": "No confundir con las pastinacas y mantas (Myliobatiformes), que tienen aguijones en la cola, aletas pélvicas de un solo lóbulo y generalmente no tienen aleta dorsal.",
     "en": "Do not confuse with stingrays and devil rays (Myliobatiformes), which have tail stings, single-lobed pelvic fins and usually no dorsal fin."
   },
+  "etymology": {
+    "es": "«Con forma de Raja»; raja es una variante del latín raia, «raya».",
+    "en": "'Shaped like Raja'; raja is a variant of Latin raia, 'ray'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Rajiformes",
@@ -33,6 +37,12 @@
     {
       "title": "Wikipedia (es): Rajiformes",
       "url": "https://es.wikipedia.org/wiki/Rajiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Raja",
+      "url": "https://en.wiktionary.org/wiki/Raja",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

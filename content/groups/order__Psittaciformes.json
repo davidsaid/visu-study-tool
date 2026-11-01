@@ -21,6 +21,10 @@
     "es": "Los pájaros carpinteros (Piciformes) también son zigodáctilos; lo que identifica a un loro es su pico curvado con la mandíbula superior móvil.",
     "en": "Woodpeckers (Piciformes) are also zygodactyl; what identifies a parrot is its curved bill with a movable upper mandible."
   },
+  "etymology": {
+    "es": "«Con forma de Psittacus»; psittacus es «loro» en latín, del griego psittakos, de origen incierto.",
+    "en": "'Shaped like Psittacus'; psittacus is Latin for 'parrot', from Greek psittakos, of unclear origin."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Parrot",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Psittaciformes",
       "url": "https://es.wikipedia.org/wiki/Psittaciformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Psittacus",
+      "url": "https://en.wiktionary.org/wiki/Psittacus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

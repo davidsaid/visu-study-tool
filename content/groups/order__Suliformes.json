@@ -21,6 +21,10 @@
     "es": "No confundir con somormujos o patos buceadores: el cormorán tiene pico ganchudo y los cuatro dedos unidos por membranas.",
     "en": "Do not confuse with grebes or diving ducks: cormorants have a hooked bill and all four toes joined by webs."
   },
+  "etymology": {
+    "es": "«Con forma de Sula», el piquero; del nórdico antiguo súla, nombre del alcatraz atlántico.",
+    "en": "'Shaped like Sula', the booby; from Old Norse súla, the name for the gannet."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Suliformes",
@@ -43,6 +47,18 @@
     {
       "title": "Wikipedia (es): Phalacrocoracidae",
       "url": "https://es.wikipedia.org/wiki/Phalacrocoracidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sula",
+      "url": "https://en.wiktionary.org/wiki/Sula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Booby",
+      "url": "https://en.wikipedia.org/wiki/Booby",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

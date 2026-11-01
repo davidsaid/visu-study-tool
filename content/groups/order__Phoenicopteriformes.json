@@ -21,6 +21,10 @@
     "es": "Su pico acodado y filtrador los separa de cigüeñas, garzas y espátulas, que también tienen patas largas.",
     "en": "Their bent, filtering bill sets them apart from storks, herons and spoonbills, which also have long legs."
   },
+  "etymology": {
+    "es": "«Con forma de Phoenicopterus», el flamenco; del griego phoinix, «carmesí, púrpura», y pteron, «ala» o «pluma»: «alas carmesí».",
+    "en": "'Shaped like Phoenicopterus', the flamingo; from Greek phoinix, 'crimson, purple', and pteron, 'wing, feather': 'crimson-winged'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Phoenicopteriformes",
@@ -49,6 +53,12 @@
     {
       "title": "Wikipedia (es): Phoenicopterus roseus",
       "url": "https://es.wikipedia.org/wiki/Phoenicopterus_roseus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Phoenicopterus",
+      "url": "https://en.wiktionary.org/wiki/Phoenicopterus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

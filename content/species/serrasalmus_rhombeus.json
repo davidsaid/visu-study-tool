@@ -24,6 +24,10 @@
       "It is the largest piranha; how dark it gets depends on the water: fish from clear or black waters are darker."
     ]
   },
+  "etymology": {
+    "es": "Serrasalmus une el latín serra, «sierra», por su quilla ventral aserrada, y salmo, «salmón», por su aleta adiposa; rhombeus es latín, «romboidal», por la forma del adulto.",
+    "en": "Serrasalmus joins Latin serra, 'saw', for its serrated belly keel, and salmo, 'salmon', for its adipose fin; rhombeus is Latin for 'rhombic', for the adult's shape."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Serrasalmus rhombeus",
@@ -35,6 +39,12 @@
       "title": "Wikipedia (EN): Redeye piranha",
       "url": "https://en.wikipedia.org/wiki/Redeye_piranha",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Serrasalmidae",
+      "url": "https://etyfish.org/serrasalmidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

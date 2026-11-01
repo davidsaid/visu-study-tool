@@ -21,6 +21,10 @@
     "es": "No confundir con los murciélagos (Chiroptera), que vuelan batiendo alas sostenidas por dedos alargados, ni con los lémures, que son primates.",
     "en": "Do not confuse with bats (Chiroptera), which fly with flapping wings supported by elongated fingers, or with lemurs, which are primates."
   },
+  "etymology": {
+    "es": "Del griego derma, «piel», y pteron, «ala»: «alas de piel».",
+    "en": "From Greek derma, 'skin', and pteron, 'wing': 'skin wings'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Colugo",
@@ -31,6 +35,24 @@
     {
       "title": "Wikipedia (es): Dermoptera",
       "url": "https://es.wikipedia.org/wiki/Dermoptera",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Dermoptera",
+      "url": "https://en.wiktionary.org/wiki/Dermoptera",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: δέρμα",
+      "url": "https://en.wiktionary.org/wiki/%CE%B4%CE%AD%CF%81%CE%BC%CE%B1",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: πτερόν",
+      "url": "https://en.wiktionary.org/wiki/%CF%80%CF%84%CE%B5%CF%81%CF%8C%CE%BD",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

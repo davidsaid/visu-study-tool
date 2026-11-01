@@ -22,6 +22,10 @@
       "en": "The lesser white-toothed shrew is slightly smaller but otherwise very similar; often they can only be told apart by examining the teeth."
     }
   ],
+  "etymology": {
+    "es": "Crocidura viene del griego krokýs, «copo de lana», y ourá, «cola»: «cola lanosa», por su cola cubierta de pelos cortos con otros más largos intercalados.",
+    "en": "Crocidura is from Greek krokys, 'piece of wool', and oura, 'tail': 'woolly tail', for its tail of short hairs mixed with longer ones."
+  },
   "sources": [
     {
       "title": "Crocidura russula — Wikipedia (es)",
@@ -32,6 +36,18 @@
     {
       "title": "Greater white-toothed shrew — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Greater_white-toothed_shrew",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Crocidura",
+      "url": "https://en.wiktionary.org/wiki/Crocidura",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Crocidura",
+      "url": "https://en.wikipedia.org/wiki/Crocidura",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

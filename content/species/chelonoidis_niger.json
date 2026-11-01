@@ -32,6 +32,10 @@
       "The shell differences between islands that Darwin observed in 1835 contributed to his theory of evolution."
     ]
   },
+  "etymology": {
+    "es": "Chelonoidis procede del griego chelone, «tortuga»; niger es latín, «negro»: Quoy y Gaimard la describieron como una tortuga de cuerpo completamente negro.",
+    "en": "Chelonoidis comes from Greek chelone, 'tortoise'; niger is Latin for 'black': Quoy and Gaimard described it as a tortoise with a completely black body."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Galápagos tortoise",
@@ -48,6 +52,18 @@
     {
       "title": "Wikipedia (EN): Greek tortoise",
       "url": "https://en.wikipedia.org/wiki/Greek_tortoise",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Chelonoidis",
+      "url": "https://en.wiktionary.org/wiki/Chelonoidis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: niger",
+      "url": "https://en.wiktionary.org/wiki/niger",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -23,6 +23,10 @@
     "es": "No confundir con las lagartijas: su parecido es solo la forma corporal primitiva de los tetrápodos; las salamandras tienen la piel húmeda sin escamas y los dedos sin uñas. Sus parientes más cercanos son las ranas.",
     "en": "Do not confuse with lizards: the resemblance is just the ancestral tetrapod body plan; salamanders have moist, scaleless skin and clawless toes. Their closest relatives are the frogs."
   },
+  "etymology": {
+    "es": "Del latín caudatus, «con cola», de cauda, «cola»: los anfibios que conservan la cola de adultos.",
+    "en": "From Latin caudatus, 'tailed', from cauda, 'tail': the amphibians that keep their tail as adults."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Salamander",
@@ -33,6 +37,18 @@
     {
       "title": "Wikipedia (es): Caudata",
       "url": "https://es.wikipedia.org/wiki/Caudata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Caudata",
+      "url": "https://en.wiktionary.org/wiki/Caudata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: cauda",
+      "url": "https://en.wiktionary.org/wiki/cauda",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

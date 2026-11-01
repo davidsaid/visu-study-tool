@@ -17,6 +17,10 @@
       "Digestive system that ferments plant matter, unique among birds"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Opisthocomus», el hoacín; del griego opisthen, «detrás», y kome, «cabello»: «pelo largo detrás», por su gran cresta.",
+    "en": "'Shaped like Opisthocomus', the hoatzin; from Greek opisthen, 'behind', and kome, 'hair': 'long hair behind', for its large crest."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Opisthocomidae",
@@ -39,6 +43,12 @@
     {
       "title": "Wikipedia (es): Opisthocomus hoazin",
       "url": "https://es.wikipedia.org/wiki/Opisthocomus_hoazin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Opisthocomus",
+      "url": "https://en.wiktionary.org/wiki/Opisthocomus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

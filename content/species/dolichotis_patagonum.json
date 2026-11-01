@@ -30,6 +30,10 @@
       "It is the fastest rodent, reaching 45 km/h."
     ]
   },
+  "etymology": {
+    "es": "Dolichotis significa «de orejas largas», del griego dolichós, «largo», y ous, «oreja»; patagonum alude a la Patagonia, tierra de los patagones.",
+    "en": "Dolichotis means 'long-eared', from Greek dolichos, 'long', and ous, 'ear'; patagonum refers to Patagonia, land of the Patagonians."
+  },
   "sources": [
     {
       "title": "Dolichotis patagonum — Wikipedia (es)",
@@ -40,6 +44,18 @@
     {
       "title": "Patagonian mara — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Patagonian_mara",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Dolichotis",
+      "url": "https://en.wikipedia.org/wiki/Dolichotis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Patagonia",
+      "url": "https://en.wiktionary.org/wiki/Patagonia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -21,6 +21,10 @@
     "es": "Las grullas vuelan con el cuello estirado, mientras que las garzas (Pelecaniformes) lo recogen en forma de S.",
     "en": "Cranes fly with the neck stretched out, whereas herons (Pelecaniformes) fold it into an S-shape."
   },
+  "etymology": {
+    "es": "«Con forma de Grus»: grus es «grulla» en latín, de una raíz onomatopéyica que significa «gritar roncamente».",
+    "en": "'Shaped like Grus': grus is Latin for 'crane', from an onomatopoeic root meaning 'to cry hoarsely'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Gruiformes",
@@ -55,6 +59,18 @@
     {
       "title": "Wikipedia (es): Fulica",
       "url": "https://es.wikipedia.org/wiki/Fulica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: grus",
+      "url": "https://en.wiktionary.org/wiki/grus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

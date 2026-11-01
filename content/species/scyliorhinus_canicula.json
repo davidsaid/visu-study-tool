@@ -31,6 +31,10 @@
     "es": "Los machos tienen dientes más grandes que las hembras.",
     "en": "Males have larger teeth than females."
   },
+  "etymology": {
+    "es": "Scyliorhinus une el griego skylion, «perrito», y rhinos, nombre antiguo de los tiburones; canicula es latín, «perrita»: a los tiburones se les llamaba «perros de mar».",
+    "en": "Scyliorhinus joins Greek skylion, 'small dog', and rhinus, an ancient name for sharks; canicula is Latin for 'little dog': sharks were called 'sea dogs' in ancient times."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Scyliorhinus canicula",
@@ -48,6 +52,12 @@
       "title": "Wikipedia (EN): Spiny dogfish",
       "url": "https://en.wikipedia.org/wiki/Spiny_dogfish",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Scyliorhinidae",
+      "url": "https://etyfish.org/scyliorhinidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

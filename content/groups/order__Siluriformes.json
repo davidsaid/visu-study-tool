@@ -17,6 +17,10 @@
       "Often sharp, sometimes venomous, spines in the dorsal and pectoral fins"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Silurus», el siluro; silurus es el nombre latino del siluro, del griego silouros.",
+    "en": "'Shaped like Silurus', the wels catfish; silurus is Latin for the sheatfish, from Greek silouros."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Catfish",
@@ -27,6 +31,12 @@
     {
       "title": "Wikipedia (es): Siluriformes",
       "url": "https://es.wikipedia.org/wiki/Siluriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Silurus",
+      "url": "https://en.wiktionary.org/wiki/Silurus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -26,6 +26,10 @@
       "The male raises the tadpoles inside his vocal sac."
     ]
   },
+  "etymology": {
+    "es": "Rhinoderma significa «nariz de rinoceronte», por la prolongación en forma de trompa de su hocico; darwinii honra a Charles Darwin, que la descubrió en Chile durante el viaje del Beagle.",
+    "en": "Rhinoderma means 'rhinoceros-nosed', for the proboscis-like tip of its snout; darwinii honours Charles Darwin, who discovered it in Chile during the voyage of the Beagle."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Rhinoderma darwinii",
@@ -36,6 +40,24 @@
     {
       "title": "Wikipedia (EN): Darwin's frog",
       "url": "https://en.wikipedia.org/wiki/Darwin's_frog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "AmphibiaWeb: Rhinodermatidae",
+      "url": "https://amphibiaweb.org/lists/Rhinodermatidae.shtml",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Darwin's frog",
+      "url": "https://en.wikipedia.org/wiki/Darwin%27s_frog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: darwinii",
+      "url": "https://en.wiktionary.org/wiki/darwinii",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

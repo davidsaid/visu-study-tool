@@ -26,6 +26,10 @@
     "es": "Los machos son más altos que las hembras y suelen tener colmillos largos; las hembras normalmente no los tienen o son casi invisibles.",
     "en": "Bulls are taller than cows and usually have long tusks; cows usually lack them or have barely visible ones."
   },
+  "etymology": {
+    "es": "Elephas es el griego eléphas, «elefante»; maximus es latín, «el mayor», superlativo de magnus, «grande».",
+    "en": "Elephas is Greek elephas, 'elephant'; maximus is Latin for 'greatest', the superlative of magnus, 'great'."
+  },
   "sources": [
     {
       "title": "Elephas maximus — Wikipedia (es)",
@@ -36,6 +40,18 @@
     {
       "title": "Asian elephant — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Asian_elephant",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Elephas",
+      "url": "https://en.wiktionary.org/wiki/Elephas",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: maximus",
+      "url": "https://en.wiktionary.org/wiki/maximus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

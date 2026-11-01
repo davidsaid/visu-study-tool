@@ -27,6 +27,10 @@
       "It reaches 55 km/h, making it the fastest primate."
     ]
   },
+  "etymology": {
+    "es": "Erythrocebus viene del griego erythrós, «rojo», y kébos, «mono»: «mono rojo»; patas es la versión francesa de pata, palabra wólof de Senegal.",
+    "en": "Erythrocebus is from Greek eruthros, 'red', and kebos, 'monkey': 'red monkey'; patas is the French form of pata, a Wolof word from Senegal."
+  },
   "sources": [
     {
       "title": "Erythrocebus patas — Wikipedia (es)",
@@ -37,6 +41,18 @@
     {
       "title": "Common patas monkey — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Common_patas_monkey",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "San Diego Zoo Wildlife Alliance Library: Patas Monkey, Taxonomy & History",
+      "url": "https://ielc.libguides.com/sdzg/factsheets/patasmonkey/taxonomy-history",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: erythro-",
+      "url": "https://en.wiktionary.org/wiki/erythro-",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

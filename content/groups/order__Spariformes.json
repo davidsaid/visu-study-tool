@@ -21,6 +21,10 @@
     "es": "No confundir con la lubina (Moroniformes), de cuerpo más alargado, con dos aletas dorsales separadas y espinas en el opérculo.",
     "en": "Do not confuse with the sea bass (Moroniformes), which is more elongated, with two separate dorsal fins and spines on the operculum."
   },
+  "etymology": {
+    "es": "«Con forma de Sparus», la dorada; sparus es el nombre latino de la dorada, del griego sparos.",
+    "en": "'Shaped like Sparus', the gilt-head bream; sparus is Latin for it, from Greek sparos."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Spariformes",
@@ -43,6 +47,12 @@
     {
       "title": "Wikipedia (en): Moronidae",
       "url": "https://en.wikipedia.org/wiki/Moronidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sparus",
+      "url": "https://en.wiktionary.org/wiki/Sparus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

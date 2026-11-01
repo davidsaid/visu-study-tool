@@ -24,6 +24,10 @@
     "es": "Es uno de los otáridos más dimórficos: el macho pesa unos 350 kg y la hembra unos 150 kg.",
     "en": "One of the most dimorphic eared seals: males weigh about 350 kg, females about 150 kg."
   },
+  "etymology": {
+    "es": "Otaria viene del griego otárion, «orejita», diminutivo de ous, «oreja»; flavescens es latín, «amarillento».",
+    "en": "Otaria is from Greek otarion, 'little ear', diminutive of ous, 'ear'; flavescens is Latin for 'yellowish'."
+  },
   "sources": [
     {
       "title": "Otaria flavescens — Wikipedia (es)",
@@ -34,6 +38,18 @@
     {
       "title": "South American sea lion — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/South_American_sea_lion",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Otaria",
+      "url": "https://en.wiktionary.org/wiki/Otaria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: flavescens",
+      "url": "https://en.wiktionary.org/wiki/flavescens",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

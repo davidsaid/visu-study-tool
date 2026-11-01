@@ -21,6 +21,10 @@
     "es": "Recuerdan a los cipriniformes (carpas), pero estos no tienen aleta adiposa ni dientes en la boca.",
     "en": "They resemble cypriniforms (carps), which lack both the adipose fin and teeth in the mouth."
   },
+  "etymology": {
+    "es": "«Con forma de Charax»: del griego charax, «estaca puntiaguda de una empalizada», por sus dientes afilados y apretados.",
+    "en": "'Shaped like Charax': from Greek charax, 'pointed stake of a palisade', for its densely packed sharp teeth."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Characiformes",
@@ -31,6 +35,24 @@
     {
       "title": "Wikipedia (es): Characiformes",
       "url": "https://es.wikipedia.org/wiki/Characiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Characiformes",
+      "url": "https://en.wiktionary.org/wiki/Characiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Characinae",
+      "url": "https://etyfish.org/characinae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -31,6 +31,10 @@
     "es": "Los machos tienen las aletas ventrales más largas que las hembras.",
     "en": "Males have longer pelvic fins than females."
   },
+  "etymology": {
+    "es": "Cyprinus latiniza el griego kyprinos, «carpa», quizá de Kypris (Afrodita), por su fecundidad, o de kypros, «alheña», por su color bronce; carpio deriva del latín carpa, «carpa».",
+    "en": "Cyprinus latinises Greek kyprinos, 'carp', perhaps from Kypris (Aphrodite), for its fertility, or kypros, 'henna', for its bronze colour; carpio derives from Latin carpa, 'carp'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Cyprinus carpio",
@@ -48,6 +52,12 @@
       "title": "Wikipedia (ES): Luciobarbus comizo",
       "url": "https://es.wikipedia.org/wiki/Luciobarbus_comizo",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Cyprininae",
+      "url": "https://etyfish.org/cyprininae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

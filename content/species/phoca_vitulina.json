@@ -26,6 +26,10 @@
     "es": "Las hembras suelen ser más pequeñas que los machos.",
     "en": "Females are generally smaller than males."
   },
+  "etymology": {
+    "es": "Phoca es latín, «foca»; vitulina viene de vitulus, «ternero»: los romanos llamaban a la foca vitulus marinus, «ternero marino».",
+    "en": "Phoca is Latin for 'seal'; vitulina comes from vitulus, 'calf': the Romans called the seal vitulus marinus, 'sea calf'."
+  },
   "sources": [
     {
       "title": "Phoca vitulina — Wikipedia (es)",
@@ -36,6 +40,18 @@
     {
       "title": "Harbor seal — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Harbor_seal",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Phoca",
+      "url": "https://en.wiktionary.org/wiki/Phoca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: vitulus",
+      "url": "https://en.wiktionary.org/wiki/vitulus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

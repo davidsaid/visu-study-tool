@@ -23,6 +23,10 @@
     "es": "No confundir con Falconiformes (halcones): estos tienen un «diente» en el borde del pico superior y alas estrechas y puntiagudas, y están más emparentados con loros y paseriformes.",
     "en": "Do not confuse with Falconiformes (falcons): falcons have a tomial 'tooth' on the upper bill and narrow, pointed wings, and are closer to parrots and passerines."
   },
+  "etymology": {
+    "es": "«Con forma de Accipiter»: del latín accipiter, «gavilán», y -formis, «con forma de».",
+    "en": "'Shaped like Accipiter': from Latin accipiter, 'hawk', plus -formis, 'shaped like'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Accipitriformes",
@@ -45,6 +49,18 @@
     {
       "title": "Wikipedia (es): Falconiformes",
       "url": "https://es.wikipedia.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: accipiter",
+      "url": "https://en.wiktionary.org/wiki/accipiter",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

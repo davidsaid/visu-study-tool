@@ -21,6 +21,10 @@
     "es": "No confundir con roedores como la marmota: los damanes no tienen el par de incisivos inferiores en cincel, sino cuatro incisivos en peine, y tienen uñas en vez de garras.",
     "en": "Do not confuse with rodents such as marmots: hyraxes lack the chisel-like lower incisor pair, having four comb-like incisors instead, and have nails rather than claws."
   },
+  "etymology": {
+    "es": "De Hyrax, antiguo género de los damanes (del griego hyrax, «musaraña»), y -oidea, «parecido a».",
+    "en": "From Hyrax, a former genus of hyraxes (from Greek hyrax, 'shrew'), and -oidea, 'resembling'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Hyracoidea",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Hyracoidea",
       "url": "https://es.wikipedia.org/wiki/Hyracoidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Hyracoidea",
+      "url": "https://en.wiktionary.org/wiki/Hyracoidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ὕραξ",
+      "url": "https://en.wiktionary.org/wiki/%E1%BD%95%CF%81%CE%B1%CE%BE",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

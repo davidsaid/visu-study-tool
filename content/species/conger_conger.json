@@ -39,6 +39,10 @@
       "It is the heaviest eel in the world."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite: conger viene del griego gongros, nombre antiguo de este pez, derivado de gongylos, «redondo».",
+    "en": "The name repeats: conger comes from Greek gongros, the ancient name of this eel, derived from gongylos, 'round'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Conger conger",
@@ -62,6 +66,12 @@
       "title": "Wikipedia (ES): Anguilla anguilla",
       "url": "https://es.wikipedia.org/wiki/Anguilla_anguilla",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Congridae",
+      "url": "https://etyfish.org/congridae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

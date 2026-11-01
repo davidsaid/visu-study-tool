@@ -17,6 +17,10 @@
       "Broad, long wings"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Otis», la avutarda; otis es el nombre latino de la avutarda, tomado del griego otis. «Avutarda» viene del latín avis tarda, nombre que recoge Plinio; tardus significa «lento».",
+    "en": "'Shaped like Otis', the bustard; otis is Latin for 'bustard', from Greek otis. Spanish avutarda and English 'bustard' come from Latin avis tarda, recorded by Pliny; tardus means 'slow'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Bustard",
@@ -27,6 +31,12 @@
     {
       "title": "Wikipedia (es): Otididae",
       "url": "https://es.wikipedia.org/wiki/Otididae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Otis",
+      "url": "https://en.wiktionary.org/wiki/Otis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

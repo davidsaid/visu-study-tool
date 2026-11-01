@@ -21,6 +21,10 @@
     "es": "No confundir con los placentarios, que retienen la cría en el útero hasta un estado avanzado, no tienen huesos epipúbicos y sí cuerpo calloso. Muchos marsupiales se parecen a placentarios (lobo marsupial y lobo, petauro y ardilla voladora) por convergencia.",
     "en": "Do not confuse with placentals, which keep the young in the uterus until a late stage, lack epipubic bones and have a corpus callosum. Many marsupials resemble placentals (thylacine and wolf, sugar glider and flying squirrel) through convergence."
   },
+  "etymology": {
+    "es": "Del latín marsupium, «bolsa», y este del griego marsippos, «saco»: el marsupio, la bolsa abdominal.",
+    "en": "From Latin marsupium, 'pouch, purse', from Greek marsippos, 'bag': the marsupium, the abdominal pouch."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Marsupial",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Marsupialia",
       "url": "https://es.wikipedia.org/wiki/Marsupialia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Marsupialia",
+      "url": "https://en.wiktionary.org/wiki/Marsupialia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -23,6 +23,10 @@
     "es": "El tiburón ballena, gigante y filtrador, puede confundirse con el peregrino (Lamniformes); en los lamniformes la boca se extiende bien por detrás de los ojos, mientras que en los orectolobiformes es corta y queda por delante de ellos.",
     "en": "The giant, filter-feeding whale shark can be confused with the basking shark (Lamniformes); in lamniforms the mouth extends well behind the eyes, whereas in orectolobiforms it is short and stays in front of them."
   },
+  "etymology": {
+    "es": "«Con forma de Orectolobus», el wobbegong; del griego orektos, «estirado», y lobos, «lóbulo», por los largos barbillones nasales.",
+    "en": "'Shaped like Orectolobus', the wobbegong; from Greek orektos, 'stretched out', and lobos, 'lobe', for the long nasal barbels."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Carpet shark",
@@ -39,6 +43,18 @@
     {
       "title": "Wikipedia (es): Lamniformes",
       "url": "https://es.wikipedia.org/wiki/Lamniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Orectolobidae (Orectolobus)",
+      "url": "https://etyfish.org/orectolobidae",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Orectolobiformes",
+      "url": "https://en.wiktionary.org/wiki/Orectolobiformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

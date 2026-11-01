@@ -31,6 +31,10 @@
     "es": "Los machos son ligeramente más grandes y pesados que las hembras.",
     "en": "Males are slightly larger and heavier than females."
   },
+  "etymology": {
+    "es": "Erinaceus es el latín erinaceus, «erizo»; europaeus significa «europeo».",
+    "en": "Erinaceus is Latin erinaceus, 'hedgehog'; europaeus means 'European'."
+  },
   "sources": [
     {
       "title": "Erinaceus europaeus — Wikipedia (es)",
@@ -41,6 +45,18 @@
     {
       "title": "European hedgehog — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/European_hedgehog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Erinaceus",
+      "url": "https://en.wiktionary.org/wiki/Erinaceus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: europaeus",
+      "url": "https://en.wiktionary.org/wiki/europaeus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

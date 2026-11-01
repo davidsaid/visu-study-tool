@@ -20,5 +20,6 @@ run "$here" carousel '"mistakeStillShown": true' '"pickedStillKept": true' \
 run "$here" random '"stableOnRerender": true'
 run "$here" credits '"sameFile": true' '"samePhotos": true' '"credited": 5'
 run "$here" cardlink '"nameLink": true' '"back": true' '"stillFeedback": true' '"noBackLater": true'
+run "$here" names '"matches": true' '"groupShown": true' '"missOrder": true' '"spelling": true' '"wrongSpecies": true'
 run "$site" collections '"importOtherRefused": true' '"key": "visu-progress-v1:artropodos-prueba"' '"log": 1'
 exit $fail

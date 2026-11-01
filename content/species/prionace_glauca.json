@@ -34,6 +34,10 @@
       "Once dead, its blue colour fades to dull grey."
     ]
   },
+  "etymology": {
+    "es": "Prionace une el griego prion, «sierra», y akis, «punta», por sus dientes superiores aserrados; glauca es latín, «azul verdoso o gris», color del mar, por su dorso azul.",
+    "en": "Prionace joins Greek prion, 'saw', and akis, 'point', for its serrated upper teeth; glauca is Latin for 'bluish green or grey', sea-coloured, for its blue back."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Prionace glauca",
@@ -51,6 +55,12 @@
       "title": "Wikipedia (EN): Shortfin mako shark",
       "url": "https://en.wikipedia.org/wiki/Shortfin_mako_shark",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Carcharhinidae",
+      "url": "https://etyfish.org/carcharhinidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

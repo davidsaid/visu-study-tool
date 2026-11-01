@@ -23,6 +23,10 @@
     "es": "No confundir con las rapaces diurnas (Accipitriformes, Falconiformes): las nocturnas tienen ojos frontales en un disco facial; sus parecidos se deben a convergencia y no a un antepasado común.",
     "en": "Do not confuse with diurnal raptors (Accipitriformes, Falconiformes): owls have forward-facing eyes set in a facial disc; their similarities are due to convergence, not common ancestry."
   },
+  "etymology": {
+    "es": "«Con forma de Strix»; strix es latín, del griego strix, «la que chilla»: las rapaces nocturnas.",
+    "en": "'Shaped like Strix'; strix is Latin, from Greek strix, 'screecher': the owls."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Owl",
@@ -39,6 +43,12 @@
     {
       "title": "Wikipedia (es): Falconiformes",
       "url": "https://es.wikipedia.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Strix",
+      "url": "https://en.wiktionary.org/wiki/Strix",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

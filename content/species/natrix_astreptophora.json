@@ -33,6 +33,10 @@
       "When threatened it raises its forebody and flattens its neck like a cobra, a relict of times when cobras lived in Europe."
     ]
   },
+  "etymology": {
+    "es": "Natrix es el nombre latino clásico de la culebra de agua, probablemente influido por natare, «nadar».",
+    "en": "Natrix is the classical Latin name for a water snake, probably influenced by natare, 'to swim'."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Natrix astreptophora",
@@ -67,6 +71,18 @@
     {
       "title": "Wikipedia (ES): Malpolon monspessulanus",
       "url": "https://es.wikipedia.org/wiki/Malpolon_monspessulanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Natrix",
+      "url": "https://en.wikipedia.org/wiki/Natrix",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Natrix",
+      "url": "https://en.wiktionary.org/wiki/Natrix",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

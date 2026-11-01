@@ -30,6 +30,10 @@
       "It can leap up to about three metres between branches."
     ]
   },
+  "etymology": {
+    "es": "Galago procede probablemente del wólof golo, «mono»; senegalensis significa «senegalés», de Senegal.",
+    "en": "Galago probably comes from Wolof golo, 'monkey'; senegalensis means 'Senegalese', of Senegal."
+  },
   "sources": [
     {
       "title": "Galago senegalensis — Wikipedia (es)",
@@ -40,6 +44,18 @@
     {
       "title": "Senegal bushbaby — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Senegal_bushbaby",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Galago",
+      "url": "https://en.wiktionary.org/wiki/Galago",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: senegalensis",
+      "url": "https://en.wiktionary.org/wiki/senegalensis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

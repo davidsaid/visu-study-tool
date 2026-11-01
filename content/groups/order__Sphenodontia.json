@@ -21,6 +21,10 @@
     "es": "No es un lagarto: al principio se clasificó entre los agámidos, pero es el grupo hermano de los escamosos (lagartos y serpientes) dentro de los lepidosaurios.",
     "en": "It is not a lizard: it was first classified with the agamids, but it is the sister group of squamates (lizards and snakes) within Lepidosauria."
   },
+  "etymology": {
+    "es": "Deriva de Sphenodon, el tuátara: del griego sphen, «cuña», y odous, «diente»: «dientes en cuña».",
+    "en": "From Sphenodon, the tuatara: Greek sphen, 'wedge', and odous, 'tooth': 'wedge-tooth'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Rhynchocephalia",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Sphenodontia",
       "url": "https://es.wikipedia.org/wiki/Sphenodontia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sphenodon",
+      "url": "https://en.wiktionary.org/wiki/Sphenodon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Tuatara",
+      "url": "https://en.wikipedia.org/wiki/Tuatara",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

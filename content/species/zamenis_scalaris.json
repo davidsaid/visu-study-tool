@@ -32,6 +32,10 @@
       "Its common name comes from the juveniles' ladder pattern, which fades with age."
     ]
   },
+  "etymology": {
+    "es": "Zamenis es griego, «furioso, irritable»; scalaris es latín, «de escalera», de scala: los jóvenes llevan un característico dibujo negro en forma de escalera.",
+    "en": "Zamenis is Greek for 'angry, irritable, fierce'; scalaris is Latin for 'ladder-like', from scala: juveniles show a characteristic black ladder pattern."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Zamenis scalaris",
@@ -48,6 +52,18 @@
     {
       "title": "Wikipedia (ES): Malpolon monspessulanus",
       "url": "https://es.wikipedia.org/wiki/Malpolon_monspessulanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Zamenis",
+      "url": "https://en.wikipedia.org/wiki/Zamenis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: scalaris",
+      "url": "https://en.wiktionary.org/wiki/scalaris",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

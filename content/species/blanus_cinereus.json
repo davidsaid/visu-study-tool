@@ -34,6 +34,10 @@
       "Its local names in Spanish, Portuguese and Catalan mean 'blind snake', though it is an amphisbaenian, not a snake."
     ]
   },
+  "etymology": {
+    "es": "Blanus procede del griego blanos, «ciego, de mala vista»; cinereus viene del latín cinis, «ceniza», por el color grisáceo de muchos ejemplares.",
+    "en": "Blanus comes from Greek blanos, 'blind, poor-sighted'; cinereus comes from Latin cinis, 'ash', for the ashy colour of many specimens."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Blanus cinereus",
@@ -50,6 +54,18 @@
     {
       "title": "Wikipedia (ES): Anguis fragilis",
       "url": "https://es.wikipedia.org/wiki/Anguis_fragilis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Blanus cinereus",
+      "url": "https://www.monaconatureencyclopedia.com/blanus-cinereus/?lang=en",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: cinereus",
+      "url": "https://en.wiktionary.org/wiki/cinereus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

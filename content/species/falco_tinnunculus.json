@@ -31,10 +31,6 @@
     "es": "Dimorfismo de color, raro en rapaces: el macho tiene cabeza y cola gris azuladas; la hembra es mayor y toda parda.",
     "en": "Colour dimorphism, unusual in raptors: the male has a blue-grey head and tail; the female is larger and all brown."
   },
-  "etymology": {
-    "es": "Falco procede del latín tardío falx, «hoz», por sus garras; tinnunculus es el nombre latino del cernícalo, de tinnulus, «estridente».",
-    "en": "Falco is Late Latin, from falx, 'sickle', referring to its claws; tinnunculus is Latin for 'kestrel', from tinnulus, 'shrill'."
-  },
   "trivia": {
     "es": [
       "Caza cerniéndose inmóvil en el aire contra el viento, de ahí su antiguo nombre inglés windhover."
@@ -42,6 +38,10 @@
     "en": [
       "It hunts by hovering into the wind, hence the old English name 'windhover'."
     ]
+  },
+  "etymology": {
+    "es": "Falco es «halcón» en latín tardío, probablemente de origen germánico («ave gris»); la relación con falx, «hoz», se considera etimología popular. Tinnunculus es el nombre latino del cernícalo, de tinnulus, «estridente».",
+    "en": "Falco is Late Latin for 'falcon', probably of Germanic origin ('grey bird'); the link with falx, 'sickle', is regarded as folk etymology. Tinnunculus is Latin for 'kestrel', from tinnulus, 'shrill'."
   },
   "sources": [
     {
@@ -59,6 +59,12 @@
     {
       "title": "Wikipedia (EN): Peregrine falcon",
       "url": "https://en.wikipedia.org/wiki/Peregrine_falcon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: falco",
+      "url": "https://en.wiktionary.org/wiki/falco",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -21,6 +21,10 @@
     "es": "No confundir con los artiodáctilos (Cetartiodactyla), que apoyan el peso por igual en dos o cuatro dedos (el tercero y el cuarto) y muchos de los cuales rumian.",
     "en": "Do not confuse with artiodactyls (Cetartiodactyla), which bear their weight equally on two or four toes (the third and fourth), many of them ruminants."
   },
+  "etymology": {
+    "es": "Del griego perissos, «impar», y daktylos, «dedo»: ungulados de dedos impares.",
+    "en": "From Greek perissos, 'uneven, odd', and daktylos, 'finger, toe': the odd-toed ungulates."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Perissodactyla",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Perissodactyla",
       "url": "https://es.wikipedia.org/wiki/Perissodactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Perissodactyla",
+      "url": "https://en.wiktionary.org/wiki/Perissodactyla",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

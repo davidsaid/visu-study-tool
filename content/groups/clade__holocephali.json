@@ -21,6 +21,10 @@
     "es": "Los elasmobranquios (tiburones y rayas) tienen la mandíbula superior libre del cráneo y de cinco a siete hendiduras branquiales que se abren por separado.",
     "en": "Elasmobranchs (sharks and rays) have an upper jaw free from the skull and five to seven separately opening gill slits."
   },
+  "etymology": {
+    "es": "Del griego holos, «entero», y kephale, «cabeza», por la fusión completa del cráneo con la mandíbula superior de las quimeras.",
+    "en": "From Greek holos, 'whole', and kephale, 'head', for the complete fusion of the braincase and upper jaw in chimaeras."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Holocephali",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Holocephali",
       "url": "https://es.wikipedia.org/wiki/Holocephali",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Holocephali",
+      "url": "https://en.wiktionary.org/wiki/Holocephali",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

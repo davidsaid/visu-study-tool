@@ -24,6 +24,10 @@
       "The first dorsal spine carries a venom gland; its sting is very painful."
     ]
   },
+  "etymology": {
+    "es": "Chimaera alude a la quimera mitológica, hecha de partes de varios animales, por su mezcla de rasgos; monstrosa es latín, «extraña, monstruosa», por su aspecto.",
+    "en": "Chimaera refers to the mythological chimera, made of parts of several animals, for its odd mix of features; monstrosa is Latin for 'strange, grotesque', for its appearance."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Chimaera monstrosa",
@@ -35,6 +39,12 @@
       "title": "Wikipedia (EN): Rabbit fish",
       "url": "https://en.wikipedia.org/wiki/Rabbit_fish",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Chimaeridae",
+      "url": "https://etyfish.org/chimaeridae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

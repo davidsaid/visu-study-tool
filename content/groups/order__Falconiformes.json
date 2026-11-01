@@ -21,6 +21,10 @@
     "es": "No confundir con Accipitriformes (gavilanes, águilas, busardos), que carecen de diente en el pico, matan con las garras y tienen alas más anchas.",
     "en": "Do not confuse with Accipitriformes (hawks, eagles, buzzards), which lack the bill tooth, kill with their talons and have broader wings."
   },
+  "etymology": {
+    "es": "«Con forma de Falco», «halcón» en latín tardío, probablemente de origen germánico; la relación con falx, «hoz», por el pico y las garras curvos, suele considerarse etimología popular.",
+    "en": "'Shaped like Falco', Late Latin for 'falcon', probably of Germanic origin; the link with falx, 'sickle', for the curved bill and talons, is usually regarded as folk etymology."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Falconiformes",
@@ -37,6 +41,24 @@
     {
       "title": "Wikipedia (en): Falcon",
       "url": "https://en.wikipedia.org/wiki/Falcon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Falconiformes",
+      "url": "https://en.wiktionary.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: falco",
+      "url": "https://en.wiktionary.org/wiki/falco",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

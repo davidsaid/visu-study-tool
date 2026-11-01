@@ -21,6 +21,10 @@
     "es": "No confundir con las focas (Carnivora): los sirenios son herbívoros, nunca salen del agua, ni siquiera para parir, y carecen de patas traseras visibles.",
     "en": "Do not confuse with seals (Carnivora): sirenians are herbivores, never leave the water, not even to give birth, and have no visible hind limbs."
   },
+  "etymology": {
+    "es": "Por las sirenas de la mitología griega: manatíes y dugongos.",
+    "en": "Named after the sirens of Greek mythology: manatees and dugongs."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Sirenia",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Sirenia",
       "url": "https://es.wikipedia.org/wiki/Sirenia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sirenia",
+      "url": "https://en.wiktionary.org/wiki/Sirenia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -30,6 +30,10 @@
       "It can tie its body into a knot to strip off slime, escape tight spaces or gain leverage while feeding."
     ]
   },
+  "etymology": {
+    "es": "Myxine procede del griego myxa, «moco, baba»; glutinosa es latín, «viscosa, pegajosa»: ambos nombres aluden a la enorme cantidad de mucosidad que produce.",
+    "en": "Myxine comes from Greek myxa, 'mucus, slime'; glutinosa is Latin for 'sticky': both names refer to the copious slime it produces."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Myxine glutinosa",
@@ -41,6 +45,12 @@
       "title": "Wikipedia (EN): Myxine glutinosa",
       "url": "https://en.wikipedia.org/wiki/Myxine_glutinosa",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Myxinidae",
+      "url": "https://etyfish.org/myxinidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

@@ -23,6 +23,10 @@
     "es": "Recuerdan a las anguilas, pero no están emparentados con ellas; frente a todos los gnatóstomos, carecen de mandíbulas articuladas, dientes verdaderos y aletas pares.",
     "en": "They recall eels but are not related to them; unlike all gnathostomes, they lack hinged jaws, true teeth and paired fins."
   },
+  "etymology": {
+    "es": "Del griego kyklos, «círculo», y stoma, «boca»: «boca circular», la de los vertebrados vivos sin mandíbulas.",
+    "en": "From Greek kyklos, 'circle', and stoma, 'mouth': 'circular mouth', as in the jawless lampreys and hagfishes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Cyclostomi",
@@ -33,6 +37,12 @@
     {
       "title": "Wikipedia (es): Cyclostomi",
       "url": "https://es.wikipedia.org/wiki/Cyclostomi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Cyclostomata",
+      "url": "https://en.wiktionary.org/wiki/Cyclostomata",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

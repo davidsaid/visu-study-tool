@@ -21,6 +21,10 @@
     "es": "No confundir con las rayas (Batoidea): en ellas las pectorales están soldadas a la cabeza y las hendiduras branquiales se abren en la cara ventral. El angelote, aplanado, es un tiburón.",
     "en": "Do not confuse with rays (Batoidea), whose pectoral fins are fused to the head and whose gill slits open on the underside. The flattened angelshark is a shark."
   },
+  "etymology": {
+    "es": "Del griego selachos, «tiburón» o «pez cartilaginoso»: los tiburones.",
+    "en": "From Greek selachos, 'shark, cartilaginous fish': the sharks."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Shark",
@@ -37,6 +41,18 @@
     {
       "title": "Wikipedia (en): Batomorphi",
       "url": "https://en.wikipedia.org/wiki/Batomorphi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: σέλαχος",
+      "url": "https://en.wiktionary.org/wiki/%CF%83%CE%AD%CE%BB%CE%B1%CF%87%CE%BF%CF%82",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Selachimorpha",
+      "url": "https://en.wiktionary.org/wiki/Selachimorpha",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

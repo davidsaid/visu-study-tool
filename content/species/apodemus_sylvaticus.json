@@ -25,6 +25,10 @@
       "en": "The common vole is stockier, with a broad head, short barely visible ears and a short tail."
     }
   ],
+  "etymology": {
+    "es": "Apodemus viene del griego apódemos, «lejos de casa»; sylvaticus es latín, variante de silvaticus, «del bosque», de silva, «bosque».",
+    "en": "Apodemus is from Greek apodemos, 'away from home'; sylvaticus is Latin, a variant of silvaticus, 'of the woods', from silva, 'forest'."
+  },
   "sources": [
     {
       "title": "Apodemus sylvaticus — Wikipedia (es)",
@@ -41,6 +45,30 @@
     {
       "title": "Microtus arvalis — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Microtus_arvalis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Apodemus",
+      "url": "https://en.wiktionary.org/wiki/Apodemus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Apodemus",
+      "url": "https://en.wikipedia.org/wiki/Apodemus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: sylvaticus",
+      "url": "https://en.wiktionary.org/wiki/sylvaticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: silvaticus",
+      "url": "https://en.wiktionary.org/wiki/silvaticus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

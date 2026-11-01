@@ -25,6 +25,10 @@
       "It is the largest living marsupial."
     ]
   },
+  "etymology": {
+    "es": "Macropus viene del griego makrós, «largo», y poús, «pie»: «pie largo»; rufus es latín, «rojo».",
+    "en": "Macropus is from Greek makros, 'long', and pous, 'foot': 'long foot'; rufus is Latin for 'red'."
+  },
   "sources": [
     {
       "title": "Osphranter rufus — Wikipedia (es)",
@@ -35,6 +39,24 @@
     {
       "title": "Red kangaroo — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Red_kangaroo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Macropus",
+      "url": "https://en.wiktionary.org/wiki/Macropus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Macropus",
+      "url": "https://en.wikipedia.org/wiki/Macropus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: rufus",
+      "url": "https://en.wiktionary.org/wiki/rufus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

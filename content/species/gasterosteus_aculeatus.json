@@ -28,11 +28,21 @@
       "The male defends a territory, builds a nest and guards the eggs and fry."
     ]
   },
+  "etymology": {
+    "es": "Gasterosteus une el griego gaster, «vientre», y osteon, «hueso»: su pelvis ósea forma un escudo ventral; aculeatus es latín, «con espinas», por sus espinas dorsales y pélvicas.",
+    "en": "Gasterosteus joins Greek gaster, 'belly', and osteon, 'bone': its bony pelvis forms a belly shield; aculeatus is Latin for 'spined', for its dorsal and pelvic spines."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Three-spined stickleback",
       "url": "https://en.wikipedia.org/wiki/Three-spined_stickleback",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Gasterosteidae",
+      "url": "http://www.etyfish.org/perciformes16",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

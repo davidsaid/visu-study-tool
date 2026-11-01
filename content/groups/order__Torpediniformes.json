@@ -21,6 +21,10 @@
     "es": "No confundir con las rayas (Rajiformes), de hocico puntiagudo y cola fina, que nadan ondulando las pectorales; los torpedos nadan con la cola.",
     "en": "Do not confuse with skates (Rajiformes), with a pointed snout and slender tail, which swim by undulating their pectoral fins; electric rays swim with their tail."
   },
+  "etymology": {
+    "es": "«Con forma de Torpedo», el torpedo o tembladera; del latín torpere, «entumecerse», por el efecto de su descarga eléctrica. El arma naval tomó su nombre del pez.",
+    "en": "'Shaped like Torpedo', the electric ray; from Latin torpere, 'to be numb', for the effect of its electric shock. The naval weapon was named after the fish."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Electric ray",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Rajiformes",
       "url": "https://en.wikipedia.org/wiki/Rajiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Torpedo",
+      "url": "https://en.wiktionary.org/wiki/Torpedo",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

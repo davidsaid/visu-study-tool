@@ -21,6 +21,10 @@
     "es": "Por su forma se parecen mucho a los gobios y a los dragoncillos, que pertenecen a otros órdenes.",
     "en": "They look much like gobies and dragonets, which belong to other orders."
   },
+  "etymology": {
+    "es": "Del latín blennius, y este del griego blenna, «moco», por la capa mucosa que recubre a los blenios.",
+    "en": "From Latin blennius, from Greek blenna, 'mucus', for the slimy coating of blennies."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Blenniiformes",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Blennioidei",
       "url": "https://en.wikipedia.org/wiki/Blennioidei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: βλέννα",
+      "url": "https://en.wiktionary.org/wiki/%CE%B2%CE%BB%CE%AD%CE%BD%CE%BD%CE%B1",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

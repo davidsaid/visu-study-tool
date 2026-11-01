@@ -24,6 +24,10 @@
     "es": "Los machos suelen ser algo más pesados y tienen los cuernos más gruesos y de gancho más cerrado.",
     "en": "Males are usually slightly heavier, with thicker, more tightly hooked horns."
   },
+  "etymology": {
+    "es": "Rupicapra une el latín rupes, «risco», y capra, «cabra»: «cabra de los riscos»; pyrenaica significa «pirenaica».",
+    "en": "Rupicapra joins Latin rupes, 'cliff', and capra, 'goat': 'cliff goat'; pyrenaica means 'Pyrenean'."
+  },
   "sources": [
     {
       "title": "Rupicapra pyrenaica — Wikipedia (es)",
@@ -34,6 +38,18 @@
     {
       "title": "Pyrenean chamois — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Pyrenean_chamois",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Rupicapra",
+      "url": "https://en.wiktionary.org/wiki/Rupicapra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: pyrenaicus",
+      "url": "https://en.wiktionary.org/wiki/pyrenaicus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

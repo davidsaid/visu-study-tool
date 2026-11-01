@@ -26,6 +26,10 @@
     "es": "Los machos tienen la cabeza más ancha, el cuello más grueso y la cola más estrecha que las hembras.",
     "en": "Males have broader heads, thicker necks and narrower tails than females."
   },
+  "etymology": {
+    "es": "Meles meles repite el nombre: meles es latín, «tejón».",
+    "en": "Meles meles repeats the name: meles is Latin for 'badger'."
+  },
   "sources": [
     {
       "title": "Meles meles — Wikipedia (es)",
@@ -36,6 +40,12 @@
     {
       "title": "European badger — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/European_badger",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Meles",
+      "url": "https://en.wiktionary.org/wiki/Meles",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

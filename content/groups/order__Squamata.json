@@ -21,6 +21,10 @@
     "es": "Un lagarto sin patas como el lución no es una serpiente: la ausencia de patas ha aparecido varias veces de forma independiente dentro de los escamosos. Frente al tuátara, su grupo hermano, tienen cráneo cinético y hemipenes.",
     "en": "A legless lizard such as the slow worm is not a snake: limblessness arose several times independently within squamates. Unlike the tuatara, their sister group, they have a kinetic skull and hemipenes."
   },
+  "etymology": {
+    "es": "Del latín squamatus, «escamoso», de squama, «escama»: lagartos y serpientes.",
+    "en": "From Latin squamatus, 'scaly', from squama, 'scale': lizards and snakes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Squamata",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Squamata",
       "url": "https://es.wikipedia.org/wiki/Squamata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Squamata",
+      "url": "https://en.wiktionary.org/wiki/Squamata",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

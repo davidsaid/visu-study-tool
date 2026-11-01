@@ -18,6 +18,10 @@
     "es": "Los machos son más largos que las hembras, y solo el macho dominante luce cuerpo azul y cola amarilla.",
     "en": "Males are longer than females, and only the dominant male shows a blue body and yellow tail."
   },
+  "etymology": {
+    "es": "El nombre se repite: agama procede del sranan tongo de Surinam, donde significa «lagarto», y se remonta a las lenguas gbe de África occidental, en las que designaba al camaleón.",
+    "en": "The name repeats: agama comes from Sranan Tongo (Suriname), meaning 'lizard', and goes back to the West African Gbe languages, where it named the chameleon."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Agama agama",
@@ -28,6 +32,18 @@
     {
       "title": "Wikipedia (ES): Agama agama",
       "url": "https://es.wikipedia.org/wiki/Agama_agama",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Agama (lizard)",
+      "url": "https://en.wikipedia.org/wiki/Agama_(lizard)",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Agama",
+      "url": "https://en.wiktionary.org/wiki/Agama",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -22,6 +22,10 @@
       "en": "The Komodo dragon is much bigger and heavier, and adults are a uniform brown or reddish-grey without rosettes."
     }
   ],
+  "etymology": {
+    "es": "Varanus procede del árabe waral; niloticus es latín, «del Nilo».",
+    "en": "Varanus comes from Arabic waral; niloticus is Latin for 'of the Nile'."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Nile monitor",
@@ -38,6 +42,18 @@
     {
       "title": "Wikipedia (ES): Varanus komodoensis",
       "url": "https://es.wikipedia.org/wiki/Varanus_komodoensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Varanus",
+      "url": "https://en.wiktionary.org/wiki/Varanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: niloticus",
+      "url": "https://en.wiktionary.org/wiki/niloticus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

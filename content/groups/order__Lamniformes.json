@@ -23,6 +23,10 @@
     "es": "No confundir con los carcarriniformes (tintorera, pez martillo, pintarroja), que también tienen cinco hendiduras y aleta anal pero sí poseen membrana nictitante en el ojo.",
     "en": "Do not confuse with ground sharks (Carcharhiniformes: blue shark, hammerhead, catshark), which also have five gill slits and an anal fin but do have a nictitating membrane over the eye."
   },
+  "etymology": {
+    "es": "«Con forma de Lamna»: del griego lamna, un pez voraz o tiburón.",
+    "en": "'Shaped like Lamna': from Greek lamna, a voracious fish or shark."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Lamniformes",
@@ -39,6 +43,18 @@
     {
       "title": "Wikipedia (en): Carcharhiniformes",
       "url": "https://en.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Lamnidae",
+      "url": "https://etyfish.org/lamnidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

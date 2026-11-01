@@ -21,6 +21,10 @@
     "es": "Los loros también son zigodáctilos, pero tienen un pico corto y muy ganchudo.",
     "en": "Parrots are also zygodactyl, but have a short, strongly hooked bill."
   },
+  "etymology": {
+    "es": "«Con forma de Picus», el pito o pájaro carpintero; picus es la palabra latina para «pájaro carpintero».",
+    "en": "'Shaped like Picus'; picus is the Latin word for 'woodpecker'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Piciformes",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Parrot",
       "url": "https://en.wikipedia.org/wiki/Parrot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Picus",
+      "url": "https://en.wiktionary.org/wiki/Picus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

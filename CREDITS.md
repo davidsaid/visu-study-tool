@@ -44,6 +44,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Alouatta palliata — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Alouatta_palliata> | 2026-11-01 |
 | Alpine marmot — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Alpine_marmot> | 2026-11-01 |
 | American pika — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/American_pika> | 2026-11-01 |
+| AmphibiaWeb: Rhinodermatidae | All rights reserved (cited) | <https://amphibiaweb.org/lists/Rhinodermatidae.shtml> | 2026-11-01 |
 | Antilocapra americana — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Antilocapra_americana> | 2026-11-01 |
 | Apodemus sylvaticus — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Apodemus_sylvaticus> | 2026-11-01 |
 | Asian elephant — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Asian_elephant> | 2026-11-01 |
@@ -84,6 +85,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Dasypus novemcinctus — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Dasypus_novemcinctus> | 2026-11-01 |
 | Daubentonia madagascariensis — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Daubentonia_madagascariensis> | 2026-11-01 |
 | Diceros bicornis — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Diceros_bicornis> | 2026-11-01 |
+| Dictionary.com (Collins English Dictionary): pipa | All rights reserved (cited) | <https://www.dictionary.com/browse/pipa> | 2026-11-01 |
 | Didelphis marsupialis — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Didelphis_marsupialis> | 2026-11-01 |
 | Dolichotis patagonum — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Dolichotis_patagonum> | 2026-11-01 |
 | Dorcas gazelle — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Dorcas_gazelle> | 2026-11-01 |
@@ -157,7 +159,17 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Martes foina — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Martes_foina> | 2026-11-01 |
 | Megaptera novaeangliae — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Megaptera_novaeangliae> | 2026-11-01 |
 | Meles meles — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Meles_meles> | 2026-11-01 |
+| Merriam-Webster: Hyperoartia | All rights reserved (cited) | <https://www.merriam-webster.com/dictionary/Hyperoartia> | 2026-11-01 |
+| Merriam-Webster: tarentola | All rights reserved (cited) | <https://www.merriam-webster.com/dictionary/tarentola> | 2026-11-01 |
 | Microtus arvalis — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Microtus_arvalis> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Blanus cinereus | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/blanus-cinereus/?lang=en> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Caretta caretta | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/caretta-caretta/?lang=en> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Chamaeleo chamaeleon | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/chamaeleo-chamaeleon/?lang=en> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Laticauda colubrina | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/laticauda-colubrina/?lang=en> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Malpolon monspessulanus | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/malpolon-monspessulanus/?lang=en> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Podarcis muralis | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/podarcis-muralis/?lang=en> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Psammodromus algirus | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/psammodromus-algirus/?lang=en> | 2026-11-01 |
+| Monaco Nature Encyclopedia: Varanus komodoensis | All rights reserved (cited) | <https://www.monaconatureencyclopedia.com/varanus-komodoensis/?lang=en> | 2026-11-01 |
 | Moose — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Moose> | 2026-11-01 |
 | Mouflon — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Mouflon> | 2026-11-01 |
 | Mountain tapir — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Mountain_tapir> | 2026-11-01 |
@@ -188,6 +200,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Petaurus breviceps — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Petaurus_breviceps> | 2026-11-01 |
 | Phascolarctos cinereus — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Phascolarctos_cinereus> | 2026-11-01 |
 | Philippine flying lemur — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Philippine_flying_lemur> | 2026-11-01 |
+| Phillipskop Mountain Reserve: Little Elephants (Elephantulus edwardii) | All rights reserved (cited) | <https://www.phillipskop.co.za/fauna/elephantulus-edwardii/> | 2026-11-01 |
 | Phoca vitulina — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Phoca_vitulina> | 2026-11-01 |
 | Physeter macrocephalus — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Physeter_macrocephalus> | 2026-11-01 |
 | Pipistrellus pipistrellus — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Pipistrellus_pipistrellus> | 2026-11-01 |
@@ -219,7 +232,11 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Rupicapra pyrenaica — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Rupicapra_pyrenaica> | 2026-11-01 |
 | Saiga antelope — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Saiga_antelope> | 2026-11-01 |
 | Saiga tatarica — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Saiga_tatarica> | 2026-11-01 |
+| San Diego Zoo Wildlife Alliance Library: Forest Buffalo, Taxonomy | All rights reserved (cited) | <https://ielc.libguides.com/sdzg/factsheets/forestbuffalo/taxonomy> | 2026-11-01 |
+| San Diego Zoo Wildlife Alliance Library: Hamadryas Baboon, Taxonomy | All rights reserved (cited) | <https://ielc.libguides.com/sdzg/factsheets/hamadryasbaboon/taxonomy> | 2026-11-01 |
+| San Diego Zoo Wildlife Alliance Library: Patas Monkey, Taxonomy & History | All rights reserved (cited) | <https://ielc.libguides.com/sdzg/factsheets/patasmonkey/taxonomy-history> | 2026-11-01 |
 | Sarcophilus harrisii — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Sarcophilus_harrisii> | 2026-11-01 |
+| Scharpf, C. (2019) The mystery of Morone: solved at last? American Currents 44(1) | All rights reserved (cited) | <https://etyfish.org/Scharpf-Morone.pdf> | 2026-11-01 |
 | Sciurus vulgaris — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Sciurus_vulgaris> | 2026-11-01 |
 | Senegal bushbaby — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Senegal_bushbaby> | 2026-11-01 |
 | Short-beaked echidna — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Short-beaked_echidna> | 2026-11-01 |
@@ -242,6 +259,61 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Tarsius tarsier — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Tarsius_tarsier> | 2026-11-01 |
 | Tarsius — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Tarsius> | 2026-11-01 |
 | Tasmanian devil — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Tasmanian_devil> | 2026-11-01 |
+| The ETYFish Project: Acipenseridae | All rights reserved (cited) | <https://etyfish.org/acipenseridae> | 2026-11-01 |
+| The ETYFish Project: Acipenseridae | All rights reserved (cited) | <https://etyfish.org/acipenseridae/> | 2026-11-01 |
+| The ETYFish Project: Alosidae | All rights reserved (cited) | <http://etyfish.org/alosidae> | 2026-11-01 |
+| The ETYFish Project: Amiidae | All rights reserved (cited) | <https://etyfish.org/amiidae> | 2026-11-01 |
+| The ETYFish Project: Amiidae | All rights reserved (cited) | <https://etyfish.org/amiidae/> | 2026-11-01 |
+| The ETYFish Project: Anguillidae | All rights reserved (cited) | <https://etyfish.org/anguillidae> | 2026-11-01 |
+| The ETYFish Project: Anguillidae | All rights reserved (cited) | <https://etyfish.org/anguillidae/> | 2026-11-01 |
+| The ETYFish Project: Arapaimidae | All rights reserved (cited) | <https://etyfish.org/arapaimidae> | 2026-11-01 |
+| The ETYFish Project: Barbinae | All rights reserved (cited) | <https://etyfish.org/barbinae> | 2026-11-01 |
+| The ETYFish Project: Carangidae | All rights reserved (cited) | <https://etyfish.org/carangiformes1> | 2026-11-01 |
+| The ETYFish Project: Carangiformes (part 1) | All rights reserved (cited) | <https://etyfish.org/carangiformes1/> | 2026-11-01 |
+| The ETYFish Project: Carcharhinidae | All rights reserved (cited) | <https://etyfish.org/carcharhinidae> | 2026-11-01 |
+| The ETYFish Project: Carcharhinidae | All rights reserved (cited) | <https://etyfish.org/carcharhinidae/> | 2026-11-01 |
+| The ETYFish Project: Characinae | All rights reserved (cited) | <https://etyfish.org/characinae/> | 2026-11-01 |
+| The ETYFish Project: Chimaeridae | All rights reserved (cited) | <https://etyfish.org/chimaeridae> | 2026-11-01 |
+| The ETYFish Project: Chimaeridae | All rights reserved (cited) | <https://etyfish.org/chimaeridae/> | 2026-11-01 |
+| The ETYFish Project: Clupeidae | All rights reserved (cited) | <https://etyfish.org/clupeidae/> | 2026-11-01 |
+| The ETYFish Project: Congridae | All rights reserved (cited) | <https://etyfish.org/congridae> | 2026-11-01 |
+| The ETYFish Project: Cyprininae | All rights reserved (cited) | <https://etyfish.org/cyprininae> | 2026-11-01 |
+| The ETYFish Project: Cyprininae | All rights reserved (cited) | <https://etyfish.org/cyprininae/> | 2026-11-01 |
+| The ETYFish Project: Cyprinodontiformes (part 1) | All rights reserved (cited) | <https://etyfish.org/cyprinodontiformes1/> | 2026-11-01 |
+| The ETYFish Project: Dasyatidae | All rights reserved (cited) | <https://etyfish.org/dasyatidae> | 2026-11-01 |
+| The ETYFish Project: Electrophoridae | All rights reserved (cited) | <https://etyfish.org/?p=29558> | 2026-11-01 |
+| The ETYFish Project: Epinephelidae | All rights reserved (cited) | <https://etyfish.org/perciformes5> | 2026-11-01 |
+| The ETYFish Project: Esocidae | All rights reserved (cited) | <https://etyfish.org/esocidae/> | 2026-11-01 |
+| The ETYFish Project: Gadidae | All rights reserved (cited) | <https://etyfish.org/gadidae> | 2026-11-01 |
+| The ETYFish Project: Gadidae | All rights reserved (cited) | <https://etyfish.org/gadidae/> | 2026-11-01 |
+| The ETYFish Project: Gasterosteidae | All rights reserved (cited) | <http://www.etyfish.org/perciformes16> | 2026-11-01 |
+| The ETYFish Project: Gymnotidae | All rights reserved (cited) | <https://etyfish.org/gymnotidae/> | 2026-11-01 |
+| The ETYFish Project: Hexanchidae | All rights reserved (cited) | <https://etyfish.org/hexanchidae> | 2026-11-01 |
+| The ETYFish Project: Hexanchidae | All rights reserved (cited) | <https://etyfish.org/hexanchidae/> | 2026-11-01 |
+| The ETYFish Project: Lamnidae | All rights reserved (cited) | <https://etyfish.org/lamnidae/> | 2026-11-01 |
+| The ETYFish Project: Lepidosirenidae | All rights reserved (cited) | <https://etyfish.org/lepidosirenidae> | 2026-11-01 |
+| The ETYFish Project: Lepisosteidae | All rights reserved (cited) | <https://etyfish.org/lepisosteidae/> | 2026-11-01 |
+| The ETYFish Project: Merlucciidae | All rights reserved (cited) | <https://etyfish.org/merlucciidae> | 2026-11-01 |
+| The ETYFish Project: Mobulidae | All rights reserved (cited) | <https://etyfish.org/mobulidae> | 2026-11-01 |
+| The ETYFish Project: Mullidae | All rights reserved (cited) | <https://etyfish.org/syngnathiformes2> | 2026-11-01 |
+| The ETYFish Project: Muraenidae | All rights reserved (cited) | <https://etyfish.org/muraenidae> | 2026-11-01 |
+| The ETYFish Project: Myliobatidae | All rights reserved (cited) | <https://etyfish.org/myliobatidae> | 2026-11-01 |
+| The ETYFish Project: Myxinidae | All rights reserved (cited) | <https://etyfish.org/myxinidae> | 2026-11-01 |
+| The ETYFish Project: Neoceratodontidae | All rights reserved (cited) | <https://etyfish.org/neoceratodontidae/> | 2026-11-01 |
+| The ETYFish Project: Orectolobidae (Orectolobus) | All rights reserved (cited) | <https://etyfish.org/orectolobidae> | 2026-11-01 |
+| The ETYFish Project: Osteoglossidae (Osteoglossum) | All rights reserved (cited) | <https://etyfish.org/osteoglossidae> | 2026-11-01 |
+| The ETYFish Project: Perciformes (part 16) | All rights reserved (cited) | <https://etyfish.org/perciformes16/> | 2026-11-01 |
+| The ETYFish Project: Petromyzontidae | All rights reserved (cited) | <https://etyfish.org/petromyzontidae> | 2026-11-01 |
+| The ETYFish Project: Rajidae | All rights reserved (cited) | <https://etyfish.org/rajidae> | 2026-11-01 |
+| The ETYFish Project: Rhinobatidae | All rights reserved (cited) | <https://etyfish.org/rhinobatidae> | 2026-11-01 |
+| The ETYFish Project: Scombridae | All rights reserved (cited) | <https://etyfish.org/scombriformes1> | 2026-11-01 |
+| The ETYFish Project: Scophthalmidae | All rights reserved (cited) | <https://etyfish.org/carangiformes2> | 2026-11-01 |
+| The ETYFish Project: Scyliorhinidae | All rights reserved (cited) | <https://etyfish.org/scyliorhinidae> | 2026-11-01 |
+| The ETYFish Project: Serrasalmidae | All rights reserved (cited) | <https://etyfish.org/serrasalmidae> | 2026-11-01 |
+| The ETYFish Project: Siluridae | All rights reserved (cited) | <https://etyfish.org/siluridae> | 2026-11-01 |
+| The ETYFish Project: Soleidae | All rights reserved (cited) | <https://etyfish.org/carangiformes4> | 2026-11-01 |
+| The ETYFish Project: Squatinidae (Squatina) | All rights reserved (cited) | <https://etyfish.org/squatinidae> | 2026-11-01 |
+| The ETYFish Project: Syngnathidae | All rights reserved (cited) | <https://etyfish.org/syngnathiformes1> | 2026-11-01 |
 | Thylacine — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Thylacine> | 2026-11-01 |
 | Thylacinus cynocephalus — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Thylacinus_cynocephalus> | 2026-11-01 |
 | Tibetan antelope — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Tibetan_antelope> | 2026-11-01 |
@@ -250,12 +322,18 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Ursus arctos — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Ursus_arctos> | 2026-11-01 |
 | Vulpes vulpes — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Vulpes_vulpes> | 2026-11-01 |
 | West Indian manatee — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/West_Indian_manatee> | 2026-11-01 |
+| Wikipedia (EN): Acipenser | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Acipenser> | 2026-11-01 |
+| Wikipedia (EN): Agama (lizard) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Agama_(lizard)> | 2026-11-01 |
 | Wikipedia (EN): Agama agama | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Agama_agama> | 2026-11-01 |
 | Wikipedia (EN): Albacore | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Albacore> | 2026-11-01 |
 | Wikipedia (EN): Alligator snapping turtle | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Alligator_snapping_turtle> | 2026-11-01 |
 | Wikipedia (EN): American alligator | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/American_alligator> | 2026-11-01 |
 | Wikipedia (EN): American paddlefish | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/American_paddlefish> | 2026-11-01 |
+| Wikipedia (EN): Andrias | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Andrias> | 2026-11-01 |
+| Wikipedia (EN): Anguis | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Anguis> | 2026-11-01 |
+| Wikipedia (EN): Apodemus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Apodemus> | 2026-11-01 |
 | Wikipedia (EN): Arapaima gigas | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Arapaima_gigas> | 2026-11-01 |
+| Wikipedia (EN): Armand David | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Armand_David> | 2026-11-01 |
 | Wikipedia (EN): Atlantic bluefin tuna | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna> | 2026-11-01 |
 | Wikipedia (EN): Atlantic cod | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Atlantic_cod> | 2026-11-01 |
 | Wikipedia (EN): Atlantic horse mackerel | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Atlantic_horse_mackerel> | 2026-11-01 |
@@ -273,12 +351,18 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): Blue shark | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Blue_shark> | 2026-11-01 |
 | Wikipedia (EN): Blue skate | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Blue_skate> | 2026-11-01 |
 | Wikipedia (EN): Bluntnose sixgill shark | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Bluntnose_sixgill_shark> | 2026-11-01 |
+| Wikipedia (EN): Booby | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Booby> | 2026-11-01 |
 | Wikipedia (EN): Bosca's newt | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Bosca's_newt> | 2026-11-01 |
 | Wikipedia (EN): Bowfin | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Bowfin> | 2026-11-01 |
 | Wikipedia (EN): Brown trout | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Brown_trout> | 2026-11-01 |
+| Wikipedia (EN): Buceros | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Buceros> | 2026-11-01 |
+| Wikipedia (EN): Caprimulgus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Caprimulgus> | 2026-11-01 |
+| Wikipedia (EN): Ceratodus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Ceratodus> | 2026-11-01 |
 | Wikipedia (EN): Chalcides bedriagai | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Chalcides_bedriagai> | 2026-11-01 |
 | Wikipedia (EN): Chinese giant salamander | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Chinese_giant_salamander> | 2026-11-01 |
 | Wikipedia (EN): Cinereous vulture | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Cinereous_vulture> | 2026-11-01 |
+| Wikipedia (EN): Clarke Abel | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Clarke_Abel> | 2026-11-01 |
+| Wikipedia (EN): Columba (genus) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Columba_%28genus%29> | 2026-11-01 |
 | Wikipedia (EN): Common Surinam toad | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Common_Surinam_toad> | 2026-11-01 |
 | Wikipedia (EN): Common blackbird | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Common_blackbird> | 2026-11-01 |
 | Wikipedia (EN): Common buzzard | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Common_buzzard> | 2026-11-01 |
@@ -301,14 +385,20 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): Common thresher | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Common_thresher> | 2026-11-01 |
 | Wikipedia (EN): Common torpedo | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Common_torpedo> | 2026-11-01 |
 | Wikipedia (EN): Common wood pigeon | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Common_wood_pigeon> | 2026-11-01 |
+| Wikipedia (EN): Crocidura | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Crocidura> | 2026-11-01 |
+| Wikipedia (EN): Darwin's frog | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Darwin%27s_frog> | 2026-11-01 |
 | Wikipedia (EN): Darwin's frog | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Darwin's_frog> | 2026-11-01 |
 | Wikipedia (EN): Devil fish | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Devil_fish> | 2026-11-01 |
+| Wikipedia (EN): Dolichotis | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Dolichotis> | 2026-11-01 |
 | Wikipedia (EN): Dwarf seahorse | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Dwarf_seahorse> | 2026-11-01 |
 | Wikipedia (EN): Dyeing poison dart frog | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Dyeing_poison_dart_frog> | 2026-11-01 |
 | Wikipedia (EN): Egyptian vulture | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Egyptian_vulture> | 2026-11-01 |
 | Wikipedia (EN): Electrophorus electricus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Electrophorus_electricus> | 2026-11-01 |
+| Wikipedia (EN): Eliomys | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Eliomys> | 2026-11-01 |
 | Wikipedia (EN): Emperor penguin | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Emperor_penguin> | 2026-11-01 |
 | Wikipedia (EN): Epinephelus marginatus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Epinephelus_marginatus> | 2026-11-01 |
+| Wikipedia (EN): Esox | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Esox> | 2026-11-01 |
+| Wikipedia (EN): Eunectes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Eunectes> | 2026-11-01 |
 | Wikipedia (EN): Eurasian blackcap | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Eurasian_blackcap> | 2026-11-01 |
 | Wikipedia (EN): Eurasian chaffinch | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Eurasian_chaffinch> | 2026-11-01 |
 | Wikipedia (EN): Eurasian coot | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Eurasian_coot> | 2026-11-01 |
@@ -336,13 +426,16 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): Fire salamander | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Fire_salamander> | 2026-11-01 |
 | Wikipedia (EN): Freshwater blenny | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Freshwater_blenny> | 2026-11-01 |
 | Wikipedia (EN): Galápagos tortoise | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Gal%C3%A1pagos_tortoise> | 2026-11-01 |
+| Wikipedia (EN): Genet (animal) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Genet_(animal)> | 2026-11-01 |
 | Wikipedia (EN): Gharial | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Gharial> | 2026-11-01 |
 | Wikipedia (EN): Gila monster | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Gila_monster> | 2026-11-01 |
 | Wikipedia (EN): Gilt-head bream | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Gilt-head_bream> | 2026-11-01 |
 | Wikipedia (EN): Gold-striped salamander | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Gold-striped_salamander> | 2026-11-01 |
 | Wikipedia (EN): Golden eagle | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Golden_eagle> | 2026-11-01 |
 | Wikipedia (EN): Goldfish | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Goldfish> | 2026-11-01 |
+| Wikipedia (EN): Gorilla | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Gorilla> | 2026-11-01 |
 | Wikipedia (EN): Grass snake | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Grass_snake> | 2026-11-01 |
+| Wikipedia (EN): Gray slender loris | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Loris_lydekkerianus> | 2026-11-01 |
 | Wikipedia (EN): Great bustard | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Great_bustard> | 2026-11-01 |
 | Wikipedia (EN): Great cormorant | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Great_cormorant> | 2026-11-01 |
 | Wikipedia (EN): Great crested grebe | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Great_crested_grebe> | 2026-11-01 |
@@ -351,6 +444,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): Great white pelican | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Great_white_pelican> | 2026-11-01 |
 | Wikipedia (EN): Great white shark | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Great_white_shark> | 2026-11-01 |
 | Wikipedia (EN): Greater flamingo | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Greater_flamingo> | 2026-11-01 |
+| Wikipedia (EN): Greater horseshoe bat | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Rhinolophus_ferrumequinum> | 2026-11-01 |
 | Wikipedia (EN): Greater rhea | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Greater_rhea> | 2026-11-01 |
 | Wikipedia (EN): Greek tortoise | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Greek_tortoise> | 2026-11-01 |
 | Wikipedia (EN): Green anaconda | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Green_anaconda> | 2026-11-01 |
@@ -359,11 +453,14 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): Grey parrot | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Grey_parrot> | 2026-11-01 |
 | Wikipedia (EN): Grey partridge | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Grey_partridge> | 2026-11-01 |
 | Wikipedia (EN): Greylag goose | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Greylag_goose> | 2026-11-01 |
+| Wikipedia (EN): Guanaco | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Lama_guanicoe> | 2026-11-01 |
 | Wikipedia (EN): Guppy | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Guppy> | 2026-11-01 |
+| Wikipedia (EN): Harry Johnston | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Harry_Johnston> | 2026-11-01 |
 | Wikipedia (EN): Hoatzin | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Hoatzin> | 2026-11-01 |
 | Wikipedia (EN): Hoopoe | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Hoopoe> | 2026-11-01 |
 | Wikipedia (EN): House sparrow | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/House_sparrow> | 2026-11-01 |
 | Wikipedia (EN): Hyla molleri | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Hyla_molleri> | 2026-11-01 |
+| Wikipedia (EN): Hylobates | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Hylobates> | 2026-11-01 |
 | Wikipedia (EN): Iberian barbel | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Iberian_barbel> | 2026-11-01 |
 | Wikipedia (EN): Iberian frog | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Iberian_frog> | 2026-11-01 |
 | Wikipedia (EN): Iberian green woodpecker | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Iberian_green_woodpecker> | 2026-11-01 |
@@ -373,52 +470,75 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): Iberian pond turtle | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Iberian_pond_turtle> | 2026-11-01 |
 | Wikipedia (EN): Iberian ribbed newt | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Iberian_ribbed_newt> | 2026-11-01 |
 | Wikipedia (EN): Iberian worm lizard | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Iberian_worm_lizard> | 2026-11-01 |
+| Wikipedia (EN): Ichthyophis | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Ichthyophis> | 2026-11-01 |
 | Wikipedia (EN): Ichthyophis glutinosus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Ichthyophis_glutinosus> | 2026-11-01 |
 | Wikipedia (EN): Indian cobra | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Indian_cobra> | 2026-11-01 |
+| Wikipedia (EN): Indian pangolin | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Manis_crassicaudata> | 2026-11-01 |
 | Wikipedia (EN): Indian softshell turtle | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Indian_softshell_turtle> | 2026-11-01 |
+| Wikipedia (EN): Joseph Waltl | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Joseph_Waltl> | 2026-11-01 |
+| Wikipedia (EN): Kiwi (bird) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Kiwi_%28bird%29> | 2026-11-01 |
 | Wikipedia (EN): Komodo dragon | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Komodo_dragon> | 2026-11-01 |
 | Wikipedia (EN): Ladder snake | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Ladder_snake> | 2026-11-01 |
 | Wikipedia (EN): Leatherback sea turtle | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Leatherback_sea_turtle> | 2026-11-01 |
+| Wikipedia (EN): Lepisosteus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Lepisosteus> | 2026-11-01 |
 | Wikipedia (EN): Lesser black-backed gull | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Lesser_black-backed_gull> | 2026-11-01 |
+| Wikipedia (EN): Lipotyphla | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Lipotyphla> | 2026-11-01 |
 | Wikipedia (EN): Little egret | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Little_egret> | 2026-11-01 |
 | Wikipedia (EN): Little owl | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Little_owl> | 2026-11-01 |
 | Wikipedia (EN): Loggerhead sea turtle | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Loggerhead_sea_turtle> | 2026-11-01 |
 | Wikipedia (EN): Longnose gar | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Longnose_gar> | 2026-11-01 |
+| Wikipedia (EN): Lophius | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Lophius> | 2026-11-01 |
 | Wikipedia (EN): Lophius piscatorius | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Lophius_piscatorius> | 2026-11-01 |
+| Wikipedia (EN): Loxodonta | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Loxodonta> | 2026-11-01 |
+| Wikipedia (EN): Macropus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Macropus> | 2026-11-01 |
 | Wikipedia (EN): Mallard | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Mallard> | 2026-11-01 |
 | Wikipedia (EN): Malpolon monspessulanus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Malpolon_monspessulanus> | 2026-11-01 |
 | Wikipedia (EN): Marine iguana | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Marine_iguana> | 2026-11-01 |
+| Wikipedia (EN): Marmota | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Marmota> | 2026-11-01 |
 | Wikipedia (EN): Mediterranean moray | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Mediterranean_moray> | 2026-11-01 |
 | Wikipedia (EN): Merluccius merluccius | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Merluccius_merluccius> | 2026-11-01 |
+| Wikipedia (EN): Microtus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Microtus> | 2026-11-01 |
 | Wikipedia (EN): Monk parakeet | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Monk_parakeet> | 2026-11-01 |
+| Wikipedia (EN): Morone | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Morone> | 2026-11-01 |
 | Wikipedia (EN): Mosquitofish | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Mosquitofish> | 2026-11-01 |
 | Wikipedia (EN): Mullus barbatus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Mullus_barbatus> | 2026-11-01 |
 | Wikipedia (EN): Myxine glutinosa | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Myxine_glutinosa> | 2026-11-01 |
+| Wikipedia (EN): Natrix | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Natrix> | 2026-11-01 |
 | Wikipedia (EN): Natrix astreptophora | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Natrix_astreptophora> | 2026-11-01 |
 | Wikipedia (EN): Natterjack toad | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Natterjack_toad> | 2026-11-01 |
 | Wikipedia (EN): Neon tetra | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Neon_tetra> | 2026-11-01 |
 | Wikipedia (EN): Nile crocodile | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Nile_crocodile> | 2026-11-01 |
 | Wikipedia (EN): Nile monitor | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Nile_monitor> | 2026-11-01 |
+| Wikipedia (EN): Nilssonia (turtle) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Nilssonia_(turtle)> | 2026-11-01 |
 | Wikipedia (EN): Northern lapwing | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Northern_lapwing> | 2026-11-01 |
 | Wikipedia (EN): Northern pike | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Northern_pike> | 2026-11-01 |
 | Wikipedia (EN): Ocellated lizard | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Ocellated_lizard> | 2026-11-01 |
 | Wikipedia (EN): Oilbird | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Oilbird> | 2026-11-01 |
+| Wikipedia (EN): Okapi | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Okapia_johnstoni> | 2026-11-01 |
 | Wikipedia (EN): Olm | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Olm> | 2026-11-01 |
 | Wikipedia (EN): Palmate newt | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Palmate_newt> | 2026-11-01 |
 | Wikipedia (EN): Peregrine falcon | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Peregrine_falcon> | 2026-11-01 |
 | Wikipedia (EN): Perez's frog | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Perez's_frog> | 2026-11-01 |
 | Wikipedia (EN): Pied avocet | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Pied_avocet> | 2026-11-01 |
+| Wikipedia (EN): Pleuronectidae | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Pleuronectidae> | 2026-11-01 |
 | Wikipedia (EN): Podarcis muralis | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Podarcis_muralis> | 2026-11-01 |
 | Wikipedia (EN): Polypterus bichir | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Polypterus_bichir> | 2026-11-01 |
 | Wikipedia (EN): Psammodromus algirus | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Psammodromus_algirus> | 2026-11-01 |
 | Wikipedia (EN): Pyrenean brook salamander | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Pyrenean_brook_salamander> | 2026-11-01 |
+| Wikipedia (EN): Quoll | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Quoll> | 2026-11-01 |
 | Wikipedia (EN): Rabbit fish | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Rabbit_fish> | 2026-11-01 |
 | Wikipedia (EN): Red kite | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Red_kite> | 2026-11-01 |
 | Wikipedia (EN): Red-legged partridge | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Red-legged_partridge> | 2026-11-01 |
 | Wikipedia (EN): Redeye piranha | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Redeye_piranha> | 2026-11-01 |
+| Wikipedia (EN): Richard Lydekker | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Richard_Lydekker> | 2026-11-01 |
+| Wikipedia (EN): Robert von Beringe | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Robert_von_Beringe> | 2026-11-01 |
 | Wikipedia (EN): Rose-ringed parakeet | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Rose-ringed_parakeet> | 2026-11-01 |
+| Wikipedia (EN): Rough-toothed dolphin | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Steno_(genus)> | 2026-11-01 |
+| Wikipedia (EN): Saiga antelope | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Saiga_tatarica> | 2026-11-01 |
+| Wikipedia (EN): Salientia | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Salientia> | 2026-11-01 |
 | Wikipedia (EN): Sand tiger shark | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Sand_tiger_shark> | 2026-11-01 |
 | Wikipedia (EN): Scarlet macaw | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Scarlet_macaw> | 2026-11-01 |
+| Wikipedia (EN): Scorpaena | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Scorpaena> | 2026-11-01 |
 | Wikipedia (EN): Scorpaena scrofa | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Scorpaena_scrofa> | 2026-11-01 |
 | Wikipedia (EN): Sea lamprey | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Sea_lamprey> | 2026-11-01 |
 | Wikipedia (EN): Shortfin mako shark | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Shortfin_mako_shark> | 2026-11-01 |
@@ -434,6 +554,8 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): Spotless starling | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Spotless_starling> | 2026-11-01 |
 | Wikipedia (EN): Spotted nothura | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Spotted_nothura> | 2026-11-01 |
 | Wikipedia (EN): Squatina squatina | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Squatina_squatina> | 2026-11-01 |
+| Wikipedia (EN): Stenella | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Stenella> | 2026-11-01 |
+| Wikipedia (EN): Sven Nilsson | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Sven_Nilsson> | 2026-11-01 |
 | Wikipedia (EN): Tarentola mauritanica | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Tarentola_mauritanica> | 2026-11-01 |
 | Wikipedia (EN): Tawny owl | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Tawny_owl> | 2026-11-01 |
 | Wikipedia (EN): Three-spined stickleback | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Three-spined_stickleback> | 2026-11-01 |
@@ -450,6 +572,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (EN): White stork | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/White_stork> | 2026-11-01 |
 | Wikipedia (EN): White wagtail | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/White_wagtail> | 2026-11-01 |
 | Wikipedia (EN): Yellow-lipped sea krait | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Yellow-lipped_sea_krait> | 2026-11-01 |
+| Wikipedia (EN): Zamenis | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Zamenis> | 2026-11-01 |
 | Wikipedia (ES): Accipiter nisus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Accipiter_nisus> | 2026-11-01 |
 | Wikipedia (ES): Acipenser sturio | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Acipenser_sturio> | 2026-11-01 |
 | Wikipedia (ES): Aegypius monachus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Aegypius_monachus> | 2026-11-01 |
@@ -464,6 +587,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (ES): Ambystoma mexicanum | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Ambystoma_mexicanum> | 2026-11-01 |
 | Wikipedia (ES): Amia calva | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Amia_calva> | 2026-11-01 |
 | Wikipedia (ES): Anas platyrhynchos | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Anas_platyrhynchos> | 2026-11-01 |
+| Wikipedia (ES): Andrias | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Andrias> | 2026-11-01 |
 | Wikipedia (ES): Andrias davidianus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Andrias_davidianus> | 2026-11-01 |
 | Wikipedia (ES): Anguilla anguilla | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Anguilla_anguilla> | 2026-11-01 |
 | Wikipedia (ES): Anguis fragilis | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Anguis_fragilis> | 2026-11-01 |
@@ -552,6 +676,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (ES): Luciobarbus comizo | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Luciobarbus_comizo> | 2026-11-01 |
 | Wikipedia (ES): Macrochelys temminckii | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Macrochelys_temminckii> | 2026-11-01 |
 | Wikipedia (ES): Malpolon monspessulanus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Malpolon_monspessulanus> | 2026-11-01 |
+| Wikipedia (ES): Marmota | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Marmota> | 2026-11-01 |
 | Wikipedia (ES): Mauremys leprosa | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Mauremys_leprosa> | 2026-11-01 |
 | Wikipedia (ES): Mellisuga helenae | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Mellisuga_helenae> | 2026-11-01 |
 | Wikipedia (ES): Merluccius merluccius | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Merluccius_merluccius> | 2026-11-01 |
@@ -595,6 +720,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (ES): Podiceps cristatus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Podiceps_cristatus> | 2026-11-01 |
 | Wikipedia (ES): Poecilia reticulata | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Poecilia_reticulata> | 2026-11-01 |
 | Wikipedia (ES): Polyodon spathula | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Polyodon_spathula> | 2026-11-01 |
+| Wikipedia (ES): Polypterus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Polypterus> | 2026-11-01 |
 | Wikipedia (ES): Polypterus bichir | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Polypterus_bichir> | 2026-11-01 |
 | Wikipedia (ES): Prionace glauca | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Prionace_glauca> | 2026-11-01 |
 | Wikipedia (ES): Proteus anguinus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Proteus_anguinus> | 2026-11-01 |
@@ -649,6 +775,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (ES): Varanus niloticus | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Varanus_niloticus> | 2026-11-01 |
 | Wikipedia (ES): Vipera latastei | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Vipera_latastei> | 2026-11-01 |
 | Wikipedia (ES): Zamenis scalaris | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Zamenis_scalaris> | 2026-11-01 |
+| Wikipedia (PL): Pleurodeles | CC BY-SA 4.0 | <https://pl.wikipedia.org/wiki/Pleurodeles> | 2026-11-01 |
 | Wikipedia (en): Accipitriformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Accipitriformes> | 2026-11-01 |
 | Wikipedia (en): Acipenseriformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Acipenseriformes> | 2026-11-01 |
 | Wikipedia (en): Actinopterygii | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Actinopterygii> | 2026-11-01 |
@@ -768,6 +895,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (en): Primate | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Primate> | 2026-11-01 |
 | Wikipedia (en): Proboscidea | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Proboscidea> | 2026-11-01 |
 | Wikipedia (en): Rajiformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Rajiformes> | 2026-11-01 |
+| Wikipedia (en): Reptile | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Reptile> | 2026-11-01 |
 | Wikipedia (en): Rhea (bird) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Rhea_(bird)> | 2026-11-01 |
 | Wikipedia (en): Rheiformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Rheiformes> | 2026-11-01 |
 | Wikipedia (en): Rhinopristiformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Rhinopristiformes> | 2026-11-01 |
@@ -917,6 +1045,7 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (es): Proboscidea | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Proboscidea> | 2026-11-01 |
 | Wikipedia (es): Psittaciformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Psittaciformes> | 2026-11-01 |
 | Wikipedia (es): Rajiformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Rajiformes> | 2026-11-01 |
+| Wikipedia (es): Reptilia | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Reptilia> | 2026-11-01 |
 | Wikipedia (es): Rheiformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Rheiformes> | 2026-11-01 |
 | Wikipedia (es): Rhinopristiformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Rhinopristiformes> | 2026-11-01 |
 | Wikipedia (es): Rodentia | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Rodentia> | 2026-11-01 |
@@ -952,6 +1081,267 @@ Photo credits (author, licence, link) are listed in `media/CREDITS.md` and store
 | Wikipedia (es): Xenarthra | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Xenarthra> | 2026-11-01 |
 | Wiktionary (EN): fulvus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/fulvus> | 2026-11-01 |
 | Wiktionary (EN): γύψ | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CE%B3%CF%8D%CF%88> | 2026-11-01 |
+| Wiktionary: -iformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/-iformes> | 2026-11-01 |
+| Wiktionary: Acipenseriformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Acipenseriformes> | 2026-11-01 |
+| Wiktionary: Actinopterygii | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Actinopterygii> | 2026-11-01 |
+| Wiktionary: Agama | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Agama> | 2026-11-01 |
+| Wiktionary: Alces | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Alces> | 2026-11-01 |
+| Wiktionary: Amiiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Amiiformes> | 2026-11-01 |
+| Wiktionary: Amniota | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Amniota> | 2026-11-01 |
+| Wiktionary: Amphibia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Amphibia> | 2026-11-01 |
+| Wiktionary: Anguilliformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Anguilliformes> | 2026-11-01 |
+| Wiktionary: Anguis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Anguis> | 2026-11-01 |
+| Wiktionary: Anseriformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Anseriformes> | 2026-11-01 |
+| Wiktionary: Antilocapra | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Antilocapra> | 2026-11-01 |
+| Wiktionary: Apodemus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Apodemus> | 2026-11-01 |
+| Wiktionary: Archosauria | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Archosauria> | 2026-11-01 |
+| Wiktionary: Aves | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Aves> | 2026-11-01 |
+| Wiktionary: Batoidea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Batoidea> | 2026-11-01 |
+| Wiktionary: Bison | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Bison> | 2026-11-01 |
+| Wiktionary: Boreoeutheria | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Boreoeutheria> | 2026-11-01 |
+| Wiktionary: Bufo | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Bufo> | 2026-11-01 |
+| Wiktionary: Capra | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Capra> | 2026-11-01 |
+| Wiktionary: Carangiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Carangiformes> | 2026-11-01 |
+| Wiktionary: Caretta | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Caretta> | 2026-11-01 |
+| Wiktionary: Casuariiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Casuariiformes> | 2026-11-01 |
+| Wiktionary: Casuarius | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Casuarius> | 2026-11-01 |
+| Wiktionary: Caudata | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Caudata> | 2026-11-01 |
+| Wiktionary: Cervus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Cervus> | 2026-11-01 |
+| Wiktionary: Cetacea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Cetacea> | 2026-11-01 |
+| Wiktionary: Cetartiodactyla | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Cetartiodactyla> | 2026-11-01 |
+| Wiktionary: Chamaeleo | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Chamaeleo> | 2026-11-01 |
+| Wiktionary: Characiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Characiformes> | 2026-11-01 |
+| Wiktionary: Charadriiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Charadriiformes> | 2026-11-01 |
+| Wiktionary: Chelonia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Chelonia> | 2026-11-01 |
+| Wiktionary: Chelonoidis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Chelonoidis> | 2026-11-01 |
+| Wiktionary: Chimaeriformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Chimaeriformes> | 2026-11-01 |
+| Wiktionary: Chondrichthyes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Chondrichthyes> | 2026-11-01 |
+| Wiktionary: Clupeiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Clupeiformes> | 2026-11-01 |
+| Wiktionary: Coelacanthiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Coelacanthiformes> | 2026-11-01 |
+| Wiktionary: Coraciiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Coraciiformes> | 2026-11-01 |
+| Wiktionary: Crocidura | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Crocidura> | 2026-11-01 |
+| Wiktionary: Cuculiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Cuculiformes> | 2026-11-01 |
+| Wiktionary: Cyclostomata | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Cyclostomata> | 2026-11-01 |
+| Wiktionary: Cypriniformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Cypriniformes> | 2026-11-01 |
+| Wiktionary: Cyprinodontiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Cyprinodontiformes> | 2026-11-01 |
+| Wiktionary: Dama | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Dama> | 2026-11-01 |
+| Wiktionary: Dasyuromorphia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Dasyuromorphia> | 2026-11-01 |
+| Wiktionary: Dermoptera | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Dermoptera> | 2026-11-01 |
+| Wiktionary: Didelphis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Didelphis> | 2026-11-01 |
+| Wiktionary: Elasmobranchii | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Elasmobranchii> | 2026-11-01 |
+| Wiktionary: Elephas | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Elephas> | 2026-11-01 |
+| Wiktionary: Erinaceus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Erinaceus> | 2026-11-01 |
+| Wiktionary: Esociformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Esociformes> | 2026-11-01 |
+| Wiktionary: Euarchonta | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Euarchonta> | 2026-11-01 |
+| Wiktionary: Euarchontoglires | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Euarchontoglires> | 2026-11-01 |
+| Wiktionary: Eulipotyphla | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Eulipotyphla> | 2026-11-01 |
+| Wiktionary: Eutheria | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Eutheria> | 2026-11-01 |
+| Wiktionary: Falconiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Falconiformes> | 2026-11-01 |
+| Wiktionary: Felis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Felis> | 2026-11-01 |
+| Wiktionary: Gadiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Gadiformes> | 2026-11-01 |
+| Wiktionary: Galago | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Galago> | 2026-11-01 |
+| Wiktionary: Galloanserae | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Galloanserae> | 2026-11-01 |
+| Wiktionary: Gasterosteiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Gasterosteiformes> | 2026-11-01 |
+| Wiktionary: Genetta | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Genetta> | 2026-11-01 |
+| Wiktionary: Glires | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Glires> | 2026-11-01 |
+| Wiktionary: Gnathostomata | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Gnathostomata> | 2026-11-01 |
+| Wiktionary: Gorilla | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Gorilla> | 2026-11-01 |
+| Wiktionary: Gymnotiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Gymnotiformes> | 2026-11-01 |
+| Wiktionary: Herpestes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Herpestes> | 2026-11-01 |
+| Wiktionary: Holocephali | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Holocephali> | 2026-11-01 |
+| Wiktionary: Hylobates | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Hylobates> | 2026-11-01 |
+| Wiktionary: Hyracoidea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Hyracoidea> | 2026-11-01 |
+| Wiktionary: Lama | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Lama> | 2026-11-01 |
+| Wiktionary: Laurasiatheria | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Laurasiatheria> | 2026-11-01 |
+| Wiktionary: Lepidosauria | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Lepidosauria> | 2026-11-01 |
+| Wiktionary: Lepisosteiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Lepisosteiformes> | 2026-11-01 |
+| Wiktionary: Lepus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Lepus> | 2026-11-01 |
+| Wiktionary: Lophius | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Lophius> | 2026-11-01 |
+| Wiktionary: Loris | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Loris> | 2026-11-01 |
+| Wiktionary: Lusitanicus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Lusitanicus> | 2026-11-01 |
+| Wiktionary: Lutra | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Lutra> | 2026-11-01 |
+| Wiktionary: Macaca | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Macaca> | 2026-11-01 |
+| Wiktionary: Macropus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Macropus> | 2026-11-01 |
+| Wiktionary: Macroscelidea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Macroscelidea> | 2026-11-01 |
+| Wiktionary: Macroscelides | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Macroscelides> | 2026-11-01 |
+| Wiktionary: Mammalia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Mammalia> | 2026-11-01 |
+| Wiktionary: Manis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Manis> | 2026-11-01 |
+| Wiktionary: Marsupialia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Marsupialia> | 2026-11-01 |
+| Wiktionary: Martes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Martes> | 2026-11-01 |
+| Wiktionary: Meles | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Meles> | 2026-11-01 |
+| Wiktionary: Monotremata | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Monotremata> | 2026-11-01 |
+| Wiktionary: Myliobatiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Myliobatiformes> | 2026-11-01 |
+| Wiktionary: Myxine | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Myxine> | 2026-11-01 |
+| Wiktionary: Myxini | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Myxini> | 2026-11-01 |
+| Wiktionary: Myxiniformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Myxiniformes> | 2026-11-01 |
+| Wiktionary: Natrix | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Natrix> | 2026-11-01 |
+| Wiktionary: Neoaves | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Neoaves> | 2026-11-01 |
+| Wiktionary: Neognathae | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Neognathae> | 2026-11-01 |
+| Wiktionary: Opisthocomus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Opisthocomus> | 2026-11-01 |
+| Wiktionary: Orectolobiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Orectolobiformes> | 2026-11-01 |
+| Wiktionary: Osteichthyes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Osteichthyes> | 2026-11-01 |
+| Wiktionary: Otaria | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Otaria> | 2026-11-01 |
+| Wiktionary: Otis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Otis> | 2026-11-01 |
+| Wiktionary: Ovis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Ovis> | 2026-11-01 |
+| Wiktionary: Passer | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Passer> | 2026-11-01 |
+| Wiktionary: Patagonia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Patagonia> | 2026-11-01 |
+| Wiktionary: Pelecanus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Pelecanus> | 2026-11-01 |
+| Wiktionary: Perca | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Perca> | 2026-11-01 |
+| Wiktionary: Perissodactyla | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Perissodactyla> | 2026-11-01 |
+| Wiktionary: Petromyzon | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Petromyzon> | 2026-11-01 |
+| Wiktionary: Phoca | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Phoca> | 2026-11-01 |
+| Wiktionary: Phoenicopterus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Phoenicopterus> | 2026-11-01 |
+| Wiktionary: Pholidota | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Pholidota> | 2026-11-01 |
+| Wiktionary: Picus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Picus> | 2026-11-01 |
+| Wiktionary: Pilosa | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Pilosa> | 2026-11-01 |
+| Wiktionary: Placentalia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Placentalia> | 2026-11-01 |
+| Wiktionary: Podiceps | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Podiceps> | 2026-11-01 |
+| Wiktionary: Polypterus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Polypterus> | 2026-11-01 |
+| Wiktionary: Pongo | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Pongo> | 2026-11-01 |
+| Wiktionary: Primates | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Primates> | 2026-11-01 |
+| Wiktionary: Pristis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Pristis> | 2026-11-01 |
+| Wiktionary: Proboscidea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Proboscidea> | 2026-11-01 |
+| Wiktionary: Procavia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Procavia> | 2026-11-01 |
+| Wiktionary: Proteus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Proteus> | 2026-11-01 |
+| Wiktionary: Psittacus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Psittacus> | 2026-11-01 |
+| Wiktionary: Raja | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Raja> | 2026-11-01 |
+| Wiktionary: Rangifer | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Rangifer> | 2026-11-01 |
+| Wiktionary: Reptilia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Reptilia> | 2026-11-01 |
+| Wiktionary: Rhea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Rhea> | 2026-11-01 |
+| Wiktionary: Rhina | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Rhina> | 2026-11-01 |
+| Wiktionary: Rhinolophus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Rhinolophus> | 2026-11-01 |
+| Wiktionary: Rhinopristiformes | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Rhinopristiformes> | 2026-11-01 |
+| Wiktionary: Rodentia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Rodentia> | 2026-11-01 |
+| Wiktionary: Rupicapra | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Rupicapra> | 2026-11-01 |
+| Wiktionary: Saiga | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Saiga> | 2026-11-01 |
+| Wiktionary: Salamandra | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Salamandra> | 2026-11-01 |
+| Wiktionary: Salientia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Salientia> | 2026-11-01 |
+| Wiktionary: Salmo | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Salmo> | 2026-11-01 |
+| Wiktionary: Sarcopterygii | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sarcopterygii> | 2026-11-01 |
+| Wiktionary: Sauropsida | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sauropsida> | 2026-11-01 |
+| Wiktionary: Scandentia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Scandentia> | 2026-11-01 |
+| Wiktionary: Sciurus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sciurus> | 2026-11-01 |
+| Wiktionary: Scomber | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Scomber> | 2026-11-01 |
+| Wiktionary: Scorpaena | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Scorpaena> | 2026-11-01 |
+| Wiktionary: Selachimorpha | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Selachimorpha> | 2026-11-01 |
+| Wiktionary: Silurus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Silurus> | 2026-11-01 |
+| Wiktionary: Silvanus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Silvanus> | 2026-11-01 |
+| Wiktionary: Sirenia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sirenia> | 2026-11-01 |
+| Wiktionary: Sparus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sparus> | 2026-11-01 |
+| Wiktionary: Spheniscus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Spheniscus> | 2026-11-01 |
+| Wiktionary: Sphenodon | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sphenodon> | 2026-11-01 |
+| Wiktionary: Squalus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Squalus> | 2026-11-01 |
+| Wiktionary: Squamata | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Squamata> | 2026-11-01 |
+| Wiktionary: Stenella | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Stenella> | 2026-11-01 |
+| Wiktionary: Strix | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Strix> | 2026-11-01 |
+| Wiktionary: Struthio | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Struthio> | 2026-11-01 |
+| Wiktionary: Sturnus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sturnus> | 2026-11-01 |
+| Wiktionary: Sula | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Sula> | 2026-11-01 |
+| Wiktionary: Syngnathus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Syngnathus> | 2026-11-01 |
+| Wiktionary: Talpa | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Talpa> | 2026-11-01 |
+| Wiktionary: Teleostei | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Teleostei> | 2026-11-01 |
+| Wiktionary: Tetrapoda | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Tetrapoda> | 2026-11-01 |
+| Wiktionary: Theria | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Theria> | 2026-11-01 |
+| Wiktionary: Tinamus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Tinamus> | 2026-11-01 |
+| Wiktionary: Torpedo | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Torpedo> | 2026-11-01 |
+| Wiktionary: Trichechus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Trichechus> | 2026-11-01 |
+| Wiktionary: Tubulidentata | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Tubulidentata> | 2026-11-01 |
+| Wiktionary: Tupaia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Tupaia> | 2026-11-01 |
+| Wiktionary: Varanus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Varanus> | 2026-11-01 |
+| Wiktionary: Vertebrata | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Vertebrata> | 2026-11-01 |
+| Wiktionary: Xenarthra | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/Xenarthra> | 2026-11-01 |
+| Wiktionary: accipiter | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/accipiter> | 2026-11-01 |
+| Wiktionary: africanus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/africanus> | 2026-11-01 |
+| Wiktionary: albus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/albus> | 2026-11-01 |
+| Wiktionary: americanus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/americanus> | 2026-11-01 |
+| Wiktionary: anguinus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/anguinus> | 2026-11-01 |
+| Wiktionary: anguis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/anguis> | 2026-11-01 |
+| Wiktionary: anser | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/anser> | 2026-11-01 |
+| Wiktionary: arvalis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/arvalis> | 2026-11-01 |
+| Wiktionary: asper | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/asper> | 2026-11-01 |
+| Wiktionary: bonasus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/bonasus> | 2026-11-01 |
+| Wiktionary: boreo- | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/boreo-> | 2026-11-01 |
+| Wiktionary: caeruleus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/caeruleus> | 2026-11-01 |
+| Wiktionary: caffer | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/caffer> | 2026-11-01 |
+| Wiktionary: capensis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/capensis> | 2026-11-01 |
+| Wiktionary: cauda | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/cauda> | 2026-11-01 |
+| Wiktionary: chamaeleon | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/chamaeleon> | 2026-11-01 |
+| Wiktionary: charadrius | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/charadrius> | 2026-11-01 |
+| Wiktionary: ciconia | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/ciconia> | 2026-11-01 |
+| Wiktionary: cinereus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/cinereus> | 2026-11-01 |
+| Wiktionary: cingulatus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/cingulatus> | 2026-11-01 |
+| Wiktionary: cingulum | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/cingulum> | 2026-11-01 |
+| Wiktionary: colubrinus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/colubrinus> | 2026-11-01 |
+| Wiktionary: corax | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/corax> | 2026-11-01 |
+| Wiktionary: crassus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/crassus> | 2026-11-01 |
+| Wiktionary: cuculus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/cuculus> | 2026-11-01 |
+| Wiktionary: cuniculus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/cuniculus> | 2026-11-01 |
+| Wiktionary: darwinii | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/darwinii> | 2026-11-01 |
+| Wiktionary: davidianus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/davidianus> | 2026-11-01 |
+| Wiktionary: elaphus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/elaphus> | 2026-11-01 |
+| Wiktionary: equinus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/equinus> | 2026-11-01 |
+| Wiktionary: erythro- | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/erythro-> | 2026-11-01 |
+| Wiktionary: europaea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/europaea> | 2026-11-01 |
+| Wiktionary: europaeus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/europaeus> | 2026-11-01 |
+| Wiktionary: falco | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/falco> | 2026-11-01 |
+| Wiktionary: ferrum | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/ferrum> | 2026-11-01 |
+| Wiktionary: flavescens | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/flavescens> | 2026-11-01 |
+| Wiktionary: fragilis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/fragilis> | 2026-11-01 |
+| Wiktionary: gallus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/gallus> | 2026-11-01 |
+| Wiktionary: gangeticus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/gangeticus> | 2026-11-01 |
+| Wiktionary: glutinosus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/glutinosus> | 2026-11-01 |
+| Wiktionary: grus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/grus> | 2026-11-01 |
+| Wiktionary: guanicoe | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/guanicoe> | 2026-11-01 |
+| Wiktionary: ibericus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/ibericus> | 2026-11-01 |
+| Wiktionary: ichneumon | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/ichneumon> | 2026-11-01 |
+| Wiktionary: komodoensis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/komodoensis> | 2026-11-01 |
+| Wiktionary: lepidus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/lepidus> | 2026-11-01 |
+| Wiktionary: manatus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/manatus> | 2026-11-01 |
+| Wiktionary: marsupialis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/marsupialis> | 2026-11-01 |
+| Wiktionary: mauritanicus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/mauritanicus> | 2026-11-01 |
+| Wiktionary: maximus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/maximus> | 2026-11-01 |
+| Wiktionary: muralis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/muralis> | 2026-11-01 |
+| Wiktionary: murinus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/murinus> | 2026-11-01 |
+| Wiktionary: niger | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/niger> | 2026-11-01 |
+| Wiktionary: niloticus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/niloticus> | 2026-11-01 |
+| Wiktionary: placenta | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/placenta> | 2026-11-01 |
+| Wiktionary: pleuro- | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/pleuro-> | 2026-11-01 |
+| Wiktionary: pyrenaicus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/pyrenaicus> | 2026-11-01 |
+| Wiktionary: quercinus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/quercinus> | 2026-11-01 |
+| Wiktionary: rana | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/rana> | 2026-11-01 |
+| Wiktionary: rufescens | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/rufescens> | 2026-11-01 |
+| Wiktionary: rufus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/rufus> | 2026-11-01 |
+| Wiktionary: scalaris | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/scalaris> | 2026-11-01 |
+| Wiktionary: senegalensis | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/senegalensis> | 2026-11-01 |
+| Wiktionary: silvaticus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/silvaticus> | 2026-11-01 |
+| Wiktionary: silvestris | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/silvestris> | 2026-11-01 |
+| Wiktionary: solea | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/solea> | 2026-11-01 |
+| Wiktionary: spinosus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/spinosus> | 2026-11-01 |
+| Wiktionary: sylvaticus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/sylvaticus> | 2026-11-01 |
+| Wiktionary: tarandus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/tarandus> | 2026-11-01 |
+| Wiktionary: tataricus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/tataricus> | 2026-11-01 |
+| Wiktionary: tetrapod | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/tetrapod> | 2026-11-01 |
+| Wiktionary: unicolor | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/unicolor> | 2026-11-01 |
+| Wiktionary: ursinus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/ursinus> | 2026-11-01 |
+| Wiktionary: vitulus | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/vitulus> | 2026-11-01 |
+| Wiktionary: vulgaris | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/vulgaris> | 2026-11-01 |
+| Wiktionary: βλέννα | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CE%B2%CE%BB%CE%AD%CE%BD%CE%BD%CE%B1> | 2026-11-01 |
+| Wiktionary: γυμνός | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CE%B3%CF%85%CE%BC%CE%BD%CF%8C%CF%82> | 2026-11-01 |
+| Wiktionary: δέρμα | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CE%B4%CE%AD%CF%81%CE%BC%CE%B1> | 2026-11-01 |
+| Wiktionary: κυπρῖνος | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CE%BA%CF%85%CF%80%CF%81%E1%BF%96%CE%BD%CE%BF%CF%82> | 2026-11-01 |
+| Wiktionary: μορφή | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CE%BC%CE%BF%CF%81%CF%86%CE%AE> | 2026-11-01 |
+| Wiktionary: νήκτης | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CE%BD%CE%AE%CE%BA%CF%84%CE%B7%CF%82> | 2026-11-01 |
+| Wiktionary: πελεκάν | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CF%80%CE%B5%CE%BB%CE%B5%CE%BA%CE%AC%CE%BD> | 2026-11-01 |
+| Wiktionary: πλευρά | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/πλευρά> | 2026-11-01 |
+| Wiktionary: πτερόν | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CF%80%CF%84%CE%B5%CF%81%CF%8C%CE%BD> | 2026-11-01 |
+| Wiktionary: σέλαχος | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CF%83%CE%AD%CE%BB%CE%B1%CF%87%CE%BF%CF%82> | 2026-11-01 |
+| Wiktionary: χίμαιρα | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CF%87%CE%AF%CE%BC%CE%B1%CE%B9%CF%81%CE%B1> | 2026-11-01 |
+| Wiktionary: χαραδριός | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CF%87%CE%B1%CF%81%CE%B1%CE%B4%CF%81%CE%B9%CF%8C%CF%82> | 2026-11-01 |
+| Wiktionary: χελώνη | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%CF%87%CE%B5%CE%BB%CF%8E%CE%BD%CE%B7> | 2026-11-01 |
+| Wiktionary: ἀμία | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%E1%BC%80%CE%BC%CE%AF%CE%B1> | 2026-11-01 |
+| Wiktionary: ὄφις | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%E1%BD%84%CF%86%CE%B9%CF%82> | 2026-11-01 |
+| Wiktionary: ὑπερῴα | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%E1%BD%91%CF%80%CE%B5%CF%81%E1%BF%B4%CE%B1> | 2026-11-01 |
+| Wiktionary: ὕραξ | CC BY-SA 4.0 | <https://en.wiktionary.org/wiki/%E1%BD%95%CF%81%CE%B1%CE%BE> | 2026-11-01 |
 | Wild Bactrian camel — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Wild_Bactrian_camel> | 2026-11-01 |
 | Wild boar — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Wild_boar> | 2026-11-01 |
 | Wolf — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Wolf> | 2026-11-01 |

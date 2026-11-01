@@ -17,6 +17,10 @@
       "Dorsal fin extending onto the head"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Pleuronectes»; del griego pleura, «costado» o «costilla», y una raíz de «nadar»: «el que nada de costado».",
+    "en": "'Shaped like Pleuronectes'; from Greek pleura, 'rib, side', and a root meaning 'swimming': 'side-swimmer'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Flatfish",
@@ -27,6 +31,24 @@
     {
       "title": "Wikipedia (es): Pleuronectiformes",
       "url": "https://es.wikipedia.org/wiki/Pleuronectiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Pleuronectidae",
+      "url": "https://en.wikipedia.org/wiki/Pleuronectidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: pleuro-",
+      "url": "https://en.wiktionary.org/wiki/pleuro-",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: νήκτης",
+      "url": "https://en.wiktionary.org/wiki/%CE%BD%CE%AE%CE%BA%CF%84%CE%B7%CF%82",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -36,6 +36,10 @@
       "It is the fastest land mammal in the Americas, reaching up to 88.5 km/h."
     ]
   },
+  "etymology": {
+    "es": "Antilocapra es latín moderno, contracción de antilopocapra: antilope, «antílope», y capra, «cabra»; americana significa «de América».",
+    "en": "Antilocapra is New Latin, contracted from antilopocapra: antilope, 'antelope', plus capra, 'goat'; americana means 'of America'."
+  },
   "sources": [
     {
       "title": "Antilocapra americana — Wikipedia (es)",
@@ -52,6 +56,18 @@
     {
       "title": "Dorcas gazelle — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Dorcas_gazelle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Antilocapra",
+      "url": "https://en.wiktionary.org/wiki/Antilocapra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: americanus",
+      "url": "https://en.wiktionary.org/wiki/americanus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

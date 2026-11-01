@@ -31,6 +31,10 @@
     "es": "Notable: solo los machos tienen astas y son mayores (unos 58 kg frente a 45 kg de media).",
     "en": "Marked: only males have antlers, and they are larger (about 58 kg vs 45 kg on average)."
   },
+  "etymology": {
+    "es": "Dama dama repite el nombre: dama es una variante del latín damma, «gamo».",
+    "en": "Dama dama repeats the name: dama is a variant of Latin damma, 'fallow deer'."
+  },
   "sources": [
     {
       "title": "Dama dama — Wikipedia (es)",
@@ -41,6 +45,12 @@
     {
       "title": "European fallow deer — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/European_fallow_deer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Dama",
+      "url": "https://en.wiktionary.org/wiki/Dama",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

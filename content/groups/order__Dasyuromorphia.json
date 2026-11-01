@@ -23,6 +23,10 @@
     "es": "No confundir con los diprotodontos (canguros, koala), herbívoros con un par de grandes incisivos inferiores y los dedos 2 y 3 del pie unidos.",
     "en": "Do not confuse with diprotodonts (kangaroos, koala): herbivores with one pair of large lower incisors and toes 2 and 3 joined."
   },
+  "etymology": {
+    "es": "«Con forma de Dasyurus»: del griego dasyouros, «cola peluda», y morphe, «forma».",
+    "en": "'Shaped like Dasyurus': from Greek dasyouros, 'hairy-tail', and morphe, 'form'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Dasyuromorphia",
@@ -33,6 +37,24 @@
     {
       "title": "Wikipedia (es): Dasyuromorphia",
       "url": "https://es.wikipedia.org/wiki/Dasyuromorphia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Dasyuromorphia",
+      "url": "https://en.wiktionary.org/wiki/Dasyuromorphia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Quoll",
+      "url": "https://en.wikipedia.org/wiki/Quoll",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: μορφή",
+      "url": "https://en.wiktionary.org/wiki/%CE%BC%CE%BF%CF%81%CF%86%CE%AE",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

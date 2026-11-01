@@ -20,6 +20,10 @@
       "en": "The common stingray has a whip-like tail with a venomous spine and smooth, plain-coloured skin."
     }
   ],
+  "etymology": {
+    "es": "Dipturus une el griego dyo, «dos», pteron, «aleta», y oura, «cola»: dos aletas dorsales en la cola; batis es griego, «pez plano, raya».",
+    "en": "Dipturus joins Greek dyo, 'two', pteron, 'fin', and oura, 'tail': two dorsal fins on the tail; batis is Greek for 'a flat fish, ray'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Dipturus batis",
@@ -37,6 +41,12 @@
       "title": "Wikipedia (EN): Common stingray",
       "url": "https://en.wikipedia.org/wiki/Common_stingray",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Rajidae",
+      "url": "https://etyfish.org/rajidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

@@ -28,6 +28,10 @@
       "The female incubates the eggs in honeycomb-like pockets in the skin of her back, from which fully formed froglets emerge."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite: pipa procede de un dialecto de Surinam, probablemente de origen africano.",
+    "en": "The name repeats: pipa comes from a Surinamese dialect, probably of African origin."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Pipa pipa",
@@ -39,6 +43,12 @@
       "title": "Wikipedia (EN): Common Surinam toad",
       "url": "https://en.wikipedia.org/wiki/Common_Surinam_toad",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Dictionary.com (Collins English Dictionary): pipa",
+      "url": "https://www.dictionary.com/browse/pipa",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

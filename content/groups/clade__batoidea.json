@@ -21,6 +21,10 @@
     "es": "No confundir con el angelote (Squatiniformes), un tiburón aplanado cuyas hendiduras branquiales están a los lados de la cabeza y cuyas pectorales no están soldadas a ella.",
     "en": "Do not confuse with the angelshark (Squatiniformes), a flattened shark whose gill slits are on the sides of the head and whose pectoral fins are not fused to it."
   },
+  "etymology": {
+    "es": "Del griego batis o batos, «raya», con el sufijo -oidea: las rayas y afines.",
+    "en": "From Greek batis or batos, 'skate, ray', with the suffix -oidea: the rays and their kin."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Batomorphi",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Squatiniformes",
       "url": "https://en.wikipedia.org/wiki/Squatiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Batoidea",
+      "url": "https://en.wiktionary.org/wiki/Batoidea",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

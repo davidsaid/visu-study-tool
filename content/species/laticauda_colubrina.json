@@ -24,6 +24,10 @@
     "es": "Las hembras son bastante mayores que los machos (media de 1,42 m frente a 0,88 m).",
     "en": "Females are markedly larger than males (average 1.42 m versus 0.88 m)."
   },
+  "etymology": {
+    "es": "Laticauda une el latín latus, «ancho», y cauda, «cola», por su cola aplanada; colubrina procede del latín coluber, «culebra».",
+    "en": "Laticauda joins Latin latus, 'broad', and cauda, 'tail', for its flattened tail; colubrina comes from Latin coluber, 'snake'."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Yellow-lipped sea krait",
@@ -40,6 +44,18 @@
     {
       "title": "Wikipedia (EN): Indian cobra",
       "url": "https://en.wikipedia.org/wiki/Indian_cobra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Laticauda colubrina",
+      "url": "https://www.monaconatureencyclopedia.com/laticauda-colubrina/?lang=en",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: colubrinus",
+      "url": "https://en.wiktionary.org/wiki/colubrinus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

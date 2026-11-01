@@ -21,6 +21,10 @@
     "es": "La anguila eléctrica no es una anguila verdadera (Anguilliformes): carece de aleta dorsal y se impulsa con la larga aleta anal.",
     "en": "The electric eel is not a true eel (Anguilliformes): it lacks a dorsal fin and is driven by its long anal fin."
   },
+  "etymology": {
+    "es": "«Con forma de Gymnotus»: del griego gymnos, «desnudo», y notos, «espalda», porque carecen de aleta dorsal.",
+    "en": "'Shaped like Gymnotus': from Greek gymnos, 'naked', and notos, 'back', because they lack a dorsal fin."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Gymnotiformes",
@@ -31,6 +35,24 @@
     {
       "title": "Wikipedia (es): Gymnotiformes",
       "url": "https://es.wikipedia.org/wiki/Gymnotiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Gymnotiformes",
+      "url": "https://en.wiktionary.org/wiki/Gymnotiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Gymnotidae",
+      "url": "https://etyfish.org/gymnotidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -39,6 +39,10 @@
       "In Castilla y León, Castilla-La Mancha and Aragón it is called 'tordo'."
     ]
   },
+  "etymology": {
+    "es": "Sturnus es latín, «estornino»; unicolor es latín, «de un solo color».",
+    "en": "Sturnus is Latin for 'starling'; unicolor is Latin for 'of one colour'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Sturnus unicolor",
@@ -55,6 +59,18 @@
     {
       "title": "Wikipedia (ES): Turdus merula",
       "url": "https://es.wikipedia.org/wiki/Turdus_merula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sturnus",
+      "url": "https://en.wiktionary.org/wiki/Sturnus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: unicolor",
+      "url": "https://en.wiktionary.org/wiki/unicolor",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

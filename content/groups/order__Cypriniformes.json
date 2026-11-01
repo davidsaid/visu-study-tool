@@ -21,6 +21,10 @@
     "es": "No confundir con los caraciformes (pirañas, tetras): suelen tener una pequeña aleta adiposa entre la dorsal y la cola y dientes en la boca.",
     "en": "Do not confuse with characins (piranhas, tetras): these often have a small adipose fin between the dorsal fin and tail, and teeth in the mouth."
   },
+  "etymology": {
+    "es": "«Con forma de Cyprinus», del griego kyprinos, «carpa»; quizá de Kypris (Afrodita), por su fecundidad, o de kypros, «alheña», por su color bronce.",
+    "en": "'Shaped like Cyprinus', from Greek kyprinos, 'carp'; perhaps from Kypris (Aphrodite), for its fecundity, or kypros, 'henna', for its bronze colour."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Cypriniformes",
@@ -31,6 +35,30 @@
     {
       "title": "Wikipedia (es): Cypriniformes",
       "url": "https://es.wikipedia.org/wiki/Cypriniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Cypriniformes",
+      "url": "https://en.wiktionary.org/wiki/Cypriniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: κυπρῖνος",
+      "url": "https://en.wiktionary.org/wiki/%CE%BA%CF%85%CF%80%CF%81%E1%BF%96%CE%BD%CE%BF%CF%82",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Cyprininae",
+      "url": "https://etyfish.org/cyprininae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

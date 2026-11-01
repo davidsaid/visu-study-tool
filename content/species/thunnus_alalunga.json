@@ -32,6 +32,10 @@
       "In Spain, fish caught in the Bay of Biscay are called bonito del norte, although it is a tuna, not a bonito."
     ]
   },
+  "etymology": {
+    "es": "Thunnus procede del griego thynnos, «atún»; alalunga era su nombre local en Cerdeña, de ala, «ala», y longus, «largo», por sus aletas pectorales, las más largas de los atunes.",
+    "en": "Thunnus comes from Greek thynnos, 'tuna'; alalunga was its local name in Sardinia, from ala, 'wing', and longus, 'long', for its pectoral fins, the longest of any tuna."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Thunnus alalunga",
@@ -49,6 +53,12 @@
       "title": "Wikipedia (EN): Atlantic bluefin tuna",
       "url": "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Scombridae",
+      "url": "https://etyfish.org/scombriformes1",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

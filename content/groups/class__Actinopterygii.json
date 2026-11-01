@@ -21,6 +21,10 @@
     "es": "No confundir con los sarcopterigios (celacanto, peces pulmonados), cuyas aletas son lobuladas, más robustas y carnosas.",
     "en": "Do not confuse with lobe-finned fishes (coelacanth, lungfishes), whose fins are bulkier, fleshy lobes."
   },
+  "etymology": {
+    "es": "De actino-, «con radios», y del griego pteryx, «ala» o «aleta»: los peces de aletas radiadas.",
+    "en": "From actino-, 'having rays', and Greek pteryx, 'wing, fin': the ray-finned fishes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Actinopterygii",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Actinopterygii",
       "url": "https://es.wikipedia.org/wiki/Actinopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Actinopterygii",
+      "url": "https://en.wiktionary.org/wiki/Actinopterygii",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

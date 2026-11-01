@@ -23,6 +23,10 @@
     "es": "No confundir con los tiburones, que tienen de cinco a siete hendiduras branquiales al descubierto en lugar de una sola abertura cubierta por un pliegue de piel.",
     "en": "Do not confuse with sharks, which have five to seven exposed gill slits instead of a single opening covered by a skin flap."
   },
+  "etymology": {
+    "es": "«Con forma de Chimaera»: la quimera mitológica (griego chimaira, «cabra»), monstruo hecho de partes de varios animales, por su extraña mezcla de rasgos.",
+    "en": "'Shaped like Chimaera': the mythological chimera (Greek chimaira, 'she-goat'), a monster made of parts of several animals, for their odd mix of features."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Chimaera",
@@ -33,6 +37,30 @@
     {
       "title": "Wikipedia (es): Chimaeriformes",
       "url": "https://es.wikipedia.org/wiki/Chimaeriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Chimaeriformes",
+      "url": "https://en.wiktionary.org/wiki/Chimaeriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Chimaeridae",
+      "url": "https://etyfish.org/chimaeridae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: χίμαιρα",
+      "url": "https://en.wiktionary.org/wiki/%CF%87%CE%AF%CE%BC%CE%B1%CE%B9%CF%81%CE%B1",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

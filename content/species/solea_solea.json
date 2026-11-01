@@ -28,6 +28,10 @@
       "It hatches as an ordinary fish with an eye on each side; metamorphosis begins at about one centimetre long."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite: solea es latín, «sandalia, suela», porque estos peces planos parecen un zapato plano.",
+    "en": "The name repeats: solea is Latin for 'sandal, sole', because these flatfishes resemble a flat shoe."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Solea solea",
@@ -44,6 +48,18 @@
     {
       "title": "Wikipedia (ES): Scophthalmus maxima",
       "url": "https://es.wikipedia.org/wiki/Scophthalmus_maxima",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Soleidae",
+      "url": "https://etyfish.org/carangiformes4",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: solea",
+      "url": "https://en.wiktionary.org/wiki/solea",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

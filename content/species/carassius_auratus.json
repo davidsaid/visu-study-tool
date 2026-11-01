@@ -33,6 +33,10 @@
       "It is one of the oldest domesticated fish: it was bred for colour in imperial China over a thousand years ago."
     ]
   },
+  "etymology": {
+    "es": "Carassius procede del francés carassin, nombre de la carpa dorada o carpín; auratus es latín, «dorado», por su color.",
+    "en": "Carassius comes from French carassin, a name for the golden or crucian carp; auratus is Latin for 'gilded', for its golden colour."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Carassius auratus",
@@ -50,6 +54,12 @@
       "title": "Wikipedia (ES): Cyprinus carpio",
       "url": "https://es.wikipedia.org/wiki/Cyprinus_carpio",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Cyprininae",
+      "url": "https://etyfish.org/cyprininae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

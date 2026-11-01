@@ -33,6 +33,10 @@
       "The Romans called it pastinaca and the Greeks trygon."
     ]
   },
+  "etymology": {
+    "es": "Dasyatis une el griego dasys, «peludo, áspero», por su piel espinosa, y batis, «raya»; pastinaca es latín, «chirivía»: desde Plinio se comparó su cola con esa raíz.",
+    "en": "Dasyatis joins Greek dasys, 'hairy, shaggy', for its prickly skin, and batis, 'ray'; pastinaca is Latin for 'parsnip', a name dating to Pliny, its tail likened to the root."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Dasyatis pastinaca",
@@ -56,6 +60,12 @@
       "title": "Wikipedia (EN): Common torpedo",
       "url": "https://en.wikipedia.org/wiki/Common_torpedo",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Dasyatidae",
+      "url": "https://etyfish.org/dasyatidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

@@ -28,6 +28,10 @@
       "The tail tuft can come off if a predator grabs it."
     ]
   },
+  "etymology": {
+    "es": "Eliomys es un nombre de origen griego (Hēlíomus); quercinus es latín, «de roble», de quercus, «roble».",
+    "en": "Eliomys is a name of Greek origin (Hēlíomus); quercinus is Latin for 'oaken', from quercus, 'oak'."
+  },
   "sources": [
     {
       "title": "Eliomys quercinus — Wikipedia (es)",
@@ -44,6 +48,18 @@
     {
       "title": "Apodemus sylvaticus — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Apodemus_sylvaticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eliomys",
+      "url": "https://en.wikipedia.org/wiki/Eliomys",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: quercinus",
+      "url": "https://en.wiktionary.org/wiki/quercinus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

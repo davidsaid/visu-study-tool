@@ -19,6 +19,10 @@
     "es": "Dimorfismo leve: los machos son algo más grandes (alrededor de un 10 % más pesados) que las hembras.",
     "en": "Slight dimorphism: males are somewhat larger (about 10% heavier) than females."
   },
+  "etymology": {
+    "es": "Procavia une el griego pro, «antes», y Cavia, el género de los cobayas; capensis significa «del Cabo», el Cabo de Buena Esperanza.",
+    "en": "Procavia joins Greek pro, 'before', and Cavia, the guinea-pig genus; capensis means 'of the Cape', the Cape of Good Hope."
+  },
   "sources": [
     {
       "title": "Procavia capensis — Wikipedia (es)",
@@ -29,6 +33,18 @@
     {
       "title": "Rock hyrax — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Rock_hyrax",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Procavia",
+      "url": "https://en.wiktionary.org/wiki/Procavia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: capensis",
+      "url": "https://en.wiktionary.org/wiki/capensis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

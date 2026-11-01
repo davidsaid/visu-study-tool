@@ -23,6 +23,10 @@
     "es": "Otros peces «anguila», como la anguila eléctrica (Gymnotiformes) o los mixinos,, adquirieron su forma alargada de manera independiente y no son anguilas verdaderas.",
     "en": "Other 'eels', such as the electric eel (Gymnotiformes) or hagfishes,, evolved their elongated shape independently and are not true eels."
   },
+  "etymology": {
+    "es": "«Con forma de Anguilla»: anguilla es «anguila» en latín, diminutivo de anguis, «serpiente», por su cuerpo serpentiforme.",
+    "en": "'Shaped like Anguilla': anguilla is Latin for 'eel', a diminutive of anguis, 'snake', for its snake-like body."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Eel",
@@ -33,6 +37,30 @@
     {
       "title": "Wikipedia (es): Anguilliformes",
       "url": "https://es.wikipedia.org/wiki/Anguilliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Anguilliformes",
+      "url": "https://en.wiktionary.org/wiki/Anguilliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Anguillidae",
+      "url": "https://etyfish.org/anguillidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: anguis",
+      "url": "https://en.wiktionary.org/wiki/anguis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

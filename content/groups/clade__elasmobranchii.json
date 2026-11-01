@@ -23,6 +23,10 @@
     "es": "No confundir con los holocéfalos (quimeras), que tienen una sola abertura branquial a cada lado, cubierta por un pliegue de piel, y la mandíbula superior soldada al cráneo.",
     "en": "Do not confuse with holocephalans (chimaeras), which have a single gill opening on each side, covered by a skin flap, and an upper jaw fused to the skull."
   },
+  "etymology": {
+    "es": "Del griego elasma, «placa», y branchia, «branquias», por sus branquias anchas y aplanadas.",
+    "en": "From Greek elasma, 'plate', and branchia, 'gills', referring to their broad, flattened gills."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Elasmobranchii",
@@ -39,6 +43,12 @@
     {
       "title": "Wikipedia (en): Chimaera",
       "url": "https://en.wikipedia.org/wiki/Chimaera",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Elasmobranchii",
+      "url": "https://en.wiktionary.org/wiki/Elasmobranchii",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

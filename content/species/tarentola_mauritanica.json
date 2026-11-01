@@ -34,6 +34,10 @@
       "It climbs even on glass thanks to Van der Waals forces, not suction cups."
     ]
   },
+  "etymology": {
+    "es": "Tarentola procede del italiano dialectal tarantola, «salamandra», derivado de Taranto, puerto del sur de Italia; mauritanica es latín, «de Mauritania».",
+    "en": "Tarentola comes from Italian dialect tarantola, 'salamander', ultimately from Taranto, a seaport in southern Italy; mauritanica is Latin for 'Mauritanian'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Tarentola mauritanica",
@@ -50,6 +54,18 @@
     {
       "title": "Wikipedia (EN): Podarcis muralis",
       "url": "https://en.wikipedia.org/wiki/Podarcis_muralis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Merriam-Webster: tarentola",
+      "url": "https://www.merriam-webster.com/dictionary/tarentola",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: mauritanicus",
+      "url": "https://en.wiktionary.org/wiki/mauritanicus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

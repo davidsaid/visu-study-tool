@@ -21,6 +21,10 @@
     "es": "Son los parientes vivos más cercanos de los tetrápodos. No confundir con el celacanto, marino y de aguas profundas, cuyo pulmón no sirve para respirar.",
     "en": "They are the closest living relatives of tetrapods. Do not confuse with the coelacanth, a deep-water marine fish whose lung does not work for breathing."
   },
+  "etymology": {
+    "es": "«Con forma de Ceratodus»: del griego keras, «cuerno», y odous, «diente», por sus prominentes placas dentarias.",
+    "en": "'Shaped like Ceratodus': from Greek keras, 'horn', and odous, 'tooth', for its prominent tooth plates."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Ceratodontiformes",
@@ -37,6 +41,24 @@
     {
       "title": "Wikipedia (es): Sarcopterygii",
       "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Ceratodus",
+      "url": "https://en.wikipedia.org/wiki/Ceratodus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Neoceratodontidae",
+      "url": "https://etyfish.org/neoceratodontidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

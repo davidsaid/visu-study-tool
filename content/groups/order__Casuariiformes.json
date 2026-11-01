@@ -21,6 +21,10 @@
     "es": "El casco y el cuello de colores lo distinguen del avestruz (dos dedos) y del ñandú (plumaje gris).",
     "en": "The casque and coloured neck set it apart from the ostrich (two toes) and the rhea (grey plumage)."
   },
+  "etymology": {
+    "es": "«Con forma de Casuarius», latinización del malayo kasuari, «casuario».",
+    "en": "'Shaped like Casuarius', a Latinisation of Malay kasuari, 'cassowary'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Casuariiformes",
@@ -43,6 +47,24 @@
     {
       "title": "Wikipedia (es): Casuarius",
       "url": "https://es.wikipedia.org/wiki/Casuarius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Casuariiformes",
+      "url": "https://en.wiktionary.org/wiki/Casuariiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Casuarius",
+      "url": "https://en.wiktionary.org/wiki/Casuarius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

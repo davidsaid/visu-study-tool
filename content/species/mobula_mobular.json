@@ -30,6 +30,10 @@
       "It is the only member of its family living in the Mediterranean."
     ]
   },
+  "etymology": {
+    "es": "Mobula se basa en mobular, de origen incierto: quizá del latín mobilis, «móvil», por sus migraciones, o de un nombre local de las Azores.",
+    "en": "Mobula is based on mobular, of uncertain origin: perhaps Latin mobilis, 'mobile', for its migrations, or a local name from the Azores."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Mobula mobular",
@@ -47,6 +51,12 @@
       "title": "Wikipedia (EN): Common eagle ray",
       "url": "https://en.wikipedia.org/wiki/Common_eagle_ray",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Mobulidae",
+      "url": "https://etyfish.org/mobulidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

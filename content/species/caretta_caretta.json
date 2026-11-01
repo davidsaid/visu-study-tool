@@ -34,6 +34,10 @@
       "On land it seems to cry: glands behind the eyes excrete excess salt."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite: Linneo lo tomó del francés caret, nombre de la tortuga carey o la boba, a su vez del español carey; otras fuentes lo consideran de origen incierto.",
+    "en": "The name repeats: Linnaeus took it from French caret, a name for the hawksbill or loggerhead turtle, itself from Spanish carey; other sources call its origin uncertain."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Caretta caretta",
@@ -51,6 +55,18 @@
       "title": "Wikipedia (ES): Dermochelys coriacea",
       "url": "https://es.wikipedia.org/wiki/Dermochelys_coriacea",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Caretta",
+      "url": "https://en.wiktionary.org/wiki/Caretta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Monaco Nature Encyclopedia: Caretta caretta",
+      "url": "https://www.monaconatureencyclopedia.com/caretta-caretta/?lang=en",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

@@ -21,6 +21,10 @@
     "es": "No confundir con los peces pulmonados (Ceratodontiformes): el celacanto es marino y de aguas profundas, y sus pulmones no sirven para respirar, mientras que los dipnoos son de agua dulce y respiran aire.",
     "en": "Do not confuse with lungfishes (Ceratodontiformes): the coelacanth is a deep-water marine fish whose lung does not work for breathing, whereas lungfishes live in fresh water and breathe air."
   },
+  "etymology": {
+    "es": "«Con forma de Coelacanthus»: del griego koilos, «hueco», y akantha, «espina», por los radios huecos de la aleta caudal del primer fósil descrito.",
+    "en": "'Shaped like Coelacanthus': from Greek koilos, 'hollow', and akantha, 'spine', for the hollow tail-fin rays of the first fossil described."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Coelacanth",
@@ -37,6 +41,18 @@
     {
       "title": "Wikipedia (es): Sarcopterygii",
       "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Coelacanthiformes",
+      "url": "https://en.wiktionary.org/wiki/Coelacanthiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

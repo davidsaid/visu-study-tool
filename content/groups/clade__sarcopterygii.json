@@ -21,6 +21,10 @@
     "es": "No confundir con la clase Sarcopterygii del bestiario, que solo incluye los peces de aletas lobuladas (celacantos y dipnoos) y es parafilética, porque deja fuera a los tetrápodos. Su clado hermano son los actinopterigios, de aletas con radios.",
     "en": "Do not confuse with the bestiary's class Sarcopterygii, which includes only the lobe-finned fishes (coelacanths and lungfishes) and is paraphyletic because it leaves out the tetrapods. Its sister clade is the ray-finned fishes, with rayed fins."
   },
+  "etymology": {
+    "es": "Del griego sarx, «carne», y pteryx, «ala» o «aleta»: peces de aletas carnosas o lobuladas.",
+    "en": "From Greek sarx, 'flesh', and pteryx, 'wing, fin': the fleshy-finned (lobe-finned) fishes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Sarcopterygii",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Sarcopterygii",
       "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Sarcopterygii",
+      "url": "https://en.wiktionary.org/wiki/Sarcopterygii",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

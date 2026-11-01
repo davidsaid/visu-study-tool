@@ -23,6 +23,10 @@
     "es": "Dentro del orden, los estrepsirrinos (lémures, gálagos, loris) tienen la nariz húmeda y una barra ósea detrás del ojo; los haplorrinos (tarseros, monos, simios), un cierre óseo completo de la órbita.",
     "en": "Within the order, strepsirrhines (lemurs, galagos, lorises) have a moist nose and a postorbital bar; haplorhines (tarsiers, monkeys, apes) have a fully closed bony eye socket."
   },
+  "etymology": {
+    "es": "Del latín primas (plural primates), «de los primeros, principal», de primus, «primero».",
+    "en": "From Latin primas (plural primates), 'one of the first, chief', from primus, 'first'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Primate",
@@ -33,6 +37,12 @@
     {
       "title": "Wikipedia (es): Primates",
       "url": "https://es.wikipedia.org/wiki/Primates",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Primates",
+      "url": "https://en.wiktionary.org/wiki/Primates",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

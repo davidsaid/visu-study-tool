@@ -21,6 +21,10 @@
     "es": "La distinción entre «rana» (piel lisa) y «sapo» (piel verrugosa con glándulas parotoides) es informal y no refleja el parentesco. Frente a los urodelos, los anuros adultos nunca tienen cola.",
     "en": "The split between 'frog' (smooth skin) and 'toad' (warty skin with parotoid glands) is informal and does not reflect relationships. Unlike salamanders, adult anurans never have a tail."
   },
+  "etymology": {
+    "es": "Del latín saliens, «que salta», de salire, «saltar»: ranas y sapos.",
+    "en": "From Latin saliens, 'leaping', from salire, 'to jump': frogs and toads."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Frog",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Anura",
       "url": "https://es.wikipedia.org/wiki/Anura",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Salientia",
+      "url": "https://en.wiktionary.org/wiki/Salientia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Salientia",
+      "url": "https://en.wikipedia.org/wiki/Salientia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

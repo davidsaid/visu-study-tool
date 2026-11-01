@@ -33,6 +33,10 @@
       "If grabbed by the tail, it sheds it (autotomy)."
     ]
   },
+  "etymology": {
+    "es": "Anguis es latín, «serpiente»; fragilis es latín, «frágil», porque suelta la cola cuando un depredador la amenaza o se la manipula con brusquedad.",
+    "en": "Anguis is Latin for 'snake'; fragilis is Latin for 'fragile', because it sheds its tail when threatened by a predator or handled roughly."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Anguis fragilis",
@@ -49,6 +53,24 @@
     {
       "title": "Wikipedia (EN): Chalcides bedriagai",
       "url": "https://en.wikipedia.org/wiki/Chalcides_bedriagai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Anguis",
+      "url": "https://en.wiktionary.org/wiki/Anguis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: fragilis",
+      "url": "https://en.wiktionary.org/wiki/fragilis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Anguis",
+      "url": "https://en.wikipedia.org/wiki/Anguis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

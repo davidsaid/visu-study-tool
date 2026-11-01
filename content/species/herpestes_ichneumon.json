@@ -30,6 +30,10 @@
       "According to Diodorus Siculus it was revered in ancient Egypt for keeping Nile crocodile numbers down."
     ]
   },
+  "etymology": {
+    "es": "Herpestes viene del griego herpestés, «que repta»; ichneumon es el latín del griego ichneúmon, «rastreador», de íchnos, «huella».",
+    "en": "Herpestes is from Greek herpestes, 'creeping'; ichneumon is Latin from Greek ichneumon, 'tracker', from ichnos, 'footprint'."
+  },
   "sources": [
     {
       "title": "Herpestes ichneumon — Wikipedia (es)",
@@ -40,6 +44,18 @@
     {
       "title": "Egyptian mongoose — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Egyptian_mongoose",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Herpestes",
+      "url": "https://en.wiktionary.org/wiki/Herpestes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ichneumon",
+      "url": "https://en.wiktionary.org/wiki/ichneumon",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

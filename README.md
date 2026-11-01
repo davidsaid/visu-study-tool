@@ -25,10 +25,11 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 - **"¿Cuál es?"**: see a scientific name and pick the right photo out of four. The harder
   the level, the more closely related the other animals.
 - **Mistakes teach.** If you confuse two species, you see them side by side with what tells
-  them apart.
+  them apart. Every mistake also shows **what the name says**: what the Latin or Greek of the
+  class, order, genus or species means, as a memory aid.
 - **Explore the tree of life** branch by branch. Every group and species has a card: photos,
   a video, distribution, diet, size, sexual dimorphism, sex determination, conservation
-  status, field marks and look-alikes. **Every fact, photo and video names its source.**
+  status, field marks, look-alikes and the meaning of its names. **Every fact, photo and video names its source.**
 - **Mock exam** with the five-field answer sheet.
 - Spanish and English.
 
@@ -132,6 +133,8 @@ especies vienen en **colecciones**, una por examen; la primera tiene 308 vertebr
 - Practica en tres niveles, juega a **¿Cuál es?**, explora el árbol de la vida rama a rama
   y haz simulacros con la hoja de cinco casillas. Cada pregunta muestra una foto al azar del
   animal. Cuentan la ortografía y las tildes; las mayúsculas, no.
+- Cada ficha y cada fallo explican **qué dice el nombre**: qué significa el latín o el griego de
+  la clase, el orden, el género y la especie, para recordarlos mejor.
 - Cada dato, cada foto y cada vídeo indica su fuente.
 - ¿Has visto un error? Cada ficha tiene un enlace para avisar en GitHub.
 - **Para actualizar o añadir una colección**, ver [COLECCIONES.md](COLECCIONES.md).

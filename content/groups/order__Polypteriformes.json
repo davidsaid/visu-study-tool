@@ -21,6 +21,10 @@
     "es": "Sus aletas pectorales carnosas recuerdan a las de los sarcopterigios, pero la fila de pínnulas dorsales y las escamas ganoideas lo identifican como actinopterigio primitivo.",
     "en": "Its fleshy pectoral fins recall those of lobe-finned fishes, but the row of dorsal finlets and ganoid scales mark it as a basal ray-finned fish."
   },
+  "etymology": {
+    "es": "«Con forma de Polypterus», el bichir; del griego poly-, «muchos», y pteron, «ala» o «aleta»: «muchas aletas», por su hilera de pínulas dorsales.",
+    "en": "'Shaped like Polypterus', the bichir; from Greek poly-, 'many', and pteron, 'wing, fin': 'many fins', for its row of dorsal finlets."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Bichir",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Polypteridae",
       "url": "https://es.wikipedia.org/wiki/Polypteridae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Polypterus",
+      "url": "https://en.wiktionary.org/wiki/Polypterus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Polypterus",
+      "url": "https://es.wikipedia.org/wiki/Polypterus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

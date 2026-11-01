@@ -31,6 +31,10 @@
     "es": "Las hembras tienen la aleta anal más larga y alcanzan mayor tamaño; los machos desarrollan tubérculos nupciales.",
     "en": "Females have a longer anal fin and grow larger; males develop nuptial tubercles."
   },
+  "etymology": {
+    "es": "Luciobarbus une el latín lucius, «lucio», y Barbus, por su hocico puntiagudo como el de un lucio; comizo era el nombre que daban los pescadores de Toledo a esta especie.",
+    "en": "Luciobarbus joins Latin lucius, 'pike', and Barbus, for its pike-like pointed snout; comizo was the name fishermen in Toledo, Spain, used for this species."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Luciobarbus comizo",
@@ -48,6 +52,12 @@
       "title": "Wikipedia (ES): Cyprinus carpio",
       "url": "https://es.wikipedia.org/wiki/Cyprinus_carpio",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Barbinae",
+      "url": "https://etyfish.org/barbinae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

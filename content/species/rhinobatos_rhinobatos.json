@@ -27,6 +27,10 @@
       "en": "The blackchin guitarfish is very similar, but the common guitarfish is smaller and has larger eyes."
     }
   ],
+  "etymology": {
+    "es": "El nombre se repite: une el griego rhine, «lima», o rhinos, «piel», por la piel áspera de los tiburones, y batos, «raya»: su cuerpo es intermedio entre tiburón y raya.",
+    "en": "The name repeats: it joins Greek rhine, 'rasp', or rhinos, 'hide', for sharks' rough skin, and batos, 'ray': its body is intermediate between shark and ray."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Rhinobatos rhinobatos",
@@ -44,6 +48,12 @@
       "title": "Wikipedia (ES): Squatina squatina",
       "url": "https://es.wikipedia.org/wiki/Squatina_squatina",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Rhinobatidae",
+      "url": "https://etyfish.org/rhinobatidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

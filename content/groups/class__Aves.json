@@ -23,6 +23,10 @@
     "es": "La sangre caliente que comparten con los mamíferos es convergente: su grupo hermano actual son los cocodrilos, no los mamíferos.",
     "en": "The warm blood they share with mammals is convergent: their closest living relatives are crocodilians, not mammals."
   },
+  "etymology": {
+    "es": "Del latín aves, plural de avis, «ave».",
+    "en": "From Latin aves, plural of avis, 'bird'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Bird",
@@ -33,6 +37,12 @@
     {
       "title": "Wikipedia (es): Aves",
       "url": "https://es.wikipedia.org/wiki/Aves",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Aves",
+      "url": "https://en.wiktionary.org/wiki/Aves",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

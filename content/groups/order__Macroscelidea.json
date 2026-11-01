@@ -21,6 +21,10 @@
     "es": "No confundir con las musarañas verdaderas (Soricidae, Eulipotyphla): las musarañas elefante son mayores, tienen patas largas y hocico en trompa, y pertenecen a Afrotheria.",
     "en": "Do not confuse with true shrews (Soricidae, Eulipotyphla): elephant shrews are larger, long-legged, with a trunk-like snout, and belong to Afrotheria."
   },
+  "etymology": {
+    "es": "Deriva del género Macroscelides, del griego makros, «largo», y skelos, «pierna»: «piernas largas».",
+    "en": "From the genus Macroscelides, from Greek makros, 'long', and skelos, 'leg': 'long legs'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Sengi",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Macroscelidea",
       "url": "https://es.wikipedia.org/wiki/Macroscelidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Macroscelidea",
+      "url": "https://en.wiktionary.org/wiki/Macroscelidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Macroscelides",
+      "url": "https://en.wiktionary.org/wiki/Macroscelides",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

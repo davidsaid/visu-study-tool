@@ -19,6 +19,10 @@
     "es": "Es el grupo hermano de Neoaves; los machos de anátidas conservan el pene, que se ha perdido en Neoaves.",
     "en": "It is the sister group of Neoaves; male waterfowl retain a penis, which has been lost in Neoaves."
   },
+  "etymology": {
+    "es": "Del latín gallus, «gallo», y anser, «ganso»: las gallináceas y las anátidas.",
+    "en": "From Latin gallus, 'rooster', and anser, 'goose': landfowl and waterfowl."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Fowl",
@@ -35,6 +39,12 @@
     {
       "title": "Wikipedia (en): Anseriformes",
       "url": "https://en.wikipedia.org/wiki/Anseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Galloanserae",
+      "url": "https://en.wiktionary.org/wiki/Galloanserae",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

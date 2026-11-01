@@ -35,6 +35,10 @@
       "When walking it makes a crackling sound caused by the movement of its tendons."
     ]
   },
+  "etymology": {
+    "es": "Las dos palabras significan «reno»: Rangifer es el latín rangifer y tarandus viene del griego tárandos.",
+    "en": "Both words mean 'reindeer': Rangifer is Latin rangifer, and tarandus comes from Greek tarandos."
+  },
   "sources": [
     {
       "title": "Rangifer tarandus — Wikipedia (es)",
@@ -45,6 +49,18 @@
     {
       "title": "Reindeer — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Reindeer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Rangifer",
+      "url": "https://en.wiktionary.org/wiki/Rangifer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: tarandus",
+      "url": "https://en.wiktionary.org/wiki/tarandus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

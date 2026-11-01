@@ -26,6 +26,10 @@
     "es": "Las hembras suelen ser mayores; el macho tiene la cloaca redondeada y la hembra cónica.",
     "en": "Females are usually larger; the male's cloacal swelling is rounded, the female's conical."
   },
+  "etymology": {
+    "es": "asper es latín, «áspero, rugoso».",
+    "en": "asper is Latin for 'rough, coarse'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Calotriton asper",
@@ -42,6 +46,12 @@
     {
       "title": "Wikipedia (EN): Palmate newt",
       "url": "https://en.wikipedia.org/wiki/Palmate_newt",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: asper",
+      "url": "https://en.wiktionary.org/wiki/asper",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

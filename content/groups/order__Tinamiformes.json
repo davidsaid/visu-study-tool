@@ -21,6 +21,10 @@
     "es": "Por convergencia se parecen a las perdices (Galliformes), y en algunos países así los llaman; pero son paleognatas, parientes de las ratites.",
     "en": "Through convergence they resemble partridges (Galliformes), and are called so in some countries, but they are palaeognaths, related to ratites."
   },
+  "etymology": {
+    "es": "«Con forma de Tinamus», el tinamú; del caribe (gálibi) tinamu, nombre local de estas aves.",
+    "en": "'Shaped like Tinamus', the tinamou; from the Carib (Galibi) word tinamu, the local name for these birds."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Tinamou",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Tinamidae",
       "url": "https://es.wikipedia.org/wiki/Tinamidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Tinamus",
+      "url": "https://en.wiktionary.org/wiki/Tinamus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

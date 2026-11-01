@@ -26,6 +26,10 @@
     "es": "Los machos son claramente más pesados que las hembras (hasta 920 kg frente a unos 300–630 kg).",
     "en": "Males are clearly heavier than females (up to 920 kg versus about 300–630 kg)."
   },
+  "etymology": {
+    "es": "Bison es el latín bison, «buey salvaje», de origen germánico; bonasus es el latín del griego bónasos, nombre que Aristóteles daba al bisonte.",
+    "en": "Bison is Latin bison, 'wild ox', of Germanic origin; bonasus is Latin from Greek bonasos, the name Aristotle used for the bison."
+  },
   "sources": [
     {
       "title": "Bison bonasus — Wikipedia (es)",
@@ -36,6 +40,18 @@
     {
       "title": "European bison — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/European_bison",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Bison",
+      "url": "https://en.wiktionary.org/wiki/Bison",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: bonasus",
+      "url": "https://en.wiktionary.org/wiki/bonasus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

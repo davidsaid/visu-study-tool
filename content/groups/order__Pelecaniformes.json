@@ -21,6 +21,10 @@
     "es": "Las garzas se distinguen de cigüeñas, grullas, ibis y espátulas porque vuelan con el cuello recogido y no estirado.",
     "en": "Herons differ from storks, cranes, ibises and spoonbills in flying with the neck retracted rather than outstretched."
   },
+  "etymology": {
+    "es": "«Con forma de Pelecanus», el pelícano; del griego pelekan, derivado de pelekys, «hacha», por su parecido funcional o formal con un hacha.",
+    "en": "'Shaped like Pelecanus', the pelican; from Greek pelekan, derived from pelekys, 'axe', for a functional or formal likeness to an axe."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Pelecaniformes",
@@ -67,6 +71,18 @@
     {
       "title": "Wikipedia (es): Plateinae",
       "url": "https://es.wikipedia.org/wiki/Plateinae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Pelecanus",
+      "url": "https://en.wiktionary.org/wiki/Pelecanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: πελεκάν",
+      "url": "https://en.wiktionary.org/wiki/%CF%80%CE%B5%CE%BB%CE%B5%CE%BA%CE%AC%CE%BD",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

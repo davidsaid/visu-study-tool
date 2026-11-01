@@ -25,6 +25,10 @@
       "en": "The wild camel has humps; the guanaco has none."
     }
   ],
+  "etymology": {
+    "es": "Lama es latín moderno, del español llama; guanicoe se formó a partir de guanaco, que viene del quechua wanaku.",
+    "en": "Lama is New Latin, from Spanish llama; guanicoe is a back-formation from guanaco, which comes from Quechua wanaku."
+  },
   "sources": [
     {
       "title": "Lama guanicoe — Wikipedia (es)",
@@ -35,6 +39,24 @@
     {
       "title": "Guanaco — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Guanaco",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Lama",
+      "url": "https://en.wiktionary.org/wiki/Lama",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: guanicoe",
+      "url": "https://en.wiktionary.org/wiki/guanicoe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Guanaco",
+      "url": "https://en.wikipedia.org/wiki/Lama_guanicoe",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

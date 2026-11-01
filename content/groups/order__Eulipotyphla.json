@@ -21,6 +21,10 @@
     "es": "No confundir con las musarañas elefante (Macroscelidea, afroterios) ni con las tupayas (Scandentia), antes incluidas en Insectivora.",
     "en": "Do not confuse with elephant shrews (Macroscelidea, afrotherians) or treeshrews (Scandentia), formerly included in Insectivora."
   },
+  "etymology": {
+    "es": "Del griego eu-, «verdadero», y Lipotyphla, «sin intestino ciego»: los verdaderos lipotiflos, que carecen de ciego.",
+    "en": "From Greek eu-, 'true', and Lipotyphla, 'lacking a blind gut': the true lipotyphlans, which lack a caecum."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Eulipotyphla",
@@ -43,6 +47,18 @@
     {
       "title": "Wikipedia (en): Treeshrew",
       "url": "https://en.wikipedia.org/wiki/Treeshrew",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Lipotyphla",
+      "url": "https://en.wikipedia.org/wiki/Lipotyphla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Eulipotyphla",
+      "url": "https://en.wiktionary.org/wiki/Eulipotyphla",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

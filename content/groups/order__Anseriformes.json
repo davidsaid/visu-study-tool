@@ -21,6 +21,10 @@
     "es": "No confundir con los somormujos (Podicipediformes), que también nadan pero tienen pico puntiagudo sin laminillas y dedos lobulados en lugar de palmeados.",
     "en": "Do not confuse with grebes (Podicipediformes), which also swim but have a pointed bill without lamellae and lobed rather than webbed toes."
   },
+  "etymology": {
+    "es": "«Con forma de Anser»: anser es «ganso» en latín.",
+    "en": "'Shaped like Anser': anser is Latin for 'goose'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Anseriformes",
@@ -37,6 +41,24 @@
     {
       "title": "Wikipedia (en): Grebe",
       "url": "https://en.wikipedia.org/wiki/Grebe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Anseriformes",
+      "url": "https://en.wiktionary.org/wiki/Anseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: anser",
+      "url": "https://en.wiktionary.org/wiki/anser",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

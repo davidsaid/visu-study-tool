@@ -21,6 +21,10 @@
     "es": "No confundir con el pangolín (Pholidota, laurasiaterio) ni con el cerdo hormiguero (afroterio): se agruparon con ellos en Edentata, pero su parecido es convergente.",
     "en": "Do not confuse with the pangolin (Pholidota, a laurasiathere) or the aardvark (an afrothere): they were once lumped in Edentata, but the resemblance is convergent."
   },
+  "etymology": {
+    "es": "Del griego xenos, «extraño», y arthron, «articulación»: sus vértebras tienen articulaciones adicionales que no tiene ningún otro mamífero.",
+    "en": "From Greek xenos, 'strange', and arthron, 'joint': their vertebrae have extra articulations unlike any other mammal's."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Xenarthra",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Pilosa",
       "url": "https://en.wikipedia.org/wiki/Pilosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Xenarthra",
+      "url": "https://en.wiktionary.org/wiki/Xenarthra",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

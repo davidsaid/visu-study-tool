@@ -23,6 +23,10 @@
     "es": "No confundir con las lampreas (Hyperoartia): estas tienen una boca en ventosa con dientes córneos, siete orificios branquiales a cada lado y ojos bien desarrollados en el adulto, y no tienen barbillas.",
     "en": "Do not confuse with lampreys (Hyperoartia): lampreys have a sucker mouth with horny teeth, seven gill openings on each side and well-developed adult eyes, and no barbels."
   },
+  "etymology": {
+    "es": "Plural de Myxine, del griego myxinos, «pez baboso»: los mixinos, productores de moco.",
+    "en": "Plural of Myxine, from Greek myxinos, 'slime-fish': the slime-producing hagfishes."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Hagfish",
@@ -33,6 +37,18 @@
     {
       "title": "Wikipedia (es): Myxini",
       "url": "https://es.wikipedia.org/wiki/Myxini",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Myxini",
+      "url": "https://en.wiktionary.org/wiki/Myxini",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Myxine",
+      "url": "https://en.wiktionary.org/wiki/Myxine",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

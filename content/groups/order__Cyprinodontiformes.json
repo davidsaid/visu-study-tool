@@ -23,6 +23,10 @@
     "es": "Pese al nombre de «carpas dentadas», no están emparentados con las carpas (Cypriniformes, ostariofisios), sino que son acantopterigios.",
     "en": "Despite the name 'toothcarps', they are not close to true carps (Cypriniformes, Ostariophysi); they are acanthopterygians."
   },
+  "etymology": {
+    "es": "«Con forma de Cyprinodon»: del griego kyprinos, «carpa», y odon, «diente»: peces parecidos a carpas pero con dientes («carpas dentadas»).",
+    "en": "'Shaped like Cyprinodon': from Greek kyprinos, 'carp', and odon, 'tooth': carp-like fish with teeth ('tooth carps')."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Cyprinodontiformes",
@@ -33,6 +37,24 @@
     {
       "title": "Wikipedia (es): Cyprinodontiformes",
       "url": "https://es.wikipedia.org/wiki/Cyprinodontiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Cyprinodontiformes",
+      "url": "https://en.wiktionary.org/wiki/Cyprinodontiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Cyprinodontiformes (part 1)",
+      "url": "https://etyfish.org/cyprinodontiformes1/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

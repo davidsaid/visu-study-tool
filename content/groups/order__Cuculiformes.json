@@ -17,6 +17,10 @@
       "Many Eurasian species are brood parasites, laying eggs in other species' nests"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Cuculus»: cuculus es «cuco» en latín, una onomatopeya del canto del macho.",
+    "en": "'Shaped like Cuculus': cuculus is Latin for 'cuckoo', echoing the male's call."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Cuckoo",
@@ -27,6 +31,24 @@
     {
       "title": "Wikipedia (es): Cuculidae",
       "url": "https://es.wikipedia.org/wiki/Cuculidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Cuculiformes",
+      "url": "https://en.wiktionary.org/wiki/Cuculiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: cuculus",
+      "url": "https://en.wiktionary.org/wiki/cuculus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

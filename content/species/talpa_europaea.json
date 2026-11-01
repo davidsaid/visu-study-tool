@@ -31,6 +31,10 @@
     "es": "Las hembras suelen ser más pequeñas que los machos.",
     "en": "Females are typically smaller than males."
   },
+  "etymology": {
+    "es": "Talpa es latín, «topo»; europaea significa «europea».",
+    "en": "Talpa is Latin for 'mole'; europaea means 'European'."
+  },
   "sources": [
     {
       "title": "Talpa europaea — Wikipedia (es)",
@@ -47,6 +51,18 @@
     {
       "title": "Galemys pyrenaicus — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Galemys_pyrenaicus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Talpa",
+      "url": "https://en.wiktionary.org/wiki/Talpa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: europaea",
+      "url": "https://en.wiktionary.org/wiki/europaea",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

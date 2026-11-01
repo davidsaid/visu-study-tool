@@ -132,6 +132,14 @@ function factValue(f) {
   if (f.field === 'iucn') { const c = iucnCode(f); if (c) return `<span class="iucn">${c}</span>${L(I.IUCN[c][0], I.IUCN[c][1])}`; }
   return esc(I.t(f));
 }
+/* "What the name says": class, order and scientific name, each with its etymology, as memory aids. */
+function namesHTML(id, cite) {
+  const rows = [['class', L('Clase', 'Class')], ['order', L('Orden', 'Order')], ['genus', L('Género y especie', 'Genus and species')]]
+    .map(([k, lab]) => [lab, App.nameMeaning(id, k)]).filter(r => r[1]);
+  if (!rows.length) return '';
+  const draft = rows.some(r => r[1].draft) ? ` <span class="draft">${L('borrador', 'draft')}</span>` : '';
+  return `<h2 class="sec">${L('Qué dice el nombre', 'What the name says')}${draft}</h2><dl class="names-dl">${rows.map(([lab, m]) => `<dt>${lab} <i>${esc(m.name)}</i></dt><dd>${esc(m.text)}${cite.content(m.key, m.sources)}</dd>`).join('')}</dl>`;
+}
 function speciesCard(id) {
   const s = App.sp(id), c = (M().content.species || {})[id] || null, cite = citer();
   const draft = c && c.status === 'draft' ? `<span class="draft">${L('borrador', 'draft')}</span>` : '';
@@ -144,7 +152,7 @@ function speciesCard(id) {
     ${other && other !== App.spName(id) ? `<p class="alt">${I.lang === 'es' ? 'EN' : 'ES'}: ${esc(other)}</p>` : ''}${exam5(id)}`;
   const status = `<div class="status-row">${iu && iucnCode(iu) ? `<span class="stat"><span class="iucn ${iucnCode(iu)}">${iucnCode(iu)}</span>${L('UICN', 'IUCN')}: ${L(I.IUCN[iucnCode(iu)][0], I.IUCN[iucnCode(iu)][1])}</span>` : ''}${es ? `<span class="stat">${esc(I.t(es))}</span>` : ''}<span class="stat">${App.ring(st.meter, 18)} ${L('Progreso', 'Progress')} ${pct(st.meter)}${st.mastered ? ' · ' + L('dominada', 'mastered') : ''}</span>${App.hasPhoto(id) ? `<button class="btn" data-practise="${esc(id)}" style="min-height:40px">${L('Practicar', 'Practise')}</button>` : ''}</div>`;
   const factsHTML = facts.length ? `<section class="facts"><h2 class="sec" style="margin-top:0">${L('Datos', 'Facts')}</h2><dl>${facts.map(f => `<dt>${esc(I.fieldName(f.field))}</dt><dd>${factValue(f)}${cite.bestiary(f.src)}${f.note ? `<span class="tiny muted"> · ${esc(I.t(f.note))}</span>` : ''}</dd>`).join('')}</dl></section>` : '';
-  let body = `<div class="entry-grid ${factsHTML ? 'has-facts' : ''}"><div>${figureHTML(id)}</div>${factsHTML}</div>`;
+  let body = `<div class="entry-grid ${factsHTML ? 'has-facts' : ''}"><div>${figureHTML(id)}</div>${factsHTML}</div>${namesHTML(id, cite)}`;
   if (c) {
     const cs = cite.content(id, c.sources);
     const marks = I.list(c.field_marks);
@@ -156,7 +164,6 @@ function speciesCard(id) {
         <div><p><b>${cid ? `<a href="#${esc(App.routeFor(cid))}">${esc(App.spName(cid))}</a> · ` : ''}<i>${esc(x.binomial)}</i></b></p><p>${esc(I.t(x))}</p></div></div>`;
     }).join('')}</div>`;
     if (c.dimorphism && I.t(c.dimorphism)) body += `<h2 class="sec">${L('Dimorfismo sexual', 'Sexual dimorphism')}${cs}</h2><p class="etym">${esc(I.t(c.dimorphism))}</p>`;
-    if (c.etymology && I.t(c.etymology)) body += `<h2 class="sec">${L('Etimología', 'Etymology')}${cs}</h2><p class="etym">${esc(I.t(c.etymology))}</p>`;
     const triv = I.list(c.trivia);
     if (triv.length) body += `<h2 class="sec">${L('Curiosidades', 'Trivia')}${cs}</h2><ul class="small">${triv.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`;
   } else {
@@ -189,6 +196,7 @@ function groupCard(id) {
   let h = `<article class="plate"><p class="kicker"><span>${rk}</span><span>${sp.length} ${L('especies del bestiario', 'bestiary species')}</span><span>${sp.filter(App.hasPhoto).length} ${L('con foto', 'with photo')}</span></p>
     <h1 class="ptitle" tabindex="-1">${esc(n.scientific || id)}</h1>${vern && vern !== n.scientific ? `<p class="alt" style="font-size:1rem">${esc(vern)}</p>` : ''}${gradeBand(id)}
     ${g && g.summary && I.t(g.summary) ? `<p class="etym" style="margin-top:.6rem">${esc(I.t(g.summary))}${cs}${draft}</p>` : ''}
+    ${g && g.etymology && I.t(g.etymology) ? `<div class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p><p>${esc(I.t(g.etymology))}${cs}</p></div>` : ''}
     <div class="mast-box">${badge ? App.medalSVG(n.scientific, earned ? 1 : prog, 64, { earned: !!earned }) : App.ring(gs.meter, 56)}<div><div class="pctn">${pct(gs.meter)}</div>
       <p class="small" style="margin:.2rem 0">${gs.mastered} ${L('de', 'of')} ${gs.total} ${L('especies dominadas', 'species mastered')}</p>
       ${badge ? `<p class="small" style="margin:.2rem 0"><b>${L('Insignia', 'Badge')}:</b> ${esc(badge.name)} · ${earned ? L('conseguida', 'earned') : pct(prog)}</p>` : ''}

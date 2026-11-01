@@ -34,6 +34,10 @@
       "It breathes air, surfacing roughly every ten minutes."
     ]
   },
+  "etymology": {
+    "es": "Electrophorus significa «portador de electricidad» (griego phoreus, «portador»), por su potente descarga; electricus es neolatín, «del ámbar», sustancia que atrae objetos al frotarla y que dio nombre a la electricidad.",
+    "en": "Electrophorus means 'electricity bearer' (Greek phoreus, 'bearer'), for its powerful shock; electricus is Neo-Latin for 'of amber', the substance that attracts things when rubbed and gave electricity its name."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Electrophorus electricus",
@@ -45,6 +49,12 @@
       "title": "Wikipedia (EN): Electrophorus electricus",
       "url": "https://en.wikipedia.org/wiki/Electrophorus_electricus",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Electrophoridae",
+      "url": "https://etyfish.org/?p=29558",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

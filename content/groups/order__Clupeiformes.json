@@ -19,6 +19,10 @@
       "Long, numerous gill rakers for filtering plankton; they often school"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Clupea»: clupea era un nombre latino de un pez parecido al arenque.",
+    "en": "'Shaped like Clupea': clupea was a Latin name for a herring-like fish."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Clupeiformes",
@@ -29,6 +33,24 @@
     {
       "title": "Wikipedia (es): Clupeiformes",
       "url": "https://es.wikipedia.org/wiki/Clupeiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Clupeiformes",
+      "url": "https://en.wiktionary.org/wiki/Clupeiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Clupeidae",
+      "url": "https://etyfish.org/clupeidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

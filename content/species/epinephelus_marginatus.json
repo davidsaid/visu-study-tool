@@ -24,6 +24,10 @@
       "It can live about 50 years; a maximum age of 61 has been recorded."
     ]
   },
+  "etymology": {
+    "es": "Epinephelus es griego, «nublado», por la membrana que Bloch veía en el ojo de los meros; marginatus es latín, «ribeteado», por los bordes claros de sus aletas.",
+    "en": "Epinephelus is Greek for 'clouded over', for the film Bloch saw over groupers' eyes; marginatus is Latin for 'edged', for the pale margins of its fins."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Epinephelus marginatus",
@@ -35,6 +39,12 @@
       "title": "Wikipedia (EN): Epinephelus marginatus",
       "url": "https://en.wikipedia.org/wiki/Epinephelus_marginatus",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Epinephelidae",
+      "url": "https://etyfish.org/perciformes5",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

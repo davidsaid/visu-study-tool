@@ -22,6 +22,10 @@
       "en": "The cod has three dorsal fins, a chin barbel and a spotted brown or green back."
     }
   ],
+  "etymology": {
+    "es": "El nombre se repite y su origen es incierto: quizá del latín merula, «mirlo», por su color pardo grisáceo, o de mare, «mar», y lucius, «lucio»: «lucio de mar».",
+    "en": "The name repeats and its origin is uncertain: perhaps Latin merula, 'blackbird', for its brownish-grey colour, or mare, 'sea', plus lucius, 'pike': 'sea pike'."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Merluccius merluccius",
@@ -39,6 +43,12 @@
       "title": "Wikipedia (ES): Gadus morhua",
       "url": "https://es.wikipedia.org/wiki/Gadus_morhua",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Merlucciidae",
+      "url": "https://etyfish.org/merlucciidae",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

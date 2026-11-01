@@ -15,6 +15,10 @@
       "Scales usually ctenoid, rough to the touch"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Perca»: peces «como la perca»; perca es la palabra latina para la perca, tomada del griego perke.",
+    "en": "'Shaped like Perca': 'perch-like' fishes; perca is Latin for the perch, from Greek perke."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Perciformes",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (en): Syngnathiformes",
       "url": "https://en.wikipedia.org/wiki/Syngnathiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Perca",
+      "url": "https://en.wiktionary.org/wiki/Perca",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

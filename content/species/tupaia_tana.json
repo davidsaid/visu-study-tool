@@ -19,6 +19,10 @@
     "es": "Machos y hembras son similares en aspecto y tamaño.",
     "en": "Males and females are similar in appearance and size."
   },
+  "etymology": {
+    "es": "Tupaia viene del malayo tupai, «ardilla, tupaya».",
+    "en": "Tupaia comes from Malay tupai, 'squirrel, treeshrew'."
+  },
   "sources": [
     {
       "title": "Tupaia tana — Wikipedia (es)",
@@ -29,6 +33,12 @@
     {
       "title": "Large treeshrew — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Large_treeshrew",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Tupaia",
+      "url": "https://en.wiktionary.org/wiki/Tupaia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

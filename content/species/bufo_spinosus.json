@@ -26,6 +26,10 @@
     "es": "Las hembras son mucho mayores que los machos (hasta 180 mm frente a 112 mm).",
     "en": "Females are much larger than males (up to 180 mm versus 112 mm)."
   },
+  "etymology": {
+    "es": "Bufo es latín, «sapo»; spinosus es latín, «espinoso», de spina, «espina».",
+    "en": "Bufo is Latin for 'toad'; spinosus is Latin for 'thorny, prickly', from spina, 'thorn'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Bufo spinosus",
@@ -42,6 +46,18 @@
     {
       "title": "Wikipedia (ES): Epidalea calamita",
       "url": "https://es.wikipedia.org/wiki/Epidalea_calamita",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Bufo",
+      "url": "https://en.wiktionary.org/wiki/Bufo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: spinosus",
+      "url": "https://en.wiktionary.org/wiki/spinosus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

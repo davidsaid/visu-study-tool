@@ -35,6 +35,10 @@
       "Beech martens appear as minor villains in Collodi's The Adventures of Pinocchio."
     ]
   },
+  "etymology": {
+    "es": "Martes es el latín martes, «marta».",
+    "en": "Martes is the Latin martes, 'marten'."
+  },
   "sources": [
     {
       "title": "Martes foina — Wikipedia (es)",
@@ -45,6 +49,12 @@
     {
       "title": "Beech marten — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Beech_marten",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Martes",
+      "url": "https://en.wiktionary.org/wiki/Martes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

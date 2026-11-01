@@ -21,6 +21,10 @@
     "es": "No confundir con los lagomorfos (conejos, liebres, picas), que tienen un segundo par de pequeños incisivos superiores detrás del primero.",
     "en": "Do not confuse with lagomorphs (rabbits, hares, pikas), which have a second, small pair of upper incisors behind the first."
   },
+  "etymology": {
+    "es": "Del latín rodens, «que roe», de rodere, «roer».",
+    "en": "From Latin rodens, 'gnawing', from rodere, 'to gnaw'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Rodent",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Rodentia",
       "url": "https://es.wikipedia.org/wiki/Rodentia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Rodentia",
+      "url": "https://en.wiktionary.org/wiki/Rodentia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

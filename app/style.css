@@ -257,6 +257,13 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .twoup .bin .hl-good { color: var(--ok); text-decoration: underline; text-underline-offset: 3px; }
 .key { margin-top: 1rem; border: 1px solid var(--ink); padding: .9rem 1rem; border-radius: 4px; background: var(--surface); }
 .key .eyebrow { color: var(--error); }
+.name-key { margin-top: 1rem; border-left: 3px solid var(--accent); padding: .5rem .9rem; background: var(--surface); border-radius: 0 4px 4px 0; }
+.name-key p { margin: .25rem 0; }
+.name-key .eyebrow { margin: 0 0 .2rem; }
+.names-dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem .9rem; margin: .4rem 0 0; }
+.names-dl dt { font-weight: 600; }
+.names-dl dd { margin: 0; }
+@media (max-width: 560px) { .names-dl { grid-template-columns: 1fr; } .names-dl dd { margin-bottom: .4rem; } }
 .tip { font-family: var(--font-plate); font-size: 1.15rem; line-height: 1.35; margin: .3rem 0; }
 .tails { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin: .6rem 0 .2rem; }
 .tails figure { margin: 0; text-align: center; padding: .4rem; border-radius: 10px; background: var(--paper); }

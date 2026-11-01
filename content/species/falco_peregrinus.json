@@ -26,10 +26,6 @@
     "es": "Plumaje similar en ambos sexos, pero la hembra es hasta un 30 % mayor.",
     "en": "Similar plumage in both sexes, but the female is up to 30% larger."
   },
-  "etymology": {
-    "es": "Falco se relaciona con el latín falx, «hoz», por la silueta de sus alas; peregrinus significa «viajero» o «que viene de fuera».",
-    "en": "Falco is related to Latin falx, 'sickle', after its wing silhouette; peregrinus means 'wanderer' or 'one from abroad'."
-  },
   "trivia": {
     "es": [
       "Según algunas fuentes supera los 320 km/h en picado, lo que lo convertiría en el animal más rápido del planeta."
@@ -37,6 +33,10 @@
     "en": [
       "Some sources state it exceeds 320 km/h in its stoop, which would make it the fastest animal on the planet."
     ]
+  },
+  "etymology": {
+    "es": "Falco es «halcón» en latín tardío, probablemente de origen germánico («ave gris»); la relación con falx, «hoz», por el pico y las garras curvos, se considera etimología popular. Peregrinus significa «viajero» o «que viene de fuera».",
+    "en": "Falco is Late Latin for 'falcon', probably of Germanic origin ('grey bird'); the link with falx, 'sickle', for the curved bill and talons, is regarded as folk etymology. Peregrinus means 'wanderer' or 'one from abroad'."
   },
   "sources": [
     {
@@ -54,6 +54,12 @@
     {
       "title": "Wikipedia (EN): Common kestrel",
       "url": "https://en.wikipedia.org/wiki/Common_kestrel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: falco",
+      "url": "https://en.wiktionary.org/wiki/falco",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

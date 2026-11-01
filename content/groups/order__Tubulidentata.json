@@ -21,6 +21,10 @@
     "es": "No confundir con los osos hormigueros (Pilosa): el parecido es convergente; el cerdo hormiguero tiene molares, orejas grandes y es un afroterio.",
     "en": "Do not confuse with anteaters (Pilosa): the resemblance is convergent; the aardvark has molars and large ears, and is an afrothere."
   },
+  "etymology": {
+    "es": "Del latín tubulus, «tubito», y dentatus, «dentado»: los dientes del cerdo hormiguero están formados por finos túbulos.",
+    "en": "From Latin tubulus, 'little tube', and dentatus, 'toothed', referring to the aardvark's tubule-style teeth."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Orycteropodidae",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Tubulidentata",
       "url": "https://es.wikipedia.org/wiki/Tubulidentata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Tubulidentata",
+      "url": "https://en.wiktionary.org/wiki/Tubulidentata",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

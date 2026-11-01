@@ -28,6 +28,10 @@
       "It kills its prey by constriction and spends long periods submerged in ambush."
     ]
   },
+  "etymology": {
+    "es": "Eunectes es griego, «buen nadador»; murinus es latín, «de los ratones», interpretado como «que caza ratones».",
+    "en": "Eunectes is Greek for 'good swimmer'; murinus is Latin for 'of mice', understood as 'preying on mice'."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Eunectes murinus",
@@ -38,6 +42,18 @@
     {
       "title": "Wikipedia (EN): Green anaconda",
       "url": "https://en.wikipedia.org/wiki/Green_anaconda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eunectes",
+      "url": "https://en.wikipedia.org/wiki/Eunectes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: murinus",
+      "url": "https://en.wiktionary.org/wiki/murinus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

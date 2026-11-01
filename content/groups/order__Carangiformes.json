@@ -17,6 +17,10 @@
       "Small, adherent cycloid scales; fast predators of open water"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Caranx», de origen discutido: Lacepède lo derivó de kara, «cabeza», por su cabeza prominente; otros, del francés carangue, nombre de estos peces.",
+    "en": "'Shaped like Caranx', of debated origin: Lacepède derived it from kara, 'head', for its prominent head; others from French carangue, a name for these fish."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Carangiformes",
@@ -27,6 +31,24 @@
     {
       "title": "Wikipedia (es): Carangidae",
       "url": "https://es.wikipedia.org/wiki/Carangidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Carangiformes",
+      "url": "https://en.wiktionary.org/wiki/Carangiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Carangiformes (part 1)",
+      "url": "https://etyfish.org/carangiformes1/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

@@ -26,6 +26,10 @@
     "es": "Los machos son mucho mayores que las hembras (140–205 kg frente a 90–100 kg) y desarrollan la espalda plateada.",
     "en": "Males are much larger than females (140–205 kg vs 90–100 kg) and develop the silver saddle."
   },
+  "etymology": {
+    "es": "Gorilla viene del griego Gorillai, una tribu de mujeres velludas en el relato del navegante cartaginés Hannón; beringei honra a Robert von Beringe, oficial alemán que cazó dos ejemplares en 1902.",
+    "en": "Gorilla comes from Greek Gorillai, a tribe of hairy women in the account of the Carthaginian navigator Hanno; beringei honours Robert von Beringe, a German officer who shot two in 1902."
+  },
   "sources": [
     {
       "title": "Eastern gorilla — Wikipedia (en)",
@@ -42,6 +46,24 @@
     {
       "title": "Chimpanzee — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Chimpanzee",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Gorilla",
+      "url": "https://en.wiktionary.org/wiki/Gorilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Gorilla",
+      "url": "https://en.wikipedia.org/wiki/Gorilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Robert von Beringe",
+      "url": "https://en.wikipedia.org/wiki/Robert_von_Beringe",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

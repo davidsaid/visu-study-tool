@@ -21,6 +21,10 @@
     "es": "No confundir con los espáridos (dorada, besugo), de cuerpo más alto, con una sola aleta dorsal continua y sin espinas en el opérculo.",
     "en": "Do not confuse with sea breams (gilthead, blackspot seabream), which are deeper-bodied, with a single continuous dorsal fin and no opercular spines."
   },
+  "etymology": {
+    "es": "«Con forma de Morone», las lubinas norteamericanas. Su autor, S. L. Mitchill (1814), no explicó el nombre; C. Scharpf propone el inglés antiguo morone, «carmesí oscuro», por los tonos rojizos que Mitchill describió.",
+    "en": "'Shaped like Morone', the temperate basses. Its author, S. L. Mitchill (1814), never explained the name; C. Scharpf suggests the archaic English morone, 'deep crimson' (maroon), matching the reddish tints Mitchill described."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Moroniformes",
@@ -44,6 +48,18 @@
       "title": "Wikipedia (en): Sparidae",
       "url": "https://en.wikipedia.org/wiki/Sparidae",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Morone",
+      "url": "https://en.wikipedia.org/wiki/Morone",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Scharpf, C. (2019) The mystery of Morone: solved at last? American Currents 44(1)",
+      "url": "https://etyfish.org/Scharpf-Morone.pdf",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

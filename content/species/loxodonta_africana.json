@@ -26,6 +26,10 @@
     "es": "Los machos son mucho mayores y tienen colmillos más grandes que las hembras.",
     "en": "Males are much larger and have bigger tusks than females."
   },
+  "etymology": {
+    "es": "Loxodonta viene del griego loxós, «oblicuo», y odoús, «diente», por el esmalte en forma de rombo de sus molares; africana significa «africana».",
+    "en": "Loxodonta is from Greek loxos, 'slanting', and odous, 'tooth', for the lozenge-shaped enamel of its molars; africana means 'African'."
+  },
   "sources": [
     {
       "title": "Loxodonta africana — Wikipedia (es)",
@@ -36,6 +40,18 @@
     {
       "title": "African bush elephant — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/African_bush_elephant",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Loxodonta",
+      "url": "https://en.wikipedia.org/wiki/Loxodonta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: africanus",
+      "url": "https://en.wiktionary.org/wiki/africanus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

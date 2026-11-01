@@ -21,6 +21,10 @@
     "es": "No confundir con los armadillos (Cingulata): su coraza es de placas óseas, no de escamas córneas, y las escamas de ambos grupos surgieron por convergencia.",
     "en": "Do not confuse with armadillos (Cingulata): their armour is made of bony plates, not horny scales, and the two groups evolved their armour convergently."
   },
+  "etymology": {
+    "es": "Del griego pholidotos, «cubierto de escamas», de pholis, «escama»: los pangolines.",
+    "en": "From Greek pholidotos, 'clad in scales', from pholis, 'scale': the pangolins."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Pangolin",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Pholidota",
       "url": "https://es.wikipedia.org/wiki/Pholidota",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Pholidota",
+      "url": "https://en.wiktionary.org/wiki/Pholidota",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

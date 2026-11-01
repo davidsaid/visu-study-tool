@@ -22,6 +22,10 @@
       "en": "The mackerel has wavy black lines on its back and finlets behind the dorsal and anal fins, and lacks the row of bony scutes."
     }
   ],
+  "etymology": {
+    "es": "El nombre se repite: une el griego trachys, «áspero», y oura, «cola», nombre antiguo de este pez, probablemente por las placas espinosas de su pedúnculo caudal.",
+    "en": "The name repeats: it joins Greek trachys, 'rough', and oura, 'tail', an ancient name for this fish, presumably for the spiny plates on its tail stalk."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Atlantic horse mackerel",
@@ -39,6 +43,12 @@
       "title": "Wikipedia (EN): Atlantic mackerel",
       "url": "https://en.wikipedia.org/wiki/Atlantic_mackerel",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Carangidae",
+      "url": "https://etyfish.org/carangiformes1",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

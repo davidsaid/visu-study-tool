@@ -29,6 +29,10 @@
     "es": "Las hembras son más pequeñas, menos corpulentas y nunca tienen astas.",
     "en": "Females are smaller, less heavily built and never have antlers."
   },
+  "etymology": {
+    "es": "Las dos palabras significan «ciervo»: Cervus en latín y elaphus, latinización del griego élaphos.",
+    "en": "Both words mean 'deer': Cervus in Latin, and elaphus, the Latinised Greek elaphos."
+  },
   "sources": [
     {
       "title": "Cervus elaphus — Wikipedia (es)",
@@ -39,6 +43,18 @@
     {
       "title": "Red deer — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Red_deer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Cervus",
+      "url": "https://en.wiktionary.org/wiki/Cervus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: elaphus",
+      "url": "https://en.wiktionary.org/wiki/elaphus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

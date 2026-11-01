@@ -21,6 +21,10 @@
     "es": "Pese al nombre, no son musarañas verdaderas (Eulipotyphla), con las que antes se agrupaban en Insectivora: están más emparentadas con los colugos y los primates.",
     "en": "Despite the name, they are not true shrews (Eulipotyphla), with which they were once lumped in Insectivora: they are closer to colugos and primates."
   },
+  "etymology": {
+    "es": "Del latín scandens, «que trepa», de scandere, «trepar»: las musarañas arborícolas o tupayas.",
+    "en": "From Latin scandens, 'climbing', from scandere, 'to climb': the treeshrews."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Treeshrew",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Scandentia",
       "url": "https://es.wikipedia.org/wiki/Scandentia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Scandentia",
+      "url": "https://en.wiktionary.org/wiki/Scandentia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

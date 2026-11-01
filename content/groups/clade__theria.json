@@ -21,6 +21,10 @@
     "es": "Su grupo hermano son los monotremas (ornitorrinco, equidnas), que ponen huevos, carecen de pabellón auricular y de pezones, y tienen cloaca.",
     "en": "Their sister group is the monotremes (platypus, echidnas), which lay eggs, lack external ears and teats, and have a cloaca."
   },
+  "etymology": {
+    "es": "Del griego therion, «fiera, bestia salvaje»: marsupiales y placentarios.",
+    "en": "From Greek therion, 'wild beast': marsupials and placentals."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Theria",
@@ -37,6 +41,12 @@
     {
       "title": "Wikipedia (en): Monotreme",
       "url": "https://en.wikipedia.org/wiki/Monotreme",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Theria",
+      "url": "https://en.wiktionary.org/wiki/Theria",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

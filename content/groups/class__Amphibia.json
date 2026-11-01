@@ -21,6 +21,10 @@
     "es": "No confundir con los reptiles (p. ej. salamandras frente a lagartijas): los reptiles tienen la piel seca cubierta de escamas, uñas en los dedos y huevos amnióticos que no necesitan agua.",
     "en": "Do not confuse with reptiles (e.g. salamanders versus lizards): reptiles have dry, scaly skin, clawed toes and amniotic eggs that do not need water."
   },
+  "etymology": {
+    "es": "Del griego amphibios, «de dos vidas», de amphi, «de ambos tipos», y bios, «vida».",
+    "en": "From Greek amphibios, 'both kinds of life', from amphi, 'of both kinds', and bios, 'life'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Amphibian",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Amphibia",
       "url": "https://es.wikipedia.org/wiki/Amphibia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Amphibia",
+      "url": "https://en.wiktionary.org/wiki/Amphibia",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

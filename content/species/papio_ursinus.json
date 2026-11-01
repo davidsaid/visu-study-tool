@@ -29,6 +29,10 @@
     "es": "Muy marcado: los machos pueden ser el doble de largos y el triple de pesados que las hembras.",
     "en": "Very marked: males can be about twice as long and three times as heavy as females."
   },
+  "etymology": {
+    "es": "Papio es latín, «babuino»; ursinus es latín, «de oso», de ursus, «oso».",
+    "en": "Papio is Latin for 'baboon'; ursinus is Latin for 'bear-like', from ursus, 'bear'."
+  },
   "sources": [
     {
       "title": "Papio ursinus — Wikipedia (es)",
@@ -39,6 +43,18 @@
     {
       "title": "Chacma baboon — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Chacma_baboon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "San Diego Zoo Wildlife Alliance Library: Hamadryas Baboon, Taxonomy",
+      "url": "https://ielc.libguides.com/sdzg/factsheets/hamadryasbaboon/taxonomy",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ursinus",
+      "url": "https://en.wiktionary.org/wiki/ursinus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

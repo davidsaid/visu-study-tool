@@ -24,6 +24,10 @@
       "Its calls resemble a crying baby, so in Chinese it is called the 'infant fish'."
     ]
   },
+  "etymology": {
+    "es": "Andrias es griego, «estatua, imagen de hombre»: el género se creó para un fósil que Scheuchzer había tomado por un hombre ahogado en el Diluvio; davidianus honra a Armand David, sacerdote misionero francés, zoólogo y botánico.",
+    "en": "Andrias is Greek for 'statue, image of a man': the genus was created for a fossil Scheuchzer had taken for a man drowned in the Flood; davidianus honours Armand David, a French missionary priest, zoologist and botanist."
+  },
   "sources": [
     {
       "title": "Wikipedia (EN): Chinese giant salamander",
@@ -34,6 +38,30 @@
     {
       "title": "Wikipedia (ES): Andrias davidianus",
       "url": "https://es.wikipedia.org/wiki/Andrias_davidianus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Andrias",
+      "url": "https://en.wikipedia.org/wiki/Andrias",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Andrias",
+      "url": "https://es.wikipedia.org/wiki/Andrias",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: davidianus",
+      "url": "https://en.wiktionary.org/wiki/davidianus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Armand David",
+      "url": "https://en.wikipedia.org/wiki/Armand_David",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

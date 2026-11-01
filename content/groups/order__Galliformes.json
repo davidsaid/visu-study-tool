@@ -21,6 +21,10 @@
     "es": "Con los Anseriformes, aves semiacuáticas, forman el grupo Galloanserae; las gallináceas, en cambio, son terrestres de pico y patas fuertes.",
     "en": "With the semi-aquatic Anseriformes they form Galloanserae (fowl); gamebirds, by contrast, are terrestrial, with strong bills and legs."
   },
+  "etymology": {
+    "es": "«Con forma de Gallus»: gallus es «gallo» en latín.",
+    "en": "'Shaped like Gallus': gallus is Latin for 'rooster'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Galliformes",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Galliformes",
       "url": "https://es.wikipedia.org/wiki/Galliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: gallus",
+      "url": "https://en.wiktionary.org/wiki/gallus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

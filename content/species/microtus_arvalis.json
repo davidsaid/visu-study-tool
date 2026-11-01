@@ -33,6 +33,10 @@
       "Its populations undergo demographic explosions, during which its social organisation weakens."
     ]
   },
+  "etymology": {
+    "es": "Microtus alude a sus orejas pequeñas; arvalis es latín, «de los campos de cultivo», de arvum, «campo».",
+    "en": "Microtus refers to its small ears; arvalis is Latin for 'of cultivated fields', from arvum, 'field'."
+  },
   "sources": [
     {
       "title": "Microtus arvalis — Wikipedia (es)",
@@ -49,6 +53,18 @@
     {
       "title": "Apodemus sylvaticus — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Apodemus_sylvaticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Microtus",
+      "url": "https://en.wikipedia.org/wiki/Microtus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: arvalis",
+      "url": "https://en.wiktionary.org/wiki/arvalis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

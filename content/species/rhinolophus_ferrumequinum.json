@@ -32,6 +32,10 @@
       "It emits its ultrasound through the nose, not the mouth."
     ]
   },
+  "etymology": {
+    "es": "Rhinolophus viene del griego rhís, rhinós, «nariz», y lóphos, «cresta»; ferrumequinum une ferrum, «hierro», y equinum, «de caballo»: una herradura, la forma de su hoja nasal.",
+    "en": "Rhinolophus is from Greek rhis, rhinos, 'nose', and lophos, 'crest'; ferrumequinum joins ferrum, 'iron', and equinum, 'of a horse': a horseshoe, the shape of its noseleaf."
+  },
   "sources": [
     {
       "title": "Greater horseshoe bat — Wikipedia (en)",
@@ -48,6 +52,30 @@
     {
       "title": "Pipistrellus pipistrellus — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Pipistrellus_pipistrellus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Rhinolophus",
+      "url": "https://en.wiktionary.org/wiki/Rhinolophus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ferrum",
+      "url": "https://en.wiktionary.org/wiki/ferrum",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: equinus",
+      "url": "https://en.wiktionary.org/wiki/equinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Greater horseshoe bat",
+      "url": "https://en.wikipedia.org/wiki/Rhinolophus_ferrumequinum",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

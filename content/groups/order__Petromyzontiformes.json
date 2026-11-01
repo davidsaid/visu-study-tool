@@ -19,6 +19,10 @@
     "es": "No confundir con las anguilas (Anguilliformes), peces con mandíbulas y aletas pectorales, ni con los mixinos, que tienen barbillas.",
     "en": "Do not confuse with eels (Anguilliformes), which are jawed fish with pectoral fins, or with hagfishes, which have barbels."
   },
+  "etymology": {
+    "es": "«Con forma de Petromyzon», la lamprea; del griego petra, «piedra», y myzon, «que chupa»: «chupapiedras».",
+    "en": "'Shaped like Petromyzon', the lamprey; from Greek petra, 'stone', and myzon, 'sucking': 'stone-sucker'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Lamprey",
@@ -29,6 +33,12 @@
     {
       "title": "Wikipedia (es): Hyperoartia",
       "url": "https://es.wikipedia.org/wiki/Hyperoartia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Petromyzon",
+      "url": "https://en.wiktionary.org/wiki/Petromyzon",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

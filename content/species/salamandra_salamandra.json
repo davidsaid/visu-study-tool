@@ -32,6 +32,10 @@
       "Its colours are a warning: the skin contains toxins that irritate predators' eyes and mouths."
     ]
   },
+  "etymology": {
+    "es": "El nombre se repite: salamandra es la palabra latina, tomada del griego salamandra.",
+    "en": "The name repeats: salamandra is the Latin word, borrowed from Greek salamandra."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Salamandra salamandra",
@@ -48,6 +52,12 @@
     {
       "title": "Wikipedia (ES): Chioglossa lusitanica",
       "url": "https://es.wikipedia.org/wiki/Chioglossa_lusitanica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Salamandra",
+      "url": "https://en.wiktionary.org/wiki/Salamandra",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

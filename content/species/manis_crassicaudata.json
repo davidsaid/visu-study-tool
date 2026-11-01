@@ -26,6 +26,10 @@
     "es": "Las hembras suelen ser más pequeñas que los machos.",
     "en": "Females are generally smaller than males."
   },
+  "etymology": {
+    "es": "Manis viene del latín manes, «espíritus de los muertos», por su aspecto lúgubre y sus hábitos nocturnos; crassicaudata une crassus, «grueso», y cauda, «cola».",
+    "en": "Manis is from Latin manes, 'spirits of the dead', for its gloomy look and night-time foraging; crassicaudata joins crassus, 'thick', and cauda, 'tail'."
+  },
   "sources": [
     {
       "title": "Indian pangolin — Wikipedia (en)",
@@ -42,6 +46,30 @@
     {
       "title": "Nine-banded armadillo — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Nine-banded_armadillo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Manis",
+      "url": "https://en.wiktionary.org/wiki/Manis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: crassus",
+      "url": "https://en.wiktionary.org/wiki/crassus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: cauda",
+      "url": "https://en.wiktionary.org/wiki/cauda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Indian pangolin",
+      "url": "https://en.wikipedia.org/wiki/Manis_crassicaudata",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

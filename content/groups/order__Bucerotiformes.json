@@ -15,6 +15,10 @@
       "Hornbills: bill often brightly coloured, sometimes with a horny casque; atlas and axis fused"
     ]
   },
+  "etymology": {
+    "es": "«Con forma de Buceros»: del griego bous, «buey», y keras, «cuerno»: «cuerno de buey».",
+    "en": "'Shaped like Buceros': from Greek bous, 'ox', and keras, 'horn': 'ox horn'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Bucerotiformes",
@@ -49,6 +53,18 @@
     {
       "title": "Wikipedia (es): Bucerotidae",
       "url": "https://es.wikipedia.org/wiki/Bucerotidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Buceros",
+      "url": "https://en.wikipedia.org/wiki/Buceros",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

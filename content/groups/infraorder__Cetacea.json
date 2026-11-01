@@ -23,6 +23,10 @@
     "es": "No confundir con los peces, cuya aleta caudal es vertical, ni con los sirenios, herbívoros sin aleta dorsal. Los misticetos filtran el alimento con barbas de queratina en lugar de dientes.",
     "en": "Do not confuse with fish, whose tail fin is vertical, or with sirenians, herbivores without a dorsal fin. Baleen whales filter food with keratin baleen plates instead of teeth."
   },
+  "etymology": {
+    "es": "Del latín cetus, «ballena», y este del griego ketos, «monstruo marino» o «pez enorme».",
+    "en": "From Latin cetus, 'whale', from Greek ketos, 'sea monster, huge fish'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Cetacean",
@@ -39,6 +43,12 @@
     {
       "title": "Wikipedia (en): Sirenia",
       "url": "https://en.wikipedia.org/wiki/Sirenia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Cetacea",
+      "url": "https://en.wiktionary.org/wiki/Cetacea",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

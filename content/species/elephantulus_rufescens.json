@@ -17,10 +17,26 @@
     "es": "No presenta dimorfismo sexual.",
     "en": "It shows no sexual dimorphism."
   },
+  "etymology": {
+    "es": "Elephantulus significa «elefantito», como el nombre común musaraña elefante, que alude a su larga nariz en trompa; rufescens es latín, «rojizo», participio de rufescere.",
+    "en": "Elephantulus means 'little elephant', like the common name elephant shrew, which refers to its long trunk-like nose; rufescens is Latin for 'reddish', the participle of rufescere."
+  },
   "sources": [
     {
       "title": "Rufous sengi — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Rufous_sengi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Phillipskop Mountain Reserve: Little Elephants (Elephantulus edwardii)",
+      "url": "https://www.phillipskop.co.za/fauna/elephantulus-edwardii/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: rufescens",
+      "url": "https://en.wiktionary.org/wiki/rufescens",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

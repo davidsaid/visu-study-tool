@@ -21,6 +21,10 @@
     "es": "Sus parientes vivos más cercanos son los pejelagartos (Lepisosteiformes), que tienen mandíbulas largas en pico y la aleta dorsal corta y muy retrasada.",
     "en": "Its closest living relatives are the gars (Lepisosteiformes), which have long, beak-like jaws and a short dorsal fin set far back."
   },
+  "etymology": {
+    "es": "«Con forma de Amia»: amia era un nombre antiguo, griego y latino, de un pez no identificado, que se tomó por un bonito.",
+    "en": "'Shaped like Amia': amia was an ancient Greek and Latin name for an unidentified fish, long taken to be a bonito."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Amiiformes",
@@ -43,6 +47,30 @@
     {
       "title": "Wikipedia (es): Amia calva",
       "url": "https://es.wikipedia.org/wiki/Amia_calva",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Amiiformes",
+      "url": "https://en.wiktionary.org/wiki/Amiiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: ἀμία",
+      "url": "https://en.wiktionary.org/wiki/%E1%BC%80%CE%BC%CE%AF%CE%B1",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Amiidae",
+      "url": "https://etyfish.org/amiidae/",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

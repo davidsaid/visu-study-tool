@@ -333,6 +333,7 @@ function sheetResultHTML(it) {
     <h2>${ok}/${skills.length} ${L('casillas correctas', 'boxes correct')}</h2><p class="small"><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</p>
     <p class="small">${L('En la hoja no hay ayudas: cada casilla cuenta para «dominada». Las falladas vuelven por separado.', 'The sheet has no help: every box counts toward “mastered”. Missed boxes come back separately.')}</p></div>
     ${other && other.kind === 'wrong_species' ? `<h2 style="margin-top:1rem">${L('Has escrito otra especie', 'You wrote a different species')}</h2>${comparePlate(other.with[0], it.sp, sess.photoIdx)}` : ''}
+    ${App.nameKeyHTML(it.sp, skills.filter(k => sess.sheetRes[k].kind !== 'right'), other && other.kind === 'wrong_species' ? [other.with[0]] : [])}
     <div class="actions"><button class="btn primary big" id="nextbtn">${last ? L('Ver resumen', 'See summary') : L('Siguiente', 'Next')}</button><a class="btn big" href="#${esc(App.routeFor(it.sp))}">${L('Abrir ficha', 'Open card')}</a></div>`;
 }
 function levelCountNote() {
@@ -359,18 +360,20 @@ function feedbackHTML(it) {
     /* A misspelling shows only what she typed next to the correct spelling. No explanation. */
     return `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Ortografía', 'Spelling')}</p><h1>${L('No es la grafía correcta', 'Not the right spelling')}</h1></div>
       <section class="card" style="margin-top:.8rem"><div class="diffrow"><span class="small muted">${L('Escribiste', 'You typed')}</span><span class="diff ${sci ? 'sci' : ''}">${esc(given)}</span><span class="small muted">${L('Correcto', 'Correct')}</span><span class="diff ${sci ? 'sci' : ''}">${esc(ans)}</span></div></section>
+      ${App.nameKeyHTML(it.sp, [it.skill])}
       <div class="quiz-photo" style="max-width:360px">${photo}</div>${cred}
       ${call}<div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(it.sp))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
   }
   if (r.kind === 'wrong_species' && r.with && App.sp(r.with[0])) {
     const verb = sess.mc ? L('Has elegido', 'You picked') : L('Has escrito', 'You wrote');
     return `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Otra especie', 'Another species')}</p><h1>${verb} ${sci ? `<i>${esc(given)}</i>` : esc(given)}; ${L('era', 'it was')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}</h1></div>
-      ${comparePlate(r.with[0], it.sp, sess.photoIdx)}${call}<div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(it.sp))}">${L('Abrir ficha', 'Open card')}</a><a class="btn big" href="#${esc(App.routeFor(E.lca(M(), r.with[0], it.sp) || it.sp))}">${L('Comparar en el árbol', 'Compare in the tree')}</a></div></div>`;
+      ${comparePlate(r.with[0], it.sp, sess.photoIdx)}${App.nameKeyHTML(it.sp, [it.skill], [r.with[0]])}${call}<div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(it.sp))}">${L('Abrir ficha', 'Open card')}</a><a class="btn big" href="#${esc(App.routeFor(E.lca(M(), r.with[0], it.sp) || it.sp))}">${L('Comparar en el árbol', 'Compare in the tree')}</a></div></div>`;
   }
   const g = (M().content.groups || {})[`order:${s.order}`];
   return `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Fallo', 'Miss')}</p><h1>${given ? `${L('Respondiste', 'You answered')} ${sci ? `<i>${esc(given)}</i>` : esc(given)}; ${L('es', 'it is')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}` : `${L('Es', 'It is')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}`}</h1></div>
     <div class="quiz-photo" style="margin-top:.8rem">${photo}</div>${cred}
     <p><b>${esc(s.common_es)}</b> · <i>${esc(s.binomial)}</i> · ${esc(s.order)} · ${esc(s.class)}</p>
+    ${App.nameKeyHTML(it.sp, [it.skill])}
     ${g && g.contrast ? `<section class="key"><p class="eyebrow">${L('La clave', 'The key')}</p><p class="tip">${esc(I.t(g.contrast))}</p>${g.status === 'draft' ? `<p class="tiny muted"><span class="draft">${L('borrador', 'draft')}</span></p>` : ''}</section>` : ''}
     ${call}<div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(it.sp))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
 }
@@ -516,7 +519,7 @@ V.cual = function () {
     const p = rsess.picked, split = E.lca(M(), p, t), sameG = E.answerFor(M(), p, 'genus') === E.answerFor(M(), t, 'genus');
     const ep = x => esc(E.answerFor(M(), x, 'species'));
     body += `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Esa no era', 'Not that one')}</p><h1>${L('Elegiste', 'You picked')} <i>${esc(App.sp(p).binomial)}</i></h1></div>
-      ${comparePlate(p, t, rsess.photo[t], rsess.photo[p])}
+      ${comparePlate(p, t, rsess.photo[t], rsess.photo[p])}${App.nameKeyHTML(t, ['genus'], [p])}
       <div class="split-note">${ICON.tree}<span>${L('Parentesco', 'Kinship')}: ${L('las dos están en', 'both are in')} <b>${esc(App.label(split))}</b>${sameG ? L(` y comparten el género <i>${esc(s.genus)}</i>. Mira la especie: <i>${ep(t)}</i>, no <i>${ep(p)}</i>.`, ` and share the genus <i>${esc(s.genus)}</i>. Look at the species: <i>${ep(t)}</i>, not <i>${ep(p)}</i>.`) : '.'} ${L('Distancia en el árbol', 'Tree distance')}: ${E.treeDist(M(), p, t)} ${L('ramas', 'branches')}.</span></div>
       <div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(split))}">${L('Ver el grupo en el árbol', 'See the group in the tree')}</a></div></div>`;
   }

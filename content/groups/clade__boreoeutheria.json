@@ -7,6 +7,10 @@
     "es": "Los otros dos grandes linajes de placentarios son Afrotheria (elefantes, damanes, sirenios…) y Xenarthra (armadillos, perezosos, osos hormigueros).",
     "en": "The other two major placental lineages are Afrotheria (elephants, hyraxes, sirenians…) and Xenarthra (armadillos, sloths, anteaters)."
   },
+  "etymology": {
+    "es": "De boreo-, «del norte» (por Bóreas, dios griego del viento norte), y Eutheria, del griego eu, «verdadero», y therion, «fiera».",
+    "en": "From boreo-, 'northern' (after Boreas, the Greek god of the north wind), and Eutheria, from Greek eu, 'true', and therion, 'beast'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Boreoeutheria",
@@ -23,6 +27,24 @@
     {
       "title": "Wikipedia (en): Placentalia",
       "url": "https://en.wikipedia.org/wiki/Placentalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Boreoeutheria",
+      "url": "https://en.wiktionary.org/wiki/Boreoeutheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: boreo-",
+      "url": "https://en.wiktionary.org/wiki/boreo-",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Eutheria",
+      "url": "https://en.wiktionary.org/wiki/Eutheria",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

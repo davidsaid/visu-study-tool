@@ -19,6 +19,10 @@
     "es": "Las hembras suelen ser algo más grandes que los machos.",
     "en": "Females are typically slightly larger than males."
   },
+  "etymology": {
+    "es": "Trichechus viene del griego thríx, «pelo», y échein, «tener»: «que tiene pelo»; manatus viene del español manatí, de origen caribe.",
+    "en": "Trichechus is from Greek thrix, 'hair', and echein, 'to have': 'hairy'; manatus comes from Spanish manatí, of Cariban origin."
+  },
   "sources": [
     {
       "title": "Trichechus manatus — Wikipedia (es)",
@@ -29,6 +33,18 @@
     {
       "title": "West Indian manatee — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/West_Indian_manatee",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Trichechus",
+      "url": "https://en.wiktionary.org/wiki/Trichechus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: manatus",
+      "url": "https://en.wiktionary.org/wiki/manatus",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

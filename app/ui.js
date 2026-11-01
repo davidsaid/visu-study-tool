@@ -52,6 +52,25 @@ App.hasPhoto = id => App.photosOf(id).length > 0;
 /* Quiz photos are drawn at random for each question (repeats allowed), so what she learns is the
    animal, not one picture's composition or its place in a session. */
 App.randomPhoto = id => Math.floor(Math.random() * Math.max(1, App.photosOf(id).length));
+/* "What the name says": the etymology behind one exam box, as a memory aid. Class and order come from their
+   group texts; genus, species and common name from the species text. Null when not written yet. */
+App.nameMeaning = (id, skill) => {
+  const s = App.sp(id), C = M().content || {};
+  const gid = skill === 'class' ? `class:${s.class}` : skill === 'order' ? `order:${s.order}` : null;
+  const c = gid ? (C.groups || {})[gid] : (C.species || {})[id];
+  const text = c && c.etymology ? I.t(c.etymology) : '';
+  return text ? { key: gid || id, name: gid ? gid.split(':')[1] : s.binomial, text, draft: c.status === 'draft', sources: c.sources } : null;
+};
+/* The block shown after a mistake: the meaning of each box involved, once per name, then the names of the
+   species it was confused with, for contrast. */
+App.nameKeyHTML = (id, skills, confused) => {
+  const seen = new Set(), rows = [];
+  const add = m => { if (m && !seen.has(m.key)) { seen.add(m.key); rows.push(m); } };
+  skills.forEach(k => add(App.nameMeaning(id, k)));
+  (confused || []).forEach(o => add(App.nameMeaning(o, 'genus')));
+  if (!rows.length) return '';
+  return `<section class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p>${rows.map(m => `<p><i>${esc(m.name)}</i>: ${esc(m.text)}</p>`).join('')}${rows.some(m => m.draft) ? `<p class="tiny muted"><span class="draft">${L('borrador', 'draft')}</span></p>` : ''}</section>`;
+};
 const SOURCE_NAME = { commons: 'Wikimedia Commons', inaturalist: 'iNaturalist' };
 App.credit = (p, opts) => {
   if (!p) return '';

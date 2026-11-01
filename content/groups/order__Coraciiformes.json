@@ -21,6 +21,10 @@
     "es": "Abubillas y cálaos se incluían antes en este orden, pero hoy forman Bucerotiformes.",
     "en": "Hoopoes and hornbills used to be placed in this order, but now form Bucerotiformes."
   },
+  "etymology": {
+    "es": "«Con forma de cuervo»: del latín corax, «cuervo» (tomado del griego korax), y forma, «forma».",
+    "en": "'Raven-shaped': from Latin corax, 'raven' (borrowed from Greek korax), and forma, 'form'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Coraciiformes",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Coraciiformes",
       "url": "https://es.wikipedia.org/wiki/Coraciiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Coraciiformes",
+      "url": "https://en.wiktionary.org/wiki/Coraciiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: corax",
+      "url": "https://en.wiktionary.org/wiki/corax",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

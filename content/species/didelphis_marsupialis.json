@@ -22,6 +22,10 @@
       "en": "The raccoon has a dark facial mask and a bushy ringed tail, whereas the opossum's tail is naked."
     }
   ],
+  "etymology": {
+    "es": "Didelphis viene del griego di-, «dos», y delphýs, «útero»; marsupialis deriva del latín marsupium, «bolsa».",
+    "en": "Didelphis is from Greek di-, 'two', and delphys, 'womb'; marsupialis comes from Latin marsupium, 'purse, pouch'."
+  },
   "sources": [
     {
       "title": "Didelphis marsupialis — Wikipedia (es)",
@@ -38,6 +42,18 @@
     {
       "title": "Procyon lotor — Wikipedia (es)",
       "url": "https://es.wikipedia.org/wiki/Procyon_lotor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Didelphis",
+      "url": "https://en.wiktionary.org/wiki/Didelphis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: marsupialis",
+      "url": "https://en.wiktionary.org/wiki/marsupialis",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

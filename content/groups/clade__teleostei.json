@@ -21,6 +21,10 @@
     "es": "Los actinopterigios no teleósteos del bestiario, como los esturiones, el pez espátula o el pez del cieno, tienen la columna prolongada en el lóbulo superior de la cola.",
     "en": "The non-teleost ray-finned fishes in the bestiary, such as the sturgeon, paddlefish and bowfin, have the spine extending into the upper lobe of the tail."
   },
+  "etymology": {
+    "es": "Del griego teleios, «completo», y osteon, «hueso».",
+    "en": "From Greek teleios, 'complete', and osteon, 'bone'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Teleost",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Teleostei",
       "url": "https://es.wikipedia.org/wiki/Teleostei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Teleostei",
+      "url": "https://en.wiktionary.org/wiki/Teleostei",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

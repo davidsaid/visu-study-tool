@@ -26,6 +26,10 @@
     "es": "La hembra es más corta que el macho.",
     "en": "The female is shorter than the male."
   },
+  "etymology": {
+    "es": "Lutra lutra repite el nombre: lutra es latín, «nutria».",
+    "en": "Lutra lutra repeats the name: lutra is Latin for 'otter'."
+  },
   "sources": [
     {
       "title": "Lutra lutra — Wikipedia (es)",
@@ -36,6 +40,12 @@
     {
       "title": "Eurasian otter — Wikipedia (en)",
       "url": "https://en.wikipedia.org/wiki/Eurasian_otter",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Lutra",
+      "url": "https://en.wiktionary.org/wiki/Lutra",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

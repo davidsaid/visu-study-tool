@@ -28,6 +28,10 @@
       "According to Guinness World Records it is the slowest fish, at about 1.5 m per hour."
     ]
   },
+  "etymology": {
+    "es": "Hippocampus une el griego hippos, «caballo», y kampos, «monstruo marino»: el hipocampo mitológico; zosterae significa «de Zostera», la hierba marina a la que se agarra con la cola.",
+    "en": "Hippocampus joins Greek hippos, 'horse', and kampos, 'sea monster': the mythological hippocamp; zosterae means 'of Zostera', the eelgrass it clings to with its tail."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Hippocampus zosterae",
@@ -39,6 +43,12 @@
       "title": "Wikipedia (EN): Dwarf seahorse",
       "url": "https://en.wikipedia.org/wiki/Dwarf_seahorse",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Syngnathidae",
+      "url": "https://etyfish.org/syngnathiformes1",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

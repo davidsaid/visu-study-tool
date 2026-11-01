@@ -21,6 +21,10 @@
     "es": "Pese a su aspecto, son arcosaurios en sentido amplio (Archelosauria): sus parientes vivos más cercanos son los cocodrilos y las aves, no los lagartos.",
     "en": "Despite their looks they belong to Archelosauria: their closest living relatives are crocodilians and birds, not lizards."
   },
+  "etymology": {
+    "es": "Del griego chelone, «tortuga».",
+    "en": "From Greek chelone, 'tortoise, turtle'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Turtle",
@@ -31,6 +35,18 @@
     {
       "title": "Wikipedia (es): Testudines",
       "url": "https://es.wikipedia.org/wiki/Testudines",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Chelonia",
+      "url": "https://en.wiktionary.org/wiki/Chelonia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: χελώνη",
+      "url": "https://en.wiktionary.org/wiki/%CF%87%CE%B5%CE%BB%CF%8E%CE%BD%CE%B7",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }

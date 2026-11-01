@@ -26,6 +26,10 @@
     "es": "Los machos son más pequeños que las hembras.",
     "en": "Males are smaller than females."
   },
+  "etymology": {
+    "es": "Scophthalmus quizá une el griego skopos, «vigía», y ophthalmos, «ojo», por sus ojos dirigidos hacia arriba; maximus es latín, «el mayor», probablemente por su tamaño.",
+    "en": "Scophthalmus perhaps joins Greek skopos, 'watcher', and ophthalmos, 'eye', for its upward-pointing eyes; maximus is Latin for 'largest', presumably for its size."
+  },
   "sources": [
     {
       "title": "Wikipedia (ES): Scophthalmus maxima",
@@ -43,6 +47,12 @@
       "title": "Wikipedia (EN): Common sole",
       "url": "https://en.wikipedia.org/wiki/Common_sole",
       "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "The ETYFish Project: Scophthalmidae",
+      "url": "https://etyfish.org/carangiformes2",
+      "license": "All rights reserved (cited)",
       "retrieved": "2026-11-01"
     }
   ],

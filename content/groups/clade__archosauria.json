@@ -21,6 +21,10 @@
     "es": "Los cocodrilos son los parientes vivos más cercanos de las aves, no de los lagartos: por eso «Reptilia» sin aves es un grado parafilético.",
     "en": "Crocodilians are the closest living relatives of birds, not of lizards: this is why 'Reptilia' without birds is a paraphyletic grade."
   },
+  "etymology": {
+    "es": "Acuñado en 1869 por el paleontólogo estadounidense E. D. Cope para aludir a los arcos del cráneo; hoy se entiende como griego archos, «jefe», y sauros, «lagarto»: «reptiles dominantes».",
+    "en": "Coined in 1869 by the American palaeontologist Edward Drinker Cope to refer to the skull arches; now read as Greek archos, 'chief, ruler', and sauros, 'lizard': 'ruling reptiles'."
+  },
   "sources": [
     {
       "title": "Wikipedia (en): Archosaur",
@@ -31,6 +35,12 @@
     {
       "title": "Wikipedia (es): Archosauria",
       "url": "https://es.wikipedia.org/wiki/Archosauria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary: Archosauria",
+      "url": "https://en.wiktionary.org/wiki/Archosauria",
       "license": "CC BY-SA 4.0",
       "retrieved": "2026-11-01"
     }
