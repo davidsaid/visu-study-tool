@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Serpiente de cuerpo pesado, de 1–1,5 m, que despliega una gran capucha cuando se siente amenazada",
+      "Dibujo en la parte trasera de la capucha: dos ocelos unidos por una línea curva, como unas gafas",
+      "Cabeza elíptica y aplanada, apenas distinta del cuello; hocico corto y redondeado; pupila redonda",
+      "Color muy variable; a menudo moteado «sal y pimienta» en el dorso de los adultos"
+    ],
+    "en": [
+      "Heavy-bodied snake, 1–1.5 m, that spreads a large hood when threatened",
+      "Mark on the back of the hood: two ocelli joined by a curved line, like spectacles",
+      "Elliptical, flattened head barely distinct from the neck; short, rounded snout; round pupil",
+      "Highly variable colour; adults often have salt-and-pepper speckling on the back"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Laticauda colubrina",
+      "es": "La serpiente marina de labios amarillos no forma capucha: tiene anillos negros sobre fondo gris azulado y la cola en forma de remo.",
+      "en": "The yellow-lipped sea krait does not spread a hood: it has black rings on a bluish-grey ground and a paddle-shaped tail."
+    }
+  ],
+  "etymology": {
+    "es": "Naja es la latinización del sánscrito nāga, «cobra»; se usa tanto para el género como para la especie.",
+    "en": "Naja is a Latinisation of Sanskrit nāga, 'cobra', used for both the genus and the species."
+  },
+  "trivia": {
+    "es": [
+      "Es la serpiente preferida por los encantadores de serpientes del sur de Asia."
+    ],
+    "en": [
+      "It is the snake of choice for snake charmers in South Asia."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Indian cobra",
+      "url": "https://en.wikipedia.org/wiki/Indian_cobra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Naja naja",
+      "url": "https://es.wikipedia.org/wiki/Naja_naja",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Yellow-lipped sea krait",
+      "url": "https://en.wikipedia.org/wiki/Yellow-lipped_sea_krait",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

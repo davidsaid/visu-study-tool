@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo extremadamente aplanado, como una hoja muerta",
+      "Cabeza plana y triangular con ojos muy pequeños y narinas en el extremo del hocico",
+      "Pardo claro u oliva con manchas oscuras y muchos tubérculos",
+      "Dedos delanteros con pequeños apéndices en forma de estrella",
+      "Patas traseras largas, fuertes y muy palmeadas; brazos cortos y débiles"
+    ],
+    "en": [
+      "Extremely flattened body, like a dead leaf",
+      "Flat, triangular head with very small eyes and nostrils at the snout tip",
+      "Light brown or olive with darker spots and many tubercles",
+      "Front fingers tipped with small star-shaped appendages",
+      "Long, strong, broadly webbed hind legs; short, weak forelimbs"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Las hembras son algo mayores (hasta 171 mm frente a 154 mm) y muestran una cloaca anular cuando van a criar.",
+    "en": "Females are somewhat larger (up to 171 mm versus 154 mm) and show a ring-shaped cloaca when ready to breed."
+  },
+  "trivia": {
+    "es": [
+      "La hembra incuba los huevos en celdillas de la piel del dorso, de las que salen ranitas ya formadas."
+    ],
+    "en": [
+      "The female incubates the eggs in honeycomb-like pockets in the skin of her back, from which fully formed froglets emerge."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Pipa pipa",
+      "url": "https://es.wikipedia.org/wiki/Pipa_pipa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common Surinam toad",
+      "url": "https://en.wikipedia.org/wiki/Common_Surinam_toad",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

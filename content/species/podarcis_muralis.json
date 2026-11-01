@@ -1,0 +1,59 @@
+{
+  "field_marks": {
+    "es": [
+      "Lagartija pequeña y esbelta, de escamas pequeñas",
+      "Pardo grisácea, a veces verdosa, con una línea de puntos negros en el dorso y una banda oscura a cada lado",
+      "Garganta reticulada de negro",
+      "Vientre blanquecino, amarillo o rojizo-anaranjado, a veces con ocelos azules en las escamas externas"
+    ],
+    "en": [
+      "Small, slender lizard with small scales",
+      "Greyish-brown, sometimes greenish, with a line of black dots down the back and a dark band on each side",
+      "Throat reticulated with black",
+      "Whitish, yellow or reddish-orange belly, sometimes with blue spots on the outer scales"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Psammodromus algirus",
+      "es": "La lagartija colilarga tiene la cola dos o tres veces el cuerpo, escamas dorsales grandes y aquilladas y dos líneas blancas laterales muy visibles.",
+      "en": "The large psammodromus has a tail two to three times its body length, large keeled back scales and two conspicuous white side stripes."
+    },
+    {
+      "binomial": "Timon lepidus",
+      "es": "El lagarto ocelado es enorme en comparación, verde y con ocelos azules en los flancos.",
+      "en": "The ocellated lizard is huge by comparison, green and with blue ocelli on the flanks."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos adultos tienen más manchas negras y el vientre más coloreado que las hembras.",
+    "en": "Adult males have more black spotting and a more colourful belly than females."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Podarcis muralis",
+      "url": "https://es.wikipedia.org/wiki/Podarcis_muralis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Podarcis muralis",
+      "url": "https://en.wikipedia.org/wiki/Podarcis_muralis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Psammodromus algirus",
+      "url": "https://es.wikipedia.org/wiki/Psammodromus_algirus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Ocellated lizard",
+      "url": "https://en.wikipedia.org/wiki/Ocellated_lizard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

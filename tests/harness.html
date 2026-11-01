@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VISU scenario harness</title>
+<!-- Drives index.html inside an iframe for screenshots and the persistence check.
+     Run in Chrome with --allow-file-access-from-files when opened from file://.
+     Query: ?s=<scenario>&w=<iframe width>&h=<iframe height>  (see SCENARIOS below). -->
+<style>
+  html, body { margin: 0; background: #fff; }
+  iframe { border: 0; display: block; margin: 0 auto; }
+  #result { font: 12px monospace; white-space: pre-wrap; margin: 0; }
+</style>
+</head>
+<body>
+<pre id="result">running</pre>
+<script>
+(async function () {
+'use strict';
+const Q = new URLSearchParams(location.search);
+const scenario = Q.get('s') || 'today', W = +(Q.get('w') || 1440), H = +(Q.get('h') || 900);
+const KEY = 'visu-progress-v1';
+const out = document.getElementById('result');
+const report = (o) => { out.textContent = JSON.stringify(o, null, 1); };
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let frame, win, doc;
+
+function seedStorage(obj) { if (obj === null) localStorage.removeItem(KEY); else localStorage.setItem(KEY, JSON.stringify(obj)); }
+async function open(hash, query) {
+  if (!frame) { frame = document.createElement('iframe'); frame.width = W; frame.height = H; frame.style.width = W + 'px'; frame.style.height = H + 'px'; document.body.prepend(frame); out.style.display = 'none'; }
+  await new Promise(res => { frame.onload = res; frame.src = '../index.html' + (query || '') + '#' + (hash || 'hoy') + (frame.src && frame.src.includes('#' + hash) ? '' : ''); });
+  win = frame.contentWindow; doc = win.document;
+  await sleep(150);
+}
+async function go(hash) { win.location.hash = hash; await sleep(200); }
+async function reload() { await new Promise(res => { frame.onload = res; win.location.reload(); }); win = frame.contentWindow; doc = win.document; await sleep(200); }
+const $ = sel => doc.querySelector(sel);
+async function click(sel) { const el = typeof sel === 'string' ? $(sel) : sel; if (!el) throw new Error('missing ' + sel); el.click(); await sleep(80); }
+async function type(sel, text) { const el = $(sel); if (!el) throw new Error('missing ' + sel); el.value = text; el.dispatchEvent(new win.Event('input', { bubbles: true })); await sleep(30); }
+const App = () => win.VISU_APP, Eng = () => win.VISU_ENGINE;
+const answer = (sp, skill) => Eng().answerFor(App().M, sp, skill);
+const seen = { meta: { seenNotice: true } };
+
+/* Answers the current typed card: 'right', 'wrong' or a literal string. */
+async function answerTyped(what, conf) {
+  const it = App().sessionState().items[App().sessionState().i];
+  const text = what === 'right' ? answer(it.sp, it.skill) : what === 'wrong' ? 'zzzz' : what;
+  await type('#typedin', text);
+  doc.getElementById('typedform').requestSubmit(); await sleep(80);
+  await click(`[data-conf="${conf || 'sure'}"]`);
+  await click('#submitbtn');
+  return it;
+}
+async function playSession(level, plan) {
+  App().set().level = level; win.VISU_STORE.save();
+  await go('nivel'); await click('[data-game="foto"]'); await click(`[data-level="${level}"]`); await click('#startbtn'); await sleep(150);
+  for (const what of plan) { await answerTyped(what); await click('#nextbtn'); }
+}
+function setItem(sp, skill) { const s = App().sessionState(); s.items[s.i] = { sp, skill }; App().views.session(); }
+
+const SCENARIOS = {
+  'notice': async () => { seedStorage(null); await open('hoy'); },
+  'today-empty': async () => { seedStorage(seen); await open('hoy'); },
+  'nostore': async () => { seedStorage(null); await open('hoy', '?nostorage=1'); await click('#nt-ok'); },
+  'today': async () => {
+    seedStorage(seen); await open('hoy');
+    await playSession(3, ['right', 'right', 'wrong', 'right', 'right', 'right', 'right', 'wrong']);
+    await go('hoy');
+    /* one confusion so the aside shows a pair */
+    App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await go('hoy');
+  },
+  'nivel': async () => { seedStorage(seen); await open('nivel'); await click('[data-level="2"]'); },
+  'question': async () => { seedStorage(seen); await open('hoy'); App().set().level = 2; await go('sesion'); setItem('buteo_buteo', 'common'); await type('#typedin', 'Busa'); await click('#hintbtn'); await click('#hintbtn'); },
+  'mistake': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro', 'sure'); },
+  'misspelling': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('ciconia_ciconia', 'common'); await answerTyped('Cigueña blanca', 'sure'); },
+  'cual': async () => { seedStorage(seen); await open('hoy'); App().set().level = 2; await go('cual-es'); await click('[data-pick]:nth-child(2)'); await click('[data-conf="unsure"]'); },
+  'explore': async () => { seedStorage(seen); await open('explorar'); await go('grupo-class-Mammalia'); await click('.trow.kid[data-row="order:Carnivora"]'); await sleep(200); },
+  'species': async () => { seedStorage(seen); await open('ficha-lynx_pardinus'); const h = doc.getElementById('card-m'); if (h && W < 1000) h.scrollIntoView(); },
+  'group': async () => { seedStorage(seen); await open('grupo-order-Accipitriformes'); const h = doc.getElementById('card-m'); if (h && W < 1000) h.scrollIntoView(); },
+  'easy': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 1; win.VISU_STORE.save();
+    await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="1"]'); await click('#startbtn'); await sleep(150);
+    await click('.car [data-car-step="1"]'); await sleep(2500);
+  },
+  /* The photo carousel on the species card and on Easy; Medium shows a single photo. */
+  'carousel': async () => {
+    seedStorage(seen); await open('ficha-lynx_pardinus');
+    const count = () => ($('.car .car-count') || {}).textContent, credit = () => ($('#gal-lynx_pardinus .credit') || {}).textContent, img = () => ($('.car img') || {}).getAttribute('src');
+    const card = { start: count(), img0: img(), credit0: credit() };
+    await click('.car [data-car-step="1"]');
+    Object.assign(card, { afterNext: count(), img1: img(), creditChanged: credit() !== card.credit0, thumbPressed: [...doc.querySelectorAll('.gthumb')].map(b => b.getAttribute('aria-pressed')).join(','), focusOnNext: doc.activeElement && doc.activeElement.dataset.carStep });
+    await click('.car [data-car-step="-1"]'); await click('.car [data-car-step="-1"]');
+    card.wrapPrev = count();
+    $('.car').dispatchEvent(new win.KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true })); await sleep(80);
+    card.arrowKey = count();
+    await click('.gthumb[data-gal="2"]'); card.thumb2 = count();
+    App().set().level = 1; win.VISU_STORE.save();
+    await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="1"]'); await click('#startbtn'); await sleep(150);
+    /* A class or order question: a wrong pick there shows the photo screen (another species shows the comparison). */
+    for (let k = 0; k < 50 && !['class', 'order'].includes(App().sessionState().items[0].skill); k++) App().newSession('foto', { force: true });
+    App().views.session(); await sleep(100);
+    const easy = { start: count() };
+    await click('[data-opt="1"]'); easy.pickedKept = !!$('[data-opt="1"].picked');
+    await click('.car [data-car-step="1"]');
+    Object.assign(easy, { afterNext: count(), pickedStillKept: !!$('[data-opt="1"].picked'), creditHidden: /aparece al responder|appears after/.test(($('.session-wrap .credit') || {}).textContent || ''), alt: ($('.car img') || {}).alt, altHidesName: (() => { const s = App().sp(App().sessionState().items[App().sessionState().i].sp), a = ($('.car img') || {}).alt || ''; return !a.includes(s.binomial) && !a.includes(s.common_es); })() });
+    const st = App().sessionState(), wrongOpt = st.mc.options.findIndex(o => o.value !== st.mc.correct);
+    await click(`[data-opt="${wrongOpt}"]`); await click('[data-conf="sure"]'); await click('#submitbtn');
+    easy.mistakeScreen = !!$('.mistake-head'); easy.mistakeCount = count();
+    await click('.car [data-car-step="1"]'); easy.mistakeAfterNext = count(); easy.mistakeStillShown = !!$('.mistake-head');
+    await sleep(500); easy.imgLoaded = (img => !!img && img.complete && img.naturalWidth > 0)($('.car img'));
+    App().set().level = 2; win.VISU_STORE.save();
+    await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="2"]'); await click('#startbtn'); await sleep(150);
+    const medium = { carousel: !!$('.car'), photo: !!$('.quiz-photo img') };
+    report({ scenario: 'carousel', card, easy, medium });
+  },
+  /* Quiz photos are drawn at random per question: counts per photo index over many draws. */
+  'random': async () => {
+    seedStorage(seen); await open('hoy');
+    const tally = () => [0, 0, 0, 0];
+    const session = tally(), mock = tally(), rev = tally();
+    for (const lv of [2, 3]) {
+      App().set().level = lv;
+      for (let k = 0; k < 200; k++) { App().newSession('foto', { force: true }); session[App().sessionState().photoIdx]++; }
+    }
+    const lynx = tally(); for (let k = 0; k < 4000; k++) lynx[App().randomPhoto('lynx_pardinus')]++;
+    const firstItems = new Set(); for (let k = 0; k < 30; k++) { App().newSession('foto', { force: true }); firstItems.add(App().photosOf(App().sessionState().items[0].sp).length); }
+    await go('simulacro'); App().mockState().items.forEach(x => mock[x.photoIdx]++);
+    for (let k = 0; k < 15; k++) { await go('hoy'); await go('cual-es'); const r = App().reverseState(); Object.values(r.photo).forEach(i => rev[i]++); }
+    App().set().level = 3; await go('sesion');
+    const before = App().sessionState().photoIdx; await click('[data-conf]').catch(() => {}); App().views.session();
+    report({ scenario: 'random', lynx, photoCountsOfFirstItems: [...firstItems], session, mock, rev, stableOnRerender: App().sessionState().photoIdx === before });
+  },
+  /* Two collections (run on the site built by tests/fixture_site.py): switching keeps each one's progress apart. */
+  'collections': async () => {
+    localStorage.removeItem('visu-collection'); localStorage.removeItem(KEY + ':artropodos-prueba');
+    seedStorage({ meta: { seenNotice: true }, settings: { lang: 'en' } }); await open('hoy');
+    const snap = () => ({ col: win.VISU_COLLECTION, key: win.VISU_STORE.key, species: App().counts().species, root: App().M.root,
+      lang: win.VISU_STORE.data.settings.lang, log: win.VISU_STORE.data.log.length, title: doc.title,
+      brand: (doc.querySelector('.rail .brand small') || {}).textContent, switcher: doc.querySelectorAll('[data-col]').length });
+    const switchTo = async id => { await go('ajustes'); const loaded = new Promise(res => { frame.onload = res; }); await click(`[data-col="${id}"]`); await loaded; win = frame.contentWindow; doc = win.document; await sleep(250); };
+    await playSession(3, ['right']);
+    await go('ajustes');
+    const vert = snap();
+    const vertCopy = JSON.stringify(Eng().makeExport(win.VISU_STORE.data, Date.now(), null, App().collection()));
+    await switchTo('artropodos-prueba');
+    await go('ajustes');
+    const art = snap();
+    const imported = App().importText(vertCopy), toast = (doc.getElementById('toast') || {}).textContent;
+    await switchTo('vertebrados');
+    await go('ajustes');
+    const back = snap();
+    report({ scenario: 'collections', vert, art, importOtherRefused: imported === false, toast, back,
+      storedKeys: Object.keys(localStorage).filter(k => k.startsWith('visu-')).sort() });
+  },
+  /* The photo asked about stays on screen with its credit: wrong-species comparison, and mock results. */
+  'credits': async () => {
+    seedStorage({ meta: { seenNotice: true }, settings: { mockSize: 5 } }); await open('hoy');
+    App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common');
+    const asked = App().photosOf('milvus_milvus')[App().sessionState().photoIdx % App().photosOf('milvus_milvus').length];
+    await answerTyped('Milano negro');
+    const fig = $('.twoup .correct');
+    const compare = { shown: !!fig, sameFile: !!fig && fig.querySelector('img').getAttribute('src') === asked.file,
+      credited: !!fig && (fig.querySelector('.credit') || {}).textContent.includes(asked.author || '') };
+    await go('simulacro');
+    const items = App().mockState().items.map(x => ({ sp: x.sp, ph: x.photoIdx }));
+    for (let i = 0; i < 5; i++) { doc.getElementById('mockform').requestSubmit(); await sleep(150); }
+    const lis = [...doc.querySelectorAll('.mock-list li')];
+    const mock = { items: lis.length, credited: lis.filter(li => li.querySelector('.credit')).length,
+      samePhotos: lis.every((li, i) => { const ps = App().photosOf(items[i].sp); return li.querySelector('img').getAttribute('src') === ps[items[i].ph % ps.length].file; }) };
+    report({ scenario: 'credits', compare, mock });
+  },
+  'como': async () => { seedStorage(seen); await open('como-funciona'); },
+  'ajustes': async () => { seedStorage(seen); await open('ajustes'); },
+  'badges': async () => { seedStorage(seen); await open('hoy'); await playSession(3, ['right', 'right', 'right']); await go('insignias'); },
+  'mock': async () => {
+    seedStorage({ meta: { seenNotice: true }, settings: { mockSize: 5 } }); await open('simulacro');
+    for (let i = 0; i < 5; i++) {
+      const it = App().mockState().items[i];
+      for (const k of ['class', 'order', 'genus', 'species', 'common']) await type('#f-' + k, i === 1 && k === 'species' ? 'zzz' : i === 3 && k === 'common' ? answer(it.sp, k).replace(/[áéíóú]/g, c => 'aeiou'['áéíóú'.indexOf(c)]) + 'x' : answer(it.sp, k));
+      doc.getElementById('mockform').requestSubmit(); await sleep(150);
+    }
+  },
+  /* Horizontal overflow at the current width, on every main screen. */
+  'overflow': async () => {
+    seedStorage(seen); await open('hoy');
+    const res = {};
+    for (const h of ['hoy', 'nivel', 'explorar', 'ficha-lynx_pardinus', 'grupo-order-Accipitriformes', 'grupo-class-Aves', 'insignias', 'como-funciona', 'ajustes', 'cual-es', 'sesion', 'simulacro']) {
+      await go(h);
+      const vw = doc.documentElement.clientWidth;
+      const wide = [...doc.querySelectorAll('body *')].filter(el => el.getBoundingClientRect().right > vw + 1 && el.getClientRects().length).slice(0, 4).map(el => el.tagName + '.' + el.className + ' ' + Math.round(el.getBoundingClientRect().right));
+      res[h] = { scrollWidth: doc.documentElement.scrollWidth, vw, wide };
+    }
+    report(res);
+  },
+  /* Full session, then reload: progress must still be there. */
+  'persist': async () => {
+    seedStorage(seen); await open('hoy');
+    const before = { log: win.VISU_STORE.data.log.length };
+    await playSession(3, ['right', 'wrong', 'right']);
+    const s = App().sessionState();
+    const afterAnswers = { log: win.VISU_STORE.data.log.length, cards: Object.keys(win.VISU_STORE.data.cards).length, sessionItems: s.items.length };
+    const raw = localStorage.getItem(KEY);
+    await reload();
+    await go('hoy');
+    const P = win.VISU_STORE.data;
+    const firstRow = P.log[0];
+    const mastered = Object.values(P.cards).filter(c => c.m).length;
+    report({
+      scenario: 'persist', storageOK: win.VISU_STORE.ok, before, afterAnswers,
+      storedBytes: raw ? raw.length : 0,
+      afterReload: { log: P.log.length, cards: Object.keys(P.cards).length, cardsWithFsrs: mastered, days: P.days, firstRow },
+      todaySeenText: (doc.querySelector('.aside .card:nth-child(2) p, #aside-m .card:nth-child(2) p') || {}).textContent || null,
+      persisted: P.log.length === afterAnswers.log && P.log.length >= 3 && Object.keys(P.cards).length === afterAnswers.cards
+    });
+  }
+};
+try {
+  await SCENARIOS[scenario]();
+  if (scenario !== 'persist') { win.scrollTo && W >= 1000 && win.scrollTo(0, 0); document.title = 'done ' + scenario; }
+} catch (e) { out.style.display = 'block'; report({ scenario, error: String(e && e.stack || e) }); }
+})();
+</script>
+</body>
+</html>

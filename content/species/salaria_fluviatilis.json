@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez pequeño (unos 8–15 cm), alargado y comprimido, sin escamas y con mucho moco",
+      "Dorsal y anal de base muy larga",
+      "Color verdoso variable con manchas, bandas transversales oscuras y dibujos sinuosos",
+      "Un cirro ramificado sobre cada ojo y una banda de puntitos que baja en diagonal desde el ojo"
+    ],
+    "en": [
+      "Small (about 8–15 cm), elongated, compressed, scaleless and very slimy",
+      "Dorsal and anal fins with very long bases",
+      "Variable greenish colour with spots, dark crossbars and wavy markings",
+      "A branched cirrus above each eye and a band of small dots running diagonally down from the eye"
+    ]
+  },
+  "lookalikes": [],
+  "etymology": {
+    "es": "fluviatilis significa «de río», porque vive en agua dulce.",
+    "en": "fluviatilis means 'of a river', as it lives in fresh water."
+  },
+  "trivia": {
+    "es": [
+      "Es el único de su grupo que vive en aguas dulces del interior; en 2022 se propuso trasladarlo al nuevo género Salariopsis."
+    ],
+    "en": [
+      "It is the only member of its group living in inland fresh waters; in 2022 it was proposed to move it to the new genus Salariopsis."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Salaria fluviatilis",
+      "url": "https://es.wikipedia.org/wiki/Salaria_fluviatilis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Freshwater blenny",
+      "url": "https://en.wikipedia.org/wiki/Freshwater_blenny",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

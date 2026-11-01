@@ -1,0 +1,53 @@
+{
+  "field_marks": {
+    "es": [
+      "Mustélido robusto de aspecto de pequeño oso, bajo y alargado",
+      "Pelaje largo, denso y oscuro",
+      "Banda clara de color ante que recorre los flancos desde los hombros hasta la grupa",
+      "Cabeza ancha y redondeada con ojos pequeños y orejas cortas; a veces una máscara facial plateada",
+      "Cola poblada y patas grandes con garras fuertes"
+    ],
+    "en": [
+      "Stocky, bear-like mustelid, low-slung and elongated",
+      "Long, dense, dark fur",
+      "Pale buff stripe running along the flanks from the shoulders to the rump",
+      "Broad, rounded head with small eyes and short ears; sometimes a silvery facial mask",
+      "Bushy tail and large paws with strong claws"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Meles meles",
+      "es": "El tejón tiene la cabeza blanca con dos franjas negras y el lomo grisáceo.",
+      "en": "The badger has a white head with two black stripes and a greyish back."
+    },
+    {
+      "binomial": "Ursus arctos",
+      "es": "El oso pardo es mucho mayor y carece de la banda clara en los flancos.",
+      "en": "The brown bear is far larger and lacks the pale flank stripe."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son un 10–15 % mayores y pesan un 30–40 % más que las hembras.",
+    "en": "Males are 10–15% larger and 30–40% heavier than females."
+  },
+  "etymology": {
+    "es": "Gulo significa «glotón» en latín.",
+    "en": "Gulo is Latin for 'glutton'."
+  },
+  "sources": [
+    {
+      "title": "Gulo gulo — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Gulo_gulo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wolverine — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Wolverine",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

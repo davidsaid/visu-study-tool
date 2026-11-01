@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Teleósteos: con diferencia el mayor grupo de peces de aletas radiadas, con el 96 % de las especies de peces actuales (más de 26 000, en unos 40 órdenes). En el bestiario incluye todos los actinopterigios salvo el bichir, los esturiones, el pez espátula, el pez lagarto y el pez del cieno: desde el arapaima y la anguila hasta la trucha, el bacalao, el atún o el lenguado.",
+    "en": "Teleosts: by far the largest group of ray-finned fishes, with 96% of living fish species (over 26,000, in about 40 orders). In the bestiary it covers every ray-finned fish except the bichir, sturgeon, paddlefish, gar and bowfin: from the arapaima and eel to the trout, cod, tuna and sole."
+  },
+  "traits": {
+    "es": [
+      "Premaxilar móvil, libre del cráneo, que permite proyectar la boca y succionar la presa",
+      "Aleta caudal homocerca: lóbulos superior e inferior casi iguales y columna que termina en el pedúnculo caudal",
+      "Arcos neurales alargados al final de la aleta caudal y placas dentales basibranquiales impares",
+      "Mandíbulas faríngeas en la garganta que ayudan a triturar y tragar el alimento"
+    ],
+    "en": [
+      "Mobile premaxilla, free from the braincase, which lets the mouth protrude and suck in prey",
+      "Homocercal tail: upper and lower lobes about equal, with the spine ending at the caudal peduncle",
+      "Elongated neural arches at the end of the tail fin and unpaired basibranchial toothplates",
+      "Pharyngeal jaws in the throat that help grind and swallow food"
+    ]
+  },
+  "contrast": {
+    "es": "Los actinopterigios no teleósteos del bestiario, como los esturiones, el pez espátula o el pez del cieno, tienen la columna prolongada en el lóbulo superior de la cola.",
+    "en": "The non-teleost ray-finned fishes in the bestiary, such as the sturgeon, paddlefish and bowfin, have the spine extending into the upper lobe of the tail."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Teleost",
+      "url": "https://en.wikipedia.org/wiki/Teleost",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Teleostei",
+      "url": "https://es.wikipedia.org/wiki/Teleostei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

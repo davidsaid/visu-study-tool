@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Sirenios o vacas marinas: mamíferos totalmente acuáticos y herbívoros de costas, estuarios y ríos tropicales; quedan los manatíes y el dugongo. Sus parientes vivos más cercanos son los elefantes. En el bestiario: el manatí del Caribe (Trichechus manatus).",
+    "en": "Sirenians or sea cows: fully aquatic, herbivorous mammals of tropical coasts, estuaries and rivers; the manatees and the dugong survive. Their closest living relatives are elephants. In the bestiary: the West Indian manatee (Trichechus manatus)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo grande y cilíndrico",
+      "Patas delanteras transformadas en aletas; las traseras, muy reducidas",
+      "Cola convertida en aleta horizontal y sin aleta dorsal",
+      "Labios con cerdas que usan para manipular la vegetación"
+    ],
+    "en": [
+      "Large, cylindrical body",
+      "Forelimbs turned into flippers; hind limbs much reduced",
+      "Tail turned into a horizontal fluke, and no dorsal fin",
+      "Bristly lips used to handle vegetation"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las focas (Carnivora): los sirenios son herbívoros, nunca salen del agua, ni siquiera para parir, y carecen de patas traseras visibles.",
+    "en": "Do not confuse with seals (Carnivora): sirenians are herbivores, never leave the water, not even to give birth, and have no visible hind limbs."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Sirenia",
+      "url": "https://en.wikipedia.org/wiki/Sirenia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sirenia",
+      "url": "https://es.wikipedia.org/wiki/Sirenia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

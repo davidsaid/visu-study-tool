@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Tupayas o musarañas arborícolas: pequeños mamíferos de las selvas del sur y sudeste de Asia, con dos familias. No son musarañas verdaderas; pertenecen a Euarchonta y están emparentadas con los primates. En el bestiario: la tupaya grande (Tupaia tana).",
+    "en": "Treeshrews: small mammals of the forests of South and Southeast Asia, with two families. They are not true shrews; they belong to Euarchonta and are related to primates. In the bestiary: the large treeshrew (Tupaia tana)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo esbelto con cola larga y pelaje suave, de gris a pardo rojizo",
+      "Caninos poco desarrollados y molares poco especializados",
+      "Sin pulgar oponible",
+      "Sublengua: un pliegue en forma de hoja bajo la lengua para limpiar los dientes"
+    ],
+    "en": [
+      "Slender body with a long tail and soft greyish to reddish-brown fur",
+      "Poorly developed canines and unspecialised molars",
+      "No opposable thumb",
+      "Sublingua: a leaf-like fold under the tongue used to clean the teeth"
+    ]
+  },
+  "contrast": {
+    "es": "Pese al nombre, no son musarañas verdaderas (Eulipotyphla), con las que antes se agrupaban en Insectivora: están más emparentadas con los colugos y los primates.",
+    "en": "Despite the name, they are not true shrews (Eulipotyphla), with which they were once lumped in Insectivora: they are closer to colugos and primates."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Treeshrew",
+      "url": "https://en.wikipedia.org/wiki/Treeshrew",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Scandentia",
+      "url": "https://es.wikipedia.org/wiki/Scandentia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

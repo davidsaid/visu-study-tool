@@ -1,0 +1,51 @@
+{
+  "field_marks": {
+    "es": [
+      "Parte delantera de raya y parte trasera de tiburón",
+      "Hocico alargado y puntiagudo",
+      "Dos aletas dorsales detrás de las pélvicas; cola sin lóbulos",
+      "Fila de espinas en la línea media del dorso",
+      "Dorso gris pardo, caqui o amarillento; vientre blanco"
+    ],
+    "en": [
+      "Ray-like at the front, shark-like at the rear",
+      "Long, pointed snout",
+      "Two dorsal fins behind the pelvic fins; tail without lobes",
+      "Row of thorns along the midline of the back",
+      "Greyish-brown, khaki or yellowish back; white belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Squatina squatina",
+      "es": "El angelote tiene la cabeza ancha con boca terminal, no un hocico puntiagudo, y aletas pectorales en ala.",
+      "en": "The angelshark has a broad head with a terminal mouth rather than a pointed snout, and wing-like pectoral fins."
+    },
+    {
+      "binomial": "Glaucostegus cemiculus",
+      "es": "El guitarra de barba negra es muy parecido, pero el común es menor y tiene los ojos más grandes.",
+      "en": "The blackchin guitarfish is very similar, but the common guitarfish is smaller and has larger eyes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Rhinobatos rhinobatos",
+      "url": "https://es.wikipedia.org/wiki/Rhinobatos_rhinobatos",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common guitarfish",
+      "url": "https://en.wikipedia.org/wiki/Common_guitarfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Squatina squatina",
+      "url": "https://es.wikipedia.org/wiki/Squatina_squatina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

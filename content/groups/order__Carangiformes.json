@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Orden amplio de percomorfos definido sobre todo por datos moleculares: jureles y carángidos, peces planos, barracudas, picudos y peces arquero. Tradicionalmente solo incluía la familia Carangidae y sus miembros se repartían entre los perciformes. En el bestiario: el jurel (Trachurus trachurus).",
+    "en": "A broad order of percomorphs defined mainly by molecular data: jacks and trevallies, flatfishes, barracudas, billfishes and archerfishes. It traditionally held only the family Carangidae, and its other members sat in Perciformes. In the bestiary: the Atlantic horse mackerel (Trachurus trachurus)."
+  },
+  "traits": {
+    "es": [
+      "Carángidos: cuerpo algo alargado y comprimido con pedúnculo caudal delgado",
+      "Dos aletas dorsales y dos espinas en la aleta anal",
+      "Escamas de la línea lateral a menudo transformadas en escudos espinosos",
+      "Escamas cicloideas pequeñas y adheridas; depredadores rápidos de aguas abiertas"
+    ],
+    "en": [
+      "Carangids: moderately elongated, compressed body with a slender caudal peduncle",
+      "Two dorsal fins and two spines in the anal fin",
+      "Lateral-line scales often modified into spiny scutes",
+      "Small, adherent cycloid scales; fast predators of open water"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Carangiformes",
+      "url": "https://en.wikipedia.org/wiki/Carangiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Carangidae",
+      "url": "https://es.wikipedia.org/wiki/Carangidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

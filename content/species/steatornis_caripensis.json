@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave grande y esbelta (40–49 cm) de alas largas",
+      "Plumaje pardo rojizo con motas blancas en la nuca y las alas",
+      "Partes inferiores canela con manchas blancas romboidales ribeteadas de negro",
+      "Pico aplanado y muy ganchudo, rodeado de largas cerdas castañas",
+      "Patas pequeñas, solo útiles para agarrarse a paredes"
+    ],
+    "en": [
+      "Large, slim bird (40–49 cm) with long wings",
+      "Reddish-brown plumage with white spots on the nape and wings",
+      "Cinnamon-buff underparts with black-edged white diamond spots",
+      "Flattened, strongly hooked bill surrounded by long chestnut bristles",
+      "Small feet, useful only for clinging to vertical surfaces"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Caprimulgus europaeus",
+      "es": "El chotacabras es menor, gris pardo críptico y tiene un pico diminuto, no ganchudo.",
+      "en": "The European nightjar is smaller, cryptic grey-brown, and has a tiny, unhooked bill."
+    }
+  ],
+  "etymology": {
+    "es": "Steatornis significa «ave grasa», por la gordura de los pollos; caripensis, «de Caripe», la localidad venezolana donde se describió en 1799.",
+    "en": "Steatornis means 'fat bird', after the fattiness of the chicks; caripensis means 'of Caripe', the Venezuelan town where it was described in 1799."
+  },
+  "trivia": {
+    "es": [
+      "Es la única ave frugívora nocturna que vuela y se orienta por ecolocalización en sus cuevas.",
+      "Los pollos se hervían para obtener aceite, de ahí el nombre inglés oilbird."
+    ],
+    "en": [
+      "It is the only nocturnal flying fruit-eating bird, and navigates its caves by echolocation.",
+      "Chicks were once boiled down for oil, hence the English name oilbird."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Steatornis caripensis",
+      "url": "https://es.wikipedia.org/wiki/Steatornis_caripensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Oilbird",
+      "url": "https://en.wikipedia.org/wiki/Oilbird",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Caprimulgus europaeus",
+      "url": "https://es.wikipedia.org/wiki/Caprimulgus_europaeus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,57 @@
+{
+  "field_marks": {
+    "es": [
+      "Lagarto sin patas, de aspecto de serpiente, de 30–40 cm (hembras hasta 50 cm)",
+      "Escamas gruesas, lisas y brillantes",
+      "Ojos pequeños con párpados móviles",
+      "Coloración muy variable; algunas formas locales azuladas"
+    ],
+    "en": [
+      "Legless, snake-like lizard, 30–40 cm long (females up to 50 cm)",
+      "Thick, smooth, glossy scales",
+      "Small eyes with movable eyelids",
+      "Highly variable colour; some local forms are bluish"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Natrix astreptophora",
+      "es": "Las serpientes tienen los ojos cubiertos por una escama transparente fija; el lución parpadea porque tiene párpados móviles.",
+      "en": "Snakes have their eyes covered by a fixed transparent scale; the slow worm can blink because it has movable eyelids."
+    },
+    {
+      "binomial": "Chalcides bedriagai",
+      "es": "El eslizón ibérico tiene cuatro patas cortas con cinco dedos.",
+      "en": "Bedriaga's skink has four short legs with five toes."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Si lo agarran por la cola, la suelta (autotomía)."
+    ],
+    "en": [
+      "If grabbed by the tail, it sheds it (autotomy)."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Anguis fragilis",
+      "url": "https://es.wikipedia.org/wiki/Anguis_fragilis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common slow worm",
+      "url": "https://en.wikipedia.org/wiki/Common_slow_worm",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Chalcides bedriagai",
+      "url": "https://en.wikipedia.org/wiki/Chalcides_bedriagai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Cecilias: anfibios sin patas, con forma de lombriz o de serpiente, que viven enterrados en el suelo o en el lecho de los ríos de las regiones tropicales. En el bestiario: la cecilia de Ceilán (Ichthyophis glutinosus).",
+    "en": "Caecilians: limbless, worm- or snake-shaped amphibians that live hidden in soil or streambeds in the tropics. In the bestiary: the Ceylon caecilian (Ichthyophis glutinosus)."
+  },
+  "traits": {
+    "es": [
+      "Sin patas ni cinturas escapular y pélvica",
+      "Cuerpo dividido en anillos, con aspecto de lombriz; cola muy corta o ausente",
+      "Ojos pequeños o rudimentarios, a veces cubiertos de piel",
+      "Un par de tentáculos sensoriales entre los ojos y las narinas, exclusivos del grupo",
+      "Cráneo muy osificado y compacto, adaptado para excavar"
+    ],
+    "en": [
+      "No limbs and no shoulder or pelvic girdles",
+      "Body divided into rings, worm-like; tail very short or absent",
+      "Small or rudimentary eyes, sometimes covered by skin",
+      "A pair of sensory tentacles between the eyes and nostrils, unique to the group",
+      "Heavily ossified, compact skull adapted for burrowing"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con lombrices ni serpientes: a diferencia de las lombrices tienen cráneo, mandíbulas y dientes, y a diferencia de las serpientes tienen la piel lisa y húmeda dividida en anillos, sin escamas visibles por fuera.",
+    "en": "Do not confuse with earthworms or snakes: unlike earthworms they have a skull, jaws and teeth, and unlike snakes their skin is smooth, moist and ringed, without external scales."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Caecilian",
+      "url": "https://en.wikipedia.org/wiki/Caecilian",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Gymnophiona",
+      "url": "https://es.wikipedia.org/wiki/Gymnophiona",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

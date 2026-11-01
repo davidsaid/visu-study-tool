@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado y fusiforme con hocico largo y puntiagudo",
+      "Dorso verde brillante o azul acero con bandas negras onduladas que bajan hasta media altura del flanco",
+      "Vientre y mitad inferior del flanco blanco plateados, sin manchas",
+      "Dos dorsales muy separadas y aletillas detrás de la dorsal y la anal",
+      "Caudal en forma de hoz"
+    ],
+    "en": [
+      "Elongated, spindle-shaped body with a long, pointed snout",
+      "Bright green or steel-blue back with wavy black bands reaching halfway down the side",
+      "Silvery-white belly and lower flank, unmarked",
+      "Two widely separated dorsal fins and finlets behind the dorsal and anal fins",
+      "Sickle-shaped tail fin"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Trachurus trachurus",
+      "es": "El jurel tiene una línea de escudetes óseos a lo largo del costado, una mancha oscura en el opérculo y no tiene rayas onduladas.",
+      "en": "The horse mackerel has a line of bony scutes along its side, a dark spot on the gill cover and no wavy stripes."
+    },
+    {
+      "binomial": "Scomber japonicus",
+      "es": "El estornino (S. japonicus colias) tiene los ojos grandes y manchones verdes en la parte superior y los costados.",
+      "en": "The chub mackerel (S. japonicus colias) has large eyes and green blotches on the upper body and sides."
+    }
+  ],
+  "etymology": {
+    "es": "Linneo la llamó Scomber scomber, del griego skombros, «atún» o «caballa».",
+    "en": "Linnaeus named it Scomber scomber, from Greek skombros, 'tunny' or 'mackerel'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Scomber scombrus",
+      "url": "https://es.wikipedia.org/wiki/Scomber_scombrus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic mackerel",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_mackerel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic horse mackerel",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_horse_mackerel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

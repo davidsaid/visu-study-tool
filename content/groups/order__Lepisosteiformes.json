@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Pejelagartos o gares: el único linaje vivo de los Ginglymodi, con siete especies de agua dulce y salobre del este de Norteamérica, Centroamérica y Cuba. Junto con los amiiformes forman los holósteos. En el bestiario: el pez lagarto (Lepisosteus osseus).",
+    "en": "Gars: the only living lineage of Ginglymodi, with seven species of fresh and brackish waters of eastern North America, Central America and Cuba. Together with the bowfins they form the Holostei. In the bestiary: the longnose gar (Lepisosteus osseus)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo alargado acorazado con escamas ganoideas",
+      "Mandíbulas largas, en pico, con dientes largos y afilados",
+      "Aleta dorsal situada muy atrás en el cuerpo",
+      "Vejiga natatoria vascularizada que funciona como pulmón: suben a tragar aire"
+    ],
+    "en": [
+      "Elongated body armoured with ganoid scales",
+      "Long, beak-like jaws with long, sharp teeth",
+      "Dorsal fin set far back on the body",
+      "Vascularised swim bladder that works as a lung: they surface to gulp air"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con el lucio (Esociformes): en inglés se les llama a veces «garpike», pero no están emparentados; el pejelagarto va acorazado con escamas ganoideas.",
+    "en": "Do not confuse with pikes (Esociformes): gars are sometimes called 'garpike' but are not closely related; a gar is armoured with ganoid scales."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Lepisosteiformes",
+      "url": "https://en.wikipedia.org/wiki/Lepisosteiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Lepisosteiformes",
+      "url": "https://es.wikipedia.org/wiki/Lepisosteiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Gar",
+      "url": "https://en.wikipedia.org/wiki/Gar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Lepisosteidae",
+      "url": "https://es.wikipedia.org/wiki/Lepisosteidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

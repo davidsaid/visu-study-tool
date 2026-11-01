@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Damanes: seis especies vivas de una sola familia (Procaviidae), de África y Oriente Próximo. Pese a su aspecto de roedor, son afroterios emparentados con elefantes y sirenios. En el bestiario: el damán roquero (Procavia capensis).",
+    "en": "Hyraxes: six living species in a single family (Procaviidae), from Africa and the Middle East. Despite looking like rodents, they are afrotherians related to elephants and sirenians. In the bestiary: the rock hyrax (Procavia capensis)."
+  },
+  "traits": {
+    "es": [
+      "Dos incisivos superiores grandes, como colmillos, de crecimiento continuo",
+      "Cuatro incisivos inferiores en forma de peine",
+      "Almohadillas sensibles en las patas y uñas como pequeñas pezuñas",
+      "Termorregulación poco desarrollada: se acurrucan juntos y toman el sol"
+    ],
+    "en": [
+      "Two large, tusk-like, ever-growing upper incisors",
+      "Four comb-like lower incisors",
+      "Sensitive pads on the feet and hoof-like toenails",
+      "Poor internal temperature control: they huddle and bask"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con roedores como la marmota: los damanes no tienen el par de incisivos inferiores en cincel, sino cuatro incisivos en peine, y tienen uñas en vez de garras.",
+    "en": "Do not confuse with rodents such as marmots: hyraxes lack the chisel-like lower incisor pair, having four comb-like incisors instead, and have nails rather than claws."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Hyracoidea",
+      "url": "https://en.wikipedia.org/wiki/Hyracoidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Hyracoidea",
+      "url": "https://es.wikipedia.org/wiki/Hyracoidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

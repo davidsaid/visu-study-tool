@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Lagarto pesado y lento, de hasta unos 56–60 cm, con patas cortas y garras fuertes",
+      "Piel rugosa de escamas abultadas como cuentas",
+      "Manchas irregulares rosadas, amarillas o blancas sobre fondo negro o pardo",
+      "Cola corta y gruesa, donde almacena grasa",
+      "Cabeza maciza con hocico robusto y ojos pequeños"
+    ],
+    "en": [
+      "Heavy, slow lizard up to about 56–60 cm, with short legs and strong claws",
+      "Rough skin of bead-like, studded scales",
+      "Irregular pink, yellow or white markings on a black or brown ground",
+      "Short, thick tail used to store fat",
+      "Massive head with a stout snout and small eyes"
+    ]
+  },
+  "lookalikes": [],
+  "etymology": {
+    "es": "Heloderma = «piel tachonada» (gr. hēlos, cabeza de clavo, + derma, piel); suspectum porque Cope sospechó que era venenoso por los surcos de sus dientes.",
+    "en": "Heloderma = 'studded skin' (Gk hēlos, nail head, + derma, skin); suspectum because Cope suspected it was venomous from the grooves in its teeth."
+  },
+  "trivia": {
+    "es": [
+      "Es venenoso: el veneno fluye por surcos de los dientes inferiores. Un péptido de su veneno, la exendina-4, inspiró fármacos contra la diabetes de tipo 2."
+    ],
+    "en": [
+      "It is venomous: venom flows along grooves in the lower teeth. A peptide in its venom, exendin-4, inspired drugs for type 2 diabetes."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Heloderma suspectum",
+      "url": "https://es.wikipedia.org/wiki/Heloderma_suspectum",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Gila monster",
+      "url": "https://en.wikipedia.org/wiki/Gila_monster",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Loro mediano (unos 33 cm) de plumaje gris",
+      "Cola roja muy llamativa",
+      "Pico negro",
+      "Cabeza y alas más oscuras que el cuerpo; plumas de cabeza y cuerpo con finos bordes blancos",
+      "Iris amarillo en adultos; los jóvenes tienen los ojos gris oscuro o negros"
+    ],
+    "en": [
+      "Medium-sized parrot (about 33 cm) with grey plumage",
+      "Striking red tail",
+      "Black bill",
+      "Head and wings darker than the body; head and body feathers with slight white edges",
+      "Yellow iris in adults; juveniles have dark grey to black eyes"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Ambos sexos tienen un aspecto similar.",
+    "en": "Both sexes look similar."
+  },
+  "etymology": {
+    "es": "Psittacus es «loro» en latín; erithacus procede del griego erithakos, un ave desconocida que imitaba sonidos humanos, quizá el colirrojo tizón.",
+    "en": "Psittacus is Latin for 'parrot'; erithacus derives from Greek erithakos, an unknown bird said to mimic human sounds, perhaps the black redstart."
+  },
+  "trivia": {
+    "es": [
+      "Se considera una de las aves más inteligentes y es célebre por su capacidad para imitar el habla."
+    ],
+    "en": [
+      "It is considered one of the most intelligent birds and is famous for its ability to mimic speech."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Psittacus erithacus",
+      "url": "https://es.wikipedia.org/wiki/Psittacus_erithacus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Grey parrot",
+      "url": "https://en.wikipedia.org/wiki/Grey_parrot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

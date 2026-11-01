@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "El mayor orden de marsupiales, con unas 155 especies de Australasia: canguros, ualabíes, koala, wombats y falangeros. En el bestiario: el koala, el petauro del azúcar y el canguro rojo.",
+    "en": "The largest order of marsupials, with about 155 Australasian species: kangaroos, wallabies, koala, wombats and possums. In the bestiary: the koala, the sugar glider and the red kangaroo."
+  },
+  "traits": {
+    "es": [
+      "Diprotodontos: un par de incisivos inferiores grandes y proyectados hacia delante",
+      "Sin caninos inferiores",
+      "Sindáctilos: los dedos 2 y 3 del pie están unidos por piel hasta las uñas",
+      "Casi todos herbívoros"
+    ],
+    "en": [
+      "Diprotodont: one pair of large, forward-projecting lower incisors",
+      "No lower canines",
+      "Syndactyl: toes 2 and 3 of the hind foot are joined by skin up to the claws",
+      "Almost all herbivorous"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los dasiuromorfos (diablo de Tasmania), carnívoros con varios pares de incisivos y dedos del pie separados.",
+    "en": "Do not confuse with dasyuromorphs (Tasmanian devil): carnivores with several pairs of incisors and separate toes."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Diprotodontia",
+      "url": "https://en.wikipedia.org/wiki/Diprotodontia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Diprotodontia",
+      "url": "https://es.wikipedia.org/wiki/Diprotodontia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

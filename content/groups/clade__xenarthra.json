@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Xenartros (antes «desdentados»): superorden de placentarios americanos, originado en Sudamérica, con 31 especies vivas de osos hormigueros, perezosos y armadillos. En el bestiario: Cingulata (armadillo) y Pilosa (perezoso, oso hormiguero).",
+    "en": "Xenarthrans (formerly 'edentates'): a superorder of American placentals that arose in South America, with 31 living species of anteaters, sloths and armadillos. In the bestiary: Cingulata (armadillo) and Pilosa (sloth, anteater)."
+  },
+  "traits": {
+    "es": [
+      "Articulaciones adicionales entre las vértebras lumbares (xenartria), que dan nombre al grupo",
+      "Isquion de la pelvis soldado al sacro",
+      "Uñas en forma de garra grandes, robustas y a menudo falciformes",
+      "Dientes reducidos o ausentes (los osos hormigueros no tienen ninguno)"
+    ],
+    "en": [
+      "Extra articulations between the lumbar vertebrae (xenarthry), which give the group its name",
+      "Ischium of the pelvis fused to the sacrum",
+      "Large, robust, often sickle-shaped claws",
+      "Teeth reduced or absent (anteaters have none)"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con el pangolín (Pholidota, laurasiaterio) ni con el cerdo hormiguero (afroterio): se agruparon con ellos en Edentata, pero su parecido es convergente.",
+    "en": "Do not confuse with the pangolin (Pholidota, a laurasiathere) or the aardvark (an afrothere): they were once lumped in Edentata, but the resemblance is convergent."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Xenarthra",
+      "url": "https://en.wikipedia.org/wiki/Xenarthra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Xenarthra",
+      "url": "https://es.wikipedia.org/wiki/Xenarthra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Pilosa",
+      "url": "https://en.wikipedia.org/wiki/Pilosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

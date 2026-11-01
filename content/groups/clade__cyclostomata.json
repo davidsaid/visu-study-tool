@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Ciclóstomos («boca circular»): el clado de los vertebrados actuales sin mandíbulas, formado por los mixinos y las lampreas. Los estudios genéticos y morfológicos indican que ambos grupos están más emparentados entre sí que con los gnatóstomos. En el bestiario: las clases Myxini e Hyperoartia.",
+    "en": "Cyclostomes ('circular mouth'): the clade of living jawless vertebrates, made up of hagfishes and lampreys. Genetic and morphological studies show that the two are more closely related to each other than to jawed vertebrates. In the bestiary: the classes Myxini and Hyperoartia."
+  },
+  "traits": {
+    "es": [
+      "Boca sin mandíbulas, con estructuras córneas que hacen de dientes",
+      "Cuerpo anguiliforme con piel cubierta de moco, sin escamas",
+      "Un solo órgano olfativo con un único orificio nasal",
+      "Arcos branquiales en posición interna; respiran por bolsas branquiales",
+      "Notocorda que persiste en el adulto; sin estómago"
+    ],
+    "en": [
+      "Jawless mouth with horny tooth-like structures",
+      "Eel-shaped body with slimy, scaleless skin",
+      "A single olfactory organ with a single nostril",
+      "Branchial arches positioned internally; gills in pouches",
+      "Notochord persisting in the adult; no stomach"
+    ]
+  },
+  "contrast": {
+    "es": "Recuerdan a las anguilas, pero no están emparentados con ellas; frente a todos los gnatóstomos, carecen de mandíbulas articuladas, dientes verdaderos y aletas pares.",
+    "en": "They recall eels but are not related to them; unlike all gnathostomes, they lack hinged jaws, true teeth and paired fins."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Cyclostomi",
+      "url": "https://en.wikipedia.org/wiki/Cyclostomi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Cyclostomi",
+      "url": "https://es.wikipedia.org/wiki/Cyclostomi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

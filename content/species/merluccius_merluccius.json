@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo esbelto, más ancho justo detrás de la cabeza grande",
+      "Mandíbulas grandes con dientes curvos; interior de la boca y de las branquias negro",
+      "Dos dorsales: la primera alta y triangular, la segunda larga, casi como la anal",
+      "Caudal de borde recto",
+      "Dorso gris azulado, flancos plateados, vientre blanquecino; línea lateral recta y más oscura"
+    ],
+    "en": [
+      "Slim body, widest just behind the large head",
+      "Large jaws with curved teeth; inside of the mouth and gill cavity black",
+      "Two dorsal fins: the first tall and triangular, the second long, nearly matching the anal fin",
+      "Tail fin with a straight-cut edge",
+      "Blue-grey back, silvery sides, whitish belly; straight, darker lateral line"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gadus morhua",
+      "es": "El bacalao tiene tres aletas dorsales, una barbilla en el mentón y el dorso pardo o verde con manchas.",
+      "en": "The cod has three dorsal fins, a chin barbel and a spotted brown or green back."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Merluccius merluccius",
+      "url": "https://en.wikipedia.org/wiki/Merluccius_merluccius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Merluccius merluccius",
+      "url": "https://es.wikipedia.org/wiki/Merluccius_merluccius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Gadus morhua",
+      "url": "https://es.wikipedia.org/wiki/Gadus_morhua",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

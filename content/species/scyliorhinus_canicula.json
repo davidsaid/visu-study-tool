@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Tiburón pequeño (40–50 cm, máx. 1 m) de cuerpo esbelto y cabeza corta y roma",
+      "Dorso gris amarillento o pardo grisáceo con muchas manchas pequeñas oscuras",
+      "Vientre claro, crema o blanco grisáceo",
+      "Dos aletas dorsales muy retrasadas, hacia la cola",
+      "Narinas bajo el hocico unidas a la boca por un surco"
+    ],
+    "en": [
+      "Small shark (40–50 cm, max. 1 m) with a slender body and a short, blunt head",
+      "Yellowish-grey to greyish-brown back with many small dark spots",
+      "Pale belly, cream or greyish-white",
+      "Two dorsal fins set far back towards the tail",
+      "Nostrils under the snout joined to the mouth by a groove"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Scyliorhinus stellaris",
+      "es": "El alitán tiene manchas más grandes que la pintarroja.",
+      "en": "The nursehound has larger spots than the small-spotted catshark."
+    },
+    {
+      "binomial": "Squalus acanthias",
+      "es": "La mielga lleva una espina delante de cada dorsal, manchas blancas en el dorso y no tiene aleta anal.",
+      "en": "The spiny dogfish has a spine in front of each dorsal fin, white spots on the back and no anal fin."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen dientes más grandes que las hembras.",
+    "en": "Males have larger teeth than females."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Scyliorhinus canicula",
+      "url": "https://es.wikipedia.org/wiki/Scyliorhinus_canicula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Small-spotted catshark",
+      "url": "https://en.wikipedia.org/wiki/Small-spotted_catshark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Spiny dogfish",
+      "url": "https://en.wikipedia.org/wiki/Spiny_dogfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

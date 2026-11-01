@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Cigüeña grande (95–100 cm), algo menor que la blanca",
+      "Cabeza, cuello, pecho, dorso y alas negros con irisaciones verdes y moradas",
+      "Vientre, axilas e infracoberteras caudales blancos",
+      "Pico, patas y piel desnuda alrededor del ojo de un rojo intenso",
+      "Plumas del pecho largas formando una gola"
+    ],
+    "en": [
+      "Large stork (95–100 cm), slightly smaller than the white stork",
+      "Black head, neck, breast, back and wings with a green and purple sheen",
+      "White belly, armpits and undertail coverts",
+      "Bright red bill, legs and bare skin around the eye",
+      "Long breast feathers forming a shaggy ruff"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ciconia ciconia",
+      "es": "La cigüeña blanca tiene el cuerpo blanco y solo las plumas de vuelo negras.",
+      "en": "The white stork has a white body, with only the flight feathers black."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los sexos son idénticos en aspecto, aunque los machos son de media mayores.",
+    "en": "The sexes look identical, although males are larger on average."
+  },
+  "etymology": {
+    "es": "Ciconia nigra significa en latín «cigüeña negra».",
+    "en": "Ciconia nigra is from the Latin words for 'stork' and 'black'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Ciconia nigra",
+      "url": "https://es.wikipedia.org/wiki/Ciconia_nigra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Black stork",
+      "url": "https://en.wikipedia.org/wiki/Black_stork",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Ciconia ciconia",
+      "url": "https://es.wikipedia.org/wiki/Ciconia_ciconia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

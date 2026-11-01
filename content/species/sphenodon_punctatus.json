@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Aspecto de lagarto robusto, de color pardo verdoso y gris",
+      "Cresta de pliegues triangulares de piel a lo largo del dorso, mayor en los machos",
+      "Sin oído externo visible",
+      "Punta de la mandíbula superior en forma de pico o cincel"
+    ],
+    "en": [
+      "Looks like a stout lizard, greenish-brown and grey",
+      "Crest of triangular skin folds along the back, larger in males",
+      "No visible external ear",
+      "Tip of the upper jaw shaped like a beak or chisel"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Iguana iguana",
+      "es": "La iguana verde tiene una gran papada y un escudo circular grande a los lados de la cabeza; el tuátara no tiene oído externo visible.",
+      "en": "The green iguana has a large dewlap and a big round shield on the side of the head; the tuatara has no visible external ear."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mayores, con la cresta dorsal más grande y el abdomen más estrecho.",
+    "en": "Males are larger, with a bigger dorsal crest and a narrower abdomen."
+  },
+  "etymology": {
+    "es": "Sphenodon = gr. sphēn (cuña) + odous (diente); «tuátara» viene del maorí y significa «picos en la espalda».",
+    "en": "Sphenodon = Gk sphēn (wedge) + odous (tooth); 'tuatara' is Māori for 'peaks on the back'."
+  },
+  "trivia": {
+    "es": [
+      "No es un lagarto: es el único superviviente del orden Rhynchocephalia, muy diverso en el Mesozoico."
+    ],
+    "en": [
+      "It is not a lizard: it is the only survivor of the order Rhynchocephalia, highly diverse in the Mesozoic."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Tuatara",
+      "url": "https://en.wikipedia.org/wiki/Tuatara",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Sphenodon punctatus",
+      "url": "https://es.wikipedia.org/wiki/Sphenodon_punctatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Iguana iguana",
+      "url": "https://es.wikipedia.org/wiki/Iguana_iguana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

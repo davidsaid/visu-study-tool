@@ -1,0 +1,59 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro robusto (14–16 cm) de patas cortas y pico grueso y cónico",
+      "Macho: píleo gris oscuro flanqueado de castaño en los lados de la cabeza",
+      "Macho: babero negro en garganta y pecho, mejillas y partes inferiores gris pálido",
+      "Alas color chocolate con una barra alar blanca; dorso pardo cálido listado de negro",
+      "Hembra: parda pálida y grisácea, sin dibujo llamativo en la cabeza"
+    ],
+    "en": [
+      "Stocky bird (14–16 cm) with short legs and a thick, conical bill",
+      "Male: dark grey crown flanked by chestnut on the head sides",
+      "Male: black bib on throat and breast, pale grey cheeks and underparts",
+      "Chocolate wings with a white wing bar; warm brown back streaked black",
+      "Female: pale brown and grey, without bold head markings"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Passer montanus",
+      "es": "El gorrión molinero es más pequeño y esbelto, con el píleo castaño y una mancha negra en cada mejilla.",
+      "en": "The Eurasian tree sparrow is smaller and slimmer, with a chestnut crown and a black patch on each cheek."
+    },
+    {
+      "binomial": "Sylvia atricapilla",
+      "es": "La curruca capirotada es gris uniforme con un capirote nítido negro o pardo rojizo, sin babero.",
+      "en": "The Eurasian blackcap is plain grey with a neat black or reddish-brown cap and no bib."
+    }
+  ],
+  "dimorphism": {
+    "es": "Fuerte dimorfismo: el macho tiene la cabeza contrastada y el babero negro; la hembra es parda y ante.",
+    "en": "Strong dimorphism: the male has bold head markings and a black bib; the female is buffish brown."
+  },
+  "etymology": {
+    "es": "passer es en latín un término para pajarillos activos, de una raíz que alude a la rapidez; domesticus significa «de la casa», por su asociación con el ser humano.",
+    "en": "passer is a Latin term for small active birds, from a root referring to speed; domesticus means 'belonging to the house', after its association with humans."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Passer domesticus",
+      "url": "https://es.wikipedia.org/wiki/Passer_domesticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): House sparrow",
+      "url": "https://en.wikipedia.org/wiki/House_sparrow",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Sylvia atricapilla",
+      "url": "https://es.wikipedia.org/wiki/Sylvia_atricapilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

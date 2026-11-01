@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Avestruces: paleognatas no voladoras de África, hoy con una sola familia (Struthionidae) y dos especies vivas. En el bestiario: el avestruz (Struthio camelus), el ave viva más grande.",
+    "en": "Ostriches: flightless palaeognaths of Africa, today with a single family (Struthionidae) and two living species. In the bestiary: the common ostrich (Struthio camelus), the largest living bird."
+  },
+  "traits": {
+    "es": [
+      "Solo dos dedos en cada pata (la mayoría de las aves tienen cuatro)",
+      "Cuello y patas muy largos; cabeza y cuello casi desnudos",
+      "Plumas sin ganchillos, blandas y esponjosas",
+      "Corredores muy rápidos, de más de 70 km/h"
+    ],
+    "en": [
+      "Only two toes on each foot (most birds have four)",
+      "Very long neck and legs; head and neck nearly bare",
+      "Feathers without hooklets, soft and fluffy",
+      "Very fast runners, above 70 km/h"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con el ñandú (Rheiformes), sudamericano, más pequeño y con tres dedos, ni con el casuario, que tiene casco en la cabeza.",
+    "en": "Do not confuse with rheas (Rheiformes), which are South American, smaller and three-toed, or with cassowaries, which have a casque on the head."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Struthioniformes",
+      "url": "https://en.wikipedia.org/wiki/Struthioniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Struthioniformes",
+      "url": "https://es.wikipedia.org/wiki/Struthioniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Common ostrich",
+      "url": "https://en.wikipedia.org/wiki/Common_ostrich",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Struthio camelus",
+      "url": "https://es.wikipedia.org/wiki/Struthio_camelus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

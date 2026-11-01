@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Alcatraces, piqueros, fragatas, cormoranes y aningas, familias antes incluidas en Pelecaniformes, que resultó ser un grupo polifilético. En el bestiario: el cormorán grande (Phalacrocorax carbo).",
+    "en": "Gannets, boobies, frigatebirds, cormorants and darters, families once placed in Pelecaniformes, which turned out to be polyphyletic. In the bestiary: the great cormorant (Phalacrocorax carbo)."
+  },
+  "traits": {
+    "es": [
+      "Cormoranes: membrana entre los cuatro dedos del pie",
+      "Pico largo, fino y ganchudo",
+      "Plumaje oscuro en la mayoría, no del todo impermeable; tras bucear extienden las alas para secarlas",
+      "Bucean desde la superficie impulsándose con las patas"
+    ],
+    "en": [
+      "Cormorants: webbing between all four toes",
+      "Long, thin, hooked bill",
+      "Mostly dark plumage, not fully waterproof; after diving they hold their wings out to dry",
+      "Dive from the surface, propelled by their feet"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con somormujos o patos buceadores: el cormorán tiene pico ganchudo y los cuatro dedos unidos por membranas.",
+    "en": "Do not confuse with grebes or diving ducks: cormorants have a hooked bill and all four toes joined by webs."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Suliformes",
+      "url": "https://en.wikipedia.org/wiki/Suliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Suliformes",
+      "url": "https://es.wikipedia.org/wiki/Suliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Cormorant",
+      "url": "https://en.wikipedia.org/wiki/Cormorant",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Phalacrocoracidae",
+      "url": "https://es.wikipedia.org/wiki/Phalacrocoracidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

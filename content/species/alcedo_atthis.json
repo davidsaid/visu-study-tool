@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave del tamaño de un gorrión (unos 16 cm), rechoncha, de cabeza grande y cola corta",
+      "Partes superiores azul turquesa con destellos verdes; dorso y obispillo azul celeste",
+      "Partes inferiores y mancha junto al ojo anaranjadas; garganta y mancha del cuello blancas",
+      "Pico largo y recto, como una daga",
+      "Patas muy cortas de color rojo vivo"
+    ],
+    "en": [
+      "Sparrow-sized bird (about 16 cm), dumpy, large-headed and short-tailed",
+      "Turquoise upperparts with green sheen; pale azure back and rump",
+      "Orange underparts and ear patch; white throat and neck patch",
+      "Long, straight, dagger-like bill",
+      "Very short, bright red legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Merops apiaster",
+      "es": "El abejaruco es más esbelto y de cola larga, con garganta amarilla, píleo castaño y pico curvo.",
+      "en": "The European bee-eater is slimmer and long-tailed, with a yellow throat, chestnut crown and curved bill."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los sexos son idénticos salvo la mandíbula inferior: negra en el macho y rojo anaranjada con punta negra en la hembra.",
+    "en": "The sexes are identical except for the lower mandible: black in the male, orange-red with a black tip in the female."
+  },
+  "etymology": {
+    "es": "Alcedo es «martín pescador» en latín (del griego halkyṓn); atthis alude a Atis, joven de Lesbos favorita de Safo.",
+    "en": "Alcedo is Latin for 'kingfisher' (from Greek halkyon); atthis refers to Atthis, a young woman of Lesbos and favourite of Sappho."
+  },
+  "trivia": {
+    "es": [
+      "Los juveniles son más apagados y verdosos, y tienen las patas negras al principio."
+    ],
+    "en": [
+      "Juveniles are duller and greener, and their legs are initially black."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Alcedo atthis",
+      "url": "https://es.wikipedia.org/wiki/Alcedo_atthis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common kingfisher",
+      "url": "https://en.wikipedia.org/wiki/Common_kingfisher",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Merops apiaster",
+      "url": "https://es.wikipedia.org/wiki/Merops_apiaster",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "El mayor somormujo del Viejo Mundo (46–51 cm), de cuello largo y esbelto",
+      "En celo: píleo negruzco con dos penachos y golas castaño rojizas, oscuras en las puntas, enmarcando la cara blanca",
+      "Ojos rojos y bridas negras; pico afilado",
+      "Partes superiores pardo oscuras, inferiores blancas y flancos rojizos",
+      "En invierno pierde las golas: cara blanca, también sobre el ojo, y pico rosáceo"
+    ],
+    "en": [
+      "The Old World's largest grebe (46–51 cm), with a long, slender neck",
+      "Breeding: blackish crown with two tufts and rufous ruffs, darker at the tips, framing a white face",
+      "Red eyes and black lores; dagger-like bill",
+      "Dark brown upperparts, white underparts and rufous flanks",
+      "In winter loses the ruffs: white face including above the eye, and a pink bill"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Ambos sexos tienen un aspecto similar.",
+    "en": "Both sexes look alike."
+  },
+  "etymology": {
+    "es": "Podiceps, del latín podicis «ano» y pes «pie», por la posición retrasada de sus patas; cristatus significa «crestado».",
+    "en": "Podiceps, from Latin podicis 'vent' and pes 'foot', after the rear-set legs; cristatus means 'crested'."
+  },
+  "trivia": {
+    "es": [
+      "Los pollos tienen la cabeza listada de blanco y negro."
+    ],
+    "en": [
+      "Chicks have boldly black-and-white striped heads."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Podiceps cristatus",
+      "url": "https://es.wikipedia.org/wiki/Podiceps_cristatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Great crested grebe",
+      "url": "https://en.wikipedia.org/wiki/Great_crested_grebe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

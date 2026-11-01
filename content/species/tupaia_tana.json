@@ -1,0 +1,37 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico muy largo, el más largo de todas las tupayas",
+      "Dorso pardo rojizo que se oscurece hasta casi negro hacia atrás",
+      "Franja negra a lo largo del centro del lomo",
+      "Ojos grandes y orejas sin pelo",
+      "Cola tupida y relativamente corta"
+    ],
+    "en": [
+      "Very long snout, the longest of any treeshrew",
+      "Reddish-brown back darkening to almost black towards the rear",
+      "Black stripe along the middle of the back",
+      "Large eyes and hairless ears",
+      "Bushy, relatively short tail"
+    ]
+  },
+  "dimorphism": {
+    "es": "Machos y hembras son similares en aspecto y tamaño.",
+    "en": "Males and females are similar in appearance and size."
+  },
+  "sources": [
+    {
+      "title": "Tupaia tana — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Tupaia_tana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Large treeshrew — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Large_treeshrew",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

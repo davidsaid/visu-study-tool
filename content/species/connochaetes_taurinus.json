@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Antílope de hombros anchos y aspecto bovino, con los cuartos delanteros desproporcionadamente grandes",
+      "Hocico robusto y llamativo",
+      "Pelaje de gris pizarra o azulado a gris pardusco, con un brillo plateado azulado",
+      "Cola larga y negra",
+      "Cuernos en ambos sexos que salen hacia los lados y luego se curvan hacia arriba y hacia dentro, como un paréntesis"
+    ],
+    "en": [
+      "Broad-shouldered, cattle-like antelope with disproportionately large forequarters",
+      "Distinctive, robust muzzle",
+      "Slate or bluish-grey to greyish-brown coat with a silvery-blue sheen",
+      "Long black tail",
+      "Horns in both sexes that extend sideways, then curve up and inwards, like parentheses"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Syncerus caffer",
+      "es": "El búfalo africano es más macizo, de pardo rojizo a negro, y el macho tiene un escudo óseo en la frente.",
+      "en": "The African buffalo is bulkier, rusty to black, and the male has a bony boss across the forehead."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más grandes y oscuros que las hembras, con cuernos de hasta 83 cm frente a 30–40 cm.",
+    "en": "Males are larger and darker than females, with horns up to 83 cm versus 30–40 cm."
+  },
+  "etymology": {
+    "es": "Connochaetes viene del griego kónnos, «barba», y khaítē, «crin»; taurinus, del griego tauros, «toro».",
+    "en": "Connochaetes comes from Greek kónnos, 'beard', and khaítē, 'mane'; taurinus from Greek tauros, 'bull'."
+  },
+  "sources": [
+    {
+      "title": "Blue wildebeest — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Blue_wildebeest",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Connochaetes taurinus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Connochaetes_taurinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "African buffalo — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/African_buffalo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

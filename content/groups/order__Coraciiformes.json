@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Martines pescadores, abejarucos, carracas, momotos y todis: aves normalmente muy coloridas, casi exclusivas del Viejo Mundo, con unas 218 especies. En el bestiario: el abejaruco europeo y el martín pescador común.",
+    "en": "Kingfishers, bee-eaters, rollers, motmots and todies: usually brightly coloured birds, almost exclusively of the Old World, with about 218 species. In the bestiary: the European bee-eater and the common kingfisher."
+  },
+  "traits": {
+    "es": [
+      "Plumaje generalmente de colores vivos",
+      "Sindactilia: tres dedos hacia delante, con los dedos 3 y 4 soldados en la base",
+      "Pico sólido y robusto, de forma variable",
+      "Paladar desmognato"
+    ],
+    "en": [
+      "Usually brightly coloured plumage",
+      "Syndactyly: three forward-pointing toes, with toes 3 and 4 fused at the base",
+      "Solid, strong bill of variable shape",
+      "Desmognathous palate"
+    ]
+  },
+  "contrast": {
+    "es": "Abubillas y cálaos se incluían antes en este orden, pero hoy forman Bucerotiformes.",
+    "en": "Hoopoes and hornbills used to be placed in this order, but now form Bucerotiformes."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Coraciiformes",
+      "url": "https://en.wikipedia.org/wiki/Coraciiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Coraciiformes",
+      "url": "https://es.wikipedia.org/wiki/Coraciiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

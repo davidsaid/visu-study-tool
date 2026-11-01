@@ -1,0 +1,40 @@
+{
+  "field_marks": {
+    "es": [
+      "Musaraña mediana de hocico alargado y ojos pequeños",
+      "Orejas (pabellones auditivos) muy visibles y bien desarrolladas",
+      "Dorso pardo o pardo grisáceo (gris oscuro en invierno) y vientre gris claro",
+      "Cola relativamente corta, de 3–4,5 cm",
+      "Dientes blancos, sin puntas pigmentadas de rojo"
+    ],
+    "en": [
+      "Medium-sized shrew with a long snout and small eyes",
+      "External ears clearly visible and well developed",
+      "Brown or grey-brown back (dark grey in winter) and pale grey belly",
+      "Relatively short tail, 3–4.5 cm",
+      "White teeth, with no red-pigmented tips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Crocidura suaveolens",
+      "es": "La musaraña de campo es algo más pequeña pero, por lo demás, muy parecida; a menudo solo se distinguen examinando los dientes.",
+      "en": "The lesser white-toothed shrew is slightly smaller but otherwise very similar; often they can only be told apart by examining the teeth."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crocidura russula — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Crocidura_russula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Greater white-toothed shrew — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Greater_white-toothed_shrew",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

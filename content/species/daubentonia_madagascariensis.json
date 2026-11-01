@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje largo y oscuro, con las puntas del pelo blancas en cabeza y dorso",
+      "Cola muy larga y peluda, más que el cuerpo",
+      "Orejas muy grandes, como de murciélago",
+      "Ojos grandes y amarillos",
+      "Tercer dedo de la mano muy delgado y largo, con uña ganchuda"
+    ],
+    "en": [
+      "Long dark coat, with white-tipped hairs on the head and back",
+      "Very long bushy tail, longer than the body",
+      "Very large, bat-like ears",
+      "Large yellow eyes",
+      "Very thin, elongated third finger with a hooked nail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sciurus vulgaris",
+      "es": "Los primeros naturalistas lo tomaron por una ardilla por sus incisivos de crecimiento continuo, su cola y su pelaje, pero el aye-aye tiene orejas enormes, ojos grandes y un dedo medio fino y largo.",
+      "en": "Early naturalists mistook it for a squirrel because of its ever-growing incisors, tail and fur, but the aye-aye has huge ears, large eyes and a thin, elongated middle finger."
+    }
+  ],
+  "etymology": {
+    "es": "Daubentonia honra al naturalista francés Louis-Jean-Marie Daubenton; el nombre fue puesto por su alumno Geoffroy Saint-Hilaire en 1795.",
+    "en": "Daubentonia honours the French naturalist Louis-Jean-Marie Daubenton; it was named by his student Geoffroy Saint-Hilaire in 1795."
+  },
+  "trivia": {
+    "es": [
+      "Localiza larvas golpeando rítmicamente la corteza y escuchando los huecos con sus grandes orejas.",
+      "Se llegó a creer extinto hasta que fue redescubierto en 1961."
+    ],
+    "en": [
+      "It finds grubs by tapping rhythmically on bark and listening for hollows with its large ears.",
+      "It was once thought extinct until it was rediscovered in 1961."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Daubentonia madagascariensis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Daubentonia_madagascariensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Aye-aye — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Aye-aye",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

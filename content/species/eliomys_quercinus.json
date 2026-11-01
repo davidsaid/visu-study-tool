@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Antifaz negro que se extiende desde los ojos hacia atrás",
+      "Orejas grandes y prominentes, ojos grandes",
+      "Dorso pardo rojizo o gris y vientre blanco, muy contrastados",
+      "Cola larga acabada en un penacho de pelo, blanco en la punta"
+    ],
+    "en": [
+      "Black mask extending backwards from the eyes",
+      "Large, prominent ears and big eyes",
+      "Reddish-brown or grey back and white underside, strongly contrasting",
+      "Long tail ending in a tuft of hair, white at the tip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Apodemus sylvaticus",
+      "es": "El ratón de campo no tiene antifaz negro y su cola larga carece de penacho terminal.",
+      "en": "The wood mouse lacks the black mask and its long tail has no terminal tuft."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "El penacho de la cola puede desprenderse si lo atrapa un depredador."
+    ],
+    "en": [
+      "The tail tuft can come off if a predator grabs it."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Eliomys quercinus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Eliomys_quercinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Garden dormouse — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Garden_dormouse",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Apodemus sylvaticus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Apodemus_sylvaticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

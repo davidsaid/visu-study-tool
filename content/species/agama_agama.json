@@ -1,0 +1,36 @@
+{
+  "field_marks": {
+    "es": [
+      "Lagarto de 13–30 cm de colores muy vivos",
+      "Macho dominante con el cuerpo azul y la cola amarilla",
+      "Hembras, jóvenes y machos subordinados con la cabeza verde oliva",
+      "Vientre blanco y cola con una franja clara central flanqueada por manchas oscuras"
+    ],
+    "en": [
+      "Brightly coloured lizard, 13–30 cm long",
+      "Dominant male with a blue body and a yellow tail",
+      "Females, juveniles and subordinate males have an olive-green head",
+      "White underside and a tail with a pale central stripe bordered by dark patches"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Los machos son más largos que las hembras, y solo el macho dominante luce cuerpo azul y cola amarilla.",
+    "en": "Males are longer than females, and only the dominant male shows a blue body and yellow tail."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Agama agama",
+      "url": "https://en.wikipedia.org/wiki/Agama_agama",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Agama agama",
+      "url": "https://es.wikipedia.org/wiki/Agama_agama",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

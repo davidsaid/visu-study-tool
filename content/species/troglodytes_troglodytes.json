@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Uno de los pájaros más pequeños de Europa (9–10,5 cm), como una bolita de plumas",
+      "Plumaje pardo rojizo por encima, más gris o ante por debajo",
+      "Finamente barrado de oscuro, incluso en alas y cola",
+      "Cola muy corta que suele llevar levantada",
+      "Ceja crema y pico fino, pardo oscuro"
+    ],
+    "en": [
+      "One of Europe's smallest birds (9–10.5 cm), like a ball of feathers",
+      "Rufous-brown above, greyer or buff below",
+      "Finely barred darker, even on wings and tail",
+      "Very short tail, usually held cocked up",
+      "Cream supercilium and a fine dark brown bill"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Los sexos son iguales.",
+    "en": "The sexes are alike."
+  },
+  "etymology": {
+    "es": "Troglodytes procede del griego trōglodýtēs, «habitante de las cavernas», por su costumbre de meterse en cavidades.",
+    "en": "Troglodytes is from Greek trōglodutēs, 'cave-dweller', after its habit of entering crevices."
+  },
+  "trivia": {
+    "es": [
+      "La Wikipedia en inglés ya la sitúa en el género Nannus («enano» en griego), pues Troglodytes resultó parafilético."
+    ],
+    "en": [
+      "English Wikipedia now places it in the genus Nannus (Greek for 'dwarf'), as Troglodytes proved paraphyletic."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Troglodytes troglodytes",
+      "url": "https://es.wikipedia.org/wiki/Troglodytes_troglodytes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian wren",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_wren",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

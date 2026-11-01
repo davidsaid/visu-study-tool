@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Mamíferos placentarios especializados sobre todo en comer carne, con unas 260–290 especies en dos subórdenes: feliformes (felinos, ginetas, hienas, mangostas) y caniformes (cánidos, osos, focas, mapaches, mustélidos). El bestiario incluye 24 especies, del lince ibérico y el león al lobo, el oso pardo, la foca común y el tejón.",
+    "en": "Placental mammals specialised mainly in eating flesh, with some 260–290 species in two suborders: feliforms (cats, genets, hyenas, mongooses) and caniforms (dogs, bears, seals, raccoons, mustelids). The bestiary includes 24 species, from the Iberian lynx and the lion to the wolf, the brown bear, the harbour seal and the badger."
+  },
+  "traits": {
+    "es": [
+      "Par de dientes carniceros: cuarto premolar superior y primer molar inferior, con bordes cortantes",
+      "Caninos muy desarrollados",
+      "Garras afiladas y al menos cuatro dedos en cada pata (en la mayoría, terrestres)",
+      "Cráneo robusto con arco cigomático fuerte y, a menudo, cresta sagital"
+    ],
+    "en": [
+      "Carnassial pair: upper fourth premolar and lower first molar, with shearing edges",
+      "Well-developed canines",
+      "Sharp claws and at least four toes on each foot (in most, terrestrial species)",
+      "Heavily built skull with a strong zygomatic arch and often a sagittal crest"
+    ]
+  },
+  "contrast": {
+    "es": "Feliformes y caniformes se distinguen por el hocico: corto y con menos dientes en los feliformes, largo y con muchos dientes en los caniformes. Las focas y lobos marinos son carnívoros, no parientes de los sirenios ni de los cetáceos.",
+    "en": "Feliforms and caniforms differ in the snout: short with fewer teeth in feliforms, long with many teeth in caniforms. Seals and sea lions are carnivorans, not relatives of sirenians or whales."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Carnivora",
+      "url": "https://en.wikipedia.org/wiki/Carnivora",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Carnivora",
+      "url": "https://es.wikipedia.org/wiki/Carnivora",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

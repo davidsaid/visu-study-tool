@@ -1,0 +1,838 @@
+{
+ "Accipiter nisus": [
+  {
+   "common_es": "Gavilán común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Acipenser sturio": [
+  {
+   "common_es": "Esturión",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Aegypius monachus": [
+  {
+   "common_es": "Buitre negro",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Alcedo atthis": [
+  {
+   "common_es": "Martín pescador",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Alopias vulpinus": [
+  {
+   "common_es": null,
+   "listed_as": "Alopiidae",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Alytes cisternasii": [
+  {
+   "common_es": "Sapo partero ibérico",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Anguis fragilis": [
+  {
+   "common_es": "Lución",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Apus apus": [
+  {
+   "common_es": "Vencejo común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Aquila adalberti": [
+  {
+   "common_es": "Águila imperial ibérica",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Aquila chrysaetos": [
+  {
+   "common_es": "Águila real",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Ardea cinerea": [
+  {
+   "common_es": "Garza real",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Athene noctua": [
+  {
+   "common_es": "Mochuelo común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Blanus cinereus": [
+  {
+   "common_es": "Culebrilla ciega",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Bubo bubo": [
+  {
+   "common_es": "Búho real",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Buteo buteo": [
+  {
+   "common_es": "Ratonero común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Calotriton asper": [
+  {
+   "common_es": "Tritón pirenaico",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Canis lupus": [
+  {
+   "common_es": "Lobo",
+   "norma": "Ley 1/2025, de 1 de abril",
+   "population": "Sur del Duero",
+   "status": "LESRPE"
+  }
+ ],
+ "Caprimulgus europaeus": [
+  {
+   "common_es": "Chotacabras europeo",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Carcharias taurus": [
+  {
+   "common_es": "Tiburón toro, Toro bacota",
+   "norma": "Orden TED/452/2025",
+   "population": "Todas",
+   "status": "LESRPE"
+  }
+ ],
+ "Carcharodon carcharias": [
+  {
+   "common_es": "Tiburón blanco",
+   "norma": "Real Decreto 139/2011",
+   "population": "Mediterráneo",
+   "status": "LESRPE"
+  }
+ ],
+ "Caretta caretta": [
+  {
+   "common_es": "Tortuga boba",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Castor fiber": [
+  {
+   "common_es": "Castor europeo",
+   "norma": "Orden TED/1126/2020",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Cetorhinus maximus": [
+  {
+   "common_es": "Tiburón peregrino",
+   "norma": "Real Decreto 139/2011",
+   "population": "Mediterráneo y Atlántico ibérico",
+   "status": "LESRPE"
+  }
+ ],
+ "Chalcides bedriagai": [
+  {
+   "common_es": "Eslizón ibérico",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Chamaeleo chamaeleon": [
+  {
+   "common_es": "Camaleón común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Chioglossa lusitanica": [
+  {
+   "common_es": "Salamandra rabilarga",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Ciconia ciconia": [
+  {
+   "common_es": "Cigüeña blanca",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Ciconia nigra": [
+  {
+   "common_es": "Cigüeña negra",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Cuculus canorus": [
+  {
+   "common_es": "Cuco",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Cyanopica cooki": [
+  {
+   "common_es": "Rabilargo",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Dasyatis pastinaca": [
+  {
+   "common_es": "Pastinaca, Raya látigo común, Chucho",
+   "norma": "Orden TED/452/2025",
+   "population": "Mediterráneo",
+   "status": "LESRPE"
+  }
+ ],
+ "Dendrocopos major": [
+  {
+   "common_es": "Pico picapinos",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Dermochelys coriacea": [
+  {
+   "common_es": "Tortuga laúd",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Dipturus batis": [
+  {
+   "common_es": "Noriega",
+   "norma": "Orden AAA/75/2012",
+   "population": "Mediterráneo",
+   "status": "LESRPE"
+  }
+ ],
+ "Egretta garzetta": [
+  {
+   "common_es": "Garceta común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Epidalea calamita": [
+  {
+   "common_es": "Sapo corredor",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Erithacus rubecula": [
+  {
+   "common_es": "Petirrojo",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Eubalaena glacialis": [
+  {
+   "common_es": "Ballena vasca",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Falco peregrinus": [
+  {
+   "common_es": "Halcón peregrino",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  },
+  {
+   "common_es": "Halcón tagarote",
+   "norma": "Orden TEC/596/2019",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Falco tinnunculus": [
+  {
+   "common_es": "Cernícalo común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Felis silvestris": [
+  {
+   "common_es": "Gato montés",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Fratercula arctica": [
+  {
+   "common_es": "Frailecillo atlántico",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Fringilla coelebs": [
+  {
+   "common_es": "Pinzón vulgar",
+   "norma": "Real Decreto 139/2011",
+   "population": "Canarias",
+   "status": "LESRPE"
+  }
+ ],
+ "Galemys pyrenaicus": [
+  {
+   "common_es": "Desmán ibérico",
+   "norma": "Real Decreto 139/2011",
+   "population": "Sistema Central",
+   "status": "En peligro de extinción"
+  },
+  {
+   "common_es": "Desmán ibérico",
+   "norma": "Orden TED/452/2025",
+   "population": "Excepto Sistema Central",
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Grus grus": [
+  {
+   "common_es": "Grulla común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Gypaetus barbatus": [
+  {
+   "common_es": "Quebrantahuesos",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Gyps fulvus": [
+  {
+   "common_es": "Buitre leonado",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Hyla molleri": [
+  {
+   "common_es": "Ranita de San Antón",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Isurus oxyrinchus": [
+  {
+   "common_es": "Marrajo común",
+   "norma": "Orden AAA/1771/2015",
+   "population": "Mediterráneo",
+   "status": "LESRPE"
+  }
+ ],
+ "Lanius meridionalis": [
+  {
+   "common_es": "Alcaudón real meridional",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Lissotriton boscai": [
+  {
+   "common_es": "Tritón ibérico",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Lissotriton helveticus": [
+  {
+   "common_es": "Tritón palmeado",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Lutra lutra": [
+  {
+   "common_es": "Nutria",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Lynx pardinus": [
+  {
+   "common_es": "Lince ibérico",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Mauremys leprosa": [
+  {
+   "common_es": "Galápago leproso",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Megaptera novaeangliae": [
+  {
+   "common_es": "Yubarta",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Merops apiaster": [
+  {
+   "common_es": "Abejaruco común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Milvus migrans": [
+  {
+   "common_es": "Milano negro",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Milvus milvus": [
+  {
+   "common_es": "Milano real",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Mobula mobular": [
+  {
+   "common_es": "Manta",
+   "norma": "Real Decreto 139/2011",
+   "population": "Mediterráneo",
+   "status": "LESRPE"
+  }
+ ],
+ "Motacilla alba": [
+  {
+   "common_es": "Lavandera blanca",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Neophron percnopterus": [
+  {
+   "common_es": "Alimoche común",
+   "norma": "Real Decreto 139/2011",
+   "population": "Península y Baleares",
+   "status": "Vulnerable"
+  },
+  {
+   "common_es": "Alimoche canario",
+   "norma": "Real Decreto 139/2011",
+   "population": "Canarias",
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Oenanthe hispanica": [
+  {
+   "common_es": "Collalba rubia",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Orcinus orca": [
+  {
+   "common_es": "Orca",
+   "norma": "Real Decreto 139/2011",
+   "population": "Excepto Estrecho de Gibraltar y Golfo de Cádiz",
+   "status": "LESRPE"
+  },
+  {
+   "common_es": "Orca",
+   "norma": "Real Decreto 139/2011",
+   "population": "Estrecho de Gibraltar y Golfo de Cádiz",
+   "status": "Vulnerable"
+  }
+ ],
+ "Otis tarda": [
+  {
+   "common_es": "Avutarda común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Parus major": [
+  {
+   "common_es": "Carbonero común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Perdix perdix": [
+  {
+   "common_es": "Perdiz pardilla",
+   "norma": "Orden TED/1126/2020",
+   "population": "Sistema Ibérico",
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Petromyzon marinus": [
+  {
+   "common_es": "Lamprea marina",
+   "norma": "Real Decreto 139/2011",
+   "population": "Ríos Guadiana, Guadalquivir y Ebro y Cuenca Sur",
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Phoenicopterus roseus": [
+  {
+   "common_es": "Flamenco común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Phylloscopus collybita": [
+  {
+   "common_es": "Mosquitero común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Physeter macrocephalus": [
+  {
+   "common_es": "Cachalote",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Picus sharpei": [
+  {
+   "common_es": "Pito real",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Pipistrellus pipistrellus": [
+  {
+   "common_es": "Murciélago común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Platalea leucorodia": [
+  {
+   "common_es": "Espátula común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Pleurodeles waltl": [
+  {
+   "common_es": "Gallipato",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Podarcis muralis": [
+  {
+   "common_es": "Lagartija roquera",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Podiceps cristatus": [
+  {
+   "common_es": "Somormujo lavanco",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Psammodromus algirus": [
+  {
+   "common_es": "Lagartija colilarga",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Rana iberica": [
+  {
+   "common_es": "Rana patilarga",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Recurvirostra avosetta": [
+  {
+   "common_es": "Avoceta común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Rhinobatos rhinobatos": [
+  {
+   "common_es": "Guitarra barbanegra",
+   "norma": "Orden AAA/1771/2015",
+   "population": "Mediterráneo",
+   "status": "LESRPE"
+  }
+ ],
+ "Rhinolophus ferrumequinum": [
+  {
+   "common_es": "Murciélago grande de herradura",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Salaria fluviatilis": [
+  {
+   "common_es": "Fraile",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Saxicola rubicola": [
+  {
+   "common_es": "Tarabilla europea",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Sphyrna zygaena": [
+  {
+   "common_es": null,
+   "listed_as": "Sphyrnidae",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Squatina squatina": [
+  {
+   "common_es": "Angelote",
+   "norma": "Orden TEC/596/2019",
+   "population": "Canarias",
+   "status": "En peligro de extinción"
+  },
+  {
+   "common_es": "Angelote",
+   "norma": "Orden AAA/75/2012",
+   "population": "Mediterráneo",
+   "status": "LESRPE"
+  }
+ ],
+ "Stenella coeruleoalba": [
+  {
+   "common_es": "Delfín listado",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Strix aluco": [
+  {
+   "common_es": "Cárabo común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Sylvia atricapilla": [
+  {
+   "common_es": "Curruca capirotada",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Tarentola mauritanica": [
+  {
+   "common_es": "Salamanquesa común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Testudo graeca": [
+  {
+   "common_es": "Tortuga mora",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Tetrao urogallus": [
+  {
+   "common_es": "Urogallo común",
+   "norma": "Orden TED/339/2023",
+   "population": null,
+   "status": "En peligro de extinción"
+  },
+  {
+   "common_es": "Urogallo común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Timon lepidus": [
+  {
+   "common_es": "Lagarto ocelado",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Troglodytes troglodytes": [
+  {
+   "common_es": "Chochín",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Tyto alba": [
+  {
+   "common_es": "Lechuza común",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  },
+  {
+   "common_es": "Lechuza majorera",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "Vulnerable"
+  }
+ ],
+ "Upupa epops": [
+  {
+   "common_es": "Abubilla",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Ursus arctos": [
+  {
+   "common_es": "Oso pardo",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "En peligro de extinción"
+  }
+ ],
+ "Vipera latastei": [
+  {
+   "common_es": "Víbora hocicuda",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ],
+ "Zamenis scalaris": [
+  {
+   "common_es": "Culebra de escalera",
+   "norma": "Real Decreto 139/2011",
+   "population": null,
+   "status": "LESRPE"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Homínido muy grande, de cabeza voluminosa, pecho ancho y brazos largos",
+      "Nariz aplanada con orificios nasales grandes",
+      "Cara, manos, pies y pecho desnudos; pelaje mayoritariamente negro",
+      "Los machos adultos tienen una «silla» plateada en el dorso (espalda plateada)",
+      "El gorila de montaña tiene un pelaje de tono algo azulado"
+    ],
+    "en": [
+      "Very large hominid with a big head, broad chest and long arms",
+      "Flat nose with large nostrils",
+      "Bare face, hands, feet and chest; fur mainly black",
+      "Adult males have a silvery 'saddle' on the back (silverback)",
+      "The mountain gorilla's fur has a somewhat bluish tinge"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pan troglodytes",
+      "es": "El chimpancé es mucho menos robusto y tiene el pelaje marrón oscuro, sin espalda plateada.",
+      "en": "The chimpanzee is far less robust and has dark brown fur, with no silverback."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mucho mayores que las hembras (140–205 kg frente a 90–100 kg) y desarrollan la espalda plateada.",
+    "en": "Males are much larger than females (140–205 kg vs 90–100 kg) and develop the silver saddle."
+  },
+  "sources": [
+    {
+      "title": "Eastern gorilla — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_gorilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Gorilla beringei — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Gorilla_beringei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Chimpanzee — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Chimpanzee",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Oso grande y macizo con una joroba muscular sobre los hombros",
+      "Cabeza grande y ancha, de perfil cóncavo, con orejas redondeadas",
+      "Color muy variable: del marrón muy oscuro al dorado claro, pasando por tonos grisáceos",
+      "Patas muy anchas con garras largas para excavar",
+      "Las crías suelen tener un collar blanquecino que pierden con la primera muda"
+    ],
+    "en": [
+      "Large, massive bear with a muscular hump over the shoulders",
+      "Large, broad head with a concave profile and rounded ears",
+      "Highly variable colour: from very dark brown to pale golden, including greyish shades",
+      "Very broad paws with long digging claws",
+      "Cubs often have a whitish collar that disappears after the first moult"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ailuropoda melanoleuca",
+      "es": "El oso panda tiene un llamativo patrón blanco y negro con manchas oscuras alrededor de los ojos.",
+      "en": "The giant panda has a striking black-and-white pattern with dark eye patches."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos adultos son mayores y más compactos, al menos un 30 % más grandes que las hembras.",
+    "en": "Adult males are larger and more compactly built, at least 30% bigger than females."
+  },
+  "etymology": {
+    "es": "Ursus es «oso» en latín y arctos procede del griego árktos, también «oso».",
+    "en": "Ursus is Latin for 'bear' and arctos comes from Greek arktos, also 'bear'."
+  },
+  "sources": [
+    {
+      "title": "Ursus arctos — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Ursus_arctos",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Brown bear — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Brown_bear",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave del tamaño de un faisán (62–70 cm), esbelta, de cabeza pequeña y cuello y cola largos",
+      "Cara desnuda azul brillante con ojos rojizos",
+      "Cresta erguida, despeinada y rojiza",
+      "Cuello anterior y pecho ante canela; flancos y primarias castaño rojizos, visibles al abrir las alas",
+      "Cola larga pardo oscura con una ancha banda terminal ante"
+    ],
+    "en": [
+      "Pheasant-sized bird (62–70 cm), slim, with a small head, long neck and long tail",
+      "Bare, bright blue face with maroon eyes",
+      "Spiky, ragged rufous crest",
+      "Buff foreneck and breast; rufous-chestnut flanks and primaries, visible when the wings open",
+      "Long dark brown tail with a broad buff terminal band"
+    ]
+  },
+  "lookalikes": [],
+  "etymology": {
+    "es": "Opisthocomus, del griego opisthókomos, de ópisthe «detrás» y kómē «cabello», es decir «pelo largo detrás», por su gran cresta.",
+    "en": "Opisthocomus, from Greek opisthokomos, from opisthe 'behind' and kome 'hair', meaning 'long hair behind', after its large crest."
+  },
+  "trivia": {
+    "es": [
+      "Es la única ave con un sistema digestivo que fermenta la materia vegetal, como el de los rumiantes; en Colombia lo llaman «pava hedionda»."
+    ],
+    "en": [
+      "It is unique among birds in having a digestive system that ferments plant matter, like ruminants; in Colombia it is called 'pava hedionda' (stinking turkey)."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Opisthocomus hoazin",
+      "url": "https://es.wikipedia.org/wiki/Opisthocomus_hoazin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Hoatzin",
+      "url": "https://en.wikipedia.org/wiki/Hoatzin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico ancho en forma de U",
+      "Con la boca cerrada la mandíbula superior cubre los dientes inferiores; el cuarto diente inferior queda oculto",
+      "Dorso muy oscuro, oliva, pardo, gris o negruzco; vientre color crema",
+      "Machos de 3,4–4,8 m"
+    ],
+    "en": [
+      "Broad, U-shaped snout",
+      "With the mouth closed the upper jaw covers the lower teeth; the fourth lower tooth is hidden",
+      "Very dark back, olive, brown, grey or blackish; cream-coloured underside",
+      "Males 3.4–4.8 m long"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Crocodylus niloticus",
+      "es": "El cocodrilo del Nilo tiene el hocico más estrecho, es de tono bronce y se le ve el cuarto diente inferior con la boca cerrada.",
+      "en": "The Nile crocodile has a narrower snout, is bronze-toned and shows its fourth lower tooth when the mouth is closed."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son menores (2,6–3,35 m), aunque el dimorfismo de tamaño es modesto para un cocodriliano.",
+    "en": "Females are smaller (2.6–3.35 m), though size dimorphism is modest for a crocodilian."
+  },
+  "etymology": {
+    "es": "Cuvier creó el género Alligator a partir del nombre común inglés, que procede del español «el lagarto».",
+    "en": "Cuvier based the genus Alligator on the English common name, which comes from Spanish el lagarto, 'the lizard'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): American alligator",
+      "url": "https://en.wikipedia.org/wiki/American_alligator",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Alligator mississippiensis",
+      "url": "https://es.wikipedia.org/wiki/Alligator_mississippiensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Nile crocodile",
+      "url": "https://en.wikipedia.org/wiki/Nile_crocodile",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

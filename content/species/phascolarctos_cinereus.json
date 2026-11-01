@@ -1,0 +1,47 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo robusto con cabeza grande y cola vestigial o inexistente",
+      "Orejas redondas con pelo tupido por dentro y por fuera",
+      "Dorso de gris claro a marrón chocolate y vientre blanquecino",
+      "Garras curvas y afiladas, con dos dedos oponibles en las manos, para trepar"
+    ],
+    "en": [
+      "Robust body with a large head and a vestigial or absent tail",
+      "Round ears thickly furred inside and out",
+      "Back light grey to chocolate brown, belly whitish",
+      "Curved sharp claws, with two opposable digits on the forepaws, for climbing"
+    ]
+  },
+  "dimorphism": {
+    "es": "Los machos son hasta un 50 % mayores, tienen la nariz más curva y una glándula pectoral visible como una mancha sin pelo.",
+    "en": "Males are up to 50% larger, with a more curved nose and a chest gland visible as a bald patch."
+  },
+  "etymology": {
+    "es": "Phascolarctos = «oso con bolsa» (griego phaskolos, «bolsa», + arktos, «oso»); cinereus = «color ceniza» en latín.",
+    "en": "Phascolarctos = 'pouched bear' (Greek phaskolos, 'pouch', + arktos, 'bear'); cinereus = 'ash-coloured' in Latin."
+  },
+  "trivia": {
+    "es": [
+      "La palabra «koala» viene del dharug gula, que significa «sin agua»."
+    ],
+    "en": [
+      "The word 'koala' comes from the Dharug gula, meaning 'no water'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Phascolarctos cinereus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Phascolarctos_cinereus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Koala — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Koala",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

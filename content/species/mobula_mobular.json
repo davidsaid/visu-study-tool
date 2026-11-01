@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo romboidal mucho más ancho que largo, con pectorales largas y puntiagudas",
+      "Dos aletas cefálicas que sobresalen hacia delante a los lados de la cabeza",
+      "Aleta dorsal pequeña con la punta blanca",
+      "Cola fina y larga con una espina corta y aserrada",
+      "Dorso negro azulado o pardo oscuro y vientre blanco"
+    ],
+    "en": [
+      "Rhomboid body much wider than long, with long pointed pectoral fins",
+      "Two mobile head fins projecting forward on either side of the head",
+      "Small dorsal fin with a white tip",
+      "Long, thin tail with a short serrated spine",
+      "Bluish-black or dark brown back and white belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Myliobatis aquila",
+      "es": "El águila marina es mucho menor y tiene el hocico romo y redondeado, sin aletas cefálicas.",
+      "en": "The common eagle ray is much smaller and has a blunt rounded snout without head fins."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Es la única especie de su familia que vive en el Mediterráneo."
+    ],
+    "en": [
+      "It is the only member of its family living in the Mediterranean."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Mobula mobular",
+      "url": "https://es.wikipedia.org/wiki/Mobula_mobular",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Devil fish",
+      "url": "https://en.wikipedia.org/wiki/Devil_fish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common eagle ray",
+      "url": "https://en.wikipedia.org/wiki/Common_eagle_ray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,63 @@
+{
+  "field_marks": {
+    "es": [
+      "Pinceles de pelos negros en la punta de las orejas",
+      "Largas patillas que cuelgan de las mejillas",
+      "Pelaje pardo amarillento con manchas negras bien marcadas",
+      "Patas largas y cola corta con borla negra"
+    ],
+    "en": [
+      "Black hair tufts on the ear tips",
+      "Long facial ruff hanging from the cheeks",
+      "Tawny coat with well-defined black spots",
+      "Long legs and a short black-tipped tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lynx lynx",
+      "es": "El lince boreal es mucho mayor: el ibérico pesa más o menos la mitad.",
+      "en": "The Eurasian lynx is much bigger: the Iberian weighs roughly half as much."
+    },
+    {
+      "binomial": "Felis silvestris",
+      "es": "El gato montés tiene la cola larga y poblada, con anillos negros, en vez de una cola corta.",
+      "en": "The wildcat has a long bushy tail with black rings instead of a short tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mayores y tienen las patillas y los pinceles más largos que las hembras.",
+    "en": "Males are larger and have longer ruffs and ear tufts than females."
+  },
+  "etymology": {
+    "es": "pardinus = «parecido a la pantera» (del latín pardus, «pantera», + -inus).",
+    "en": "pardinus = 'panther-like' (Latin pardus, 'panther', + -inus)."
+  },
+  "sources": [
+    {
+      "title": "Lynx pardinus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Lynx_pardinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Iberian lynx — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Iberian_lynx",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "pardinus — Wiktionary (en)",
+      "url": "https://en.wiktionary.org/wiki/pardinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Felis silvestris — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Felis_silvestris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

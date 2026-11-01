@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "El mayor lagarto del mundo: 2–3 m y unos 70 kg",
+      "Cuerpo robusto cubierto de escamas ásperas reforzadas con osteodermos",
+      "Adultos de color uniforme apagado, pardo a gris rojizo; jóvenes verdes con zonas amarillas y negras",
+      "Lengua larga, amarilla y profundamente bífida",
+      "Cola tan larga como el cuerpo"
+    ],
+    "en": [
+      "The world's largest lizard: 2–3 m and about 70 kg",
+      "Robust body covered in rough scales reinforced with osteoderms",
+      "Adults dull, uniform brown to reddish-grey; juveniles green with yellow and black areas",
+      "Long, yellow, deeply forked tongue",
+      "Tail as long as the body"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Varanus niloticus",
+      "es": "El varano del Nilo es mucho más ligero y lleva manchas en roseta amarillo verdosas en el dorso y barras en la cola.",
+      "en": "The Nile monitor is much lighter and has greenish-yellow rosette spots on the back and bars on the tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos suelen ser mayores, pero no hay diferencias morfológicas evidentes entre sexos.",
+    "en": "Males are usually larger, but there are no obvious morphological differences between the sexes."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Varanus komodoensis",
+      "url": "https://es.wikipedia.org/wiki/Varanus_komodoensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Komodo dragon",
+      "url": "https://en.wikipedia.org/wiki/Komodo_dragon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Nile monitor",
+      "url": "https://en.wikipedia.org/wiki/Nile_monitor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

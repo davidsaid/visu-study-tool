@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado de anguila, piel viscosa sin escamas",
+      "Sin aletas pectorales; aberturas branquiales reducidas a pequeños orificios",
+      "Gris oscuro a pardo oscuro con manchas pequeñas",
+      "Dorsal que empieza justo detrás de la cabeza y se une a la caudal y la anal",
+      "Boca larga y robusta con dientes largos y puntiagudos"
+    ],
+    "en": [
+      "Long eel-like body with slimy, scaleless skin",
+      "No pectoral fins; gill openings reduced to small holes",
+      "Dark grey to dark brown with small spots",
+      "Dorsal fin starting just behind the head and joining the tail and anal fins",
+      "Long, robust mouth with long, sharp teeth"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Conger conger",
+      "es": "El congrio tiene aletas pectorales, aberturas branquiales grandes y una fila de puntos blancos en la línea lateral.",
+      "en": "The conger has pectoral fins, large gill openings and a row of white dots on the lateral line."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Muraena helena",
+      "url": "https://es.wikipedia.org/wiki/Muraena_helena",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Mediterranean moray",
+      "url": "https://en.wikipedia.org/wiki/Mediterranean_moray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European conger",
+      "url": "https://en.wikipedia.org/wiki/European_conger",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

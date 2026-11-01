@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro de pico ganchudo y garras fuertes",
+      "Partes superiores gris muy oscuro, sobre todo en píleo, nuca y manto",
+      "Antifaz negro ancho y ceja blanca bien marcada",
+      "Pecho y vientre con un tono rosado grisáceo",
+      "Mancha blanca moderada en las primarias, sin blanco en las secundarias"
+    ],
+    "en": [
+      "Bird with a hooked bill and strong claws",
+      "Very dark grey upperparts, especially on crown, nape and mantle",
+      "Broad black mask and a clear white supercilium",
+      "Greyish-pink wash to breast and belly",
+      "Moderate white patch on the primaries, no white on the secondaries"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lanius excubitor",
+      "es": "El alcaudón norteño es más gris pálido por encima, sin el tono rosado del pecho, con antifaz más estrecho y blanco también en las secundarias.",
+      "en": "The great grey shrike is paler grey above, lacks the pink breast wash, has a narrower mask and white on the secondaries too."
+    }
+  ],
+  "etymology": {
+    "es": "Lanius deriva de la palabra latina para «carnicero», por sus hábitos alimentarios; meridionalis significa «meridional».",
+    "en": "Lanius is derived from the Latin for 'butcher', after its feeding habits; meridionalis is Latin for 'southern'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Lanius meridionalis",
+      "url": "https://es.wikipedia.org/wiki/Lanius_meridionalis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian grey shrike",
+      "url": "https://en.wikipedia.org/wiki/Iberian_grey_shrike",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

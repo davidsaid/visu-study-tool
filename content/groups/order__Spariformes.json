@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Orden reciente de percomorfos, reconocido gracias a la filogenia molecular, que agrupa a los espáridos (sargos, doradas, besugos) y familias afines; tradicionalmente formaban parte de los perciformes. En el bestiario: el besugo (Pagellus bogaraveo) y la dorada (Sparus aurata).",
+    "en": "A recent order of percomorphs, recognised through molecular phylogenetics, that groups the porgies or sea breams (Sparidae) with related families; they were traditionally part of Perciformes. In the bestiary: the blackspot seabream (Pagellus bogaraveo) and the gilthead seabream (Sparus aurata)."
+  },
+  "traits": {
+    "es": [
+      "Espáridos: cuerpo oblongo, alto y muy comprimido, con la cabeza grande y el perfil dorsal muy inclinado",
+      "Una sola aleta dorsal con 10–13 espinas seguidas de radios blandos, sin escotadura entre ambas partes",
+      "Opérculo y preopérculo sin espinas",
+      "Muchas especies son hermafroditas y cambian de sexo a lo largo de la vida"
+    ],
+    "en": [
+      "Sparids: oblong, deep, strongly compressed body with a large head and steep dorsal profile",
+      "A single dorsal fin with 10–13 spines followed by soft rays, with no notch between them",
+      "Operculum and preoperculum without spines",
+      "Many species are hermaphrodites that change sex during their lives"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con la lubina (Moroniformes), de cuerpo más alargado, con dos aletas dorsales separadas y espinas en el opérculo.",
+    "en": "Do not confuse with the sea bass (Moroniformes), which is more elongated, with two separate dorsal fins and spines on the operculum."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Spariformes",
+      "url": "https://en.wikipedia.org/wiki/Spariformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Sparidae",
+      "url": "https://en.wikipedia.org/wiki/Sparidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sparidae",
+      "url": "https://es.wikipedia.org/wiki/Sparidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Moronidae",
+      "url": "https://en.wikipedia.org/wiki/Moronidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

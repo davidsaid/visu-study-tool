@@ -1,0 +1,47 @@
+{
+  "field_marks": {
+    "es": [
+      "Mono de gran tamaño, de pardo oscuro a gris",
+      "Cara larga e inclinada hacia abajo, su rasgo más distintivo",
+      "Mechón de pelo áspero en la nuca, sin melena en los machos",
+      "Cola larga y callosidades desnudas en la base de la cola"
+    ],
+    "en": [
+      "Very large monkey, dark brown to grey",
+      "Long, downward-sloping face, its most distinctive feature",
+      "Patch of rough hair on the nape; males have no mane",
+      "Long tail and bare callosities at the base of the tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Macaca sylvanus",
+      "es": "El macaco de Berbería es más pequeño, con la cara rosada y casi sin cola.",
+      "en": "The Barbary macaque is smaller, with a pink face and almost no tail."
+    },
+    {
+      "binomial": "Papio anubis",
+      "es": "A diferencia del papión oliva, los machos de papión chacma no tienen melena.",
+      "en": "Unlike olive baboon males, chacma males have no mane."
+    }
+  ],
+  "dimorphism": {
+    "es": "Muy marcado: los machos pueden ser el doble de largos y el triple de pesados que las hembras.",
+    "en": "Very marked: males can be about twice as long and three times as heavy as females."
+  },
+  "sources": [
+    {
+      "title": "Papio ursinus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Papio_ursinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Chacma baboon — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Chacma_baboon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

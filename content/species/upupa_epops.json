@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave mediana (26–28 cm) de cuerpo canela anaranjado y pecho rosado",
+      "Cresta eréctil de plumas pardo anaranjadas con puntas negras y blancas",
+      "Pico largo, fino y algo curvado hacia abajo",
+      "Alas y cola con llamativas bandas blancas y negras; la cola negra lleva una ancha banda blanca",
+      "Vuelo ondulante, como de mariposa"
+    ],
+    "en": [
+      "Medium-sized bird (26–28 cm) with a cinnamon-orange body and pinkish breast",
+      "Erectile crest of orange-brown feathers tipped black and white",
+      "Long, slender, slightly down-curved bill",
+      "Wings and tail boldly barred black and white; the black tail has a broad white band",
+      "Undulating, butterfly-like flight"
+    ]
+  },
+  "lookalikes": [],
+  "etymology": {
+    "es": "Upupa y épops son los nombres latino y griego de la abubilla; ambos son onomatopeyas de su canto.",
+    "en": "Upupa and epops are the Latin and Ancient Greek names for the hoopoe; both are onomatopoeic, imitating its call."
+  },
+  "trivia": {
+    "es": [
+      "La palabra francesa e inglesa dupe («incauto») procede del nombre de la abubilla en un dialecto francés.",
+      "En Las aves de Aristófanes, Tereo convertido en abubilla es el rey de los pájaros."
+    ],
+    "en": [
+      "The French and English word 'dupe' comes from the hoopoe's name in a French dialect.",
+      "In Aristophanes' The Birds, Tereus, turned into a hoopoe, is king of the birds."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Upupa epops",
+      "url": "https://es.wikipedia.org/wiki/Upupa_epops",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Hoopoe",
+      "url": "https://en.wikipedia.org/wiki/Hoopoe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

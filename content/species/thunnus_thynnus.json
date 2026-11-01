@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Enorme y robusto, de perfil romboidal; adultos de 2–2,5 m",
+      "Cabeza cónica con boca bastante grande",
+      "Dorso azul oscuro, vientre gris y reflejos dorados por el cuerpo",
+      "Aletillas caudales amarillo vivo y caudal en media luna",
+      "Aletas pectorales relativamente cortas"
+    ],
+    "en": [
+      "Huge and robust, rhomboid in profile; adults 2–2.5 m",
+      "Conical head with a fairly large mouth",
+      "Dark blue back, grey underside and a gold sheen over the body",
+      "Bright yellow finlets and a crescent tail",
+      "Relatively short pectoral fins"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Thunnus alalunga",
+      "es": "El atún blanco es mucho menor (hasta 1,4 m) y tiene las aletas pectorales notablemente largas.",
+      "en": "The albacore is much smaller (up to 1.4 m) and has remarkably long pectoral fins."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Puede elevar su temperatura corporal, lo que le permite vivir desde aguas frías hasta tropicales."
+    ],
+    "en": [
+      "It can raise its body temperature, letting it range from cold to tropical waters."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Thunnus thynnus",
+      "url": "https://es.wikipedia.org/wiki/Thunnus_thynnus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic bluefin tuna",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Albacore",
+      "url": "https://en.wikipedia.org/wiki/Albacore",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

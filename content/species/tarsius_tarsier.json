@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Ojos enormes, cada uno tan grande como el cerebro",
+      "Patas traseras larguísimas por el alargamiento de los huesos del tarso",
+      "Dedos largos y delgados, con almohadillas en las yemas",
+      "Cola fina, de pelo escaso, con el tramo final de pelo denso y oscuro",
+      "Pelaje corto y sedoso, gris o gris amarillento"
+    ],
+    "en": [
+      "Enormous eyes, each as large as the brain",
+      "Extremely long hind legs owing to elongated tarsal bones",
+      "Long, slender fingers with pads on the tips",
+      "Thin, sparsely haired tail with a dense, dark-haired end",
+      "Short, silky grey or yellowish-grey fur"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Galago senegalensis",
+      "es": "El gálago tiene pelaje lanoso, orejas grandes y cola peluda en toda su longitud; el tarsero tiene ojos aún mayores, patas traseras larguísimas y cola casi desnuda.",
+      "en": "The galago has woolly fur, large ears and a tail furred along its length; the tarsier has even larger eyes, extremely long hind legs and an almost naked tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son algo más pesados que las hembras (118–130 g frente a 102–114 g).",
+    "en": "Males are slightly heavier than females (118–130 g vs 102–114 g)."
+  },
+  "etymology": {
+    "es": "Tarsius alude a los huesos del tarso muy alargados de sus patas traseras.",
+    "en": "Tarsius refers to the greatly elongated tarsal bones of its hind feet."
+  },
+  "sources": [
+    {
+      "title": "Tarsius tarsier — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Tarsius_tarsier",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Spectral tarsier — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Spectral_tarsier",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Tarsier — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Tarsier",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Tarsius — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Tarsius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

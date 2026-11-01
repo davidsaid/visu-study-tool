@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "es": "Tiburones ángel: tiburones de cuerpo muy aplanado con un solo género actual, Squatina, depredadores al acecho que viven sobre el fondo. En el bestiario: el angelote (Squatina squatina).",
+    "en": "Angelsharks: very flattened sharks with a single living genus, Squatina, bottom-dwelling ambush predators. In the bestiary: the angelshark (Squatina squatina)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo muy aplanado",
+      "Aletas pectorales y pélvicas agrandadas",
+      "Vive pegado al fondo, al acecho de sus presas"
+    ],
+    "en": [
+      "Strongly flattened body",
+      "Enlarged pectoral and pelvic fins",
+      "Lives on the bottom, ambushing its prey"
+    ]
+  },
+  "contrast": {
+    "es": "Parece una raya, pero es un tiburón: en las rayas (Batoidea) las aletas pectorales están soldadas a la cabeza y las hendiduras branquiales se abren en la cara ventral, mientras que en los tiburones están a los lados de la cabeza.",
+    "en": "It looks like a ray but is a shark: in rays (Batoidea) the pectoral fins are fused to the head and the gill slits open on the underside, whereas in sharks they are on the sides of the head."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Squatiniformes",
+      "url": "https://en.wikipedia.org/wiki/Squatiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Squatiniformes",
+      "url": "https://es.wikipedia.org/wiki/Squatiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Batomorphi",
+      "url": "https://en.wikipedia.org/wiki/Batomorphi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Batomorphi",
+      "url": "https://es.wikipedia.org/wiki/Batomorphi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

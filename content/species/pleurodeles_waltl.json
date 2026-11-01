@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Tritón muy grande (hasta 30 cm, la mitad cola) con cabeza ancha y aplanada",
+      "Piel cubierta de verrugas de punta negra",
+      "Hilera de 7–10 manchas anaranjadas en cada flanco, donde terminan las costillas",
+      "Normalmente gris pardo con manchas oscuras, más claro por debajo",
+      "Cola comprimida lateralmente, a veces con bordes anaranjados"
+    ],
+    "en": [
+      "Very large newt (up to 30 cm, half of it tail) with a broad, flat head",
+      "Skin covered in black-tipped warts",
+      "A row of 7–10 orange spots along each side, where the rib tips lie",
+      "Usually brownish grey with dark spots, paler below",
+      "Laterally compressed tail, sometimes with orange edges"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lissotriton boscai",
+      "es": "El tritón ibérico es mucho menor (menos de 10 cm) y tiene el vientre naranja con gruesos puntos negros.",
+      "en": "The Iberian newt is much smaller (under 10 cm) and has an orange belly with bold black spots."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más estilizados y tienen los brazos más robustos, con callosidades negras en celo.",
+    "en": "Males are more slender, with sturdier forelimbs that bear black nuptial pads in the breeding season."
+  },
+  "trivia": {
+    "es": [
+      "Si le atacan, saca las puntas de las costillas por los flancos y segrega veneno, aunque es inofensivo para las personas."
+    ],
+    "en": [
+      "When attacked it pushes its rib tips out through its sides and secretes poison, though it is harmless to people."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Pleurodeles waltl",
+      "url": "https://es.wikipedia.org/wiki/Pleurodeles_waltl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian ribbed newt",
+      "url": "https://en.wikipedia.org/wiki/Iberian_ribbed_newt",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Lissotriton boscai",
+      "url": "https://es.wikipedia.org/wiki/Lissotriton_boscai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

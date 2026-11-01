@@ -1,0 +1,4 @@
+binomial,synonym,verdict,note
+Otaria flavescens,Otaria byronia,same_taxon,"Competing names for the South American sea lion (MDD keeps flavescens)"
+Physeter macrocephalus,Physeter catodon,same_taxon,"Older name for the sperm whale, used by MSW3-based datasets"
+Chelonoidis niger,Chelonoidis nigra,same_taxon,"Same species; the epithet only changes its Latin gender"

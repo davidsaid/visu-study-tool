@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Ungulados de dedos impares: unas 17 especies vivas en tres familias, équidos (caballos, asnos, cebras), rinocerontes y tapires. En el bestiario: el onagro, la cebra común, el tapir de montaña, el rinoceronte indio y el rinoceronte negro.",
+    "en": "Odd-toed ungulates: about 17 living species in three families, equids (horses, asses, zebras), rhinoceroses and tapirs. In the bestiary: the onager, the plains zebra, the mountain tapir, the Indian rhinoceros and the black rhinoceros."
+  },
+  "traits": {
+    "es": [
+      "Pata mesaxónica: el eje pasa por el tercer dedo, el más desarrollado, que carga el peso",
+      "Número impar de dedos de apoyo (tres o uno), terminados en pezuña; los tapires conservan cuatro delante",
+      "Estómago simple de una cámara; fermentan la celulosa en el intestino grueso",
+      "Herbívoros"
+    ],
+    "en": [
+      "Mesaxonic foot: the axis runs through the third toe, the largest, which bears the weight",
+      "Odd number of weight-bearing toes (three or one), ending in hooves; tapirs keep four on the forefeet",
+      "Simple single-chambered stomach; cellulose is fermented in the hindgut",
+      "Herbivorous"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los artiodáctilos (Cetartiodactyla), que apoyan el peso por igual en dos o cuatro dedos (el tercero y el cuarto) y muchos de los cuales rumian.",
+    "en": "Do not confuse with artiodactyls (Cetartiodactyla), which bear their weight equally on two or four toes (the third and fourth), many of them ruminants."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Perissodactyla",
+      "url": "https://en.wikipedia.org/wiki/Perissodactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Perissodactyla",
+      "url": "https://es.wikipedia.org/wiki/Perissodactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

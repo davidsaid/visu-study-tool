@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "es": "Ñandúes: paleognatas no voladoras de Sudamérica, con un solo género vivo (Rhea) y dos especies. En el bestiario: el ñandú común (Rhea americana).",
+    "en": "Rheas: flightless palaeognaths of South America, with a single living genus (Rhea) and two species. In the bestiary: the greater rhea (Rhea americana)."
+  },
+  "traits": {
+    "es": [
+      "Tres dedos en cada pata",
+      "Plumaje gris pardo, cuello y patas largos",
+      "Esternón sin quilla; alas grandes que extienden al correr para mantener el equilibrio"
+    ],
+    "en": [
+      "Three toes on each foot",
+      "Grey-brown plumage, long neck and legs",
+      "Keelless sternum; large wings spread while running for balance"
+    ]
+  },
+  "contrast": {
+    "es": "Se parecen al avestruz, pero son más pequeños y tienen tres dedos en vez de dos.",
+    "en": "They resemble the ostrich, but are smaller and have three toes instead of two."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Rheiformes",
+      "url": "https://en.wikipedia.org/wiki/Rheiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Rheiformes",
+      "url": "https://es.wikipedia.org/wiki/Rheiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Rhea (bird)",
+      "url": "https://en.wikipedia.org/wiki/Rhea_(bird)",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Rhea americana",
+      "url": "https://es.wikipedia.org/wiki/Rhea_americana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Barbo grande (puede superar el metro) de cuerpo alargado",
+      "Cuerpo que se estrecha mucho hacia la cola",
+      "Cabeza que se alarga mucho con la edad, con hocico largo y estrecho",
+      "Barbillas cortas en relación con la cabeza",
+      "Machos con tubérculos nupciales muy marcados en la parte delantera de la cabeza en mayo–junio"
+    ],
+    "en": [
+      "Large barbel (can exceed 1 m) with an elongated body",
+      "Body narrowing strongly towards the tail",
+      "Head that lengthens markedly with age, with a long, narrow snout",
+      "Barbels short relative to the head",
+      "Males show prominent nuptial tubercles on the front of the head in May–June"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Luciobarbus bocagei",
+      "es": "Luciobarbus bocagei tiene el hocico más corto y ancho; los híbridos entre ambos son frecuentes y difíciles de separar.",
+      "en": "L. bocagei has a shorter, broader snout; hybrids between them are common and hard to tell apart."
+    },
+    {
+      "binomial": "Cyprinus carpio",
+      "es": "La carpa tiene el cuerpo robusto con escamas grandes y cuatro barbillas en el labio superior, sin el hocico alargado.",
+      "en": "The common carp has a stout body with large scales and four barbels on the upper lip, without the long snout."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras tienen la aleta anal más larga y alcanzan mayor tamaño; los machos desarrollan tubérculos nupciales.",
+    "en": "Females have a longer anal fin and grow larger; males develop nuptial tubercles."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Luciobarbus comizo",
+      "url": "https://es.wikipedia.org/wiki/Luciobarbus_comizo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian barbel",
+      "url": "https://en.wikipedia.org/wiki/Iberian_barbel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Cyprinus carpio",
+      "url": "https://es.wikipedia.org/wiki/Cyprinus_carpio",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "es": "Vertebrados amniotas con pelo y glándulas mamarias; son los únicos sinápsidos vivos. El bestiario incluye 23 órdenes, desde los monotremas (ornitorrinco, equidna) y los marsupiales hasta los primates, los carnívoros y los cetáceos.",
+    "en": "Amniote vertebrates with hair and mammary glands; they are the only living synapsids. The bestiary includes 23 orders, from monotremes (platypus, echidna) and marsupials to primates, carnivores and whales."
+  },
+  "traits": {
+    "es": [
+      "Pelo",
+      "Glándulas mamarias que producen leche para las crías",
+      "Tres huesecillos en el oído medio: martillo, yunque y estribo",
+      "Mandíbula de un solo hueso (dentario), articulada con el escamosal",
+      "Casi siempre siete vértebras cervicales"
+    ],
+    "en": [
+      "Hair",
+      "Mammary glands that produce milk for the young",
+      "Three middle-ear ossicles: malleus, incus and stapes",
+      "Single-bone lower jaw (dentary), articulating with the squamosal",
+      "Almost always seven neck vertebrae"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Mammal",
+      "url": "https://en.wikipedia.org/wiki/Mammal",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Mammalia",
+      "url": "https://es.wikipedia.org/wiki/Mammalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

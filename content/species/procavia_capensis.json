@@ -1,0 +1,37 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo rechoncho y compacto, del tamaño de una liebre",
+      "Cabeza puntiaguda, cuello corto y orejas redondeadas",
+      "Pelaje denso pardo grisáceo, de más oscuro a más claro según el hábitat",
+      "Largos bigotes negros en el hocico",
+      "Par de incisivos superiores largos y puntiagudos, a modo de pequeños colmillos"
+    ],
+    "en": [
+      "Squat, heavily built body, about the size of a hare",
+      "Pointed head, short neck and rounded ears",
+      "Thick grey-brown fur, darker or paler depending on habitat",
+      "Long black whiskers on the muzzle",
+      "A pair of long, pointed upper incisors like small tusks"
+    ]
+  },
+  "dimorphism": {
+    "es": "Dimorfismo leve: los machos son algo más grandes (alrededor de un 10 % más pesados) que las hembras.",
+    "en": "Slight dimorphism: males are somewhat larger (about 10% heavier) than females."
+  },
+  "sources": [
+    {
+      "title": "Procavia capensis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Procavia_capensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Rock hyrax — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Rock_hyrax",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

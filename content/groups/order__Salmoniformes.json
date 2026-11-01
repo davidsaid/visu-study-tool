@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Salmones, truchas y afines (familia Salmonidae): peces de aguas frías del hemisferio norte, introducidos en ríos de todo el mundo. Algunas clasificaciones recientes incluyen también los lucios en este orden. En el bestiario: la trucha (Salmo trutta), el salmón (Salmo salar) y el salmón rojo (Oncorhynchus nerka).",
+    "en": "Salmon, trout and relatives (family Salmonidae): cold-water fish of the Northern Hemisphere, introduced into rivers worldwide. Some recent classifications also place the pikes in this order. In the bestiary: the brown trout (Salmo trutta), the Atlantic salmon (Salmo salar) and the sockeye salmon (Oncorhynchus nerka)."
+  },
+  "traits": {
+    "es": [
+      "Aleta adiposa en la parte trasera del dorso",
+      "Aletas pélvicas muy retrasadas; aletas sin espinas",
+      "Cuerpo esbelto con escamas cicloideas pequeñas y cola ahorquillada",
+      "Muchos son anádromos: crecen en el mar y remontan los ríos para desovar en lechos de grava"
+    ],
+    "en": [
+      "Adipose fin towards the rear of the back",
+      "Pelvic fins set far back; fins without spines",
+      "Slender body with small cycloid scales and a forked tail",
+      "Many are anadromous: they grow at sea and run up rivers to spawn on gravel beds"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los lucios (Esociformes): carecen de aleta adiposa y tienen las aletas dorsal y anal muy retrasadas, cerca de la cola.",
+    "en": "Do not confuse with pikes (Esociformes): they lack an adipose fin and have the dorsal and anal fins set far back, near the tail."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Salmoniformes",
+      "url": "https://en.wikipedia.org/wiki/Salmoniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Salmonidae",
+      "url": "https://es.wikipedia.org/wiki/Salmonidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Salmonidae",
+      "url": "https://en.wikipedia.org/wiki/Salmonidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Esociformes",
+      "url": "https://es.wikipedia.org/wiki/Esociformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

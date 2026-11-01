@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Orden de afroterios con una sola familia y una sola especie actual, el cerdo hormiguero (Orycteropus afer), del África subsahariana, que es el representante del bestiario.",
+    "en": "An afrotherian order with a single family and a single living species, the aardvark (Orycteropus afer) of sub-Saharan Africa, which is the bestiary's representative."
+  },
+  "traits": {
+    "es": [
+      "Dientes columnares sin esmalte ni raíces, de crecimiento continuo, formados por tubos de dentina (de ahí el nombre)",
+      "Cabeza muy alargada terminada en hocico y orejas grandes",
+      "Garras fuertes en patas de cuatro dedos delante",
+      "Se alimenta de hormigas y termitas"
+    ],
+    "en": [
+      "Columnar teeth without enamel or roots, ever-growing, made of dentine tubules (hence the name)",
+      "Very elongated head ending in a snout, and large ears",
+      "Strong claws on four-toed forefeet",
+      "Feeds on ants and termites"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los osos hormigueros (Pilosa): el parecido es convergente; el cerdo hormiguero tiene molares, orejas grandes y es un afroterio.",
+    "en": "Do not confuse with anteaters (Pilosa): the resemblance is convergent; the aardvark has molars and large ears, and is an afrothere."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Orycteropodidae",
+      "url": "https://en.wikipedia.org/wiki/Orycteropodidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Tubulidentata",
+      "url": "https://es.wikipedia.org/wiki/Tubulidentata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

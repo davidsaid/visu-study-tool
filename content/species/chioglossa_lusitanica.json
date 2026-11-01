@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Salamandra pequeña, alargada y esbelta (unos 13 cm)",
+      "Cola muy larga, unos dos tercios de la longitud total",
+      "Dorso negruzco con dos rayas doradas paralelas que se unen en la base de la cola",
+      "Ojos saltones y patas cortas"
+    ],
+    "en": [
+      "Small, long, slender salamander (about 13 cm)",
+      "Very long tail, about two thirds of total length",
+      "Blackish back with two parallel golden stripes meeting at the tail base",
+      "Protruding eyes and short legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Salamandra salamandra",
+      "es": "La salamandra común es más gruesa, de cola relativamente corta, y tiene manchas amarillas sobre fondo negro, no dos rayas.",
+      "en": "The fire salamander is stouter with a relatively short tail and has yellow blotches on black, not two stripes."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Corre como una lagartija y puede soltar la cola si se ve amenazada."
+    ],
+    "en": [
+      "It runs like a lizard and can shed its tail when threatened."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Chioglossa lusitanica",
+      "url": "https://es.wikipedia.org/wiki/Chioglossa_lusitanica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Gold-striped salamander",
+      "url": "https://en.wikipedia.org/wiki/Gold-striped_salamander",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Salamandra salamandra",
+      "url": "https://es.wikipedia.org/wiki/Salamandra_salamandra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

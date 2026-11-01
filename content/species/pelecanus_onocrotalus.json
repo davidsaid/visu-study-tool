@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave enorme (140–180 cm) de plumaje blanco",
+      "Pico muy largo rosado y amarillo, con bolsa gular amarillenta",
+      "Alas muy anchas con las puntas y el borde posterior negros",
+      "Vuela lentamente con el cuello retraído en S",
+      "Inmaduros grisáceos"
+    ],
+    "en": [
+      "Huge bird (140–180 cm) with white plumage",
+      "Very long pink-and-yellow bill with a yellowish gular pouch",
+      "Very broad wings with black tips and trailing edge",
+      "Slow flight with the neck retracted in an S",
+      "Immatures greyish"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ciconia ciconia",
+      "es": "La cigüeña blanca también es blanca con plumas de vuelo negras, pero vuela con el cuello extendido y tiene pico y patas rojos, sin bolsa.",
+      "en": "The white stork is also white with black flight feathers, but it flies with its neck extended and has a red bill and legs, with no pouch."
+    }
+  ],
+  "dimorphism": {
+    "es": "El plumaje no difiere entre sexos, pero el macho es mucho más grande; en celo los machos toman un tono rosado y las hembras, anaranjado.",
+    "en": "Plumage does not differ, but the male is much larger; in the breeding season males turn pinkish and females slightly orange."
+  },
+  "etymology": {
+    "es": "onocrotalus es la voz latina para «pelícano», del griego onokrótalos, «el que rebuzna como un asno» (ónos «asno», krótalon «crótalo»), por sus roncas llamadas de celo.",
+    "en": "onocrotalus is Latin for 'pelican', from Greek onokrotalos, 'one who brays like a donkey' (onos 'donkey', krotalon 'clapper'), after its harsh mating calls."
+  },
+  "trivia": {
+    "es": [
+      "Su envergadura puede llegar a 3,6 m, solo superada entre los voladores actuales por los grandes albatros."
+    ],
+    "en": [
+      "Its wingspan can reach 3.6 m, exceeded among living flyers only by the great albatrosses."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Pelecanus onocrotalus",
+      "url": "https://es.wikipedia.org/wiki/Pelecanus_onocrotalus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Great white pelican",
+      "url": "https://en.wikipedia.org/wiki/Great_white_pelican",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Ardea cinerea",
+      "url": "https://es.wikipedia.org/wiki/Ardea_cinerea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

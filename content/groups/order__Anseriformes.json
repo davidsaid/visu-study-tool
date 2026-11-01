@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Anátidas y afines: patos, gansos y cisnes, más los chajás y el ganso urraca, con unas 160–180 especies adaptadas a la vida en la superficie del agua. En el bestiario: el ánsar común, el ánade azulón y el porrón europeo.",
+    "en": "Waterfowl: ducks, geese and swans, plus the screamers and the magpie goose, with about 160–180 species adapted to life on the water surface. In the bestiary: the greylag goose, the mallard and the common pochard."
+  },
+  "traits": {
+    "es": [
+      "Pico con laminillas filtradoras y una lengua que bombea agua",
+      "Patas palmeadas en la mayoría de las especies",
+      "Muy adaptados a nadar en la superficie",
+      "Los machos tienen pene (salvo los chajás), rasgo perdido en Neoaves"
+    ],
+    "en": [
+      "Bill with filtering lamellae and a tongue that pumps water",
+      "Webbed feet in most species",
+      "Highly adapted to swimming at the surface",
+      "Males have a penis (except screamers), a trait lost in Neoaves"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los somormujos (Podicipediformes), que también nadan pero tienen pico puntiagudo sin laminillas y dedos lobulados en lugar de palmeados.",
+    "en": "Do not confuse with grebes (Podicipediformes), which also swim but have a pointed bill without lamellae and lobed rather than webbed toes."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Anseriformes",
+      "url": "https://en.wikipedia.org/wiki/Anseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Anseriformes",
+      "url": "https://es.wikipedia.org/wiki/Anseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Grebe",
+      "url": "https://en.wikipedia.org/wiki/Grebe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

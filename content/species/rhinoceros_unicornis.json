@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Un solo cuerno sobre el hocico, presente en ambos sexos",
+      "Piel gruesa gris parduzca dividida en placas, como una coraza, con pliegues rosados",
+      "Bultos verrugosos en hombros y parte alta de las patas",
+      "Casi sin pelo, salvo pestañas, flecos de las orejas y la borla de la cola"
+    ],
+    "en": [
+      "A single horn on the snout, present in both sexes",
+      "Thick grey-brown skin divided into armour-like plates with pinkish folds",
+      "Wart-like bumps on the shoulders and upper legs",
+      "Almost hairless except for eyelashes, ear fringes and tail brush"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Diceros bicornis",
+      "es": "El rinoceronte negro tiene dos cuernos y la piel lisa, sin placas, con el labio superior puntiagudo.",
+      "en": "The black rhino has two horns and smooth, unplated skin, with a pointed upper lip."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más grandes, con el cuerno más largo y enormes pliegues en el cuello.",
+    "en": "Bulls are larger, with a longer horn and huge neck folds."
+  },
+  "etymology": {
+    "es": "Rhinoceros, del griego rhino- «de la nariz» y keras «cuerno»; unicornis = «de un solo cuerno» (latín).",
+    "en": "Rhinoceros, from Greek rhino- 'of the nose' and keras 'horn'; unicornis = 'one-horned' (Latin)."
+  },
+  "sources": [
+    {
+      "title": "Rhinoceros unicornis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Rhinoceros_unicornis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Indian rhinoceros — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Indian_rhinoceros",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

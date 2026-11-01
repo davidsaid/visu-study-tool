@@ -1,0 +1,63 @@
+{
+  "field_marks": {
+    "es": [
+      "Tritón pequeño, de hasta unos 9,7 cm",
+      "Dorso pardo, amarillento o verde apagado, con manchas oscuras",
+      "Vientre naranja o rojizo con gruesos puntos negros, a menudo alineados",
+      "Machos sin cresta dorsal; solo una cresta caudal baja en celo y un filamento diminuto en la cola"
+    ],
+    "en": [
+      "Small newt, up to about 9.7 cm",
+      "Back brown, yellowish or dull green with dark spots",
+      "Orange or reddish belly with bold black spots, often in lines",
+      "Males lack a back crest; only a low tail crest when breeding and a tiny tail filament"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lissotriton helveticus",
+      "es": "El tritón palmeado tiene la garganta sin manchas, una franja oscura por el ojo y el macho en celo lleva patas palmeadas.",
+      "en": "The palmate newt has an unspotted throat and a dark eye stripe, and the breeding male has webbed hind feet."
+    },
+    {
+      "binomial": "Pleurodeles waltl",
+      "es": "El gallipato es mucho mayor (hasta 30 cm), verrugoso y con manchas anaranjadas en los flancos.",
+      "en": "The ribbed newt is much larger (up to 30 cm), warty and has orange spots along its sides."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son mayores (hasta 94 mm frente a 75 mm de los machos).",
+    "en": "Females are larger (up to 94 mm versus 75 mm in males)."
+  },
+  "etymology": {
+    "es": "boscai honra al herpetólogo español Eduardo Boscá.",
+    "en": "boscai honours the Spanish herpetologist Eduardo Boscá."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Lissotriton boscai",
+      "url": "https://es.wikipedia.org/wiki/Lissotriton_boscai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Bosca's newt",
+      "url": "https://en.wikipedia.org/wiki/Bosca's_newt",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Palmate newt",
+      "url": "https://en.wikipedia.org/wiki/Palmate_newt",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Pleurodeles waltl",
+      "url": "https://es.wikipedia.org/wiki/Pleurodeles_waltl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Cotorra mediana (37–43 cm) de plumaje verde",
+      "Pico rojo",
+      "Cola muy larga y escalonada, buena parte de su longitud total, azulada",
+      "Macho adulto con un collar rosa y negro en el cuello",
+      "Hembras e inmaduros sin collar o con un collar gris tenue"
+    ],
+    "en": [
+      "Medium-sized parakeet (37–43 cm) with green plumage",
+      "Red bill",
+      "Very long, graduated bluish tail, a large part of its total length",
+      "Adult male has a pink-and-black neck ring",
+      "Females and immatures lack a ring or show a faint grey one"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Myiopsitta monachus",
+      "es": "La cotorra argentina es menor, con la frente y el pecho grises, el pico anaranjado y la cola más corta.",
+      "en": "The monk parakeet is smaller, with a grey forehead and breast, an orange bill and a shorter tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Sí: el macho adulto tiene un collar rosa y negro; hembras y jóvenes carecen de él o lo tienen gris pálido. Los machos tienen además la cola más larga.",
+    "en": "Yes: the adult male has a pink-and-black neck ring; females and young lack it or show a pale grey one. Males also have longer tails."
+  },
+  "etymology": {
+    "es": "Psittacula es un diminutivo del latín psittacus, «loro»; krameri honra al naturalista Wilhelm Heinrich Kramer.",
+    "en": "Psittacula is a diminutive of Latin psittacus, 'parrot'; krameri commemorates the naturalist Wilhelm Heinrich Kramer."
+  },
+  "trivia": {
+    "es": [
+      "Las poblaciones asilvestradas de España y otros países europeos proceden de aves de jaula escapadas."
+    ],
+    "en": [
+      "Feral populations in Spain and elsewhere in Europe derive from escaped cage birds."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Psittacula krameri",
+      "url": "https://es.wikipedia.org/wiki/Psittacula_krameri",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Rose-ringed parakeet",
+      "url": "https://en.wikipedia.org/wiki/Rose-ringed_parakeet",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Myiopsitta monachus",
+      "url": "https://es.wikipedia.org/wiki/Myiopsitta_monachus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

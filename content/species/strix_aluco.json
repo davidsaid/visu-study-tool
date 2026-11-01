@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Búho robusto y rechoncho (37–46 cm) de cabeza ancha y redondeada sin penachos",
+      "Ojos oscuros, negros o pardo oscuro",
+      "Disco facial gris pardusco bastante sencillo",
+      "Dos morfos: dorso pardo rojizo o pardo grisáceo; partes inferiores blanquecinas listadas de pardo",
+      "Pico amarillo verdoso; vuela con largos planeos sobre alas redondeadas"
+    ],
+    "en": [
+      "Robust, stocky owl (37–46 cm) with a broad, rounded head and no ear tufts",
+      "Dark eyes, black or dark brown",
+      "Rather plain greyish-brown facial disc",
+      "Two morphs: rufous-brown or greyish-brown upperparts; whitish underparts streaked brown",
+      "Greenish-yellow bill; flies with long glides on rounded wings"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Bubo bubo",
+      "es": "El búho real es mucho mayor, con penachos y ojos anaranjados.",
+      "en": "The Eurasian eagle-owl is much larger, with ear tufts and orange eyes."
+    },
+    {
+      "binomial": "Tyto alba",
+      "es": "La lechuza común es más pálida y tiene un disco facial blanco en forma de corazón.",
+      "en": "The barn owl is paler and has a white, heart-shaped facial disc."
+    }
+  ],
+  "dimorphism": {
+    "es": "La hembra es mucho mayor que el macho: un 5 % más larga y más de un 25 % más pesada.",
+    "en": "The female is much larger than the male: 5% longer and over 25% heavier."
+  },
+  "etymology": {
+    "es": "Strix es la voz griega para «lechuza»; aluco viene del italiano allocco, «cárabo», a su vez del latín ulucus, «autillo» o ave que chilla.",
+    "en": "Strix is Greek for 'owl'; aluco comes from Italian allocco, 'tawny owl', itself from Latin ulucus, 'screech-owl'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Strix aluco",
+      "url": "https://es.wikipedia.org/wiki/Strix_aluco",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Tawny owl",
+      "url": "https://en.wikipedia.org/wiki/Tawny_owl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Bubo bubo",
+      "url": "https://es.wikipedia.org/wiki/Bubo_bubo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Tyto alba",
+      "url": "https://es.wikipedia.org/wiki/Tyto_alba",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

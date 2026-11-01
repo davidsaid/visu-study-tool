@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Foca de cuerpo y aletas cortos, con cabeza redondeada y grande",
+      "Pelaje moteado con un patrón único de manchas, oscuras sobre fondo claro o al revés; vientre más claro",
+      "Color de negro parduzco a canela o gris",
+      "Orificios nasales en forma de V",
+      "Sin pabellón auricular: solo un orificio detrás del ojo"
+    ],
+    "en": [
+      "Seal with a short body and flippers and a large, rounded head",
+      "Mottled coat with a unique spot pattern, dark on light or vice versa; paler underparts",
+      "Colour ranges from brownish black to tan or grey",
+      "V-shaped nostrils",
+      "No ear flap: just an ear opening behind the eye"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Otaria flavescens",
+      "es": "El lobo marino tiene orejas externas pequeñas, aletas delanteras largas y el macho una gran melena.",
+      "en": "The South American sea lion has small external ears, long fore-flippers and a large mane in males."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser más pequeñas que los machos.",
+    "en": "Females are generally smaller than males."
+  },
+  "sources": [
+    {
+      "title": "Phoca vitulina — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Phoca_vitulina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Harbor seal — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Harbor_seal",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

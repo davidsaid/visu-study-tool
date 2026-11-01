@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "Silueta de jirafa pequeña de cuello y patas cortos, con cuerpo que recuerda al de un caballo",
+      "Pelaje pardo chocolate a rojizo",
+      "Rayas blancas horizontales en las patas y cuartos traseros, como de cebra, y tobillos blancos",
+      "Cara, garganta y pecho blanco grisáceo; orejas grandes y flexibles",
+      "Machos con osiconos cortos cubiertos de pelo"
+    ],
+    "en": [
+      "Short-necked, short-legged giraffe shape, with a horse-like body",
+      "Chocolate to reddish-brown coat",
+      "White horizontal zebra-like stripes on the legs and hindquarters, and white ankles",
+      "Greyish-white face, throat and chest; large, flexible ears",
+      "Males have short, hair-covered ossicones"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Giraffa camelopardalis",
+      "es": "La jirafa es mucho más alta, con el cuello larguísimo y el cuerpo cubierto de manchas.",
+      "en": "The giraffe is far taller, with a very long neck and a body covered in patches."
+    },
+    {
+      "binomial": "Equus quagga",
+      "es": "La cebra está rayada en blanco y negro por todo el cuerpo, no solo en patas y cuartos traseros, y no tiene osiconos.",
+      "en": "The zebra is boldly striped black and white all over the body, not just on the legs and hindquarters, and lacks ossicones."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son algo más altas y rojizas y no tienen osiconos marcados, sino remolinos de pelo.",
+    "en": "Females are slightly taller and redder and lack prominent ossicones, having hair whorls instead."
+  },
+  "trivia": {
+    "es": [
+      "Su lengua negra, de 30–36 cm, es tan larga que puede limpiarse las orejas con ella."
+    ],
+    "en": [
+      "Its black 30–36 cm tongue is long enough to clean its own ears."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Okapia johnstoni — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Okapia_johnstoni",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Okapi — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Okapi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Giraffa camelopardalis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Giraffa_camelopardalis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Plains zebra — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Plains_zebra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

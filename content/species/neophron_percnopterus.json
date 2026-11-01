@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "El buitre del Viejo Mundo más pequeño (unos 85 cm; envergadura cerca de 1,7 m)",
+      "Adulto blanco, a menudo manchado de herrumbre, con las plumas de vuelo negras",
+      "Cara desnuda amarilla y plumas largas del cuello en forma de melena",
+      "Pico largo y fino, ganchudo en la punta",
+      "Cola en cuña; los jóvenes son pardos"
+    ],
+    "en": [
+      "The smallest Old World vulture (about 85 cm; wingspan about 1.7 m)",
+      "Adult white, often soiled rusty, with black flight feathers",
+      "Bare yellow face and long neck hackles",
+      "Long, slender bill hooked at the tip",
+      "Wedge-shaped tail; juveniles are brown"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ciconia ciconia",
+      "es": "La cigüeña blanca tiene un patrón alar parecido en vuelo, pero es mayor, con cuello y patas largos y pico rojo.",
+      "en": "The white stork has a similar underwing pattern in flight but is larger, with a long neck and legs and a red bill."
+    },
+    {
+      "binomial": "Gypaetus barbatus",
+      "es": "El quebrantahuesos es mucho mayor, oscuro por encima y con la cabeza emplumada y barbuda.",
+      "en": "The bearded vulture is much larger, dark above, with a feathered, bearded head."
+    }
+  ],
+  "etymology": {
+    "es": "Neophron procede de la mitología griega: Neofrón fue convertido en buitre por Zeus tras engañar a Egipio; percnopterus, del griego perknós «negro azulado» y pterón «ala», significa «alas negras».",
+    "en": "Neophron comes from Greek myth: Neophron was turned into a vulture by Zeus after deceiving Aegypius; percnopterus, from Greek perknos 'blue-black' and pteron 'wing', means 'black wings'."
+  },
+  "trivia": {
+    "es": [
+      "El tono herrumbroso de los adultos salvajes procede del barro o suelo ferruginoso; en cautividad son blancos limpios."
+    ],
+    "en": [
+      "The rusty tinge of wild adults comes from mud or iron-rich soil; captive birds stay clean white."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Neophron percnopterus",
+      "url": "https://es.wikipedia.org/wiki/Neophron_percnopterus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Egyptian vulture",
+      "url": "https://en.wikipedia.org/wiki/Egyptian_vulture",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): White stork",
+      "url": "https://en.wikipedia.org/wiki/White_stork",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Gypaetus barbatus",
+      "url": "https://es.wikipedia.org/wiki/Gypaetus_barbatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

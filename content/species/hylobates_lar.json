@@ -1,0 +1,37 @@
+{
+  "field_marks": {
+    "es": [
+      "Brazos extremadamente largos y manos alargadas de dedos curvos",
+      "Sin cola",
+      "Manos y pies blancos",
+      "Anillo de pelo blanco alrededor de la cara negra",
+      "Pelaje negro o pardo oscuro, o bien rubio o arenoso"
+    ],
+    "en": [
+      "Extremely long arms and elongated hands with curved fingers",
+      "No tail",
+      "White hands and feet",
+      "Ring of white hair around the black face",
+      "Coat black or dark brown, or else blond to sandy"
+    ]
+  },
+  "dimorphism": {
+    "es": "Apenas hay dimorfismo: ambos sexos presentan todas las variantes de color y casi no difieren en tamaño.",
+    "en": "Hardly any dimorphism: both sexes occur in all colour variants and barely differ in size."
+  },
+  "sources": [
+    {
+      "title": "Hylobates lar — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Hylobates_lar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Lar gibbon — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Lar_gibbon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Rana estilizada de patas largas, normalmente de hasta 8 cm",
+      "Verde y pardo muy variable con manchas negras y una línea vertebral verde clara",
+      "Sin la mancha temporal oscura de las ranas pardas",
+      "Tímpano y pliegues dorsolaterales bien visibles, de color bronce",
+      "Machos con sacos vocales grisáceos en las comisuras de la boca"
+    ],
+    "en": [
+      "Slender, long-legged frog, usually up to 8 cm",
+      "Very variable green and brown with black spots and a pale green spinal line",
+      "Lacks the dark temporal patch of brown frogs",
+      "Conspicuous bronze eardrum and dorsolateral folds",
+      "Males have greyish vocal sacs at the corners of the mouth"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Rana iberica",
+      "es": "La rana patilarga es menor, parda o rojiza, con una raya oscura entre la narina y el ojo y una línea blanca en el labio.",
+      "en": "The Iberian frog is smaller and brown or reddish, with a dark streak from nostril to eye and a white upper-lip line."
+    }
+  ],
+  "etymology": {
+    "es": "perezi honra al zoólogo Laureano Pérez Arcas, amigo de su descriptor, Víctor López Seoane.",
+    "en": "perezi honours the zoologist Laureano Pérez Arcas, a friend of its describer Víctor López-Seoane."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Pelophylax perezi",
+      "url": "https://es.wikipedia.org/wiki/Pelophylax_perezi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Perez's frog",
+      "url": "https://en.wikipedia.org/wiki/Perez's_frog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Rana iberica",
+      "url": "https://es.wikipedia.org/wiki/Rana_iberica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

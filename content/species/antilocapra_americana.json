@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuernos curvados hacia atrás con una punta (garfio) dirigida hacia delante, ramificados en los machos",
+      "Dorso leonado y partes inferiores, cara, garganta y nalgas blancas",
+      "Gran mancha blanca en la grupa, cuyo pelo se eriza ante el peligro",
+      "Bandas blancas que cruzan la garganta",
+      "Patas largas y delgadas; aspecto de antílope, con el lomo más alto que los hombros"
+    ],
+    "en": [
+      "Back-curved horns with a forward-pointing prong, branched in males",
+      "Tawny back with white underparts, face, throat and rump",
+      "Large white rump patch whose hair bristles when alarmed",
+      "White bands across the throat",
+      "Long, slender legs; antelope-like build, with the back higher than the shoulders"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gazella dorcas",
+      "es": "La gacela dorcas tiene cuernos anillados en forma de lira, sin garfio, y una franja parda en el flanco en lugar de la gran mancha blanca en la grupa.",
+      "en": "The dorcas gazelle has ringed, lyre-shaped horns without a prong, and a brown flank stripe instead of a large white rump patch."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos pesan más y tienen cuernos mayores y ramificados, además de una mancha negra en el ángulo de la mandíbula.",
+    "en": "Males are heavier, have larger, branched horns and a black patch at the angle of the jaw."
+  },
+  "trivia": {
+    "es": [
+      "No es un verdadero antílope: renueva cada año la vaina córnea de sus cuernos, algo único entre los rumiantes de cuernos huecos.",
+      "Es el mamífero terrestre más rápido de América, con hasta 88,5 km/h."
+    ],
+    "en": [
+      "It is not a true antelope: it sheds its horn sheaths every year, unique among hollow-horned ruminants.",
+      "It is the fastest land mammal in the Americas, reaching up to 88.5 km/h."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Antilocapra americana — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Antilocapra_americana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pronghorn — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Pronghorn",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Dorcas gazelle — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Dorcas_gazelle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

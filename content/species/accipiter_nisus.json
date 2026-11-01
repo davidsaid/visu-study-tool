@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Rapaz pequeña de alas cortas, anchas y redondeadas y cola larga con bandas",
+      "Macho: partes superiores gris pizarra o azuladas y partes inferiores finamente barradas de rojo, que de lejos parecen anaranjadas",
+      "Hembra: mucho mayor, parda o gris parda por encima y barrada de pardo por debajo",
+      "Patas largas, finas y amarillas; iris amarillo a anaranjado",
+      "Juvenil pardo cálido con ribetes rojizos y barrado grueso por debajo"
+    ],
+    "en": [
+      "Small raptor with short, broad, rounded wings and a long barred tail",
+      "Male: slate-grey or bluish upperparts and finely red-barred underparts that look orange from afar",
+      "Female: much larger, brown or grey-brown above and brown-barred below",
+      "Long, slender yellow legs; yellow to orange iris",
+      "Juvenile warm brown with rusty fringes and coarse barring below"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cuculus canorus",
+      "es": "El cuco tiene un plumaje y tamaño parecidos, pero tiene las patas cortas y al volar no levanta las alas por encima del cuerpo.",
+      "en": "The common cuckoo is similar in plumage and size, but has short legs and does not raise its wings above the body in flight."
+    }
+  ],
+  "dimorphism": {
+    "es": "Dimorfismo inverso muy marcado: la hembra es hasta un 25 % mayor y pesa hasta el doble; el macho es gris con barrado anaranjado y la hembra parda.",
+    "en": "Strong reversed dimorphism: the female is up to 25% larger and up to twice as heavy; the male is grey with orange barring, the female brown."
+  },
+  "etymology": {
+    "es": "Accipiter significa en latín «halcón» o «gavilán»; nisus alude al rey Niso de Mégara, convertido en gavilán según el mito griego.",
+    "en": "Accipiter is Latin for 'hawk'; nisus refers to King Nisus of Megara, turned into a sparrowhawk in Greek myth."
+  },
+  "trivia": {
+    "es": [
+      "En cetrería el macho se llama «mosquete», del latín musca, «mosca», por su pequeño tamaño."
+    ],
+    "en": [
+      "Falconers call the male a 'musket', from Latin musca, 'fly'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Accipiter nisus",
+      "url": "https://es.wikipedia.org/wiki/Accipiter_nisus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian sparrowhawk",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_sparrowhawk",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Cuculus canorus",
+      "url": "https://es.wikipedia.org/wiki/Cuculus_canorus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

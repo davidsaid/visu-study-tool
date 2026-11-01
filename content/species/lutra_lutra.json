@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Mustélido grande de cuerpo largo y esbelto, patas cortas y hocico chato",
+      "Pelaje pardo corto en el dorso y crema en el vientre, con una mancha clara en la garganta",
+      "Dedos unidos por membranas en las cuatro patas",
+      "Cola larga, gruesa en la base",
+      "Nada con el cuerpo sumergido y solo la cabeza fuera del agua"
+    ],
+    "en": [
+      "Large mustelid with a long, slender body, short legs and a flat muzzle",
+      "Short brown fur above and cream below, with a pale throat patch",
+      "Webbed toes on all four feet",
+      "Long tail, thick at the base",
+      "Swims with the body submerged and only the head above water"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Neogale vison",
+      "es": "El visón es más pequeño, de pelaje más oscuro, y al nadar saca medio cuerpo del agua.",
+      "en": "The mink is smaller and darker, and swims with half its body out of the water."
+    }
+  ],
+  "dimorphism": {
+    "es": "La hembra es más corta que el macho.",
+    "en": "The female is shorter than the male."
+  },
+  "sources": [
+    {
+      "title": "Lutra lutra — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Lutra_lutra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Eurasian otter — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_otter",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

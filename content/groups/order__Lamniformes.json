@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Tiburones caballa: macrodepredadores de tamaño mediano a grande que incluyen algunos de los tiburones más conocidos. En el bestiario: el pez zorro, el tiburón blanco, el marrajo, el peregrino y el tiburón toro.",
+    "en": "Mackerel sharks: medium to large macropredators that include some of the most familiar sharks. In the bestiary: the common thresher, great white shark, shortfin mako, basking shark and sand tiger shark."
+  },
+  "traits": {
+    "es": [
+      "Boca que se extiende bien por detrás de los ojos",
+      "Ojos sin membrana nictitante",
+      "Dos aletas dorsales sin espinas y una aleta anal",
+      "Cinco hendiduras branquiales",
+      "Lámnidos y tiburones zorro mantienen el cuerpo más caliente que el agua"
+    ],
+    "en": [
+      "Mouth extending well behind the eyes",
+      "Eyes without a nictitating membrane",
+      "Two spineless dorsal fins and an anal fin",
+      "Five gill slits",
+      "Lamnids and threshers keep their body warmer than the surrounding water"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los carcarriniformes (tintorera, pez martillo, pintarroja), que también tienen cinco hendiduras y aleta anal pero sí poseen membrana nictitante en el ojo.",
+    "en": "Do not confuse with ground sharks (Carcharhiniformes: blue shark, hammerhead, catshark), which also have five gill slits and an anal fin but do have a nictitating membrane over the eye."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Lamniformes",
+      "url": "https://en.wikipedia.org/wiki/Lamniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Lamniformes",
+      "url": "https://es.wikipedia.org/wiki/Lamniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Carcharhiniformes",
+      "url": "https://en.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

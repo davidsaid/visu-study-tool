@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro pequeño y redondeado (12,5–14 cm)",
+      "Cara y pecho anaranjados, bordeados de gris azulado a los lados del cuello y del pecho",
+      "Partes superiores pardas y vientre blanquecino",
+      "Pico y ojos negros; patas pardas",
+      "Juveniles moteados de pardo y ocre, sin naranja al principio"
+    ],
+    "en": [
+      "Small, rounded bird (12.5–14 cm)",
+      "Orange face and breast, edged blue-grey on the neck and breast sides",
+      "Brown upperparts and whitish belly",
+      "Black bill and eyes; brown legs",
+      "Juveniles spotted brown and buff, initially without orange"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Saxicola rubicola",
+      "es": "El macho de tarabilla europea también tiene el pecho naranja, pero la cabeza negra y un medio collar blanco.",
+      "en": "The male European stonechat also has an orange breast, but a black head and a white half-collar."
+    }
+  ],
+  "dimorphism": {
+    "es": "Macho y hembra tienen un plumaje semejante.",
+    "en": "Male and female have similar plumage."
+  },
+  "etymology": {
+    "es": "Erithacus procede del griego y designaba un ave desconocida, hoy identificada con el petirrojo; rubecula es un diminutivo del latín ruber, «rojo».",
+    "en": "Erithacus is from Ancient Greek, referring to an unknown bird now usually identified as the robin; rubecula is a diminutive of Latin ruber, 'red'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Erithacus rubecula",
+      "url": "https://es.wikipedia.org/wiki/Erithacus_rubecula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European robin",
+      "url": "https://en.wikipedia.org/wiki/European_robin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Saxicola rubicola",
+      "url": "https://es.wikipedia.org/wiki/Saxicola_rubicola",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

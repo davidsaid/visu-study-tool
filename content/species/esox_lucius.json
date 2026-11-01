@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo largo, casi cilíndrico, con la dorsal muy retrasada, cerca de la cola",
+      "Cabeza larga con boca en «pico de pato» llena de dientes",
+      "Verde oliva o verde pardo, con el vientre amarillento a blanco",
+      "Flancos con manchas claras cortas, en forma de barra, sobre fondo oscuro",
+      "Jóvenes verdes con rayas amarillas que luego se rompen en manchas"
+    ],
+    "en": [
+      "Long, almost cylindrical body with the dorsal fin set far back near the tail",
+      "Long head with a duck-bill mouth full of teeth",
+      "Olive or brownish-green, shading to a yellowish to white belly",
+      "Flanks marked with short, pale bar-like spots on a dark background",
+      "Young fish green with yellow stripes that later break up into spots"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Esox masquinongy",
+      "es": "El muskellunge, pariente norteamericano, tiene marcas oscuras sobre fondo claro, al revés que el lucio.",
+      "en": "The muskellunge, its North American relative, has dark markings on a light background, the reverse of the pike."
+    }
+  ],
+  "dimorphism": {
+    "es": "Solo las hembras alcanzan los tamaños máximos; los machos no pasan de unos 90 cm.",
+    "en": "Only females reach the maximum sizes; males do not exceed about 90 cm."
+  },
+  "etymology": {
+    "es": "El nombre de especie, lucius, se formó a partir de su antiguo nombre común inglés, luce o luci.",
+    "en": "The species name lucius was formed from its old English common name, luce or luci."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Esox lucius",
+      "url": "https://es.wikipedia.org/wiki/Esox_lucius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Northern pike",
+      "url": "https://en.wikipedia.org/wiki/Northern_pike",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

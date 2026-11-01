@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro esbelto (16,5–19 cm) de plumaje gris, blanco y negro",
+      "Cola larga en continuo movimiento de arriba abajo",
+      "Partes superiores grises y partes inferiores blanquecinas",
+      "Cara blanca con píleo y nuca negros",
+      "Las subespecies de garganta negra la tienen blanca en invierno; la británica (yarrellii) tiene el dorso negro"
+    ],
+    "en": [
+      "Slender bird (16.5–19 cm) with grey, white and black plumage",
+      "Long, constantly wagging tail",
+      "Grey upperparts and whitish underparts",
+      "White face with black crown and nape",
+      "Black-throated subspecies turn white-throated in winter; the British form (yarrellii) has a black back"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Parus major",
+      "es": "El carbonero común también tiene la cabeza negra con mejillas blancas, pero su pecho es amarillo con una banda negra y la cola es corta.",
+      "en": "The great tit also has a black head with white cheeks, but its breast is yellow with a black stripe and its tail is short."
+    }
+  ],
+  "dimorphism": {
+    "es": "En la subespecie británica yarrellii, el dorso es negro en los machos y gris oscuro en hembras y jóvenes.",
+    "en": "In the British subspecies yarrellii, the back is black in males and dark grey in females and juveniles."
+  },
+  "etymology": {
+    "es": "Motacilla significaba originalmente «pequeño que se mueve», aunque autores medievales lo interpretaron como «mueve-cola»; alba significa «blanca» en latín.",
+    "en": "Motacilla originally meant 'little mover', though medieval writers took it as 'wag-tail'; alba is Latin for 'white'."
+  },
+  "trivia": {
+    "es": [
+      "Su avistamiento se asocia a la llegada del frío, de ahí el nombre «aguzanieves»."
+    ],
+    "en": [
+      "Its arrival is associated with cold weather, hence the Spanish name 'aguzanieves'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Motacilla alba",
+      "url": "https://es.wikipedia.org/wiki/Motacilla_alba",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): White wagtail",
+      "url": "https://en.wikipedia.org/wiki/White_wagtail",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Parus major",
+      "url": "https://es.wikipedia.org/wiki/Parus_major",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Perdiz rechoncha de 34–38 cm, parda por encima y gris en el pecho",
+      "Pico, anillo ocular y patas rojos",
+      "Garganta blanca enmarcada por una lista negra que nace en el pico, cruza el ojo y forma un collar",
+      "Veteado negro en la parte alta del pecho",
+      "Flancos grises con barras blancas, rojizas, castañas y negras"
+    ],
+    "en": [
+      "Rotund partridge, 34–38 cm, brown above with a grey breast",
+      "Red bill, eye-ring and legs",
+      "White throat framed by a black stripe running from the bill through the eye into a collar",
+      "Black streaking on the upper breast",
+      "Grey flanks barred with white, rufous, chestnut and black"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Perdix perdix",
+      "es": "La perdiz pardilla tiene la cara castaño anaranjada, patas grises y pico pardo, sin collar negro.",
+      "en": "The grey partridge has an orange-chestnut face, grey legs and a brown bill, with no black collar."
+    },
+    {
+      "binomial": "Nothura maculosa",
+      "es": "El tinamú común es menor, pardo ocráceo con manchas negras y sin rojo en pico ni patas.",
+      "en": "The spotted nothura is smaller, ochre-brown with black spots and no red on bill or legs."
+    }
+  ],
+  "dimorphism": {
+    "es": "El veteado negro del pecho es más intenso, brillante y extenso en los machos.",
+    "en": "The black breast streaking is more intense, brighter and more extensive in males."
+  },
+  "etymology": {
+    "es": "Alectoris es la palabra griega para «gallina» (de corral); rufa significa en latín «roja» o «rojiza».",
+    "en": "Alectoris is the Greek word for a farmyard hen; rufa is Latin for 'red' or 'rufous'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Alectoris rufa",
+      "url": "https://es.wikipedia.org/wiki/Alectoris_rufa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Red-legged partridge",
+      "url": "https://en.wikipedia.org/wiki/Red-legged_partridge",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Perdix perdix",
+      "url": "https://es.wikipedia.org/wiki/Perdix_perdix",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Nothura maculosa",
+      "url": "https://es.wikipedia.org/wiki/Nothura_maculosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

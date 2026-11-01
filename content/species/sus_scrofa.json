@@ -1,0 +1,41 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo macizo con cabeza muy grande y alargada (hasta un tercio del cuerpo)",
+      "Cerdas gruesas, de grisáceas a negras o pardo rojizas; patas y hocico más oscuros",
+      "Crin erizable a lo largo del lomo y cuello corto y grueso",
+      "Ojos pequeños y hundidos; colmillos salientes en los machos adultos",
+      "Las crías (rayones) tienen rayas claras longitudinales"
+    ],
+    "en": [
+      "Massive body with a very large, elongated head (up to a third of body length)",
+      "Coarse bristles, grey to black or reddish-brown; legs and snout darker",
+      "Erectile mane along the back and a short, thick neck",
+      "Small, deep-set eyes; protruding tusks in adult males",
+      "Piglets have pale lengthwise stripes"
+    ]
+  },
+  "dimorphism": {
+    "es": "Muy marcado: los machos son un 5–10 % más grandes y un 20–30 % más pesados que las hembras.",
+    "en": "Very pronounced: males are 5–10% larger and 20–30% heavier than females."
+  },
+  "etymology": {
+    "es": "scrofa = «cerda» en latín.",
+    "en": "scrofa is Latin for 'sow'."
+  },
+  "sources": [
+    {
+      "title": "Sus scrofa — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Sus_scrofa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wild boar — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Wild_boar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

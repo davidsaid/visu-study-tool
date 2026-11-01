@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Pingüinos (familia Spheniscidae, única del orden): aves marinas no voladoras del hemisferio sur, con al menos 18 especies vivas. En el bestiario: el pingüino emperador (Aptenodytes forsteri).",
+    "en": "Penguins (family Spheniscidae, the only one in the order): flightless seabirds of the Southern Hemisphere, with at least 18 living species. In the bestiary: the emperor penguin (Aptenodytes forsteri)."
+  },
+  "traits": {
+    "es": [
+      "Alas transformadas en aletas rígidas: las únicas aves actuales que bucean propulsándose con las alas",
+      "Coloración de contracamuflaje: dorso y alas negros, vientre blanco",
+      "Postura erguida en tierra",
+      "Cuerpo hidrodinámico en forma de cuña"
+    ],
+    "en": [
+      "Wings turned into stiff flippers: the only living birds that dive by wing propulsion",
+      "Countershaded colouring: black back and wings, white front",
+      "Upright stance on land",
+      "Streamlined, wedge-shaped body"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Penguin",
+      "url": "https://en.wikipedia.org/wiki/Penguin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Spheniscidae",
+      "url": "https://es.wikipedia.org/wiki/Spheniscidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

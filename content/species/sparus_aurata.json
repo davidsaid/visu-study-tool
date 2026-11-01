@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alto y comprimido con el perfil dorsal muy convexo",
+      "Banda dorada entre los ojos",
+      "Mancha oscura grande detrás del ojo y borde del opérculo rojo",
+      "Dorso gris azulado, flancos plateados",
+      "Cabeza grande con labios gruesos; caudal con un borde negro"
+    ],
+    "en": [
+      "Deep, compressed body with a strongly arched back",
+      "Golden bar between the eyes",
+      "Large dark spot behind the eye and a red edge to the gill cover",
+      "Blue-grey back, silvery flanks",
+      "Large head with thick lips; tail fin edged in black"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pagellus bogaraveo",
+      "es": "El besugo es rojizo, con ojos muy grandes y una mancha negra sobre la base de la pectoral.",
+      "en": "The blackspot seabream is reddish, with very large eyes and a black spot above the pectoral fin base."
+    },
+    {
+      "binomial": "Dicentrarchus labrax",
+      "es": "La lubina es alargada, gris plateada, con boca grande y sin banda dorada en la frente.",
+      "en": "The sea bass is elongated and silvery grey, with a large mouth and no golden bar on the forehead."
+    }
+  ],
+  "etymology": {
+    "es": "Sparus viene de sparos, nombre griego antiguo de esta especie; aurata significa «dorada», por la banda dorada entre los ojos.",
+    "en": "Sparus comes from sparos, an Ancient Greek name for this species; aurata means 'golden', for the gold bar between the eyes."
+  },
+  "trivia": {
+    "es": [
+      "Es hermafrodita protándrica: madura como macho hacia los 2 años y algunos ejemplares se vuelven hembras después."
+    ],
+    "en": [
+      "It is a protandrous hermaphrodite: it matures as a male by age 2 and some later become females."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Sparus aurata",
+      "url": "https://es.wikipedia.org/wiki/Sparus_aurata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Gilt-head bream",
+      "url": "https://en.wikipedia.org/wiki/Gilt-head_bream",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Pagellus bogaraveo",
+      "url": "https://es.wikipedia.org/wiki/Pagellus_bogaraveo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Dicentrarchus labrax",
+      "url": "https://es.wikipedia.org/wiki/Dicentrarchus_labrax",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Gecko robusto de cuerpo y cabeza aplanados, cabeza ancha y triangular",
+      "Dorso, patas y cola cubiertos de tubérculos cónicos prominentes, de aspecto espinoso",
+      "Ojos grandes sin párpados y con pupila vertical",
+      "Dedos ensanchados con láminas adhesivas bajo ellos para trepar por paredes",
+      "Gris parduzco o pardo con manchas claras y oscuras; más oscuro de día que de noche"
+    ],
+    "en": [
+      "Robust gecko with a flattened body and a broad, triangular head",
+      "Back, legs and tail covered in prominent conical tubercles, giving a spiny look",
+      "Large lidless eyes with a vertical pupil",
+      "Broad toes with adhesive lamellae underneath for climbing walls",
+      "Brownish-grey or brown with paler and darker spots; darker by day than by night"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Podarcis muralis",
+      "es": "La lagartija roquera es pequeña y esbelta, de escamas pequeñas; la salamanquesa es achatada, cubierta de tubérculos cónicos y con ojos sin párpados de pupila vertical.",
+      "en": "The common wall lizard is small and slender with small scales; the gecko is flattened, covered in conical tubercles and has lidless eyes with vertical pupils."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mayores y tienen la cabeza más grande.",
+    "en": "Males are larger and have bigger heads."
+  },
+  "trivia": {
+    "es": [
+      "Trepa incluso por cristales gracias a las fuerzas de Van der Waals, no a ventosas."
+    ],
+    "en": [
+      "It climbs even on glass thanks to Van der Waals forces, not suction cups."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Tarentola mauritanica",
+      "url": "https://es.wikipedia.org/wiki/Tarentola_mauritanica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Tarentola mauritanica",
+      "url": "https://en.wikipedia.org/wiki/Tarentola_mauritanica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Podarcis muralis",
+      "url": "https://en.wikipedia.org/wiki/Podarcis_muralis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

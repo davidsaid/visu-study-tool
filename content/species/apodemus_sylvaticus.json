@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Ratón pequeño de dorso amarillo rojizo y vientre blanquecino, con límite neto entre ambos",
+      "Ojos grandes y oscuros, cabeza grande y alargada",
+      "Orejas grandes, que lo distinguen de los ratones del género Mus",
+      "Cola larga, igual o mayor que la longitud del cuerpo"
+    ],
+    "en": [
+      "Small mouse with yellowish-red upperparts and whitish belly, sharply demarcated",
+      "Large dark eyes and a big, elongated head",
+      "Large ears, which set it apart from Mus mice",
+      "Long tail, equal to or longer than the body"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Apodemus flavicollis",
+      "es": "El ratón leonado tiene una banda de pelo amarillo en el cuello y es algo mayor, con orejas algo más grandes.",
+      "en": "The yellow-necked mouse has a band of yellow fur around the neck and is slightly larger, with slightly larger ears."
+    },
+    {
+      "binomial": "Microtus arvalis",
+      "es": "El topillo campesino es más rechoncho, con cabeza ancha, orejas cortas que apenas sobresalen y cola corta.",
+      "en": "The common vole is stockier, with a broad head, short barely visible ears and a short tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apodemus sylvaticus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Apodemus_sylvaticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wood mouse — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Wood_mouse",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Microtus arvalis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Microtus_arvalis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Cabeza redondeada con hocico romo y orejas pequeñas",
+      "Tres dedos con garras largas y curvas en manos y pies",
+      "Brazos casi el doble de largos que las patas traseras; cola corta",
+      "Pelaje largo y áspero, pardo grisáceo, a menudo verdoso por las algas",
+      "Garganta de color amarillo pálido"
+    ],
+    "en": [
+      "Rounded head with a blunt nose and small ears",
+      "Three long, curved claws on both hands and feet",
+      "Arms nearly twice as long as the hind legs; short tail",
+      "Long, coarse grey-brown fur, often greenish from algae",
+      "Pale yellow throat patch"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Bradypus variegatus",
+      "es": "El perezoso de garganta marrón es casi idéntico, pero el perezoso tridáctilo tiene la garganta amarillo pálido.",
+      "en": "The brown-throated sloth is almost identical, but the pale-throated sloth has a pale yellow throat."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen una mancha dorsal amarilla o anaranjada dividida por una franja negra; las hembras suelen ser más grandes.",
+    "en": "Males have a bright yellow or orange back patch divided by a black stripe; females are generally larger."
+  },
+  "etymology": {
+    "es": "tridactylus alude a los tres dedos de cada pata.",
+    "en": "tridactylus refers to the three digits on each limb."
+  },
+  "sources": [
+    {
+      "title": "Bradypus tridactylus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Bradypus_tridactylus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pale-throated sloth — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Pale-throated_sloth",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

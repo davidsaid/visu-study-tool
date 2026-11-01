@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado, robusto y algo comprimido, con escamas grandes y visibles",
+      "Cuatro barbillas en el labio superior, dos cortas y dos más largas",
+      "Boca de labios finos que puede proyectarse hacia fuera",
+      "Dorso dorado, pardo verdoso o grisáceo y vientre amarillento a blanco",
+      "Variedades ornamentales (koi) de vivos colores; algunas razas tienen pocas o ninguna escama"
+    ],
+    "en": [
+      "Long, stout, slightly compressed body with large, visible scales",
+      "Four barbels on the upper lip, two short and two longer",
+      "Thin-lipped mouth that can be protruded",
+      "Golden, greenish-brown or greyish back and yellowish to white belly",
+      "Brightly coloured ornamental forms (koi); some breeds have few or no scales"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Carassius auratus",
+      "es": "El carpín dorado es mucho menor y no tiene las cuatro barbillas de la carpa.",
+      "en": "The goldfish is much smaller and lacks the carp's four barbels."
+    },
+    {
+      "binomial": "Luciobarbus comizo",
+      "es": "El barbo comizo tiene el cuerpo más alargado y estrecho hacia la cola y un hocico muy largo.",
+      "en": "The Iberian barbel has a longer body narrowing towards the tail and a very long snout."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen las aletas ventrales más largas que las hembras.",
+    "en": "Males have longer pelvic fins than females."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Cyprinus carpio",
+      "url": "https://es.wikipedia.org/wiki/Cyprinus_carpio",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common carp",
+      "url": "https://en.wikipedia.org/wiki/Common_carp",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Luciobarbus comizo",
+      "url": "https://es.wikipedia.org/wiki/Luciobarbus_comizo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

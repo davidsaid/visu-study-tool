@@ -1,0 +1,45 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo delgado y esbelto con patas largas, adaptado a la carrera por el suelo",
+      "Pelaje rojizo en cuerpo y cabeza, con una franja negra a la altura de las cejas",
+      "Mejillas blancas o grises y llamativos bigotes blancos",
+      "Extremidades de color gris claro",
+      "Cola larga"
+    ],
+    "en": [
+      "Slim, slender body with long legs, adapted for running on the ground",
+      "Reddish coat on the body and head, with a black band across the brow",
+      "White or grey cheeks and striking white whiskers",
+      "Pale grey limbs",
+      "Long tail"
+    ]
+  },
+  "dimorphism": {
+    "es": "Muy marcado: los machos pesan casi el doble que las hembras y tienen caninos muy largos.",
+    "en": "Very marked: males weigh almost twice as much as females and have very long canines."
+  },
+  "trivia": {
+    "es": [
+      "Alcanza los 55 km/h: es el primate más rápido."
+    ],
+    "en": [
+      "It reaches 55 km/h, making it the fastest primate."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Erythrocebus patas — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Erythrocebus_patas",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Common patas monkey — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Common_patas_monkey",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

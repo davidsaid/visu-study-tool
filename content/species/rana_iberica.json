@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Rana pequeña (unos 5 cm) de piel lisa con granulación fina",
+      "Verde oliva, rojiza o pardo grisácea, a veces con marcas oscuras",
+      "Raya oscura entre la narina y el ojo y línea blanca fina en el labio superior",
+      "Tímpano tras el ojo, de la mitad de su tamaño; pliegue dorsolateral marcado",
+      "Patas traseras a veces con barras pardas; garganta sin manchas en el centro"
+    ],
+    "en": [
+      "Small frog (about 5 cm) with smooth, finely granular skin",
+      "Olive, reddish or greyish brown, sometimes with darker markings",
+      "Dark streak from nostril to eye and a thin white line on the upper lip",
+      "Eardrum behind the eye, about half its size; distinct dorsolateral fold",
+      "Hind legs sometimes barred dark brown; centre of the throat unspotted"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pelophylax perezi",
+      "es": "La rana común es mayor y más verde, con línea vertebral clara y sin mancha temporal oscura.",
+      "en": "Perez's frog is larger and greener, with a pale spinal line and no dark temporal patch."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras tienden a ser más grandes que los machos.",
+    "en": "Females tend to be larger than males."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Rana iberica",
+      "url": "https://es.wikipedia.org/wiki/Rana_iberica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian frog",
+      "url": "https://en.wikipedia.org/wiki/Iberian_frog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Pelophylax perezi",
+      "url": "https://es.wikipedia.org/wiki/Pelophylax_perezi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "es": "Grullas, rascones, fochas y familias afines; el núcleo natural del orden son las grullas y los rálidos, y las demás aves antes incluidas («gruiformes raros») apenas están emparentadas con ellos. En el bestiario: la grulla común y la focha común.",
+    "en": "Cranes, rails, coots and related families; the natural core of the order is cranes and rails, while other birds once placed here ('odd Gruiformes') are at most loosely related. In the bestiary: the common crane and the Eurasian coot."
+  },
+  "traits": {
+    "es": [
+      "Grupo muy variado sin sinapomorfias externas claras",
+      "Grullas: aves grandes de patas, cuello y pico largos, con las plumas secundarias largas que caen sobre la cola",
+      "Fochas: escudo frontal prominente y dedos lobulados para nadar",
+      "Conocidos por sus exhibiciones de cortejo, como las danzas de las grullas"
+    ],
+    "en": [
+      "Very varied group without clear external synapomorphies",
+      "Cranes: large birds with long legs, neck and bill, and long secondary feathers drooping over the tail",
+      "Coots: prominent frontal shield and lobed toes for swimming",
+      "Known for courtship displays such as crane dances"
+    ]
+  },
+  "contrast": {
+    "es": "Las grullas vuelan con el cuello estirado, mientras que las garzas (Pelecaniformes) lo recogen en forma de S.",
+    "en": "Cranes fly with the neck stretched out, whereas herons (Pelecaniformes) fold it into an S-shape."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Gruiformes",
+      "url": "https://en.wikipedia.org/wiki/Gruiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Gruiformes",
+      "url": "https://es.wikipedia.org/wiki/Gruiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Crane (bird)",
+      "url": "https://en.wikipedia.org/wiki/Crane_(bird)",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Gruidae",
+      "url": "https://es.wikipedia.org/wiki/Gruidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Coot",
+      "url": "https://en.wikipedia.org/wiki/Coot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Fulica",
+      "url": "https://es.wikipedia.org/wiki/Fulica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

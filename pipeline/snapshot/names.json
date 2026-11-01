@@ -1,0 +1,7229 @@
+{
+ "Accipiter nisus": {
+  "accepted": "Accipiter nisus",
+  "acceptedKey": 2480637,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22695624"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480637,
+  "vernacular_es": [
+   "Gavilán Común",
+   "Gavilán común"
+  ]
+ },
+ "Acinonyx jubatus": {
+  "accepted": "Acinonyx jubatus",
+  "acceptedKey": 2435270,
+  "authorship": "(Schreber, 1775)",
+  "class": "Mammalia",
+  "family": "Felidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "219"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435270,
+  "vernacular_es": [
+   "Chita",
+   "Guepardo",
+   "Guerpardo",
+   "chita"
+  ]
+ },
+ "Acipenser sturio": {
+  "accepted": "Acipenser sturio",
+  "acceptedKey": 2402203,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Acipenseridae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "230"
+  },
+  "matchType": "EXACT",
+  "order": "Acipenseriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2402203,
+  "vernacular_es": [
+   "Esturión",
+   "Esturión común",
+   "Marion",
+   "Sollo",
+   "Sollo real",
+   "Sulio",
+   "esturión",
+   "esturión común",
+   "marion",
+   "sollo",
+   "sollo real",
+   "sulio"
+  ]
+ },
+ "Aegypius monachus": {
+  "accepted": "Aegypius monachus",
+  "acceptedKey": 5229165,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "22695231"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5229165,
+  "vernacular_es": [
+   "Buitre Negro",
+   "Buitre negro"
+  ]
+ },
+ "Agama agama": {
+  "accepted": "Agama agama",
+  "acceptedKey": 5226308,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Squamata",
+  "family": "Agamidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "172799"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5226308,
+  "vernacular_es": [
+   "Agama común",
+   "Lagarto africano de fuego"
+  ]
+ },
+ "Ailuropoda melanoleuca": {
+  "accepted": "Ailuropoda melanoleuca",
+  "acceptedKey": 2433399,
+  "authorship": "(David, 1869)",
+  "class": "Mammalia",
+  "family": "Ursidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "712"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2433399,
+  "vernacular_es": [
+   "Panda Gigante"
+  ]
+ },
+ "Alauda arvensis": {
+  "accepted": "Alauda arvensis",
+  "acceptedKey": 8077224,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Alaudidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "102998555"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8077224,
+  "vernacular_es": [
+   "Alondra Común",
+   "Alondra común"
+  ]
+ },
+ "Alcedo atthis": {
+  "accepted": "Alcedo atthis",
+  "acceptedKey": 2475532,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Alcedinidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22683027"
+  },
+  "matchType": "EXACT",
+  "order": "Coraciiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2475532,
+  "vernacular_es": [
+   "Martín Pescador",
+   "Martín pescador común",
+   "Martín pescador euroasiático"
+  ]
+ },
+ "Alces alces": {
+  "accepted": "Alces alces",
+  "acceptedKey": 2440940,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Cervidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "56003281"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440940,
+  "vernacular_es": [
+   "Alce",
+   "Alce euroasiático"
+  ]
+ },
+ "Alectoris rufa": {
+  "accepted": "Alectoris rufa",
+  "acceptedKey": 2474051,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Phasianidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "22678711"
+  },
+  "matchType": "EXACT",
+  "order": "Galliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2474051,
+  "vernacular_es": [
+   "Perdiz Roja",
+   "Perdiz roja"
+  ]
+ },
+ "Alligator mississippiensis": {
+  "accepted": "Alligator mississippiensis",
+  "acceptedKey": 2441370,
+  "authorship": "(Daudin, 1801)",
+  "class": "Crocodylia",
+  "family": "Alligatoridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "46583"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441370,
+  "vernacular_es": [
+   "Aligator Americano",
+   "Aligator americano",
+   "Aligátor americano",
+   "Caimán americano",
+   "Caimán del Mississippi"
+  ]
+ },
+ "Alopias vulpinus": {
+  "accepted": "Alopias vulpinus",
+  "acceptedKey": 2420797,
+  "authorship": "(Bonnaterre, 1788)",
+  "class": "Elasmobranchii",
+  "family": "Alopiidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "39339"
+  },
+  "matchType": "EXACT",
+  "order": "Lamniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2420797,
+  "vernacular_es": [
+   "Azotador",
+   "Chichi espada",
+   "Coleto",
+   "Coludo",
+   "Coludo Pinto",
+   "Grillo",
+   "Guadaña",
+   "Peje sable",
+   "Peje zorra",
+   "Peje zorro",
+   "Pejerrabo",
+   "Pez espada",
+   "Pez palo",
+   "Pez zorro",
+   "Pichirata",
+   "Rabo de zorra",
+   "Raposa",
+   "Raposa marina",
+   "Tiburón pez zorro",
+   "Tiburón ratón",
+   "Tiburón zorro",
+   "Zorra de mar",
+   "Zorro",
+   "Zorro blanco",
+   "peix espasa",
+   "pez zorro",
+   "rabosa",
+   "tiburón zorro común",
+   "zorra de mar",
+   "zorro",
+   "zorro blanco"
+  ]
+ },
+ "Alouatta palliata": {
+  "accepted": "Alouatta palliata",
+  "acceptedKey": 2436649,
+  "authorship": "(Gray, 1849)",
+  "class": "Mammalia",
+  "family": "Atelidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "39960"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436649,
+  "vernacular_es": [
+   "Aullador De La Costa",
+   "Aullador Negro",
+   "Aullador Negro | Chongón | Aullador negro | Mono | Mono negro | Mono cotudo",
+   "Coto Mono",
+   "Coto Mono De Tumbes",
+   "Coto Negro",
+   "Güeviblanco",
+   "Mono Aullador",
+   "Mono Aullador Pardo",
+   "Mono Congo",
+   "Mono Coto De Tumbes",
+   "Mono Mong",
+   "Mono aullador de manto dorado",
+   "Mono chongo",
+   "Mono colorado | Cotudo | Roncador | Araguato | Berreador",
+   "Mono zambo",
+   "Saraguato",
+   "Saraguato de manto",
+   "Saraguato pardo"
+  ]
+ },
+ "Alytes cisternasii": {
+  "accepted": "Alytes cisternasii",
+  "acceptedKey": 2426610,
+  "authorship": "Boscá, 1879",
+  "class": "Amphibia",
+  "family": "Alytidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "55266"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2426610,
+  "vernacular_es": [
+   "Sapo Partero Ibérico",
+   "Sapo-partero ibérico",
+   "sapo partero de cisternas"
+  ]
+ },
+ "Amblyrhynchus cristatus": {
+  "accepted": "Amblyrhynchus cristatus",
+  "acceptedKey": 5224602,
+  "authorship": "Bell, 1825",
+  "class": "Squamata",
+  "family": "Iguanidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "1086"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5224602,
+  "vernacular_es": [
+   "Iguana Marina"
+  ]
+ },
+ "Ambystoma mexicanum": {
+  "accepted": "Ambystoma mexicanum",
+  "acceptedKey": 2431950,
+  "authorship": "(Shaw & Nodder, 1798)",
+  "class": "Amphibia",
+  "family": "Ambystomatidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "1095"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2431950,
+  "vernacular_es": [
+   "Ajolote",
+   "Ajolote de Xochimilco",
+   "Ajolote mexicano",
+   "Salamandra ajolote"
+  ]
+ },
+ "Amia calva": {
+  "accepted": "Amia calva",
+  "acceptedKey": 5207891,
+  "authorship": "Linnaeus, 1766",
+  "class": null,
+  "family": "Amiidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "201942"
+  },
+  "matchType": "EXACT",
+  "order": "Amiiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5207891,
+  "vernacular_es": [
+   "Aleta de arco"
+  ]
+ },
+ "Anas platyrhynchos": {
+  "accepted": "Anas platyrhynchos",
+  "acceptedKey": 9761484,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Anatidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22680186"
+  },
+  "matchType": "EXACT",
+  "order": "Anseriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9761484,
+  "vernacular_es": [
+   "Anade Azulón",
+   "Pato de collar",
+   "Ánade azulón",
+   "ánade azulón"
+  ]
+ },
+ "Andrias davidianus": {
+  "accepted": "Andrias davidianus",
+  "acceptedKey": 2432037,
+  "authorship": "(Blanchard, 1871)",
+  "class": "Amphibia",
+  "family": "Cryptobranchidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "179010104"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2432037,
+  "vernacular_es": [
+   "Salamandra gigante china"
+  ]
+ },
+ "Anguilla anguilla": {
+  "accepted": "Anguilla anguilla",
+  "acceptedKey": 5212973,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Anguillidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "60344"
+  },
+  "matchType": "EXACT",
+  "order": "Anguilliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5212973,
+  "vernacular_es": [
+   "Anguila",
+   "Anguila Europea",
+   "Anguila europea",
+   "Anguilla",
+   "Anguilla catarrojina",
+   "Anguilla fartona",
+   "Anguilla maresa",
+   "Anguilla martina",
+   "Anguilla pastorenca",
+   "Anguilla pugaron",
+   "anguila"
+  ]
+ },
+ "Anguis fragilis": {
+  "accepted": "Anguis fragilis",
+  "acceptedKey": 2468095,
+  "authorship": "Linnaeus, 1758",
+  "class": "Squamata",
+  "family": "Anguidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "47113126"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2468095,
+  "vernacular_es": [
+   "Lución",
+   "Lución europeo"
+  ]
+ },
+ "Anser anser": {
+  "accepted": "Anser anser",
+  "acceptedKey": 2498036,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Anatidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22679889"
+  },
+  "matchType": "EXACT",
+  "order": "Anseriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2498036,
+  "vernacular_es": [
+   "Ansar Común",
+   "Ansar común",
+   "Ganso",
+   "Ganso común",
+   "Ganso doméstico",
+   "Oca común",
+   "Ánsar común",
+   "ánsar común"
+  ]
+ },
+ "Antilocapra americana": {
+  "accepted": "Antilocapra americana",
+  "acceptedKey": 2440902,
+  "authorship": "(Ord, 1815)",
+  "class": "Mammalia",
+  "family": "Antilocapridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "1677"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440902,
+  "vernacular_es": [
+   "Berrendo"
+  ]
+ },
+ "Apodemus sylvaticus": {
+  "accepted": "Apodemus sylvaticus",
+  "acceptedKey": 2437760,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Muridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "1904"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2437760,
+  "vernacular_es": [
+   "Ratón De Campo",
+   "Ratón de campo"
+  ]
+ },
+ "Aptenodytes forsteri": {
+  "accepted": "Aptenodytes forsteri",
+  "acceptedKey": 2481661,
+  "authorship": "G.R.Gray, 1844",
+  "class": "Aves",
+  "family": "Spheniscidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "22697752"
+  },
+  "matchType": "EXACT",
+  "order": "Sphenisciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2481661,
+  "vernacular_es": [
+   "Pingüino Emperador",
+   "Pingüino emperador"
+  ]
+ },
+ "Apteryx australis": {
+  "accepted": "Apteryx australis",
+  "acceptedKey": 2495145,
+  "authorship": "Shaw, 1813",
+  "class": "Aves",
+  "family": "Apterygidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "22678122"
+  },
+  "matchType": "EXACT",
+  "order": "Apterygiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2495145,
+  "vernacular_es": [
+   "Kiwi Común",
+   "Kiwi marrón",
+   "Kiwi sureño"
+  ]
+ },
+ "Apus apus": {
+  "accepted": "Apus apus",
+  "acceptedKey": 5228676,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Apodidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22686800"
+  },
+  "matchType": "EXACT",
+  "order": "Apodiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5228676,
+  "vernacular_es": [
+   "Vencejo Común",
+   "vencejo común"
+  ]
+ },
+ "Aquila adalberti": {
+  "accepted": "Aquila adalberti",
+  "acceptedKey": 2480510,
+  "authorship": "C.L.Brehm, 1861",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "22696042"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480510,
+  "vernacular_es": [
+   "Aguila Imperial Ibérica",
+   "Águila imperial ibérica"
+  ]
+ },
+ "Aquila chrysaetos": {
+  "accepted": "Aquila chrysaetos",
+  "acceptedKey": 2480506,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22696060"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480506,
+  "vernacular_es": [
+   "Aguila Real",
+   "Águila real",
+   "águila real"
+  ]
+ },
+ "Ara macao": {
+  "accepted": "Ara macao",
+  "acceptedKey": 5959227,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Psittacidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22685563"
+  },
+  "matchType": "EXACT",
+  "order": "Psittaciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5959227,
+  "vernacular_es": [
+   "Guacamaya bandera",
+   "Guacamaya roja",
+   "Guacamayo Escarlata",
+   "Guacamayo macao",
+   "Guacamayo rojo",
+   "lapa roja"
+  ]
+ },
+ "Arapaima gigas": {
+  "accepted": "Arapaima gigas",
+  "acceptedKey": 5212877,
+  "authorship": "(Schinz, 1822)",
+  "class": null,
+  "family": "Arapaimidae",
+  "iucn": {
+   "category": "DATA_DEFICIENT",
+   "code": "DD",
+   "iucnTaxonID": "1991"
+  },
+  "matchType": "EXACT",
+  "order": "Osteoglossiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5212877,
+  "vernacular_es": [
+   "Paiche"
+  ]
+ },
+ "Ardea cinerea": {
+  "accepted": "Ardea cinerea",
+  "acceptedKey": 9797180,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Ardeidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22696993"
+  },
+  "matchType": "EXACT",
+  "order": "Pelecaniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9797180,
+  "vernacular_es": [
+   "Garza Real",
+   "Garza gris",
+   "Garza real",
+   "garza real"
+  ]
+ },
+ "Athene noctua": {
+  "accepted": "Athene noctua",
+  "acceptedKey": 2497266,
+  "authorship": "(Scopoli, 1769)",
+  "class": "Aves",
+  "family": "Strigidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22689328"
+  },
+  "matchType": "EXACT",
+  "order": "Strigiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2497266,
+  "vernacular_es": [
+   "Mochuelo Común",
+   "Mochuelo europeo"
+  ]
+ },
+ "Aythya ferina": {
+  "accepted": "Aythya ferina",
+  "acceptedKey": 2498255,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Anatidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "22680358"
+  },
+  "matchType": "EXACT",
+  "order": "Anseriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2498255,
+  "vernacular_es": [
+   "Porrón Europeo",
+   "Porrón común",
+   "Porrón europeo",
+   "Zambullidor europeo",
+   "porrón europeo"
+  ]
+ },
+ "Bison bonasus": {
+  "accepted": "Bison bonasus",
+  "acceptedKey": 2441184,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "2814"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441184,
+  "vernacular_es": [
+   "Bisonte Europeo",
+   "Bisonte europeo"
+  ]
+ },
+ "Blanus cinereus": {
+  "accepted": "Blanus cinereus",
+  "acceptedKey": 2473222,
+  "authorship": "Vandelli, 1797",
+  "class": "Squamata",
+  "family": "Blanidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "204702171"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2473222,
+  "vernacular_es": [
+   "Culebrilla Ciega",
+   "Culebrilla ciega",
+   "Culebrilla ciega occidental",
+   "Culebrilla de María"
+  ]
+ },
+ "Bradypus tridactylus": {
+  "accepted": "Bradypus tridactylus",
+  "acceptedKey": 2436361,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Bradypodidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "3037"
+  },
+  "matchType": "EXACT",
+  "order": "Pilosa",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436361,
+  "vernacular_es": [
+   "Oso perezoso",
+   "Perezoso de garganta pálido"
+  ]
+ },
+ "Bubo bubo": {
+  "accepted": "Bubo bubo",
+  "acceptedKey": 5959092,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Strigidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22688927"
+  },
+  "matchType": "EXACT",
+  "order": "Strigiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5959092,
+  "vernacular_es": [
+   "Búho Real",
+   "Búho real"
+  ]
+ },
+ "Bufo spinosus": {
+  "accepted": "Bufo spinosus",
+  "acceptedKey": 9421513,
+  "authorship": "Daudin, 1803",
+  "class": "Amphibia",
+  "family": "Bufonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "88316046"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9421513,
+  "vernacular_es": [
+   "Sapo Común ibérico",
+   "Sapo común",
+   "Sapo espinoso"
+  ]
+ },
+ "Buteo buteo": {
+  "accepted": "Buteo buteo",
+  "acceptedKey": 2480537,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "61695117"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480537,
+  "vernacular_es": [
+   "Busardo Ratonero",
+   "Busardo ratonero",
+   "Ratonero común"
+  ]
+ },
+ "Calotriton asper": {
+  "accepted": "Calotriton asper",
+  "acceptedKey": 2431824,
+  "authorship": "(Dugès, 1852)",
+  "class": "Amphibia",
+  "family": "Salamandridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "59448"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2431824,
+  "vernacular_es": [
+   "Tritón Pirenaico"
+  ]
+ },
+ "Camelus ferus": {
+  "accepted": null,
+  "acceptedKey": 2441236,
+  "authorship": null,
+  "class": "Mammalia",
+  "family": "Camelidae",
+  "iucn": null,
+  "matchType": "HIGHERRANK",
+  "order": "Artiodactyla",
+  "rank": "GENUS",
+  "status": "ACCEPTED",
+  "usageKey": 2441236,
+  "vernacular_es": []
+ },
+ "Canis lupus": {
+  "accepted": "Canis lupus",
+  "acceptedKey": 5219173,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Canidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "3746"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219173,
+  "vernacular_es": [
+   "Canis lupus",
+   "Lobo",
+   "Lobo gris"
+  ]
+ },
+ "Capra pyrenaica": {
+  "accepted": "Capra pyrenaica",
+  "acceptedKey": 2441054,
+  "authorship": "Schinz, 1838",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "3798"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441054,
+  "vernacular_es": [
+   "Cabra Montesa",
+   "Cabra Montés",
+   "Cabra montés ibérica",
+   "Íbice ibérico"
+  ]
+ },
+ "Capreolus capreolus": {
+  "accepted": "Capreolus capreolus",
+  "acceptedKey": 5220126,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Cervidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "42395"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220126,
+  "vernacular_es": [
+   "Corzo",
+   "Corzo europeo"
+  ]
+ },
+ "Caprimulgus europaeus": {
+  "accepted": "Caprimulgus europaeus",
+  "acceptedKey": 8109681,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Caprimulgidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22689887"
+  },
+  "matchType": "EXACT",
+  "order": "Caprimulgiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8109681,
+  "vernacular_es": [
+   "Chotacabras Gris",
+   "Chotacabras de Vaurie",
+   "Chotacabras europeo"
+  ]
+ },
+ "Carassius auratus": {
+  "accepted": "Carassius auratus",
+  "acceptedKey": 4286942,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Cyprinidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "166083"
+  },
+  "matchType": "EXACT",
+  "order": "Cypriniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4286942,
+  "vernacular_es": [
+   "Carpín dorado",
+   "carpa dorada"
+  ]
+ },
+ "Carcharias taurus": {
+  "accepted": "Carcharias taurus",
+  "acceptedKey": 2420766,
+  "authorship": "Rafinesque, 1810",
+  "class": "Elasmobranchii",
+  "family": "Odontaspididae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "3854"
+  },
+  "matchType": "EXACT",
+  "order": "Lamniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2420766,
+  "vernacular_es": [
+   "Bacota",
+   "Escalandrún",
+   "Pez toro",
+   "Tiburón sarda",
+   "Tiburón tigre arenero",
+   "Tiburón toro",
+   "Toro Bacota",
+   "Toro bacota",
+   "pez toro",
+   "sarda",
+   "tiburón",
+   "tiburón arenero tigre",
+   "tiburón de leznas",
+   "tiburón toro",
+   "tigre arenero",
+   "toro bacota"
+  ]
+ },
+ "Carcharodon carcharias": {
+  "accepted": "Carcharodon carcharias",
+  "acceptedKey": 2420694,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Lamnidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "3855"
+  },
+  "matchType": "EXACT",
+  "order": "Lamniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2420694,
+  "vernacular_es": [
+   "Africano",
+   "Devorador de hombres",
+   "Gran tiburón blanco",
+   "Jaquentón blanco",
+   "Jaqueton blanco",
+   "Jaquetón",
+   "Marrajo",
+   "Tiburón antropófago",
+   "ca mari",
+   "jaquetón blanco",
+   "jaquetón de ley",
+   "marraco",
+   "salproig",
+   "salproix",
+   "salroig",
+   "sarda",
+   "taburo",
+   "tauró blanc",
+   "tiburo",
+   "tiburón blanco"
+  ]
+ },
+ "Carduelis carduelis": {
+  "accepted": "Carduelis carduelis",
+  "acceptedKey": 2494686,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Fringillidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "103764950"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2494686,
+  "vernacular_es": [
+   "Cardelino",
+   "Colorin",
+   "Jilguero",
+   "Jilguero europeo"
+  ]
+ },
+ "Caretta caretta": {
+  "accepted": "Caretta caretta",
+  "acceptedKey": 8894817,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Testudines",
+  "family": "Cheloniidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "3897"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8894817,
+  "vernacular_es": [
+   "Caguama",
+   "Tortuga Boba",
+   "Tortuga Cabezona",
+   "Tortuga Careta",
+   "Tortuga Comun",
+   "Tortuga boba",
+   "Tortuga caguama",
+   "Tortuga-marina caguama",
+   "tortuga boba"
+  ]
+ },
+ "Castor fiber": {
+  "accepted": "Castor fiber",
+  "acceptedKey": 4409131,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Castoridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "4007"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4409131,
+  "vernacular_es": [
+   "Castor Europeo",
+   "Castor europeo",
+   "castor europeo"
+  ]
+ },
+ "Casuarius casuarius": {
+  "accepted": "Casuarius casuarius",
+  "acceptedKey": 5231783,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Casuariidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22678108"
+  },
+  "matchType": "EXACT",
+  "order": "Casuariiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5231783,
+  "vernacular_es": [
+   "Casuario austral",
+   "Casuario común"
+  ]
+ },
+ "Cebus capucinus": {
+  "accepted": "Cebus capucinus",
+  "acceptedKey": 2436637,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Cebidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "81257277"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436637,
+  "vernacular_es": [
+   "Capuchino de Cara Blanca de Colombia",
+   "Cariblanco",
+   "Maicero Capuchino | Mico | Maicero | Machín",
+   "Mico negro",
+   "Mono Capuchino",
+   "Mono Carablanca",
+   "Mono Cariblanco"
+  ]
+ },
+ "Cervus elaphus": {
+  "accepted": "Cervus elaphus",
+  "acceptedKey": 2440958,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Cervidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "55997072"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440958,
+  "vernacular_es": [
+   "Ciervo",
+   "Ciervo Rojo",
+   "Ciervo colorado",
+   "Ciervo común",
+   "Ciervo europeo",
+   "Ciervo rojo",
+   "Venado"
+  ]
+ },
+ "Cetorhinus maximus": {
+  "accepted": "Cetorhinus maximus",
+  "acceptedKey": 2420726,
+  "authorship": "(Gunnerus, 1765)",
+  "class": "Elasmobranchii",
+  "family": "Cetorhinidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "4292"
+  },
+  "matchType": "EXACT",
+  "order": "Lamniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2420726,
+  "vernacular_es": [
+   "Colayo",
+   "Marrajo ballenato",
+   "Marrajo gigante",
+   "Peje vaca",
+   "Peregrino",
+   "Tiburón canasta",
+   "Tiburón peregrino",
+   "elefante",
+   "peje-vaca",
+   "peregrino",
+   "pez elefante",
+   "tiburón peregrino"
+  ]
+ },
+ "Chalcides bedriagai": {
+  "accepted": "Chalcides bedriagai",
+  "acceptedKey": 8974077,
+  "authorship": "(Bosca, 1880)",
+  "class": "Squamata",
+  "family": "Scincidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "61472"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8974077,
+  "vernacular_es": [
+   "Eslizón ibérico",
+   "eslizón ibérico"
+  ]
+ },
+ "Chamaeleo chamaeleon": {
+  "accepted": "Chamaeleo chamaeleon",
+  "acceptedKey": 2449051,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Squamata",
+  "family": "Chamaeleonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "157246"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2449051,
+  "vernacular_es": [
+   "Camaleón Común",
+   "Camaleón común"
+  ]
+ },
+ "Chelonoidis niger": {
+  "accepted": "Chelonoidis niger",
+  "acceptedKey": 9527499,
+  "authorship": "(Quoy & Gaimard, 1824)",
+  "class": "Testudines",
+  "family": "Testudinidae",
+  "iucn": {
+   "category": "EXTINCT",
+   "code": "EX",
+   "iucnTaxonID": "9023"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9527499,
+  "vernacular_es": [
+   "Tortuga Gigante de Floreana"
+  ]
+ },
+ "Chimaera monstrosa": {
+  "accepted": "Chimaera monstrosa",
+  "acceptedKey": 2417343,
+  "authorship": "Linnaeus, 1758",
+  "class": "Holocephali",
+  "family": "Chimaeridae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "63114"
+  },
+  "matchType": "EXACT",
+  "order": "Chimaeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2417343,
+  "vernacular_es": [
+   "Borrico",
+   "Escopeta",
+   "Gata moixa",
+   "Gato",
+   "Gato de mar",
+   "Guinea",
+   "Quimera",
+   "Quimera común",
+   "quimera"
+  ]
+ },
+ "Chioglossa lusitanica": {
+  "accepted": "Chioglossa lusitanica",
+  "acceptedKey": 2431938,
+  "authorship": "Bocage, 1864",
+  "class": "Amphibia",
+  "family": "Salamandridae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "4657"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2431938,
+  "vernacular_es": [
+   "Salamandra Rabilarga",
+   "Salamandra rabilarga"
+  ]
+ },
+ "Chroicocephalus ridibundus": {
+  "accepted": "Chroicocephalus ridibundus",
+  "acceptedKey": 6065824,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Aves",
+  "family": "Laridae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Charadriiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 6065824,
+  "vernacular_es": [
+   "Gaviota encapuchada",
+   "Gaviota reidora",
+   "Gaviota reidora de Europa"
+  ]
+ },
+ "Chrysocyon brachyurus": {
+  "accepted": "Chrysocyon brachyurus",
+  "acceptedKey": 2434450,
+  "authorship": "(Illiger, 1815)",
+  "class": "Mammalia",
+  "family": "Canidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "4819"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2434450,
+  "vernacular_es": [
+   "Aguara Guazu",
+   "Aguará Guazú",
+   "Borochi",
+   "Lobo De Crin",
+   "Lobo de crín"
+  ]
+ },
+ "Ciconia ciconia": {
+  "accepted": "Ciconia ciconia",
+  "acceptedKey": 2481912,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Ciconiidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22697691"
+  },
+  "matchType": "EXACT",
+  "order": "Ciconiiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2481912,
+  "vernacular_es": [
+   "Cigüeña Blanca",
+   "Cigüeña blanca",
+   "Cigüeña común"
+  ]
+ },
+ "Ciconia nigra": {
+  "accepted": "Ciconia nigra",
+  "acceptedKey": 2481909,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Ciconiidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22697669"
+  },
+  "matchType": "EXACT",
+  "order": "Ciconiiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2481909,
+  "vernacular_es": [
+   "Cigüeña Negra",
+   "Cigüeña negra"
+  ]
+ },
+ "Colobus guereza": {
+  "accepted": "Colobus guereza",
+  "acceptedKey": 5963045,
+  "authorship": "Rüppell, 1835",
+  "class": "Mammalia",
+  "family": "Cercopithecidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "5143"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5963045,
+  "vernacular_es": [
+   "Colobo Guereza",
+   "Colobo Rojo Guereza",
+   "Guereza abisinio"
+  ]
+ },
+ "Columba palumbus": {
+  "accepted": "Columba palumbus",
+  "acceptedKey": 2495455,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Columbidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22690103"
+  },
+  "matchType": "EXACT",
+  "order": "Columbiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2495455,
+  "vernacular_es": [
+   "Paloma Torcaz",
+   "Paloma de bosque",
+   "Paloma torcaz"
+  ]
+ },
+ "Conger conger": {
+  "accepted": "Conger conger",
+  "acceptedKey": 2403490,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Congridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "194969"
+  },
+  "matchType": "EXACT",
+  "order": "Anguilliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2403490,
+  "vernacular_es": [
+   "Congre Safio",
+   "Congre safio",
+   "Congrio",
+   "Congrio Commun",
+   "Congrio Común",
+   "Congrio común",
+   "Culebra",
+   "Côngrio",
+   "Negrillo",
+   "Safio",
+   "congrio",
+   "congrio común"
+  ]
+ },
+ "Connochaetes taurinus": {
+  "accepted": "Connochaetes taurinus",
+  "acceptedKey": 2441105,
+  "authorship": "(Burchell, 1823)",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "5229"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441105,
+  "vernacular_es": [
+   "Ñu",
+   "Ñu azul o listado",
+   "ñu común"
+  ]
+ },
+ "Corvus corax": {
+  "accepted": "Corvus corax",
+  "acceptedKey": 2482492,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Corvidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22706068"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2482492,
+  "vernacular_es": [
+   "Cuervo",
+   "Cuervo Común",
+   "Cuervo común",
+   "Cuervo grande",
+   "cuervo"
+  ]
+ },
+ "Crocidura russula": {
+  "accepted": "Crocidura russula",
+  "acceptedKey": 2435654,
+  "authorship": "(Hermann, 1780)",
+  "class": "Mammalia",
+  "family": "Soricidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "29652"
+  },
+  "matchType": "EXACT",
+  "order": "Soricomorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435654,
+  "vernacular_es": [
+   "Musaraña Gris",
+   "Musaraña gris"
+  ]
+ },
+ "Crocodylus niloticus": {
+  "accepted": "Crocodylus niloticus",
+  "acceptedKey": 2441341,
+  "authorship": "Laurenti, 1768",
+  "class": "Crocodylia",
+  "family": "Crocodylidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "45433088"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441341,
+  "vernacular_es": [
+   "Cocodilo del Nilo",
+   "Cocodrilo del Nilo"
+  ]
+ },
+ "Crocuta crocuta": {
+  "accepted": "Crocuta crocuta",
+  "acceptedKey": 5218781,
+  "authorship": "(Erxleben, 1777)",
+  "class": "Mammalia",
+  "family": "Hyaenidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "5674"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218781,
+  "vernacular_es": [
+   "Hiena Moteada",
+   "Hiena manchada"
+  ]
+ },
+ "Crotalus horridus": {
+  "accepted": "Crotalus horridus",
+  "acceptedKey": 2444468,
+  "authorship": "Linnaeus, 1758",
+  "class": "Squamata",
+  "family": "Viperidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "64318"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2444468,
+  "vernacular_es": [
+   "Cascabel de bandas"
+  ]
+ },
+ "Cuculus canorus": {
+  "accepted": "Cuculus canorus",
+  "acceptedKey": 5231918,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Cuculidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22683873"
+  },
+  "matchType": "EXACT",
+  "order": "Cuculiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5231918,
+  "vernacular_es": [
+   "Cuco",
+   "Cuco común",
+   "cuco común"
+  ]
+ },
+ "Cyanopica cooki": {
+  "accepted": "Cyanopica cooki",
+  "acceptedKey": 5844936,
+  "authorship": "Bonaparte, 1850",
+  "class": "Aves",
+  "family": "Corvidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22732302"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5844936,
+  "vernacular_es": [
+   "Mohíno",
+   "Rabilargo ibérico",
+   "Rabúo"
+  ]
+ },
+ "Cynocephalus volans": {
+  "accepted": "Cynocephalus volans",
+  "acceptedKey": 5218414,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Cynocephalidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "6081"
+  },
+  "matchType": "EXACT",
+  "order": "Dermoptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218414,
+  "vernacular_es": [
+   "Lémur volador de Filipinas"
+  ]
+ },
+ "Cyprinus carpio": {
+  "accepted": "Cyprinus carpio",
+  "acceptedKey": 4286975,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Cyprinidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "6181"
+  },
+  "matchType": "EXACT",
+  "order": "Cypriniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4286975,
+  "vernacular_es": [
+   "Carpa común",
+   "Carpa común europea",
+   "Carpa espejo",
+   "carpa",
+   "carpa común"
+  ]
+ },
+ "Dama dama": {
+  "accepted": "Dama dama",
+  "acceptedKey": 5220136,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Cervidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "42188"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220136,
+  "vernacular_es": [
+   "Ciervo dama",
+   "Gamo",
+   "Gamo europeo"
+  ]
+ },
+ "Dasyatis pastinaca": {
+  "accepted": "Dasyatis pastinaca",
+  "acceptedKey": 2419543,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Dasyatidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "161453"
+  },
+  "matchType": "EXACT",
+  "order": "Myliobatiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2419543,
+  "vernacular_es": [
+   "Bantenaga",
+   "Chucho",
+   "Escorsana",
+   "Escursana",
+   "Escurso",
+   "Ferrasa",
+   "Pastinaca",
+   "Pastinaga",
+   "Pombo",
+   "Raya látigo común",
+   "Rayalátigo común",
+   "Rayavaca",
+   "Romaguera",
+   "Serreta",
+   "Totina",
+   "Vela latina",
+   "chuchos",
+   "milano",
+   "pastinaca",
+   "raya látigo"
+  ]
+ },
+ "Dasypus novemcinctus": {
+  "accepted": "Dasypus novemcinctus",
+  "acceptedKey": 2440779,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Dasypodidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "268513068"
+  },
+  "matchType": "EXACT",
+  "order": "Cingulata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440779,
+  "vernacular_es": [
+   "Armadillo Común | Armadillo (generalizado)",
+   "Armadillo de Nueve Bandas",
+   "Armadillo hediondo",
+   "Armadillo isopo | Armadillo negro",
+   "Armadillo nueve bandas",
+   "Cachicamo",
+   "Carachupa",
+   "Caseteja",
+   "Chula | Jusa | Tronquero",
+   "Gurre",
+   "Jerre-jerre",
+   "Jusa",
+   "Mulita",
+   "Mulita grande",
+   "Rastrojero",
+   "Tatú",
+   "Tatú negro"
+  ]
+ },
+ "Daubentonia madagascariensis": {
+  "accepted": "Daubentonia madagascariensis",
+  "acceptedKey": 5219587,
+  "authorship": "(Gmelin, 1788)",
+  "class": "Mammalia",
+  "family": "Daubentoniidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "6302"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219587,
+  "vernacular_es": []
+ },
+ "Dendrobates tinctorius": {
+  "accepted": "Dendrobates tinctorius",
+  "acceptedKey": 9724339,
+  "authorship": "(Cuvier, 1797)",
+  "class": "Amphibia",
+  "family": "Dendrobatidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "55204"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9724339,
+  "vernacular_es": []
+ },
+ "Dendrocopos major": {
+  "accepted": "Dendrocopos major",
+  "acceptedKey": 2477968,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Picidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22681124"
+  },
+  "matchType": "EXACT",
+  "order": "Piciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2477968,
+  "vernacular_es": [
+   "Pico Picapinos",
+   "Pico picapinos"
+  ]
+ },
+ "Dermochelys coriacea": {
+  "accepted": "Dermochelys coriacea",
+  "acceptedKey": 9789983,
+  "authorship": "(Vandelli, 1761)",
+  "class": "Testudines",
+  "family": "Dermochelyidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "6494"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9789983,
+  "vernacular_es": [
+   "Baula",
+   "Canal",
+   "Cardon",
+   "Dorso de Cuero",
+   "Galapagos",
+   "Laúd",
+   "Siete Lomos",
+   "Siete Quillas",
+   "Tinglada",
+   "Tinglar",
+   "Tora",
+   "Tortuga Baula",
+   "Tortuga Caná",
+   "Tortuga Laud",
+   "Tortuga Laúd",
+   "Tortuga Siete Quilhas",
+   "Tortuga Tinglar",
+   "Tortuga-marina laúd",
+   "tortuga baula",
+   "tortuga laud",
+   "tortuga laúd"
+  ]
+ },
+ "Dicentrarchus labrax": {
+  "accepted": "Dicentrarchus labrax",
+  "acceptedKey": 2394622,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Moronidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "135606"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2394622,
+  "vernacular_es": [
+   "Baieta",
+   "Baila",
+   "Cherne",
+   "Llop",
+   "Llubina",
+   "Lubaro",
+   "Lubina",
+   "Mero",
+   "Pintat",
+   "Robaliza",
+   "Robalo",
+   "lubina",
+   "róbalo"
+  ]
+ },
+ "Diceros bicornis": {
+  "accepted": "Diceros bicornis",
+  "acceptedKey": 5220111,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Rhinocerotidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "6557"
+  },
+  "matchType": "EXACT",
+  "order": "Perissodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220111,
+  "vernacular_es": [
+   "Gancho de Labios Rinoceronte",
+   "Rinoceronte Negro"
+  ]
+ },
+ "Didelphis marsupialis": {
+  "accepted": "Didelphis marsupialis",
+  "acceptedKey": 2439920,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Didelphidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "40501"
+  },
+  "matchType": "EXACT",
+  "order": "Didelphimorphia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2439920,
+  "vernacular_es": [
+   "Chucha orejinegra",
+   "Chucha | Comadreja | Fara",
+   "Comadreja Grande",
+   "Fara",
+   "Rabipelado",
+   "Tacuazín común",
+   "Tlacuache sureño",
+   "Zarigüeya",
+   "Zarigüeya común",
+   "Zarigüeya común de orejas negras",
+   "Zorro Pelón"
+  ]
+ },
+ "Dipturus batis": {
+  "accepted": "Dipturus batis",
+  "acceptedKey": 2420234,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Rajidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "203364219"
+  },
+  "matchType": "EXACT",
+  "order": "Rajiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2420234,
+  "vernacular_es": [
+   "Noriega",
+   "Raya noruega",
+   "noriega",
+   "raya común europea"
+  ]
+ },
+ "Dolichotis patagonum": {
+  "accepted": "Dolichotis patagonum",
+  "acceptedKey": 2437619,
+  "authorship": "(Zimmermann, 1780)",
+  "class": "Mammalia",
+  "family": "Caviidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "6785"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2437619,
+  "vernacular_es": [
+   "Liebre patagónica",
+   "Mara o Liebre Patagónica"
+  ]
+ },
+ "Dromiciops gliroides": {
+  "accepted": "Dromiciops gliroides",
+  "acceptedKey": 2433393,
+  "authorship": "Thomas, 1894",
+  "class": "Mammalia",
+  "family": "Microbiotheriidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "281700363"
+  },
+  "matchType": "EXACT",
+  "order": "Microbiotheria",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2433393,
+  "vernacular_es": [
+   "Comadrejita Enana",
+   "Llacas",
+   "Monito del monte sureño",
+   "monito del monte"
+  ]
+ },
+ "Egretta garzetta": {
+  "accepted": "Egretta garzetta",
+  "acceptedKey": 2480876,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Aves",
+  "family": "Ardeidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "62774969"
+  },
+  "matchType": "EXACT",
+  "order": "Pelecaniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480876,
+  "vernacular_es": [
+   "Garceta Común",
+   "Garceta común",
+   "Garza Chiquita",
+   "garceta común"
+  ]
+ },
+ "Electrophorus electricus": {
+  "accepted": "Electrophorus electricus",
+  "acceptedKey": 2401958,
+  "authorship": "(Linnaeus, 1766)",
+  "class": null,
+  "family": "Gymnotidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "167700"
+  },
+  "matchType": "EXACT",
+  "order": "Gymnotiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2401958,
+  "vernacular_es": [
+   "Anguila",
+   "Anguila eléctrica",
+   "Anguilla",
+   "Anguilla electrica",
+   "Pez elétrico"
+  ]
+ },
+ "Elephantulus rufescens": {
+  "accepted": "Elephantulus rufescens",
+  "acceptedKey": 2440848,
+  "authorship": "(Peters, 1878)",
+  "class": "Mammalia",
+  "family": "Macroscelididae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "42664_1"
+  },
+  "matchType": "EXACT",
+  "order": "Macroscelidea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440848,
+  "vernacular_es": []
+ },
+ "Elephas maximus": {
+  "accepted": "Elephas maximus",
+  "acceptedKey": 5219461,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Elephantidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "7140"
+  },
+  "matchType": "EXACT",
+  "order": "Proboscidea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219461,
+  "vernacular_es": [
+   "Elefante Asiático"
+  ]
+ },
+ "Eliomys quercinus": {
+  "accepted": "Eliomys quercinus",
+  "acceptedKey": 2439683,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Mammalia",
+  "family": "Gliridae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "7618"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2439683,
+  "vernacular_es": [
+   "Lirón Careto",
+   "Lirón careto"
+  ]
+ },
+ "Engraulis encrasicolus": {
+  "accepted": "Engraulis encrasicolus",
+  "acceptedKey": 2414031,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Engraulidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198568"
+  },
+  "matchType": "EXACT",
+  "order": "Clupeiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2414031,
+  "vernacular_es": [
+   "Anchoa",
+   "Anchoa Europea",
+   "Anchoa de Africa Austral",
+   "Anchoa de Africa austral",
+   "Anchoa europea",
+   "Anchoa, boqueron",
+   "Bocareu",
+   "Boqueron",
+   "Boquerón",
+   "Carne Con Carne",
+   "Longorón",
+   "Pasta Fermentada de Anchoas",
+   "Pasta fermentada de anchoas",
+   "anchoa",
+   "boquerón"
+  ]
+ },
+ "Epidalea calamita": {
+  "accepted": "Epidalea calamita",
+  "acceptedKey": 2422507,
+  "authorship": "(Laurenti, 1768)",
+  "class": "Amphibia",
+  "family": "Bufonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "54598"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2422507,
+  "vernacular_es": [
+   "Sapo Corredor"
+  ]
+ },
+ "Epinephelus marginatus": {
+  "accepted": "Epinephelus marginatus",
+  "acceptedKey": 2388507,
+  "authorship": "(Lowe, 1834)",
+  "class": null,
+  "family": "Serranidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "7859_2"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2388507,
+  "vernacular_es": [
+   "Mero de Vientre Amarillo",
+   "Mero moreno",
+   "chernia marrón",
+   "garopa",
+   "mero",
+   "mero moreno",
+   "mero nebuloso"
+  ]
+ },
+ "Equus hemionus": {
+  "accepted": "Equus hemionus",
+  "acceptedKey": 2440893,
+  "authorship": "Pallas, 1775",
+  "class": "Mammalia",
+  "family": "Equidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "7951"
+  },
+  "matchType": "EXACT",
+  "order": "Perissodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440893,
+  "vernacular_es": [
+   "Asno Salvaje Asiático",
+   "Hemiono"
+  ]
+ },
+ "Equus quagga": {
+  "accepted": "Equus quagga",
+  "acceptedKey": 2440892,
+  "authorship": "Boddaert, 1785",
+  "class": "Mammalia",
+  "family": "Equidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "41013"
+  },
+  "matchType": "EXACT",
+  "order": "Perissodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440892,
+  "vernacular_es": [
+   "Cebra de Sabana"
+  ]
+ },
+ "Erinaceus europaeus": {
+  "accepted": "Erinaceus europaeus",
+  "acceptedKey": 5219616,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Erinaceidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "29650"
+  },
+  "matchType": "EXACT",
+  "order": "Erinaceomorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219616,
+  "vernacular_es": [
+   "Erizo Europeo Occidental",
+   "Erizo común",
+   "Erizo europeo occidental"
+  ]
+ },
+ "Erithacus rubecula": {
+  "accepted": "Erithacus rubecula",
+  "acceptedKey": 2492462,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Muscicapidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22709675"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2492462,
+  "vernacular_es": [
+   "Petirrojo",
+   "Petirrojo europeo"
+  ]
+ },
+ "Erythrocebus patas": {
+  "accepted": "Erythrocebus patas",
+  "acceptedKey": 2436548,
+  "authorship": "(Schreber, 1774)",
+  "class": "Mammalia",
+  "family": "Cercopithecidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "174391079"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436548,
+  "vernacular_es": [
+   "Mono Patas",
+   "Mono rojo"
+  ]
+ },
+ "Esox lucius": {
+  "accepted": "Esox lucius",
+  "acceptedKey": 2346633,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Esocidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "135631"
+  },
+  "matchType": "EXACT",
+  "order": "Esociformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2346633,
+  "vernacular_es": [
+   "Lucio",
+   "Lucio europeo",
+   "lucio"
+  ]
+ },
+ "Eubalaena glacialis": {
+  "accepted": "Eubalaena glacialis",
+  "acceptedKey": 2440339,
+  "authorship": "(Müller, 1776)",
+  "class": "Mammalia",
+  "family": "Balaenidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "41712"
+  },
+  "matchType": "EXACT",
+  "order": "Cetacea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440339,
+  "vernacular_es": [
+   "Ballena Franca del Norte",
+   "Ballena franca",
+   "ballena con bonete",
+   "ballena de los vascos",
+   "ballena franca",
+   "ballena vasca",
+   "ballena vizcaya",
+   "vallena"
+  ]
+ },
+ "Eunectes murinus": {
+  "accepted": "Eunectes murinus",
+  "acceptedKey": 5225712,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Squamata",
+  "family": "Boidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "44580041"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5225712,
+  "vernacular_es": []
+ },
+ "Falco peregrinus": {
+  "accepted": "Falco peregrinus",
+  "acceptedKey": 2481047,
+  "authorship": "Tunstall, 1771",
+  "class": "Aves",
+  "family": "Falconidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "45354964"
+  },
+  "matchType": "EXACT",
+  "order": "Falconiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2481047,
+  "vernacular_es": [
+   "Halcón Peregrino",
+   "Halcón de Patos",
+   "Halcón peregrino",
+   "halcón peregrino"
+  ]
+ },
+ "Falco tinnunculus": {
+  "accepted": "Falco tinnunculus",
+  "acceptedKey": 9616058,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Falconidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22696362"
+  },
+  "matchType": "EXACT",
+  "order": "Falconiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9616058,
+  "vernacular_es": [
+   "Cernicalo común",
+   "Cernícalo Vulgar",
+   "Cernícalo vulgar",
+   "cernícalo vulgar"
+  ]
+ },
+ "Felis silvestris": {
+  "accepted": "Felis silvestris",
+  "acceptedKey": 7964291,
+  "authorship": "Schreber, 1777",
+  "class": "Mammalia",
+  "family": "Felidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "181049859"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7964291,
+  "vernacular_es": [
+   "Gato Montés",
+   "Gato Silvestre",
+   "Gato montés",
+   "Gato montés Euroasiático",
+   "gato silvestre"
+  ]
+ },
+ "Fratercula arctica": {
+  "accepted": "Fratercula arctica",
+  "acceptedKey": 2481353,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Alcidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "22694927"
+  },
+  "matchType": "EXACT",
+  "order": "Charadriiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2481353,
+  "vernacular_es": [
+   "Frailecillo Atlántico",
+   "Frailecillo atlántico",
+   "Frailecillo del Atlántico",
+   "frailecillo atlántico"
+  ]
+ },
+ "Fringilla coelebs": {
+  "accepted": "Fringilla coelebs",
+  "acceptedKey": 2494422,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Fringillidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22720030"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2494422,
+  "vernacular_es": [
+   "Pinzón Vulgar",
+   "Pinzón común",
+   "Pinzón vulgar"
+  ]
+ },
+ "Fulica atra": {
+  "accepted": "Fulica atra",
+  "acceptedKey": 2474377,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Rallidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22692913"
+  },
+  "matchType": "EXACT",
+  "order": "Gruiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2474377,
+  "vernacular_es": [
+   "Focha Común",
+   "Focha común",
+   "focha común"
+  ]
+ },
+ "Gadus morhua": {
+  "accepted": "Gadus morhua",
+  "acceptedKey": 8084280,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Gadidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "8784"
+  },
+  "matchType": "EXACT",
+  "order": "Gadiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8084280,
+  "vernacular_es": [
+   "Bacalao",
+   "Bacalao del Atlántico",
+   "bacalao",
+   "bacalao común",
+   "bacalao del Atlántico"
+  ]
+ },
+ "Galago senegalensis": {
+  "accepted": "Galago senegalensis",
+  "acceptedKey": 9198359,
+  "authorship": "É.Geoffroy Saint-Hilaire, 1796",
+  "class": "Mammalia",
+  "family": "Galagidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "8789"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9198359,
+  "vernacular_es": [
+   "Gálago Menor",
+   "Gálago de Senegal"
+  ]
+ },
+ "Galemys pyrenaicus": {
+  "accepted": "Galemys pyrenaicus",
+  "acceptedKey": 5219516,
+  "authorship": "(É.Geoffroy Saint-Hilaire, 1811)",
+  "class": "Mammalia",
+  "family": "Talpidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "8826"
+  },
+  "matchType": "EXACT",
+  "order": "Soricomorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219516,
+  "vernacular_es": [
+   "Almizclera",
+   "Desmán",
+   "Desmán Ibérico",
+   "Desmán de los Pirineos",
+   "Desmán ibérico"
+  ]
+ },
+ "Gambusia affinis": {
+  "accepted": "Gambusia affinis",
+  "acceptedKey": 2350580,
+  "authorship": "(Baird & Girard, 1853)",
+  "class": null,
+  "family": "Poeciliidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "166562"
+  },
+  "matchType": "EXACT",
+  "order": "Cyprinodontiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2350580,
+  "vernacular_es": [
+   "Gambusa",
+   "Gambusino",
+   "Pez Mosquito",
+   "guayacón mosquito"
+  ]
+ },
+ "Gasterosteus aculeatus": {
+  "accepted": "Gasterosteus aculeatus",
+  "acceptedKey": 4286327,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Gasterosteidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "225345695"
+  },
+  "matchType": "EXACT",
+  "order": "Gasterosteiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4286327,
+  "vernacular_es": [
+   "Espinoso",
+   "espinocho",
+   "espinoso"
+  ]
+ },
+ "Gavialis gangeticus": {
+  "accepted": "Gavialis gangeticus",
+  "acceptedKey": 2441360,
+  "authorship": "(Gmelin, 1789)",
+  "class": "Crocodylia",
+  "family": "Gavialidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "8966"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441360,
+  "vernacular_es": [
+   "Gavial del Ganges"
+  ]
+ },
+ "Gazella dorcas": {
+  "accepted": "Gazella dorcas",
+  "acceptedKey": 5220149,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "8969"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220149,
+  "vernacular_es": [
+   "Gacela Dorcas",
+   "Gacela común o dorcas"
+  ]
+ },
+ "Genetta genetta": {
+  "accepted": "Genetta genetta",
+  "acceptedKey": 5219362,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Viverridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41698"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219362,
+  "vernacular_es": [
+   "Gineta",
+   "Jineta"
+  ]
+ },
+ "Giraffa camelopardalis": {
+  "accepted": "Giraffa camelopardalis",
+  "acceptedKey": 2441205,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Giraffidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "9194"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441205,
+  "vernacular_es": [
+   "Jirafa"
+  ]
+ },
+ "Gorilla beringei": {
+  "accepted": "Gorilla beringei",
+  "acceptedKey": 7262070,
+  "authorship": "Matschie, 1903",
+  "class": "Mammalia",
+  "family": "Hominidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "39994"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7262070,
+  "vernacular_es": [
+   "Gorila oriental",
+   "Gorilla Oriental"
+  ]
+ },
+ "Grus grus": {
+  "accepted": "Grus grus",
+  "acceptedKey": 2474950,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Gruidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22692146"
+  },
+  "matchType": "EXACT",
+  "order": "Gruiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2474950,
+  "vernacular_es": [
+   "Grulla Común",
+   "Grulla común"
+  ]
+ },
+ "Gulo gulo": {
+  "accepted": "Gulo gulo",
+  "acceptedKey": 5219073,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Mustelidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "9561"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219073,
+  "vernacular_es": [
+   "Glotón"
+  ]
+ },
+ "Gypaetus barbatus": {
+  "accepted": "Gypaetus barbatus",
+  "acceptedKey": 2480649,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "22695174"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480649,
+  "vernacular_es": [
+   "Quebrantahuesos"
+  ]
+ },
+ "Gyps fulvus": {
+  "accepted": "Gyps fulvus",
+  "acceptedKey": 2480389,
+  "authorship": "(Hablizl, 1783)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22695219"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480389,
+  "vernacular_es": [
+   "Buitre Leonado",
+   "Buitre común",
+   "Buitre leonado"
+  ]
+ },
+ "Heloderma suspectum": {
+  "accepted": "Heloderma suspectum",
+  "acceptedKey": 2460817,
+  "authorship": "Cope, 1869",
+  "class": "Squamata",
+  "family": "Helodermatidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "9865"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2460817,
+  "vernacular_es": [
+   "Lagarto de Gila",
+   "Monstruo de Gila",
+   "Monstruo del Gila"
+  ]
+ },
+ "Herpestes ichneumon": {
+  "accepted": "Herpestes ichneumon",
+  "acceptedKey": 2434255,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Herpestidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41613"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2434255,
+  "vernacular_es": [
+   "Huron",
+   "Meloncillo"
+  ]
+ },
+ "Hexanchus griseus": {
+  "accepted": "Hexanchus griseus",
+  "acceptedKey": 2420569,
+  "authorship": "(Bonnaterre, 1788)",
+  "class": "Elasmobranchii",
+  "family": "Hexanchidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "10030"
+  },
+  "matchType": "EXACT",
+  "order": "Hexanchiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2420569,
+  "vernacular_es": [
+   "Bastriuvaca",
+   "Boca dolça",
+   "Boquidulce",
+   "Cañabota",
+   "Cañabota cañabota gris",
+   "Cañabota gris",
+   "Gato de mar",
+   "Peix xovato",
+   "Tiburon fuma",
+   "Tiburón gris",
+   "marrajo",
+   "tiburón de seis branquias"
+  ]
+ },
+ "Hippocampus zosterae": {
+  "accepted": "Hippocampus zosterae",
+  "acceptedKey": 5201131,
+  "authorship": "Jordan & Gilbert, 1882",
+  "class": null,
+  "family": "Syngnathidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "10089"
+  },
+  "matchType": "EXACT",
+  "order": "Syngnathiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5201131,
+  "vernacular_es": [
+   "Caballito de Mar Enano",
+   "Caballito de mar",
+   "Caballito enano",
+   "Caballito oliváceo",
+   "caballito enano",
+   "caballito oliváceo"
+  ]
+ },
+ "Hippopotamus amphibius": {
+  "accepted": "Hippopotamus amphibius",
+  "acceptedKey": 2441247,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Hippopotamidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "10103"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441247,
+  "vernacular_es": [
+   "Hipopótamo Anfibio",
+   "Hipopótamo común"
+  ]
+ },
+ "Hydrochoerus hydrochaeris": {
+  "accepted": "Hydrochoerus hydrochaeris",
+  "acceptedKey": 5786666,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Mammalia",
+  "family": "Caviidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "10300"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5786666,
+  "vernacular_es": [
+   "Cacó",
+   "Capibara grande",
+   "Capibara | Chigüiro",
+   "Capiguara | Capibara",
+   "Capincho",
+   "Chiguire",
+   "Chigüire",
+   "Chigüiro",
+   "Chigüiro (generalizado)",
+   "Culopando",
+   "Jesús o Sús",
+   "Lancha | Lanche",
+   "Lancho",
+   "Piropiro",
+   "Ponche",
+   "Roncoso",
+   "Ronsoco",
+   "Tinajo-ponche",
+   "Yulo"
+  ]
+ },
+ "Hyla molleri": {
+  "accepted": "Hyla molleri",
+  "acceptedKey": 2427580,
+  "authorship": "Bedriaga, 1889",
+  "class": "Amphibia",
+  "family": "Hylidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "82493101"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2427580,
+  "vernacular_es": [
+   "Ranita de San Antón",
+   "Ranita de San Antón ibérica",
+   "Ranita de San Antón o de San Antonio"
+  ]
+ },
+ "Hylobates lar": {
+  "accepted": "Hylobates lar",
+  "acceptedKey": 5219553,
+  "authorship": "(Linnaeus, 1771)",
+  "class": "Mammalia",
+  "family": "Hylobatidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "10548"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219553,
+  "vernacular_es": [
+   "Gibón Lar",
+   "Gibón de Manos Blancas",
+   "Gibón de Manos Blancas de Tailandia Septentrional",
+   "Gibón de Manos Blancas de Yunnan",
+   "Gibón de Sonda de Manos Blancas"
+  ]
+ },
+ "Ichthyophis glutinosus": {
+  "accepted": "Ichthyophis glutinosus",
+  "acceptedKey": 5218320,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Amphibia",
+  "family": "Ichthyophiidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "59618"
+  },
+  "matchType": "EXACT",
+  "order": "Gymnophiona",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218320,
+  "vernacular_es": []
+ },
+ "Iguana iguana": {
+  "accepted": "Iguana iguana",
+  "acceptedKey": 2459658,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Squamata",
+  "family": "Iguanidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "174481"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2459658,
+  "vernacular_es": [
+   "Iguana",
+   "Iguana común",
+   "Iguana de Ribera",
+   "Iguana verde",
+   "gallina de palo"
+  ]
+ },
+ "Isurus oxyrinchus": {
+  "accepted": "Isurus oxyrinchus",
+  "acceptedKey": 5216248,
+  "authorship": "Rafinesque, 1810",
+  "class": "Elasmobranchii",
+  "family": "Lamnidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "39341"
+  },
+  "matchType": "EXACT",
+  "order": "Lamniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5216248,
+  "vernacular_es": [
+   "Atunero",
+   "Cane de mare",
+   "Diamante",
+   "Dientuso",
+   "Maco",
+   "Marrajo",
+   "Marrajo dientuso",
+   "Tiburón azujelo",
+   "Tiburón bonito",
+   "Tiburón carito",
+   "Tinto",
+   "alecrín",
+   "dentudo",
+   "dientuso azul",
+   "ludia marraco",
+   "mako",
+   "marrajo",
+   "marrajo dientuso",
+   "marraquet",
+   "sobratg",
+   "tiburón"
+  ]
+ },
+ "Lama guanicoe": {
+  "accepted": "Lama glama guanicoe",
+  "acceptedKey": 5706328,
+  "authorship": "(Müller, 1776)",
+  "class": "Mammalia",
+  "family": "Camelidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "11186"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "SYNONYM",
+  "usageKey": 5220188,
+  "vernacular_es": []
+ },
+ "Lampetra fluviatilis": {
+  "accepted": "Lampetra fluviatilis",
+  "acceptedKey": 2421365,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Petromyzonti",
+  "family": "Petromyzontidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "11206"
+  },
+  "matchType": "EXACT",
+  "order": "Petromyzontiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2421365,
+  "vernacular_es": [
+   "Lamprea de río",
+   "lamprea de rio",
+   "lamprea de río"
+  ]
+ },
+ "Lanius meridionalis": {
+  "accepted": "Lanius meridionalis",
+  "acceptedKey": 7341500,
+  "authorship": "Temminck, 1820",
+  "class": "Aves",
+  "family": "Laniidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "22729533"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7341500,
+  "vernacular_es": [
+   "Alcaudón real"
+  ]
+ },
+ "Larus fuscus": {
+  "accepted": "Larus fuscus",
+  "acceptedKey": 2481174,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Laridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22694373"
+  },
+  "matchType": "EXACT",
+  "order": "Charadriiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2481174,
+  "vernacular_es": [
+   "Gaviota Dorsinegra Menor",
+   "Gaviota Sombría",
+   "Gaviota sombría",
+   "gaviota sombría"
+  ]
+ },
+ "Laticauda colubrina": {
+  "accepted": "Laticauda colubrina",
+  "acceptedKey": 8374394,
+  "authorship": "(Schneider, 1799)",
+  "class": "Squamata",
+  "family": "Elapidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "176750"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8374394,
+  "vernacular_es": [
+   "Culebra del Mar Bandeada",
+   "Serpiente marina bandeada"
+  ]
+ },
+ "Latimeria chalumnae": {
+  "accepted": "Latimeria chalumnae",
+  "acceptedKey": 2441273,
+  "authorship": "Smith, 1939",
+  "class": "Coelacanthi",
+  "family": "Latimeriidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "11375"
+  },
+  "matchType": "EXACT",
+  "order": "Coelacanthiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441273,
+  "vernacular_es": [
+   "Celacanto de Comores",
+   "Celacanto de las Comores",
+   "Celecanto"
+  ]
+ },
+ "Lemur catta": {
+  "accepted": "Lemur catta",
+  "acceptedKey": 2436412,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Lemuridae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "11496"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436412,
+  "vernacular_es": [
+   "Lemur Colianillado",
+   "Lémur de cola anillada"
+  ]
+ },
+ "Lepidosiren paradoxa": {
+  "accepted": "Lepidosiren paradoxa",
+  "acceptedKey": 2441263,
+  "authorship": "Fitzinger, 1837",
+  "class": "Dipneusti",
+  "family": "Lepidosirenidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "49830702"
+  },
+  "matchType": "EXACT",
+  "order": "Ceratodontiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441263,
+  "vernacular_es": [
+   "Lepidosirena",
+   "Loloch",
+   "Pez pulmonado",
+   "Pez pulmonado sudamericano"
+  ]
+ },
+ "Lepisosteus osseus": {
+  "accepted": "Lepisosteus osseus",
+  "acceptedKey": 2346701,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Lepisosteidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "191027"
+  },
+  "matchType": "EXACT",
+  "order": "Lepisosteiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2346701,
+  "vernacular_es": [
+   "Pejelagarto narigudo",
+   "catán aguja",
+   "catán narigudo",
+   "pez caimán",
+   "pez picudo"
+  ]
+ },
+ "Lepus granatensis": {
+  "accepted": "Lepus granatensis",
+  "acceptedKey": 2436790,
+  "authorship": "Rosenhauer, 1856",
+  "class": "Mammalia",
+  "family": "Leporidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41306"
+  },
+  "matchType": "EXACT",
+  "order": "Lagomorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436790,
+  "vernacular_es": [
+   "Liebre Ibérica",
+   "Liebre ibérica"
+  ]
+ },
+ "Lissotriton boscai": {
+  "accepted": "Lissotriton boscai",
+  "acceptedKey": 5218408,
+  "authorship": "(Lataste, 1879)",
+  "class": "Amphibia",
+  "family": "Salamandridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "79079411"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218408,
+  "vernacular_es": [
+   "Tritón Ibérico"
+  ]
+ },
+ "Lissotriton helveticus": {
+  "accepted": "Lissotriton helveticus",
+  "acceptedKey": 5218410,
+  "authorship": "(Razoumovsky, 1789)",
+  "class": "Amphibia",
+  "family": "Salamandridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "59475"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218410,
+  "vernacular_es": [
+   "Tritón Palmeado"
+  ]
+ },
+ "Lophius piscatorius": {
+  "accepted": "Lophius piscatorius",
+  "acceptedKey": 2415075,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Lophiidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198610"
+  },
+  "matchType": "EXACT",
+  "order": "Lophiiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2415075,
+  "vernacular_es": [
+   "Rape",
+   "Rape Blanco",
+   "Rape Común",
+   "Rape blanco",
+   "Xuliana",
+   "pejesapo",
+   "rape"
+  ]
+ },
+ "Loris lydekkerianus": {
+  "accepted": "Loris lydekkerianus",
+  "acceptedKey": 7262073,
+  "authorship": "Cabrera, 1908",
+  "class": "Mammalia",
+  "family": "Lorisidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "44722"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7262073,
+  "vernacular_es": [
+   "Loris Esbelto Gris de Sri Lanka Suroriental",
+   "Loris esbelto gris"
+  ]
+ },
+ "Loxodonta africana": {
+  "accepted": "Loxodonta africana",
+  "acceptedKey": 2435350,
+  "authorship": "(Blumenbach, 1797)",
+  "class": "Mammalia",
+  "family": "Elephantidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "181008073"
+  },
+  "matchType": "EXACT",
+  "order": "Proboscidea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435350,
+  "vernacular_es": [
+   "Elefante Africano",
+   "Elefante de Sabana"
+  ]
+ },
+ "Luciobarbus comizo": {
+  "accepted": "Luciobarbus comizo",
+  "acceptedKey": 2363069,
+  "authorship": "(Steindachner, 1864)",
+  "class": null,
+  "family": "Cyprinidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "2575"
+  },
+  "matchType": "EXACT",
+  "order": "Cypriniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2363069,
+  "vernacular_es": [
+   "Barbo comizo"
+  ]
+ },
+ "Lutra lutra": {
+  "accepted": "Lutra lutra",
+  "acceptedKey": 2433753,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Mustelidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "12419"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2433753,
+  "vernacular_es": [
+   "Nutria",
+   "Nutria Común",
+   "Nutria europea",
+   "Nutria paleártica",
+   "nutria"
+  ]
+ },
+ "Lycaon pictus": {
+  "accepted": "Lycaon pictus",
+  "acceptedKey": 5219317,
+  "authorship": "(Temminck, 1820)",
+  "class": "Mammalia",
+  "family": "Canidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "12436"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219317,
+  "vernacular_es": [
+   "Licaon",
+   "Perro Salvaje",
+   "licaón"
+  ]
+ },
+ "Lynx pardinus": {
+  "accepted": "Lynx pardinus",
+  "acceptedKey": 2435261,
+  "authorship": "(Temminck, 1827)",
+  "class": "Mammalia",
+  "family": "Felidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "12520"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435261,
+  "vernacular_es": [
+   "Lince iberico",
+   "Lince ibérico"
+  ]
+ },
+ "Macaca sylvanus": {
+  "accepted": "Macaca sylvanus",
+  "acceptedKey": 2436618,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Cercopithecidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "12561"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436618,
+  "vernacular_es": [
+   "Macaco de Berbería",
+   "Mona De Berber",
+   "Mona de Berbería",
+   "Mona de Gibraltar",
+   "Mono de Berberea",
+   "Mono de Gibraltar"
+  ]
+ },
+ "Macrochelys temminckii": {
+  "accepted": "Macrochelys temminckii",
+  "acceptedKey": 5220318,
+  "authorship": "Troost, 1835",
+  "class": "Testudines",
+  "family": "Chelydridae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "232775771"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220318,
+  "vernacular_es": [
+   "Tortuga mordelona"
+  ]
+ },
+ "Macropus rufus": {
+  "accepted": "Macropus rufus",
+  "acceptedKey": 5219963,
+  "authorship": "(Desmarest, 1822)",
+  "class": "Mammalia",
+  "family": "Macropodidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "40567_2"
+  },
+  "matchType": "EXACT",
+  "order": "Diprotodontia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219963,
+  "vernacular_es": []
+ },
+ "Malpolon monspessulanus": {
+  "accepted": "Malpolon monspessulanus",
+  "acceptedKey": 8796529,
+  "authorship": "(Hermann, 1804)",
+  "class": "Squamata",
+  "family": "Psammophiidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "157262"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8796529,
+  "vernacular_es": [
+   "Culebra Bastarda",
+   "Culebra bastarda"
+  ]
+ },
+ "Manis crassicaudata": {
+  "accepted": "Manis crassicaudata",
+  "acceptedKey": 5219633,
+  "authorship": "É.Geoffroy Saint-Hilaire, 1803",
+  "class": "Mammalia",
+  "family": "Manidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "12761"
+  },
+  "matchType": "EXACT",
+  "order": "Pholidota",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219633,
+  "vernacular_es": [
+   "Pangolín Indio"
+  ]
+ },
+ "Marmota marmota": {
+  "accepted": "Marmota marmota",
+  "acceptedKey": 2437377,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Sciuridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "12835"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2437377,
+  "vernacular_es": [
+   "Marmota Alpina",
+   "Marmota alpina"
+  ]
+ },
+ "Martes foina": {
+  "accepted": "Martes foina",
+  "acceptedKey": 5218887,
+  "authorship": "(Erxleben, 1777)",
+  "class": "Mammalia",
+  "family": "Mustelidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "29672"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218887,
+  "vernacular_es": [
+   "Garduña"
+  ]
+ },
+ "Mauremys leprosa": {
+  "accepted": "Mauremys leprosa",
+  "acceptedKey": 2443341,
+  "authorship": "(Schweigger, 1812)",
+  "class": "Testudines",
+  "family": "Geoemydidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2443341,
+  "vernacular_es": [
+   "Galápago leproso"
+  ]
+ },
+ "Megaptera novaeangliae": {
+  "accepted": "Megaptera novaeangliae",
+  "acceptedKey": 5220086,
+  "authorship": "(Borowski, 1781)",
+  "class": "Mammalia",
+  "family": "Balaenopteridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "13006"
+  },
+  "matchType": "EXACT",
+  "order": "Cetacea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220086,
+  "vernacular_es": [
+   "Ballena Jorobada",
+   "Ballena jorobada",
+   "Ballena jorobada | yubarta",
+   "Gubarte",
+   "Rorcual Jorobado",
+   "Yubarta",
+   "ambaqui",
+   "ballena cantora",
+   "ballena de aletas grandes",
+   "ballena jorobada",
+   "guabarte",
+   "gubarta",
+   "jibarte",
+   "jorobada",
+   "rorqual jorobado",
+   "yubarta"
+  ]
+ },
+ "Meles meles": {
+  "accepted": "Meles meles",
+  "acceptedKey": 2433875,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Mustelidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "29673"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2433875,
+  "vernacular_es": [
+   "Tejón"
+  ]
+ },
+ "Mellisuga helenae": {
+  "accepted": "Mellisuga helenae",
+  "acceptedKey": 5228500,
+  "authorship": "(Lembeye, 1850)",
+  "class": "Aves",
+  "family": "Trochilidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "22688214"
+  },
+  "matchType": "EXACT",
+  "order": "Apodiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5228500,
+  "vernacular_es": [
+   "Colibrí zunzuncito"
+  ]
+ },
+ "Merluccius merluccius": {
+  "accepted": "Merluccius merluccius",
+  "acceptedKey": 2415643,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Merlucciidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198562"
+  },
+  "matchType": "EXACT",
+  "order": "Gadiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2415643,
+  "vernacular_es": [
+   "Alambolo",
+   "Carioca",
+   "Cria",
+   "Ilus",
+   "Iluz",
+   "Lejatxa",
+   "Merluza",
+   "Merluza Europea",
+   "Merluza europea",
+   "Pescada",
+   "Pescadilla",
+   "Pijota",
+   "Pijotilla",
+   "Pijoton",
+   "Pitillo",
+   "carioca",
+   "merluza",
+   "merluza europea",
+   "pescada",
+   "pescadilla"
+  ]
+ },
+ "Merops apiaster": {
+  "accepted": "Merops apiaster",
+  "acceptedKey": 2475443,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Meropidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22683756"
+  },
+  "matchType": "EXACT",
+  "order": "Coraciiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2475443,
+  "vernacular_es": [
+   "Abejaruco",
+   "Abejaruco Común",
+   "Abejaruco europeo",
+   "abejaruco común",
+   "abejaruco europeo"
+  ]
+ },
+ "Microtus arvalis": {
+  "accepted": "Microtus arvalis",
+  "acceptedKey": 2438606,
+  "authorship": "(Pallas, 1779)",
+  "class": "Mammalia",
+  "family": "Cricetidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "221687974"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2438606,
+  "vernacular_es": [
+   "Topillo Campesino",
+   "Topillo campesino"
+  ]
+ },
+ "Milvus migrans": {
+  "accepted": "Milvus migrans",
+  "acceptedKey": 5229167,
+  "authorship": "(Boddaert, 1783)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "181568721"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5229167,
+  "vernacular_es": [
+   "Milano Negro",
+   "Milano negro"
+  ]
+ },
+ "Milvus milvus": {
+  "accepted": "Milvus milvus",
+  "acceptedKey": 5229168,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22695072"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5229168,
+  "vernacular_es": [
+   "Milano Real",
+   "Milano real"
+  ]
+ },
+ "Mobula mobular": {
+  "accepted": "Mobula mobular",
+  "acceptedKey": 2419188,
+  "authorship": "(Bonnaterre, 1788)",
+  "class": "Elasmobranchii",
+  "family": "Myliobatidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "110847130"
+  },
+  "matchType": "EXACT",
+  "order": "Myliobatiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2419188,
+  "vernacular_es": [
+   "Manta",
+   "manta",
+   "manta arpón",
+   "manta mobula"
+  ]
+ },
+ "Motacilla alba": {
+  "accepted": "Motacilla alba",
+  "acceptedKey": 9687165,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Motacillidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22718348"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9687165,
+  "vernacular_es": [
+   "Lavandera Blanca",
+   "Lavandera blanca",
+   "lavandera blanca"
+  ]
+ },
+ "Mullus barbatus": {
+  "accepted": "Mullus barbatus",
+  "acceptedKey": 4284897,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Mullidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198673"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4284897,
+  "vernacular_es": [
+   "Salmonete de Fango",
+   "Salmonete de fango",
+   "salmonete de fango"
+  ]
+ },
+ "Muraena helena": {
+  "accepted": "Muraena helena",
+  "acceptedKey": 2404329,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Muraenidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "194974"
+  },
+  "matchType": "EXACT",
+  "order": "Anguilliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2404329,
+  "vernacular_es": [
+   "Morena",
+   "Morena Mediterránea",
+   "Morena del Mediterráneo",
+   "Morena mediterránea",
+   "Morena pintada",
+   "Murena",
+   "morena"
+  ]
+ },
+ "Mustela nivalis": {
+  "accepted": "Mustela nivalis",
+  "acceptedKey": 5218987,
+  "authorship": "Linnaeus, 1766",
+  "class": "Mammalia",
+  "family": "Mustelidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "70207409"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218987,
+  "vernacular_es": [
+   "Comadreja",
+   "Comadreja común",
+   "Comadreja egipcia"
+  ]
+ },
+ "Myiopsitta monachus": {
+  "accepted": "Myiopsitta monachus",
+  "acceptedKey": 2479407,
+  "authorship": "(Boddaert, 1783)",
+  "class": "Aves",
+  "family": "Psittacidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "45427277"
+  },
+  "matchType": "EXACT",
+  "order": "Psittaciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2479407,
+  "vernacular_es": [
+   "Cotorra",
+   "Cotorra argentina",
+   "Cotorra común",
+   "Perico Monje Argentino",
+   "Perico monje"
+  ]
+ },
+ "Myliobatis aquila": {
+  "accepted": "Myliobatis aquila",
+  "acceptedKey": 2419310,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Myliobatidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "161569"
+  },
+  "matchType": "EXACT",
+  "order": "Myliobatiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2419310,
+  "vernacular_es": [
+   "Aguila de mar",
+   "Aguila marina",
+   "Bon Jesús",
+   "Choucho",
+   "Chucho",
+   "Gallarón",
+   "Jutjo",
+   "Milana",
+   "Milá",
+   "Mongeta",
+   "Monja",
+   "Monjeta",
+   "Obispo",
+   "Ralapinuada",
+   "Ratón",
+   "Totino",
+   "Viuda",
+   "gallarón",
+   "Águila marina",
+   "águila marina"
+  ]
+ },
+ "Myrmecophaga tridactyla": {
+  "accepted": "Myrmecophaga tridactyla",
+  "acceptedKey": 2436346,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Myrmecophagidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "14224"
+  },
+  "matchType": "EXACT",
+  "order": "Pilosa",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436346,
+  "vernacular_es": [
+   "Hormiguero Gigante",
+   "Oso Bandera",
+   "Oso Caballo",
+   "Oso Hormiguero",
+   "Oso Hormiguero Palmero | Oso palmero (generalizado) | Tamandua bandeira | Eréño (otros nombres)",
+   "Oso Palmero",
+   "Oso bandera",
+   "Oso caballuno",
+   "Oso hormiguero",
+   "Oso pajizo",
+   "Tamanduá | Susurete | Osoa amarillo"
+  ]
+ },
+ "Myxine glutinosa": {
+  "accepted": "Myxine glutinosa",
+  "acceptedKey": 2498670,
+  "authorship": "Linnaeus, 1758",
+  "class": "Myxini",
+  "family": "Myxinidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "196057"
+  },
+  "matchType": "EXACT",
+  "order": "Myxiniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2498670,
+  "vernacular_es": [
+   "Anguila Babosa",
+   "Anguila babosa",
+   "Babosa de Mar",
+   "Babosa de mar",
+   "Pez Moco",
+   "Pez moco",
+   "bruja"
+  ]
+ },
+ "Naja naja": {
+  "accepted": "Naja naja",
+  "acceptedKey": 2470351,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Squamata",
+  "family": "Elapidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "62241"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2470351,
+  "vernacular_es": [
+   "Cobra India",
+   "Cobra de Anteojos"
+  ]
+ },
+ "Natrix astreptophora": {
+  "accepted": "Natrix astreptophora",
+  "acceptedKey": 9313254,
+  "authorship": "Seoane, 1885",
+  "class": "Squamata",
+  "family": "Colubridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "165594036"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9313254,
+  "vernacular_es": [
+   "Culebra de Collar Mediterránea"
+  ]
+ },
+ "Neophron percnopterus": {
+  "accepted": "Neophron percnopterus",
+  "acceptedKey": 2480696,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Accipitridae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "22695180"
+  },
+  "matchType": "EXACT",
+  "order": "Accipitriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480696,
+  "vernacular_es": [
+   "Alimoche",
+   "Alimoche Común",
+   "Alimoche común"
+  ]
+ },
+ "Nilssonia gangetica": {
+  "accepted": "Nilssonia gangetica",
+  "acceptedKey": 2442542,
+  "authorship": "(Cuvier, 1825)",
+  "class": "Testudines",
+  "family": "Trionychidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "39618"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2442542,
+  "vernacular_es": []
+ },
+ "Nothura maculosa": {
+  "accepted": "Nothura maculosa",
+  "acceptedKey": 2477600,
+  "authorship": "(Temminck, 1815)",
+  "class": "Aves",
+  "family": "Tinamidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "154589710"
+  },
+  "matchType": "EXACT",
+  "order": "Tinamiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2477600,
+  "vernacular_es": [
+   "Inambú campestre",
+   "Inambú común",
+   "Perdiz chica",
+   "Tinamú manchado"
+  ]
+ },
+ "Ochotona princeps": {
+  "accepted": "Ochotona princeps",
+  "acceptedKey": 2436982,
+  "authorship": "(Richardson, 1828)",
+  "class": "Mammalia",
+  "family": "Ochotonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41267"
+  },
+  "matchType": "EXACT",
+  "order": "Lagomorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436982,
+  "vernacular_es": [
+   "Pica Americana"
+  ]
+ },
+ "Oenanthe hispanica": {
+  "accepted": "Oenanthe hispanica",
+  "acceptedKey": 5231235,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Muscicapidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22710302"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5231235,
+  "vernacular_es": [
+   "Collalba Rubia",
+   "Collalba rubia hispánica",
+   "Collalba rubia occidental"
+  ]
+ },
+ "Okapia johnstoni": {
+  "accepted": "Okapia johnstoni",
+  "acceptedKey": 2441207,
+  "authorship": "(P.L.Sclater, 1901)",
+  "class": "Mammalia",
+  "family": "Giraffidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "15188"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441207,
+  "vernacular_es": []
+ },
+ "Oncorhynchus nerka": {
+  "accepted": "Oncorhynchus nerka",
+  "acceptedKey": 5204039,
+  "authorship": "(Walbaum, 1792)",
+  "class": null,
+  "family": "Salmonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "135301"
+  },
+  "matchType": "EXACT",
+  "order": "Salmoniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5204039,
+  "vernacular_es": [
+   "Salmon",
+   "Salmón",
+   "Salmón Rojo",
+   "Salmón rojo",
+   "salmon rojo"
+  ]
+ },
+ "Opisthocomus hoazin": {
+  "accepted": "Opisthocomus hoazin",
+  "acceptedKey": 2496202,
+  "authorship": "(Statius Muller, 1776)",
+  "class": "Aves",
+  "family": "Opisthocomidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22684428"
+  },
+  "matchType": "EXACT",
+  "order": "Opisthocomiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2496202,
+  "vernacular_es": [
+   "Chenchena",
+   "Hoatzín",
+   "Hoazín",
+   "Pava Hedionda",
+   "Shansho",
+   "pava hedionda"
+  ]
+ },
+ "Orcinus orca": {
+  "accepted": "Orcinus orca",
+  "acceptedKey": 2440483,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Delphinidae",
+  "iucn": {
+   "category": "DATA_DEFICIENT",
+   "code": "DD",
+   "iucnTaxonID": "15421"
+  },
+  "matchType": "EXACT",
+  "order": "Cetacea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440483,
+  "vernacular_es": [
+   "Espadarte",
+   "Orca",
+   "Orca común",
+   "Orca gigante | orca",
+   "ballena asesina",
+   "ballena pinta",
+   "ballena quila",
+   "bufeo de mascarilla",
+   "cahuel-huaique",
+   "delfin gigante",
+   "espadarte",
+   "machete",
+   "moscote",
+   "orca",
+   "orca común",
+   "orca verdadera"
+  ]
+ },
+ "Ornithorhynchus anatinus": {
+  "accepted": "Ornithorhynchus anatinus",
+  "acceptedKey": 2433376,
+  "authorship": "(Shaw, 1799)",
+  "class": "Mammalia",
+  "family": "Ornithorhynchidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "40488"
+  },
+  "matchType": "EXACT",
+  "order": "Monotremata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2433376,
+  "vernacular_es": [
+   "Ornitorrinco"
+  ]
+ },
+ "Orycteropus afer": {
+  "accepted": "Orycteropus afer",
+  "acceptedKey": 5218416,
+  "authorship": "(Pallas, 1766)",
+  "class": "Mammalia",
+  "family": "Orycteropodidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41504"
+  },
+  "matchType": "EXACT",
+  "order": "Tubulidentata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218416,
+  "vernacular_es": [
+   "Cerdo hormiguero",
+   "Oso Hormiguero"
+  ]
+ },
+ "Oryctolagus cuniculus": {
+  "accepted": "Oryctolagus cuniculus",
+  "acceptedKey": 2436940,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Leporidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "41291"
+  },
+  "matchType": "EXACT",
+  "order": "Lagomorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436940,
+  "vernacular_es": [
+   "Conejo",
+   "Conejo común",
+   "Conejo de monte",
+   "Conejo doméstico",
+   "Conejo europeo"
+  ]
+ },
+ "Otaria flavescens": {
+  "accepted": "Otaria byronia",
+  "acceptedKey": 5218774,
+  "authorship": "(Shaw, 1800)",
+  "class": "Mammalia",
+  "family": "Otariidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41665_1"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "SYNONYM",
+  "usageKey": 5218773,
+  "vernacular_es": []
+ },
+ "Otis tarda": {
+  "accepted": "Otis tarda",
+  "acceptedKey": 2474921,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Otididae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "22691900"
+  },
+  "matchType": "EXACT",
+  "order": "Otidiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2474921,
+  "vernacular_es": [
+   "Avutarda",
+   "Avutarda Común",
+   "Avutarda euroasiática"
+  ]
+ },
+ "Ovis gmelini": {
+  "accepted": "Ovis gmelini",
+  "acceptedKey": 9542814,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9542814,
+  "vernacular_es": []
+ },
+ "Pagellus bogaraveo": {
+  "accepted": "Pagellus bogaraveo",
+  "acceptedKey": 2392557,
+  "authorship": "(Brünnich, 1768)",
+  "class": null,
+  "family": "Sparidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "170244"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2392557,
+  "vernacular_es": [
+   "Besugo",
+   "Bogarrabella",
+   "Borazo",
+   "Goraz",
+   "Ollomol",
+   "Pancho",
+   "Voraz",
+   "Vorazo",
+   "besugo"
+  ]
+ },
+ "Pan troglodytes": {
+  "accepted": "Pan troglodytes",
+  "acceptedKey": 5219534,
+  "authorship": "(Blumenbach, 1775)",
+  "class": "Mammalia",
+  "family": "Hominidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "15933"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219534,
+  "vernacular_es": [
+   "Chimpancé",
+   "Chimpancé común"
+  ]
+ },
+ "Panthera leo": {
+  "accepted": "Panthera leo",
+  "acceptedKey": 5219404,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Felidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "15951"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219404,
+  "vernacular_es": [
+   "León",
+   "León Africano"
+  ]
+ },
+ "Panthera onca": {
+  "accepted": "Panthera onca",
+  "acceptedKey": 5219426,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Felidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "15953"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219426,
+  "vernacular_es": [
+   "Anítina",
+   "Jaguar",
+   "Mancueva",
+   "Mano de plomo",
+   "Otorongo",
+   "Pintamenudita",
+   "Tigre",
+   "Tigre Americano",
+   "Tigre Real",
+   "Tigre amapolo",
+   "Tigre malibú",
+   "Tigre mariposo",
+   "Tigre pintado",
+   "Tigre real",
+   "Tigre real | Tigre mariposo",
+   "Tigre serrano",
+   "Tigre | Tigre pintamenuda | Manodelana | Onza pintada | Zawuareté | Tigre negro | Pantera (individuos melánicos) | Jaguar",
+   "Yaguar",
+   "Yaguarete",
+   "Yaguareté",
+   "Yavareté",
+   "otorongo",
+   "tigre americano",
+   "tigre real",
+   "yaguar"
+  ]
+ },
+ "Panthera pardus": {
+  "accepted": "Panthera pardus",
+  "acceptedKey": 5219436,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Felidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "15954"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219436,
+  "vernacular_es": [
+   "Leopardo",
+   "Pantera",
+   "pantera"
+  ]
+ },
+ "Pantholops hodgsonii": {
+  "accepted": "Pantholops hodgsonii",
+  "acceptedKey": 2441103,
+  "authorship": "(Abel, 1826)",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "15967"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441103,
+  "vernacular_es": [
+   "Antilope del Tibet",
+   "Antílope tibetano"
+  ]
+ },
+ "Papio ursinus": {
+  "accepted": "Papio ursinus",
+  "acceptedKey": 7262029,
+  "authorship": "(Kerr, 1792)",
+  "class": "Mammalia",
+  "family": "Cercopithecidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "16022"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7262029,
+  "vernacular_es": [
+   "Babuino Chacma",
+   "Papión Chacma"
+  ]
+ },
+ "Paracheirodon innesi": {
+  "accepted": "Paracheirodon innesi",
+  "acceptedKey": 2353909,
+  "authorship": "(Myers, 1936)",
+  "class": null,
+  "family": "Characidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "49829801"
+  },
+  "matchType": "EXACT",
+  "order": "Characiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2353909,
+  "vernacular_es": [
+   "Mojarita",
+   "Pez tetra neón"
+  ]
+ },
+ "Parus major": {
+  "accepted": "Parus major",
+  "acceptedKey": 9705453,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Paridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22735990"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9705453,
+  "vernacular_es": [
+   "Carbonero Común",
+   "Carbonero común"
+  ]
+ },
+ "Passer domesticus": {
+  "accepted": "Passer domesticus",
+  "acceptedKey": 5231190,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Passeridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "103818789"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5231190,
+  "vernacular_es": [
+   "Gorrión",
+   "Gorrión Común",
+   "Gorrión Doméstico",
+   "Gorrión Europeo",
+   "Gorrión casero",
+   "Gorrión chilero",
+   "Gorrión común",
+   "Pardal",
+   "agrarista"
+  ]
+ },
+ "Pelecanus onocrotalus": {
+  "accepted": "Pelecanus onocrotalus",
+  "acceptedKey": 2480350,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Pelecanidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22697590"
+  },
+  "matchType": "EXACT",
+  "order": "Pelecaniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480350,
+  "vernacular_es": [
+   "Gran pelícano blanco",
+   "Pelícano Común",
+   "Pelícano común",
+   "pelícano común"
+  ]
+ },
+ "Pelophylax perezi": {
+  "accepted": "Pelophylax perezi",
+  "acceptedKey": 2426658,
+  "authorship": "(López-Seoane, 1885)",
+  "class": "Amphibia",
+  "family": "Ranidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "58692"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2426658,
+  "vernacular_es": [
+   "Rana Común"
+  ]
+ },
+ "Perdix perdix": {
+  "accepted": "Perdix perdix",
+  "acceptedKey": 2473958,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Phasianidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22678911"
+  },
+  "matchType": "EXACT",
+  "order": "Galliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2473958,
+  "vernacular_es": [
+   "Perdiz Pardilla",
+   "Perdiz pardilla"
+  ]
+ },
+ "Petaurus breviceps": {
+  "accepted": "Petaurus breviceps",
+  "acceptedKey": 2440043,
+  "authorship": "Waterhouse, 1838",
+  "class": "Mammalia",
+  "family": "Petauridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "16731"
+  },
+  "matchType": "EXACT",
+  "order": "Diprotodontia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440043,
+  "vernacular_es": [
+   "Falangero Planeador del Azúcar",
+   "Petauro del azúcar"
+  ]
+ },
+ "Petromyzon marinus": {
+  "accepted": "Petromyzon marinus",
+  "acceptedKey": 8236498,
+  "authorship": "Linnaeus, 1758",
+  "class": "Petromyzonti",
+  "family": "Petromyzontidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "16781"
+  },
+  "matchType": "EXACT",
+  "order": "Petromyzontiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8236498,
+  "vernacular_es": [
+   "Amprea",
+   "Amprega",
+   "Chucladit",
+   "Ferrêtimo",
+   "Lampardia",
+   "Lamprea",
+   "Lamprea de mar",
+   "Lamprea marina",
+   "Lampreia",
+   "Llamprea",
+   "Llampresa",
+   "Llampresa de mar",
+   "Pegatimôn",
+   "Xuclador",
+   "amprea",
+   "amprega",
+   "chucladit",
+   "ferrêtimo",
+   "lampardia",
+   "lamprea",
+   "lamprea de mar",
+   "lamprea marina",
+   "lampreia",
+   "llamprea",
+   "llampresa",
+   "llampresa de mar",
+   "pegatimôn",
+   "xuclador"
+  ]
+ },
+ "Phalacrocorax carbo": {
+  "accepted": "Phalacrocorax carbo",
+  "acceptedKey": 2481890,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Phalacrocoracidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22696792"
+  },
+  "matchType": "EXACT",
+  "order": "Suliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2481890,
+  "vernacular_es": [
+   "Cormorán Grande",
+   "Cormorán grande",
+   "cormorán grande"
+  ]
+ },
+ "Phascolarctos cinereus": {
+  "accepted": "Phascolarctos cinereus",
+  "acceptedKey": 2440012,
+  "authorship": "(Goldfuss, 1817)",
+  "class": "Mammalia",
+  "family": "Phascolarctidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "16892"
+  },
+  "matchType": "EXACT",
+  "order": "Diprotodontia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440012,
+  "vernacular_es": []
+ },
+ "Phoca vitulina": {
+  "accepted": "Phoca vitulina",
+  "acceptedKey": 2434793,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Phocidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "17013"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2434793,
+  "vernacular_es": [
+   "Foca Moteada",
+   "Foca común",
+   "Foca moteada",
+   "foca común",
+   "foca moteada"
+  ]
+ },
+ "Phoenicopterus roseus": {
+  "accepted": "Phoenicopterus roseus",
+  "acceptedKey": 4352332,
+  "authorship": "Pallas, 1811",
+  "class": "Aves",
+  "family": "Phoenicopteridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22697360"
+  },
+  "matchType": "EXACT",
+  "order": "Phoenicopteriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4352332,
+  "vernacular_es": [
+   "Flamenco común",
+   "flamenco común"
+  ]
+ },
+ "Phylloscopus collybita": {
+  "accepted": "Phylloscopus collybita",
+  "acceptedKey": 2493091,
+  "authorship": "(Vieillot, 1817)",
+  "class": "Aves",
+  "family": "Phylloscopidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "103843725"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2493091,
+  "vernacular_es": [
+   "Mosquitero Común",
+   "Mosquitero común"
+  ]
+ },
+ "Physeter macrocephalus": {
+  "accepted": "Physeter macrocephalus",
+  "acceptedKey": 8123917,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Physeteridae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "41755"
+  },
+  "matchType": "EXACT",
+  "order": "Cetacea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8123917,
+  "vernacular_es": [
+   "Ballena Esperma",
+   "Ballena de esperma",
+   "Cachalote",
+   "Cachalote gigante",
+   "ballena esperma",
+   "cachalote",
+   "cachalote común",
+   "chacalote",
+   "fiseter",
+   "guapo"
+  ]
+ },
+ "Pica pica": {
+  "accepted": "Pica pica",
+  "acceptedKey": 5229490,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Corvidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "103727048"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5229490,
+  "vernacular_es": [
+   "Urraca",
+   "Urraca común",
+   "picaza"
+  ]
+ },
+ "Picus sharpei": {
+  "accepted": "Picus sharpei",
+  "acceptedKey": 9029556,
+  "authorship": "(H.Saunders, 1872)",
+  "class": "Aves",
+  "family": "Picidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22725015"
+  },
+  "matchType": "EXACT",
+  "order": "Piciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9029556,
+  "vernacular_es": [
+   "Carpintero verde ibérico",
+   "Pito ibérico",
+   "Pito real ibérico"
+  ]
+ },
+ "Pipa pipa": {
+  "accepted": "Pipa pipa",
+  "acceptedKey": 2423966,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Amphibia",
+  "family": "Pipidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "58163"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2423966,
+  "vernacular_es": [
+   "Aparo",
+   "Rana Comun De Celdillas",
+   "Rana Tablacha",
+   "Sapo Chinelo",
+   "Sapo Chola",
+   "Sapo De Celdas",
+   "Sapo de Surinam"
+  ]
+ },
+ "Pipistrellus pipistrellus": {
+  "accepted": "Pipistrellus pipistrellus",
+  "acceptedKey": 5218465,
+  "authorship": "(Schreber, 1774)",
+  "class": "Mammalia",
+  "family": "Vespertilionidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "85333513"
+  },
+  "matchType": "EXACT",
+  "order": "Chiroptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218465,
+  "vernacular_es": [
+   "Murciélago Enano",
+   "Murciélago enano",
+   "Murciélago enano o común"
+  ]
+ },
+ "Platalea leucorodia": {
+  "accepted": "Platalea leucorodia",
+  "acceptedKey": 2480801,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Threskiornithidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22697555"
+  },
+  "matchType": "EXACT",
+  "order": "Pelecaniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480801,
+  "vernacular_es": [
+   "Espátula",
+   "Espátula Común",
+   "Espátula común",
+   "espátula común"
+  ]
+ },
+ "Pleurodeles waltl": {
+  "accepted": "Pleurodeles waltl",
+  "acceptedKey": 2431875,
+  "authorship": "Michahelles, 1830",
+  "class": "Amphibia",
+  "family": "Salamandridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "59463"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2431875,
+  "vernacular_es": [
+   "Gallipato"
+  ]
+ },
+ "Podarcis muralis": {
+  "accepted": "Podarcis muralis",
+  "acceptedKey": 2469188,
+  "authorship": "(Laurenti, 1768)",
+  "class": "Squamata",
+  "family": "Lacertidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "61550"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2469188,
+  "vernacular_es": [
+   "Lagartija Roquera",
+   "Lagartija roquera"
+  ]
+ },
+ "Podiceps cristatus": {
+  "accepted": "Podiceps cristatus",
+  "acceptedKey": 2482054,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Podicipedidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22696602"
+  },
+  "matchType": "EXACT",
+  "order": "Podicipediformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2482054,
+  "vernacular_es": [
+   "Somormujo Lavanco",
+   "somormujo lavanco"
+  ]
+ },
+ "Poecilia reticulata": {
+  "accepted": "Poecilia reticulata",
+  "acceptedKey": 2350050,
+  "authorship": "Peters, 1859",
+  "class": null,
+  "family": "Poeciliidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "60444"
+  },
+  "matchType": "EXACT",
+  "order": "Cyprinodontiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2350050,
+  "vernacular_es": [
+   "Barrigudinho",
+   "Guaru",
+   "gupi"
+  ]
+ },
+ "Polyodon spathula": {
+  "accepted": "Polyodon spathula",
+  "acceptedKey": 5212833,
+  "authorship": "(Walbaum, 1792)",
+  "class": null,
+  "family": "Polyodontidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "17938"
+  },
+  "matchType": "EXACT",
+  "order": "Acipenseriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5212833,
+  "vernacular_es": [
+   "Pez espátula",
+   "Pez espátula americano",
+   "Sollo"
+  ]
+ },
+ "Polypterus bichir": {
+  "accepted": "Polypterus bichir",
+  "acceptedKey": 2346588,
+  "authorship": "Lacepède, 1803",
+  "class": null,
+  "family": "Polypteridae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Polypteriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2346588,
+  "vernacular_es": []
+ },
+ "Pongo abelii": {
+  "accepted": "Pongo abelii",
+  "acceptedKey": 5707420,
+  "authorship": "Lesson, 1827",
+  "class": "Mammalia",
+  "family": "Hominidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "121097935"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5707420,
+  "vernacular_es": [
+   "Orangutan de Sumatra",
+   "Orangután de Sumatra"
+  ]
+ },
+ "Prionace glauca": {
+  "accepted": "Prionace glauca",
+  "acceptedKey": 2417940,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Carcharhinidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "39381"
+  },
+  "matchType": "EXACT",
+  "order": "Carcharhiniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2417940,
+  "vernacular_es": [
+   "Azujelo",
+   "Ca-mari",
+   "Caila",
+   "Cailón",
+   "Chiri",
+   "Chirimoya",
+   "Lija",
+   "Melgacho",
+   "Melgago",
+   "Taburó",
+   "Tiburón",
+   "Tiburón azul",
+   "Tintoleta",
+   "Tintorera",
+   "Verdemar",
+   "tiburón azul"
+  ]
+ },
+ "Procavia capensis": {
+  "accepted": "Procavia capensis",
+  "acceptedKey": 5219598,
+  "authorship": "(Pallas, 1766)",
+  "class": "Mammalia",
+  "family": "Procaviidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41766"
+  },
+  "matchType": "EXACT",
+  "order": "Hyracoidea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219598,
+  "vernacular_es": [
+   "Damán de el Cabo"
+  ]
+ },
+ "Procyon lotor": {
+  "accepted": "Procyon lotor",
+  "acceptedKey": 5218786,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Procyonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41686"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218786,
+  "vernacular_es": [
+   "Mapache",
+   "Mapache común",
+   "Mapache | Cangrejero | Manipelado | Zorra patona",
+   "Mapachín",
+   "Zorra Manglera",
+   "mapache | cangrejero | manipelado | zorra patona | zorra manglera (Atlántico | Bolívar | Magdalena"
+  ]
+ },
+ "Proteus anguinus": {
+  "accepted": "Proteus anguinus",
+  "acceptedKey": 2432042,
+  "authorship": "Laurenti, 1768",
+  "class": "Amphibia",
+  "family": "Proteidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "18377"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2432042,
+  "vernacular_es": [
+   "Proteo"
+  ]
+ },
+ "Psammodromus algirus": {
+  "accepted": "Psammodromus algirus",
+  "acceptedKey": 2469763,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Squamata",
+  "family": "Lacertidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "42668917"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2469763,
+  "vernacular_es": [
+   "Lagartija Colilarga",
+   "Lagartija colilarga",
+   "Lagartija escamosa"
+  ]
+ },
+ "Psittacula krameri": {
+  "accepted": "Psittacula krameri",
+  "acceptedKey": 2479226,
+  "authorship": "(Scopoli, 1769)",
+  "class": "Aves",
+  "family": "Psittacidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22685441_1"
+  },
+  "matchType": "EXACT",
+  "order": "Psittaciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2479226,
+  "vernacular_es": [
+   "Cotorra de Kramer",
+   "Periquito de Collar"
+  ]
+ },
+ "Psittacus erithacus": {
+  "accepted": "Psittacus erithacus",
+  "acceptedKey": 2480181,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Psittacidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "22724813"
+  },
+  "matchType": "EXACT",
+  "order": "Psittaciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480181,
+  "vernacular_es": [
+   "Loro gris",
+   "Loro yaco"
+  ]
+ },
+ "Pteropus conspicillatus": {
+  "accepted": "Pteropus conspicillatus",
+  "acceptedKey": 5218680,
+  "authorship": "Gould, 1850",
+  "class": "Mammalia",
+  "family": "Pteropodidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "18721"
+  },
+  "matchType": "EXACT",
+  "order": "Chiroptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5218680,
+  "vernacular_es": [
+   "Zorro Volador De Anteojos"
+  ]
+ },
+ "Puma concolor": {
+  "accepted": "Puma concolor",
+  "acceptedKey": 2435099,
+  "authorship": "(Linnaeus, 1771)",
+  "class": "Mammalia",
+  "family": "Felidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "18868"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435099,
+  "vernacular_es": [
+   "Gato Monte",
+   "Leopardo",
+   "León Americano",
+   "León Bayo",
+   "León Colorado",
+   "León De Montaña",
+   "León campa o Camba",
+   "León colorado",
+   "León de montaña",
+   "León | León colorado | León de montaña",
+   "Lion",
+   "Mitzli",
+   "Onza Bermeja",
+   "Onza vermelha",
+   "Puma",
+   "Tigre colorado",
+   "león de montana",
+   "león | león colorado | león de montaña | León | Leoncillo | Puma | Kasindukua",
+   "léon americano",
+   "léon bayo",
+   "léon colorado",
+   "onza bermeja"
+  ]
+ },
+ "Rana iberica": {
+  "accepted": "Rana iberica",
+  "acceptedKey": 2426774,
+  "authorship": "Boulenger, 1879",
+  "class": "Amphibia",
+  "family": "Ranidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "58622"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2426774,
+  "vernacular_es": [
+   "Rana Patilarga",
+   "Rana patilarga"
+  ]
+ },
+ "Rangifer tarandus": {
+  "accepted": "Rangifer tarandus",
+  "acceptedKey": 5220114,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Cervidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "29742"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220114,
+  "vernacular_es": [
+   "Caribú",
+   "Reno"
+  ]
+ },
+ "Rattus norvegicus": {
+  "accepted": "Rattus norvegicus",
+  "acceptedKey": 2439261,
+  "authorship": "(Berkenhout, 1769)",
+  "class": "Mammalia",
+  "family": "Muridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "19353"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2439261,
+  "vernacular_es": [
+   "Guarén",
+   "Rata de Noruega",
+   "Rata gris asiática",
+   "Rata noruega",
+   "Rata parda"
+  ]
+ },
+ "Recurvirostra avosetta": {
+  "accepted": "Recurvirostra avosetta",
+  "acceptedKey": 2480259,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Recurvirostridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22693712"
+  },
+  "matchType": "EXACT",
+  "order": "Charadriiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480259,
+  "vernacular_es": [
+   "Avoceta",
+   "Avoceta Común",
+   "Avoceta común",
+   "avoceta común"
+  ]
+ },
+ "Rhea americana": {
+  "accepted": "Rhea americana",
+  "acceptedKey": 2495165,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Rheidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "22678073"
+  },
+  "matchType": "EXACT",
+  "order": "Rheiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2495165,
+  "vernacular_es": [
+   "Avestruz",
+   "Ñandú",
+   "Ñandú Común",
+   "Ñandú común",
+   "Ñandú grande"
+  ]
+ },
+ "Rhincodon typus": {
+  "accepted": "Rhincodon typus",
+  "acceptedKey": 2417522,
+  "authorship": "Smith, 1828",
+  "class": "Elasmobranchii",
+  "family": "Rhincodontidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "19488"
+  },
+  "matchType": "EXACT",
+  "order": "Orectolobiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2417522,
+  "vernacular_es": [
+   "Pez dama",
+   "Tiburón Ballena",
+   "Tiburón dominó",
+   "dominó",
+   "dámero",
+   "tiburón ballena",
+   "tiburón dama"
+  ]
+ },
+ "Rhinobatos rhinobatos": {
+  "accepted": "Rhinobatos rhinobatos",
+  "acceptedKey": 2419005,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Rhinobatidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "63131"
+  },
+  "matchType": "EXACT",
+  "order": "Rhinopristiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2419005,
+  "vernacular_es": [
+   "Guitarra",
+   "Guitarra Comùn",
+   "Guitarra común",
+   "Guitarró",
+   "Manta",
+   "Picudos",
+   "Rayón",
+   "guitarra común"
+  ]
+ },
+ "Rhinoceros unicornis": {
+  "accepted": "Rhinoceros unicornis",
+  "acceptedKey": 5220113,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Rhinocerotidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "19496"
+  },
+  "matchType": "EXACT",
+  "order": "Perissodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220113,
+  "vernacular_es": [
+   "Rinoceronte Indio",
+   "Rinoceronte Unicornio Índico"
+  ]
+ },
+ "Rhinoderma darwinii": {
+  "accepted": "Rhinoderma darwinii",
+  "acceptedKey": 5217388,
+  "authorship": "Duméril & Bibron, 1841",
+  "class": "Amphibia",
+  "family": "Rhinodermatidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "19513"
+  },
+  "matchType": "EXACT",
+  "order": "Anura",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5217388,
+  "vernacular_es": [
+   "Rana Narigona",
+   "Ranita de Darwin",
+   "Sapito Partero",
+   "Sapito Vaquero"
+  ]
+ },
+ "Rhinolophus ferrumequinum": {
+  "accepted": "Rhinolophus ferrumequinum",
+  "acceptedKey": 2432655,
+  "authorship": "(Schreber, 1774)",
+  "class": "Mammalia",
+  "family": "Rhinolophidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "19517"
+  },
+  "matchType": "EXACT",
+  "order": "Chiroptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2432655,
+  "vernacular_es": [
+   "Murciélago Grande de Herradura",
+   "Murciélago grande de herradura"
+  ]
+ },
+ "Rupicapra pyrenaica": {
+  "accepted": "Rupicapra pyrenaica",
+  "acceptedKey": 5220171,
+  "authorship": "Bonaparte, 1845",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "19771"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220171,
+  "vernacular_es": [
+   "Gamuza De Los Abruzzos",
+   "Gamuza Meridional",
+   "Rebeco",
+   "Rebeco De Los Abruzzos",
+   "Rebeco Meridional",
+   "Rebeco ibérico",
+   "Rebeco pirenaico o sarrio"
+  ]
+ },
+ "Saiga tatarica": {
+  "accepted": "Saiga tatarica",
+  "acceptedKey": 2441067,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "19832"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441067,
+  "vernacular_es": [
+   "Antilope Saiga",
+   "Antilope saiga Tátaro",
+   "Antílope Saiga",
+   "Saiga"
+  ]
+ },
+ "Salamandra salamandra": {
+  "accepted": "Salamandra salamandra",
+  "acceptedKey": 2431776,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Amphibia",
+  "family": "Salamandridae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "59467"
+  },
+  "matchType": "EXACT",
+  "order": "Caudata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2431776,
+  "vernacular_es": [
+   "Salamandra Común",
+   "Salamandra pintada"
+  ]
+ },
+ "Salaria fluviatilis": {
+  "accepted": "Salaria fluviatilis",
+  "acceptedKey": 4409525,
+  "authorship": "(Asso, 1801)",
+  "class": null,
+  "family": "Blenniidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "60764_8"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4409525,
+  "vernacular_es": [
+   "fraile"
+  ]
+ },
+ "Salmo salar": {
+  "accepted": "Salmo salar",
+  "acceptedKey": 7595433,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Salmonidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "19855"
+  },
+  "matchType": "EXACT",
+  "order": "Salmoniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7595433,
+  "vernacular_es": [
+   "Landloked salmon",
+   "Salmón",
+   "Salmón Atlántico",
+   "Salmón del Atlantico",
+   "Salmón del Atlántico",
+   "salmón",
+   "salmón común",
+   "salmón de lago",
+   "salmón del Atlántico",
+   "salmón del Traful",
+   "salmón encerrado"
+  ]
+ },
+ "Salmo trutta": {
+  "accepted": "Salmo trutta",
+  "acceptedKey": 8215487,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Salmonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "19861"
+  },
+  "matchType": "EXACT",
+  "order": "Salmoniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8215487,
+  "vernacular_es": [
+   "Trucha marrón",
+   "trucha comun",
+   "trucha común",
+   "trucha marina"
+  ]
+ },
+ "Sarcophilus harrisii": {
+  "accepted": "Sarcophilus harrisii",
+  "acceptedKey": 2435451,
+  "authorship": "(Boitard, 1841)",
+  "class": "Mammalia",
+  "family": "Dasyuridae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "40540"
+  },
+  "matchType": "EXACT",
+  "order": "Dasyuromorphia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435451,
+  "vernacular_es": [
+   "Demonio de Tasmania"
+  ]
+ },
+ "Sardina pilchardus": {
+  "accepted": "Sardina pilchardus",
+  "acceptedKey": 2413224,
+  "authorship": "(Walbaum, 1792)",
+  "class": null,
+  "family": "Clupeidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198580"
+  },
+  "matchType": "EXACT",
+  "order": "Clupeiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2413224,
+  "vernacular_es": [
+   "Majuga",
+   "Parrocha",
+   "Sardina",
+   "Sardina Europea",
+   "Sardiña",
+   "Xouba",
+   "sardina"
+  ]
+ },
+ "Saxicola rubicola": {
+  "accepted": "Saxicola rubicola",
+  "acceptedKey": 4408759,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Aves",
+  "family": "Muscicapidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4408759,
+  "vernacular_es": [
+   "Tarabilla común",
+   "Tarabilla común europea",
+   "Tarabilla europea"
+  ]
+ },
+ "Sciurus vulgaris": {
+  "accepted": "Sciurus vulgaris",
+  "acceptedKey": 8211070,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Sciuridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "221730864"
+  },
+  "matchType": "EXACT",
+  "order": "Rodentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8211070,
+  "vernacular_es": [
+   "Ardilla Roja de Eurasia",
+   "Ardilla roja",
+   "ardilla común"
+  ]
+ },
+ "Scomber scombrus": {
+  "accepted": "Scomber scombrus",
+  "acceptedKey": 2374149,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Scombridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "170354"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2374149,
+  "vernacular_es": [
+   "Caballa",
+   "Caballa del Atlántico",
+   "Verdel",
+   "Xarda",
+   "caballa",
+   "caballa del Atlántico",
+   "macarela azul"
+  ]
+ },
+ "Scophthalmus maximus": {
+  "accepted": "Scophthalmus maximus",
+  "acceptedKey": 2409418,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Scophthalmidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198731"
+  },
+  "matchType": "EXACT",
+  "order": "Pleuronectiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2409418,
+  "vernacular_es": [
+   "Rodaballo",
+   "rodaballo"
+  ]
+ },
+ "Scorpaena scrofa": {
+  "accepted": "Scorpaena scrofa",
+  "acceptedKey": 2334574,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Scorpaenidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198748"
+  },
+  "matchType": "EXACT",
+  "order": "Scorpaeniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2334574,
+  "vernacular_es": [
+   "Cabracho",
+   "Escarapote",
+   "Gallineta",
+   "Pes Escorpión Carmesí",
+   "cabracho"
+  ]
+ },
+ "Scyliorhinus canicula": {
+  "accepted": "Scyliorhinus canicula",
+  "acceptedKey": 2418684,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Scyliorhinidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "161307554"
+  },
+  "matchType": "EXACT",
+  "order": "Carcharhiniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2418684,
+  "vernacular_es": [
+   "Breka",
+   "Cat",
+   "Catuarraya",
+   "Galeo",
+   "Gat",
+   "Gatet",
+   "Gato marino",
+   "Gatvaire",
+   "Gatón patarroxa",
+   "Mamatxa",
+   "Melgacho",
+   "Mona",
+   "Pez perro",
+   "Pintarroja",
+   "Pitarrosa",
+   "Pitarrosa de altura",
+   "Pitarrosin",
+   "gato",
+   "pintarroja"
+  ]
+ },
+ "Serrasalmus rhombeus": {
+  "accepted": "Serrasalmus rhombeus",
+  "acceptedKey": 2354124,
+  "authorship": "(Linnaeus, 1766)",
+  "class": null,
+  "family": "Serrasalmidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "187046"
+  },
+  "matchType": "EXACT",
+  "order": "Characiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2354124,
+  "vernacular_es": [
+   "Caribe pinche",
+   "Piraña negra",
+   "Puño",
+   "pirá-i"
+  ]
+ },
+ "Silurus glanis": {
+  "accepted": "Silurus glanis",
+  "acceptedKey": 2337607,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Siluridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "40713"
+  },
+  "matchType": "EXACT",
+  "order": "Siluriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2337607,
+  "vernacular_es": [
+   "Siluro",
+   "Siluro europeo",
+   "siluro"
+  ]
+ },
+ "Solea solea": {
+  "accepted": "Solea solea",
+  "acceptedKey": 5214139,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Soleidae",
+  "iucn": {
+   "category": "DATA_DEFICIENT",
+   "code": "DD",
+   "iucnTaxonID": "198739"
+  },
+  "matchType": "EXACT",
+  "order": "Pleuronectiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5214139,
+  "vernacular_es": [
+   "Lengua",
+   "Lenguado",
+   "Lenguado Común",
+   "Lenguado común",
+   "Lenguado europeo",
+   "Lenguao",
+   "Solea solea",
+   "lenguado"
+  ]
+ },
+ "Sparus aurata": {
+  "accepted": "Sparus aurata",
+  "acceptedKey": 2392508,
+  "authorship": "Linnaeus, 1758",
+  "class": null,
+  "family": "Sparidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "170253"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2392508,
+  "vernacular_es": [
+   "Chaparreta",
+   "Dorada",
+   "Dorada Del Pacífico",
+   "Dourada",
+   "Zapata Morisca",
+   "dorada"
+  ]
+ },
+ "Sphenodon punctatus": {
+  "accepted": "Sphenodon punctatus",
+  "acceptedKey": 5227650,
+  "authorship": "(Gray, 1842)",
+  "class": "Sphenodontia",
+  "family": "Sphenodontidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "131735762"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5227650,
+  "vernacular_es": [
+   "Tuátara"
+  ]
+ },
+ "Sphyrna zygaena": {
+  "accepted": "Sphyrna zygaena",
+  "acceptedKey": 2418794,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Sphyrnidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "39388"
+  },
+  "matchType": "EXACT",
+  "order": "Carcharhiniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2418794,
+  "vernacular_es": [
+   "Cachona",
+   "Carnuda",
+   "Corna",
+   "Cornuda",
+   "Cornuda cruz",
+   "Cornudilla",
+   "Cornuilla",
+   "Cornúa",
+   "Leunada",
+   "Martell",
+   "Martillo",
+   "Medialuna",
+   "Pez martillo",
+   "Sarda de cachas",
+   "Tailandano",
+   "Tollo cruz",
+   "cabeza de martillo",
+   "cornuda cruz",
+   "cornuda prieta",
+   "pez martillo",
+   "tiburón martillo cruz"
+  ]
+ },
+ "Squalus acanthias": {
+  "accepted": "Squalus acanthias",
+  "acceptedKey": 5216368,
+  "authorship": "Linnaeus, 1758",
+  "class": "Elasmobranchii",
+  "family": "Squalidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "91209505"
+  },
+  "matchType": "EXACT",
+  "order": "Squaliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5216368,
+  "vernacular_es": [
+   "Cazón Espinoso",
+   "Espinillo",
+   "Galludo",
+   "Mielga",
+   "agulat",
+   "cazón espinoso común",
+   "galludo espinoso",
+   "galludos",
+   "mielga"
+  ]
+ },
+ "Squatina squatina": {
+  "accepted": "Squatina squatina",
+  "acceptedKey": 2417781,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Squatinidae",
+  "iucn": {
+   "category": "CRITICALLY_ENDANGERED",
+   "code": "CR",
+   "iucnTaxonID": "39332"
+  },
+  "matchType": "EXACT",
+  "order": "Squatiniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2417781,
+  "vernacular_es": [
+   "Angel",
+   "Angelino",
+   "Angelot",
+   "Angelote",
+   "Escat",
+   "Eskat común",
+   "Mennejuela",
+   "Mermejuela",
+   "Pardon",
+   "Pardón",
+   "Peje-ángel",
+   "Pez Angel",
+   "Pez ángel",
+   "Vexigall",
+   "Zabalera",
+   "angelote",
+   "pez ángel",
+   "villano"
+  ]
+ },
+ "Steatornis caripensis": {
+  "accepted": "Steatornis caripensis",
+  "acceptedKey": 2497150,
+  "authorship": "von Humboldt, 1817",
+  "class": "Aves",
+  "family": "Steatornithidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22689633"
+  },
+  "matchType": "EXACT",
+  "order": "Steatornithiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2497150,
+  "vernacular_es": [
+   "Guácharo",
+   "Pájaro aceite",
+   "Pájaro aceitoso"
+  ]
+ },
+ "Stenella coeruleoalba": {
+  "accepted": "Stenella coeruleoalba",
+  "acceptedKey": 5220055,
+  "authorship": "(Meyen, 1833)",
+  "class": "Mammalia",
+  "family": "Delphinidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "20731"
+  },
+  "matchType": "EXACT",
+  "order": "Cetacea",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5220055,
+  "vernacular_es": [
+   "Delfín blanco y azul",
+   "Delfín listado",
+   "delfin a rayas",
+   "delfin blanco",
+   "delfin blanco y azul",
+   "delfin de betas",
+   "delfín azul",
+   "delfín listado",
+   "estenela listada",
+   "estenela rayada",
+   "tonina listada"
+  ]
+ },
+ "Streptopelia turtur": {
+  "accepted": "Streptopelia turtur",
+  "acceptedKey": 2495708,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Columbidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "22690419"
+  },
+  "matchType": "EXACT",
+  "order": "Columbiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2495708,
+  "vernacular_es": [
+   "Tórtola Común",
+   "Tórtola europea"
+  ]
+ },
+ "Strix aluco": {
+  "accepted": "Strix aluco",
+  "acceptedKey": 9282206,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Strigidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22725469"
+  },
+  "matchType": "EXACT",
+  "order": "Strigiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9282206,
+  "vernacular_es": [
+   "Cárabo",
+   "Cárabo Común",
+   "Cárabo común",
+   "Mochuelo"
+  ]
+ },
+ "Struthio camelus": {
+  "accepted": "Struthio camelus",
+  "acceptedKey": 2495150,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Struthionidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "45020636"
+  },
+  "matchType": "EXACT",
+  "order": "Struthioniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2495150,
+  "vernacular_es": [
+   "Avestruz común"
+  ]
+ },
+ "Sturnus unicolor": {
+  "accepted": "Sturnus unicolor",
+  "acceptedKey": 2489104,
+  "authorship": "Temminck, 1820",
+  "class": "Aves",
+  "family": "Sturnidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22710893"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2489104,
+  "vernacular_es": [
+   "Estornino Negro",
+   "Estornino negro"
+  ]
+ },
+ "Sus scrofa": {
+  "accepted": "Sus scrofa",
+  "acceptedKey": 7705930,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Suidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41775"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7705930,
+  "vernacular_es": [
+   "Cerdo doméstico",
+   "Cerdo feral",
+   "Jabalí",
+   "Jabalí europeo",
+   "Marrano alzado"
+  ]
+ },
+ "Sylvia atricapilla": {
+  "accepted": "Sylvia atricapilla",
+  "acceptedKey": 2492956,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Sylviidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22716901"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2492956,
+  "vernacular_es": [
+   "Curruca Capirotada",
+   "Curruca capirotada"
+  ]
+ },
+ "Syncerus caffer": {
+  "accepted": "Syncerus caffer",
+  "acceptedKey": 2441034,
+  "authorship": "(Sparrman, 1779)",
+  "class": "Mammalia",
+  "family": "Bovidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "21251"
+  },
+  "matchType": "EXACT",
+  "order": "Artiodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441034,
+  "vernacular_es": [
+   "Bífalo africano",
+   "Bífalo cafre",
+   "Búfalo Africano"
+  ]
+ },
+ "Tachyglossus aculeatus": {
+  "accepted": "Tachyglossus aculeatus",
+  "acceptedKey": 2433378,
+  "authorship": "(Shaw, 1792)",
+  "class": "Mammalia",
+  "family": "Tachyglossidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41312"
+  },
+  "matchType": "EXACT",
+  "order": "Monotremata",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2433378,
+  "vernacular_es": [
+   "Equidna de hocico corto Equidna australiano",
+   "equidna"
+  ]
+ },
+ "Talpa europaea": {
+  "accepted": "Talpa europaea",
+  "acceptedKey": 7872906,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Talpidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "221751920"
+  },
+  "matchType": "EXACT",
+  "order": "Soricomorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 7872906,
+  "vernacular_es": [
+   "Topo Europeo",
+   "Topo común",
+   "Topo europeo"
+  ]
+ },
+ "Tapirus pinchaque": {
+  "accepted": "Tapirus pinchaque",
+  "acceptedKey": 2440899,
+  "authorship": "(Roulin, 1829)",
+  "class": "Mammalia",
+  "family": "Tapiridae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "21473"
+  },
+  "matchType": "EXACT",
+  "order": "Perissodactyla",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2440899,
+  "vernacular_es": [
+   "Danta Cordillerana",
+   "Danta De Monta",
+   "Danta Lanuda",
+   "Danta Negra",
+   "Danta apizarrada",
+   "Danta de Montaña",
+   "Danta de Páramo",
+   "Data Conga | Danta de páramo (generalizado) | Danta lanuda | Danta conga (utilizados en la literatura)",
+   "Gran Bestia",
+   "Pinchaque",
+   "Tapir Andino",
+   "Tapir de Páramo",
+   "Tapir de los Andes",
+   "Tapir de montaña"
+  ]
+ },
+ "Tarentola mauritanica": {
+  "accepted": "Tarentola mauritanica",
+  "acceptedKey": 2445034,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Squamata",
+  "family": "Phyllodactylidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "248310890"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2445034,
+  "vernacular_es": [
+   "Salamanquesa común"
+  ]
+ },
+ "Tarsius tarsier": {
+  "accepted": "Tarsius tarsier",
+  "acceptedKey": 4266949,
+  "authorship": "(Erxleben, 1777)",
+  "class": "Mammalia",
+  "family": "Tarsiidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "162369551"
+  },
+  "matchType": "EXACT",
+  "order": "Primates",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4266949,
+  "vernacular_es": [
+   "Tarsero de Sulawesi Suroriental y la Isla Selayar"
+  ]
+ },
+ "Testudo graeca": {
+  "accepted": "Testudo graeca",
+  "acceptedKey": 2441461,
+  "authorship": "Linnaeus, 1758",
+  "class": "Testudines",
+  "family": "Testudinidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "21646"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2441461,
+  "vernacular_es": [
+   "Tortuga Mora",
+   "Tortuga mora"
+  ]
+ },
+ "Tetrao urogallus": {
+  "accepted": "Tetrao urogallus",
+  "acceptedKey": 2473577,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Phasianidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22679487"
+  },
+  "matchType": "EXACT",
+  "order": "Galliformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2473577,
+  "vernacular_es": [
+   "Urogallo",
+   "Urogallo Común",
+   "Urogallo común"
+  ]
+ },
+ "Thunnus alalunga": {
+  "accepted": "Thunnus alalunga",
+  "acceptedKey": 9694948,
+  "authorship": "(Bonnaterre, 1788)",
+  "class": null,
+  "family": "Scombridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "21856"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9694948,
+  "vernacular_es": [
+   "Alalunga",
+   "Albacora",
+   "Atun Blanco",
+   "Atún",
+   "Atún Aleta Larga",
+   "Atún de Aleta Larga",
+   "Sierra",
+   "albacora",
+   "atún blanco",
+   "bonito del norte"
+  ]
+ },
+ "Thunnus thynnus": {
+  "accepted": "Thunnus thynnus",
+  "acceptedKey": 2373980,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Scombridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "21860"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2373980,
+  "vernacular_es": [
+   "Atún",
+   "Atún Aleta Azul",
+   "Atún rojo",
+   "atún",
+   "atún aleta azul",
+   "atún común",
+   "atún de aleta azul del Atlántico",
+   "atún rojo"
+  ]
+ },
+ "Thylacinus cynocephalus": {
+  "accepted": "Thylacinus cynocephalus",
+  "acceptedKey": 2435474,
+  "authorship": "(Harris, 1808)",
+  "class": "Mammalia",
+  "family": "Thylacinidae",
+  "iucn": {
+   "category": "EXTINCT",
+   "code": "EX",
+   "iucnTaxonID": "21866"
+  },
+  "matchType": "EXACT",
+  "order": "Dasyuromorphia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435474,
+  "vernacular_es": [
+   "Lobo Marsupial",
+   "Lobo de Tasamania",
+   "Tilacino"
+  ]
+ },
+ "Timon lepidus": {
+  "accepted": "Timon lepidus",
+  "acceptedKey": 2468542,
+  "authorship": "(Daudin, 1802)",
+  "class": "Squamata",
+  "family": "Lacertidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "218293375"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2468542,
+  "vernacular_es": [
+   "Lagarto Ocelado"
+  ]
+ },
+ "Torpedo torpedo": {
+  "accepted": "Torpedo torpedo",
+  "acceptedKey": 5215534,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Elasmobranchii",
+  "family": "Torpedinidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "161397"
+  },
+  "matchType": "EXACT",
+  "order": "Torpediniformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5215534,
+  "vernacular_es": [
+   "Baca",
+   "Formigón",
+   "Ortiga",
+   "Tembla",
+   "Temblador",
+   "Temblera",
+   "Temblón",
+   "Trembladora",
+   "Tremielga",
+   "Tremielga de ojos",
+   "Tremolina",
+   "Tremolina Común",
+   "Tremolina común",
+   "Tremuló",
+   "Trimielga",
+   "Vaca",
+   "Vaca trembladora",
+   "tremielga"
+  ]
+ },
+ "Trachurus trachurus": {
+  "accepted": "Trachurus trachurus",
+  "acceptedKey": 5210473,
+  "authorship": "(Linnaeus, 1758)",
+  "class": null,
+  "family": "Carangidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "198647"
+  },
+  "matchType": "EXACT",
+  "order": "Perciformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5210473,
+  "vernacular_es": [
+   "Chicharro",
+   "Chincho",
+   "Jurel",
+   "Xurelo",
+   "chicharro",
+   "chincharro",
+   "jurel"
+  ]
+ },
+ "Trichechus manatus": {
+  "accepted": "Trichechus manatus",
+  "acceptedKey": 2435296,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Trichechidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "22103"
+  },
+  "matchType": "EXACT",
+  "order": "Sirenia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2435296,
+  "vernacular_es": [
+   "Lamantino Norteamericana",
+   "Manati",
+   "Manati Antilliano",
+   "Manati Norteamerican",
+   "Manatí",
+   "Manatí de las Américas",
+   "Manatí del Caribe",
+   "Manatí del Caribe | Manatí",
+   "Manatí­ del Caribe",
+   "Vaca marina"
+  ]
+ },
+ "Troglodytes troglodytes": {
+  "accepted": "Troglodytes troglodytes",
+  "acceptedKey": 5231438,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Troglodytidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "103883277"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5231438,
+  "vernacular_es": [
+   "Chivirín chochín",
+   "Chochín",
+   "Chochín Común",
+   "Chochín paleártico"
+  ]
+ },
+ "Tupaia tana": {
+  "accepted": "Tupaia tana",
+  "acceptedKey": 2436303,
+  "authorship": "Raffles, 1821",
+  "class": "Mammalia",
+  "family": "Tupaiidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41501"
+  },
+  "matchType": "EXACT",
+  "order": "Scandentia",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2436303,
+  "vernacular_es": [
+   "Tupaya grande de Borneo"
+  ]
+ },
+ "Turdus merula": {
+  "accepted": "Turdus merula",
+  "acceptedKey": 2490719,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Turdidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "103888106"
+  },
+  "matchType": "EXACT",
+  "order": "Passeriformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2490719,
+  "vernacular_es": [
+   "Mirlo",
+   "Mirlo Común",
+   "Mirlo común"
+  ]
+ },
+ "Tyto alba": {
+  "accepted": "Tyto alba",
+  "acceptedKey": 2497921,
+  "authorship": "(Scopoli, 1769)",
+  "class": "Aves",
+  "family": "Tytonidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22688504"
+  },
+  "matchType": "EXACT",
+  "order": "Strigiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2497921,
+  "vernacular_es": [
+   "Lechuza Campanaria",
+   "Lechuza Común",
+   "Lechuza común",
+   "Lechuza de campanario",
+   "lechuza"
+  ]
+ },
+ "Upupa epops": {
+  "accepted": "Upupa epops",
+  "acceptedKey": 2498415,
+  "authorship": "Linnaeus, 1758",
+  "class": "Aves",
+  "family": "Upupidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "22682655"
+  },
+  "matchType": "EXACT",
+  "order": "Bucerotiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2498415,
+  "vernacular_es": [
+   "Abubilla",
+   "Abubilla común"
+  ]
+ },
+ "Ursus arctos": {
+  "accepted": "Ursus arctos",
+  "acceptedKey": 2433433,
+  "authorship": "Linnaeus, 1758",
+  "class": "Mammalia",
+  "family": "Ursidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "41688"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2433433,
+  "vernacular_es": [
+   "Oso Pardo",
+   "Oso pardo"
+  ]
+ },
+ "Vanellus vanellus": {
+  "accepted": "Vanellus vanellus",
+  "acceptedKey": 2480242,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Aves",
+  "family": "Charadriidae",
+  "iucn": {
+   "category": "NEAR_THREATENED",
+   "code": "NT",
+   "iucnTaxonID": "22693949"
+  },
+  "matchType": "EXACT",
+  "order": "Charadriiformes",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2480242,
+  "vernacular_es": [
+   "Avefría Europea",
+   "Avefría europea",
+   "avefría europea"
+  ]
+ },
+ "Varanus komodoensis": {
+  "accepted": "Varanus komodoensis",
+  "acceptedKey": 2470854,
+  "authorship": "Ouwens, 1912",
+  "class": "Squamata",
+  "family": "Varanidae",
+  "iucn": {
+   "category": "ENDANGERED",
+   "code": "EN",
+   "iucnTaxonID": "22884"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2470854,
+  "vernacular_es": [
+   "Varano de Komodo"
+  ]
+ },
+ "Varanus niloticus": {
+  "accepted": "Varanus niloticus",
+  "acceptedKey": 2470656,
+  "authorship": "(Linnaeus, 1766)",
+  "class": "Squamata",
+  "family": "Varanidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "198539"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2470656,
+  "vernacular_es": [
+   "Monitor del Nilo"
+  ]
+ },
+ "Vipera latastei": {
+  "accepted": "Vipera latastei",
+  "acceptedKey": 5960896,
+  "authorship": "Bosca, 1878",
+  "class": "Squamata",
+  "family": "Viperidae",
+  "iucn": {
+   "category": "VULNERABLE",
+   "code": "VU",
+   "iucnTaxonID": "221202039"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5960896,
+  "vernacular_es": [
+   "Vibora hocicuda",
+   "Víbora hocicuda"
+  ]
+ },
+ "Vulpes vulpes": {
+  "accepted": "Vulpes vulpes",
+  "acceptedKey": 5219243,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Mammalia",
+  "family": "Canidae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "23062"
+  },
+  "matchType": "EXACT",
+  "order": "Carnivora",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5219243,
+  "vernacular_es": [
+   "Zorro",
+   "Zorro Rojo",
+   "Zorro rojo"
+  ]
+ },
+ "Zamenis scalaris": {
+  "accepted": "Zamenis scalaris",
+  "acceptedKey": 9416124,
+  "authorship": "(Schinz, 1822)",
+  "class": "Squamata",
+  "family": "Colubridae",
+  "iucn": {
+   "category": "LEAST_CONCERN",
+   "code": "LC",
+   "iucnTaxonID": "61565"
+  },
+  "matchType": "EXACT",
+  "order": null,
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 9416124,
+  "vernacular_es": [
+   "culebra de escalera"
+  ]
+ }
+}

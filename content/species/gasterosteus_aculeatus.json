@@ -1,0 +1,40 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez pequeño (3–4 cm) de cuerpo comprimido y pedúnculo caudal fino",
+      "Tres espinas libres delante de la dorsal; la tercera, mucho más corta",
+      "Sin escamas: placas óseas en dorso, flancos y vientre",
+      "Dorso oliva o verde plateado, a veces moteado de pardo; flancos y vientre plateados",
+      "Machos en celo con ojos azules y garganta y vientre rojo vivo"
+    ],
+    "en": [
+      "Small fish (3–4 cm) with a compressed body and slender tail base",
+      "Three free spines in front of the dorsal fin, the third much shorter",
+      "No scales: bony plates on the back, flanks and belly",
+      "Olive or silvery-green back, sometimes mottled brown; silvery flanks and belly",
+      "Breeding males with blue eyes and a bright red throat and belly"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "En la época de cría los machos tienen los ojos azules y la garganta y el vientre rojos; las hembras, como mucho, rosados.",
+    "en": "In the breeding season males have blue eyes and a red throat and belly; females turn at most slightly pink."
+  },
+  "trivia": {
+    "es": [
+      "El macho defiende un territorio, construye un nido y cuida los huevos y los alevines."
+    ],
+    "en": [
+      "The male defends a territory, builds a nest and guards the eggs and fry."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Three-spined stickleback",
+      "url": "https://en.wikipedia.org/wiki/Three-spined_stickleback",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

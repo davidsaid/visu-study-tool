@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo muy largo de anguila, sin escamas",
+      "Gris o negruzco con el vientre blanco",
+      "Fila de pequeños puntos blancos a lo largo de la línea lateral",
+      "Cabeza casi cónica con hocico redondeado y prominente",
+      "Tiene aletas pectorales; dorsal y anal unidas a la caudal"
+    ],
+    "en": [
+      "Very long, scaleless, eel-like body",
+      "Grey or blackish with a white belly",
+      "Row of small white dots along the lateral line",
+      "Almost conical head with a rounded, prominent snout",
+      "Has pectoral fins; dorsal and anal fins joined to the tail fin"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Muraena helena",
+      "es": "La morena no tiene aletas pectorales, sus aberturas branquiales son pequeños orificios y su piel es parda o gris con manchas.",
+      "en": "The moray lacks pectoral fins, its gill openings are small holes and its skin is brown or grey with spots."
+    },
+    {
+      "binomial": "Anguilla anguilla",
+      "es": "La anguila es menor, verde castaña, con la mandíbula inferior más larga que la superior.",
+      "en": "The European eel is smaller and greenish-brown, with the lower jaw longer than the upper."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son mucho mayores que los machos (unos 2 m frente a 1,2 m al madurar).",
+    "en": "Females are much larger than males (about 2 m versus 1.2 m at maturity)."
+  },
+  "trivia": {
+    "es": [
+      "Es la anguila más pesada del mundo."
+    ],
+    "en": [
+      "It is the heaviest eel in the world."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Conger conger",
+      "url": "https://es.wikipedia.org/wiki/Conger_conger",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European conger",
+      "url": "https://en.wikipedia.org/wiki/European_conger",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Muraena helena",
+      "url": "https://es.wikipedia.org/wiki/Muraena_helena",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Anguilla anguilla",
+      "url": "https://es.wikipedia.org/wiki/Anguilla_anguilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

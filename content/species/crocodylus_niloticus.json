@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Cocodrilo muy grande: machos de 3,5–5 m",
+      "Dorso bronce oscuro con manchas y bandas negruzcas difusas; vientre amarillo sucio",
+      "Flancos verde amarillentos con manchas oscuras en franjas oblicuas",
+      "Con la boca cerrada se ve el cuarto diente inferior, encajado en una muesca de la mandíbula superior",
+      "Hocico relativamente largo; ojos verdes"
+    ],
+    "en": [
+      "Very large crocodile: males 3.5–5 m long",
+      "Dark bronze back with faint blackish spots and stripes; dingy yellow belly",
+      "Yellowish-green flanks with dark patches in oblique stripes",
+      "With the mouth closed the enlarged fourth lower tooth shows, fitting into a notch in the upper jaw",
+      "Relatively long snout; green eyes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Alligator mississippiensis",
+      "es": "El aligátor tiene el hocico ancho en U, es más negruzco, y con la boca cerrada no se le ve el cuarto diente inferior.",
+      "en": "The American alligator has a broad U-shaped snout, is more blackish, and its fourth lower tooth is hidden when the mouth is closed."
+    },
+    {
+      "binomial": "Gavialis gangeticus",
+      "es": "El gavial tiene un hocico larguísimo y estrecho, y los machos llevan un bulto en la punta.",
+      "en": "The gharial has an extremely long, narrow snout, and males carry a knob at its tip."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser alrededor de un 30 % más pequeñas que los machos.",
+    "en": "Females are usually about 30% smaller than males."
+  },
+  "etymology": {
+    "es": "Crocodylus deriva del griego krokē (guijarro) y drilos (gusano), por su piel rugosa; niloticus = «del Nilo».",
+    "en": "Crocodylus derives from Greek krokē (pebble) and drilos (worm), for its rough skin; niloticus = 'from the Nile'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Nile crocodile",
+      "url": "https://en.wikipedia.org/wiki/Nile_crocodile",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Crocodylus niloticus",
+      "url": "https://es.wikipedia.org/wiki/Crocodylus_niloticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): American alligator",
+      "url": "https://en.wikipedia.org/wiki/American_alligator",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Gharial",
+      "url": "https://en.wikipedia.org/wiki/Gharial",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

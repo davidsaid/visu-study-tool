@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Rapaz mediana y compacta (40–58 cm) de cabeza redondeada",
+      "Plumaje muy variable, del pardo oscuro a tonos casi blancos",
+      "Cola corta, algo redondeada, con finas bandas y una banda subterminal oscura",
+      "A menudo una «U» clara en el pecho que separa el pecho oscuro de los flancos",
+      "En vuelo, alas anchas con puntas de las primarias oscuras y manchas claras en las rémiges"
+    ],
+    "en": [
+      "Medium-sized, compact raptor (40–58 cm) with a rounded head",
+      "Highly variable plumage, from dark brown to almost white",
+      "Short, slightly rounded tail, finely barred with a dark subterminal band",
+      "Often a pale 'U' across the breast separating the dark chest from the flanks",
+      "In flight, broad wings with dark primary tips and pale patches on the flight feathers"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Aquila chrysaetos",
+      "es": "El águila real es mucho mayor y de proporciones distintas, con nuca dorada y cola más larga.",
+      "en": "The golden eagle is far larger and differently proportioned, with a golden nape and longer tail."
+    },
+    {
+      "binomial": "Milvus migrans",
+      "es": "El milano negro tiene la cola larga y escotada, no corta y redondeada.",
+      "en": "The black kite has a long, notched tail rather than a short, rounded one."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son de media un 2–7 % mayores y un 15 % más pesadas que los machos.",
+    "en": "Females average 2–7% larger and about 15% heavier than males."
+  },
+  "etymology": {
+    "es": "buteo es la palabra latina para «busardo».",
+    "en": "buteo is the Latin word for a buzzard."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Buteo buteo",
+      "url": "https://es.wikipedia.org/wiki/Buteo_buteo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common buzzard",
+      "url": "https://en.wikipedia.org/wiki/Common_buzzard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Golden eagle",
+      "url": "https://en.wikipedia.org/wiki/Golden_eagle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Black kite",
+      "url": "https://en.wikipedia.org/wiki/Black_kite",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

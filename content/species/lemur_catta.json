@@ -1,0 +1,41 @@
+{
+  "field_marks": {
+    "es": [
+      "Cola larga y tupida, más larga que el cuerpo, con anillos alternos blancos y negros y punta negra",
+      "Cara estrecha y hocico parecido al de un zorro",
+      "Pecho y garganta blancos o crema",
+      "Dorso gris a pardo rosado",
+      "Constitución esbelta"
+    ],
+    "en": [
+      "Long bushy tail, longer than the body, with alternating black and white rings and a black tip",
+      "Narrow face with a fox-like muzzle",
+      "White or cream chest and throat",
+      "Grey to rosy-brown back",
+      "Slender build"
+    ]
+  },
+  "dimorphism": {
+    "es": "Dimorfismo leve: los machos tienen los caninos superiores algo más grandes que las hembras.",
+    "en": "Slight dimorphism: males have slightly larger upper canines than females."
+  },
+  "etymology": {
+    "es": "Lemur, del latín lemures, los espectros o espíritus de los muertos de la antigua Roma; catta alude a su aspecto de gato.",
+    "en": "Lemur, from Latin lemures, the ghosts or spirits of the dead in ancient Rome; catta refers to its cat-like appearance."
+  },
+  "sources": [
+    {
+      "title": "Lemur catta — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Lemur_catta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Ring-tailed lemur — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Ring-tailed_lemur",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

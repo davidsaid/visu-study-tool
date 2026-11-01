@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Ballenas, delfines y marsopas: unas 90 especies de mamíferos totalmente acuáticos que evolucionaron a partir de artiodáctilos terrestres y se clasifican dentro de Cetartiodactyla. En el bestiario: los odontocetos delfín listado, orca y cachalote, y los misticetos yubarta y ballena franca.",
+    "en": "Whales, dolphins and porpoises: about 90 species of fully aquatic mammals that evolved from terrestrial artiodactyls and are classified within Cetartiodactyla. In the bestiary: the toothed whales striped dolphin, orca and sperm whale, and the baleen whales humpback and North Atlantic right whale."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo fusiforme como el de un pez, con aletas pectorales y casi siempre aleta dorsal",
+      "Aleta caudal horizontal de dos lóbulos que baten de arriba abajo",
+      "Sin patas traseras externas; solo huesos vestigiales internos",
+      "Espiráculo en lo alto de la cabeza: un orificio en los odontocetos y dos en los misticetos",
+      "Sin pelo de adultos; gruesa capa de grasa aislante"
+    ],
+    "en": [
+      "Fish-like streamlined body with flippers and usually a dorsal fin",
+      "Horizontal two-lobed tail fluke beaten up and down",
+      "No external hind limbs; only internal vestigial bones",
+      "Blowhole on top of the head: one opening in toothed whales, two in baleen whales",
+      "Hairless as adults; thick insulating blubber"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los peces, cuya aleta caudal es vertical, ni con los sirenios, herbívoros sin aleta dorsal. Los misticetos filtran el alimento con barbas de queratina en lugar de dientes.",
+    "en": "Do not confuse with fish, whose tail fin is vertical, or with sirenians, herbivores without a dorsal fin. Baleen whales filter food with keratin baleen plates instead of teeth."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Cetacean",
+      "url": "https://en.wikipedia.org/wiki/Cetacean",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Cetacea",
+      "url": "https://es.wikipedia.org/wiki/Cetacea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Sirenia",
+      "url": "https://en.wikipedia.org/wiki/Sirenia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez pequeño, robusto, de color gris apagado y abdomen grande",
+      "Boca súpera, abierta hacia arriba",
+      "Dorsal y caudal redondeadas",
+      "Macho con la aleta anal puntiaguda (gonopodio); hembra con una mancha oscura de gestación al final del abdomen"
+    ],
+    "en": [
+      "Small, stout, dull grey fish with a large abdomen",
+      "Upturned mouth",
+      "Rounded dorsal and tail fins",
+      "Male with a pointed anal fin (gonopodium); female with a dark gravid spot at the rear of the abdomen"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Poecilia reticulata",
+      "es": "El macho del guppy tiene manchas o rayas de colores y aletas caudal y dorsal ornamentales; la gambusia es gris y sin adornos.",
+      "en": "The male guppy has coloured spots or stripes and ornamental tail and dorsal fins; the mosquitofish is plain grey."
+    }
+  ],
+  "dimorphism": {
+    "es": "Fuerte dimorfismo: las hembras llegan a 7 cm y los machos solo a 4 cm, con la anal transformada en gonopodio.",
+    "en": "Strong dimorphism: females reach 7 cm and males only 4 cm, with the anal fin modified into a gonopodium."
+  },
+  "etymology": {
+    "es": "Gambusia procede del español cubano gambusino, «inútil».",
+    "en": "Gambusia comes from Cuban Spanish gambusino, 'useless'."
+  },
+  "trivia": {
+    "es": [
+      "Se ha introducido en todo el mundo contra los mosquitos y figura entre las 100 especies invasoras más dañinas."
+    ],
+    "en": [
+      "It has been introduced worldwide against mosquitoes and is listed among the 100 worst invasive species."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Gambusia affinis",
+      "url": "https://es.wikipedia.org/wiki/Gambusia_affinis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Mosquitofish",
+      "url": "https://en.wikipedia.org/wiki/Mosquitofish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Guppy",
+      "url": "https://en.wikipedia.org/wiki/Guppy",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

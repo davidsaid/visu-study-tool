@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "Garza grande (84–102 cm) de cuello y patas largos, gris por encima y gris blanquecina por debajo",
+      "Cabeza y cuello blancos con una ancha ceja negra que acaba en un fino penacho",
+      "Línea de trazos negro azulados en la parte delantera del cuello; manchas negras en los hombros y flancos",
+      "Pico largo, recto y fuerte, rosado amarillento; iris amarillo y patas pardas",
+      "Vuela despacio con el cuello recogido en S y las alas arqueadas"
+    ],
+    "en": [
+      "Large heron (84–102 cm) with long neck and legs, grey above and greyish-white below",
+      "White head and neck with a broad black eyebrow ending in a slender crest",
+      "Bluish-black streaks down the front of the neck; black on the shoulders and flanks",
+      "Long, straight, powerful pinkish-yellow bill; yellow iris and brown legs",
+      "Slow flight with the neck retracted in an S and arched wings"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Grus grus",
+      "es": "La grulla vuela con el cuello extendido y tiene el píleo rojo y una banda blanca en el cuello negruzco.",
+      "en": "The common crane flies with its neck extended and has a red crown and a white stripe on a blackish neck."
+    },
+    {
+      "binomial": "Egretta garzetta",
+      "es": "La garceta común es mucho menor y enteramente blanca, con pico negro.",
+      "en": "The little egret is much smaller and all white, with a black bill."
+    }
+  ],
+  "etymology": {
+    "es": "Ardea significa en latín «garza» y cinereus, «gris ceniza».",
+    "en": "Ardea is Latin for 'heron' and cinereus means 'ash-grey'."
+  },
+  "trivia": {
+    "es": [
+      "Los inmaduros tienen la cabeza gris, sin la ceja negra, y solo un pequeño penacho gris oscuro."
+    ],
+    "en": [
+      "Immatures have a grey head without the black eyebrow and only a small dark grey crest."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Ardea cinerea",
+      "url": "https://es.wikipedia.org/wiki/Ardea_cinerea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Grey heron",
+      "url": "https://en.wikipedia.org/wiki/Grey_heron",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Grus grus",
+      "url": "https://es.wikipedia.org/wiki/Grus_grus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Egretta garzetta",
+      "url": "https://es.wikipedia.org/wiki/Egretta_garzetta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

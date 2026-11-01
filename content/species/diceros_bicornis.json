@@ -1,0 +1,59 @@
+{
+  "field_marks": {
+    "es": [
+      "Dos cuernos: el delantero, mayor (unos 50 cm)",
+      "Labio superior puntiagudo y prensil, en forma de gancho",
+      "Gris algo más oscuro que el rinoceronte blanco",
+      "Lleva la cabeza alta, propia de ramoneador"
+    ],
+    "en": [
+      "Two horns, the front one larger (about 50 cm)",
+      "Pointed, prehensile, hook-shaped upper lip",
+      "Slightly darker grey than the white rhino",
+      "Carries its head high, as a browser"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ceratotherium simum",
+      "es": "El rinoceronte blanco es mayor, tiene el labio ancho y cuadrado y lleva la cabeza baja para pastar.",
+      "en": "The white rhino is larger, has a broad square lip and carries its head low to graze."
+    },
+    {
+      "binomial": "Rhinoceros unicornis",
+      "es": "El rinoceronte indio tiene un solo cuerno y la piel en placas con bultos verrugosos.",
+      "en": "The Indian rhino has one horn and plated skin with wart-like bumps."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son más pequeñas que los machos.",
+    "en": "Cows are smaller than bulls."
+  },
+  "etymology": {
+    "es": "El nombre significa «rinoceronte de dos cuernos».",
+    "en": "The name means 'double-horned rhinoceros'."
+  },
+  "trivia": {
+    "es": [
+      "Lo de «blanco» del otro rinoceronte se suele atribuir a una mala interpretación del afrikáans wyd, «ancho», por su labio."
+    ],
+    "en": [
+      "The 'white' of the other rhino is often said to be a misreading of Afrikaans wyd, 'wide', for its lip."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Diceros bicornis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Diceros_bicornis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Black rhinoceros — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Black_rhinoceros",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,53 @@
+{
+  "field_marks": {
+    "es": [
+      "Cánido pequeño de pelaje generalmente pardo rojizo a rojo anaranjado",
+      "Dorso de las orejas negro y extremos de las patas negros",
+      "Cola larga y muy poblada con la punta blanca",
+      "Vientre y garganta blanquecinos; hocico estrecho",
+      "Existen formas melánicas, grises o «plateadas»"
+    ],
+    "en": [
+      "Small canid, usually reddish-brown to orange-red",
+      "Black backs to the ears and black lower legs",
+      "Long, very bushy tail with a white tip",
+      "Whitish belly and throat; narrow muzzle",
+      "Melanistic, grey or 'silver' forms occur"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Chrysocyon brachyurus",
+      "es": "El lobo de crin se le parece mucho, pero es mucho más alto, con patas negras muy largas y crin oscura.",
+      "en": "The maned wolf closely resembles it but is far taller, with very long black legs and a dark mane."
+    },
+    {
+      "binomial": "Canis lupus",
+      "es": "El lobo es mucho mayor y grisáceo, con hocico ancho y cola menos poblada.",
+      "en": "The wolf is much larger and greyish, with a broad muzzle and a less bushy tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son alrededor de un 15 % mayores que las hembras.",
+    "en": "Males are about 15% larger than females."
+  },
+  "etymology": {
+    "es": "Vulpes vulpes es una tautonimia: vulpes significa «zorro» en latín.",
+    "en": "Vulpes vulpes is a tautonym: vulpes is Latin for 'fox'."
+  },
+  "sources": [
+    {
+      "title": "Vulpes vulpes — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Vulpes_vulpes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Red fox — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Red_fox",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

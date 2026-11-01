@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Tortuga de agua dulce enorme, con cabeza grande y pesada",
+      "Caparazón con tres hileras de grandes escamas en cresta, como un anquilosaurio",
+      "Gris, pardo, negro u oliva, a menudo cubierta de algas",
+      "Dibujos amarillos radiales alrededor de los ojos y «pestañas» carnosas en estrella",
+      "Cola larga y gruesa; apéndice en forma de gusano en la lengua"
+    ],
+    "en": [
+      "Huge freshwater turtle with a large, heavy head",
+      "Carapace with three ridges of large raised scales, like an ankylosaur",
+      "Grey, brown, black or olive, often covered in algae",
+      "Radiating yellow patterns around the eyes and star-like fleshy 'eyelashes'",
+      "Long, thick tail; worm-like lure on the tongue"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "En los machos maduros la cloaca sobresale del borde del caparazón y la base de la cola es más gruesa.",
+    "en": "In mature males the cloaca extends beyond the shell edge and the tail base is thicker."
+  },
+  "etymology": {
+    "es": "temminckii honra al zoólogo neerlandés Coenraad Jacob Temminck.",
+    "en": "temminckii honours the Dutch zoologist Coenraad Jacob Temminck."
+  },
+  "trivia": {
+    "es": [
+      "Caza inmóvil con la boca abierta, moviendo el apéndice de la lengua para atraer peces."
+    ],
+    "en": [
+      "It hunts motionless with its mouth open, wiggling its tongue lure to attract fish."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Macrochelys temminckii",
+      "url": "https://es.wikipedia.org/wiki/Macrochelys_temminckii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Alligator snapping turtle",
+      "url": "https://en.wikipedia.org/wiki/Alligator_snapping_turtle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

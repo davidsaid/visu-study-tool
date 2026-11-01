@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Peces «de mejillas acorazadas»: peces escorpión, peces piedra, peces león y cótidos, uno de los cinco mayores órdenes de peces óseos, con más de 1320 especies; a veces se incluye en los perciformes. En el bestiario: el cabracho (Scorpaena scrofa).",
+    "en": "'Mail-cheeked' fishes: scorpionfishes, stonefishes, lionfishes and sculpins, one of the five largest orders of bony fishes, with over 1,320 species; sometimes included in Perciformes. In the bestiary: the red scorpionfish (Scorpaena scrofa)."
+  },
+  "traits": {
+    "es": [
+      "Estancia suborbital: prolongación del tercer hueso infraorbital que cruza la mejilla hasta el preopérculo",
+      "Cabeza y cuerpo espinosos o cubiertos de placas óseas",
+      "Espinas venenosas en muchas especies",
+      "Aletas pectorales redondeadas, a veces enormes; cola normalmente redondeada"
+    ],
+    "en": [
+      "Suborbital stay: an extension of the third infraorbital bone across the cheek to the preoperculum",
+      "Spiny head and body, or covered in bony plates",
+      "Venomous spines in many species",
+      "Rounded, sometimes huge, pectoral fins; tail usually rounded"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Scorpaeniformes",
+      "url": "https://en.wikipedia.org/wiki/Scorpaeniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Scorpaeniformes",
+      "url": "https://es.wikipedia.org/wiki/Scorpaeniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

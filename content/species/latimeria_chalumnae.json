@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez grande y robusto (1,5–2 m) de cabeza grande, boca ancha y ojos grandes",
+      "Azul intenso o negro azulado con manchas blancas o rosadas",
+      "Aletas lobuladas con base muscular, como patas",
+      "Cola trilobulada, un rasgo insólito",
+      "Escamas grandes, gruesas y duras"
+    ],
+    "en": [
+      "Large, heavy fish (1.5–2 m) with a big head, wide mouth and large eyes",
+      "Deep royal blue or bluish black with white or pinkish spots",
+      "Lobed, muscular-based fins, like limbs",
+      "Three-lobed tail, an unusual trait",
+      "Large, thick, hard scales"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Las hembras son más grandes que los machos.",
+    "en": "Females are larger than males."
+  },
+  "etymology": {
+    "es": "Latimeria honra a Marjorie Courtenay-Latimer, que halló el primer ejemplar en 1938; chalumnae alude al río Chalumna (Sudáfrica), donde se encontró.",
+    "en": "Latimeria honours Marjorie Courtenay-Latimer, who found the first specimen in 1938; chalumnae refers to the Chalumna River (South Africa), where it was found."
+  },
+  "trivia": {
+    "es": [
+      "Se creía extinguido desde el Mesozoico hasta que se capturó un ejemplar en 1938."
+    ],
+    "en": [
+      "Coelacanths were thought extinct since the Mesozoic until one was caught in 1938."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Latimeria chalumnae",
+      "url": "https://es.wikipedia.org/wiki/Latimeria_chalumnae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): West Indian Ocean coelacanth",
+      "url": "https://en.wikipedia.org/wiki/West_Indian_Ocean_coelacanth",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

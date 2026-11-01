@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "El cérvido más alto y pesado (1,4–2,1 m a la cruz)",
+      "Astas del macho anchas y palmeadas, con puntas en el borde exterior",
+      "Nariz grande y labio superior prensil",
+      "Colgajo de piel bajo la barbilla (papada)",
+      "Cola vestigial, de apenas 5–12 cm"
+    ],
+    "en": [
+      "The tallest and heaviest deer (1.4–2.1 m at the shoulder)",
+      "Bull's antlers broad and palmate, with tines along the outer edge",
+      "Large nose and prehensile upper lip",
+      "Fold of skin hanging under the chin (dewlap or bell)",
+      "Vestigial tail, only 5–12 cm"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cervus elaphus",
+      "es": "El ciervo es mucho menor y sus astas son ramificadas, no palmeadas.",
+      "en": "The red deer is much smaller and its antlers are branched, not palmate."
+    },
+    {
+      "binomial": "Dama dama",
+      "es": "El gamo también tiene astas palmeadas, pero es pequeño y moteado de blanco en verano.",
+      "en": "The fallow deer also has palmate antlers, but it is small and white-spotted in summer."
+    }
+  ],
+  "dimorphism": {
+    "es": "Solo los machos tienen astas; pesan 380–700 kg frente a 200–490 kg de las hembras.",
+    "en": "Only bulls have antlers; they weigh 380–700 kg against 200–490 kg for cows."
+  },
+  "sources": [
+    {
+      "title": "Alces alces — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Alces_alces",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Moose — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Moose",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

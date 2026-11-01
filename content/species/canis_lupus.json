@@ -1,0 +1,53 @@
+{
+  "field_marks": {
+    "es": [
+      "El mayor cánido salvaje: cuerpo esbelto y potente, pecho profundo y espalda inclinada",
+      "Cabeza grande con frente ancha y hocico largo y romo",
+      "Orejas relativamente pequeñas y triangulares",
+      "Pelaje denso de dos capas, típicamente grisáceo, que lo hace parecer más voluminoso",
+      "Patas largas y ojos amarillos"
+    ],
+    "en": [
+      "The largest wild canid: slender yet powerful, with a deep chest and sloping back",
+      "Large head with a broad forehead and long, blunt muzzle",
+      "Relatively small, triangular ears",
+      "Dense two-layered coat, typically greyish, making it look bulkier",
+      "Long legs and yellow eyes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Vulpes vulpes",
+      "es": "El zorro es mucho más pequeño, rojizo, de hocico fino y cola muy poblada con punta blanca.",
+      "en": "The red fox is far smaller and reddish, with a narrow muzzle and a bushy white-tipped tail."
+    },
+    {
+      "binomial": "Chrysocyon brachyurus",
+      "es": "El lobo de crin es rojizo, con patas negras larguísimas y orejas enormes.",
+      "en": "The maned wolf is reddish, with very long black legs and huge ears."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras pesan en torno a un 20 % menos que los machos.",
+    "en": "Females weigh about 20% less than males."
+  },
+  "etymology": {
+    "es": "Canis significa «perro» en latín; lupus es la palabra latina para «lobo».",
+    "en": "Canis is Latin for 'dog'; lupus is the Latin word for 'wolf'."
+  },
+  "sources": [
+    {
+      "title": "Canis lupus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Canis_lupus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wolf — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Wolf",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

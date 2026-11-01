@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Dos jorobas pequeñas, bajas y cónicas",
+      "Lana siempre de color arena, corta y escasa",
+      "Cuerpo ágil, patas finas y pies muy estrechos",
+      "Fosas nasales en hendidura y doble fila de pestañas largas"
+    ],
+    "en": [
+      "Two small, low, conical humps",
+      "Wool always sandy-coloured, short and sparse",
+      "Lithe body, slender legs and very narrow feet",
+      "Slit-like nostrils and a double row of long eyelashes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Camelus bactrianus",
+      "es": "El camello bactriano doméstico es mayor, con jorobas más grandes y lana más larga y densa.",
+      "en": "The domestic Bactrian camel is larger, with bigger humps and longer, denser wool."
+    }
+  ],
+  "etymology": {
+    "es": "ferus = «salvaje» o «asilvestrado» (latín).",
+    "en": "ferus = 'wild' or 'feral' (Latin)."
+  },
+  "trivia": {
+    "es": [
+      "Puede beber agua más salada que el agua de mar, algo que no tolera el camello doméstico."
+    ],
+    "en": [
+      "It can drink water saltier than seawater, which the domestic camel cannot tolerate."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Camelus ferus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Camelus_ferus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wild Bactrian camel — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Wild_Bactrian_camel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

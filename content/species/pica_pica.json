@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Córvido blanco y negro (44–46 cm), más de la mitad cola",
+      "Cabeza, cuello, pecho e infracoberteras negros con brillo verde y violeta",
+      "Vientre y escapulares blanco puro",
+      "Larga cola escalonada negra con brillo verde y púrpura",
+      "Alas cortas y redondeadas; primarias con blanco visible al abrir el ala; pico y patas negros"
+    ],
+    "en": [
+      "Black-and-white corvid (44–46 cm), more than half of it tail",
+      "Head, neck, breast and vent glossy black with green and violet sheen",
+      "Pure white belly and scapulars",
+      "Long, graduated black tail glossed green and purple",
+      "Short, rounded wings; primaries show white when the wing opens; black bill and legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cyanopica cooki",
+      "es": "El rabilargo es menor y más esbelto, con capirote negro, cuerpo leonado y alas y cola azules, sin blanco y negro.",
+      "en": "The Iberian magpie is smaller and slimmer, with a black cap, fawn body and blue wings and tail, not black and white."
+    }
+  ],
+  "dimorphism": {
+    "es": "El plumaje es igual en ambos sexos; las hembras son algo menores.",
+    "en": "The plumage is the same in both sexes; females are slightly smaller."
+  },
+  "etymology": {
+    "es": "Pica es la palabra latina clásica para la urraca.",
+    "en": "Pica is the Classical Latin word for this magpie."
+  },
+  "trivia": {
+    "es": [
+      "Se considera una de las aves más inteligentes; su nidopalio tiene un tamaño relativo similar al de chimpancés y humanos."
+    ],
+    "en": [
+      "It is considered one of the most intelligent birds; its nidopallium is about the same relative size as in chimpanzees and humans."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Pica pica",
+      "url": "https://es.wikipedia.org/wiki/Pica_pica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian magpie",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_magpie",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Cyanopica cooki",
+      "url": "https://es.wikipedia.org/wiki/Cyanopica_cooki",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

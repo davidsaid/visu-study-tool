@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Gran lagarto arborícola verde, de hasta 1,7–2 m con la cola",
+      "Cresta de escamas largas en forma de espinas desde la nuca hasta la cola",
+      "Gran papada bajo la barbilla, con el borde aserrado por escamas triangulares",
+      "Escudo circular grande a cada lado de la cabeza",
+      "Cola muy larga, en látigo, algo aplanada lateralmente"
+    ],
+    "en": [
+      "Large green tree lizard, up to 1.7–2 m including the tail",
+      "Crest of long spine-like scales from the nape to the tail",
+      "Large dewlap under the chin, its edge serrated with triangular scales",
+      "Large round shield on each side of the head",
+      "Very long, whip-like tail, somewhat flattened from side to side"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Amblyrhynchus cristatus",
+      "es": "La iguana marina es negruzca o gris, de cuerpo macizo y hocico romo, con escamas cónicas puntiagudas en la cabeza.",
+      "en": "The marine iguana is blackish or grey, thickset and blunt-snouted, with pointed conical scales on the head."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen la cresta y la papada mayores y pueden volverse anaranjados en celo.",
+    "en": "Males have a larger crest and dewlap and may turn orange in the breeding season."
+  },
+  "etymology": {
+    "es": "«Iguana» procede de una forma española del nombre taíno de la especie, iwana.",
+    "en": "'Iguana' comes from a Spanish form of the species' Taíno name, iwana."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Iguana iguana",
+      "url": "https://es.wikipedia.org/wiki/Iguana_iguana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Green iguana",
+      "url": "https://en.wikipedia.org/wiki/Green_iguana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Marine iguana",
+      "url": "https://en.wikipedia.org/wiki/Marine_iguana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

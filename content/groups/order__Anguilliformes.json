@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Anguilas verdaderas: unas 1000 especies de teleósteos de cuerpo serpentiforme, casi todas marinas; solo las del género Anguilla viven habitualmente en agua dulce y vuelven al mar a reproducirse. En el bestiario: la anguila, el congrio y la morena.",
+    "en": "True eels: about 1,000 species of snake-shaped teleosts, nearly all marine; only Anguilla regularly lives in fresh water, returning to the sea to breed. In the bestiary: the European eel, the European conger and the Mediterranean moray."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo muy alargado, de serpiente",
+      "Sin aletas pélvicas; muchas especies tampoco tienen pectorales",
+      "Aletas dorsal y anal fusionadas con la caudal en una sola cinta continua",
+      "Piel desnuda o con escamas cicloideas embebidas; abertura branquial estrecha y retrasada",
+      "Larva leptocéfala, plana y transparente"
+    ],
+    "en": [
+      "Very elongated, snake-like body",
+      "No pelvic fins; many species also lack pectorals",
+      "Dorsal and anal fins fused with the tail fin into a single continuous ribbon",
+      "Naked skin or embedded cycloid scales; narrow gill opening set far back",
+      "Flat, transparent leptocephalus larva"
+    ]
+  },
+  "contrast": {
+    "es": "Otros peces «anguila», como la anguila eléctrica (Gymnotiformes) o los mixinos,, adquirieron su forma alargada de manera independiente y no son anguilas verdaderas.",
+    "en": "Other 'eels', such as the electric eel (Gymnotiformes) or hagfishes,, evolved their elongated shape independently and are not true eels."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Eel",
+      "url": "https://en.wikipedia.org/wiki/Eel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Anguilliformes",
+      "url": "https://es.wikipedia.org/wiki/Anguilliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

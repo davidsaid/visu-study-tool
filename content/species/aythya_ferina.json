@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Pato buceador mediano (42–49 cm) con la cabeza de perfil triangular",
+      "Macho: cabeza y cuello castaño rojizos, pecho y cola negros, cuerpo gris claro",
+      "Macho: iris rojo; pico oscuro con una banda gris azulada en el centro",
+      "Hembra: parda por delante y pardo grisácea por detrás, con una línea clara tras el ojo e iris pardo",
+      "Patas grises en todas las edades"
+    ],
+    "en": [
+      "Medium-sized diving duck (42–49 cm) with a triangular head profile",
+      "Male: chestnut head and neck, black breast and tail, pale grey body",
+      "Male: red iris; dark bill with a blue-grey central band",
+      "Female: brown in front and greyish-brown behind, with a pale line behind the eye and a brown iris",
+      "Grey legs at all ages"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Anas platyrhynchos",
+      "es": "El macho de azulón tiene la cabeza verde con collar blanco y el pecho castaño, no negro.",
+      "en": "The male mallard has a green head with a white collar and a chestnut, not black, breast."
+    }
+  ],
+  "dimorphism": {
+    "es": "Como la mayoría de los patos, es sexualmente dimórfico: el macho tiene la cabeza castaña y el cuerpo gris; la hembra es parda.",
+    "en": "Like most ducks it is sexually dimorphic: the male has a chestnut head and grey body; the female is brown."
+  },
+  "etymology": {
+    "es": "Aythya procede del griego aíthyia, un ave marina no identificada citada por Aristóteles; ferina significa en latín «caza, animal salvaje» (de ferus, «salvaje»).",
+    "en": "Aythya derives from Greek aithuia, an unidentified seabird mentioned by Aristotle; ferina is Latin for 'wild game' (from ferus, 'wild')."
+  },
+  "trivia": {
+    "es": [
+      "El nombre «porrón» es el aumentativo de «porro», que significa «torpe»."
+    ],
+    "en": [
+      "The Spanish name 'porrón' is the augmentative of 'porro', meaning 'clumsy'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Aythya ferina",
+      "url": "https://es.wikipedia.org/wiki/Aythya_ferina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common pochard",
+      "url": "https://en.wikipedia.org/wiki/Common_pochard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Anas platyrhynchos",
+      "url": "https://es.wikipedia.org/wiki/Anas_platyrhynchos",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico ancho y plano como un pico de pato, de piel blanda",
+      "Cola ancha y aplanada, cubierta de pelo, parecida a la de un castor",
+      "Patas cortas y palmeadas, con más membrana en las delanteras",
+      "Pelaje pardo oscuro por encima y más claro por debajo"
+    ],
+    "en": [
+      "Broad, flat duck-like bill covered in soft skin",
+      "Wide, flat, furry beaver-like tail",
+      "Short webbed feet, with more webbing on the front feet",
+      "Dark brown fur above, paler below"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Castor fiber",
+      "es": "La cola del castor es escamosa, mientras que la del ornitorrinco es peluda; además, este tiene pico de pato.",
+      "en": "The beaver's tail is scaly, whereas the platypus's is furry; the platypus also has a duck-like bill."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mayores (unos 50 cm y 1,7 kg frente a 43 cm y 0,9 kg) y tienen un espolón venenoso en las patas traseras.",
+    "en": "Males are larger (about 50 cm and 1.7 kg vs 43 cm and 0.9 kg) and carry a venomous spur on the hind feet."
+  },
+  "etymology": {
+    "es": "Ornithorhynchus = «hocico de ave» (griego ornis, «ave», + rhynchos, «hocico, pico»); anatinus = «de pato» (latín anas, «pato»).",
+    "en": "Ornithorhynchus = 'bird snout' (Greek ornis, 'bird', + rhynchos, 'snout, beak'); anatinus = 'duck-like' (Latin anas, 'duck')."
+  },
+  "trivia": {
+    "es": [
+      "Los primeros científicos británicos que examinaron un ejemplar creyeron que era una falsificación cosida a partir de varios animales.",
+      "Es uno de los pocos mamíferos venenosos."
+    ],
+    "en": [
+      "The first British scientists to examine a specimen thought it was a fake sewn together from several animals.",
+      "It is one of the few venomous mammals."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Ornithorhynchus anatinus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Ornithorhynchus_anatinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Platypus — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Platypus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

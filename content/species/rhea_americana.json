@@ -1,0 +1,64 @@
+{
+  "field_marks": {
+    "es": [
+      "Gran ave corredora no voladora de plumaje gris",
+      "Negro en la base del cuello, el pecho y el píleo, más marcado en el macho",
+      "Piel desnuda y rugosa alrededor de los ojos",
+      "Patas largas sin plumas, con tres dedos",
+      "Alas relativamente largas que abre al girar en carrera"
+    ],
+    "en": [
+      "Large flightless running bird with grey plumage",
+      "Black on the neck base, breast and crown, more marked in the male",
+      "Bare, wrinkled skin around the eyes",
+      "Long featherless legs with three toes",
+      "Fairly long wings, used for balance in sharp turns"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Struthio camelus",
+      "es": "El avestruz es mucho más alto, el macho es negro y blanco, y solo tiene dos dedos por pata.",
+      "en": "The ostrich is much taller, the male is black and white, and it has only two toes per foot."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho es mayor y tiene el negro del cuello, pecho y cabeza más destacado.",
+    "en": "The male is larger, with more prominent black on the neck, breast and head."
+  },
+  "etymology": {
+    "es": "Rhea procede de Rea, diosa griega madre de seis olímpicos; los motivos de Brisson para elegir este nombre son desconocidos.",
+    "en": "Rhea comes from Rhea, the Greek goddess and mother of six Olympians; Brisson's reasons for choosing the name are unknown."
+  },
+  "trivia": {
+    "es": [
+      "«Ñandú» viene del guaraní ñandu guasu, «araña grande».",
+      "Desde la década de 2000 existe una población asilvestrada en el norte de Alemania."
+    ],
+    "en": [
+      "'Ñandú' comes from Guaraní ñandu guasu, 'big spider'.",
+      "A feral population has established itself in northern Germany since the 2000s."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Rhea americana",
+      "url": "https://es.wikipedia.org/wiki/Rhea_americana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Greater rhea",
+      "url": "https://en.wikipedia.org/wiki/Greater_rhea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Struthio camelus",
+      "url": "https://es.wikipedia.org/wiki/Struthio_camelus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

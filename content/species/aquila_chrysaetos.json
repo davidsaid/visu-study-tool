@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Águila grande, de plumaje castaño oscuro",
+      "Nuca y cuello dorados",
+      "Patas emplumadas hasta los dedos («águila calzada»)",
+      "Inmaduros con blanco en la base de la cola y a menudo manchas blancas en las alas",
+      "Planea con las alas levantadas en V"
+    ],
+    "en": [
+      "Large eagle with dark brown plumage",
+      "Golden nape and hindneck",
+      "Legs feathered down to the toes ('booted eagle')",
+      "Immatures with white at the tail base and often white wing patches",
+      "Soars with wings raised in a V (dihedral)"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Aquila adalberti",
+      "es": "El águila imperial ibérica es más negruzca, tiene charreteras blancas y la nuca leonado pálida, no dorada.",
+      "en": "The Spanish imperial eagle is blacker, with white epaulettes and a pale tawny, not golden, nape."
+    },
+    {
+      "binomial": "Buteo buteo",
+      "es": "El busardo ratonero es mucho menor, de cabeza redondeada y cola corta y barrada.",
+      "en": "The common buzzard is far smaller, with a rounded head and a short barred tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Como en la mayoría de las rapaces, la hembra es mayor que el macho.",
+    "en": "As in most raptors, the female is larger than the male."
+  },
+  "etymology": {
+    "es": "Aquila es «águila» en latín, quizá de aquilus, «oscuro»; chrysaetos, del griego khrysós «oro» y aetós «águila», es decir «águila dorada».",
+    "en": "Aquila is Latin for 'eagle', possibly from aquilus, 'dark'; chrysaetos is Greek for the golden eagle, from khrusos 'gold' and aetos 'eagle'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Aquila chrysaetos",
+      "url": "https://es.wikipedia.org/wiki/Aquila_chrysaetos",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Golden eagle",
+      "url": "https://en.wikipedia.org/wiki/Golden_eagle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Spanish imperial eagle",
+      "url": "https://en.wikipedia.org/wiki/Spanish_imperial_eagle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common buzzard",
+      "url": "https://en.wikipedia.org/wiki/Common_buzzard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

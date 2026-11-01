@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Gran simio de pelo largo y rojizo, más pálido que el del orangután de Borneo",
+      "Cuerpo más delgado y cara más alargada que la especie de Borneo",
+      "Los machos adultos desarrollan expansiones en las mejillas (rebordes faciales) y barba",
+      "Rostro oscuro en adultos; las crías tienen zonas claras alrededor de ojos y hocico"
+    ],
+    "en": [
+      "Great ape with long reddish hair, paler than in the Bornean orangutan",
+      "Slimmer body and longer face than the Bornean species",
+      "Adult males grow cheek flanges and a beard",
+      "Dark face in adults; infants have pale zones around the eyes and muzzle"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pan troglodytes",
+      "es": "El chimpancé tiene el pelaje marrón oscuro, no rojizo, y los machos carecen de rebordes en las mejillas.",
+      "en": "The chimpanzee has dark brown, not reddish, fur and males lack cheek flanges."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mucho mayores (≈90 kg) que las hembras (≈45 kg) y tienen rebordes faciales y barba.",
+    "en": "Males are much larger (≈90 kg) than females (≈45 kg) and have cheek flanges and a beard."
+  },
+  "sources": [
+    {
+      "title": "Sumatran orangutan — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Sumatran_orangutan",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pongo abelii — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Pongo_abelii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

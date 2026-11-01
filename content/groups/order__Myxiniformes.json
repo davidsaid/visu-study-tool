@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Único orden actual de los mixinos (clase Myxini), con una sola familia, Myxinidae. En el bestiario: el mixino (Myxine glutinosa).",
+    "en": "The only living order of hagfishes (class Myxini), with a single family, Myxinidae. In the bestiary: the Atlantic hagfish (Myxine glutinosa)."
+  },
+  "traits": {
+    "es": [
+      "Sin mandíbulas",
+      "Piel desnuda que envuelve el cuerpo como un calcetín holgado",
+      "Barbillas alrededor de la boca y un solo orificio nasal",
+      "Sin aletas verdaderas; cráneo cartilaginoso y vértebras solo rudimentarias"
+    ],
+    "en": [
+      "No jaws",
+      "Naked skin that covers the body like a loose sock",
+      "Barbels around the mouth and a single nostril",
+      "No true fins; cartilaginous skull and only rudimentary vertebrae"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las lampreas (Petromyzontiformes), que tienen boca en ventosa, siete poros branquiales a cada lado y carecen de barbillas.",
+    "en": "Do not confuse with lampreys (Petromyzontiformes), which have a sucker mouth, seven gill pores on each side and no barbels."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Hagfish",
+      "url": "https://en.wikipedia.org/wiki/Hagfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Myxini",
+      "url": "https://es.wikipedia.org/wiki/Myxini",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Somormujos y zampullines: aves acuáticas buceadoras de agua dulce, con una sola familia (Podicipedidae) y 22 especies. Aunque recuerdan a colimbos y fochas, sus parientes más cercanos son los flamencos. En el bestiario: el somormujo lavanco (Podiceps cristatus).",
+    "en": "Grebes: freshwater diving birds with a single family (Podicipedidae) and 22 species. Although they resemble loons and coots, their closest relatives are flamingos. In the bestiary: the great crested grebe (Podiceps cristatus)."
+  },
+  "traits": {
+    "es": [
+      "Dedos lobulados, con pequeñas membranas entre los tres dedos anteriores",
+      "Patas situadas muy atrás en el cuerpo: torpes en tierra",
+      "Nadan bajos en el agua, con solo la cabeza y el cuello fuera",
+      "Huesos densos que reducen la flotabilidad; plumaje muy denso"
+    ],
+    "en": [
+      "Lobed toes, with small webs joining the three front toes",
+      "Feet set far back on the body: clumsy on land",
+      "Swim low in the water with only the head and neck showing",
+      "Dense bones that reduce buoyancy; very dense plumage"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con patos (Anseriformes), que tienen patas palmeadas y pico ancho con laminillas, ni con fochas (Gruiformes), que tienen escudo frontal.",
+    "en": "Do not confuse with ducks (Anseriformes), which have webbed feet and a broad lamellate bill, or with coots (Gruiformes), which have a frontal shield."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Grebe",
+      "url": "https://en.wikipedia.org/wiki/Grebe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Podicipedidae",
+      "url": "https://es.wikipedia.org/wiki/Podicipedidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Coot",
+      "url": "https://en.wikipedia.org/wiki/Coot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

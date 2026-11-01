@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Superorden de placentarios de origen africano, reconocido gracias a estudios genéticos: musarañas elefante, tenrecs y topos dorados, cerdo hormiguero, damanes, elefantes y sirenios. Sus miembros se parecen poco entre sí. En el bestiario: Macroscelidea, Tubulidentata, Hyracoidea, Proboscidea y Sirenia.",
+    "en": "A superorder of placentals of African origin, recognised through genetic studies: elephant shrews, tenrecs and golden moles, aardvark, hyraxes, elephants and sirenians. Its members look little alike. In the bestiary: Macroscelidea, Tubulidentata, Hyracoidea, Proboscidea and Sirenia."
+  },
+  "traits": {
+    "es": [
+      "Número elevado de vértebras",
+      "Testículos que no descienden y quedan junto a los riñones",
+      "Erupción tardía de la dentición definitiva",
+      "Hocico largo y móvil en varias especies (musarañas elefante, elefantes)"
+    ],
+    "en": [
+      "High vertebral counts",
+      "Undescended testes that stay near the kidneys",
+      "Late eruption of the permanent teeth",
+      "Long, mobile snout in several species (elephant shrews, elephants)"
+    ]
+  },
+  "contrast": {
+    "es": "Muchos afroterios se parecen a animales de otros linajes por convergencia: la musaraña elefante a las musarañas, el damán a los roedores, el cerdo hormiguero a los osos hormigueros.",
+    "en": "Many afrotheres resemble animals of other lineages through convergence: elephant shrews look like shrews, hyraxes like rodents, the aardvark like anteaters."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Afrotheria",
+      "url": "https://en.wikipedia.org/wiki/Afrotheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Afrotheria",
+      "url": "https://es.wikipedia.org/wiki/Afrotheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Sengi",
+      "url": "https://en.wikipedia.org/wiki/Sengi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Tubulidentata",
+      "url": "https://es.wikipedia.org/wiki/Tubulidentata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

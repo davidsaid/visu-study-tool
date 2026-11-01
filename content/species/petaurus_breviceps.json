@@ -1,0 +1,41 @@
+{
+  "field_marks": {
+    "es": [
+      "Aspecto de ardilla voladora: membrana (patagio) entre la mano y el pie",
+      "Pelaje gris azulado con vientre crema",
+      "Franja negra desde el hocico hasta media espalda",
+      "Ojos grandes y hocico corto y puntiagudo",
+      "Cola peluda casi tan larga como el cuerpo"
+    ],
+    "en": [
+      "Flying-squirrel look: gliding membrane (patagium) from hand to foot",
+      "Blue-grey fur with a cream belly",
+      "Black stripe from the nose to mid-back",
+      "Large eyes and a short pointed snout",
+      "Furry tail almost as long as the body"
+    ]
+  },
+  "dimorphism": {
+    "es": "Los machos son algo más grandes y pesados, y tienen glándulas olorosas en la frente y el pecho visibles como calvas.",
+    "en": "Males are slightly larger and heavier, and have scent glands on the forehead and chest that show as bald spots."
+  },
+  "etymology": {
+    "es": "Petaurus breviceps significa en latín «bailarín de cuerda de cabeza corta», por sus acrobacias en las copas.",
+    "en": "Petaurus breviceps translates from Latin as 'short-headed rope-dancer', after its acrobatics in the canopy."
+  },
+  "sources": [
+    {
+      "title": "Petaurus breviceps — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Petaurus_breviceps",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Sugar glider — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Sugar_glider",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

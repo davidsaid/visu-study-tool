@@ -1,0 +1,206 @@
+{
+ "Apis mellifera": {
+  "accepted": "Apis mellifera",
+  "acceptedKey": 1341976,
+  "authorship": "Linnaeus, 1758",
+  "class": "Insecta",
+  "family": "Apidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Hymenoptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 1341976,
+  "vernacular_es": [
+   "Abeja doméstica europea",
+   "Abeja melífera",
+   "Abeja melífera europea"
+  ]
+ },
+ "Araneus diadematus": {
+  "accepted": "Araneus diadematus",
+  "acceptedKey": 2160133,
+  "authorship": "Clerck, 1757",
+  "class": "Arachnida",
+  "family": "Araneidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Araneae",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2160133,
+  "vernacular_es": []
+ },
+ "Armadillidium vulgare": {
+  "accepted": "Armadillidium vulgare",
+  "acceptedKey": 2203611,
+  "authorship": "(Latreille, 1804)",
+  "class": "Malacostraca",
+  "family": "Armadillidiidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Isopoda",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 2203611,
+  "vernacular_es": [
+   "Bicho bolita mediterráneo",
+   "Chanchito de tierra",
+   "Cochinilla mediterránea",
+   "Marranito de Tierra"
+  ]
+ },
+ "Buthus occitanus": {
+  "accepted": "Buthus occitanus",
+  "acceptedKey": 4553865,
+  "authorship": "(Amoreux, 1789)",
+  "class": "Arachnida",
+  "family": "Buthidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Scorpiones",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4553865,
+  "vernacular_es": []
+ },
+ "Carcinus maenas": {
+  "accepted": "Carcinus maenas",
+  "acceptedKey": 5178595,
+  "authorship": "(Linnaeus, 1758)",
+  "class": "Malacostraca",
+  "family": "Carcinidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Decapoda",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5178595,
+  "vernacular_es": [
+   "Cámbaro",
+   "cangrejo de mar común",
+   "cangrejo verde europeo"
+  ]
+ },
+ "Coccinella septempunctata": {
+  "accepted": "Coccinella septempunctata",
+  "acceptedKey": 4990191,
+  "authorship": "Linnaeus, 1758",
+  "class": "Insecta",
+  "family": "Coccinellidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Coleoptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 4990191,
+  "vernacular_es": [
+   "Catarina de siete motas",
+   "Catarina de siete puntos",
+   "mariquita",
+   "mariquita de siete puntos"
+  ]
+ },
+ "Gryllus campestris": {
+  "accepted": "Gryllus campestris",
+  "acceptedKey": 1716462,
+  "authorship": "Linnaeus, 1758",
+  "class": "Insecta",
+  "family": "Gryllidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Orthoptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 1716462,
+  "vernacular_es": []
+ },
+ "Musca domestica": {
+  "accepted": "Musca domestica",
+  "acceptedKey": 1524843,
+  "authorship": "Linnaeus, 1758",
+  "class": "Insecta",
+  "family": "Muscidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Diptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 1524843,
+  "vernacular_es": []
+ },
+ "Papilio machaon": {
+  "accepted": "Papilio machaon",
+  "acceptedKey": 8225376,
+  "authorship": "Linnaeus, 1758",
+  "class": "Insecta",
+  "family": "Papilionidae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Lepidoptera",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 8225376,
+  "vernacular_es": [
+   "Makaon",
+   "Mariposa cometa macaón",
+   "macaón"
+  ]
+ },
+ "Scutigera coleoptrata": {
+  "accepted": "Scutigera coleoptrata",
+  "acceptedKey": 5179027,
+  "authorship": "Linnaeus, 1758",
+  "class": "Chilopoda",
+  "family": "Scutigeridae",
+  "iucn": {
+   "category": "NOT_EVALUATED",
+   "code": "NE",
+   "iucnTaxonID": null
+  },
+  "matchType": "EXACT",
+  "order": "Scutigeromorpha",
+  "rank": "SPECIES",
+  "status": "ACCEPTED",
+  "usageKey": 5179027,
+  "vernacular_es": [
+   "Ciempiés doméstico del Mediterráneo"
+  ]
+ }
+}

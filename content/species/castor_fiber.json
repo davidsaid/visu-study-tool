@@ -1,0 +1,63 @@
+{
+  "field_marks": {
+    "es": [
+      "Roedor muy grande y robusto, de cabeza grande",
+      "Cola aplanada y escamosa, más estrecha que la del castor americano",
+      "Incisivos grandes en forma de cincel, de esmalte anaranjado",
+      "Patas traseras palmeadas y patas delanteras parecidas a manos",
+      "Pelaje pardo, de castaño rojizo claro a pardo negruzco según la región"
+    ],
+    "en": [
+      "Very large, stout rodent with a big head",
+      "Flat, scaly tail, narrower than the North American beaver's",
+      "Large chisel-like incisors with orange enamel",
+      "Webbed hind feet and hand-like front feet",
+      "Brown fur, from light chestnut-rust to blackish brown depending on region"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Castor canadensis",
+      "es": "El castor americano es algo menor, con el pelaje más oscuro, la cola más ancha y las fosas nasales cuadradas en vez de triangulares.",
+      "en": "The North American beaver is slightly smaller, with darker fur, a broader tail and square rather than triangular nasal cavities."
+    },
+    {
+      "binomial": "Hydrochoerus hydrochaeris",
+      "es": "El capibara apenas tiene cola, y su hocico es romo con ojos y orejas en lo alto de la cabeza.",
+      "en": "The capybara has only a vestigial tail and a blunt snout with eyes and ears set high on the head."
+    }
+  ],
+  "etymology": {
+    "es": "Castor procede del griego κάστωρ (kástōr), «castor».",
+    "en": "Castor comes from the Greek κάστωρ (kastōr), 'beaver'."
+  },
+  "trivia": {
+    "es": [
+      "Es el roedor más pesado del mundo después del capibara."
+    ],
+    "en": [
+      "It is the world's second heaviest rodent after the capybara."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Eurasian beaver — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_beaver",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Beaver — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Beaver",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Capybara — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Capybara",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

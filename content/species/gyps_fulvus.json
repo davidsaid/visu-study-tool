@@ -1,0 +1,73 @@
+{
+  "field_marks": {
+    "es": [
+      "Buitre enorme (93–122 cm; envergadura 2,3–2,8 m) de alas anchas y cola corta",
+      "Cuerpo y coberteras alares ocre o canela («leonado») que contrastan con las plumas de vuelo oscuras",
+      "Cabeza blanca, típica de buitre",
+      "Gorguera blanca en la base del cuello",
+      "Pico ganchudo amarillento; patas grises con uñas cortas y romas"
+    ],
+    "en": [
+      "Huge vulture (93–122 cm; wingspan 2.3–2.8 m) with broad wings and a short tail",
+      "Buff or tawny body and wing coverts contrasting with dark flight feathers",
+      "White head, typical of a vulture",
+      "White ruff at the base of the neck",
+      "Yellowish hooked bill; grey feet with short, blunt claws"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Aegypius monachus",
+      "es": "El buitre negro es casi todo negro o pardo oscuro, con gorguera parda y la cabeza desnuda oscura.",
+      "en": "The cinereous vulture is almost all black or dark brown, with a brown ruff and a dark bare head."
+    },
+    {
+      "binomial": "Gypaetus barbatus",
+      "es": "El quebrantahuesos tiene alas estrechas, cola larga en cuña y la cabeza emplumada con una «barba» negra.",
+      "en": "The bearded vulture has narrow wings, a long wedge-shaped tail and a feathered head with a black 'beard'."
+    }
+  ],
+  "etymology": {
+    "es": "Gyps procede del griego gýps, «buitre»; fulvus es un adjetivo latino que significa «pardo brillante, dorado», en consonancia con su nombre de «leonado».",
+    "en": "Gyps is from Greek gyps, 'vulture'; fulvus is a Latin adjective meaning 'bright brown, golden', matching its tawny colour."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Gyps fulvus",
+      "url": "https://es.wikipedia.org/wiki/Gyps_fulvus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian griffon vulture",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_griffon_vulture",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary (EN): fulvus",
+      "url": "https://en.wiktionary.org/wiki/fulvus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wiktionary (EN): γύψ",
+      "url": "https://en.wiktionary.org/wiki/%CE%B3%CF%8D%CF%88",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Aegypius monachus",
+      "url": "https://es.wikipedia.org/wiki/Aegypius_monachus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Gypaetus barbatus",
+      "url": "https://es.wikipedia.org/wiki/Gypaetus_barbatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

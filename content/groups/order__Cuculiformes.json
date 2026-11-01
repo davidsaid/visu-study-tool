@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Cucos y afines (familia Cuculidae): cucos, correcaminos, cucales y garrapateros, con unas 150–165 especies. En el bestiario: el cuco común (Cuculus canorus).",
+    "en": "Cuckoos and allies (family Cuculidae): cuckoos, roadrunners, coucals and anis, with about 150–165 species. In the bestiary: the common cuckoo (Cuculus canorus)."
+  },
+  "traits": {
+    "es": [
+      "Patas zigodáctilas: dos dedos hacia delante y dos hacia atrás",
+      "Aves de tamaño medio y cuerpo esbelto",
+      "Los cucos parásitos del Viejo Mundo tienen cola larga, patas cortas y alas largas",
+      "Muchas especies euroasiáticas son parásitas de puesta: ponen sus huevos en nidos ajenos"
+    ],
+    "en": [
+      "Zygodactyl feet: two toes forward and two backward",
+      "Medium-sized, slender birds",
+      "Old World parasitic cuckoos have long tails, short legs and long wings",
+      "Many Eurasian species are brood parasites, laying eggs in other species' nests"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Cuckoo",
+      "url": "https://en.wikipedia.org/wiki/Cuckoo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Cuculidae",
+      "url": "https://es.wikipedia.org/wiki/Cuculidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

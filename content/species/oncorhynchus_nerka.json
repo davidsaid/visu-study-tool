@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo fusiforme comprimido; cabeza cónica con línea lateral recta",
+      "En el mar, dorso azul metálico o verdoso y flancos plateados, sin manchas en dorso ni cola",
+      "En la freza, cuerpo rojo intenso con la cabeza verde oliva",
+      "Machos reproductores con hocico y mandíbula negros y cuerpo muy comprimido"
+    ],
+    "en": [
+      "Compressed spindle-shaped body; conical head and straight lateral line",
+      "At sea, metallic blue or greenish back and silver sides, with no spots on back or tail",
+      "When spawning, bright red body with an olive-green head",
+      "Breeding males have a black snout and jaw and a strongly compressed body"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Salmo salar",
+      "es": "El salmón del Atlántico tiene manchas negras por encima de la línea lateral y no se vuelve rojo con la cabeza verde.",
+      "en": "The Atlantic salmon has black spots above the lateral line and does not turn red with a green head."
+    }
+  ],
+  "dimorphism": {
+    "es": "En la freza los machos tienen la cabeza verde oliva brillante y el hocico negro; las hembras son parecidas pero de colores más apagados.",
+    "en": "At spawning males have a bright olive-green head and black snout; females are similar but duller."
+  },
+  "etymology": {
+    "es": "Oncorhynchus = gr. ónkos (gancho, curva) + rhynchos (hocico), por la boca de los machos en celo; nerka es el nombre ruso de la forma migradora.",
+    "en": "Oncorhynchus = Gk ónkos (hook, bend) + rhynchos (snout), for the breeding male's jaw; nerka is the Russian name for the sea-run form."
+  },
+  "trivia": {
+    "es": [
+      "Muere tras desovar."
+    ],
+    "en": [
+      "It dies after spawning."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Oncorhynchus nerka",
+      "url": "https://es.wikipedia.org/wiki/Oncorhynchus_nerka",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Sockeye salmon",
+      "url": "https://en.wikipedia.org/wiki/Sockeye_salmon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic salmon",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_salmon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

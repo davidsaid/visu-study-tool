@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Ungulados de dedos pares (artiodáctilos) junto con los cetáceos: la biología molecular y los fósiles muestran que ballenas y delfines surgieron dentro de los artiodáctilos y que su pariente vivo más cercano es el hipopótamo, por lo que el orden se llama también Cetartiodactyla. El bestiario incluye 26 especies: camélidos (guanaco, camello), suidos (jabalí), hipopótamo, rumiantes (ciervos, bóvidos, jirafa, okapi, berrendo) y cinco cetáceos.",
+    "en": "Even-toed ungulates (artiodactyls) together with cetaceans: molecular biology and fossils show that whales and dolphins arose within the artiodactyls, with the hippopotamus as their closest living relative, so the order is also called Cetartiodactyla. The bestiary includes 26 species: camelids (guanaco, camel), suids (wild boar), hippopotamus, ruminants (deer, bovids, giraffe, okapi, pronghorn) and five cetaceans."
+  },
+  "traits": {
+    "es": [
+      "Pata paraxónica: el peso se apoya por igual en el tercer y el cuarto dedo, a menudo con pezuña",
+      "Los demás dedos están ausentes, son vestigiales o apuntan hacia atrás",
+      "Muchos digieren la celulosa en un estómago de varias cámaras; los rumiantes tienen cuatro (rumen, redecilla, omaso y abomaso)",
+      "Muchos rumiantes llevan cuernos o astas simétricos en la frente",
+      "Los cetáceos, acuáticos, han perdido las patas traseras y tienen las delanteras en forma de aleta"
+    ],
+    "en": [
+      "Paraxonic foot: weight borne equally on the third and fourth toes, often hoofed",
+      "The other toes are absent, vestigial or point backwards",
+      "Many digest cellulose in a multi-chambered stomach; ruminants have four chambers (rumen, reticulum, omasum, abomasum)",
+      "Many ruminants bear paired horns or antlers on the forehead",
+      "Cetaceans, being aquatic, have lost the hind limbs and have flipper-shaped forelimbs"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los perisodáctilos (caballos, rinocerontes, tapires), que cargan el peso sobre el tercer dedo, en número impar, y fermentan la celulosa en el intestino.",
+    "en": "Do not confuse with perissodactyls (horses, rhinos, tapirs), which bear their weight on the third toe, an odd number of toes, and ferment cellulose in the hindgut."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Artiodactyla",
+      "url": "https://en.wikipedia.org/wiki/Artiodactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Artiodactyla",
+      "url": "https://es.wikipedia.org/wiki/Artiodactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

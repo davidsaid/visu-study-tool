@@ -1,0 +1,75 @@
+{
+  "field_marks": {
+    "es": [
+      "Iris rojizo, que la distingue de las demás culebras de collar",
+      "Cuerpo grueso, cabeza redondeada y pupila redonda",
+      "Pardo o verde oscuro, a veces gris o negro, con manchas negras",
+      "Vientre claro con manchas negras irregulares"
+    ],
+    "en": [
+      "Reddish iris, which sets it apart from all other grass snakes",
+      "Thick body, rounded head and round pupil",
+      "Brown or dark green, sometimes grey or black, with black markings",
+      "Pale underside with irregular black markings"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Vipera latastei",
+      "es": "La víbora hocicuda tiene pupila elíptica, cabeza triangular cubierta de escamas pequeñas, hocico con «cuerno» y zigzag dorsal.",
+      "en": "Lataste's viper has an elliptical pupil, a triangular head covered in small scales, a nose 'horn' and a zigzag down the back."
+    },
+    {
+      "binomial": "Malpolon monspessulanus",
+      "es": "La culebra bastarda es mayor, con «ceja» supraocular muy saliente y dorso oliváceo casi uniforme.",
+      "en": "The Montpellier snake is larger, with a very prominent supraocular 'brow' and an almost uniform olive back."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Ante una amenaza levanta la parte delantera y aplana el cuello imitando a una cobra, un comportamiento heredado de cuando había cobras en Europa."
+    ],
+    "en": [
+      "When threatened it raises its forebody and flattens its neck like a cobra, a relict of times when cobras lived in Europe."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Natrix astreptophora",
+      "url": "https://en.wikipedia.org/wiki/Natrix_astreptophora",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Natrix astreptophora",
+      "url": "https://es.wikipedia.org/wiki/Natrix_astreptophora",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Natrix natrix",
+      "url": "https://es.wikipedia.org/wiki/Natrix_natrix",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Grass snake",
+      "url": "https://en.wikipedia.org/wiki/Grass_snake",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Vipera latastei",
+      "url": "https://es.wikipedia.org/wiki/Vipera_latastei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Malpolon monspessulanus",
+      "url": "https://es.wikipedia.org/wiki/Malpolon_monspessulanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

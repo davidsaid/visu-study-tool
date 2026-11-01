@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Cabeza enorme, ancha y aplanada; el resto del cuerpo parece un simple apéndice",
+      "Boca muy amplia que rodea el frente de la cabeza, con dientes largos y puntiagudos inclinados hacia dentro",
+      "Primer radio dorsal transformado en una «caña» con un señuelo en la punta",
+      "Piel sin escamas con flecos que imitan algas alrededor de la cabeza y el cuerpo",
+      "Aletas pectorales y pélvicas que usa como patas para caminar por el fondo"
+    ],
+    "en": [
+      "Huge, broad, flattened head; the rest of the body looks like a mere appendage",
+      "Very wide mouth around the front of the head, with long pointed teeth angled inwards",
+      "First dorsal spine modified into a 'fishing rod' with a lure at the tip",
+      "Scaleless skin with seaweed-like fringes around the head and body",
+      "Pectoral and pelvic fins used like feet to walk on the bottom"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "El macho es mucho menor que la hembra.",
+    "en": "The male is much smaller than the female."
+  },
+  "etymology": {
+    "es": "Lophius = «crin», quizá por las primeras espinas dorsales en forma de tentáculo; piscatorius = «de pesca», por el señuelo.",
+    "en": "Lophius = 'mane', presumably for the tentacle-like first dorsal spines; piscatorius = 'of fishing', for the lure."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Lophius piscatorius",
+      "url": "https://es.wikipedia.org/wiki/Lophius_piscatorius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Lophius piscatorius",
+      "url": "https://en.wikipedia.org/wiki/Lophius_piscatorius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

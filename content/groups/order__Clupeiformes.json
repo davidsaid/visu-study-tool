@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "es": "Arenques, sardinas, anchoas y afines: más de 400 especies de teleósteos, entre ellas algunos de los peces más abundantes y de mayor importancia pesquera. En el bestiario: el boquerón (Engraulis encrasicolus) y la sardina (Sardina pilchardus).",
+    "en": "Herrings, sardines, anchovies and relatives: over 400 species of teleosts, including some of the most abundant and commercially important fish. In the bestiary: the European anchovy (Engraulis encrasicolus) and the European pilchard (Sardina pilchardus)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo fusiforme, comprimido y plateado, cubierto de escamas cicloideas",
+      "Una sola aleta dorsal en mitad del dorso; aletas solo con radios blandos",
+      "Línea lateral presente solo en la cabeza",
+      "Vejiga natatoria unida al tubo digestivo por un conducto (fisóstomos)",
+      "Branquispinas largas y numerosas para filtrar plancton; suelen formar bancos"
+    ],
+    "en": [
+      "Silvery, spindle-shaped, laterally compressed body with cycloid scales",
+      "A single dorsal fin mid-back; fins with soft rays only",
+      "Lateral line typically absent from the body (present only on the head)",
+      "Swim bladder connected to the gut by a duct (physostomes)",
+      "Long, numerous gill rakers for filtering plankton; they often school"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Clupeiformes",
+      "url": "https://en.wikipedia.org/wiki/Clupeiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Clupeiformes",
+      "url": "https://es.wikipedia.org/wiki/Clupeiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,38 @@
+{
+  "field_marks": {
+    "es": [
+      "Ardilla de pelaje generalmente rojizo, aunque hay formas pardas, grises y negras",
+      "Penachos de pelo en las orejas, muy llamativos en invierno",
+      "Cola larga y poblada, casi tan larga como el cuerpo",
+      "Vientre blanco, contrastado con el dorso"
+    ],
+    "en": [
+      "Squirrel with usually reddish fur, though brown, grey and black morphs occur",
+      "Ear tufts, very conspicuous in winter",
+      "Long bushy tail, almost as long as the body",
+      "White belly contrasting with the back"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sciurus carolinensis",
+      "es": "La ardilla gris es mayor y menos rojiza, y no tiene penachos en las orejas.",
+      "en": "The eastern grey squirrel is larger and less red, and lacks ear tufts."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sciurus vulgaris — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Sciurus_vulgaris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Red squirrel — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Red_squirrel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

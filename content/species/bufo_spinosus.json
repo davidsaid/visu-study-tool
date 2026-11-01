@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Sapo grande y robusto: las hembras alcanzan unos 18 cm de hocico a cloaca",
+      "Glándulas parótidas grandes",
+      "Dorso y flancos con muchas verrugas de forma variable, a veces espinosas",
+      "Gris, oliváceo, pardo o casi negro",
+      "Patas traseras parcialmente palmeadas"
+    ],
+    "en": [
+      "Large, sturdy toad: females reach about 18 cm snout–vent",
+      "Large parotoid glands",
+      "Back and sides with many warts of varied shape, sometimes spiny",
+      "Grey, olive, brown or almost black",
+      "Hind feet partly webbed"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Epidalea calamita",
+      "es": "El sapo corredor es mucho menor (unos 6 cm) y lleva una línea amarilla o verdosa a lo largo de la columna.",
+      "en": "The natterjack is much smaller (about 6 cm) and has a yellow or greenish line down the spine."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son mucho mayores que los machos (hasta 180 mm frente a 112 mm).",
+    "en": "Females are much larger than males (up to 180 mm versus 112 mm)."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Bufo spinosus",
+      "url": "https://es.wikipedia.org/wiki/Bufo_spinosus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Spiny toad",
+      "url": "https://en.wikipedia.org/wiki/Spiny_toad",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Epidalea calamita",
+      "url": "https://es.wikipedia.org/wiki/Epidalea_calamita",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

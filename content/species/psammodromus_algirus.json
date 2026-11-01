@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Cola larguísima, de dos a tres veces la longitud de cabeza y cuerpo",
+      "Escamas del dorso y flancos grandes, planas, puntiagudas y claramente aquilladas",
+      "Pardo metálico con dos líneas blancas o amarillentas muy visibles a cada lado",
+      "Machos con manchas azules en los hombros; garganta y lados de la cabeza naranjas en celo"
+    ],
+    "en": [
+      "Very long tail, two to three times the head-and-body length",
+      "Large, flat, pointed and clearly keeled scales on the back and flanks",
+      "Metallic brown with two conspicuous white or yellowish stripes on each side",
+      "Males have blue shoulder spots; throat and sides of head turn orange when breeding"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Podarcis muralis",
+      "es": "La lagartija roquera tiene la cola más corta y escamas pequeñas, no grandes y aquilladas.",
+      "en": "The common wall lizard has a shorter tail and small scales, not large keeled ones."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen manchas azules en los hombros y en celo la garganta y la cabeza anaranjadas.",
+    "en": "Males have blue shoulder spots and, when breeding, an orange throat and head sides."
+  },
+  "trivia": {
+    "es": [
+      "Puede emitir chillidos, algo raro en un lagarto."
+    ],
+    "en": [
+      "It can squeak, which is unusual for a lizard."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Psammodromus algirus",
+      "url": "https://es.wikipedia.org/wiki/Psammodromus_algirus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Psammodromus algirus",
+      "url": "https://en.wikipedia.org/wiki/Psammodromus_algirus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

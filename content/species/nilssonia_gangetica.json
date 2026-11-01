@@ -1,0 +1,32 @@
+{
+  "field_marks": {
+    "es": [
+      "Tortuga de caparazón blando, de hasta 94 cm de espaldar",
+      "Dorso oliva; parte inferior amarillenta",
+      "Cabeza con una raya negra longitudinal desde entre los ojos hasta la nuca, cruzada por dos o tres marcas negras en V invertida",
+      "Jóvenes con finas líneas negras vermiculadas en el dorso, sin ocelos"
+    ],
+    "en": [
+      "Softshell turtle, with a carapace up to 94 cm long",
+      "Olive above; yellowish below",
+      "Head with a black streak from between the eyes to the nape, crossed by two or three inverted-V black marks",
+      "Young have fine black vermiculations on the back, without eyespots"
+    ]
+  },
+  "lookalikes": [],
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Indian softshell turtle",
+      "url": "https://en.wikipedia.org/wiki/Indian_softshell_turtle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Trionychidae",
+      "url": "https://es.wikipedia.org/wiki/Trionychidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

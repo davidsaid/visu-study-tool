@@ -1,0 +1,57 @@
+{
+  "field_marks": {
+    "es": [
+      "Roedor pequeño y rechoncho, de cabeza ancha",
+      "Orejas cortas que apenas sobresalen del pelaje",
+      "Cola corta, alrededor de una cuarta parte de la longitud total",
+      "Dorso pardo amarillento y vientre blanco grisáceo; los jóvenes son grisáceos"
+    ],
+    "en": [
+      "Small, stocky rodent with a broad head",
+      "Short ears that barely protrude from the fur",
+      "Short tail, about a quarter of total length",
+      "Yellowish-brown back and greyish-white belly; juveniles are greyish"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Microtus agrestis",
+      "es": "El topillo agreste es muy parecido y se distingue con dificultad.",
+      "en": "The field vole is very similar and hard to tell apart."
+    },
+    {
+      "binomial": "Apodemus sylvaticus",
+      "es": "El ratón de campo tiene ojos y orejas grandes y una cola tan larga o más que el cuerpo.",
+      "en": "The wood mouse has large eyes and ears and a tail as long as or longer than its body."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Sus poblaciones sufren explosiones demográficas, durante las cuales se debilita su organización social."
+    ],
+    "en": [
+      "Its populations undergo demographic explosions, during which its social organisation weakens."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Microtus arvalis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Microtus_arvalis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Common vole — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Common_vole",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Apodemus sylvaticus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Apodemus_sylvaticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

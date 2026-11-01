@@ -1,0 +1,108 @@
+/* VISU · learner progress in localStorage, one key per collection. Defines window.VISU_STORE.
+
+   Keys: 'visu-progress-v1' for the vertebrate collection (the key used before there were collections,
+   so existing progress needs no migration) and 'visu-progress-v1:<id>' for any other collection.
+   'visu-collection' remembers which collection is open (app/collection.js).
+
+   Stored shape (also the "progress" member of an exported file):
+   { schemaVersion, createdAt, settings, cards, log, days, badges, mocks, stats, meta, ui }
+   - cards["lynx_pardinus:genus"] = { p: progress counter (Easy/Medium/Hard), m: FSRS state (Hard without hints only) }
+     p = { seen, ok, streak, due, first, last }    m = { due, s, d, ed, sd, reps, lapses, ls, st, last }  (times in ms)
+   - log: append-only, one row per answered box:
+     { ts, card, game: foto|hoja|mock|cual, level: 1|2|3, rating: FSRS rating or null, hints, conf: guess|unsure|sure|null,
+       kind: right|misspelling|wrong|wrong_species, with: [species] (wrong_species only), typed (wrong answers only) }
+   - days["2026-11-01"] = answers that day (streak); badges[id] = { tier, at }; mocks = finished Mock VISU results. */
+(function () {
+'use strict';
+const E = window.VISU_ENGINE;
+const BASE = 'visu-progress-v1';
+const COLLECTION = window.VISU_COLLECTION || 'vertebrados';
+const KEY = COLLECTION === 'vertebrados' ? BASE : `${BASE}:${COLLECTION}`;
+const S = { ok: true, data: null, error: null, key: KEY, collection: COLLECTION };
+
+/* A collection opened for the first time keeps the language, theme and "seen the notice" of another one. */
+function inheritPrefs(P) {
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k !== KEY && (k === BASE || k.startsWith(BASE + ':'))) {
+        const o = JSON.parse(localStorage.getItem(k));
+        if (o && typeof o === 'object') {
+          const st = o.settings || {};
+          if (st.lang === 'en' || st.lang === 'es') P.settings.lang = st.lang;
+          if (['auto', 'light', 'dark'].includes(st.theme)) P.settings.theme = st.theme;
+          if (o.meta && o.meta.seenNotice === true) P.meta.seenNotice = true;
+          return;
+        }
+      }
+    }
+  } catch (e) { /* unreadable: keep the defaults */ }
+}
+
+function probe() {
+  if (/[?&]nostorage=1/.test(location.search)) return false;   // test hook: simulate a browser that blocks storage
+  try { const ls = window.localStorage, t = '__visu_probe'; ls.setItem(t, '1'); ls.removeItem(t); return true; } catch (e) { return false; }
+}
+S.load = function () {
+  const now = Date.now();
+  S.ok = probe();
+  let raw = null;
+  if (S.ok) { try { raw = localStorage.getItem(KEY); } catch (e) { S.ok = false; } }
+  let parsed = null;
+  if (raw) { try { parsed = JSON.parse(raw); } catch (e) { S.error = 'corrupt'; } }
+  S.data = parsed ? E.normalizeProgress(parsed, now) : E.emptyProgress(now);
+  if (!raw && S.ok) inheritPrefs(S.data);
+  return S.data;
+};
+S.save = function () {
+  if (!S.ok) return false;
+  try { localStorage.setItem(KEY, JSON.stringify(S.data)); S.error = null; return true; }
+  catch (e) { S.error = e && e.name === 'QuotaExceededError' ? 'quota' : 'write'; return false; }
+};
+S.replace = function (progress) { S.data = progress; return S.save(); };
+/* Opens another collection: remembered for next time, then the page reloads with its data. */
+S.switchCollection = function (id) {
+  let remembered = false;
+  try { localStorage.setItem('visu-collection', id); remembered = true; } catch (e) { /* storage blocked */ }
+  const target = location.pathname + (remembered ? '' : `?c=${encodeURIComponent(id)}`);
+  if (location.pathname + location.search === target) { location.hash = 'hoy'; location.reload(); }   // only the hash would change: no reload otherwise
+  else location.replace(target + '#hoy');
+};
+S.wipe = function () {
+  const keep = S.data.settings;
+  S.data = E.emptyProgress(Date.now());
+  S.data.settings = Object.assign(S.data.settings, { lang: keep.lang, theme: keep.theme });
+  S.data.meta.seenNotice = true;
+  if (S.ok) { try { localStorage.removeItem(KEY); } catch (e) { /* nothing stored */ } }
+  return S.save();
+};
+
+/* Records one answered box and saves. a = { sp, skill, level, kind, hints, conf, game, typed, with }. */
+S.recordAnswer = function (a, now) {
+  now = now || Date.now();
+  const P = S.data, id = E.cardId(a.sp, a.skill);
+  const res = E.applyAnswer(P.cards[id], { level: a.level, kind: a.kind, hints: a.hints || 0, conf: a.conf || null }, now);
+  P.cards[id] = res.card;
+  const row = { ts: now, card: id, game: a.game, level: a.level, rating: res.rating, hints: a.hints || 0, conf: a.conf || null, kind: a.kind };
+  if (a.kind === 'wrong_species' && a.with && a.with.length) row.with = a.with.slice(0, 5);
+  if (a.kind !== 'right' && a.typed) row.typed = String(a.typed).slice(0, 80);
+  P.log.push(row);
+  const day = E.ymd(now);
+  P.days[day] = (P.days[day] || 0) + 1;
+  S.save();
+  return { card: res.card, rating: res.rating, due: E.dueOf(res.card) };
+};
+/* "¿Cuál es?" is a scaffold: it is logged and counts as a study day, but schedules nothing. */
+S.recordReverse = function (a, now) {
+  now = now || Date.now();
+  const P = S.data;
+  const row = { ts: now, card: E.cardId(a.sp, 'species'), game: 'cual', level: a.level, rating: null, hints: 0, conf: a.conf || null, kind: a.kind };
+  if (a.with) row.with = [a.with];
+  P.log.push(row);
+  const day = E.ymd(now);
+  P.days[day] = (P.days[day] || 0) + 1;
+  S.save();
+};
+
+window.VISU_STORE = S;
+})();

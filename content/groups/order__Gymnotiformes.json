@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Peces cuchillo sudamericanos: teleósteos eléctricos de agua dulce del Neotrópico, de Guatemala al Uruguay, mayormente nocturnos. En el bestiario: la anguila eléctrica (Electrophorus electricus), capaz de descargas de hasta 600 voltios.",
+    "en": "South American knifefishes: electric freshwater teleosts of the Neotropics, from Guatemala to Uruguay, mostly nocturnal. In the bestiary: the electric eel (Electrophorus electricus), able to discharge up to 600 volts."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo estrecho y alargado que se afina hacia la cola",
+      "Sin aletas pélvicas ni dorsal; aleta anal muy larga a lo largo de casi todo el vientre",
+      "Nadan ondulando la aleta anal con el cuerpo rígido, igual hacia delante que hacia atrás",
+      "Órganos eléctricos para electrolocalización y, en la anguila eléctrica, para cazar y defenderse"
+    ],
+    "en": [
+      "Narrow, elongated body tapering to the tail",
+      "No pelvic or dorsal fins; a very long anal fin along almost the whole underside",
+      "Swim by rippling the anal fin with a rigid body, backwards as easily as forwards",
+      "Electric organs for electrolocation and, in electric eels, for hunting and defence"
+    ]
+  },
+  "contrast": {
+    "es": "La anguila eléctrica no es una anguila verdadera (Anguilliformes): carece de aleta dorsal y se impulsa con la larga aleta anal.",
+    "en": "The electric eel is not a true eel (Anguilliformes): it lacks a dorsal fin and is driven by its long anal fin."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Gymnotiformes",
+      "url": "https://en.wikipedia.org/wiki/Gymnotiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Gymnotiformes",
+      "url": "https://es.wikipedia.org/wiki/Gymnotiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

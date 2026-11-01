@@ -1,0 +1,53 @@
+{
+  "summary": {
+    "es": "Tiburones de seis y siete branquias: un orden primitivo con solo siete especies actuales en dos familias (tiburones anguila y cañabotas), propias de aguas profundas. En el bestiario: la cañabota gris (Hexanchus griseus).",
+    "en": "Six- and seven-gill sharks: a primitive order with only seven living species in two families (frilled sharks and cow sharks), found in deep water. In the bestiary: the bluntnose sixgill shark (Hexanchus griseus)."
+  },
+  "traits": {
+    "es": [
+      "Seis o siete hendiduras branquiales, delante de las pectorales",
+      "Una sola aleta dorsal sin espina, situada sobre las pélvicas o detrás de ellas",
+      "Lóbulo superior de la cola largo; el inferior, pequeño o ausente",
+      "Ojos sin membrana nictitante",
+      "Vivíparos"
+    ],
+    "en": [
+      "Six or seven gill slits, in front of the pectoral fins",
+      "A single spineless dorsal fin, over or behind the pelvic fins",
+      "Long upper tail lobe; lower lobe small or absent",
+      "Eyes without a nictitating membrane",
+      "Viviparous"
+    ]
+  },
+  "contrast": {
+    "es": "Los demás órdenes de tiburones del bestiario tienen cinco hendiduras branquiales y una aleta dorsal principal en mitad del dorso, que aquí falta.",
+    "en": "The other shark orders in the bestiary have five gill slits and a main dorsal fin in mid-back, which is missing here."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Hexanchiformes",
+      "url": "https://en.wikipedia.org/wiki/Hexanchiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Hexanchiformes",
+      "url": "https://es.wikipedia.org/wiki/Hexanchiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Lamniformes",
+      "url": "https://en.wikipedia.org/wiki/Lamniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Carcharhiniformes",
+      "url": "https://en.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

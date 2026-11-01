@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado en torpedo, cubierto de escamas óseas romboidales que no se solapan",
+      "Hocico en aguja, casi tres veces más largo que la cabeza, con muchos dientes afilados",
+      "Dorsal y anal muy retrasadas, junto a la caudal",
+      "Pardo oliva a verde, blanco por debajo, con manchas oscuras en cuerpo y aletas",
+      "Juveniles con una franja negra horizontal a lo largo del cuerpo"
+    ],
+    "en": [
+      "Long, torpedo-shaped body armoured with non-overlapping rhomboid bony scales",
+      "Needle-like snout almost three times the length of the head, lined with sharp teeth",
+      "Dorsal and anal fins set far back near the tail",
+      "Olive-brown to green, white below, with dark spots on body and fins",
+      "Juveniles have a black horizontal stripe along the body"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Esox lucius",
+      "es": "El lucio tiene una boca en «pico de pato», mucho más corta que la aguja del pez lagarto, y no está acorazado de placas óseas.",
+      "en": "The pike has a duck-bill-shaped mouth, far shorter than the gar's needle, and no armour of bony plates."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son más grandes y redondeadas; los machos, más pequeños y alargados.",
+    "en": "Females are larger and rounder; males smaller and slimmer."
+  },
+  "etymology": {
+    "es": "Lepisosteus = gr. lepis (escama) + osteos (hueso), por las escamas ganoideas óseas.",
+    "en": "Lepisosteus = Gk lepis (scale) + osteos (bone), for its bony ganoid scales."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Lepisosteus osseus",
+      "url": "https://es.wikipedia.org/wiki/Lepisosteus_osseus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Longnose gar",
+      "url": "https://en.wikipedia.org/wiki/Longnose_gar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Esox lucius",
+      "url": "https://es.wikipedia.org/wiki/Esox_lucius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

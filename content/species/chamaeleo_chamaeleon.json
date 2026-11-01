@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo comprimido con una cresta semicircular en la parte trasera de la cabeza",
+      "Ojos grandes y salientes, cubiertos por un párpado con una pequeña abertura, que se mueven por separado",
+      "Dedos oponibles en pinza y cola prensil",
+      "Color variable, de amarillo pardo a verde o pardo oscuro, con dos líneas claras en los flancos",
+      "Pequeña «barba» de escamas bajo la garganta"
+    ],
+    "en": [
+      "Compressed body with a semicircular crest at the back of the head",
+      "Large, bulging eyes covered by a lid with a small opening, moving independently",
+      "Pincer-like opposable toes and a prehensile tail",
+      "Variable colour, yellowish-brown to green or dark brown, with two pale lines along the sides",
+      "Small 'beard' of scales under the throat"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Las hembras suelen ser bastante mayores que los machos.",
+    "en": "Females are often substantially larger than males."
+  },
+  "trivia": {
+    "es": [
+      "Es el único camaleón cuya área natural llega a Europa; en España vive en puntos costeros del sur."
+    ],
+    "en": [
+      "It is the only chameleon whose natural range reaches Europe; in Spain it lives at a few southern coastal sites."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Chamaeleo chamaeleon",
+      "url": "https://es.wikipedia.org/wiki/Chamaeleo_chamaeleon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common chameleon",
+      "url": "https://en.wikipedia.org/wiki/Common_chameleon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

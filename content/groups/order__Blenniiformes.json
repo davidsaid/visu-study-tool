@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Orden de percomorfos del clado Ovalentaria que reúne a las blenias o babosas verdaderas (suborden Blennioidei) y, según algunas autoridades, a las castañuelas y otros grupos; antes las blenias eran un suborden de los perciformes. En el bestiario: el fraile o blenio de río (Salaria fluviatilis), una blenia de agua dulce.",
+    "en": "An order of percomorphs in the clade Ovalentaria that holds the true blennies (suborder Blennioidei) and, for some authorities, damselfishes and other groups; blennies were formerly a suborder of Perciformes. In the bestiary: the freshwater blenny (Salaria fluviatilis)."
+  },
+  "traits": {
+    "es": [
+      "Peces pequeños, de cuerpo alargado, que viven sobre el fondo",
+      "Aleta dorsal larga y a menudo continua hasta una cola redondeada",
+      "Cabeza roma con ojos y boca relativamente grandes, a menudo con apéndices en forma de bigote (cirros)",
+      "Aletas pélvicas cortas, situadas por delante de las pectorales"
+    ],
+    "en": [
+      "Small, elongated, bottom-dwelling fish",
+      "Long, often continuous dorsal fin reaching a rounded tail",
+      "Blunt head with relatively large eyes and mouth, often bearing whisker-like cirri",
+      "Short pelvic fins placed in front of the pectorals"
+    ]
+  },
+  "contrast": {
+    "es": "Por su forma se parecen mucho a los gobios y a los dragoncillos, que pertenecen a otros órdenes.",
+    "en": "They look much like gobies and dragonets, which belong to other orders."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Blenniiformes",
+      "url": "https://en.wikipedia.org/wiki/Blenniiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Blennioidei",
+      "url": "https://es.wikipedia.org/wiki/Blennioidei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Blennioidei",
+      "url": "https://en.wikipedia.org/wiki/Blennioidei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

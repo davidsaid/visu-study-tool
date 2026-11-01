@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Aspecto de larva de salamandra en adulto (neotenia)",
+      "Tres pares de branquias externas plumosas detrás de la cabeza",
+      "Aleta caudal que se extiende desde detrás de la cabeza hasta la cloaca",
+      "Cabeza ancha y ojos sin párpados",
+      "Patas poco desarrolladas con dedos largos y finos"
+    ],
+    "en": [
+      "Looks like a salamander larva even as an adult (neoteny)",
+      "Three pairs of feathery external gills behind the head",
+      "Tail fin running from behind the head to the vent",
+      "Broad head and lidless eyes",
+      "Underdeveloped limbs with long, thin digits"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Proteus anguinus",
+      "es": "El proteo tiene el cuerpo de serpiente, los ojos cubiertos de piel y solo tres dedos delante y dos detrás.",
+      "en": "The olm has a snake-like body, eyes covered by skin and only three front and two rear toes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen la cloaca hinchada; las hembras, el cuerpo más ancho cuando llevan huevos.",
+    "en": "Males have a swollen cloaca; females have a wider body when carrying eggs."
+  },
+  "etymology": {
+    "es": "«Ajolote» viene del náhuatl āxōlōtl, de atl (agua) y xōlōtl (animal, monstruo): «monstruo de agua».",
+    "en": "'Axolotl' comes from Nahuatl āxōlōtl, from atl (water) and xōlōtl (animal, monster): 'water monster'."
+  },
+  "trivia": {
+    "es": [
+      "Puede regenerar extremidades, branquias y partes de los ojos y del cerebro."
+    ],
+    "en": [
+      "It can regenerate limbs, gills and parts of its eyes and brain."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Ambystoma mexicanum",
+      "url": "https://es.wikipedia.org/wiki/Ambystoma_mexicanum",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Axolotl",
+      "url": "https://en.wikipedia.org/wiki/Axolotl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Proteus anguinus",
+      "url": "https://es.wikipedia.org/wiki/Proteus_anguinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Cara rosada oscura sin pelo",
+      "Pelaje pardo amarillento a gris, más claro en el vientre",
+      "Cola vestigial, casi invisible a distancia",
+      "Callosidades isquiáticas bien desarrolladas en las nalgas"
+    ],
+    "en": [
+      "Dark pink, hairless face",
+      "Pale buff to golden-brown or grey coat, paler underneath",
+      "Vestigial tail, almost invisible at a distance",
+      "Well-developed sitting pads (ischial callosities) on the rump"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Papio ursinus",
+      "es": "El papión chacma es mucho mayor, con una cola larga y la cara alargada e inclinada hacia abajo; el macaco de Berbería apenas tiene cola.",
+      "en": "The chacma baboon is much larger, with a long tail and a long, downward-sloping face; the Barbary macaque has barely any tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más grandes que las hembras; estas muestran una hinchazón anogenital durante el celo.",
+    "en": "Males are larger than females; females show an exaggerated anogenital swelling during oestrus."
+  },
+  "trivia": {
+    "es": [
+      "Muchos errores anatómicos de Galeno se deben a que diseccionaba macacos de Berbería en lugar de humanos."
+    ],
+    "en": [
+      "Many of Galen's anatomical errors arose because he dissected Barbary macaques instead of humans."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Macaca sylvanus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Macaca_sylvanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Barbary macaque — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Barbary_macaque",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

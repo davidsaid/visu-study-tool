@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje espeso pardo pálido a gris o pardo leonado",
+      "Orejas largas (4–8 cm) pero sin puntas negras",
+      "Cabeza ovalada y ojos grandes",
+      "Cola muy corta; patas traseras más largas que las delanteras"
+    ],
+    "en": [
+      "Dense fur, pale brown to grey or tawny",
+      "Long ears (4–8 cm) without black tips",
+      "Oval head and large eyes",
+      "Very short tail; hind legs longer than forelegs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lepus granatensis",
+      "es": "La liebre es mayor, con patas proporcionalmente más largas y orejas más largas con la punta negra.",
+      "en": "The hare is larger, with proportionately longer legs and longer, black-tipped ears."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más corpulentos y tienen la cabeza más ancha que las hembras.",
+    "en": "Males are more heavily built and have a broader head than females."
+  },
+  "sources": [
+    {
+      "title": "Oryctolagus cuniculus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Oryctolagus_cuniculus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European rabbit — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_rabbit",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

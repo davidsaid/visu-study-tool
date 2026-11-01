@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo cilíndrico de 11–16 cm con cola corta (≈3 cm)",
+      "Patas delanteras anchas en forma de pala, con fuertes garras",
+      "Hocico puntiagudo; ojos diminutos ocultos en el pelo",
+      "Sin pabellones auditivos externos",
+      "Pelaje normalmente gris oscuro (hay ejemplares blancos o pardos)"
+    ],
+    "en": [
+      "Cylindrical body 11–16 cm long with a short tail (≈3 cm)",
+      "Broad, spade-shaped forefeet with strong claws",
+      "Pointed snout; tiny eyes hidden in the fur",
+      "No external ears",
+      "Fur usually dark grey (white or tan individuals occur)"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Galemys pyrenaicus",
+      "es": "El desmán tiene una trompa larga, cola larga y gruesa y patas traseras palmeadas.",
+      "en": "The desman has a long trunk, a long thick tail and webbed hind feet."
+    },
+    {
+      "binomial": "Talpa romana",
+      "es": "El topo romano tiene un tamaño similar y antes se consideraba una subespecie del topo europeo.",
+      "en": "The Roman mole is of similar size and was once considered a subspecies of the European mole."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser más pequeñas que los machos.",
+    "en": "Females are typically smaller than males."
+  },
+  "sources": [
+    {
+      "title": "Talpa europaea — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Talpa_europaea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European mole — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_mole",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Galemys pyrenaicus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Galemys_pyrenaicus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Sapito rechoncho de menos de 5 cm, cabeza grande y hocico redondeado",
+      "Ojos prominentes con pupila vertical e iris dorado con vetas negras",
+      "Dorso pardo grisáceo con manchas oscuras y pequeñas verrugas a menudo anaranjadas",
+      "Tímpano visible, más pequeño que el ojo",
+      "Vientre claro sin manchas"
+    ],
+    "en": [
+      "Squat little toad under 5 cm, with a large head and rounded snout",
+      "Prominent eyes with vertical pupils and a golden, black-veined iris",
+      "Brownish-grey back with dark spots and small, often orange warts",
+      "Visible eardrum, smaller than the eye",
+      "Pale, unspotted belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Epidalea calamita",
+      "es": "El sapo corredor tiene la pupila horizontal y una línea amarilla en la columna.",
+      "en": "The natterjack has horizontal pupils and a yellow line down the spine."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son algo menores que las hembras.",
+    "en": "Males are somewhat smaller than females."
+  },
+  "trivia": {
+    "es": [
+      "El macho lleva la puesta enrollada en las patas traseras hasta que los renacuajos están listos para eclosionar."
+    ],
+    "en": [
+      "The male carries the eggs wrapped round his hind legs until the tadpoles are ready to hatch."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Alytes cisternasii",
+      "url": "https://es.wikipedia.org/wiki/Alytes_cisternasii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian midwife toad",
+      "url": "https://en.wikipedia.org/wiki/Iberian_midwife_toad",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Natterjack toad",
+      "url": "https://en.wikipedia.org/wiki/Natterjack_toad",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

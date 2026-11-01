@@ -1,0 +1,29 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico largo y flexible en forma de pequeña trompa",
+      "Ojo grande rodeado de un anillo blanco interrumpido por una mancha oscura hacia atrás",
+      "Orejas grandes y sin pelo",
+      "Dorso pardo o pardo rojizo y vientre blanco; cola larga y oscura"
+    ],
+    "en": [
+      "Long flexible trunk-like snout",
+      "Large eye in a white ring broken by a dark patch towards the back",
+      "Large hairless ears",
+      "Brown to reddish-brown back and white belly; long dark tail"
+    ]
+  },
+  "dimorphism": {
+    "es": "No presenta dimorfismo sexual.",
+    "en": "It shows no sexual dimorphism."
+  },
+  "sources": [
+    {
+      "title": "Rufous sengi — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Rufous_sengi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

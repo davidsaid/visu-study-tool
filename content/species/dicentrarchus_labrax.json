@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado y robusto de depredador, cubierto de escamas pequeñas",
+      "Boca desproporcionadamente grande con la mandíbula inferior algo saliente",
+      "Gris plomo claro en el dorso, gris plateado en los flancos y blanco plateado por debajo",
+      "Mancha negra sobre el opérculo, que lleva espinas fuertes",
+      "Jóvenes, y a veces adultos, con manchas negras en el dorso y los flancos"
+    ],
+    "en": [
+      "Elongated, robust predator's body covered in small scales",
+      "Disproportionately large mouth with a slightly protruding lower jaw",
+      "Light lead-grey back, silvery-grey flanks and silvery-white underside",
+      "Black spot on the gill cover, which carries strong spines",
+      "Young fish, and sometimes adults, have black spots on the back and sides"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sparus aurata",
+      "es": "La dorada tiene el cuerpo alto y el dorso muy arqueado, con una banda dorada entre los ojos.",
+      "en": "The gilthead has a deep body and strongly arched back, with a golden bar between the eyes."
+    }
+  ],
+  "etymology": {
+    "es": "Dicentrarchus = gr. di (dos) + kéntron (espina) + archós (ano), por las dos espinas anales que Gill le atribuyó (en realidad tiene tres); labrax era el nombre griego de la lubina, de labrós, «furioso».",
+    "en": "Dicentrarchus = Gk di (two) + kéntron (spine) + archós (anus), for the two anal spines Gill attributed to it (it actually has three); labrax was the Greek name for the bass, from labrós, 'furious'."
+  },
+  "trivia": {
+    "es": [
+      "«Lubina» y «róbalo» proceden del latín lupus, «lobo», por su voracidad."
+    ],
+    "en": [
+      "The Spanish names lubina and róbalo come from Latin lupus, 'wolf', for its voracity."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Dicentrarchus labrax",
+      "url": "https://es.wikipedia.org/wiki/Dicentrarchus_labrax",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European seabass",
+      "url": "https://en.wikipedia.org/wiki/European_seabass",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Sparus aurata",
+      "url": "https://es.wikipedia.org/wiki/Sparus_aurata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

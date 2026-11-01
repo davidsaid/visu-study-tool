@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Zarigüeyas: el mayor orden de marsupiales de América, con más de un centenar de especies originarias de Sudamérica. En el bestiario: la zarigüeya común (Didelphis marsupialis).",
+    "en": "Opossums: the largest order of marsupials in the Americas, with over a hundred species that originated in South America. In the bestiary: the common opossum (Didelphis marsupialis)."
+  },
+  "traits": {
+    "es": [
+      "Hocico largo, caja craneana estrecha y cresta sagital marcada",
+      "Dentición muy completa: 50 dientes, con caninos grandes",
+      "Plantígrados; el pie trasero tiene un dedo oponible sin uña",
+      "Cola a menudo prensil; muchas hembras tienen marsupio"
+    ],
+    "en": [
+      "Long snout, narrow braincase and prominent sagittal crest",
+      "Very full dentition: 50 teeth, with large canines",
+      "Plantigrade; the hind foot has an opposable, clawless digit",
+      "Tail often prehensile; many females have a pouch"
+    ]
+  },
+  "contrast": {
+    "es": "Su parecido con roedores y musarañas es convergente; y el monito de monte (Microbiotheria), también sudamericano, está más emparentado con los marsupiales australianos.",
+    "en": "Their resemblance to rodents and shrews is convergent; the monito del monte (Microbiotheria), also South American, is closer to the Australian marsupials."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Opossum",
+      "url": "https://en.wikipedia.org/wiki/Opossum",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Didelphimorphia",
+      "url": "https://es.wikipedia.org/wiki/Didelphimorphia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

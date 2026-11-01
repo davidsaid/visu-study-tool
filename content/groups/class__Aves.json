@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Vertebrados homeotermos con plumas, alas y pico córneo sin dientes; son los únicos dinosaurios terópodos vivos y, con los cocodrilos, los únicos arcosaurios actuales. Hay más de 11.000 especies en 44 órdenes; el bestiario incluye 28, del avestruz a los paseriformes.",
+    "en": "Warm-blooded vertebrates with feathers, wings and a toothless horny beak; they are the only living theropod dinosaurs and, with crocodiles, the only living archosaurs. There are over 11,000 species in 44 orders; the bestiary covers 28, from the ostrich to the passerines."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo cubierto de plumas",
+      "Miembros anteriores transformados en alas (algunas aves no vuelan)",
+      "Pico córneo sin dientes",
+      "Huevos de cáscara dura que se incuban",
+      "Esqueleto fuerte pero ligero y corazón de cuatro cavidades"
+    ],
+    "en": [
+      "Body covered in feathers",
+      "Forelimbs modified into wings (some birds are flightless)",
+      "Toothless horny beak",
+      "Hard-shelled eggs that are incubated",
+      "Strong yet lightweight skeleton and a four-chambered heart"
+    ]
+  },
+  "contrast": {
+    "es": "La sangre caliente que comparten con los mamíferos es convergente: su grupo hermano actual son los cocodrilos, no los mamíferos.",
+    "en": "The warm blood they share with mammals is convergent: their closest living relatives are crocodilians, not mammals."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Bird",
+      "url": "https://en.wikipedia.org/wiki/Bird",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Aves",
+      "url": "https://es.wikipedia.org/wiki/Aves",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

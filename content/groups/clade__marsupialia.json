@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Marsupiales: mamíferos cuyas crías nacen muy poco desarrolladas y terminan de crecer agarradas a los pezones, a menudo dentro de una bolsa (marsupio). Viven en Australasia y América. En el bestiario: los órdenes Didelphimorphia, Microbiotheria, Dasyuromorphia y Diprotodontia (zarigüeya, monito de monte, diablo de Tasmania, koala, canguro rojo…).",
+    "en": "Marsupials: mammals whose young are born very undeveloped and finish growing attached to the teats, often inside a pouch (marsupium). They live in Australasia and the Americas. In the bestiary: the orders Didelphimorphia, Microbiotheria, Dasyuromorphia and Diprotodontia (opossum, monito del monte, Tasmanian devil, koala, red kangaroo…)."
+  },
+  "traits": {
+    "es": [
+      "Gestación corta y crías muy inmaduras al nacer",
+      "Marsupio en la mayoría de las hembras, con varios pezones",
+      "Huesos epipúbicos (marsupiales) que sostienen la bolsa",
+      "Sin cuerpo calloso entre los hemisferios cerebrales"
+    ],
+    "en": [
+      "Short gestation and very immature young at birth",
+      "A pouch in most females, containing several teats",
+      "Epipubic (marsupial) bones supporting the pouch",
+      "No corpus callosum between the brain hemispheres"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los placentarios, que retienen la cría en el útero hasta un estado avanzado, no tienen huesos epipúbicos y sí cuerpo calloso. Muchos marsupiales se parecen a placentarios (lobo marsupial y lobo, petauro y ardilla voladora) por convergencia.",
+    "en": "Do not confuse with placentals, which keep the young in the uterus until a late stage, lack epipubic bones and have a corpus callosum. Many marsupials resemble placentals (thylacine and wolf, sugar glider and flying squirrel) through convergence."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Marsupial",
+      "url": "https://en.wikipedia.org/wiki/Marsupial",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Marsupialia",
+      "url": "https://es.wikipedia.org/wiki/Marsupialia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

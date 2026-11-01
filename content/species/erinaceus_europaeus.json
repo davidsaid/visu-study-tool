@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo rechoncho y redondeado cubierto por miles de púas pardas y blancas",
+      "Cara, vientre y patas con pelo marrón",
+      "Franja oscura entre la frente y las púas y otras a los lados del hocico",
+      "Hocico móvil y puntiagudo; ojos y orejas pequeños y redondeados",
+      "Se enrolla en bola cuando se siente amenazado"
+    ],
+    "en": [
+      "Stocky, rounded body covered in thousands of brown-and-white spines",
+      "Brown hair on face, belly and legs",
+      "Dark band between forehead and spines, and others along the sides of the snout",
+      "Mobile, pointed snout; small eyes and small rounded ears",
+      "Rolls into a ball when threatened"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Atelerix algirus",
+      "es": "El erizo moruno es más claro, sin franjas oscuras en hocico y frente, y el borde de las púas en la frente forma una uve.",
+      "en": "The Algerian hedgehog is paler, lacks dark bands on the snout and forehead, and its spines meet the forehead in a V."
+    },
+    {
+      "binomial": "Erinaceus roumanicus",
+      "es": "El erizo de pecho blanco es muy difícil de distinguir en el campo, pero tiene una mancha blanca en el pecho.",
+      "en": "The northern white-breasted hedgehog is hard to tell apart in the field but has a white spot on the chest."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son ligeramente más grandes y pesados que las hembras.",
+    "en": "Males are slightly larger and heavier than females."
+  },
+  "sources": [
+    {
+      "title": "Erinaceus europaeus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Erinaceus_europaeus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European hedgehog — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_hedgehog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Peces de aletas radiadas: la clase de peces óseos que reúne casi el 99 % de las especies actuales de peces, en su gran mayoría teleósteos. Incluye 26 órdenes del bestiario, desde el bichir, los esturiones y el pez lagarto hasta la anguila, la trucha, el atún o el lenguado.",
+    "en": "Ray-finned fishes: the class of bony fish that holds nearly 99% of living fish species, the great majority of them teleosts. It includes 26 bestiary orders, from the bichir, sturgeons and gar to the eel, trout, tuna and sole."
+  },
+  "traits": {
+    "es": [
+      "Aletas sostenidas por radios óseos, sin lóbulo carnoso en la base",
+      "Una sola abertura branquial a cada lado, cubierta por un opérculo",
+      "Vejiga natatoria (salvo en los linajes que la han perdido), originada como un saco dorsal del intestino anterior",
+      "Escamas ganoideas en los grupos primitivos; cicloideas o ctenoideas en los teleósteos"
+    ],
+    "en": [
+      "Fins supported by bony rays, without a fleshy lobe at the base",
+      "A single gill opening on each side, covered by an operculum",
+      "Swim bladder (except in lineages that lost it), arising as a dorsal bud from the foregut",
+      "Ganoid scales in early lineages; cycloid or ctenoid scales in teleosts"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los sarcopterigios (celacanto, peces pulmonados), cuyas aletas son lobuladas, más robustas y carnosas.",
+    "en": "Do not confuse with lobe-finned fishes (coelacanth, lungfishes), whose fins are bulkier, fleshy lobes."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Actinopterygii",
+      "url": "https://en.wikipedia.org/wiki/Actinopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Actinopterygii",
+      "url": "https://es.wikipedia.org/wiki/Actinopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

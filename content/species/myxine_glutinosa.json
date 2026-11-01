@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo muy alargado, de anguila, sin mandíbulas ni aletas pectorales",
+      "Sin ojos visibles: solo una ventana de piel sin pigmento sobre el ojo",
+      "Boca rodeada de seis barbillas",
+      "Un único orificio branquial a cada lado de la parte anterior del cuerpo",
+      "Pardo, rojizo, violáceo o gris, más pálido por debajo; cuerpo cubierto de moco espeso"
+    ],
+    "en": [
+      "Very elongated, eel-like body with no jaws and no pectoral fins",
+      "No visible eyes: only an unpigmented window of skin over the eye",
+      "Mouth surrounded by six barbels",
+      "A single gill opening on each side of the front of the body",
+      "Brown, reddish, purplish or grey, paler below; body coated in thick slime"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Petromyzon marinus",
+      "es": "La lamprea tiene ojos, una ventosa bucal con dientes en círculos y siete orificios branquiales a cada lado, en lugar de barbillas y un solo orificio.",
+      "en": "The lamprey has eyes, a toothed sucker mouth and seven gill openings per side, instead of barbels and a single opening."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Puede hacerse un nudo con el cuerpo para quitarse el moco, escapar de espacios estrechos o hacer palanca al comer."
+    ],
+    "en": [
+      "It can tie its body into a knot to strip off slime, escape tight spaces or gain leverage while feeding."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Myxine glutinosa",
+      "url": "https://es.wikipedia.org/wiki/Myxine_glutinosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Myxine glutinosa",
+      "url": "https://en.wikipedia.org/wiki/Myxine_glutinosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

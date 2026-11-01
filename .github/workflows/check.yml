@@ -1,0 +1,115 @@
+name: Check and update data
+
+# On every pull request and push:
+#   1. If a collection's species list or videos changed and the committed snapshot no longer covers them, refresh
+#      the snapshot from the network and pick photos for the new species only.
+#   2. Rebuild data/ offline, run the pipeline tests and the engine tests (headless Chrome).
+#   3. On a pull request from this repository (maintainers with write access), commit the
+#      regenerated files back to the pull request branch, so merging publishes them.
+#   4. Post the build report as the job summary ("Checks" tab → this job → Summary).
+#
+# Commits made with GITHUB_TOKEN do not start new workflow runs, so step 3 cannot loop.
+# Pull requests from forks get steps 1, 2 and 4 only; a maintainer re-runs them from a branch.
+# Species lists live in collections/<id>/species.csv (see COLECCIONES.md).
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Refresh data for new species (network)
+        run: |
+          # Refresh when the snapshot misses a species, or a video in videos.csv was never checked.
+          if python pipeline/build.py && ! grep -q "not checked yet" reports/build-report.md; then
+            echo "Snapshot covers the species lists and videos; no refresh needed."
+          else
+            python pipeline/refresh.py
+            NEW=$(python - <<'EOF'
+          import json, sys
+          sys.path.insert(0, "pipeline")
+          from common import all_species
+          ids = {s["id"] for s in all_species()}
+          manifest = json.load(open("curation/media_manifest.json", encoding="utf-8"))
+          have = {r["species_id"] for r in manifest["records"]}
+          print(" ".join(sorted(ids - have)))
+          EOF
+            )
+            if [ -n "$NEW" ]; then
+              echo "Selecting photos for: $NEW"
+              python pipeline/media.py select --only $NEW
+              python pipeline/media.py fetch
+              python pipeline/media.py report
+            fi
+          fi
+
+      - name: Build data offline
+        run: python pipeline/build.py
+
+      - name: Generated files match their inputs (push to main)
+        # A pull request gets the regenerated files committed below; a push must already contain them,
+        # because Pages publishes the repository as it is.
+        if: github.event_name == 'push'
+        run: |
+          if ! git diff --exit-code --stat -- data/ CREDITS.md reports/build-report.md; then
+            echo "::error::data/ does not match its inputs. Run pipeline/build.py and commit the result."
+            exit 1
+          fi
+
+      - name: Pipeline tests
+        run: python -m unittest discover -s pipeline/tests -v
+
+      - name: Engine tests (headless Chrome)
+        run: |
+          out=$(google-chrome --headless=new --disable-gpu --allow-file-access-from-files --virtual-time-budget=8000 --dump-dom "file://$PWD/tests/engine.html")
+          echo "$out" | grep -o 'RESULT: [A-Z]*[^<]*' | head -1
+          echo "$out" | grep -q 'RESULT: PASS'
+
+      - name: Browser scenarios (headless Chrome)
+        # Each scenario reports JSON; a scenario that throws reports "error". The collections scenario runs on a
+        # throwaway site with the test-only arthropod collection next to the real ones.
+        run: |
+          python tests/fixture_site.py "$RUNNER_TEMP/site"
+          bash tests/run-scenarios.sh google-chrome "$RUNNER_TEMP/site"
+
+      - name: Commit regenerated files to the pull request
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          git config user.name "visu-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ media/ curation/media_manifest.json pipeline/snapshot/ reports/ CREDITS.md media/CREDITS.md
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Regenerate data for the updated species list"
+            git push
+          fi
+
+      - name: Build report
+        if: always()
+        run: |
+          for f in reports/build-report.md reports/media-report.md; do
+            [ -f "$f" ] && cat "$f" >> "$GITHUB_STEP_SUMMARY"
+          done
+          true

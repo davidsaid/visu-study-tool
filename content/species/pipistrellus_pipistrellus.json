@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Murciélago diminuto (cabeza y cuerpo 3,5–5 cm, 3,5–8 g) de alas estrechas",
+      "Orejas cortas y triangulares con la punta redondeada y un trago largo",
+      "Hocico corto con abultamientos glandulares a los lados",
+      "Pelaje marrón variable; cara más oscura, a veces casi negra",
+      "Membranas de alas y cola oscuras y sin pelo"
+    ],
+    "en": [
+      "Tiny bat (head and body 3.5–5 cm, 3.5–8 g) with narrow wings",
+      "Short, triangular ears with rounded tips and a long tragus",
+      "Short muzzle with glandular swellings on the sides",
+      "Variable brown fur; darker face, sometimes almost black",
+      "Dark, hairless wing and tail membranes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pipistrellus pygmaeus",
+      "es": "El murciélago de Cabrera es muy parecido, pero su pelaje suele ser más claro; se separaron por sus distintas frecuencias de ecolocalización.",
+      "en": "The soprano pipistrelle is very similar but usually paler; the two were split on their different echolocation frequencies."
+    },
+    {
+      "binomial": "Rhinolophus ferrumequinum",
+      "es": "El murciélago grande de herradura es mucho mayor, tiene una hoja nasal en herradura y carece de trago.",
+      "en": "The greater horseshoe bat is much larger, has a horseshoe-shaped noseleaf and lacks a tragus."
+    }
+  ],
+  "etymology": {
+    "es": "pipistrellus procede del italiano pipistrello, «murciélago».",
+    "en": "pipistrellus comes from the Italian pipistrello, 'bat'."
+  },
+  "sources": [
+    {
+      "title": "Pipistrellus pipistrellus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Pipistrellus_pipistrellus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Common pipistrelle — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Common_pipistrelle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Greater horseshoe bat — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Greater_horseshoe_bat",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

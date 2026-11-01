@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Varano grande y musculoso de 120–220 cm, el lagarto más largo de África",
+      "Dorso gris pardo con grandes manchas en roseta amarillo verdosas con un punto negro central",
+      "Cola con barras amarillo verdosas",
+      "Garganta y vientre amarillo ocre a crema, a menudo con barras tenues",
+      "Lengua bífida; narinas situadas en lo alto del hocico"
+    ],
+    "en": [
+      "Large, muscular monitor of 120–220 cm, Africa's longest lizard",
+      "Greyish-brown back with large greenish-yellow rosette spots, each with a small black centre",
+      "Tail with greenish-yellow bars",
+      "Throat and underside ochre- to cream-yellow, often faintly barred",
+      "Forked tongue; nostrils set high on the snout"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Varanus komodoensis",
+      "es": "El dragón de Komodo es mucho mayor y más pesado, y de adulto tiene un color uniforme pardo o gris rojizo, sin rosetas.",
+      "en": "The Komodo dragon is much bigger and heavier, and adults are a uniform brown or reddish-grey without rosettes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Nile monitor",
+      "url": "https://en.wikipedia.org/wiki/Nile_monitor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Varanus niloticus",
+      "url": "https://es.wikipedia.org/wiki/Varanus_niloticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Varanus komodoensis",
+      "url": "https://es.wikipedia.org/wiki/Varanus_komodoensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

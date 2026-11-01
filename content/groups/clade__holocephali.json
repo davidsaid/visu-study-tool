@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Holocéfalos («cabeza entera», por la mandíbula superior soldada al cráneo): subclase de peces cartilaginosos, hermana de los elasmobranquios. Fue muy diversa en el Paleozoico; hoy solo sobrevive el orden Chimaeriformes, representado en el bestiario por la quimera.",
+    "en": "Holocephalans ('whole head', for the upper jaw fused to the skull): a subclass of cartilaginous fishes, sister to the elasmobranchs. It was very diverse in the Palaeozoic; today only the order Chimaeriformes survives, represented in the bestiary by the rabbit fish."
+  },
+  "traits": {
+    "es": [
+      "Mandíbula superior soldada al cráneo",
+      "Una sola abertura branquial a cada lado; los arcos branquiales, cubiertos por una membrana opercular",
+      "Sin dentículos dérmicos en la mayor parte del cuerpo",
+      "Placas dentarias anchas y lisas en lugar de dientes"
+    ],
+    "en": [
+      "Upper jaw fused to the skull",
+      "A single gill opening on each side; gill arches covered by an opercular membrane",
+      "No dermal denticles over most of the body",
+      "Broad, smooth tooth plates instead of teeth"
+    ]
+  },
+  "contrast": {
+    "es": "Los elasmobranquios (tiburones y rayas) tienen la mandíbula superior libre del cráneo y de cinco a siete hendiduras branquiales que se abren por separado.",
+    "en": "Elasmobranchs (sharks and rays) have an upper jaw free from the skull and five to seven separately opening gill slits."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Holocephali",
+      "url": "https://en.wikipedia.org/wiki/Holocephali",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Holocephali",
+      "url": "https://es.wikipedia.org/wiki/Holocephali",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

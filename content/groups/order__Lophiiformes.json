@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Peces pescadores o rapes: teleósteos marinos de todo el mundo, desde mares tropicales hasta polares, que cazan con un señuelo formado por un radio modificado de la aleta dorsal. En el bestiario: el rape (Lophius piscatorius).",
+    "en": "Anglerfishes: marine teleosts found worldwide, from tropical to polar seas, that hunt with a lure made from a modified dorsal-fin ray. In the bestiary: the angler or monkfish (Lophius piscatorius)."
+  },
+  "traits": {
+    "es": [
+      "Un radio de la aleta dorsal transformado en caña (illicium) con un cebo en la punta (esca)",
+      "Cabeza enorme, ancha y aplanada, con una boca muy grande y dientes que se abaten hacia dentro",
+      "Aberturas branquiales situadas detrás de las aletas pectorales",
+      "Piel desnuda; aletas pectorales sostenidas por un corto «brazo»"
+    ],
+    "en": [
+      "A dorsal-fin ray modified into a rod (illicium) with a bait at the tip (esca)",
+      "Huge, broad, flattened head with a very large mouth and teeth that hinge inwards",
+      "Gill openings placed behind the pectoral fins",
+      "Naked skin; pectoral fins borne on a short 'arm'"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Anglerfish",
+      "url": "https://en.wikipedia.org/wiki/Anglerfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Lophiiformes",
+      "url": "https://es.wikipedia.org/wiki/Lophiiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

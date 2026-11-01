@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Orden de percomorfos de reconocimiento reciente que incluye a los morónidos (lubinas y lubinas rayadas), antes situados entre los perciformes; son peces costeros del Atlántico y el Mediterráneo, apreciados en la pesca deportiva. En el bestiario: la lubina (Dicentrarchus labrax).",
+    "en": "A recently recognised order of percomorphs that includes the temperate basses (Moronidae), formerly placed in Perciformes; they are coastal fish of the Atlantic and Mediterranean, prized by anglers. In the bestiary: the European sea bass (Dicentrarchus labrax)."
+  },
+  "traits": {
+    "es": [
+      "Morónidos: cuerpo medianamente alargado y algo comprimido; algunas especies superan ampliamente el metro",
+      "Dos aletas dorsales: la primera con 8–10 espinas y la segunda con una espina y radios blandos",
+      "Opérculo con tres espinas planas y preopérculo finamente dentado",
+      "Boca grande, con bandas de dientes pequeños y cónicos, sin caninos"
+    ],
+    "en": [
+      "Moronids: moderately elongated, slightly compressed body; some species far exceed one metre",
+      "Two dorsal fins: the first with 8–10 spines, the second with one spine and soft rays",
+      "Operculum with three flat spines and a finely toothed preoperculum",
+      "Large mouth with bands of small conical teeth and no canines"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los espáridos (dorada, besugo), de cuerpo más alto, con una sola aleta dorsal continua y sin espinas en el opérculo.",
+    "en": "Do not confuse with sea breams (gilthead, blackspot seabream), which are deeper-bodied, with a single continuous dorsal fin and no opercular spines."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Moroniformes",
+      "url": "https://en.wikipedia.org/wiki/Moroniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Moronidae",
+      "url": "https://en.wikipedia.org/wiki/Moronidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Moronidae",
+      "url": "https://es.wikipedia.org/wiki/Moronidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Sparidae",
+      "url": "https://en.wikipedia.org/wiki/Sparidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

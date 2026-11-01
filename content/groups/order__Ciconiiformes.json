@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Cigüeñas (familia Ciconiidae, hoy única del orden): grandes aves zancudas; las garzas y los ibis, antes incluidos aquí, se han trasladado a Pelecaniformes. En el bestiario: la cigüeña blanca y la cigüeña negra.",
+    "en": "Storks (family Ciconiidae, now the only one in the order): large wading birds; herons and ibises, once included here, have been moved to Pelecaniformes. In the bestiary: the white stork and the black stork."
+  },
+  "traits": {
+    "es": [
+      "Aves grandes de patas y cuello largos",
+      "Pico largo y robusto",
+      "Sin el plumón pulverulento de garzas, ibis y espátulas",
+      "Apenas vocalizan; castañetean el pico como forma de comunicación en el nido"
+    ],
+    "en": [
+      "Large birds with long legs and neck",
+      "Long, stout bill",
+      "Lack the powder down of herons, ibises and spoonbills",
+      "Rarely vocalise; bill-clattering is an important form of communication at the nest"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las garzas (Pelecaniformes): las cigüeñas vuelan con el cuello estirado, y las garzas lo recogen en S.",
+    "en": "Do not confuse with herons (Pelecaniformes): storks fly with the neck outstretched, while herons fold it into an S."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Stork",
+      "url": "https://en.wikipedia.org/wiki/Stork",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Ciconiiformes",
+      "url": "https://es.wikipedia.org/wiki/Ciconiiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Heron",
+      "url": "https://en.wikipedia.org/wiki/Heron",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

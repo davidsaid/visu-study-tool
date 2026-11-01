@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Plumaje críptico pardo grisáceo con veteado oscuro, como corteza",
+      "Collar ocre en la nuca y bigoteras blancas",
+      "Pico muy corto y negruzco, con boca enorme rodeada de cerdas",
+      "Alas y cola largas y estrechas; vuelo silencioso y ligero",
+      "En vuelo, el macho muestra manchas blancas en tres primarias y en las puntas de las rectrices externas; la hembra no"
+    ],
+    "en": [
+      "Cryptic greyish-brown plumage with dark streaking, bark-like",
+      "Buff hindneck collar and white moustachial stripe",
+      "Very short blackish bill with a huge, bristle-fringed gape",
+      "Long, narrow wings and tail; silent, buoyant flight",
+      "In flight the male shows white patches on three primaries and white outer-tail tips; the female shows none"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Steatornis caripensis",
+      "es": "El guácharo es mucho mayor (40–49 cm), pardo rojizo con motas blancas y pico ganchudo.",
+      "en": "The oilbird is much larger (40–49 cm), reddish-brown with white spots and a hooked bill."
+    }
+  ],
+  "dimorphism": {
+    "es": "En vuelo se distinguen los sexos: solo el macho tiene manchas blancas en alas y cola.",
+    "en": "Sexes can be told apart in flight: only the male has white wing and tail patches."
+  },
+  "etymology": {
+    "es": "Caprimulgus, del latín capra «cabra» y mulgere «ordeñar», por la antigua creencia de que mamaba de las cabras; europaeus significa «europeo».",
+    "en": "Caprimulgus, from Latin capra 'nanny goat' and mulgere 'to milk', after the old myth that nightjars suckled goats; europaeus means 'European'."
+  },
+  "trivia": {
+    "es": [
+      "«Chotacabras» refleja el mismo mito: «chotar» es un arcaísmo que significa «mamar»."
+    ],
+    "en": [
+      "The Spanish name 'chotacabras' reflects the same myth: 'chotar' is an archaic word for 'to suckle'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Caprimulgus europaeus",
+      "url": "https://es.wikipedia.org/wiki/Caprimulgus_europaeus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European nightjar",
+      "url": "https://en.wikipedia.org/wiki/European_nightjar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Oilbird",
+      "url": "https://en.wikipedia.org/wiki/Oilbird",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

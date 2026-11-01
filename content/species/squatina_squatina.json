@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo aplanado como el de una raya, con grandes pectorales en ala",
+      "Lóbulos delanteros de las pectorales separados de la cabeza",
+      "Cabeza ancha con la boca en el extremo, ojos en el dorso y barbillas delante de las narinas",
+      "Dos dorsales en la cola, sin anal; lóbulo inferior de la caudal mayor que el superior",
+      "Dorso gris rojizo o pardo verdoso con muchas manchitas claras y oscuras"
+    ],
+    "en": [
+      "Ray-like flattened body with large, wing-like pectoral fins",
+      "Front lobes of the pectoral fins not fused to the head",
+      "Broad head with a terminal mouth, eyes on top and barbels in front of the nostrils",
+      "Two dorsal fins on the tail, no anal fin; lower tail lobe larger than the upper",
+      "Reddish-grey or greenish-brown back with many small light and dark spots"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Rhinobatos rhinobatos",
+      "es": "El pez guitarra tiene un hocico alargado y puntiagudo y la parte anterior fundida en un disco de raya.",
+      "en": "The guitarfish has a long pointed snout and a ray-like front end."
+    },
+    {
+      "binomial": "Dipturus batis",
+      "es": "La raya noruega tiene el cuerpo en rombo con hocico largo y puntiagudo y una fila de espinas en la cola.",
+      "en": "The blue skate has a diamond-shaped body with a long pointed snout and a row of thorns on the tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras alcanzan 2,4 m y los machos 1,8 m.",
+    "en": "Females reach 2.4 m and males 1.8 m."
+  },
+  "etymology": {
+    "es": "squatina es el nombre latino de la raya.",
+    "en": "squatina is the Latin name for a skate."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Squatina squatina",
+      "url": "https://es.wikipedia.org/wiki/Squatina_squatina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Squatina squatina",
+      "url": "https://en.wikipedia.org/wiki/Squatina_squatina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Rhinobatos rhinobatos",
+      "url": "https://es.wikipedia.org/wiki/Rhinobatos_rhinobatos",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Blue skate",
+      "url": "https://en.wikipedia.org/wiki/Blue_skate",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

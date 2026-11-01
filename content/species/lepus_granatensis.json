@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Liebre de tamaño medio, con orejas más largas que las del conejo (9–10,5 cm)",
+      "Dorso pardo grisáceo o rojizo muy contrastado con el vientre blanco",
+      "Blanco del vientre que se extiende por la cara interna de las patas hasta los dedos",
+      "Cara externa de las patas rojiza; cola con la punta negra",
+      "Patas traseras grandes"
+    ],
+    "en": [
+      "Medium-sized hare with ears longer than a rabbit's (9–10.5 cm)",
+      "Grey-brown or reddish back sharply contrasting with the white belly",
+      "White of the belly extends along the inner legs to the toes",
+      "Reddish outer legs; black-tipped tail",
+      "Large hind legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Oryctolagus cuniculus",
+      "es": "El conejo es menor, con orejas más cortas y sin punta negra y patas proporcionalmente más cortas.",
+      "en": "The rabbit is smaller, with shorter ears lacking black tips and proportionately shorter legs."
+    },
+    {
+      "binomial": "Lepus europaeus",
+      "es": "La liebre europea, al norte del Ebro, es más grande que la liebre ibérica.",
+      "en": "The European hare, north of the Ebro, is larger than the Granada hare."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son de mayor tamaño y más pesadas que los machos.",
+    "en": "Females are larger and heavier than males."
+  },
+  "sources": [
+    {
+      "title": "Lepus granatensis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Lepus_granatensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Granada hare — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Granada_hare",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European rabbit — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_rabbit",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

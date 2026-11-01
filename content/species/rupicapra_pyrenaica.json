@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Bóvido pequeño y esbelto, menor que la cabra montés",
+      "Cuernos cortos en forma de gancho hacia atrás, en ambos sexos",
+      "Cabeza y garganta claras con una mancha oscura en los ojos a modo de antifaz",
+      "Línea oscura a lo largo del lomo; pardo rojizo en verano, negruzco o pardo en invierno"
+    ],
+    "en": [
+      "Small, slender bovid, smaller than the Iberian ibex",
+      "Short backward-hooked horns in both sexes",
+      "Pale head and throat with a dark mask across the eyes",
+      "Dark stripe along the back; ruddy brown in summer, blackish or brown in winter"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Capra pyrenaica",
+      "es": "La cabra montés es mayor y más robusta, y los machos tienen cuernos gruesos y largos, curvados hacia fuera y atrás, no en gancho.",
+      "en": "The Iberian ibex is larger and stockier, and males have thick, long horns curving out and back, not hooked."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos suelen ser algo más pesados y tienen los cuernos más gruesos y de gancho más cerrado.",
+    "en": "Males are usually slightly heavier, with thicker, more tightly hooked horns."
+  },
+  "sources": [
+    {
+      "title": "Rupicapra pyrenaica — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Rupicapra_pyrenaica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pyrenean chamois — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Pyrenean_chamois",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

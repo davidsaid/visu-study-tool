@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Caballito de mar diminuto: 2–2,5 cm de media, máximo 5 cm",
+      "Cabeza en ángulo recto con el cuerpo; nada erguido",
+      "Color muy variable: blanco, beis, amarillo, verde, pardo o negro, a veces con motas",
+      "A menudo con pequeños apéndices de piel (cirros) que imitan algas"
+    ],
+    "en": [
+      "Tiny seahorse: 2–2.5 cm on average, 5 cm at most",
+      "Head at right angles to the body; swims upright",
+      "Highly variable colour: white, beige, yellow, green, brown or black, sometimes speckled",
+      "Often bears small skin outgrowths (cirri) resembling algae"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Hippocampus erectus",
+      "es": "El caballito H. erectus es mayor de adulto y se distingue además por el número de radios de las aletas y de anillos del tronco.",
+      "en": "H. erectus is larger as an adult and also differs in the number of fin rays and trunk rings."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Según el Guinness, es el pez más lento: unos 1,5 m por hora."
+    ],
+    "en": [
+      "According to Guinness World Records it is the slowest fish, at about 1.5 m per hour."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Hippocampus zosterae",
+      "url": "https://es.wikipedia.org/wiki/Hippocampus_zosterae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Dwarf seahorse",
+      "url": "https://en.wikipedia.org/wiki/Dwarf_seahorse",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Tritón robusto de 10–16 cm, la mitad cola aplanada lateralmente",
+      "Cabeza aplanada, ojos pequeños y patas cortas",
+      "Piel áspera con pequeños tubérculos, sin crestas en dorso ni cola",
+      "Dorso pardo oscuro, oliva o gris, a veces con una raya amarillenta en la columna",
+      "Vientre amarillo, naranja o rojo con manchas oscuras a los lados"
+    ],
+    "en": [
+      "Sturdy newt of 10–16 cm, half of it a laterally flattened tail",
+      "Flattened head, small eyes and short legs",
+      "Rough skin with small tubercles; no crest on back or tail",
+      "Dark brown, olive or grey back, sometimes with a yellowish stripe along the spine",
+      "Yellow, orange or red belly with dark blotches at the sides"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lissotriton helveticus",
+      "es": "El tritón palmeado es más pequeño y de piel lisa en el agua, con franja oscura por el ojo; el macho en celo tiene cresta.",
+      "en": "The palmate newt is smaller and smooth-skinned in water, with a dark eye stripe; the breeding male has a crest."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser mayores; el macho tiene la cloaca redondeada y la hembra cónica.",
+    "en": "Females are usually larger; the male's cloacal swelling is rounded, the female's conical."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Calotriton asper",
+      "url": "https://es.wikipedia.org/wiki/Calotriton_asper",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Pyrenean brook salamander",
+      "url": "https://en.wikipedia.org/wiki/Pyrenean_brook_salamander",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Palmate newt",
+      "url": "https://en.wikipedia.org/wiki/Palmate_newt",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Aletas pectorales larguísimas, de un tercio de la longitud del cuerpo",
+      "Cuerpo voluminoso con hocico estrecho; dorso negro y vientre con mezcla variable de negro y blanco",
+      "Aleta dorsal corta; el lomo se arquea al sumergirse (de ahí «ballena jorobada»)",
+      "Pocos surcos ventrales (14–35), desde la mandíbula al ombligo",
+      "Cola con dibujo blanco y negro y cicatrices propias de cada individuo"
+    ],
+    "en": [
+      "Very long flippers, a third of the body length",
+      "Bulky body with a thin rostrum; black back and a variably black-and-white belly",
+      "Short dorsal fin; the back arches when diving (hence 'humpback')",
+      "Few throat grooves (14–35), from the lower jaw to the navel",
+      "Tail flukes with a black-and-white pattern and scars unique to each individual"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Eubalaena glacialis",
+      "es": "La ballena franca no tiene aleta dorsal, sus aletas pectorales son cortas y en forma de pala y lleva callosidades blancas en la cabeza.",
+      "en": "The right whale has no dorsal fin, short paddle-like flippers and white callosities on its head."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son algo más grandes que los machos (1–1,5 m más largas), algo poco común en mamíferos.",
+    "en": "Females are slightly larger than males (1–1.5 m longer), unusual among mammals."
+  },
+  "etymology": {
+    "es": "Megaptera, del griego mega-, «grande», y ptera, «alas, aletas», por sus grandes aletas; novaeangliae significa «de Nueva Inglaterra».",
+    "en": "Megaptera, from Greek mega-, 'giant', and ptera, 'wings', for its large flippers; novaeangliae means 'New Englander'."
+  },
+  "sources": [
+    {
+      "title": "Megaptera novaeangliae — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Megaptera_novaeangliae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Humpback whale — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Humpback_whale",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "North Atlantic right whale — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/North_Atlantic_right_whale",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

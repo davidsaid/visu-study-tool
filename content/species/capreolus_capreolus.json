@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Cérvido pequeño (unos 75 cm a la cruz como máximo)",
+      "Pelaje pardo rojizo en verano y grisáceo en invierno, cuando aparece una mancha blanca en la grupa",
+      "Astas del macho cortas (20–25 cm), normalmente con tres puntas",
+      "Las crías son rojizas con muchas motas blancas"
+    ],
+    "en": [
+      "Small deer (at most about 75 cm at the shoulder)",
+      "Reddish-brown coat in summer, greyish in winter, when a white rump patch appears",
+      "Male's antlers short (20–25 cm), usually three-pointed",
+      "Fawns are reddish with many white spots"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Dama dama",
+      "es": "El gamo es mayor, con astas palmeadas y el lomo moteado en verano.",
+      "en": "The fallow deer is larger, with palmate antlers and summer spots."
+    }
+  ],
+  "dimorphism": {
+    "es": "Solo los machos tienen astas; en poblaciones sanas son algo mayores que las hembras.",
+    "en": "Only bucks have antlers; in healthy populations they are slightly larger than does."
+  },
+  "etymology": {
+    "es": "Capreolus deriva del latín capra o caprea, «macho cabrío», con el diminutivo -olus.",
+    "en": "Capreolus derives from Latin capra or caprea, 'billy goat', with the diminutive suffix -olus."
+  },
+  "trivia": {
+    "es": [
+      "Ambos sexos emiten gritos parecidos a ladridos."
+    ],
+    "en": [
+      "Both sexes give bark-like calls."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Capreolus capreolus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Capreolus_capreolus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Roe deer — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Roe_deer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

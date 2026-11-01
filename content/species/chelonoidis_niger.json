@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Tortuga terrestre gigantesca: la mayor viva, hasta 417 kg",
+      "Caparazón óseo grande, de color pardo o gris apagado, a veces con líquenes",
+      "Según la isla, caparazón abombado con cuello corto o en «silla de montar» con cuello largo",
+      "Patas gruesas y columnares con piel seca y escamas duras"
+    ],
+    "en": [
+      "Gigantic land tortoise: the largest living one, up to 417 kg",
+      "Large bony shell, dull brown or grey, sometimes with lichens",
+      "Depending on the island, a domed shell with a short neck or a 'saddleback' shell with a long neck",
+      "Thick, stumpy legs with dry skin and hard scales"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Testudo graeca",
+      "es": "La tortuga mora es una tortuga de tamaño medio, muy lejos de las dimensiones gigantes de la de Galápagos.",
+      "en": "The spur-thighed tortoise is medium-sized, nowhere near the giant dimensions of the Galápagos tortoise."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mucho mayores que las hembras; en las poblaciones de caparazón en silla, los machos tienen la abertura delantera más alta y angulosa.",
+    "en": "Males are much larger than females; in saddleback populations males have a higher, more angled front opening."
+  },
+  "trivia": {
+    "es": [
+      "Las diferencias de caparazón entre islas que observó Darwin en 1835 contribuyeron a su teoría de la evolución."
+    ],
+    "en": [
+      "The shell differences between islands that Darwin observed in 1835 contributed to his theory of evolution."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Galápagos tortoise",
+      "url": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_tortoise",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Chelonoidis niger",
+      "url": "https://es.wikipedia.org/wiki/Chelonoidis_niger",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Greek tortoise",
+      "url": "https://en.wikipedia.org/wiki/Greek_tortoise",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

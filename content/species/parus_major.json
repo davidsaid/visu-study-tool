@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Párido grande (12,5–14 cm) muy fácil de reconocer",
+      "Cabeza y cuello negros con mejillas blancas",
+      "Pecho amarillo limón con una banda negra central desde el babero hasta el vientre",
+      "Dorso verde oliva; alas gris azuladas con una barra blanca",
+      "Cola gris azulada con las puntas externas blancas"
+    ],
+    "en": [
+      "Large tit (12.5–14 cm), very easy to recognise",
+      "Black head and neck with white cheeks",
+      "Lemon-yellow breast with a black central stripe from bib to vent",
+      "Olive-green back; blue-grey wings with a white wing bar",
+      "Blue-grey tail with white outer tips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Motacilla alba",
+      "es": "La lavandera blanca también tiene la cara blanca y el píleo negro, pero no tiene amarillo y su cola es larga.",
+      "en": "The white wagtail also has a white face and black crown, but lacks yellow and has a long tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "La hembra es más apagada, con la banda negra del vientre más estrecha y a veces interrumpida.",
+    "en": "The female is duller, with a narrower, sometimes broken black belly stripe."
+  },
+  "etymology": {
+    "es": "Parus significa «carbonero, herrerillo» y maior «mayor» en latín.",
+    "en": "Parus is Latin for 'tit' and maior for 'larger'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Parus major",
+      "url": "https://es.wikipedia.org/wiki/Parus_major",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Great tit",
+      "url": "https://en.wikipedia.org/wiki/Great_tit",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Motacilla alba",
+      "url": "https://es.wikipedia.org/wiki/Motacilla_alba",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

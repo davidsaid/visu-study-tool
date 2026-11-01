@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "es": "Lucios y peces del barro (Esocidae y Umbridae): un pequeño grupo de teleósteos de agua dulce, que algunas clasificaciones rebajan a suborden (Esocoidei) de los salmoniformes. En el bestiario: el lucio (Esox lucius), un voraz depredador de mandíbulas muy potentes.",
+    "en": "Pikes and mudminnows (Esocidae and Umbridae): a small group of freshwater teleosts, which some classifications reduce to a suborder (Esocoidei) of the Salmoniformes. In the bestiary: the northern pike (Esox lucius), a voracious predator with very powerful jaws."
+  },
+  "traits": {
+    "es": [
+      "Aletas dorsal y anal situadas muy atrás en el cuerpo",
+      "Sin aleta adiposa, a diferencia de sus parientes salmónidos",
+      "Maxilar sin dientes; mandíbulas muy potentes"
+    ],
+    "en": [
+      "Dorsal and anal fins placed far back on the body",
+      "No adipose fin, unlike their salmonid relatives",
+      "Toothless maxilla; very powerful jaws"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los salmónidos (truchas, salmones), que tienen aleta adiposa.",
+    "en": "Do not confuse with salmonids (trout, salmon), which have an adipose fin."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Esocoidei",
+      "url": "https://en.wikipedia.org/wiki/Esocoidei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Esociformes",
+      "url": "https://es.wikipedia.org/wiki/Esociformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Salmonidae",
+      "url": "https://en.wikipedia.org/wiki/Salmonidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

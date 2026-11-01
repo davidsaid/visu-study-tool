@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo en rombo con hocico largo y puntiagudo",
+      "Fila de espinas no venenosas a lo largo de la cola",
+      "Dorso gris oliva a pardo, a menudo con manchas; cara inferior gris azulada clara",
+      "Raya muy grande: la mayor y más pesada de Europa"
+    ],
+    "en": [
+      "Diamond-shaped body with a long, pointed snout",
+      "Row of non-venomous thorns along the tail",
+      "Olive-grey to brown upper side, often spotted; pale blue-grey underside",
+      "Very large: the biggest and heaviest skate in Europe"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Dasyatis pastinaca",
+      "es": "La pastinaca tiene la cola en látigo con un aguijón venenoso y la piel lisa, de color uniforme.",
+      "en": "The common stingray has a whip-like tail with a venomous spine and smooth, plain-coloured skin."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Dipturus batis",
+      "url": "https://es.wikipedia.org/wiki/Dipturus_batis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Blue skate",
+      "url": "https://en.wikipedia.org/wiki/Blue_skate",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common stingray",
+      "url": "https://en.wikipedia.org/wiki/Common_stingray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

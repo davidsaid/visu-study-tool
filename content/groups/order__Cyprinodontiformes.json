@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Ciprinodontiformes: peces pequeños, sobre todo de agua dulce, como los killis y los peces vivíparos de acuario; algunos viven en aguas muy salinas, cálidas o contaminadas. En el bestiario: la gambusia (Gambusia affinis) y el guppy (Poecilia reticulata), ambos vivíparos.",
+    "en": "Cyprinodontiforms or toothcarps: small, mostly freshwater fish such as killifishes and aquarium livebearers; some live in very saline, warm or polluted waters. In the bestiary: the mosquitofish (Gambusia affinis) and the guppy (Poecilia reticulata), both livebearers."
+  },
+  "traits": {
+    "es": [
+      "Peces pequeños y alargados que suelen vivir cerca de la superficie",
+      "Mandíbula superior formada solo por el premaxilar, protráctil",
+      "Línea lateral con canales sobre todo en la cabeza",
+      "Marcado dimorfismo sexual: machos de colores llamativos en muchas especies",
+      "Unos ponen huevos y otros paren crías vivas"
+    ],
+    "en": [
+      "Small, elongated fish that often live near the surface",
+      "Upper jaw formed only by the protrusible premaxilla",
+      "Lateral-line canals mostly on the head",
+      "Marked sexual dimorphism: brightly coloured males in many species",
+      "Some lay eggs; others give birth to live young"
+    ]
+  },
+  "contrast": {
+    "es": "Pese al nombre de «carpas dentadas», no están emparentados con las carpas (Cypriniformes, ostariofisios), sino que son acantopterigios.",
+    "en": "Despite the name 'toothcarps', they are not close to true carps (Cypriniformes, Ostariophysi); they are acanthopterygians."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Cyprinodontiformes",
+      "url": "https://en.wikipedia.org/wiki/Cyprinodontiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Cyprinodontiformes",
+      "url": "https://es.wikipedia.org/wiki/Cyprinodontiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

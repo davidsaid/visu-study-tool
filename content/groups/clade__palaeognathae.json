@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Paleognatas: uno de los dos grandes linajes de aves actuales, con cinco órdenes vivos: las ratites no voladoras (avestruces, ñandúes, casuarios y emúes, kiwis) y los tinamúes, que sí vuelan. Sobre todo del hemisferio sur. En el bestiario: avestruz, ñandú, tinamú común, casuario y kiwi sureño.",
+    "en": "Palaeognaths: one of the two great lineages of living birds, with five living orders: the flightless ratites (ostriches, rheas, cassowaries and emus, kiwis) and the flying tinamous. Mostly in the Southern Hemisphere. In the bestiary: ostrich, rhea, spotted nothura, cassowary and southern brown kiwi."
+  },
+  "traits": {
+    "es": [
+      "Paladar paleognato: una arquitectura ósea compleja y característica del paladar (vómer grande, palatino y pterigoides fusionados en una articulación rígida)",
+      "Pelvis con una gran ventana ilio-isquiática abierta",
+      "Todas las formas actuales menos los tinamúes son no voladoras",
+      "Los tinamúes están dentro de la radiación de las ratites: la pérdida del vuelo ocurrió al menos tres veces"
+    ],
+    "en": [
+      "Palaeognathous palate: a complex, characteristic bony palate (large vomer, palatine and pterygoid fused into a rigid joint)",
+      "Pelvis with a large, open ilio-ischiatic fenestra",
+      "All living forms except tinamous are flightless",
+      "Tinamous sit within the ratite radiation: flight was lost at least three times"
+    ]
+  },
+  "contrast": {
+    "es": "Su grupo hermano son los neognatos, que incluyen casi todas las demás aves (unas 10 000 especies).",
+    "en": "Their sister group is Neognathae, which includes nearly all other birds (about 10,000 species)."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Palaeognathae",
+      "url": "https://en.wikipedia.org/wiki/Palaeognathae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Palaeognathae",
+      "url": "https://es.wikipedia.org/wiki/Palaeognathae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

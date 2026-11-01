@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "El mayor paseriforme (54–71 cm), enteramente negro",
+      "Plumaje negro con reflejos irisados azulados y púrpuras",
+      "Pico grande, fuerte, negro y ligeramente curvado",
+      "Plumas de la garganta largas y desgreñadas",
+      "Cola larga en forma de cuña o rombo, visible en vuelo"
+    ],
+    "en": [
+      "The largest passerine (54–71 cm), all black",
+      "Black plumage with blue and purple iridescence",
+      "Large, strong, slightly curved black bill",
+      "Long, shaggy throat feathers",
+      "Long, wedge- or diamond-shaped tail, visible in flight"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Corvus corone",
+      "es": "La corneja negra es menor, de pico más fino, sin barba en la garganta y con la cola casi recta.",
+      "en": "The carrion crow is smaller, with a slimmer bill, no shaggy throat and an almost square tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen mayor envergadura que las hembras.",
+    "en": "Males have a larger wingspan than females."
+  },
+  "etymology": {
+    "es": "Corvus deriva de la palabra latina para «cuervo»; corax es la forma latinizada del griego kórax, «cuervo» o «corneja».",
+    "en": "Corvus derives from the Latin word for 'raven'; corax is the Latinised Greek korax, 'raven' or 'crow'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Corvus corax",
+      "url": "https://es.wikipedia.org/wiki/Corvus_corax",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common raven",
+      "url": "https://en.wikipedia.org/wiki/Common_raven",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

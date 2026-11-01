@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VISU engine tests</title>
+<style>
+  body { font: 14px/1.4 -apple-system, "Segoe UI", Roboto, sans-serif; margin: 1.5rem; }
+  .pass { color: #2c7340; } .fail { color: #b0391b; font-weight: 700; }
+  li { margin: .15rem 0; } code { background: #eee; padding: 0 .2rem; }
+</style>
+</head>
+<body>
+<h1>VISU engine tests</h1>
+<p id="summary">running…</p>
+<p id="result">RESULT: FAIL (tests did not finish)</p>
+<ol id="out"></ol>
+<script src="../vendor/ts-fsrs-5.4.2.umd.js"></script>
+<script src="../app/engine.js"></script>
+<script src="../data/vertebrados/bestiary.js"></script>
+<script src="../data/vertebrados/media.js"></script>
+<script src="../data/vertebrados/content.js"></script>
+<script>
+(function () {
+'use strict';
+const E = window.VISU_ENGINE, R = window.FSRS.Rating, DAY = E.DAY;
+let pass = 0, fail = 0;
+const out = document.getElementById('out');
+function log(ok, name, detail) {
+  const li = document.createElement('li');
+  li.className = ok ? 'pass' : 'fail';
+  li.textContent = (ok ? 'PASS ' : 'FAIL ') + name + (detail ? ' — ' + detail : '');
+  out.appendChild(li);
+  ok ? pass++ : fail++;
+}
+const eq = (name, got, want) => log(JSON.stringify(got) === JSON.stringify(want), name, JSON.stringify(got) === JSON.stringify(want) ? '' : `got ${JSON.stringify(got)}, want ${JSON.stringify(want)}`);
+const ok = (name, cond, detail) => log(!!cond, name, cond ? '' : detail || '');
+function test(name, fn) { try { fn(); } catch (e) { log(false, name, 'threw ' + e.message); } }
+
+/* ---------- a small bestiary in the contract's shape ---------- */
+const SP = [
+  ['milvus_milvus', 'Aves', 'Accipitriformes', 'Milano real'], ['milvus_migrans', 'Aves', 'Accipitriformes', 'Milano negro'],
+  ['buteo_buteo', 'Aves', 'Accipitriformes', 'Busardo ratonero'], ['aquila_chrysaetos', 'Aves', 'Accipitriformes', 'Águila real'],
+  ['ciconia_ciconia', 'Aves', 'Ciconiiformes', 'Cigüeña blanca'], ['tyto_alba', 'Aves', 'Strigiformes', 'Lechuza común'],
+  ['lynx_pardinus', 'Mammalia', 'Carnivora', 'Lince ibérico'], ['panthera_onca', 'Mammalia', 'Carnivora', 'Jaguar'],
+  ['panthera_leo', 'Mammalia', 'Carnivora', 'León'], ['connochaetes_gnou', 'Mammalia', 'Cetartiodactyla', 'Ñu negro'],
+  ['salamandra_salamandra', 'Amphibia', 'Caudata', 'Salamandra común'], ['timon_lepidus', 'Reptilia', 'Squamata', 'Lagarto ocelado'],
+  ['petromyzon_marinus', 'Hyperoartia', 'Petromyzontiformes', 'Lamprea de mar']
+];
+function fixture() {
+  const species = {}, nodes = {}, media = {};
+  const add = (id, parent, rank, scientific) => {
+    if (!nodes[id]) nodes[id] = { id, parent, children: [], rank, scientific, name: { es: scientific, en: scientific }, teacher_rank: null, grade: null, species_count: 0 };
+    if (parent && !nodes[parent].children.includes(id)) nodes[parent].children.push(id);
+  };
+  add('clade:vertebrata', null, 'clade', 'Vertebrata');
+  SP.forEach(([id, cls, ord, common]) => {
+    const [g, e] = id.split('_'), G = g[0].toUpperCase() + g.slice(1);
+    species[id] = { id, binomial: `${G} ${e}`, genus: G, epithet: e, class: cls, order: ord, infraorder: null, common_es: common, common_en: null,
+      family: null, authority: null, keys: {}, video: { url: 'https://www.youtube.com/watch?v=abcdefghijk', status: 'ok', checked: null }, facts: [], corrections: [] };
+    add('class:' + cls, 'clade:vertebrata', 'class', cls);
+    add('order:' + ord, 'class:' + cls, 'order', ord);
+    add(id, 'order:' + ord, 'species', `${G} ${e}`);
+    media[id] = [{ id: 'x-' + id, file: `media/${id}/x.jpg`, w: 800, h: 600, author: 'A', license: 'CC BY 4.0', license_url: null, source: 'commons', source_url: null, modified: null, crop: null }];
+  });
+  delete media.petromyzon_marinus;   // one species without photos
+  return E.buildModel({ edition: 'test', species, tree: { root: 'clade:vertebrata', deep_path: [], nodes }, sources: {}, corrections: [] }, media, {});
+}
+const M = fixture();
+const kind = (given, id, skill) => E.classify(M, given, id, skill).kind;
+
+/* ---------- grading ---------- */
+test('grading', () => {
+  eq('capitalisation does not count', kind('LINCE IBÉRICO', 'lynx_pardinus', 'common'), 'right');
+  eq('extra and surrounding spaces do not count', kind('  lince    ibérico ', 'lynx_pardinus', 'common'), 'right');
+  eq('missing accent is wrong (misspelling)', kind('Lince iberico', 'lynx_pardinus', 'common'), 'misspelling');
+  eq('accent on the wrong letter is wrong', kind('Líncé ibérico', 'lynx_pardinus', 'common'), 'misspelling');
+  eq('missing diéresis (ü) is wrong', kind('Cigueña blanca', 'ciconia_ciconia', 'common'), 'misspelling');
+  eq('ü typed correctly is right', kind('cigüeña blanca', 'ciconia_ciconia', 'common'), 'right');
+  eq('n instead of ñ is wrong', kind('Nu negro', 'connochaetes_gnou', 'common'), 'misspelling');
+  eq('ñ typed correctly is right', kind('ñu negro', 'connochaetes_gnou', 'common'), 'right');
+  eq('uppercase Ñ folds to ñ', kind('ÑU NEGRO', 'connochaetes_gnou', 'common'), 'right');
+  eq('decomposed accent (NFD input) is right', kind('Lince ibérico', 'lynx_pardinus', 'common'), 'right');
+  eq('genus case-insensitive', kind('milvus', 'milvus_milvus', 'genus'), 'right');
+  eq('genus typo is a misspelling', kind('Milbus', 'milvus_milvus', 'genus'), 'misspelling');
+  eq('blank is wrong', kind('   ', 'milvus_milvus', 'genus'), 'wrong');
+  eq('shared genus is right (Panthera for P. onca)', kind('Panthera', 'panthera_onca', 'genus'), 'right');
+  eq('order stem typo is a misspelling', kind('Accipitriforme', 'buteo_buteo', 'order'), 'misspelling');
+  eq('another valid class is wrong, not a confusion', E.classify(M, 'Aves', 'lynx_pardinus', 'class'), { kind: 'wrong', value: 'Aves' });
+  eq('unrelated text is wrong', kind('perro', 'lynx_pardinus', 'common'), 'wrong');
+});
+
+/* ---------- misspelling vs wrong species ---------- */
+test('intent router', () => {
+  eq('Milvus milvos → misspelling of Milvus milvus', kind('Milvus milvos', 'milvus_milvus', 'binomial'), 'misspelling');
+  const r = E.classify(M, 'Milvus migrans', 'milvus_milvus', 'binomial');
+  eq('Milvus migrans → wrong species', r.kind, 'wrong_species');
+  eq('…confused with milvus_migrans', r.with, ['milvus_migrans']);
+  eq('epithet "milvos" → misspelling', kind('milvos', 'milvus_milvus', 'species'), 'misspelling');
+  eq('epithet "migrans" → wrong species', E.classify(M, 'migrans', 'milvus_milvus', 'species').with, ['milvus_migrans']);
+  eq('common "Milano negro" for the red kite → wrong species', E.classify(M, 'milano negro', 'milvus_milvus', 'common').with, ['milvus_migrans']);
+  eq('another species without its accent still routes to it', E.classify(M, 'aguila real', 'buteo_buteo', 'common').kind, 'wrong_species');
+  eq('OSA counts a transposition as 1', E.osa('mlivus', 'milvus'), 1);
+  eq('thresholds 0/1/2 by length', [E.threshold(4), E.threshold(8), E.threshold(9)], [0, 1, 2]);
+});
+
+/* ---------- distractors ---------- */
+test('distractors', () => {
+  const rng = E.rngFrom(7), pool = M.withPhotos;
+  ok('reverse pool excludes species without photos', !pool.includes('petromyzon_marinus'));
+  const easy = E.reverseDistractors(M, 'lynx_pardinus', 1, pool, rng);
+  eq('Easy: 3 options', easy.length, 3);
+  ok('Easy: all from other classes', easy.every(x => M.species[x].class !== 'Mammalia'), easy.join());
+  ok('Easy: spread across distinct classes', new Set(easy.map(x => M.species[x].class)).size === 3, easy.join());
+  const med = E.reverseDistractors(M, 'milvus_milvus', 2, pool, rng);
+  ok('Medium: same class, other order first', med.length === 3 && med.slice(0, 2).every(x => M.species[x].class === 'Aves' && M.species[x].order !== 'Accipitriformes'), med.join());
+  ok('Medium: a short tier falls back to the closest species', M.species[med[2]].class === 'Aves', med.join());
+  const hard = E.reverseDistractors(M, 'milvus_milvus', 3, pool, rng);
+  ok('Hard: same order or genus', hard.length === 3 && hard.every(x => M.species[x].order === 'Accipitriformes'), hard.join());
+  eq('Hard: the congener comes first', hard[0], 'milvus_migrans');
+  const fb = E.reverseDistractors(M, 'salamandra_salamandra', 3, pool, rng);
+  ok('Hard fallback: still 3 distinct options without the target', fb.length === 3 && new Set(fb).size === 3 && !fb.includes('salamandra_salamandra'), fb.join());
+  const lynxHard = E.reverseDistractors(M, 'lynx_pardinus', 3, pool, rng);
+  ok('Hard: closest first (Carnivora before others)', M.species[lynxHard[0]].order === 'Carnivora' && M.species[lynxHard[1]].order === 'Carnivora', lynxHard.join());
+  ['class', 'order', 'genus', 'species', 'common'].forEach(k => {
+    const mc = E.mcOptions(M, 'milvus_milvus', k, rng);
+    const vals = mc.options.map(o => E.gradeKey(o.value));
+    ok(`MC ${k}: 4 distinct options with the answer once`, mc.options.length === 4 && new Set(vals).size === 4 && vals.filter(v => v === E.gradeKey(mc.correct)).length === 1, vals.join('|'));
+  });
+  const mcg = E.mcOptions(M, 'panthera_onca', 'genus', rng);
+  ok('MC genus: a congener’s genus is not offered as a distractor', mcg.options.filter(o => o.value === 'Panthera').length === 1);
+});
+
+/* ---------- scheduling and the mastery rule ---------- */
+test('mastery rule', () => {
+  const t0 = Date.UTC(2026, 10, 1, 10);
+  let c = null;
+  for (let i = 0; i < 6; i++) c = E.applyAnswer(c, { level: 1, kind: 'right', conf: 'sure' }, t0 + i * DAY).card;
+  eq('Easy answers never create FSRS mastery state', c.m, null);
+  ok('Easy answers raise visible progress', E.cardMeter(c, t0 + 6 * DAY) > 0);
+  ok('…but at most to 50%', E.cardMeter(c, t0 + 6 * DAY) <= 0.5);
+  ok('…and the card is not mastered', !E.cardMastered(c, t0 + 6 * DAY));
+  let m2 = E.applyAnswer(null, { level: 2, kind: 'right', conf: 'sure', hints: 0 }, t0);
+  eq('Medium without hints: no mastery update', [m2.card.m, m2.rating], [null, null]);
+  m2 = E.applyAnswer(null, { level: 2, kind: 'right', conf: 'sure', hints: 2 }, t0);
+  eq('Medium with hints: no mastery update', m2.card.m, null);
+  const h1 = E.applyAnswer(null, { level: 3, kind: 'right', conf: 'unsure', hints: 1 }, t0);
+  eq('Hard with a hint does not count', h1.card.m, null);
+  const h = E.applyAnswer(null, { level: 3, kind: 'right', conf: 'sure', hints: 0 }, t0);
+  ok('Hard without hints updates FSRS', h.card.m && h.card.m.reps === 1);
+  eq('a first sure answer is rated Good, not Easy', h.rating, R.Good);
+  eq('a wrong Hard answer is rated Again', E.applyAnswer(h.card, { level: 3, kind: 'misspelling', conf: 'sure' }, t0 + DAY).rating, R.Again);
+  eq('a guessed Hard answer is rated Hard', E.applyAnswer(h.card, { level: 3, kind: 'right', conf: 'guess' }, t0 + DAY).rating, R.Hard);
+  eq('a later sure Hard answer is rated Easy', E.applyAnswer(h.card, { level: 3, kind: 'right', conf: 'sure' }, t0 + DAY).rating, R.Easy);
+  ok('one Hard answer is not yet "dominada"', !E.cardMastered(h.card, t0 + 60 * 1000));
+  let k = h.card, t = t0;
+  for (let i = 0; i < 6; i++) { t = Math.max(t + 60 * 1000, k.m.due); k = E.applyAnswer(k, { level: 3, kind: 'right', conf: 'unsure' }, t).card; }
+  ok('repeated spaced Hard successes reach "dominada"', E.cardMastered(k, t), `S=${k.m.s.toFixed(1)} R=${E.retrievability(k.m, t).toFixed(2)}`);
+  eq('a mastered card shows 100%', E.cardMeter(k, t), 1);
+  const miss = E.applyAnswer(null, { level: 1, kind: 'wrong', conf: 'sure' }, t0);
+  eq('Easy miss: re-shown within the session (1 min)', miss.card.p.due - t0, 60 * 1000);
+  const after = E.applyAnswer(h.card, { level: 1, kind: 'right', conf: 'sure' }, t0 + 1000);
+  eq('Easy answer after Hard keeps the FSRS state untouched', after.card.m, h.card.m);
+});
+
+/* ---------- sessions, streak, mock ---------- */
+test('sessions', () => {
+  const now = Date.UTC(2026, 10, 1, 10);
+  const P = E.emptyProgress(now);
+  P.settings.newPerDay = 2;
+  const skills = ['class', 'order', 'genus', 'species', 'common'];
+  let items = E.buildSession(M, P, { now, skills, size: 20, rng: E.rngFrom(1) });
+  eq('first session: newPerDay × 5 new cards', items.length, 10);
+  ok('first session: new species come in tree order (first order first)', items.every(x => ['milvus_milvus', 'milvus_migrans'].includes(x.sp)), items.map(x => x.sp).join());
+  ok('no species twice in a row', items.every((x, i) => !i || items[i - 1].sp !== x.sp), items.map(x => x.sp).join());
+  P.cards['tyto_alba:genus'] = E.applyAnswer(null, { level: 1, kind: 'wrong' }, now - 5 * 60 * 1000).card;
+  items = E.buildSession(M, P, { now, skills, size: 3, rng: E.rngFrom(2) });
+  ok('due cards come first', items.some(x => x.sp === 'tyto_alba' && x.skill === 'genus'), JSON.stringify(items));
+  ok('species without photos are never asked', E.buildSession(M, P, { now, skills, size: 99, force: true }).every(x => x.sp !== 'petromyzon_marinus'));
+  const scoped = E.buildSession(M, E.emptyProgress(now), { now, skills, size: 50, scope: 'order:Carnivora', rng: E.rngFrom(3) });
+  ok('group scope only asks that group', scoped.length && scoped.every(x => M.species[x.sp].order === 'Carnivora'));
+  const days = {}; [0, 1, 3, 4].forEach(d => { days[E.ymd(now - d * DAY)] = 1; });
+  eq('streak forgives one missed day', E.streak(days, now), 4);
+  days[E.ymd(now - 2 * DAY)] = 0; delete days[E.ymd(now - 4 * DAY)]; delete days[E.ymd(now - 3 * DAY)];
+  eq('streak stops at a second gap', E.streak(days, now), 2);
+  eq('mock: 5/10 passes', E.mockScore([{ ok: { class: true, order: true, genus: true, species: false, common: false } }, { ok: { class: true, order: true, genus: false, species: false, common: false } }]).passed, true);
+  eq('mock: 4/10 fails', E.mockScore([{ ok: { class: true, order: true, genus: false, species: false, common: false } }, { ok: { class: true, order: true, genus: false, species: false, common: false } }]).passed, false);
+});
+
+/* ---------- export / import ---------- */
+test('export/import', () => {
+  const now = Date.UTC(2026, 10, 1, 10);
+  const P = E.emptyProgress(now);
+  P.settings.examDate = '2026-11-16'; P.settings.lang = 'en';
+  P.cards['milvus_milvus:species'] = E.applyAnswer(null, { level: 3, kind: 'right', conf: 'sure' }, now).card;
+  P.cards['milvus_milvus:common'] = E.applyAnswer(null, { level: 1, kind: 'wrong' }, now).card;
+  P.log.push({ ts: now, card: 'milvus_milvus:species', game: 'foto', level: 3, rating: 3, hints: 0, conf: 'sure', kind: 'right' });
+  P.log.push({ ts: now, card: 'milvus_milvus:common', game: 'foto', level: 1, rating: null, hints: 0, conf: 'sure', kind: 'wrong_species', with: ['milvus_migrans'], typed: 'Milano negro' });
+  P.days[E.ymd(now)] = 2; P.badges['habit:first_page'] = { tier: 'gold', at: now };
+  P.mocks.push({ id: 'm1', at: now, items: [], ok: 0, total: 0, score10: 0, passed: false });
+  const file = JSON.stringify(E.makeExport(P, now, '2026-27'));
+  const back = E.parseImport(file, now + 1000);
+  eq('round trip keeps the whole progress object', JSON.stringify(back.progress), JSON.stringify(P));
+  eq('round trip reports the answer count', back.answers, 2);
+  eq('export carries schemaVersion', JSON.parse(file).schemaVersion, E.SCHEMA_VERSION);
+  const code = t => { try { E.parseImport(t, now); return 'ok'; } catch (e) { return e.code; } };
+  eq('rejects a non-JSON file', code('hello'), 'json');
+  eq('rejects a JSON file from something else', code('{"foo":1}'), 'not_visu');
+  eq('rejects a newer schema', code(JSON.stringify(Object.assign(JSON.parse(file), { schemaVersion: 99 }))), 'newer');
+  /* Collections: a copy belongs to one collection; copies made before collections belong to vertebrados. */
+  const colCode = (t, c) => { try { E.parseImport(t, now, c); return 'ok'; } catch (e) { return e.code + (e.collection ? ':' + e.collection : ''); } };
+  const artFile = JSON.stringify(E.makeExport(P, now, 'prueba', 'artropodos-prueba'));
+  eq('export defaults to the vertebrate collection', JSON.parse(file).collection, 'vertebrados');
+  eq('export names its collection', JSON.parse(artFile).collection, 'artropodos-prueba');
+  eq('a copy imports into its own collection', colCode(artFile, 'artropodos-prueba'), 'ok');
+  eq('a copy is refused by another collection, naming its own', colCode(artFile, 'vertebrados'), 'other_collection:artropodos-prueba');
+  const legacy = JSON.parse(file); delete legacy.collection;
+  eq('a copy from before collections imports into vertebrados', colCode(JSON.stringify(legacy), 'vertebrados'), 'ok');
+  eq('a copy from before collections is refused elsewhere', colCode(JSON.stringify(legacy), 'artropodos-prueba'), 'other_collection:vertebrados');
+  const withPh = E.normalizeProgress({ mocks: [{ id: 'm2', at: now, items: [{ sp: 'lynx_pardinus', typed: {}, ok: {}, ph: 2 }, { sp: 'bubo_bubo', typed: {}, ok: {} }] }] }, now);
+  eq('a mock item keeps the photo it showed', withPh.mocks[0].items.map(x => x.ph), [2, undefined]);
+  eq('a malformed collection name counts as vertebrados', colCode(JSON.stringify(Object.assign(JSON.parse(artFile), { collection: '<x>' })), 'vertebrados'), 'ok');
+  const dirty = JSON.parse(file); dirty.progress.cards['bad key'] = {}; dirty.progress.cards['x:species'] = 5; dirty.progress.log = 'nope';
+  eq('import refuses a file with malformed cards', code(JSON.stringify(dirty)), 'invalid');
+  const clean = E.normalizeProgress(dirty.progress, now);
+  ok('stored data drops malformed cards and logs', !clean.cards['bad key'] && !clean.cards['x:species'] && Array.isArray(clean.log) && clean.log.length === 0);
+
+  /* Crafted files (code review 2026-11-01): each payload once in a file and once as stored data. */
+  const XSS = '"><img src=x onerror="window.PWNED=1">';
+  const withP = f => { const d = JSON.parse(file); f(d.progress); return d; };
+  const payloads = {
+    'settings.newPerDay': withP(p => { p.settings.newPerDay = XSS; }),
+    'mocks[0].score10': withP(p => { p.mocks[0] = { id: 'm1', at: now, items: [], ok: XSS, total: 1, score10: XSS, passed: true }; }),
+    'mocks[0].items[0].sp': withP(p => { p.mocks[0].items = [{ sp: XSS, typed: {}, ok: {} }]; }),
+    'log card not a string': withP(p => { p.log.push({ ts: now, card: { split: 1 }, kind: 'wrong' }); }),
+    'badges null / unknown tier': withP(p => { p.badges['class:Aves'] = null; p.badges['class:Mammalia'] = { tier: 'platinum', at: now }; }),
+    'ui.scope': withP(p => { p.ui.scope = XSS; }),
+    'meta.readiness': withP(p => { p.meta.readiness['2026-11-01'] = XSS; }),
+    'typed object': withP(p => { p.log[1].typed = { toString: XSS }; }),
+    '__proto__ badge': JSON.parse(file.replace('"badges":{', '"badges":{"__proto__":{"tier":"gold","at":1},'))
+  };
+  Object.keys(payloads).forEach(k => {
+    eq(`import refuses a crafted ${k}`, code(JSON.stringify(payloads[k])), 'invalid');
+    const P2 = E.normalizeProgress(JSON.parse(JSON.stringify(payloads[k].progress)), now);
+    ok(`stored ${k} comes back without the payload`, !JSON.stringify(P2).includes('onerror') && Object.getPrototypeOf(P2.badges) === Object.prototype, JSON.stringify(P2).slice(0, 200));
+  });
+  const S2 = E.normalizeProgress(payloads['settings.newPerDay'].progress, now).settings;
+  eq('a bad setting falls back to its default', S2.newPerDay, 10);
+  eq('numbers in strings are coerced', E.normalizeProgress({ settings: { newPerDay: '15', level: 3 }, createdAt: '2026-11-01T10:00:00Z' }, now).settings.newPerDay, 15);
+  eq('ISO dates are coerced to ms', E.normalizeProgress({ createdAt: '2026-11-01T10:00:00Z' }, now).createdAt, Date.UTC(2026, 10, 1, 10));
+  eq('long typed text is cut to 80 characters', E.normalizeProgress({ log: [{ ts: now, card: 'milvus_milvus:genus', kind: 'wrong', typed: 'x'.repeat(500) }] }, now).log[0].typed.length, 80);
+  eq('unknown keys are dropped', Object.keys(E.normalizeProgress({ evil: 1, settings: { evil: 2 } }, now)).includes('evil') || 'evil' in E.normalizeProgress({ settings: { evil: 2 } }, now).settings, false);
+  const full = JSON.parse(file);
+  full.progress.mocks[0] = { id: 'mock-abc', at: now, skills: ['class', 'order'], items: [{ sp: 'milvus_milvus', typed: { class: 'Aves', order: 'x' }, ok: { class: true, order: false, genus: false, species: false, common: false } }], ok: 1, total: 5, score10: 2, passed: false };
+  full.progress.ui = { scope: 'order:Accipitriformes', exploreSel: 'milvus_milvus', showDeep: true };
+  full.progress.meta.readiness = { '2026-11-01': 0.25 };
+  eq('a real file with every section imports unchanged', JSON.stringify(E.parseImport(JSON.stringify(full), now).progress), JSON.stringify(full.progress));
+});
+
+/* ---------- the real data files, whatever is in data/ now ---------- */
+test('real data', () => {
+  const V = window.VISU || {};
+  if (!V.bestiary) { log(false, 'data/vertebrados/bestiary.js loaded'); return; }
+  const RM = E.buildModel(V.bestiary, V.media, V.content);
+  eq('every species is in the model', RM.order.length, Object.keys(V.bestiary.species).length);
+  ok('every species is reachable in the tree', RM.order.every(id => RM.nodes[id]), RM.order.filter(id => !RM.nodes[id]).slice(0, 5).join());
+  let bad = [];
+  RM.order.forEach(id => ['class', 'order', 'genus', 'species', 'common', 'binomial'].forEach(k => { const v = E.answerFor(RM, id, k); if (!v || E.classify(RM, v, id, k).kind !== 'right') bad.push(`${id}:${k}`); }));
+  ok('every exam answer grades as right against itself', !bad.length, bad.slice(0, 5).join());
+  const rk = (g, id, k) => E.classify(RM, g, id, k).kind;
+  const passer = RM.order.find(id => RM.species[id].order === 'Passeriformes'), gall = RM.order.find(id => RM.species[id].order === 'Galliformes');
+  eq('order: stem typo (Galiformes) is a misspelling', rk('Galiformes', gall, 'order'), 'misspelling');
+  eq('order: suffix typo (Passerifomes) is a misspelling', rk('Passerifomes', passer, 'order'), 'misspelling');
+  eq('order: dropped final s (Galliforme) is a misspelling', rk('Galliforme', gall, 'order'), 'misspelling');
+  eq('order: another order (Piciformes for Passeriformes) stays wrong', E.classify(RM, 'Piciformes', passer, 'order'), { kind: 'wrong', value: 'Piciformes' });
+  eq('epithet: europaea for europaeus is a misspelling, not Talpa', rk('europaea', 'erinaceus_europaeus', 'species'), 'misspelling');
+  eq('epithet: an unrelated valid epithet is still a confusion', rk('pardinus', 'erinaceus_europaeus', 'species'), 'wrong_species');
+  eq('genus: another genus is still a confusion', rk('Talpa', 'erinaceus_europaeus', 'genus'), 'wrong_species');
+  bad = [];
+  const rng = E.rngFrom(11);
+  RM.withPhotos.forEach(id => [1, 2, 3].forEach(lv => { const d = E.reverseDistractors(RM, id, lv, RM.withPhotos, rng); if (d.length !== Math.min(3, RM.withPhotos.length - 1) || new Set(d).size !== d.length || d.includes(id)) bad.push(`${id}@${lv}`); }));
+  ok(`reverse distractors valid for all ${RM.withPhotos.length} species with photos`, !bad.length, bad.slice(0, 5).join());
+  bad = [];
+  RM.order.forEach(id => ['class', 'order', 'genus', 'species', 'common'].forEach(k => { const mc = E.mcOptions(RM, id, k, rng); if (new Set(mc.options.map(o => E.gradeKey(o.value))).size !== mc.options.length || mc.options.length < 2) bad.push(`${id}:${k}`); }));
+  ok('MC options distinct for every card', !bad.length, bad.slice(0, 5).join());
+  const facts = RM.order.reduce((a, id) => a.concat((V.bestiary.species[id].facts || []).map(f => [id, f])), []);
+  const unsourced = facts.filter(([, f]) => !Array.isArray(f.src) || !f.src.length).length;
+  const unknownSrc = facts.filter(([, f]) => (f.src || []).some(s => !V.bestiary.sources[s])).length;
+  log(true, `info: ${RM.order.length} species, ${RM.withPhotos.length} with photos, ${facts.length} facts (${unsourced} without src are hidden, ${unknownSrc} cite an unknown source id)`);
+});
+
+document.getElementById('summary').textContent = `PASS ${pass} / FAIL ${fail}`;
+const tag = 'RESULT' + ':';   // split so the script source itself never matches the CI grep
+document.getElementById('result').textContent = fail ? `${tag} FAIL ${fail}/${pass + fail}` : `${tag} PASS`;
+document.title = `VISU engine tests: ${fail ? 'FAIL' : 'PASS'} ${pass}/${pass + fail}`;
+})();
+</script>
+</body>
+</html>

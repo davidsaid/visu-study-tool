@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Perciformes («con forma de perca»): orden de percomorfos que incluye percas, serránidos y meros. En su sentido clásico, muy amplio, reunía cerca del 40 % de los peces, pero las clasificaciones actuales han separado muchos órdenes (espáridos, escómbridos, carángidos…); los salmonetes (Mullidae), por ejemplo, se sitúan hoy en los singnatiformes. En el bestiario: el salmonete de fango (Mullus barbatus) y el mero (Epinephelus marginatus).",
+    "en": "Perciformes ('perch-like'): an order of percomorphs that includes perches, sea basses and groupers. In its classic, very broad sense it held about 40% of all fish, but current classifications split off many orders (porgies, mackerels, jacks…); goatfishes (Mullidae), for example, are now placed in Syngnathiformes. In the bestiary: the red mullet (Mullus barbatus) and the dusky grouper (Epinephelus marginatus)."
+  },
+  "traits": {
+    "es": [
+      "Aletas dorsal y anal con una parte anterior de espinas punzantes y otra posterior de radios blandos",
+      "Aletas pélvicas con una espina y hasta cinco radios blandos, muy adelantadas, bajo la garganta o el vientre",
+      "Escamas normalmente ctenoideas, ásperas al tacto"
+    ],
+    "en": [
+      "Dorsal and anal fins with a front part of sharp spines and a rear part of soft rays",
+      "Pelvic fins with one spine and up to five soft rays, set far forward under the throat or belly",
+      "Scales usually ctenoid, rough to the touch"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Perciformes",
+      "url": "https://en.wikipedia.org/wiki/Perciformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Perciformes",
+      "url": "https://es.wikipedia.org/wiki/Perciformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Syngnathiformes",
+      "url": "https://en.wikipedia.org/wiki/Syngnathiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

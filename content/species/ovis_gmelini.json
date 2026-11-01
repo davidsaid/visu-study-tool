@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Aspecto de oveja estilizada, con patas y cuello más largos y lana corta",
+      "Pelaje pardo rojizo a oscuro, blanquecino en el morro, la parte baja de las patas, las nalgas y el vientre",
+      "Machos con grandes cuernos que se curvan hacia atrás hasta casi cerrar un círculo",
+      "Mancha clara en el costado (silla) en los machos, sobre todo en invierno",
+      "Hembras sin cuernos o con cuernos muy cortos"
+    ],
+    "en": [
+      "Looks like a slender sheep, with longer legs and neck and short wool",
+      "Reddish to dark brown coat, whitish on the muzzle, lower legs, rump and belly",
+      "Males have large horns curving back almost into a full circle",
+      "Pale flank (saddle) patch in males, especially in winter",
+      "Females hornless or with very short horns"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Capra pyrenaica",
+      "es": "Los cuernos del macho de cabra montés son muy gruesos y separados, sin la curva casi circular del muflón.",
+      "en": "The male Iberian ibex has very thick, widely spaced horns, without the mouflon's almost circular curl."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más grandes, tienen grandes cuernos, una gorguera de pelo en cuello y pecho y una coloración más oscura.",
+    "en": "Males are larger, carry large horns, have a ruff of hair on the neck and chest and are darker overall."
+  },
+  "sources": [
+    {
+      "title": "Ovis orientalis musimon — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Ovis_orientalis_musimon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Mouflon — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Mouflon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Capra pyrenaica — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Capra_pyrenaica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

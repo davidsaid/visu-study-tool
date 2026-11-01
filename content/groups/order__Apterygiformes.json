@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Kiwis: ratites pequeñas, no voladoras y nocturnas, endémicas de Nueva Zelanda, con un solo género (Apteryx) y cinco especies. En el bestiario: el kiwi común o sureño (Apteryx australis).",
+    "en": "Kiwi: small, flightless, nocturnal ratites endemic to New Zealand, with a single genus (Apteryx) and five species. In the bestiary: the southern brown kiwi (Apteryx australis)."
+  },
+  "traits": {
+    "es": [
+      "Tamaño de una gallina; las ratites más pequeñas",
+      "Alas vestigiales invisibles bajo un plumaje de aspecto de cerdas o pelo; sin cola",
+      "Pico largo y flexible con las fosas nasales en la punta",
+      "Grandes vibrisas alrededor de la boca y olfato muy desarrollado"
+    ],
+    "en": [
+      "About the size of a chicken; the smallest ratites",
+      "Vestigial wings hidden under bristly, hair-like plumage; no tail",
+      "Long, flexible bill with the nostrils at the tip",
+      "Large vibrissae around the gape and a keen sense of smell"
+    ]
+  },
+  "contrast": {
+    "es": "Su pico largo con orificios nasales en la punta no se da en ninguna otra ave.",
+    "en": "No other bird has a long bill with the nostrils at its tip."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Kiwi (bird)",
+      "url": "https://en.wikipedia.org/wiki/Kiwi_(bird)",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Apteryx",
+      "url": "https://es.wikipedia.org/wiki/Apteryx",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

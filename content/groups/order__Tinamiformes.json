@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Tinamúes: paleognatas neotropicales de suelo, con una familia (Tinamidae) y unas 46 especies; son las únicas paleognatas actuales capaces de volar. En el bestiario: el tinamú común o inambú (Nothura maculosa).",
+    "en": "Tinamous: ground-dwelling Neotropical palaeognaths, with one family (Tinamidae) and about 46 species; they are the only living palaeognaths able to fly. In the bestiary: the spotted nothura (Nothura maculosa)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo regordete y compacto, con cuello fino, cabeza pequeña y pico corto y curvado",
+      "Plumaje críptico; machos y hembras parecidos",
+      "Esternón con quilla, a diferencia de las ratites",
+      "Tres dedos hacia delante; el posterior elevado o ausente"
+    ],
+    "en": [
+      "Plump, compact body with a slender neck, small head and short, decurved bill",
+      "Cryptic plumage; sexes look alike",
+      "Keeled sternum, unlike ratites",
+      "Three forward toes; the hind toe raised or absent"
+    ]
+  },
+  "contrast": {
+    "es": "Por convergencia se parecen a las perdices (Galliformes), y en algunos países así los llaman; pero son paleognatas, parientes de las ratites.",
+    "en": "Through convergence they resemble partridges (Galliformes), and are called so in some countries, but they are palaeognaths, related to ratites."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Tinamou",
+      "url": "https://en.wikipedia.org/wiki/Tinamou",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Tinamidae",
+      "url": "https://es.wikipedia.org/wiki/Tinamidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

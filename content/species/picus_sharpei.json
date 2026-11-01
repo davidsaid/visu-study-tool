@@ -1,0 +1,75 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro carpintero mediano, verde por encima y verde amarillento pálido por debajo",
+      "Píleo y nuca rojos",
+      "Obispillo verde amarillento muy contrastado",
+      "Poco negro en la cabeza: anillo ocular gris oscuro, no negro",
+      "Macho con bigotera totalmente roja"
+    ],
+    "en": [
+      "Medium-sized woodpecker, green above and pale yellowish-green below",
+      "Red crown and nape",
+      "Strongly contrasting yellowish-green rump",
+      "Little black on the head: dark grey, not black, eye-ring",
+      "Male has an entirely red moustache"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Picus viridis",
+      "es": "El pito real europeo tiene un antifaz negro alrededor del ojo y el macho lleva la bigotera roja con un grueso borde negro.",
+      "en": "The European green woodpecker has a black mask around the eye, and the male's red moustache has a thick black border."
+    },
+    {
+      "binomial": "Dendrocopos major",
+      "es": "El pico picapinos es menor y blanco y negro, con el bajo vientre rojo.",
+      "en": "The great spotted woodpecker is smaller and pied black and white, with a red lower belly."
+    }
+  ],
+  "etymology": {
+    "es": "sharpei honra al zoólogo inglés Richard Bowdler Sharpe, que fue el primero en distinguirlo del pito real europeo.",
+    "en": "sharpei honours the English zoologist Richard Bowdler Sharpe, who first distinguished it from the European green woodpecker."
+  },
+  "trivia": {
+    "es": [
+      "Hasta 2011 se consideraba una subespecie del pito real europeo; los estudios genéticos lo separaron."
+    ],
+    "en": [
+      "Until 2011 it was treated as a subspecies of the European green woodpecker; genetic studies split it."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Picus sharpei",
+      "url": "https://es.wikipedia.org/wiki/Picus_sharpei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian green woodpecker",
+      "url": "https://en.wikipedia.org/wiki/Iberian_green_woodpecker",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Picus viridis",
+      "url": "https://es.wikipedia.org/wiki/Picus_viridis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European green woodpecker",
+      "url": "https://en.wikipedia.org/wiki/European_green_woodpecker",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Dendrocopos major",
+      "url": "https://es.wikipedia.org/wiki/Dendrocopos_major",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Tortuga terrestre de caparazón muy abombado, amarillento a verde oliva",
+      "Placas con bordes negros y a menudo una mancha negra central",
+      "Espolón saliente en la parte posterior de cada muslo",
+      "Placa supracaudal sin dividir; cola corta sin uña terminal",
+      "Cabeza amarilla con manchas negras y ojos saltones"
+    ],
+    "en": [
+      "Land tortoise with a highly domed, yellowish to olive shell",
+      "Scutes with black edges and often a black central blotch",
+      "A protruding spur on the back of each thigh",
+      "Undivided supracaudal scute; short tail without a horny tip",
+      "Yellow head with black spots and bulging eyes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Mauremys leprosa",
+      "es": "El galápago leproso es acuático, con el caparazón aplanado y pardo verdoso y a menudo líneas claras en el cuello.",
+      "en": "The Mediterranean pond turtle is aquatic, with a flattened, greenish-brown shell and often pale neck stripes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son mayores; los machos tienen la cola larga y gruesa y el plastrón cóncavo.",
+    "en": "Females are larger; males have a long, thick tail and a concave plastron."
+  },
+  "etymology": {
+    "es": "graeca no alude a su origen, sino a que el dibujo de su caparazón recordaba los mosaicos griegos.",
+    "en": "graeca does not refer to its origin but to its shell pattern, which recalled Greek mosaics."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Testudo graeca",
+      "url": "https://es.wikipedia.org/wiki/Testudo_graeca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Greek tortoise",
+      "url": "https://en.wikipedia.org/wiki/Greek_tortoise",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Mauremys leprosa",
+      "url": "https://es.wikipedia.org/wiki/Mauremys_leprosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Atún de cuerpo fusiforme con hocico cónico y ojos grandes",
+      "Aletas pectorales extraordinariamente largas",
+      "Dorso azul intenso y vientre blanco plateado",
+      "Tamaño moderado: hasta 1,4 m"
+    ],
+    "en": [
+      "Spindle-shaped tuna with a conical snout and large eyes",
+      "Remarkably long pectoral fins",
+      "Deep blue back and silvery-white belly",
+      "Moderate size: up to 1.4 m"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Thunnus thynnus",
+      "es": "El atún rojo es mucho mayor, con aletas pectorales cortas y aletillas amarillas.",
+      "en": "The bluefin is far larger, with short pectoral fins and yellow finlets."
+    }
+  ],
+  "dimorphism": {
+    "es": "No presenta dimorfismo sexual.",
+    "en": "Males and females show no sexual dimorphism."
+  },
+  "trivia": {
+    "es": [
+      "En España el que se pesca en el Cantábrico se llama «bonito del norte», aunque no es un bonito sino un atún."
+    ],
+    "en": [
+      "In Spain, fish caught in the Bay of Biscay are called bonito del norte, although it is a tuna, not a bonito."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Thunnus alalunga",
+      "url": "https://es.wikipedia.org/wiki/Thunnus_alalunga",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Albacore",
+      "url": "https://en.wikipedia.org/wiki/Albacore",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic bluefin tuna",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

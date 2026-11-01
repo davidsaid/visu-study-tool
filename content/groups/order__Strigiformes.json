@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Rapaces nocturnas: más de 200 especies en dos familias, Tytonidae (lechuzas) y Strigidae (búhos, mochuelos, autillos y cárabos). En el bestiario: la lechuza común, el búho real, el mochuelo europeo y el cárabo común.",
+    "en": "Owls: over 200 species in two families, Tytonidae (barn owls) and Strigidae (typical owls). In the bestiary: the barn owl, the Eurasian eagle-owl, the little owl and the tawny owl."
+  },
+  "traits": {
+    "es": [
+      "Ojos grandes orientados hacia delante y visión binocular",
+      "Disco facial de plumas que dirige el sonido hacia oídos situados asimétricamente",
+      "Cabeza grande y ancha, postura erguida, pico ganchudo con cera y garras afiladas",
+      "Plumas con bordes aserrados que permiten un vuelo casi silencioso",
+      "Dedos que tienden a disponerse dos hacia delante y dos hacia atrás"
+    ],
+    "en": [
+      "Large, forward-facing eyes and binocular vision",
+      "Facial disc of feathers that focuses sound onto asymmetrically placed ears",
+      "Large, broad head, upright stance, hooked bill with a cere and sharp talons",
+      "Feathers with serrated edges that allow nearly silent flight",
+      "Toes that tend to be arranged two forward and two back"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las rapaces diurnas (Accipitriformes, Falconiformes): las nocturnas tienen ojos frontales en un disco facial; sus parecidos se deben a convergencia y no a un antepasado común.",
+    "en": "Do not confuse with diurnal raptors (Accipitriformes, Falconiformes): owls have forward-facing eyes set in a facial disc; their similarities are due to convergence, not common ancestry."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Owl",
+      "url": "https://en.wikipedia.org/wiki/Owl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Strigiformes",
+      "url": "https://es.wikipedia.org/wiki/Strigiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Falconiformes",
+      "url": "https://es.wikipedia.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

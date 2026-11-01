@@ -1,0 +1,61 @@
+{
+  "field_marks": {
+    "es": [
+      "Disco romboidal con grandes aletas pectorales triangulares a cada lado",
+      "Hocico romo y redondeado",
+      "Cola larga y fina, con una gran espina en la base y sin aleta caudal",
+      "Una sola aleta dorsal",
+      "Dorso pardo o negruzco y vientre blanco"
+    ],
+    "en": [
+      "Rhomboid disc with large triangular pectoral fins on each side",
+      "Blunt, rounded snout",
+      "Long, slender tail with a large spine at its base and no tail fin",
+      "A single dorsal fin",
+      "Brown or blackish back and white belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Mobula mobular",
+      "es": "La manta tiene dos aletas cefálicas que se proyectan hacia delante y la dorsal con punta blanca.",
+      "en": "The devil ray has two forward-projecting head fins and a white-tipped dorsal fin."
+    },
+    {
+      "binomial": "Dasyatis pastinaca",
+      "es": "La pastinaca tiene el hocico puntiagudo y pliegues de piel en la cola.",
+      "en": "The common stingray has a pointed snout and skin folds on the tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras crecen más que los machos.",
+    "en": "Females grow larger than males."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Myliobatis aquila",
+      "url": "https://es.wikipedia.org/wiki/Myliobatis_aquila",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common eagle ray",
+      "url": "https://en.wikipedia.org/wiki/Common_eagle_ray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Mobula mobular",
+      "url": "https://es.wikipedia.org/wiki/Mobula_mobular",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common stingray",
+      "url": "https://en.wikipedia.org/wiki/Common_stingray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

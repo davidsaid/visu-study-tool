@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Anillos negros de anchura uniforme a lo largo de todo el cuerpo, sobre fondo gris azulado",
+      "Cabeza negra con el labio superior y el hocico amarillos; el amarillo sigue por encima del ojo",
+      "Cola aplanada en forma de remo, para nadar",
+      "Vientre amarillento con escamas ventrales anchas"
+    ],
+    "en": [
+      "Black rings of even width along the whole body on a bluish-grey ground",
+      "Black head with a yellow upper lip and snout; the yellow extends back above the eye",
+      "Flattened, paddle-shaped tail for swimming",
+      "Yellowish belly with wide ventral scales"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Naja naja",
+      "es": "La cobra india despliega una capucha con dibujo de gafas y no tiene anillos negros regulares ni cola en remo.",
+      "en": "The Indian cobra spreads a spectacled hood and has neither regular black rings nor a paddle tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son bastante mayores que los machos (media de 1,42 m frente a 0,88 m).",
+    "en": "Females are markedly larger than males (average 1.42 m versus 0.88 m)."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Yellow-lipped sea krait",
+      "url": "https://en.wikipedia.org/wiki/Yellow-lipped_sea_krait",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Laticauda colubrina",
+      "url": "https://es.wikipedia.org/wiki/Laticauda_colubrina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Indian cobra",
+      "url": "https://en.wikipedia.org/wiki/Indian_cobra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

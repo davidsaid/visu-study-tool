@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Todas las aves modernas salvo las paleognatas y Galloanserae: casi el 95 % de las especies vivas. Sus linajes se diversificaron muy rápido en torno a la extinción del final del Cretácico, por lo que sus relaciones han sido difíciles de resolver. En el bestiario: desde el flamenco y la cigüeña hasta las rapaces, los loros y los paseriformes.",
+    "en": "All modern birds except palaeognaths and Galloanserae: almost 95% of living species. Its lineages diversified very rapidly around the end-Cretaceous extinction, so their relationships have been hard to resolve. In the bestiary: from the flamingo and the stork to raptors, parrots and passerines."
+  },
+  "traits": {
+    "es": [
+      "Clado definido por la filogenia molecular más que por rasgos externos",
+      "Los machos han perdido el pene, que conservan las anátidas"
+    ],
+    "en": [
+      "A clade defined by molecular phylogeny rather than external traits",
+      "Males have lost the penis that waterfowl retain"
+    ]
+  },
+  "contrast": {
+    "es": "Su grupo hermano es Galloanserae (gallináceas y anátidas); juntos forman los neognatos.",
+    "en": "Its sister group is Galloanserae (gamebirds and waterfowl); together they form the neognaths."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Neoaves",
+      "url": "https://en.wikipedia.org/wiki/Neoaves",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Neoaves",
+      "url": "https://es.wikipedia.org/wiki/Neoaves",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Anseriformes",
+      "url": "https://en.wikipedia.org/wiki/Anseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,73 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico prolongado en una trompa larga, flexible y casi desnuda",
+      "Cola larga y gruesa, más de la mitad de la longitud total",
+      "Patas traseras grandes y palmeadas; delanteras con garras, como de topo",
+      "Pelaje pardo grisáceo con reflejos plateados en el vientre",
+      "Tamaño pequeño (≈25 cm con la cola, 35–80 g)"
+    ],
+    "en": [
+      "Snout extended into a long, flexible, mostly bare trunk",
+      "Long, thick tail, over half of total length",
+      "Large webbed hind feet; clawed, mole-like forefeet",
+      "Grey-brown fur with silvery sheen on the underside",
+      "Small (≈25 cm including tail, 35–80 g)"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Talpa europaea",
+      "es": "El topo tiene la cola muy corta, patas delanteras en forma de pala y carece de trompa y de patas traseras palmeadas.",
+      "en": "The mole has a very short tail and spade-like forefeet, and lacks the trunk and webbed hind feet."
+    },
+    {
+      "binomial": "Rattus norvegicus",
+      "es": "La rata parda es mucho mayor, con hocico romo y sin trompa ni patas palmeadas.",
+      "en": "The brown rat is much larger, with a blunt snout and no trunk or webbed feet."
+    }
+  ],
+  "dimorphism": {
+    "es": "No hay dimorfismo marcado; las hembras son, de media, algo mayores que los machos.",
+    "en": "No marked dimorphism; females are on average slightly larger than males."
+  },
+  "etymology": {
+    "es": "Galemys, del griego γαλῆ (galê, «comadreja») y μῦς (mŷs, «ratón»).",
+    "en": "Galemys, from Greek γαλῆ (galê, 'weasel') and μῦς (mûs, 'mouse')."
+  },
+  "trivia": {
+    "es": [
+      "Su trompa le valió el sobrenombre de «rata trompetera»."
+    ],
+    "en": [
+      "Its trunk earned it the nickname 'trumpet rat'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Galemys pyrenaicus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Galemys_pyrenaicus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pyrenean desman — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Pyrenean_desman",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Talpa europaea — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Talpa_europaea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Rattus norvegicus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Rattus_norvegicus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "es": "Superorden de placentarios (también llamado Supraprimates) formado por Glires (roedores y lagomorfos) y Euarchonta (primates, colugos y tupayas). Se apoya sobre todo en datos moleculares; apenas se conocen rasgos anatómicos exclusivos. En el bestiario: Rodentia, Lagomorpha, Primates, Dermoptera y Scandentia.",
+    "en": "A superorder of placentals (also called Supraprimates) made up of Glires (rodents and lagomorphs) and Euarchonta (primates, colugos and treeshrews). It rests mainly on molecular data; few if any distinctive anatomical features are known. In the bestiary: Rodentia, Lagomorpha, Primates, Dermoptera and Scandentia."
+  },
+  "contrast": {
+    "es": "Su grupo hermano es Laurasiatheria (carnívoros, ungulados, murciélagos, insectívoros), del que se separó hace unos 100 millones de años.",
+    "en": "Its sister group is Laurasiatheria (carnivorans, ungulates, bats, insectivores), from which it split about 100 million years ago."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Euarchontoglires",
+      "url": "https://en.wikipedia.org/wiki/Euarchontoglires",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Euarchontoglires",
+      "url": "https://es.wikipedia.org/wiki/Euarchontoglires",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

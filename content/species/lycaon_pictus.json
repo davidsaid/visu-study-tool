@@ -1,0 +1,53 @@
+{
+  "field_marks": {
+    "es": [
+      "Cánido alto y delgado de patas largas",
+      "Pelaje tricolor con manchas irregulares negras, blancas y ocre, distinto en cada individuo",
+      "Cara delantera y garganta siempre negras",
+      "Orejas enormes, redondeadas y erguidas",
+      "Mitad final de la cola siempre blanca"
+    ],
+    "en": [
+      "Tall, lean canid with long legs",
+      "Tricoloured coat of irregular black, white and tan blotches, unique to each animal",
+      "Front of the face and throat always black",
+      "Huge, rounded, erect ears",
+      "Distal half of the tail always white"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Crocuta crocuta",
+      "es": "La hiena manchada tiene manchas pardas sobre fondo amarillento, grupa baja y orejas más pequeñas.",
+      "en": "The spotted hyena has brown spots on a yellowish coat, low hindquarters and smaller ears."
+    },
+    {
+      "binomial": "Canis lupus",
+      "es": "El lobo es de color más uniforme, sin manchas tricolores, y con orejas más pequeñas.",
+      "en": "The wolf has a more uniform coat without tricoloured blotches, and smaller ears."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son algo más corpulentos; las hembras son un 3–7 % más pequeñas.",
+    "en": "Males are bulkier; females are 3–7% smaller."
+  },
+  "etymology": {
+    "es": "Lycaon, del griego lykaios «parecido a un lobo»; pictus, en latín «pintado».",
+    "en": "Lycaon from Greek lykaios, 'wolf-like'; pictus is Latin for 'painted'."
+  },
+  "sources": [
+    {
+      "title": "Lycaon pictus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Lycaon_pictus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "African wild dog — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/African_wild_dog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Félido de cuerpo esbelto, pecho profundo y patas muy largas, de silueta casi canina",
+      "Cabeza pequeña y redondeada con hocico corto",
+      "Franjas negras en forma de lágrima desde los ojos hasta la boca",
+      "Pelaje leonado a crema con manchas negras macizas y espaciadas, no rosetas",
+      "Barbilla, garganta y vientre blancos sin manchas"
+    ],
+    "en": [
+      "Slim-bodied cat with a deep chest and very long legs, almost dog-like in outline",
+      "Small, rounded head with a short snout",
+      "Black tear-like streaks running from the eyes to the mouth",
+      "Tawny to cream coat with evenly spaced solid black spots, not rosettes",
+      "Unmarked white chin, throat and belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Panthera pardus",
+      "es": "El leopardo es más macizo, con rosetas en vez de manchas simples y sin franjas lacrimales.",
+      "en": "The leopard is bulkier, with rosettes instead of solid spots and no tear streaks."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son, de media, más pequeñas que los machos.",
+    "en": "Females are smaller than males on average."
+  },
+  "etymology": {
+    "es": "Acinonyx, del griego akínētos «inmóvil» + ónyx «uña» (garras poco retráctiles); jubatus, en latín «crestado, con melena».",
+    "en": "Acinonyx from Greek akínētos 'motionless' + ónyx 'nail' (poorly retractile claws); jubatus is Latin for 'crested, maned'."
+  },
+  "trivia": {
+    "es": [
+      "El guepardo no ruge: emite un sonido agudo parecido al de algunas aves."
+    ],
+    "en": [
+      "The cheetah cannot roar; it makes a high-pitched, bird-like call."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Acinonyx jubatus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Acinonyx_jubatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Cheetah — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Cheetah",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

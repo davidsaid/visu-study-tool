@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Tiburones de fondo o carcarriniformes: el orden más diverso de tiburones, con más de 270 especies (cerca del 40 % de los tiburones actuales), entre ellas los tiburones gato, réquiem y martillo. En el bestiario: la pintarroja, la tintorera y el pez martillo.",
+    "en": "Ground sharks: the most diverse order of sharks, with over 270 species (about 40% of living sharks), including catsharks, requiem sharks and hammerheads. In the bestiary: the small-spotted catshark, blue shark and smooth hammerhead."
+  },
+  "traits": {
+    "es": [
+      "Membrana nictitante que cubre el ojo",
+      "Dos aletas dorsales (generalmente sin espinas) y una aleta anal",
+      "Cinco hendiduras branquiales",
+      "Sin branquiespinas"
+    ],
+    "en": [
+      "Nictitating membrane over the eye",
+      "Two dorsal fins (usually spineless) and an anal fin",
+      "Five gill slits",
+      "No gill rakers"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los lamniformes (tiburón blanco, marrajo), que tienen el mismo número de hendiduras y aletas pero carecen de membrana nictitante.",
+    "en": "Do not confuse with mackerel sharks (Lamniformes: great white, mako), which have the same gill-slit and fin count but lack a nictitating membrane."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Carcharhiniformes",
+      "url": "https://en.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Carcharhiniformes",
+      "url": "https://es.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Lamniformes",
+      "url": "https://en.wikipedia.org/wiki/Lamniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

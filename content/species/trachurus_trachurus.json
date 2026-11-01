@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo esbelto y comprimido con cabeza grande y mandíbula inferior saliente",
+      "Línea curvada de escudetes óseos de la cabeza a la cola, cada vez mayores hacia atrás",
+      "Dos dorsales: la primera alta, de espinas finas; la segunda mucho más larga",
+      "Ojo con párpado adiposo bien desarrollado",
+      "Dorso azul oscuro, flancos plateados, vientre blanco y una mancha oscura en el opérculo"
+    ],
+    "en": [
+      "Slender, compressed body with a large head and projecting lower jaw",
+      "Curved line of bony scutes from head to tail, growing larger towards the rear",
+      "Two dorsal fins: the first tall with thin spines, the second much longer",
+      "Eye with a well-developed adipose eyelid",
+      "Dark blue back, silvery flanks, white belly and a dark spot on the gill cover"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Scomber scombrus",
+      "es": "La caballa tiene rayas negras onduladas en el dorso y aletillas tras la dorsal y la anal, y carece de la fila de escudetes óseos.",
+      "en": "The mackerel has wavy black lines on its back and finlets behind the dorsal and anal fins, and lacks the row of bony scutes."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Atlantic horse mackerel",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_horse_mackerel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Trachurus trachurus",
+      "url": "https://es.wikipedia.org/wiki/Trachurus_trachurus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic mackerel",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_mackerel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

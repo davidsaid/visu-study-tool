@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo de oso con pelaje blanco y negro muy contrastado",
+      "Orejas, manchas alrededor de los ojos, hombros y patas negros",
+      "Cara, vientre y lomo blancos",
+      "Orejas ovaladas y erectas; pelaje espeso y lanoso",
+      "Un «sexto dedo» a modo de pulgar en las patas delanteras"
+    ],
+    "en": [
+      "Bear-shaped body with strongly contrasting black-and-white fur",
+      "Black ears, eye patches, shoulders and legs",
+      "White face, belly and back",
+      "Oval, erect ears; thick, woolly coat",
+      "A thumb-like 'sixth digit' on the forepaws"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ursus arctos",
+      "es": "El oso pardo es de color pardo o dorado uniforme, sin el patrón blanco y negro.",
+      "en": "The brown bear is uniformly brown or golden, without the black-and-white pattern."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos suelen ser un 10–20 % mayores que las hembras.",
+    "en": "Males are typically 10–20% larger than females."
+  },
+  "etymology": {
+    "es": "Ailuropoda, del griego aílouros «gato» + poús/podós «pie»; melanoleuca, de mélas «negro» + leukós «blanco», por su pelaje.",
+    "en": "Ailuropoda from Greek aílouros 'cat' + poús/podós 'foot'; melanoleuca from mélas 'black' + leukós 'white', for its coat."
+  },
+  "trivia": {
+    "es": [
+      "Su nombre en chino significa «gran oso gato»."
+    ],
+    "en": [
+      "Its Chinese name means 'large bear-cat'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Ailuropoda melanoleuca — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Ailuropoda_melanoleuca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Giant panda — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Giant_panda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Tres aletas dorsales",
+      "Una barbilla fuerte en el mentón",
+      "Dorso pardo o verde con manchas, vientre plateado",
+      "Línea lateral muy visible como una franja clara"
+    ],
+    "en": [
+      "Three dorsal fins",
+      "A strong barbel on the chin",
+      "Brown or green back with spots, silvery belly",
+      "Lateral line clearly visible as a stripe"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Merluccius merluccius",
+      "es": "La merluza tiene solo dos dorsales, no tiene barbilla y es gris azulada y plateada, con el interior de la boca negro.",
+      "en": "The hake has only two dorsal fins, no barbel, blue-grey and silver colouring and a black mouth lining."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Gadus morhua",
+      "url": "https://es.wikipedia.org/wiki/Gadus_morhua",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic cod",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_cod",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Merluccius merluccius",
+      "url": "https://en.wikipedia.org/wiki/Merluccius_merluccius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

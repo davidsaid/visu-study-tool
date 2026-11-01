@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Primate pequeño de pelaje lanoso y espeso, de gris plateado a pardo oscuro",
+      "Ojos muy grandes, propios de un animal nocturno",
+      "Orejas muy grandes y hocico corto",
+      "Patas traseras fuertes, adaptadas al salto",
+      "Cola larga, más que el cuerpo"
+    ],
+    "en": [
+      "Small primate with thick woolly fur, from silvery grey to dark brown",
+      "Very large eyes, typical of a nocturnal animal",
+      "Very large ears and a short muzzle",
+      "Strong hind legs adapted for leaping",
+      "Long tail, longer than the body"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Loris lydekkerianus",
+      "es": "El loris esbelto tiene extremidades muy finas, anillos oscuros alrededor de los ojos y cola vestigial; el gálago tiene una cola larga y grandes orejas.",
+      "en": "The slender loris has very thin limbs, dark rings around the eyes and a vestigial tail; the galago has a long tail and large ears."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Puede saltar hasta unos tres metros entre las ramas."
+    ],
+    "en": [
+      "It can leap up to about three metres between branches."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Galago senegalensis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Galago_senegalensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Senegal bushbaby — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Senegal_bushbaby",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

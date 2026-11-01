@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Celacantos: peces de aletas lobuladas muy antiguos, conocidos desde el Devónico y que se creían extinguidos hasta que se capturó uno vivo en 1938 frente a Sudáfrica. Hoy queda un solo género, Latimeria, con dos especies; en el bestiario, el celacanto (Latimeria chalumnae).",
+    "en": "Coelacanths: an ancient lineage of lobe-finned fishes, known since the Devonian and thought extinct until a live one was caught off South Africa in 1938. A single genus survives, Latimeria, with two species; in the bestiary, the coelacanth (Latimeria chalumnae)."
+  },
+  "traits": {
+    "es": [
+      "Ocho aletas: dos dorsales, dos pectorales, dos pélvicas, una anal y una caudal",
+      "Cola trilobulada, con un mechón central de radios que sobresale entre los dos lóbulos",
+      "Aletas pectorales lobuladas y bastante alargadas",
+      "Articulación intracraneal muy desarrollada"
+    ],
+    "en": [
+      "Eight fins: two dorsal, two pectoral, two pelvic, one anal and one caudal",
+      "Three-lobed tail, with a central tuft of rays projecting between the two lobes",
+      "Lobed, rather elongated pectoral fins",
+      "Well-developed intracranial joint in the skull"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los peces pulmonados (Ceratodontiformes): el celacanto es marino y de aguas profundas, y sus pulmones no sirven para respirar, mientras que los dipnoos son de agua dulce y respiran aire.",
+    "en": "Do not confuse with lungfishes (Ceratodontiformes): the coelacanth is a deep-water marine fish whose lung does not work for breathing, whereas lungfishes live in fresh water and breathe air."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Coelacanth",
+      "url": "https://en.wikipedia.org/wiki/Coelacanth",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Actinistia",
+      "url": "https://es.wikipedia.org/wiki/Actinistia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sarcopterygii",
+      "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

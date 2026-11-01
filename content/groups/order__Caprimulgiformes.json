@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "es": "En el bestiario, este orden se usa en sentido amplio, equivalente al clado Strisores: chotacabras, guácharo, vencejos y colibríes. Los estudios filogenéticos han mostrado que vencejos y colibríes (Apodiformes) están emparentados con los chotacabras. Miembros: chotacabras europeo, guácharo, vencejo común y colibrí zunzuncito.",
+    "en": "In the bestiary this order is used in a broad sense, equivalent to the clade Strisores: nightjars, the oilbird, swifts and hummingbirds. Phylogenetic studies have shown that swifts and hummingbirds (Apodiformes) are related to nightjars. Members: European nightjar, oilbird, common swift and bee hummingbird."
+  },
+  "traits": {
+    "es": [
+      "Patas pequeñas y débiles, poco aptas para caminar (Apodiformes significa «sin pies»)",
+      "Alas largas, a menudo puntiagudas",
+      "Chotacabras: pico corto con una comisura muy amplia y una uña en forma de peine en el dedo medio",
+      "Chotacabras y guácharo, nocturnos, con plumaje críptico como corteza u hojas secas; el guácharo se orienta por ecolocalización"
+    ],
+    "en": [
+      "Small, weak feet of little use for walking (Apodiformes means 'footless')",
+      "Long, often pointed wings",
+      "Nightjars: short bill with a very wide gape and a comb-like claw on the middle toe",
+      "Nightjars and the oilbird are nocturnal, with cryptic bark- or leaf-like plumage; the oilbird echolocates"
+    ]
+  },
+  "contrast": {
+    "es": "Antes se pensaba que los chotacabras eran parientes de las rapaces nocturnas (Strigiformes), e incluso se incluían en ellas; hoy se agrupan con vencejos y colibríes.",
+    "en": "Nightjars were once thought to be close to owls (Strigiformes) and were even placed within them; today they are grouped with swifts and hummingbirds."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Nightjar",
+      "url": "https://en.wikipedia.org/wiki/Nightjar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Caprimulgiformes",
+      "url": "https://es.wikipedia.org/wiki/Caprimulgiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Strisores",
+      "url": "https://en.wikipedia.org/wiki/Strisores",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Strisores",
+      "url": "https://es.wikipedia.org/wiki/Strisores",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Apodiformes",
+      "url": "https://en.wikipedia.org/wiki/Apodiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Apodiformes",
+      "url": "https://es.wikipedia.org/wiki/Apodiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

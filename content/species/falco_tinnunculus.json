@@ -1,0 +1,67 @@
+{
+  "field_marks": {
+    "es": [
+      "Halcón pequeño (32–39 cm) de alas largas y puntiagudas y cola larga",
+      "Plumaje castaño claro con manchas negruzcas por encima; ante con listas negras por debajo",
+      "Macho: cabeza y cola gris azuladas, con menos manchas",
+      "Hembra: cola parda barrada de negro",
+      "Cola con punta negra; uñas negras"
+    ],
+    "en": [
+      "Small falcon (32–39 cm) with long, pointed wings and a long tail",
+      "Light chestnut plumage spotted blackish above; buff with black streaks below",
+      "Male: blue-grey head and tail, with fewer spots",
+      "Female: brown tail barred with black",
+      "Black-tipped tail; black claws"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Falco naumanni",
+      "es": "El cernícalo primilla tiene el dorso pardo rojizo sin manchas negras, la cabeza gris más uniforme, las plumas centrales de la cola salientes y las uñas blancas.",
+      "en": "The lesser kestrel has an unspotted rufous back, a more uniform grey head, projecting central tail feathers and white claws."
+    },
+    {
+      "binomial": "Falco peregrinus",
+      "es": "El halcón peregrino es mayor y robusto, gris azulado por encima, con cabeza negra y bigotera ancha.",
+      "en": "The peregrine falcon is larger and stockier, blue-grey above, with a black head and broad moustache."
+    }
+  ],
+  "dimorphism": {
+    "es": "Dimorfismo de color, raro en rapaces: el macho tiene cabeza y cola gris azuladas; la hembra es mayor y toda parda.",
+    "en": "Colour dimorphism, unusual in raptors: the male has a blue-grey head and tail; the female is larger and all brown."
+  },
+  "etymology": {
+    "es": "Falco procede del latín tardío falx, «hoz», por sus garras; tinnunculus es el nombre latino del cernícalo, de tinnulus, «estridente».",
+    "en": "Falco is Late Latin, from falx, 'sickle', referring to its claws; tinnunculus is Latin for 'kestrel', from tinnulus, 'shrill'."
+  },
+  "trivia": {
+    "es": [
+      "Caza cerniéndose inmóvil en el aire contra el viento, de ahí su antiguo nombre inglés windhover."
+    ],
+    "en": [
+      "It hunts by hovering into the wind, hence the old English name 'windhover'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Falco tinnunculus",
+      "url": "https://es.wikipedia.org/wiki/Falco_tinnunculus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common kestrel",
+      "url": "https://en.wikipedia.org/wiki/Common_kestrel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Peregrine falcon",
+      "url": "https://en.wikipedia.org/wiki/Peregrine_falcon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

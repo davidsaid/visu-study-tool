@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Crocodilios: grandes reptiles depredadores semiacuáticos, con cocodrilos, aligátores y caimanes, y gaviales. Junto con las aves son los únicos arcosaurios vivos. En el bestiario: el cocodrilo del Nilo, el aligátor americano y el gavial.",
+    "en": "Crocodilians: large, semiaquatic predatory reptiles, comprising crocodiles, alligators and caimans, and gharials. Together with birds they are the only living archosaurs. In the bestiary: the Nile crocodile, the American alligator and the gharial."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo robusto de lagarto, morro largo y aplanado y cola comprimida lateralmente",
+      "Ojos, oídos y narinas en lo alto de la cabeza",
+      "Piel con escudos que no se solapan, muchos reforzados por placas óseas (osteodermos)",
+      "Corazón de cuatro cavidades, como en las aves",
+      "Patas delanteras con cinco dedos; traseras con cuatro dedos palmeados"
+    ],
+    "en": [
+      "Robust, lizard-like body, long flattened snout and laterally compressed tail",
+      "Eyes, ears and nostrils on top of the head",
+      "Skin with non-overlapping scutes, many reinforced by bony plates (osteoderms)",
+      "Four-chambered heart, as in birds",
+      "Front feet with five digits; hind feet with four webbed digits"
+    ]
+  },
+  "contrast": {
+    "es": "Entre ellos: en los cocodrilos el cuarto diente de la mandíbula inferior se ve con la boca cerrada; en aligátores y caimanes (hocico ancho) queda oculto; los gaviales tienen el hocico muy estrecho.",
+    "en": "Among themselves: in crocodiles the fourth lower tooth shows when the mouth is closed; in alligators and caimans (broad snout) it is hidden; gharials have a very narrow snout."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Crocodylia",
+      "url": "https://en.wikipedia.org/wiki/Crocodylia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Crocodilia",
+      "url": "https://es.wikipedia.org/wiki/Crocodilia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

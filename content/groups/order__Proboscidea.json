@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Elefantes y sus parientes extinguidos (mamuts, mastodontes); hoy solo sobrevive la familia Elephantidae, con tres especies. En el bestiario: el elefante africano y el elefante asiático.",
+    "en": "Elephants and their extinct relatives (mammoths, mastodons); only the family Elephantidae survives, with three species. In the bestiary: the African elephant and the Asian elephant."
+  },
+  "traits": {
+    "es": [
+      "Trompa (probóscide) larga y musculosa",
+      "Colmillos derivados de incisivos",
+      "Grandes dientes trituradores laminares",
+      "Cabeza enorme sobre un cuello corto y patas columnares"
+    ],
+    "en": [
+      "Long, muscular trunk (proboscis)",
+      "Tusks derived from incisors",
+      "Large, plate-like grinding teeth",
+      "Huge head on a short neck, and pillar-like legs"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Proboscidea",
+      "url": "https://en.wikipedia.org/wiki/Proboscidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Proboscidea",
+      "url": "https://es.wikipedia.org/wiki/Proboscidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

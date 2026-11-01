@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Arcosaurios: el clado que incluye al antepasado común más reciente de aves y cocodrilos y a todos sus descendientes, entre ellos los dinosaurios y los pterosaurios extintos. En el bestiario agrupa Crocodylia y toda la clase Aves.",
+    "en": "Archosaurs: the clade comprising the most recent common ancestor of birds and crocodilians and all its descendants, including the extinct non-avian dinosaurs and pterosaurs. In the bestiary it groups Crocodylia and the whole class Aves."
+  },
+  "traits": {
+    "es": [
+      "Dientes implantados en alvéolos profundos (las aves actuales los han perdido)",
+      "Fenestra anteorbitaria delante del ojo y fenestra mandibular",
+      "Cuarto trocánter marcado en el fémur",
+      "Se divide en Pseudosuchia (linaje de los cocodrilos) y Avemetatarsalia (linaje de las aves)"
+    ],
+    "en": [
+      "Teeth set in deep sockets (lost in living birds)",
+      "An antorbital opening in front of the eye and a mandibular opening",
+      "A pronounced fourth trochanter on the femur",
+      "Splits into Pseudosuchia (the crocodilian line) and Avemetatarsalia (the bird line)"
+    ]
+  },
+  "contrast": {
+    "es": "Los cocodrilos son los parientes vivos más cercanos de las aves, no de los lagartos: por eso «Reptilia» sin aves es un grado parafilético.",
+    "en": "Crocodilians are the closest living relatives of birds, not of lizards: this is why 'Reptilia' without birds is a paraphyletic grade."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Archosaur",
+      "url": "https://en.wikipedia.org/wiki/Archosaur",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Archosauria",
+      "url": "https://es.wikipedia.org/wiki/Archosauria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

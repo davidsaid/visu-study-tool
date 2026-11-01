@@ -1,0 +1,75 @@
+{
+  "field_marks": {
+    "es": [
+      "Buitre muy grande con alas largas y estrechas y cola larga en forma de cuña o rombo",
+      "Cabeza emplumada, no calva como la de otros buitres",
+      "Frente crema con una banda negra por el ojo y cerdas negras bajo el pico que forman una «barba»",
+      "Dorso gris azulado a gris negruzco; cabeza, pecho y patas teñidos de naranja o herrumbre",
+      "Juveniles pardo negruzcos; tardan de cinco a siete años en ser adultos"
+    ],
+    "en": [
+      "Very large vulture with long, narrow wings and a long wedge- or diamond-shaped tail",
+      "Feathered head, not bald like other vultures",
+      "Creamy forehead with a black band through the eye and black chin bristles forming a 'beard'",
+      "Grey-blue to grey-black upperparts; head, breast and legs washed orange or rusty",
+      "Juveniles blackish-brown; they take five to seven years to mature"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gyps fulvus",
+      "es": "El buitre leonado tiene alas anchas, cola corta y la cabeza blanca.",
+      "en": "The griffon vulture has broad wings, a short tail and a white head."
+    },
+    {
+      "binomial": "Neophron percnopterus",
+      "es": "El alimoche, su pariente más cercano, es mucho menor, blanco con plumas de vuelo negras y cara amarilla desnuda.",
+      "en": "The Egyptian vulture, its closest relative, is much smaller, white with black flight feathers and a bare yellow face."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son algo mayores que los machos.",
+    "en": "Females are slightly larger than males."
+  },
+  "etymology": {
+    "es": "Gypaetus procede del griego gypaíetos, forma corrupta de hypaíetos, «águila» o «buitre»; barbatus significa en latín «barbudo», de barba.",
+    "en": "Gypaetus is from Greek gupaietos, a corrupt form of hupaietos meaning 'eagle' or 'vulture'; barbatus is Latin for 'bearded', from barba."
+  },
+  "trivia": {
+    "es": [
+      "Su color anaranjado es cosmético: se lo da bañándose en barro rico en hierro.",
+      "Es el único vertebrado conocido cuya dieta es en un 70–90 % hueso; suelta los huesos grandes sobre rocas para partirlos."
+    ],
+    "en": [
+      "Its orange colour is cosmetic, acquired by bathing in iron-rich mud.",
+      "It is the only known vertebrate whose diet is 70–90% bone; it drops large bones onto rocks to break them."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Gypaetus barbatus",
+      "url": "https://es.wikipedia.org/wiki/Gypaetus_barbatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Bearded vulture",
+      "url": "https://en.wikipedia.org/wiki/Bearded_vulture",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Gyps fulvus",
+      "url": "https://es.wikipedia.org/wiki/Gyps_fulvus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Neophron percnopterus",
+      "url": "https://es.wikipedia.org/wiki/Neophron_percnopterus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

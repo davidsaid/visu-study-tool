@@ -1,0 +1,47 @@
+{
+  "field_marks": {
+    "es": [
+      "Ciervo grande de pelaje pardo, con vientre y nalgas blanquecinos",
+      "Solo los machos tienen astas, que renuevan cada año; en los grandes, las puntas superiores forman una «corona»",
+      "En otoño muchos machos lucen una melena oscura en cuello y hombros (no la subespecie ibérica)",
+      "Las crías tienen el pelaje rojizo con manchas blancas"
+    ],
+    "en": [
+      "Large brown deer with whitish belly and rump",
+      "Only stags carry antlers, shed every year; in big stags the top tines form a 'crown'",
+      "In autumn many stags grow a dark neck-and-shoulder mane (not the Iberian subspecies)",
+      "Fawns are reddish with white spots"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Dama dama",
+      "es": "El gamo es menor, tiene astas palmeadas y en verano el lomo moteado de blanco.",
+      "en": "The fallow deer is smaller, has palmate antlers and white-spotted flanks in summer."
+    },
+    {
+      "binomial": "Alces alces",
+      "es": "El alce es mucho mayor, con astas en pala y el hocico colgante.",
+      "en": "The moose is much larger, with palmate antlers and an overhanging muzzle."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son más pequeñas, menos corpulentas y nunca tienen astas.",
+    "en": "Females are smaller, less heavily built and never have antlers."
+  },
+  "sources": [
+    {
+      "title": "Cervus elaphus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Cervus_elaphus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Red deer — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Red_deer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

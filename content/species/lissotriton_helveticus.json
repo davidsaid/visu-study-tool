@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Tritón pequeño (5–9,5 cm), oliva o pardo con algunas manchas oscuras",
+      "Franja oscura a lo largo de la cabeza que atraviesa el ojo",
+      "Vientre amarillo o naranja claro; garganta siempre sin manchas",
+      "Macho en celo: filamento en la punta de la cola, patas traseras palmeadas y cresta dorsal baja"
+    ],
+    "en": [
+      "Small newt (5–9.5 cm), olive or brown with some dark spots",
+      "A dark stripe along the head running through the eye",
+      "Yellow to light orange belly; throat always unspotted",
+      "Breeding male: filament at the tail tip, webbed hind feet and a low back crest"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lissotriton boscai",
+      "es": "El tritón ibérico tiene el vientre naranja o rojizo con gruesos puntos negros y el macho no desarrolla patas palmeadas.",
+      "en": "The Iberian newt has an orange or reddish belly with bold black spots, and the male does not grow webbed feet."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos en celo tienen patas traseras palmeadas, un filamento caudal y cresta baja; las hembras son algo mayores.",
+    "en": "Breeding males have webbed hind feet, a tail filament and a low crest; females are somewhat larger."
+  },
+  "etymology": {
+    "es": "helveticus alude a Suiza, la localidad tipo, en el cantón de Vaud.",
+    "en": "helveticus refers to the Swiss type locality, in the canton of Vaud."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Palmate newt",
+      "url": "https://en.wikipedia.org/wiki/Palmate_newt",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Lissotriton helveticus",
+      "url": "https://es.wikipedia.org/wiki/Lissotriton_helveticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Lissotriton boscai",
+      "url": "https://es.wikipedia.org/wiki/Lissotriton_boscai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

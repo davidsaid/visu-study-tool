@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Orejas pequeñas y redondeadas que no cubren los hombros",
+      "Punto más alto del cuerpo en la cabeza, con dos abultamientos hemisféricos en la frente",
+      "Lomo convexo o recto, no hundido",
+      "Trompa con un solo «dedo» en la punta",
+      "Las hembras carecen de colmillos o apenas se les ven"
+    ],
+    "en": [
+      "Small rounded ears that do not cover the shoulders",
+      "Highest point of the body on the head, with two domed bulges on the forehead",
+      "Back convex or level, not sagging",
+      "Trunk tip with a single finger-like projection",
+      "Females lack tusks or have barely visible ones"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Loxodonta africana",
+      "es": "El elefante africano de sabana es mayor, con orejas enormes que cubren el hombro, lomo cóncavo, frente plana, dos «dedos» en la trompa y colmillos en ambos sexos.",
+      "en": "The African bush elephant is larger, with huge ears covering the shoulder, a concave back, a flat forehead, two fingers on the trunk and tusks in both sexes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más altos que las hembras y suelen tener colmillos largos; las hembras normalmente no los tienen o son casi invisibles.",
+    "en": "Bulls are taller than cows and usually have long tusks; cows usually lack them or have barely visible ones."
+  },
+  "sources": [
+    {
+      "title": "Elephas maximus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Elephas_maximus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Asian elephant — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Asian_elephant",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

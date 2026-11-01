@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez de agua dulce enorme (adultos de 1,3–1,6 m, a veces más de 2 m) de cuerpo alargado",
+      "Dos barbillas largas en la mandíbula superior y cuatro cortas en la inferior",
+      "Aleta anal larga que llega hasta la caudal; dorsal pequeña y adelantada",
+      "Piel muy viscosa, negra a pardo verdosa según el agua; vientre amarillo pálido a blanco",
+      "Boca ancha con muchas hileras de dientes pequeños"
+    ],
+    "en": [
+      "Huge freshwater fish (adults 1.3–1.6 m, sometimes over 2 m) with an elongated body",
+      "Two long barbels on the upper jaw and four short ones on the lower",
+      "Long anal fin reaching the tail fin; small dorsal fin set well forward",
+      "Very slimy skin, black to greenish-brown depending on the water; pale yellow to white belly",
+      "Wide mouth with many rows of small teeth"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cyprinus carpio",
+      "es": "La carpa tiene escamas grandes y visibles y solo cuatro barbillas, todas en el labio superior.",
+      "en": "The common carp has large visible scales and only four barbels, all on the upper lip."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Llegó a España en 1974, cuando se soltaron alevines del Danubio en Mequinenza, en el Ebro."
+    ],
+    "en": [
+      "It reached Spain in 1974, when fry from the Danube were released at Mequinenza on the Ebro."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Wels catfish",
+      "url": "https://en.wikipedia.org/wiki/Wels_catfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Silurus glanis",
+      "url": "https://es.wikipedia.org/wiki/Silurus_glanis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Cyprinus carpio",
+      "url": "https://es.wikipedia.org/wiki/Cyprinus_carpio",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

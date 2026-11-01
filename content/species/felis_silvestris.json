@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Aspecto de gato atigrado pardo grisáceo, más robusto que un gato doméstico",
+      "Cuatro rayas negras en la frente y una línea negra a lo largo del dorso",
+      "Cola gruesa y ancha, de punta roma y negra, con 2–3 anillos negros cerrados",
+      "Rayas oscuras irregulares en los flancos que se rompen en manchas en las patas traseras"
+    ],
+    "en": [
+      "Grey-brown tabby look, sturdier than a domestic cat",
+      "Four black stripes on the forehead and a black line along the spine",
+      "Thick, broad tail with a blunt black tip and 2–3 closed black rings",
+      "Irregular dark stripes on the flanks breaking into blotches on the hind legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lynx pardinus",
+      "es": "El lince ibérico tiene la cola corta, pinceles negros en las orejas y manchas negras, no rayas.",
+      "en": "The Iberian lynx has a short tail, black ear tufts and black spots rather than stripes."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho es algo mayor que la hembra (un 15–25 %).",
+    "en": "The male is slightly larger than the female (by 15–25%)."
+  },
+  "sources": [
+    {
+      "title": "Felis silvestris — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Felis_silvestris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European wildcat — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_wildcat",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Águila grande (72–85 cm) de plumaje pardo negruzco del cuello al vientre",
+      "Banda blanca ancha en los hombros y el borde anterior del ala («charreteras»)",
+      "Nuca y píleo leonado pálido",
+      "Cola oscura sin bandas claras",
+      "Juveniles pajizos uniformes con anchas bandas negras en las alas; pasan por fases «de damero»"
+    ],
+    "en": [
+      "Large eagle (72–85 cm), blackish-brown from throat to belly",
+      "Broad white band on the shoulders and leading edge of the wing ('epaulettes')",
+      "Pale tawny nape and crown",
+      "Dark tail without pale bands",
+      "Juveniles uniform pale straw with broad black wing bands; they pass through 'chequered' stages"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Aquila chrysaetos",
+      "es": "El águila real es algo mayor, con la nuca dorada, sin charreteras blancas tan marcadas, y vuela con las alas en V.",
+      "en": "The golden eagle is slightly larger, with a golden nape, no bold white epaulettes, and soars with wings in a V."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son algo mayores y más pesadas que los machos.",
+    "en": "Females are somewhat larger and heavier than males."
+  },
+  "etymology": {
+    "es": "Aquila es «águila» en latín, quizá de aquilus, «oscuro»; adalberti honra al príncipe Adalberto de Baviera.",
+    "en": "Aquila is Latin for 'eagle', possibly from aquilus, 'dark'; adalberti commemorates Prince Adalbert of Bavaria."
+  },
+  "trivia": {
+    "es": [
+      "Por sus charreteras, la literatura antigua la llamaba «águila de hombros blancos»."
+    ],
+    "en": [
+      "Because of its epaulettes, old literature called it the 'white-shouldered eagle'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Aquila adalberti",
+      "url": "https://es.wikipedia.org/wiki/Aquila_adalberti",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Spanish imperial eagle",
+      "url": "https://en.wikipedia.org/wiki/Spanish_imperial_eagle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Golden eagle",
+      "url": "https://en.wikipedia.org/wiki/Golden_eagle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

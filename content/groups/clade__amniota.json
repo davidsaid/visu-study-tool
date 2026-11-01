@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Amniotas: el clado de tetrápodos cuyo embrión se desarrolla rodeado de membranas extraembrionarias, lo que les permitió reproducirse en tierra firme. Incluye a los saurópsidos (reptiles y aves) y a los sinápsidos (mamíferos); en el bestiario, las clases Reptilia, Aves y Mammalia.",
+    "en": "Amniotes: the clade of tetrapods whose embryo develops wrapped in extraembryonic membranes, which let them breed on dry land. It comprises sauropsids (reptiles and birds) and synapsids (mammals); in the bestiary, the classes Reptilia, Aves and Mammalia."
+  },
+  "traits": {
+    "es": [
+      "Membranas extraembrionarias: amnios, corion y alantoides",
+      "Fecundación interna",
+      "Desarrollo directo, sin larva acuática ni metamorfosis",
+      "Piel más queratinizada que evita la desecación; respiración solo pulmonar"
+    ],
+    "en": [
+      "Extraembryonic membranes: amnion, chorion and allantois",
+      "Internal fertilization",
+      "Direct development, without an aquatic larva or metamorphosis",
+      "More keratinized skin that prevents drying out; breathing only with lungs"
+    ]
+  },
+  "contrast": {
+    "es": "Frente a los anfibios (lisanfibios), el otro linaje vivo de tetrápodos, los amniotas no necesitan agua para poner los huevos y no pasan por una fase de renacuajo.",
+    "en": "Unlike amphibians (lissamphibians), the other living tetrapod lineage, amniotes do not need water to lay their eggs and have no tadpole stage."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Amniote",
+      "url": "https://en.wikipedia.org/wiki/Amniote",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Amniota",
+      "url": "https://es.wikipedia.org/wiki/Amniota",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

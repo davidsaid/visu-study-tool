@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave esbelta (25–29 cm) de colores muy vivos",
+      "Píleo y dorso castaños y garganta amarilla",
+      "Lista negra a través del ojo; iris rojo en adultos",
+      "Pecho y vientre azul verdosos; alas verdes",
+      "Pico negro, largo, fino y algo curvo; dos plumas centrales de la cola alargadas"
+    ],
+    "en": [
+      "Slender, brightly coloured bird (25–29 cm)",
+      "Chestnut crown and back and yellow throat",
+      "Black stripe through the eye; red iris in adults",
+      "Blue-green breast and belly; green wings",
+      "Long, slender, slightly curved black bill; two elongated central tail feathers"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Alcedo atthis",
+      "es": "El martín pescador es más pequeño y rechoncho, de cola corta, con dorso azul turquesa y vientre naranja.",
+      "en": "The common kingfisher is smaller and dumpier, short-tailed, with turquoise upperparts and an orange belly."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los sexos son similares; la hembra suele tener las plumas de los hombros más verdes que doradas.",
+    "en": "The sexes are alike; the female tends to have greener rather than gold shoulder feathers."
+  },
+  "etymology": {
+    "es": "Merops es el nombre griego antiguo del abejaruco, «comedor de abejas»; apiaster también significa en latín «comedor de abejas», de apis, «abeja».",
+    "en": "Merops is Ancient Greek for 'bee-eater'; apiaster is Latin, also meaning 'bee-eater', from apis, 'bee'."
+  },
+  "trivia": {
+    "es": [
+      "Según un estudio de 1890, su plumaje tiene todos los colores menos el rojo, que solo aparece en el iris."
+    ],
+    "en": [
+      "According to an 1890 study, its plumage shows every colour except red, which appears only in the iris."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Merops apiaster",
+      "url": "https://es.wikipedia.org/wiki/Merops_apiaster",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European bee-eater",
+      "url": "https://en.wikipedia.org/wiki/European_bee-eater",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Alcedo atthis",
+      "url": "https://es.wikipedia.org/wiki/Alcedo_atthis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado, casi de anguila",
+      "Hilera de 5 a 18 pínnulas dorsales, cada una con una espina y radios unidos",
+      "Escamas ganoideas gruesas, como una armadura",
+      "Gris oscuro por encima, con una marca vertical oscura y bandas en los flancos, más marcadas en los jóvenes",
+      "Cabeza ancha"
+    ],
+    "en": [
+      "Elongated, almost eel-like body",
+      "Row of 5 to 18 dorsal finlets, each a spine with attached rays",
+      "Thick, armour-like ganoid scales",
+      "Dark grey above, with a dark vertical mark and bands on the flanks, strongest in juveniles",
+      "Broad head"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lepidosiren paradoxa",
+      "es": "El pez pulmonado sudamericano tiene aletas pares filiformes y carece de la hilera de pínnulas dorsales.",
+      "en": "The South American lungfish has thread-like paired fins and lacks the row of dorsal finlets."
+    }
+  ],
+  "dimorphism": {
+    "es": "Machos y hembras tienen la aleta anal de forma distinta, que intervienen en el cortejo.",
+    "en": "Males and females have differently shaped anal fins, used in courtship."
+  },
+  "etymology": {
+    "es": "Polypterus procede del griego «muchas» + «ala», por las pínnulas dorsales.",
+    "en": "Polypterus comes from Greek 'many' + 'wing', for the dorsal finlets."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Polypterus bichir",
+      "url": "https://es.wikipedia.org/wiki/Polypterus_bichir",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Polypterus bichir",
+      "url": "https://en.wikipedia.org/wiki/Polypterus_bichir",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): South American lungfish",
+      "url": "https://en.wikipedia.org/wiki/South_American_lungfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

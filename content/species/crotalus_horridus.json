@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Crótalo robusto de 91–152 cm con cascabel en la punta de la cola",
+      "Bandas transversales pardo oscuro o negras, de bordes en zigzag y forma de V o M, sobre fondo pardo amarillento o gris",
+      "A menudo una franja vertebral de color óxido",
+      "Cola negra de aspecto aterciopelado; algunos ejemplares casi negros",
+      "Escamas dorsales aquilladas"
+    ],
+    "en": [
+      "Stout pit viper, 91–152 cm, with a rattle at the tail tip",
+      "Dark brown or black crossbands with zigzag edges, V- or M-shaped, on a yellowish-brown or grey ground",
+      "Often a rust-coloured stripe along the spine",
+      "Black, velvety-looking tail; some individuals almost entirely black",
+      "Keeled back scales"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Vipera latastei",
+      "es": "La víbora hocicuda es menor, sin cascabel, con cuerno nasal y punta de la cola amarilla.",
+      "en": "Lataste's viper is smaller, has no rattle, and has a nose horn and a yellow tail tip."
+    }
+  ],
+  "etymology": {
+    "es": "Crotalus = «cascabel» o «castañuela» en latín; horridus = «horrible, espantoso», probablemente por su veneno.",
+    "en": "Crotalus = Latin for 'rattle' or 'castanet'; horridus = 'horrid, dreadful', presumably for its venom."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Timber rattlesnake",
+      "url": "https://en.wikipedia.org/wiki/Timber_rattlesnake",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Crotalus horridus",
+      "url": "https://es.wikipedia.org/wiki/Crotalus_horridus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Vipera latastei",
+      "url": "https://en.wikipedia.org/wiki/Vipera_latastei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

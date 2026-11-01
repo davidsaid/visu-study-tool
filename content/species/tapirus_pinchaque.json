@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje negro o pardo muy oscuro, largo y lanudo, sobre todo en vientre y flancos",
+      "Borde blanco bien visible alrededor de los labios",
+      "Bandas blancas en el borde superior de las orejas",
+      "Trompa larga y flexible y cola corta y rechoncha"
+    ],
+    "en": [
+      "Black or very dark brown coat, long and woolly, especially on the belly and flanks",
+      "Conspicuous white band around the lips",
+      "White bands along the upper edge of the ears",
+      "Long flexible proboscis and a short, stubby tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Tapirus terrestris",
+      "es": "Solo el tapir de montaña tiene el pelo largo y lanudo y los labios ribeteados de blanco.",
+      "en": "Only the mountain tapir has a long woolly coat and white-edged lips."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los sexos son de tamaño parecido, pero las hembras suelen pesar algo más que los machos.",
+    "en": "The sexes are similar in size, but females tend to be somewhat heavier than males."
+  },
+  "etymology": {
+    "es": "pinchaque viene de «La Pinchaque», una criatura mitológica de las mismas regiones andinas.",
+    "en": "pinchaque comes from 'La Pinchaque', a mythological creature said to live in the same Andean regions."
+  },
+  "trivia": {
+    "es": [
+      "Es el más pequeño de los tapires y el único adaptado al frío de la alta montaña."
+    ],
+    "en": [
+      "It is the smallest tapir and the only one with a coat adapted to high-mountain cold."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Tapirus pinchaque — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Tapirus_pinchaque",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Mountain tapir — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Mountain_tapir",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

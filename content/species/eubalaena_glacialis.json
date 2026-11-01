@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Gran ballena negra, sin aleta dorsal en su dorso ancho",
+      "Callosidades blancas y rugosas en la cabeza, distintas en cada individuo",
+      "Boca muy arqueada que empieza por encima del ojo; cabeza muy grande",
+      "Aletas pectorales cortas y en forma de pala",
+      "Soplo en forma de V, que se ve como un corazón"
+    ],
+    "en": [
+      "Large black whale with no dorsal fin on its broad back",
+      "Rough white callosities on the head, unique to each individual",
+      "Strongly arched mouth starting above the eye; very large head",
+      "Short, paddle-like flippers",
+      "V-shaped blowhole producing a heart-shaped blow"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Megaptera novaeangliae",
+      "es": "La yubarta tiene aleta dorsal pequeña y aletas pectorales larguísimas, de un tercio del cuerpo.",
+      "en": "The humpback has a small dorsal fin and very long flippers, a third of its body length."
+    },
+    {
+      "binomial": "Physeter macrocephalus",
+      "es": "El cachalote también carece de aleta dorsal, pero tiene la cabeza cuadrada, piel gris arrugada y un solo espiráculo desplazado a la izquierda.",
+      "en": "The sperm whale also lacks a dorsal fin, but has a boxy head, wrinkled grey skin and a single blowhole offset to the left."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son más grandes que los machos.",
+    "en": "Females are larger than males."
+  },
+  "etymology": {
+    "es": "Eubalaena glacialis significa «ballena buena o verdadera del hielo».",
+    "en": "Eubalaena glacialis means 'good, or true, whale of the ice'."
+  },
+  "sources": [
+    {
+      "title": "North Atlantic right whale — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/North_Atlantic_right_whale",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Eubalaena glacialis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Eubalaena_glacialis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Humpback whale — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Humpback_whale",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Physeter macrocephalus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Physeter_macrocephalus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

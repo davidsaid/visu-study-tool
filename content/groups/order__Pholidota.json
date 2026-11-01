@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Pangolines: una sola familia actual (Manidae) con ocho especies de Asia y el África subsahariana. Sus parientes vivos más próximos son los carnívoros, no los osos hormigueros. En el bestiario: el pangolín indio (Manis crassicaudata).",
+    "en": "Pangolins: a single living family (Manidae) with eight species in Asia and sub-Saharan Africa. Their closest living relatives are the carnivorans, not anteaters. In the bestiary: the Indian pangolin (Manis crassicaudata)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo cubierto de grandes escamas de queratina superpuestas, como una piña",
+      "Se enrolla en bola cuando se ve amenazado",
+      "Sin dientes; lengua larguísima y pegajosa para capturar hormigas y termitas",
+      "Orejas muy pequeñas o ausentes y vista pobre"
+    ],
+    "en": [
+      "Body covered in large, overlapping keratin scales, like a pine cone",
+      "Rolls into a ball when threatened",
+      "No teeth; very long, sticky tongue for catching ants and termites",
+      "Ears very small or absent, and poor eyesight"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los armadillos (Cingulata): su coraza es de placas óseas, no de escamas córneas, y las escamas de ambos grupos surgieron por convergencia.",
+    "en": "Do not confuse with armadillos (Cingulata): their armour is made of bony plates, not horny scales, and the two groups evolved their armour convergently."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Pangolin",
+      "url": "https://en.wikipedia.org/wiki/Pangolin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Pholidota",
+      "url": "https://es.wikipedia.org/wiki/Pholidota",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

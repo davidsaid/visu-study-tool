@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez muy grande y ovalado, de cabeza grande, boca ancha y mandíbula inferior saliente",
+      "Pardo rojizo oscuro con manchas irregulares claras (verde amarillento, plateado o blanquecino) en cabeza y cuerpo",
+      "Vientre con tonos amarillo dorado",
+      "Bordes de la anal, la caudal y a menudo las pectorales con una fina banda blanca",
+      "Caudal de borde redondeado y convexo; tres espinas en el opérculo"
+    ],
+    "en": [
+      "Very large, oval fish with a big head, wide mouth and protruding lower jaw",
+      "Dark reddish-brown with irregular pale blotches (greenish-yellow, silvery or whitish) on head and body",
+      "Yellowish-gold underside",
+      "Narrow white edges on the anal, tail and often pectoral fins",
+      "Rounded, convex tail edge; three spines on the gill cover"
+    ]
+  },
+  "lookalikes": [],
+  "trivia": {
+    "es": [
+      "Puede vivir unos 50 años; se ha registrado una edad máxima de 61."
+    ],
+    "en": [
+      "It can live about 50 years; a maximum age of 61 has been recorded."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Epinephelus marginatus",
+      "url": "https://es.wikipedia.org/wiki/Epinephelus_marginatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Epinephelus marginatus",
+      "url": "https://en.wikipedia.org/wiki/Epinephelus_marginatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

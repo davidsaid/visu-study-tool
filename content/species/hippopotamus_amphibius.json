@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Torso enorme en forma de barril sobre patas cortas y rechonchas",
+      "Piel lisa, casi sin pelo, gris morada o negro azulada; rosácea por debajo y alrededor de ojos y orejas",
+      "Ojos, orejas y fosas nasales en lo alto de la cabeza, asomando sobre el agua",
+      "Boca muy grande con caninos inferiores en forma de colmillo",
+      "Cola corta"
+    ],
+    "en": [
+      "Huge barrel-shaped torso on short, stubby legs",
+      "Smooth, nearly hairless purplish-grey or blue-black skin; brownish-pink underneath and around eyes and ears",
+      "Eyes, ears and nostrils set high on the head, showing above the water",
+      "Very wide mouth with large lower canine tusks",
+      "Short tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sus scrofa",
+      "es": "Pese al parecido con los cerdos, el hipopótamo es enorme, casi sin pelo y con los ojos y la nariz en lo alto de la cabeza.",
+      "en": "Despite resembling pigs, the hippo is huge, nearly hairless and has its eyes and nostrils on top of its head."
+    }
+  ],
+  "etymology": {
+    "es": "Del griego hippopótamos: híppos «caballo» y potamós «río», es decir, «caballo de río».",
+    "en": "From Greek hippopótamos: híppos 'horse' and potamós 'river', i.e. 'river horse'."
+  },
+  "trivia": {
+    "es": [
+      "Su piel segrega un protector solar rojizo, el «sudor de sangre», que no es ni sudor ni sangre.",
+      "Sus parientes vivos más cercanos son los cetáceos, no los cerdos."
+    ],
+    "en": [
+      "Its skin secretes a reddish sunscreen, the 'blood sweat', which is neither blood nor sweat.",
+      "Its closest living relatives are the cetaceans, not pigs."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Hippopotamus amphibius — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Hippopotamus_amphibius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Hippopotamus — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Hippopotamus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

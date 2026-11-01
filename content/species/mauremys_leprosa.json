@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Galápago de caparazón aplanado, pardo verdoso o marrón, con quilla vertebral leve",
+      "Plastrón amarillo, a veces con manchas negras",
+      "Líneas amarillentas, anaranjadas o rojizas en el cuello",
+      "Aspecto desgastado y sucio, a menudo con algas sobre el caparazón",
+      "Juveniles con manchas anaranjadas o rojizas en escudos y patas"
+    ],
+    "en": [
+      "Terrapin with a flattened, greenish-brown or brown shell and a faint vertebral keel",
+      "Yellow plastron, sometimes with black blotches",
+      "Yellowish, orange or reddish stripes on the neck",
+      "Worn, dirty look, often with algae growing on the shell",
+      "Juveniles have orange or reddish spots on the scutes and legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Testudo graeca",
+      "es": "La tortuga mora es terrestre, con el caparazón muy abombado, amarillento y con placas de borde negro.",
+      "en": "The spur-thighed tortoise is terrestrial, with a high-domed, yellowish shell whose scutes are edged in black."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son menores, con uñas delanteras y cola más largas y plastrón cóncavo.",
+    "en": "Males are smaller, with longer front claws and tail and a concave plastron."
+  },
+  "etymology": {
+    "es": "leprosa se debe a que los primeros ejemplares descritos eran viejos y tenían las suturas del caparazón infectadas, como una especie de lepra.",
+    "en": "leprosa ('leprous') comes from the first specimens described, which were old and had infected shell sutures resembling leprosy."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Mauremys leprosa",
+      "url": "https://es.wikipedia.org/wiki/Mauremys_leprosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian pond turtle",
+      "url": "https://en.wikipedia.org/wiki/Iberian_pond_turtle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Testudo graeca",
+      "url": "https://es.wikipedia.org/wiki/Testudo_graeca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

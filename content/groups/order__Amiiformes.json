@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Amias: el último orden superviviente de los Halecomorphi, con solo dos especies actuales de aguas dulces de Norteamérica, consideradas fósiles vivientes. Son, con los pejelagartos, los holósteos. En el bestiario: el pez del cieno (Amia calva).",
+    "en": "Bowfins: the last surviving order of Halecomorphi, with only two living species from North American fresh waters, regarded as living fossils. With the gars they make up the Holostei. In the bestiary: the bowfin (Amia calva)."
+  },
+  "traits": {
+    "es": [
+      "Aleta dorsal larga y ondulante que recorre buena parte del dorso",
+      "Aleta caudal corta y heterocerca",
+      "Vejiga natatoria que funciona como pulmón para respirar aire",
+      "Los machos jóvenes tienen una mancha ocelar negra, con borde anaranjado, en la base de la cola"
+    ],
+    "en": [
+      "Long, undulating dorsal fin running along much of the back",
+      "Short, heterocercal tail fin",
+      "Swim bladder that works as a lung for breathing air",
+      "Young males have a black eyespot ringed in orange at the base of the tail"
+    ]
+  },
+  "contrast": {
+    "es": "Sus parientes vivos más cercanos son los pejelagartos (Lepisosteiformes), que tienen mandíbulas largas en pico y la aleta dorsal corta y muy retrasada.",
+    "en": "Its closest living relatives are the gars (Lepisosteiformes), which have long, beak-like jaws and a short dorsal fin set far back."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Amiiformes",
+      "url": "https://en.wikipedia.org/wiki/Amiiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Amiiformes",
+      "url": "https://es.wikipedia.org/wiki/Amiiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Bowfin",
+      "url": "https://en.wikipedia.org/wiki/Bowfin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Amia calva",
+      "url": "https://es.wikipedia.org/wiki/Amia_calva",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

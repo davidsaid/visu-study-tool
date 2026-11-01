@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Aleta dorsal larga y ondulante que va de mitad del lomo a la base de la cola",
+      "Cuerpo alargado y cilíndrico, oliva a pardo con barras verticales y reticulado oscuro",
+      "Aletas pares y anal verde vivo",
+      "Mancha negra en la base de la cola, rodeada de naranja-amarillo en los machos jóvenes",
+      "Vientre blanco o crema"
+    ],
+    "en": [
+      "Long, undulating dorsal fin from mid-back to the base of the tail",
+      "Long cylindrical body, olive to brown with vertical bars and dark mottling",
+      "Bright green paired and anal fins",
+      "Black eyespot at the base of the tail, ringed with orange-yellow in young males",
+      "White or cream underside"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lepisosteus osseus",
+      "es": "El pez lagarto tiene un hocico largo en aguja y la dorsal corta y retrasada junto a la cola.",
+      "en": "The longnose gar has a long needle-like snout and a short dorsal fin set back near the tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras crecen más; en los machos la mancha caudal está rodeada de naranja o amarillo y en la hembra es solo negra o falta.",
+    "en": "Females grow larger; in males the tail eyespot is ringed in orange or yellow, while in females it is plain black or absent."
+  },
+  "trivia": {
+    "es": [
+      "Respira aire con la vejiga natatoria, que hace de pulmón."
+    ],
+    "en": [
+      "It breathes air using its swim bladder as a lung."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Amia calva",
+      "url": "https://es.wikipedia.org/wiki/Amia_calva",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Bowfin",
+      "url": "https://en.wikipedia.org/wiki/Bowfin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Longnose gar",
+      "url": "https://en.wikipedia.org/wiki/Longnose_gar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Peces cartilaginosos: vertebrados con mandíbulas cuyo esqueleto es sobre todo de cartílago. Incluye los elasmobranquios (tiburones y rayas) y los holocéfalos (quimeras); en el bestiario, 19 especies, del tiburón blanco y la pintarroja a la tremielga, la manta y la quimera.",
+    "en": "Cartilaginous fishes: jawed vertebrates whose skeleton is mainly cartilage. It includes the elasmobranchs (sharks and rays) and the holocephalans (chimaeras); the bestiary has 19 species, from the great white shark and small-spotted catshark to the electric ray, the devil ray and the rabbit fish."
+  },
+  "traits": {
+    "es": [
+      "Esqueleto principalmente cartilaginoso",
+      "Piel cubierta de escamas placoideas (dentículos dérmicos)",
+      "Sin opérculo ni vejiga natatoria: 5–7 hendiduras branquiales a la vista en tiburones y rayas",
+      "Dientes no soldados a la mandíbula que se reponen continuamente",
+      "Fecundación interna: los machos tienen pterigopodios en las aletas pélvicas"
+    ],
+    "en": [
+      "Skeleton mainly of cartilage",
+      "Skin covered in placoid scales (dermal denticles)",
+      "No operculum or swim bladder: 5–7 exposed gill slits in sharks and rays",
+      "Teeth not fused to the jaw and replaced continuously",
+      "Internal fertilisation: males have claspers on the pelvic fins"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los peces óseos (Osteichthyes), que tienen esqueleto de hueso, un opérculo que cubre las branquias y, en general, vejiga natatoria.",
+    "en": "Do not confuse with bony fishes (Osteichthyes), which have a bony skeleton, an operculum covering the gills and usually a swim bladder."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Chondrichthyes",
+      "url": "https://en.wikipedia.org/wiki/Chondrichthyes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Chondrichthyes",
+      "url": "https://es.wikipedia.org/wiki/Chondrichthyes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

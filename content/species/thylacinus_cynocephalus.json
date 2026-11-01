@@ -1,0 +1,59 @@
+{
+  "field_marks": {
+    "es": [
+      "Aspecto de perro grande de pelo corto",
+      "Pelaje pardo amarillento con 13–21 rayas oscuras transversales en el dorso y la base de la cola",
+      "Cola rígida y gruesa en la base, que sale del cuerpo como la de un canguro",
+      "Orejas redondeadas y erguidas"
+    ],
+    "en": [
+      "Looks like a large short-haired dog",
+      "Yellow-brown coat with 13–21 dark transverse stripes on the back and tail base",
+      "Stiff tail, thick at the base, merging into the body like a kangaroo's",
+      "Rounded, erect ears"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Canis lupus",
+      "es": "Por convergencia se parece a un cánido, pero tiene rayas oscuras en la grupa y una cola rígida.",
+      "en": "By convergence it resembles a canid, but it has dark stripes across the rump and a stiff tail."
+    },
+    {
+      "binomial": "Sarcophilus harrisii",
+      "es": "El diablo de Tasmania es mucho más pequeño y achaparrado, negro con manchas blancas, sin rayas.",
+      "en": "The Tasmanian devil is much smaller and stockier, black with white patches, and unstriped."
+    }
+  ],
+  "dimorphism": {
+    "es": "Dimorfismo ligero: los machos eran de media más grandes que las hembras.",
+    "en": "Slight dimorphism: males were larger than females on average."
+  },
+  "etymology": {
+    "es": "Thylacinus, del griego thylakos, «bolsa», por el marsupio; cynocephalus = «cabeza de perro» (fue descrito como la «zarigüeya cabeza de perro»).",
+    "en": "Thylacinus, from Greek thylakos, 'pouch', after the marsupial pouch; cynocephalus = 'dog-headed' (it was described as the 'dog-headed opossum')."
+  },
+  "trivia": {
+    "es": [
+      "El último ejemplar conocido murió en el zoo de Hobart (Tasmania) el 7 de septiembre de 1936."
+    ],
+    "en": [
+      "The last known individual died at Hobart Zoo, Tasmania, on 7 September 1936."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Thylacinus cynocephalus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Thylacinus_cynocephalus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Thylacine — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Thylacine",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

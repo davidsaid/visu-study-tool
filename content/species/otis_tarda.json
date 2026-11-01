@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave esteparia muy grande, de cuerpo voluminoso en forma de barril, cuello y patas largos",
+      "Partes superiores terrosas listadas de negro; partes inferiores blancas",
+      "Cabeza y parte alta del cuello grises",
+      "Macho: pecho y bajos del cuello castaños y, en celo, largas «bigoteras» blancas en la base del pico",
+      "En vuelo, alas largas mayoritariamente blancas"
+    ],
+    "en": [
+      "Very large steppe bird with a bulky, barrel-shaped body, long neck and legs",
+      "Earth-coloured upperparts barred with black; white underparts",
+      "Grey head and upper neck",
+      "Male: chestnut breast and lower neck and, when breeding, long white 'whiskers' at the bill base",
+      "In flight, long wings largely white"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Uno de los dimorfismos de tamaño más extremos de las aves: la hembra es un tercio menor y más apagada, sin bigoteras.",
+    "en": "One of the most extreme size dimorphisms in birds: the female is a third smaller and duller, without whiskers."
+  },
+  "etymology": {
+    "es": "Otis es el nombre griego de la avutarda (ōtís); tarda significa en latín «lenta», por su andar pausado. «Avutarda» procede de avis tarda, «ave lenta».",
+    "en": "Otis is the Greek name for the bustard (ōtis); tarda is Latin for 'slow', after its deliberate walk. 'Bustard' derives from avis tarda, 'slow bird'."
+  },
+  "trivia": {
+    "es": [
+      "Un macho de 21 kg cazado en Manchuria es el ave voladora más pesada verificada.",
+      "España y Portugal albergan alrededor del 60 % de la población mundial."
+    ],
+    "en": [
+      "A 21 kg male from Manchuria is the heaviest verified flying bird.",
+      "Spain and Portugal hold about 60% of the world population."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Otis tarda",
+      "url": "https://es.wikipedia.org/wiki/Otis_tarda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Great bustard",
+      "url": "https://en.wikipedia.org/wiki/Great_bustard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

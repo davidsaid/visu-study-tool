@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Plumaje enteramente pardo negruzco",
+      "Pequeña mancha blanquecina en la garganta, solo visible de cerca",
+      "Alas muy largas en forma de hoz o media luna",
+      "Cola corta y ligeramente ahorquillada",
+      "Patas muy cortas; casi nunca se posa salvo en paredes verticales"
+    ],
+    "en": [
+      "Entirely blackish-brown plumage",
+      "Small whitish chin patch, visible only at close range",
+      "Very long, sickle- or crescent-shaped wings",
+      "Short, shallowly forked tail",
+      "Very short legs; rarely perches except clinging to walls"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Hirundo rustica",
+      "es": "Se parece superficialmente a la golondrina, pero el vencejo es todo pardo negruzco salvo la garganta y tiene alas en media luna; no es un paseriforme.",
+      "en": "It superficially resembles the barn swallow, but the swift is all blackish-brown bar the chin and has crescent wings; it is not a passerine."
+    }
+  ],
+  "etymology": {
+    "es": "Apus, del griego ápous «sin pies», porque los antiguos lo creían una golondrina sin patas.",
+    "en": "Apus, from Greek apous 'without feet', as the ancients thought it was a footless swallow."
+  },
+  "trivia": {
+    "es": [
+      "«Vencejo» es una corrupción de su antiguo nombre «oncejo», derivado de «hoz» por su silueta en vuelo."
+    ],
+    "en": [
+      "The Spanish 'vencejo' is a corruption of its older name 'oncejo', from 'hoz' (sickle), after its flight silhouette."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Apus apus",
+      "url": "https://es.wikipedia.org/wiki/Apus_apus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common swift",
+      "url": "https://en.wikipedia.org/wiki/Common_swift",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

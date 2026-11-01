@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Bóvido enorme y macizo, con los cuartos delanteros muy desarrollados y la cruz marcada",
+      "Cabeza ancha y grande; pelaje pardo oscuro, largo en cabeza, cuello y hombros",
+      "Pequeña «barba» en la garganta",
+      "Cuernos cortos, gruesos y dirigidos hacia arriba en ambos sexos",
+      "Pelo corto en la parte inferior de las patas"
+    ],
+    "en": [
+      "Huge, massive bovid with very developed forequarters and a prominent hump",
+      "Broad, large head; dark brown coat, long on the head, neck and shoulders",
+      "Small 'beard' on the throat",
+      "Short, thick, upward-pointing horns in both sexes",
+      "Short hair on the lower legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Bison bison",
+      "es": "El bisonte americano es más pesado y tiene más pelo en cabeza, cuello, cuartos delanteros y patas; el europeo es más ligero, con cola y cuernos más largos.",
+      "en": "The American bison is bulkier, with longer hair on the head, neck, forequarters and legs; the wisent is lighter, with a longer tail and horns."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son claramente más pesados que las hembras (hasta 920 kg frente a unos 300–630 kg).",
+    "en": "Males are clearly heavier than females (up to 920 kg versus about 300–630 kg)."
+  },
+  "sources": [
+    {
+      "title": "Bison bonasus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Bison_bonasus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European bison — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_bison",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

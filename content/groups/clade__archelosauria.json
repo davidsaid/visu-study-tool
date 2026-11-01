@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Arquelosaurios: clado propuesto en 2014 que reúne a las tortugas con los arcosaurios (cocodrilos y aves), excluyendo a los lepidosaurios. En el bestiario agrupa Chelonia, Crocodylia y toda la clase Aves.",
+    "en": "Archelosaurs: a clade proposed in 2014 that unites turtles with archosaurs (crocodilians and birds), excluding lepidosaurs. In the bestiary it groups Chelonia, Crocodylia and the whole class Aves."
+  },
+  "traits": {
+    "es": [
+      "Respaldado sobre todo por datos moleculares (ADN, proteínas, elementos ultraconservados)",
+      "Sinapomorfias óseas propuestas: una cresta sagital en el supraoccipital y la ausencia de foramen entepicondilar en el húmero"
+    ],
+    "en": [
+      "Supported mainly by molecular data (DNA, proteins, ultraconserved elements)",
+      "Proposed bony synapomorphies: a sagittal crest on the supraoccipital and no entepicondylar foramen in the humerus"
+    ]
+  },
+  "contrast": {
+    "es": "Contradice la intuición: la tortuga está más emparentada con el cocodrilo y la gaviota que con el lagarto. Muchos análisis morfológicos antiguos la situaban cerca de los lepidosaurios o fuera de los diápsidos.",
+    "en": "It defies intuition: a turtle is closer to a crocodile and a gull than to a lizard. Many older morphological analyses placed turtles near lepidosaurs or outside the diapsids."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Archelosauria",
+      "url": "https://en.wikipedia.org/wiki/Archelosauria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Archelosauria",
+      "url": "https://es.wikipedia.org/wiki/Archelosauria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,174 @@
+node_id,parent_id,scientific,name_es,name_en,source_url
+deep:life,,Biota,Vida,Life,https://en.wikipedia.org/wiki/Life
+deep:eukaryota,deep:life,Eukaryota,Eucariontes,Eukaryotes,https://en.wikipedia.org/wiki/Eukaryote
+deep:opisthokonta,deep:eukaryota,Opisthokonta,Opistocontos,Opisthokonts,https://en.wikipedia.org/wiki/Opisthokont
+deep:holozoa,deep:opisthokonta,Holozoa,Holozoos,Holozoans,https://en.wikipedia.org/wiki/Holozoa
+deep:metazoa,deep:holozoa,Metazoa,Animales,Animals,https://en.wikipedia.org/wiki/Animal
+deep:eumetazoa,deep:metazoa,Eumetazoa,Eumetazoos,Eumetazoans,https://en.wikipedia.org/wiki/Eumetazoa
+deep:bilateria,deep:eumetazoa,Bilateria,Bilaterales,Bilaterians,https://en.wikipedia.org/wiki/Bilateria
+deep:deuterostomia,deep:bilateria,Deuterostomia,Deuteróstomos,Deuterostomes,https://en.wikipedia.org/wiki/Deuterostome
+deep:chordata,deep:deuterostomia,Chordata,Cordados,Chordates,https://en.wikipedia.org/wiki/Chordate
+deep:olfactores,deep:chordata,Olfactores,Olfactores,Olfactores,https://en.wikipedia.org/wiki/Olfactores
+deep:craniata,deep:olfactores,Craniata,Craneados,Craniates,https://en.wikipedia.org/wiki/Craniate
+clade:vertebrata,deep:craniata,Vertebrata,Vertebrados,Vertebrates,https://en.wikipedia.org/wiki/Vertebrate
+clade:cyclostomata,clade:vertebrata,Cyclostomata,Ciclóstomos,Cyclostomes,https://en.wikipedia.org/wiki/Cyclostomi
+class:Myxini,clade:cyclostomata,Myxini,Mixinos,Hagfishes,https://en.wikipedia.org/wiki/Hagfish
+order:Myxiniformes,class:Myxini,Myxiniformes,Mixiniformes,Hagfishes,https://en.wikipedia.org/wiki/Myxiniformes
+class:Hyperoartia,clade:cyclostomata,Hyperoartia,Lampreas,Lampreys,https://en.wikipedia.org/wiki/Lamprey
+order:Petromyzontiformes,class:Hyperoartia,Petromyzontiformes,Petromizontiformes,Lampreys,https://en.wikipedia.org/wiki/Petromyzontiformes
+clade:gnathostomata,clade:vertebrata,Gnathostomata,Gnatóstomos,Jawed vertebrates,https://en.wikipedia.org/wiki/Gnathostomata
+class:Chondrichthyes,clade:gnathostomata,Chondrichthyes,Condrictios,Cartilaginous fishes,https://en.wikipedia.org/wiki/Chondrichthyes
+clade:holocephali,class:Chondrichthyes,Holocephali,Holocéfalos,Holocephalans,https://en.wikipedia.org/wiki/Holocephali
+order:Chimaeriformes,clade:holocephali,Chimaeriformes,Quimeriformes,Chimaeras,https://en.wikipedia.org/wiki/Chimaeriformes
+clade:elasmobranchii,class:Chondrichthyes,Elasmobranchii,Elasmobranquios,Elasmobranchs,https://en.wikipedia.org/wiki/Elasmobranchii
+clade:selachii,clade:elasmobranchii,Selachii,Tiburones,Sharks,https://en.wikipedia.org/wiki/Shark
+order:Orectolobiformes,clade:selachii,Orectolobiformes,Orectolobiformes,Carpet sharks,https://en.wikipedia.org/wiki/Orectolobiformes
+order:Lamniformes,clade:selachii,Lamniformes,Lamniformes,Mackerel sharks,https://en.wikipedia.org/wiki/Lamniformes
+order:Carcharhiniformes,clade:selachii,Carcharhiniformes,Carcariniformes,Ground sharks,https://en.wikipedia.org/wiki/Carcharhiniformes
+order:Hexanchiformes,clade:selachii,Hexanchiformes,Hexanquiformes,Cow sharks and frilled sharks,https://en.wikipedia.org/wiki/Hexanchiformes
+order:Squaliformes,clade:selachii,Squaliformes,Escualiformes,Dogfish sharks,https://en.wikipedia.org/wiki/Squaliformes
+order:Squatiniformes,clade:selachii,Squatiniformes,Escuatiniformes,Angel sharks,https://en.wikipedia.org/wiki/Angelshark
+clade:batoidea,clade:elasmobranchii,Batoidea,Batoideos,Rays and skates,https://en.wikipedia.org/wiki/Batoidea
+order:Rajiformes,clade:batoidea,Rajiformes,Rajiformes,Skates,https://en.wikipedia.org/wiki/Rajiformes
+order:Rhinopristiformes,clade:batoidea,Rhinopristiformes,Rinopristiformes,Guitarfishes and sawfishes,https://en.wikipedia.org/wiki/Rhinopristiformes
+order:Torpediniformes,clade:batoidea,Torpediniformes,Torpediniformes,Electric rays,https://en.wikipedia.org/wiki/Electric_ray
+order:Myliobatiformes,clade:batoidea,Myliobatiformes,Miliobatiformes,Stingrays,https://en.wikipedia.org/wiki/Myliobatiformes
+clade:osteichthyes,clade:gnathostomata,Osteichthyes,Osteíctios,Bony vertebrates,https://en.wikipedia.org/wiki/Osteichthyes
+class:Actinopterygii,clade:osteichthyes,Actinopterygii,Actinopterigios,Ray-finned fishes,https://en.wikipedia.org/wiki/Actinopterygii
+order:Polypteriformes,class:Actinopterygii,Polypteriformes,Polipteriformes,Bichirs and reedfish,https://en.wikipedia.org/wiki/Polypteriformes
+clade:actinopteri,class:Actinopterygii,Actinopteri,Actinopteros,Actinopterans,https://en.wikipedia.org/wiki/Actinopteri
+order:Acipenseriformes,clade:actinopteri,Acipenseriformes,Acipenseriformes,Sturgeons and paddlefishes,https://en.wikipedia.org/wiki/Acipenseriformes
+clade:neopterygii,clade:actinopteri,Neopterygii,Neopterigios,Neopterygians,https://en.wikipedia.org/wiki/Neopterygii
+clade:holostei,clade:neopterygii,Holostei,Holósteos,Holosteans,https://en.wikipedia.org/wiki/Holostei
+order:Lepisosteiformes,clade:holostei,Lepisosteiformes,Lepisosteiformes,Gars,https://en.wikipedia.org/wiki/Gar
+order:Amiiformes,clade:holostei,Amiiformes,Amiiformes,Bowfins,https://en.wikipedia.org/wiki/Amiiformes
+clade:teleostei,clade:neopterygii,Teleostei,Teleósteos,Teleosts,https://en.wikipedia.org/wiki/Teleost
+order:Osteoglossiformes,clade:teleostei,Osteoglossiformes,Osteoglosiformes,Bonytongues,https://en.wikipedia.org/wiki/Osteoglossiformes
+order:Anguilliformes,clade:teleostei,Anguilliformes,Anguiliformes,Eels,https://en.wikipedia.org/wiki/Eel
+order:Clupeiformes,clade:teleostei,Clupeiformes,Clupeiformes,Herrings and anchovies,https://en.wikipedia.org/wiki/Clupeiformes
+order:Cypriniformes,clade:teleostei,Cypriniformes,Cipriniformes,Carps and minnows,https://en.wikipedia.org/wiki/Cypriniformes
+order:Siluriformes,clade:teleostei,Siluriformes,Siluriformes,Catfishes,https://en.wikipedia.org/wiki/Catfish
+order:Characiformes,clade:teleostei,Characiformes,Caraciformes,Characins,https://en.wikipedia.org/wiki/Characiformes
+order:Gymnotiformes,clade:teleostei,Gymnotiformes,Gimnotiformes,South American knifefishes,https://en.wikipedia.org/wiki/Gymnotiformes
+order:Salmoniformes,clade:teleostei,Salmoniformes,Salmoniformes,Salmon and trout,https://en.wikipedia.org/wiki/Salmoniformes
+order:Esociformes,clade:teleostei,Esociformes,Esociformes,Pikes and mudminnows,https://en.wikipedia.org/wiki/Esociformes
+order:Lophiiformes,clade:teleostei,Lophiiformes,Lofiiformes,Anglerfishes,https://en.wikipedia.org/wiki/Anglerfish
+order:Gadiformes,clade:teleostei,Gadiformes,Gadiformes,Cods and hakes,https://en.wikipedia.org/wiki/Gadiformes
+order:Cyprinodontiformes,clade:teleostei,Cyprinodontiformes,Ciprinodontiformes,Killifishes and livebearers,https://en.wikipedia.org/wiki/Cyprinodontiformes
+order:Gasterosteiformes,clade:teleostei,Gasterosteiformes,Gasterosteiformes,Sticklebacks,https://en.wikipedia.org/wiki/Gasterosteiformes
+order:Syngnathiformes,clade:teleostei,Syngnathiformes,Singnatiformes,Seahorses and pipefishes,https://en.wikipedia.org/wiki/Syngnathiformes
+order:Scorpaeniformes,clade:teleostei,Scorpaeniformes,Escorpeniformes,Scorpionfishes,https://en.wikipedia.org/wiki/Scorpaeniformes
+order:Blenniiformes,clade:teleostei,Blenniiformes,Blenniformes,Blennies,https://en.wikipedia.org/wiki/Blenniiformes
+order:Carangiformes,clade:teleostei,Carangiformes,Carangiformes,Jacks and allies,https://en.wikipedia.org/wiki/Carangiformes
+order:Perciformes,clade:teleostei,Perciformes,Perciformes,Perch-like fishes,https://en.wikipedia.org/wiki/Perciformes
+order:Spariformes,clade:teleostei,Spariformes,Espariformes,Sea breams,https://en.wikipedia.org/wiki/Spariformes
+order:Moroniformes,clade:teleostei,Moroniformes,Moroniformes,Temperate basses,https://en.wikipedia.org/wiki/Moroniformes
+order:Scombriformes,clade:teleostei,Scombriformes,Escombriformes,Mackerels and tunas,https://en.wikipedia.org/wiki/Scombriformes
+order:Pleuronectiformes,clade:teleostei,Pleuronectiformes,Pleuronectiformes,Flatfishes,https://en.wikipedia.org/wiki/Flatfish
+clade:sarcopterygii,clade:osteichthyes,Sarcopterygii (clado),Sarcopterigios,Lobe-finned vertebrates,https://en.wikipedia.org/wiki/Sarcopterygii
+class:Sarcopterygii,clade:sarcopterygii,Sarcopterygii,Peces de aletas lobuladas,Lobe-finned fishes,https://en.wikipedia.org/wiki/Sarcopterygii
+order:Coelacanthiformes,class:Sarcopterygii,Coelacanthiformes,Celacantiformes,Coelacanths,https://en.wikipedia.org/wiki/Coelacanthiformes
+order:Ceratodontiformes,class:Sarcopterygii,Ceratodontiformes,Ceratodontiformes,Lungfishes,https://en.wikipedia.org/wiki/Ceratodontiformes
+clade:tetrapoda,clade:sarcopterygii,Tetrapoda,Tetrápodos,Tetrapods,https://en.wikipedia.org/wiki/Tetrapod
+class:Amphibia,clade:tetrapoda,Amphibia,Anfibios,Amphibians,https://en.wikipedia.org/wiki/Amphibian
+order:Gymnophiona,class:Amphibia,Gymnophiona,Gimnofiones (cecilias),Caecilians,https://en.wikipedia.org/wiki/Caecilian
+clade:batrachia,class:Amphibia,Batrachia,Batracios,Batrachians,https://en.wikipedia.org/wiki/Batrachia
+order:Caudata,clade:batrachia,Caudata,Caudados (urodelos),Salamanders and newts,https://en.wikipedia.org/wiki/Salamander
+order:Salientia,clade:batrachia,Salientia,Anuros,Frogs and toads,https://en.wikipedia.org/wiki/Frog
+clade:amniota,clade:tetrapoda,Amniota,Amniotas,Amniotes,https://en.wikipedia.org/wiki/Amniote
+clade:sauropsida,clade:amniota,Sauropsida,Saurópsidos,Sauropsids,https://en.wikipedia.org/wiki/Sauropsida
+grade:Reptilia,,Reptilia,Reptiles,Reptiles,https://en.wikipedia.org/wiki/Reptile
+clade:lepidosauria,clade:sauropsida,Lepidosauria,Lepidosaurios,Lepidosaurs,https://en.wikipedia.org/wiki/Lepidosauria
+order:Sphenodontia,clade:lepidosauria,Sphenodontia,Esfenodontos (tuátaras),Tuatara and relatives,https://en.wikipedia.org/wiki/Rhynchocephalia
+order:Squamata,clade:lepidosauria,Squamata,Escamosos,Squamates (lizards and snakes),https://en.wikipedia.org/wiki/Squamata
+clade:archelosauria,clade:sauropsida,Archelosauria,Arquelosaurios,Archelosaurs,https://en.wikipedia.org/wiki/Archelosauria
+order:Chelonia,clade:archelosauria,Chelonia,Quelonios (tortugas),Turtles,https://en.wikipedia.org/wiki/Turtle
+clade:archosauria,clade:archelosauria,Archosauria,Arcosaurios,Archosaurs,https://en.wikipedia.org/wiki/Archosaur
+order:Crocodylia,clade:archosauria,Crocodylia,Cocodrilos,Crocodilians,https://en.wikipedia.org/wiki/Crocodilia
+class:Aves,clade:archosauria,Aves,Aves,Birds,https://en.wikipedia.org/wiki/Bird
+clade:palaeognathae,class:Aves,Palaeognathae,Paleognatas,Palaeognaths,https://en.wikipedia.org/wiki/Palaeognathae
+order:Struthioniformes,clade:palaeognathae,Struthioniformes,Estrucioniformes,Ostriches,https://en.wikipedia.org/wiki/Ostrich
+order:Rheiformes,clade:palaeognathae,Rheiformes,Reiformes,Rheas,https://en.wikipedia.org/wiki/Rhea_(bird)
+order:Tinamiformes,clade:palaeognathae,Tinamiformes,Tinamiformes,Tinamous,https://en.wikipedia.org/wiki/Tinamou
+order:Casuariiformes,clade:palaeognathae,Casuariiformes,Casuariformes,Cassowaries and emus,https://en.wikipedia.org/wiki/Casuariiformes
+order:Apterygiformes,clade:palaeognathae,Apterygiformes,Apterigiformes,Kiwis,https://en.wikipedia.org/wiki/Kiwi_(bird)
+clade:neognathae,class:Aves,Neognathae,Neognatas,Neognaths,https://en.wikipedia.org/wiki/Neognathae
+clade:galloanserae,clade:neognathae,Galloanserae,Galloanseres,Landfowl and waterfowl,https://en.wikipedia.org/wiki/Galloanserae
+order:Galliformes,clade:galloanserae,Galliformes,Galliformes,Landfowl,https://en.wikipedia.org/wiki/Galliformes
+order:Anseriformes,clade:galloanserae,Anseriformes,Anseriformes,Waterfowl,https://en.wikipedia.org/wiki/Anseriformes
+clade:neoaves,clade:neognathae,Neoaves,Neoaves,Neoaves,https://en.wikipedia.org/wiki/Neoaves
+order:Caprimulgiformes,clade:neoaves,Caprimulgiformes,Caprimulgiformes,Nightjars and allies,https://en.wikipedia.org/wiki/Caprimulgiformes
+order:Columbiformes,clade:neoaves,Columbiformes,Columbiformes,Pigeons and doves,https://en.wikipedia.org/wiki/Columbiformes
+order:Cuculiformes,clade:neoaves,Cuculiformes,Cuculiformes,Cuckoos,https://en.wikipedia.org/wiki/Cuckoo
+order:Otidiformes,clade:neoaves,Otidiformes,Otidiformes,Bustards,https://en.wikipedia.org/wiki/Bustard
+order:Gruiformes,clade:neoaves,Gruiformes,Gruiformes,Cranes and rails,https://en.wikipedia.org/wiki/Gruiformes
+order:Phoenicopteriformes,clade:neoaves,Phoenicopteriformes,Fenicopteriformes,Flamingos,https://en.wikipedia.org/wiki/Flamingo
+order:Podicipediformes,clade:neoaves,Podicipediformes,Podicipediformes,Grebes,https://en.wikipedia.org/wiki/Grebe
+order:Charadriiformes,clade:neoaves,Charadriiformes,Caradriformes,"Shorebirds, gulls and auks",https://en.wikipedia.org/wiki/Charadriiformes
+order:Sphenisciformes,clade:neoaves,Sphenisciformes,Esfenisciformes,Penguins,https://en.wikipedia.org/wiki/Penguin
+order:Ciconiiformes,clade:neoaves,Ciconiiformes,Ciconiformes,Storks,https://en.wikipedia.org/wiki/Stork
+order:Suliformes,clade:neoaves,Suliformes,Suliformes,Cormorants and gannets,https://en.wikipedia.org/wiki/Suliformes
+order:Pelecaniformes,clade:neoaves,Pelecaniformes,Pelecaniformes,"Pelicans, herons and ibises",https://en.wikipedia.org/wiki/Pelecaniformes
+order:Opisthocomiformes,clade:neoaves,Opisthocomiformes,Opistocomiformes,Hoatzin,https://en.wikipedia.org/wiki/Hoatzin
+order:Accipitriformes,clade:neoaves,Accipitriformes,Accipitriformes,"Hawks, eagles and vultures",https://en.wikipedia.org/wiki/Accipitriformes
+order:Strigiformes,clade:neoaves,Strigiformes,Estrigiformes,Owls,https://en.wikipedia.org/wiki/Owl
+order:Bucerotiformes,clade:neoaves,Bucerotiformes,Bucerotiformes,Hornbills and hoopoes,https://en.wikipedia.org/wiki/Bucerotiformes
+order:Coraciiformes,clade:neoaves,Coraciiformes,Coraciformes,"Kingfishers, rollers and bee-eaters",https://en.wikipedia.org/wiki/Coraciiformes
+order:Piciformes,clade:neoaves,Piciformes,Piciformes,Woodpeckers and allies,https://en.wikipedia.org/wiki/Piciformes
+order:Falconiformes,clade:neoaves,Falconiformes,Falconiformes,Falcons,https://en.wikipedia.org/wiki/Falconiformes
+order:Psittaciformes,clade:neoaves,Psittaciformes,Psitaciformes,Parrots,https://en.wikipedia.org/wiki/Parrot
+order:Passeriformes,clade:neoaves,Passeriformes,Paseriformes,Passerines (perching birds),https://en.wikipedia.org/wiki/Passerine
+class:Mammalia,clade:amniota,Mammalia,Mamíferos,Mammals,https://en.wikipedia.org/wiki/Mammal
+order:Monotremata,class:Mammalia,Monotremata,Monotremas,Monotremes,https://en.wikipedia.org/wiki/Monotreme
+clade:theria,class:Mammalia,Theria,Terios,Therians,https://en.wikipedia.org/wiki/Theria
+clade:marsupialia,clade:theria,Marsupialia,Marsupiales,Marsupials,https://en.wikipedia.org/wiki/Marsupial
+order:Didelphimorphia,clade:marsupialia,Didelphimorphia,Didelfimorfos (zarigüeyas),Opossums,https://en.wikipedia.org/wiki/Opossum
+order:Microbiotheria,clade:marsupialia,Microbiotheria,Microbioterios,Monito del monte and relatives,https://en.wikipedia.org/wiki/Microbiotheria
+order:Dasyuromorphia,clade:marsupialia,Dasyuromorphia,Dasiuromorfos,Dasyuromorphs,https://en.wikipedia.org/wiki/Dasyuromorphia
+order:Diprotodontia,clade:marsupialia,Diprotodontia,Diprotodontos,Diprotodonts,https://en.wikipedia.org/wiki/Diprotodontia
+clade:placentalia,clade:theria,Placentalia,Placentarios,Placental mammals,https://en.wikipedia.org/wiki/Placentalia
+clade:afrotheria,clade:placentalia,Afrotheria,Afroterios,Afrotherians,https://en.wikipedia.org/wiki/Afrotheria
+order:Macroscelidea,clade:afrotheria,Macroscelidea,Macroscelídeos,Elephant shrews,https://en.wikipedia.org/wiki/Elephant_shrew
+order:Tubulidentata,clade:afrotheria,Tubulidentata,Tubulidentados,Aardvark,https://en.wikipedia.org/wiki/Tubulidentata
+order:Hyracoidea,clade:afrotheria,Hyracoidea,Hiracoideos (damanes),Hyraxes,https://en.wikipedia.org/wiki/Hyrax
+order:Proboscidea,clade:afrotheria,Proboscidea,Proboscídeos,Proboscideans,https://en.wikipedia.org/wiki/Proboscidea
+order:Sirenia,clade:afrotheria,Sirenia,Sirenios,Sirenians (sea cows),https://en.wikipedia.org/wiki/Sirenia
+clade:xenarthra,clade:placentalia,Xenarthra,Xenartros,Xenarthrans,https://en.wikipedia.org/wiki/Xenarthra
+order:Cingulata,clade:xenarthra,Cingulata,Cingulados (armadillos),Armadillos,https://en.wikipedia.org/wiki/Cingulata
+order:Pilosa,clade:xenarthra,Pilosa,Pilosos,Sloths and anteaters,https://en.wikipedia.org/wiki/Pilosa
+clade:boreoeutheria,clade:placentalia,Boreoeutheria,Boreoeuterios,Boreoeutherians,https://en.wikipedia.org/wiki/Boreoeutheria
+clade:euarchontoglires,clade:boreoeutheria,Euarchontoglires,Euarcontoglires,Euarchontoglires,https://en.wikipedia.org/wiki/Euarchontoglires
+order:Dermoptera,clade:euarchontoglires,Dermoptera,Dermópteros,Colugos,https://en.wikipedia.org/wiki/Colugo
+order:Scandentia,clade:euarchontoglires,Scandentia,Escandentios (tupayas),Treeshrews,https://en.wikipedia.org/wiki/Treeshrew
+order:Primates,clade:euarchontoglires,Primates,Primates,Primates,https://en.wikipedia.org/wiki/Primate
+clade:glires,clade:euarchontoglires,Glires,Glires,Glires (rodents and lagomorphs),https://en.wikipedia.org/wiki/Glires
+order:Rodentia,clade:glires,Rodentia,Roedores,Rodents,https://en.wikipedia.org/wiki/Rodent
+order:Lagomorpha,clade:glires,Lagomorpha,Lagomorfos,Lagomorphs,https://en.wikipedia.org/wiki/Lagomorpha
+clade:laurasiatheria,clade:boreoeutheria,Laurasiatheria,Laurasiaterios,Laurasiatherians,https://en.wikipedia.org/wiki/Laurasiatheria
+order:Eulipotyphla,clade:laurasiatheria,Eulipotyphla,Eulipotiflos,Eulipotyphlans,https://en.wikipedia.org/wiki/Eulipotyphla
+order:Chiroptera,clade:laurasiatheria,Chiroptera,Quirópteros (murciélagos),Bats,https://en.wikipedia.org/wiki/Bat
+order:Pholidota,clade:laurasiatheria,Pholidota,Folidotos (pangolines),Pangolins,https://en.wikipedia.org/wiki/Pangolin
+order:Carnivora,clade:laurasiatheria,Carnivora,Carnívoros,Carnivorans,https://en.wikipedia.org/wiki/Carnivora
+order:Perissodactyla,clade:laurasiatheria,Perissodactyla,Perisodáctilos,Odd-toed ungulates,https://en.wikipedia.org/wiki/Odd-toed_ungulate
+order:Cetartiodactyla,clade:laurasiatheria,Cetartiodactyla,Cetartiodáctilos,Even-toed ungulates and cetaceans,https://en.wikipedia.org/wiki/Even-toed_ungulate
+infraorder:Cetacea,order:Cetartiodactyla,Cetacea,Cetáceos,Cetaceans,https://en.wikipedia.org/wiki/Cetacea
+deep:protostomia,deep:bilateria,Protostomia,Protóstomos,Protostomes,https://en.wikipedia.org/wiki/Protostome
+deep:ecdysozoa,deep:protostomia,Ecdysozoa,Ecdisozoos,Ecdysozoans,https://en.wikipedia.org/wiki/Ecdysozoa
+clade:arthropoda,deep:ecdysozoa,Arthropoda,Artrópodos,Arthropods,https://en.wikipedia.org/wiki/Arthropod
+clade:chelicerata,clade:arthropoda,Chelicerata,Quelicerados,Chelicerates,https://en.wikipedia.org/wiki/Chelicerata
+class:Arachnida,clade:chelicerata,Arachnida,Arácnidos,Arachnids,https://en.wikipedia.org/wiki/Arachnid
+order:Araneae,class:Arachnida,Araneae,Arañas,Spiders,https://en.wikipedia.org/wiki/Spider
+order:Scorpiones,class:Arachnida,Scorpiones,Escorpiones,Scorpions,https://en.wikipedia.org/wiki/Scorpion
+clade:mandibulata,clade:arthropoda,Mandibulata,Mandibulados,Mandibulates,https://en.wikipedia.org/wiki/Mandibulata
+class:Chilopoda,clade:mandibulata,Chilopoda,Quilópodos,Centipedes,https://en.wikipedia.org/wiki/Centipede
+order:Scutigeromorpha,class:Chilopoda,Scutigeromorpha,Escutigeromorfos,House centipedes,https://en.wikipedia.org/wiki/Scutigeromorpha
+clade:pancrustacea,clade:mandibulata,Pancrustacea,Pancrustáceos,Pancrustaceans,https://en.wikipedia.org/wiki/Pancrustacea
+class:Malacostraca,clade:pancrustacea,Malacostraca,Malacostráceos,Malacostracans,https://en.wikipedia.org/wiki/Malacostraca
+order:Isopoda,class:Malacostraca,Isopoda,Isópodos,Isopods,https://en.wikipedia.org/wiki/Isopoda
+order:Decapoda,class:Malacostraca,Decapoda,Decápodos,Decapods,https://en.wikipedia.org/wiki/Decapoda
+class:Insecta,clade:pancrustacea,Insecta,Insectos,Insects,https://en.wikipedia.org/wiki/Insect
+order:Hymenoptera,class:Insecta,Hymenoptera,Himenópteros,Hymenopterans,https://en.wikipedia.org/wiki/Hymenoptera
+order:Coleoptera,class:Insecta,Coleoptera,Coleópteros,Beetles,https://en.wikipedia.org/wiki/Beetle
+order:Lepidoptera,class:Insecta,Lepidoptera,Lepidópteros,Butterflies and moths,https://en.wikipedia.org/wiki/Lepidoptera
+order:Diptera,class:Insecta,Diptera,Dípteros,Flies,https://en.wikipedia.org/wiki/Fly
+order:Orthoptera,class:Insecta,Orthoptera,Ortópteros,Grasshoppers and crickets,https://en.wikipedia.org/wiki/Orthoptera

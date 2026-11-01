@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Roedores: el orden de mamíferos más numeroso, con unas 2280 especies (cerca del 40 % de los mamíferos), presentes en todos los continentes salvo la Antártida. En el bestiario: rata parda, ratón de campo, topillo campesino, lirón careto, ardilla roja, castor europeo, marmota alpina, capibara y mara.",
+    "en": "Rodents: the largest mammal order, with about 2,280 species (some 40% of mammals), found on every continent except Antarctica. In the bestiary: brown rat, wood mouse, common vole, garden dormouse, red squirrel, Eurasian beaver, alpine marmot, capybara and Patagonian mara."
+  },
+  "traits": {
+    "es": [
+      "Un solo par de incisivos superiores y otro inferior, grandes y de crecimiento continuo",
+      "Esmalte solo en la cara anterior de los incisivos, que se desgastan en bisel como un cincel",
+      "Sin caninos: un hueco (diastema) separa incisivos y muelas",
+      "Masetero muy desarrollado para roer"
+    ],
+    "en": [
+      "A single pair of large, ever-growing incisors in each jaw",
+      "Enamel only on the front of the incisors, which wear to a chisel edge",
+      "No canines: a gap (diastema) separates incisors and cheek teeth",
+      "Very large masseter muscle for gnawing"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los lagomorfos (conejos, liebres, picas), que tienen un segundo par de pequeños incisivos superiores detrás del primero.",
+    "en": "Do not confuse with lagomorphs (rabbits, hares, pikas), which have a second, small pair of upper incisors behind the first."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Rodent",
+      "url": "https://en.wikipedia.org/wiki/Rodent",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Rodentia",
+      "url": "https://es.wikipedia.org/wiki/Rodentia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

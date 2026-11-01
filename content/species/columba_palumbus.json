@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "La mayor paloma de Europa (38–44,5 cm), robusta y de cola larga",
+      "Manchas blancas a los lados del cuello, con irisaciones verdes",
+      "Franja blanca en el ala, muy visible en vuelo",
+      "Plumaje gris, cabeza azulada y pecho vinoso; cola con banda terminal negra",
+      "Iris amarillo pálido; pico rosado con punta amarilla"
+    ],
+    "en": [
+      "Europe's largest pigeon (38–44.5 cm), stocky and long-tailed",
+      "White patches on the neck sides, with green iridescence",
+      "White wing band, very conspicuous in flight",
+      "Grey plumage, bluish head and pinkish breast; tail with a black terminal band",
+      "Pale yellow iris; pink bill with a yellow tip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Streptopelia turtur",
+      "es": "La tórtola europea es mucho menor y esbelta, con una mancha listada de negro y blanco en el cuello y alas canela escamadas de negro.",
+      "en": "The European turtle dove is much smaller and slimmer, with a black-and-white striped neck patch and black-scaled cinnamon wings."
+    },
+    {
+      "binomial": "Columba livia",
+      "es": "La paloma bravía no tiene blanco en cuello ni alas y su iris es rojo anaranjado, no amarillo pálido.",
+      "en": "The rock dove has no white on the neck or wings and its iris is orange-red, not pale yellow."
+    }
+  ],
+  "etymology": {
+    "es": "Columba es la palabra latina para «paloma»; palumbus es otra palabra latina que significa precisamente «paloma torcaz».",
+    "en": "Columba is Latin for 'pigeon'; palumbus is a variant of Latin palumbes, 'wood pigeon'."
+  },
+  "trivia": {
+    "es": [
+      "Los juveniles carecen de las manchas blancas del cuello, que aparecen hacia los seis meses.",
+      "«Torcaz» viene del latín torques, «collar», por esas manchas del cuello."
+    ],
+    "en": [
+      "Juveniles lack the white neck patches, which appear at about six months old.",
+      "The Spanish 'torcaz' comes from Latin torques, 'collar', after the neck patches."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Columba palumbus",
+      "url": "https://es.wikipedia.org/wiki/Columba_palumbus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common wood pigeon",
+      "url": "https://en.wikipedia.org/wiki/Common_wood_pigeon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Streptopelia turtur",
+      "url": "https://es.wikipedia.org/wiki/Streptopelia_turtur",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

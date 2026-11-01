@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Ranas y sapos (orden Anura, que el bestiario llama Salientia): el grupo más numeroso de anfibios, con más de 8000 especies. En el bestiario hay nueve, entre ellos el sapo común ibérico, el sapo partero ibérico, la ranita de San Antonio, el sapo de Surinam y la rana punta de flecha.",
+    "en": "Frogs and toads (order Anura, which the bestiary calls Salientia): the largest group of amphibians, with more than 8,000 species. The bestiary has nine, including the Iberian common toad, the Iberian midwife toad, the Iberian tree frog, the Surinam toad and the dyeing poison frog."
+  },
+  "traits": {
+    "es": [
+      "Adultos sin cola: la cola de la larva (renacuajo) se reabsorbe y queda un uróstilo de vértebras fusionadas",
+      "Cuerpo corto y ancho; patas traseras mucho más largas que las delanteras, adaptadas al salto",
+      "Boca muy ancha con lengua protráctil y adhesiva",
+      "Membrana timpánica superficial, sin pabellón auditivo externo"
+    ],
+    "en": [
+      "Tailless adults: the tadpole's tail regresses, leaving a urostyle of fused vertebrae",
+      "Short, broad body; hind limbs much longer than forelimbs, adapted for jumping",
+      "Very wide mouth with a protrusible, sticky tongue",
+      "Surface eardrum (tympanic membrane), without an external ear"
+    ]
+  },
+  "contrast": {
+    "es": "La distinción entre «rana» (piel lisa) y «sapo» (piel verrugosa con glándulas parotoides) es informal y no refleja el parentesco. Frente a los urodelos, los anuros adultos nunca tienen cola.",
+    "en": "The split between 'frog' (smooth skin) and 'toad' (warty skin with parotoid glands) is informal and does not reflect relationships. Unlike salamanders, adult anurans never have a tail."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Frog",
+      "url": "https://en.wikipedia.org/wiki/Frog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Anura",
+      "url": "https://es.wikipedia.org/wiki/Anura",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

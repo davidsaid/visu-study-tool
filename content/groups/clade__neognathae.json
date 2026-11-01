@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Neognatos: el linaje que incluye casi todas las aves actuales, cerca de 10 000 especies; se divide en Galloanserae (gallináceas y anátidas) y Neoaves. En el bestiario: todas las aves salvo las paleognatas, de la perdiz y el ánade azulón a los paseriformes.",
+    "en": "Neognaths: the lineage that includes nearly all living birds, about 10,000 species; it splits into Galloanserae (gamebirds and waterfowl) and Neoaves. In the bestiary: every bird except the palaeognaths, from partridges and the mallard to the passerines."
+  },
+  "traits": {
+    "es": [
+      "Mandíbulas y paladar de estructura diferente a la de los paleognatos",
+      "Metacarpianos fusionados y tercer dedo alargado"
+    ],
+    "en": [
+      "Jaw and palate structure different from that of palaeognaths",
+      "Fused metacarpals and an elongated third digit"
+    ]
+  },
+  "contrast": {
+    "es": "Su grupo hermano son los paleognatos (ratites y tinamúes), cuyo paladar «antiguo» es en realidad uno de sus pocos caracteres derivados.",
+    "en": "Their sister group is the palaeognaths (ratites and tinamous), whose 'old' palate is actually one of their few derived traits."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Neognathae",
+      "url": "https://en.wikipedia.org/wiki/Neognathae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Neognathae",
+      "url": "https://es.wikipedia.org/wiki/Neognathae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

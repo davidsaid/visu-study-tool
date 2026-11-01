@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Esfenodontos o rincocéfalos: orden de reptiles de aspecto de lagarto con una sola especie viva, el tuátara (Sphenodon punctatus) de Nueva Zelanda, que es el representante del bestiario. Fue un grupo diverso en el Mesozoico.",
+    "en": "Sphenodontians or rhynchocephalians: an order of lizard-like reptiles with a single living species, the tuatara (Sphenodon punctatus) of New Zealand, which is the bestiary's representative. The group was diverse in the Mesozoic."
+  },
+  "traits": {
+    "es": [
+      "Dientes acrodontos, soldados al borde de las mandíbulas",
+      "Conserva gastralias (costillas ventrales) y un hueso proatlas en el cuello",
+      "Ojo parietal («tercer ojo») cubierto de escamas en lo alto de la cabeza",
+      "Comparte con los escamosos la autotomía de la cola y la cloaca en forma de hendidura transversal"
+    ],
+    "en": [
+      "Acrodont teeth, fused to the edges of the jaws",
+      "Retains gastralia (belly ribs) and a proatlas bone in the neck",
+      "Parietal eye ('third eye') covered by scales on top of the head",
+      "Shares with squamates tail autotomy and a transverse, slit-like cloaca"
+    ]
+  },
+  "contrast": {
+    "es": "No es un lagarto: al principio se clasificó entre los agámidos, pero es el grupo hermano de los escamosos (lagartos y serpientes) dentro de los lepidosaurios.",
+    "en": "It is not a lizard: it was first classified with the agamids, but it is the sister group of squamates (lizards and snakes) within Lepidosauria."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Rhynchocephalia",
+      "url": "https://en.wikipedia.org/wiki/Rhynchocephalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sphenodontia",
+      "url": "https://es.wikipedia.org/wiki/Sphenodontia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

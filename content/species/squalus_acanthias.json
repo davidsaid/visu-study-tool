@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Tiburón pequeño (hasta 1,25 m) de cuerpo estilizado",
+      "Una espina afilada delante de cada una de las dos aletas dorsales",
+      "Sin aleta anal",
+      "Dorso pardo grisáceo con manchas blancas"
+    ],
+    "en": [
+      "Small shark (up to 1.25 m) with a slender body",
+      "A sharp spine in front of each of its two dorsal fins",
+      "No anal fin",
+      "Greyish-brown back with white spots"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Scyliorhinus canicula",
+      "es": "La pintarroja no tiene espinas dorsales, sí tiene aleta anal y su dorso está cubierto de pequeñas manchas oscuras.",
+      "en": "The small-spotted catshark has no dorsal spines, does have an anal fin and its back is covered in small dark spots."
+    }
+  ],
+  "etymology": {
+    "es": "acanthias alude a las dos espinas del tiburón.",
+    "en": "acanthias refers to the shark's two spines."
+  },
+  "trivia": {
+    "es": [
+      "Sus espinas tienen veneno: si se le captura, arquea el lomo para clavarlas."
+    ],
+    "en": [
+      "Its spines carry venom: when caught it arches its back to drive them in."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Squalus acanthias",
+      "url": "https://es.wikipedia.org/wiki/Squalus_acanthias",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Spiny dogfish",
+      "url": "https://en.wikipedia.org/wiki/Spiny_dogfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Scyliorhinus canicula",
+      "url": "https://es.wikipedia.org/wiki/Scyliorhinus_canicula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

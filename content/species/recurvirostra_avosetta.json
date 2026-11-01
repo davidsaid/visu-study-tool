@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Zancuda blanca y negra de unos 40–45 cm",
+      "Pico negro, largo, fino y curvado hacia arriba",
+      "Píleo negro que baja por la nuca",
+      "Alas blancas con las primarias negras y dos franjas negras (escapulares y coberteras)",
+      "Patas largas azuladas que sobresalen de la cola en vuelo"
+    ],
+    "en": [
+      "Black-and-white wader of about 40–45 cm",
+      "Long, slender, upturned black bill",
+      "Black cap extending down the back of the neck",
+      "White wings with black primaries and two black bands (scapulars and coverts)",
+      "Long bluish legs that project beyond the tail in flight"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Dimorfismo sutil: el macho tiene el pico más largo y menos curvado; la hembra, más corto y curvado, y a veces el negro de la cabeza más pardo.",
+    "en": "Subtle dimorphism: the male's bill is longer and less curved; the female's shorter and more curved, her head markings sometimes browner."
+  },
+  "etymology": {
+    "es": "Recurvirostra, del latín recurvus «curvado hacia atrás» y rostrum «pico»; avosetta es su nombre en véneto.",
+    "en": "Recurvirostra, from Latin recurvus 'curved backwards' and rostrum 'bill'; avosetta is its Venetian name."
+  },
+  "trivia": {
+    "es": [
+      "Los juveniles son pardos donde los adultos son negros."
+    ],
+    "en": [
+      "Juveniles are brown where adults are black."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Recurvirostra avosetta",
+      "url": "https://es.wikipedia.org/wiki/Recurvirostra_avosetta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Pied avocet",
+      "url": "https://en.wikipedia.org/wiki/Pied_avocet",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

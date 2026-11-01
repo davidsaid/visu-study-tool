@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Tetrápodos: el clado de vertebrados con cuatro extremidades y sus descendientes, aunque hayan perdido las patas. Surgieron en el Devónico a partir de peces de aletas lobuladas e incluyen a los anfibios y a los amniotas; en el bestiario, las clases Amphibia, Reptilia, Aves y Mammalia.",
+    "en": "Tetrapods: the clade of four-limbed vertebrates and their descendants, even those that have lost their legs. They arose in the Devonian from lobe-finned fishes and comprise amphibians and amniotes; in the bestiary, the classes Amphibia, Reptilia, Aves and Mammalia."
+  },
+  "traits": {
+    "es": [
+      "Cuatro extremidades con dedos, unidas a las cinturas escapular y pélvica (la sinapomorfia que da nombre al grupo)",
+      "Cabeza y cuello diferenciados",
+      "Oído medio para oír en el aire",
+      "Algunos linajes han perdido las patas (serpientes, lagartos ápodos, cecilias) o las traseras (cetáceos), pero siguen siendo tetrápodos"
+    ],
+    "en": [
+      "Four limbs with digits, attached to shoulder and pelvic girdles (the synapomorphy that names the group)",
+      "Distinct head and neck",
+      "Middle ear for hearing in air",
+      "Some lineages have lost all limbs (snakes, legless lizards, caecilians) or the hind pair (cetaceans) but are still tetrapods"
+    ]
+  },
+  "contrast": {
+    "es": "Una serpiente, una cecilia o una ballena son tetrápodos aunque no tengan cuatro patas: lo que cuenta es descender de antepasados con cuatro extremidades.",
+    "en": "A snake, a caecilian or a whale is a tetrapod despite lacking four legs: what counts is descent from four-limbed ancestors."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Tetrapod",
+      "url": "https://en.wikipedia.org/wiki/Tetrapod",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Tetrapoda",
+      "url": "https://es.wikipedia.org/wiki/Tetrapoda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

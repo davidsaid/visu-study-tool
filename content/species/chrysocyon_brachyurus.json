@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Cánido de patas negras larguísimas que le dan un aire desgarbado; el más alto de los cánidos salvajes",
+      "Pelaje largo anaranjado rojizo con una crin negra eréctil en la nuca y a lo largo del dorso",
+      "Orejas muy grandes y largas sobre una cabeza alargada y pequeña",
+      "Hocico negro; garganta blanca y a menudo punta de la cola blanquecina"
+    ],
+    "en": [
+      "Canid with very long black legs giving a gangly look; the tallest wild canid",
+      "Long orange-red coat with an erectile black mane on the nape and along the spine",
+      "Very large, long ears on a small, elongated head",
+      "Black muzzle; white throat and often a whitish tail tip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Vulpes vulpes",
+      "es": "El zorro tiene un patrón de color parecido, pero es mucho más pequeño, de patas cortas y pupila en hendidura vertical.",
+      "en": "The red fox has similar markings but is much smaller, short-legged and has vertical-slit pupils."
+    }
+  ],
+  "dimorphism": {
+    "es": "El dimorfismo es leve: los machos suelen pesar algo más, con coloración similar.",
+    "en": "Dimorphism is subtle: males are somewhat heavier, with similar colouring."
+  },
+  "etymology": {
+    "es": "Chrysocyon, del griego chrysós «oro» + kýōn «perro»; brachyurus, del griego brachýs «corto» + ourá «cola».",
+    "en": "Chrysocyon from Greek chrysós 'gold' + kýōn 'dog'; brachyurus from Greek brachýs 'short' + ourá 'tail'."
+  },
+  "trivia": {
+    "es": [
+      "No es ni zorro ni lobo: es la única especie de su género."
+    ],
+    "en": [
+      "It is neither a fox nor a wolf, and is the only species in its genus."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Chrysocyon brachyurus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Chrysocyon_brachyurus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Maned wolf — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Maned_wolf",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "es": "Saurópsidos: el clado de amniotas más emparentados con los reptiles actuales que con los mamíferos; equivale a Reptilia en sentido estricto, pero incluyendo a las aves. En el bestiario abarca toda la clase Reptilia (tortugas, tuátara, escamosos y cocodrilos) y toda la clase Aves.",
+    "en": "Sauropsids: the clade of amniotes closer to living reptiles than to mammals; it amounts to Reptilia in the strict sense, but including birds. In the bestiary it covers the whole class Reptilia (turtles, tuatara, squamates and crocodilians) and the whole class Aves."
+  },
+  "traits": {
+    "es": [
+      "Piel queratinizada, dura y seca, con escamas epidérmicas de queratina (las aves además tienen plumas)",
+      "Huevo amniótico con cáscara casi impermeable",
+      "Pueden vivir lejos del agua, incluso en hábitats muy secos"
+    ],
+    "en": [
+      "Keratinized, tough, dry skin with epidermal keratin scales (birds also have feathers)",
+      "Amniotic egg with a nearly waterproof shell",
+      "Able to live far from water, even in very dry habitats"
+    ]
+  },
+  "contrast": {
+    "es": "Su grupo hermano son los sinápsidos, cuyo único linaje vivo son los mamíferos: los antiguos «reptiles mamiferoides» están más emparentados con los mamíferos que con cualquier reptil actual.",
+    "en": "Their sister group is Synapsida, whose only living lineage is the mammals: the old 'mammal-like reptiles' are closer to mammals than to any living reptile."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Sauropsida",
+      "url": "https://en.wikipedia.org/wiki/Sauropsida",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sauropsida",
+      "url": "https://es.wikipedia.org/wiki/Sauropsida",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Cabeza enorme y cuadrada, que ocupa hasta un tercio de la longitud del cuerpo",
+      "Un solo espiráculo en el extremo delantero de la cabeza, desplazado a la izquierda",
+      "Sin aleta dorsal: una joroba y una serie de crestas en el último tercio del dorso",
+      "Piel arrugada como una ciruela pasa, de color gris",
+      "Aleta caudal triangular y muy gruesa, que asoma al sumergirse"
+    ],
+    "en": [
+      "Huge, boxy head up to a third of the body length",
+      "Single blowhole at the front of the head, offset to the left",
+      "No dorsal fin: a hump and a series of ridges on the rear third of the back",
+      "Grey skin wrinkled like a prune",
+      "Thick, triangular tail flukes raised when diving"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Eubalaena glacialis",
+      "es": "La ballena franca tampoco tiene aleta dorsal, pero su cabeza lleva callosidades blancas, la boca es muy arqueada y su soplo tiene forma de V.",
+      "en": "The right whale also lacks a dorsal fin, but its head bears white callosities, its mouth is strongly arched and its blow is V-shaped."
+    }
+  ],
+  "dimorphism": {
+    "es": "Es uno de los cetáceos con más dimorfismo: los machos adultos son un 30–50 % más largos y unas tres veces más pesados que las hembras.",
+    "en": "One of the most dimorphic cetaceans: adult males are 30–50% longer and about three times as heavy as females."
+  },
+  "etymology": {
+    "es": "Physeter, del griego physētēr, «soplador, espiráculo»; macrocephalus, del griego makroképhalos, «de cabeza grande».",
+    "en": "Physeter, from Greek physētēr, 'blowpipe, blowhole'; macrocephalus, from Greek makroképhalos, 'big-headed'."
+  },
+  "trivia": {
+    "es": [
+      "«Cachalote» viene del portugués, derivado de cachola, «cabeza grande»."
+    ],
+    "en": [
+      "The Spanish name «cachalote» comes from Portuguese, from cachola, 'big head'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Physeter macrocephalus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Physeter_macrocephalus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Sperm whale — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Sperm_whale",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "North Atlantic right whale — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/North_Atlantic_right_whale",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

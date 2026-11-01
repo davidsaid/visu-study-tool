@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Curruca pequeña (13–15 cm), principalmente gris",
+      "Macho: píleo negro brillante y bien delimitado",
+      "Hembra y jóvenes: píleo pardo rojizo",
+      "Partes superiores gris oliva y partes inferiores gris claro, más blancas en la garganta",
+      "Patas grises; pico negruzco con la mandíbula inferior gris"
+    ],
+    "en": [
+      "Small warbler (13–15 cm), mainly grey",
+      "Male: neat glossy black cap",
+      "Female and juveniles: reddish-brown cap",
+      "Olive-grey upperparts and light grey underparts, whiter on the throat",
+      "Grey legs; blackish bill with grey lower mandible"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Passer domesticus",
+      "es": "Vista fugazmente puede confundirse con el gorrión común, pero la curruca es gris uniforme con un capirote nítido negro o pardo rojizo.",
+      "en": "Glimpsed briefly it may be mistaken for a house sparrow, but the blackcap is plain grey with a neat black or reddish-brown cap."
+    }
+  ],
+  "dimorphism": {
+    "es": "Sí: el macho tiene el píleo negro y la hembra pardo rojizo, con el dorso algo más pardo.",
+    "en": "Yes: the male has a black cap and the female a reddish-brown one, with slightly browner upperparts."
+  },
+  "etymology": {
+    "es": "Sylvia procede del latín moderno silvia, un espíritu del bosque, de silva «bosque»; atricapilla, de ater «negro» y capillus «cabello», significa «de cabeza negra».",
+    "en": "Sylvia is from Modern Latin silvia, a woodland sprite, from silva 'wood'; atricapilla, from ater 'black' and capillus 'hair', means 'black-headed'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Sylvia atricapilla",
+      "url": "https://es.wikipedia.org/wiki/Sylvia_atricapilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian blackcap",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_blackcap",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Tiburones cazón o escualiformes: unas 126 especies en siete familias, marinas y de todo el mundo, desde costas someras hasta mar abierto; algunas son bioluminiscentes. En el bestiario: la mielga (Squalus acanthias).",
+    "en": "Dogfish sharks: about 126 species in seven families, marine and worldwide, from shallow coasts to the open ocean; some are bioluminescent. In the bestiary: the spiny dogfish (Squalus acanthias)."
+  },
+  "traits": {
+    "es": [
+      "Dos aletas dorsales, normalmente con una espina delante",
+      "Sin aleta anal",
+      "Sin membrana nictitante",
+      "Cabeza generalmente puntiaguda"
+    ],
+    "en": [
+      "Two dorsal fins, usually with a spine in front",
+      "No anal fin",
+      "No nictitating membrane",
+      "Usually a pointed head"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los carcarriniformes, como la pintarroja, que tienen aleta anal, membrana nictitante y aletas dorsales sin espinas.",
+    "en": "Do not confuse with ground sharks such as the catshark, which have an anal fin, a nictitating membrane and spineless dorsal fins."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Squaliformes",
+      "url": "https://en.wikipedia.org/wiki/Squaliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Squaliformes",
+      "url": "https://es.wikipedia.org/wiki/Squaliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Carcharhiniformes",
+      "url": "https://en.wikipedia.org/wiki/Carcharhiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

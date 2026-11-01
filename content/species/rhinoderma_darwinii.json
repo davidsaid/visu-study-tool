@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Rana diminuta (2,2–3,1 cm) de cabeza triangular",
+      "Hocico prolongado en un apéndice nasal carnoso",
+      "Dorso verde o en tonos pardos; patas largas y finas",
+      "Vientre negro con grandes manchas blancas, distintas en cada individuo"
+    ],
+    "en": [
+      "Tiny frog (2.2–3.1 cm) with a triangular head",
+      "Snout drawn out into a fleshy nasal appendage",
+      "Back green or brownish; long, slender limbs",
+      "Black belly with large white blotches, unique to each individual"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Las hembras suelen ser pardas; los machos son mucho más variables y a menudo verdes cuando incuban.",
+    "en": "Females are typically brown; males are far more variable and often green when brooding."
+  },
+  "trivia": {
+    "es": [
+      "El macho cría a los renacuajos dentro de su saco vocal."
+    ],
+    "en": [
+      "The male raises the tadpoles inside his vocal sac."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Rhinoderma darwinii",
+      "url": "https://es.wikipedia.org/wiki/Rhinoderma_darwinii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Darwin's frog",
+      "url": "https://en.wikipedia.org/wiki/Darwin's_frog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

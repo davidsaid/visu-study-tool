@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Gaviota pequeña (34–39 cm) de dorso y alas gris pálido",
+      "En verano, capucha marrón chocolate (parece negra de lejos) con la nuca blanca",
+      "En invierno, cabeza blanca con dos manchas oscuras detrás del ojo",
+      "Pico y patas rojos",
+      "En vuelo, borde anterior blanco en el extremo del ala y puntas de las primarias negras"
+    ],
+    "en": [
+      "Small gull (34–39 cm) with pale grey back and wings",
+      "In summer, chocolate-brown hood (looks black at a distance) with a white nape",
+      "In winter, white head with two dark spots behind the eye",
+      "Red bill and legs",
+      "In flight, white leading edge to the outer wing and black primary tips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Larus fuscus",
+      "es": "La gaviota sombría es mucho mayor (51–64 cm), con dorso gris oscuro o negro, pico amarillo con mancha roja y patas amarillas.",
+      "en": "The lesser black-backed gull is much larger (51–64 cm), with a dark grey or black back, a yellow bill with a red spot, and yellow legs."
+    }
+  ],
+  "etymology": {
+    "es": "Chroicocephalus, del griego khrōikós «coloreado» y kephalē «cabeza»; ridibundus significa en latín «que ríe».",
+    "en": "Chroicocephalus, from Greek khroikos 'coloured' and kephale 'head'; ridibundus is Latin for 'laughing'."
+  },
+  "trivia": {
+    "es": [
+      "Los juveniles son moteados de pardo y tienen una banda negra en la cola; tardan dos años en alcanzar el plumaje adulto."
+    ],
+    "en": [
+      "Juveniles are mottled brown with a black tail band; they take two years to reach adult plumage."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Chroicocephalus ridibundus",
+      "url": "https://es.wikipedia.org/wiki/Chroicocephalus_ridibundus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Black-headed gull",
+      "url": "https://en.wikipedia.org/wiki/Black-headed_gull",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Larus fuscus",
+      "url": "https://es.wikipedia.org/wiki/Larus_fuscus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

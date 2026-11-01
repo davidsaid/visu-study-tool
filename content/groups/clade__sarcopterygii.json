@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Sarcopterigios en sentido filogenético: el clado de los peces de aletas lobuladas junto con sus descendientes, los tetrápodos. Hoy la gran mayoría de sus especies son terrestres. En el bestiario agrupa la clase Sarcopterygii de la lista (celacanto y pez de barro) con anfibios, reptiles, aves y mamíferos.",
+    "en": "Sarcopterygii in the phylogenetic sense: the clade of lobe-finned fishes together with their descendants, the tetrapods. Today the vast majority of its species live on land. In the bestiary it unites the list's class Sarcopterygii (coelacanth and South American lungfish) with amphibians, reptiles, birds and mammals."
+  },
+  "traits": {
+    "es": [
+      "Apéndices pares carnosos con esqueleto interno, unidos al cuerpo por un solo hueso",
+      "Las aletas lobuladas dieron lugar a las extremidades de los tetrápodos",
+      "Un divertículo del intestino anterior dio lugar a los pulmones",
+      "Esqueleto óseo y dientes con esmalte"
+    ],
+    "en": [
+      "Fleshy paired appendages with an internal skeleton, joined to the body by a single bone",
+      "The lobed fins gave rise to tetrapod limbs",
+      "A foregut outpocketing gave rise to air-breathing lungs",
+      "Bony skeleton and enamel-covered teeth"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con la clase Sarcopterygii del bestiario, que solo incluye los peces de aletas lobuladas (celacantos y dipnoos) y es parafilética, porque deja fuera a los tetrápodos. Su clado hermano son los actinopterigios, de aletas con radios.",
+    "en": "Do not confuse with the bestiary's class Sarcopterygii, which includes only the lobe-finned fishes (coelacanths and lungfishes) and is paraphyletic because it leaves out the tetrapods. Its sister clade is the ray-finned fishes, with rayed fins."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Sarcopterygii",
+      "url": "https://en.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sarcopterygii",
+      "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

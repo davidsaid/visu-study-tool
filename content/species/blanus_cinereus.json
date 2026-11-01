@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo sin patas y anillado, de aspecto de lombriz grande",
+      "Cabeza pequeña, roma y trapezoidal, separada del cuerpo por un surco transversal",
+      "Ojos diminutos cubiertos por piel",
+      "Color rosa carne, rosa grisáceo, violáceo o pardo; vientre más claro",
+      "Cola corta, con las mismas escamas que el cuerpo"
+    ],
+    "en": [
+      "Limbless, ringed body that looks like a large earthworm",
+      "Small, blunt, trapezoidal head separated from the body by a transverse groove",
+      "Tiny eyes covered by skin",
+      "Fleshy pink, greyish pink, violet or brown; paler belly",
+      "Short tail with the same scales as the body"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Anguis fragilis",
+      "es": "El lución tiene escamas lisas y brillantes y ojos visibles con párpados móviles, no un cuerpo anillado con ojos cubiertos de piel.",
+      "en": "The slow worm has smooth glossy scales and visible eyes with movable lids, not a ringed body with skin-covered eyes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son menores que los machos.",
+    "en": "Females are smaller than males."
+  },
+  "trivia": {
+    "es": [
+      "Su nombre local en español, portugués y catalán significa «serpiente ciega», aunque no es una serpiente sino un anfisbenio."
+    ],
+    "en": [
+      "Its local names in Spanish, Portuguese and Catalan mean 'blind snake', though it is an amphisbaenian, not a snake."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Blanus cinereus",
+      "url": "https://es.wikipedia.org/wiki/Blanus_cinereus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian worm lizard",
+      "url": "https://en.wikipedia.org/wiki/Iberian_worm_lizard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Anguis fragilis",
+      "url": "https://es.wikipedia.org/wiki/Anguis_fragilis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

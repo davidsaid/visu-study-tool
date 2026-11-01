@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Bichires y pez caña (familia Polypteridae, la única del orden): actinopterigios de aspecto arcaico de las aguas dulces de África tropical y el Nilo, grupo hermano de todos los demás peces de aletas radiadas actuales. En el bestiario: el bichir (Polypterus bichir).",
+    "en": "Bichirs and the reedfish (family Polypteridae, the only one in the order): archaic-looking ray-finned fishes of tropical African fresh waters and the Nile, sister group to all other living ray-finned fishes. In the bestiary: the bichir (Polypterus bichir)."
+  },
+  "traits": {
+    "es": [
+      "Aleta dorsal dividida en una serie de 7 a 18 pínnulas, cada una con un radio espinoso",
+      "Cuerpo alargado cubierto de escamas ganoideas gruesas y rómbicas",
+      "Aletas pectorales con base lobulada y carnosa",
+      "Espiráculos en lo alto de la cabeza para respirar aire; los juveniles tienen branquias externas"
+    ],
+    "en": [
+      "Dorsal fin split into a row of 7–18 finlets, each with a spine",
+      "Elongated body covered in thick, rhombic ganoid scales",
+      "Pectoral fins with a fleshy, lobed base",
+      "Spiracles on top of the head used to breathe air; juveniles have external gills"
+    ]
+  },
+  "contrast": {
+    "es": "Sus aletas pectorales carnosas recuerdan a las de los sarcopterigios, pero la fila de pínnulas dorsales y las escamas ganoideas lo identifican como actinopterigio primitivo.",
+    "en": "Its fleshy pectoral fins recall those of lobe-finned fishes, but the row of dorsal finlets and ganoid scales mark it as a basal ray-finned fish."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Bichir",
+      "url": "https://en.wikipedia.org/wiki/Bichir",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Polypteridae",
+      "url": "https://es.wikipedia.org/wiki/Polypteridae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

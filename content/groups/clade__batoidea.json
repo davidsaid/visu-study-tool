@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Rayas en sentido amplio (Batoidea o Batomorphi): más de 600 especies de elasmobranquios aplanados, grupo hermano de los tiburones. En el bestiario: los órdenes Rajiformes, Rhinopristiformes, Torpediniformes y Myliobatiformes (raya noruega, pez guitarra, tremielga, pastinaca, manta y águila marina).",
+    "en": "Rays in the broad sense (Batoidea or Batomorphi): over 600 species of flattened elasmobranchs, the sister group of the sharks. In the bestiary: the orders Rajiformes, Rhinopristiformes, Torpediniformes and Myliobatiformes (common skate, guitarfish, torpedo, stingray, devil ray and eagle ray)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo aplanado dorsoventralmente (menos en peces guitarra y peces sierra)",
+      "Aletas pectorales agrandadas y soldadas a los lados de la cabeza",
+      "Cinco (raramente seis) hendiduras branquiales en la cara ventral",
+      "Boca ventral; respiran tomando el agua por los espiráculos"
+    ],
+    "en": [
+      "Body flattened top to bottom (less so in guitarfishes and sawfishes)",
+      "Enlarged pectoral fins fused to the sides of the head",
+      "Five (rarely six) gill slits on the underside",
+      "Ventral mouth; they breathe by drawing water in through the spiracles"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con el angelote (Squatiniformes), un tiburón aplanado cuyas hendiduras branquiales están a los lados de la cabeza y cuyas pectorales no están soldadas a ella.",
+    "en": "Do not confuse with the angelshark (Squatiniformes), a flattened shark whose gill slits are on the sides of the head and whose pectoral fins are not fused to it."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Batomorphi",
+      "url": "https://en.wikipedia.org/wiki/Batomorphi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Batomorphi",
+      "url": "https://es.wikipedia.org/wiki/Batomorphi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Squatiniformes",
+      "url": "https://en.wikipedia.org/wiki/Squatiniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

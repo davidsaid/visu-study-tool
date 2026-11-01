@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Elasmobranquios: subclase de peces cartilaginosos que reúne a los tiburones (Selachii) y a las rayas (Batoidea). Incluye todos los condrictios del bestiario salvo la quimera: de Orectolobiformes y Lamniformes a Torpediniformes y Myliobatiformes.",
+    "en": "Elasmobranchs: the subclass of cartilaginous fishes that unites the sharks (Selachii) and the rays (Batoidea). It includes every chondrichthyan in the bestiary except the rabbit fish: from Orectolobiformes and Lamniformes to Torpediniformes and Myliobatiformes."
+  },
+  "traits": {
+    "es": [
+      "De cinco a siete pares de hendiduras branquiales que se abren por separado al exterior",
+      "Pequeñas escamas placoideas en la piel",
+      "Dientes en varias series; mandíbula superior no soldada al cráneo",
+      "Machos con las aletas pélvicas modificadas en pterigopodios",
+      "Sin vejiga natatoria; intestino con válvula espiral"
+    ],
+    "en": [
+      "Five to seven pairs of gill slits, each opening separately to the outside",
+      "Small placoid scales on the skin",
+      "Teeth in several rows; upper jaw not fused to the skull",
+      "Males with pelvic fins modified into claspers",
+      "No swim bladder; intestine with a spiral fold"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los holocéfalos (quimeras), que tienen una sola abertura branquial a cada lado, cubierta por un pliegue de piel, y la mandíbula superior soldada al cráneo.",
+    "en": "Do not confuse with holocephalans (chimaeras), which have a single gill opening on each side, covered by a skin flap, and an upper jaw fused to the skull."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Elasmobranchii",
+      "url": "https://en.wikipedia.org/wiki/Elasmobranchii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Elasmobranchii",
+      "url": "https://es.wikipedia.org/wiki/Elasmobranchii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Chimaera",
+      "url": "https://en.wikipedia.org/wiki/Chimaera",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

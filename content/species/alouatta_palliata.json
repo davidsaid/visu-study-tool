@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje predominantemente negro",
+      "Franja de pelos largos dorados o amarillentos en los flancos (el «manto»)",
+      "Cabeza grande con la cara negra y desnuda",
+      "Cola prensil larga y fuerte, con una zona sin pelo cerca de la punta"
+    ],
+    "en": [
+      "Mostly black coat",
+      "Fringe of long golden or yellowish hairs on the flanks (the 'mantle')",
+      "Large head with a bare black face",
+      "Long, strong prehensile tail with a hairless pad near the tip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cebus capucinus",
+      "es": "El capuchino tiene la cara rosada y la cabeza, garganta y hombros blancos; el aullador es negro con flancos dorados.",
+      "en": "The capuchin has a pink face and a white head, throat and shoulders; the howler is black with golden flanks."
+    }
+  ],
+  "dimorphism": {
+    "es": "Marcado: los machos son más grandes, tienen el pelo de la cara más largo y abundante, y de adultos el escroto se vuelve blanco.",
+    "en": "Marked: males are larger, have longer, fuller hair around the face, and their scrotum turns white at maturity."
+  },
+  "etymology": {
+    "es": "palliata viene de pallium, el manto que vestían griegos y romanos, por los largos pelos de sus flancos.",
+    "en": "palliata comes from pallium, the cloak worn by ancient Greeks and Romans, for the long hairs on its flanks."
+  },
+  "sources": [
+    {
+      "title": "Alouatta palliata — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Alouatta_palliata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Mantled howler — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Mantled_howler",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

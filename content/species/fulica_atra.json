@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave acuática de 32–42 cm, totalmente negra",
+      "Pico robusto y escudete frontal blancos",
+      "Iris rojo",
+      "Dedos largos lobulados; patas de negruzcas a verdosas o amarillas",
+      "Juveniles parduzcos con garganta y pecho claros y sin escudete"
+    ],
+    "en": [
+      "Waterbird of 32–42 cm, entirely black",
+      "Stout white bill and white frontal shield",
+      "Red iris",
+      "Long lobed toes; legs blackish to greenish or yellow",
+      "Juveniles brownish with pale throat and breast, no shield"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Los sexos son de aspecto similar.",
+    "en": "The sexes are similar in appearance."
+  },
+  "etymology": {
+    "es": "Fulica significa en latín «focha»; atra es el femenino de ater, «negro mate».",
+    "en": "Fulica is Latin for 'coot'; atra means 'black'."
+  },
+  "trivia": {
+    "es": [
+      "El escudete blanco dio origen a la expresión inglesa «as bald as a coot», documentada ya hacia 1430."
+    ],
+    "en": [
+      "The white shield gave rise to the English phrase 'as bald as a coot', recorded as early as 1430."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Fulica atra",
+      "url": "https://es.wikipedia.org/wiki/Fulica_atra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian coot",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_coot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

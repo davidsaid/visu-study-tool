@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Gran félido musculoso de pelaje liso, de beige claro a pardo amarillento, sin manchas en el adulto",
+      "El macho adulto lleva una melena densa en cabeza, cuello y pecho, de rubia a negra",
+      "Cola larga rematada en un mechón negro",
+      "Cabeza corta y redondeada con orejas redondas",
+      "Los cachorros tienen manchas que se pierden con la edad"
+    ],
+    "en": [
+      "Large muscular cat with a plain coat, light buff to yellowish brown, unspotted in adults",
+      "Adult males have a dense mane on head, neck and chest, blond to black",
+      "Long tail ending in a black tuft",
+      "Short, rounded head with round ears",
+      "Cubs are spotted; the spots fade with age"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Puma concolor",
+      "es": "El puma también es liso, pero no tiene melena ni mechón negro en la cola.",
+      "en": "The puma is also plain but lacks a mane and a black tail tuft."
+    }
+  ],
+  "dimorphism": {
+    "es": "Es el único félido con dimorfismo sexual claro: el macho es mayor y tiene melena.",
+    "en": "The only cat with marked sexual dimorphism: males are larger and maned."
+  },
+  "etymology": {
+    "es": "Panthera, del latín panthēra y del griego pánthēr; leo es «león» en latín (del griego léōn).",
+    "en": "Panthera from Latin panthēra and Greek pánthēr; leo is Latin for 'lion' (from Greek léōn)."
+  },
+  "sources": [
+    {
+      "title": "Panthera leo — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Panthera_leo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Lion — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Lion",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

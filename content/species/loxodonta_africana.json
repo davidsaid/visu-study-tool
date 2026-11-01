@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Orejas enormes y triangulares que cubren todo el hombro",
+      "Lomo marcadamente cóncavo (hundido en el centro)",
+      "Colmillos robustos, curvados hacia fuera y adelante, en ambos sexos",
+      "Punta de la trompa con dos «dedos»",
+      "Piel gris con pelo muy escaso"
+    ],
+    "en": [
+      "Huge triangular ears that cover the whole shoulder",
+      "Markedly concave (saddle-shaped) back",
+      "Sturdy tusks curving outwards and forwards, in both sexes",
+      "Trunk tip with two finger-like projections",
+      "Grey skin with very sparse hair"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Elephas maximus",
+      "es": "El elefante asiático es más pequeño, con orejas pequeñas y redondeadas que no cubren el hombro, frente con dos abultamientos, lomo convexo y un solo «dedo» en la trompa.",
+      "en": "The Asian elephant is smaller, with small rounded ears that do not cover the shoulder, a forehead with two bulges, a convex back and a single finger on the trunk tip."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mucho mayores y tienen colmillos más grandes que las hembras.",
+    "en": "Males are much larger and have bigger tusks than females."
+  },
+  "sources": [
+    {
+      "title": "Loxodonta africana — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Loxodonta_africana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "African bush elephant — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/African_bush_elephant",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

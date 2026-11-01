@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Pájaros carpinteros, tucanes, barbudos, indicadores y afines: aves arborícolas con unas 340–450 especies, la mitad de ellas pícidos. En el bestiario: el pico picapinos y el pito real ibérico.",
+    "en": "Woodpeckers, toucans, barbets, honeyguides and allies: arboreal birds with about 340–450 species, half of them woodpeckers. In the bestiary: the great spotted woodpecker and the Iberian green woodpecker."
+  },
+  "traits": {
+    "es": [
+      "Patas zigodáctilas: dos dedos hacia delante y dos hacia atrás",
+      "Cuello corto y cabeza redondeada",
+      "Anidan en cavidades; los carpinteros excavan sus propios agujeros",
+      "Pájaros carpinteros: cola en forma de espátula o abanico"
+    ],
+    "en": [
+      "Zygodactyl feet: two toes forward and two back",
+      "Short neck and rounded head",
+      "Nest in cavities; woodpeckers excavate their own holes",
+      "Woodpeckers: spatula- or fan-shaped tail"
+    ]
+  },
+  "contrast": {
+    "es": "Los loros también son zigodáctilos, pero tienen un pico corto y muy ganchudo.",
+    "en": "Parrots are also zygodactyl, but have a short, strongly hooked bill."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Piciformes",
+      "url": "https://en.wikipedia.org/wiki/Piciformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Piciformes",
+      "url": "https://es.wikipedia.org/wiki/Piciformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Parrot",
+      "url": "https://en.wikipedia.org/wiki/Parrot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

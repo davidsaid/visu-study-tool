@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "El pingüino más alto y pesado (110–120 cm de longitud)",
+      "Cabeza, espalda y alas negras, netamente separadas del vientre blanco",
+      "Pecho amarillo pálido",
+      "Manchas auriculares amarillo vivo a los lados de la cabeza",
+      "Cuerpo hidrodinámico y alas rígidas en forma de aletas"
+    ],
+    "en": [
+      "The tallest and heaviest penguin (110–120 cm long)",
+      "Black head, back and wings, sharply set off from the white belly",
+      "Pale yellow breast",
+      "Bright yellow ear patches on the sides of the head",
+      "Streamlined body and stiff, flipper-like wings"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Aptenodytes patagonicus",
+      "es": "El pingüino rey tiene una coloración parecida, pero es más pequeño.",
+      "en": "The king penguin is similarly coloured but smaller."
+    }
+  ],
+  "dimorphism": {
+    "es": "Macho y hembra son similares en plumaje y tamaño, aunque los machos suelen pesar más.",
+    "en": "Male and female are similar in plumage and size, although males usually weigh more."
+  },
+  "etymology": {
+    "es": "Aptenodytes, del griego a-ptēno-dýtēs, «buceador sin alas»; forsteri honra al naturalista alemán Johann Reinhold Forster, que acompañó a Cook en su segundo viaje.",
+    "en": "Aptenodytes, from Greek a-ptēno-dytēs, 'wingless diver'; forsteri honours the German naturalist Johann Reinhold Forster, who sailed on Cook's second voyage."
+  },
+  "trivia": {
+    "es": [
+      "El macho incuba el huevo más de dos meses en el invierno antártico sin comer."
+    ],
+    "en": [
+      "The male incubates the egg for over two months of Antarctic winter without eating."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Aptenodytes forsteri",
+      "url": "https://es.wikipedia.org/wiki/Aptenodytes_forsteri",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Emperor penguin",
+      "url": "https://en.wikipedia.org/wiki/Emperor_penguin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

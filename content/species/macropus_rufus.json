@@ -1,0 +1,43 @@
+{
+  "field_marks": {
+    "es": [
+      "Canguro muy grande; los machos pueden superar 1,8 m de pie",
+      "Orejas largas y puntiagudas y hocico de perfil cuadrado",
+      "Patas traseras musculosas para saltar y cola fuerte que usa como tercer apoyo",
+      "Machos de pelaje corto pardo rojizo, más claro por debajo; hembras gris azuladas"
+    ],
+    "en": [
+      "Very large kangaroo; males may stand over 1.8 m tall",
+      "Long pointed ears and a square-shaped muzzle",
+      "Muscular hind legs for hopping and a strong tail used as a tripod",
+      "Males short red-brown fur, paler below; females blue-grey"
+    ]
+  },
+  "dimorphism": {
+    "es": "Los machos son pardo rojizos y pesan el doble que las hembras, que son más pequeñas y gris azuladas.",
+    "en": "Males are red-brown and weigh about twice as much as females, which are smaller and blue-grey."
+  },
+  "trivia": {
+    "es": [
+      "Es el mayor marsupial vivo."
+    ],
+    "en": [
+      "It is the largest living marsupial."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Osphranter rufus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Osphranter_rufus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Red kangaroo — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Red_kangaroo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

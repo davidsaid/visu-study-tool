@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Conejos, liebres y picas, en dos familias (Leporidae y Ochotonidae) y unas 109 especies vivas. Hasta principios del siglo XX se clasificaban como roedores. En el bestiario: la pica americana, el conejo europeo y la liebre ibérica.",
+    "en": "Rabbits, hares and pikas, in two families (Leporidae and Ochotonidae) and about 109 living species. Until the early 20th century they were classed as rodents. In the bestiary: the American pika, the European rabbit and the Iberian hare."
+  },
+  "traits": {
+    "es": [
+      "Dos pares de incisivos superiores: un par pequeño, en forma de clavija, detrás del grande",
+      "Incisivos de crecimiento continuo, como en los roedores",
+      "Cecotrofia: reingieren heces blandas para aprovechar la fibra fermentada en el ciego",
+      "Cola muy corta o ausente; patas traseras y orejas llamativas, muy largas en especies de zonas desérticas"
+    ],
+    "en": [
+      "Two pairs of upper incisors: a small peg-like pair behind the large one",
+      "Ever-growing incisors, as in rodents",
+      "Caecotrophy: they re-ingest soft droppings to use fibre fermented in the caecum",
+      "Very short or absent tail; conspicuous hind legs and ears, very long in desert species"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los roedores, que tienen un único par de incisivos superiores.",
+    "en": "Do not confuse with rodents, which have only one pair of upper incisors."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Lagomorpha",
+      "url": "https://en.wikipedia.org/wiki/Lagomorpha",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Lagomorpha",
+      "url": "https://es.wikipedia.org/wiki/Lagomorpha",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

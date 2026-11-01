@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Tamaño enorme: el pez vivo más grande",
+      "Cabeza ancha y aplanada con boca enorme en posición terminal (delante, no por debajo)",
+      "Dorso gris oscuro con manchas y rayas claras en cuadrícula, como un tablero; vientre blanco",
+      "Tres crestas longitudinales marcadas a lo largo de los flancos",
+      "Ojos pequeños en las esquinas de la cabeza; cinco grandes hendiduras branquiales"
+    ],
+    "en": [
+      "Enormous size: the largest living fish",
+      "Broad, flat head with a huge mouth at the very front, not underneath",
+      "Dark grey back with pale spots and stripes in a checkerboard pattern; white belly",
+      "Three prominent ridges running along the sides",
+      "Small eyes at the corners of the head; five large gill slits"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cetorhinus maximus",
+      "es": "El peregrino tiene el hocico cónico, hendiduras branquiales que casi rodean la cabeza y es gris pardo sin el patrón de manchas claras.",
+      "en": "The basking shark has a conical snout, gill slits that almost encircle the head and is greyish-brown without the pale spot pattern."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras crecen más que los machos.",
+    "en": "Females grow larger than males."
+  },
+  "etymology": {
+    "es": "Rhincodon = gr. rhynchos (hocico) + odous (diente); typus = gr. typos, «golpe» o «marca impresa».",
+    "en": "Rhincodon = Gk rhynchos (snout) + odous (tooth); typus = Gk typos, 'blow' or 'impressed mark'."
+  },
+  "trivia": {
+    "es": [
+      "El patrón de manchas es único en cada individuo y se usa para identificarlos y censarlos."
+    ],
+    "en": [
+      "The spot pattern is unique to each individual and is used to identify and count them."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Rhincodon typus",
+      "url": "https://es.wikipedia.org/wiki/Rhincodon_typus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Whale shark",
+      "url": "https://en.wikipedia.org/wiki/Whale_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

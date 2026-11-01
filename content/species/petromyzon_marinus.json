@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo de anguila sin aletas pares",
+      "Boca en ventosa redonda, tan ancha o más que la cabeza, con muchos círculos de dientes",
+      "Siete aberturas branquiales detrás del ojo",
+      "Dorso y flancos oliva o pardo-amarillentos con jaspeado negro; vientre más claro",
+      "Grande: hasta 120 cm"
+    ],
+    "en": [
+      "Eel-like body without paired fins",
+      "Round sucker mouth as wide as or wider than the head, with many concentric rows of teeth",
+      "Seven gill openings behind the eye",
+      "Olive or yellowish-brown back and sides with black marbling; paler belly",
+      "Large: up to 120 cm"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lampetra fluviatilis",
+      "es": "La lamprea de río es mucho menor (25–40 cm) y de color gris oscuro uniforme por encima, sin jaspeado.",
+      "en": "The river lamprey is much smaller (25–40 cm) and plain dark grey above, without marbling."
+    },
+    {
+      "binomial": "Myxine glutinosa",
+      "es": "El mixino no tiene ojos visibles ni ventosa: lleva barbillas alrededor de la boca y un solo orificio branquial por lado.",
+      "en": "The hagfish has no visible eyes and no sucker: it has barbels round the mouth and one gill opening per side."
+    }
+  ],
+  "etymology": {
+    "es": "Petromyzon = «chupapiedras» (gr. pétra, piedra, + myzáō, chupar); marinus = «del mar» en latín.",
+    "en": "Petromyzon = 'stone sucker' (Gk pétra, stone, + myzáō, to suck); marinus = Latin 'of the sea'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Sea lamprey",
+      "url": "https://en.wikipedia.org/wiki/Sea_lamprey",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Petromyzon marinus",
+      "url": "https://es.wikipedia.org/wiki/Petromyzon_marinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

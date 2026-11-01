@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Sapo rechoncho y muy verrugoso de unos 6 cm",
+      "Línea vertebral amarilla o verde claro muy visible",
+      "Glándulas parótidas marcadas y paralelas",
+      "Manchas verdes difusas sobre fondo ocre; iris verdoso y pupila horizontal",
+      "Patas traseras cortas: camina o corre en lugar de saltar"
+    ],
+    "en": [
+      "Squat, very warty toad of about 6 cm",
+      "A conspicuous yellow or pale green line down the spine",
+      "Prominent, parallel parotoid glands",
+      "Blurry green blotches on an ochre ground; greenish iris and horizontal pupil",
+      "Short hind legs: it walks or runs rather than hops"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Bufo spinosus",
+      "es": "El sapo común es mucho mayor, con parótidas grandes y sin línea vertebral amarilla.",
+      "en": "The spiny toad is much larger, with big parotoids and no yellow spinal line."
+    },
+    {
+      "binomial": "Alytes cisternasii",
+      "es": "El sapo partero ibérico tiene la pupila vertical y verrugas anaranjadas, sin línea vertebral.",
+      "en": "The Iberian midwife toad has vertical pupils and orange warts, with no spinal line."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen brazos más robustos y, en celo, callosidades en los dedos y un saco vocal violáceo o rojizo.",
+    "en": "Males have sturdier arms and, when breeding, nuptial pads on the fingers and a purplish or reddish vocal sac."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Epidalea calamita",
+      "url": "https://es.wikipedia.org/wiki/Epidalea_calamita",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Natterjack toad",
+      "url": "https://en.wikipedia.org/wiki/Natterjack_toad",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Alytes cisternasii",
+      "url": "https://es.wikipedia.org/wiki/Alytes_cisternasii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

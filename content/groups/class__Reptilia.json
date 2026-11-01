@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Clase tradicional de tetrápodos amniotas y ectotermos con escamas de queratina: tortugas, tuátara, lagartos y serpientes, y cocodrilos, los cuatro órdenes del bestiario. Es un grado parafilético, no un clado: su antepasado común también dio origen a las aves, que descienden de dinosaurios y están más emparentadas con los cocodrilos que estos con el resto de reptiles.",
+    "en": "Traditional class of ectothermic amniote tetrapods with keratin scales: turtles, the tuatara, lizards and snakes, and crocodilians, the four orders in the bestiary. It is a paraphyletic grade, not a clade: its common ancestor also gave rise to birds, which descend from dinosaurs and are closer to crocodilians than crocodilians are to the other reptiles."
+  },
+  "traits": {
+    "es": [
+      "Piel cubierta de escamas epidérmicas de queratina",
+      "Huevo amniótico: se reproducen fuera del agua",
+      "Ectotermos: su actividad depende de la temperatura ambiental",
+      "Respiran siempre con pulmones"
+    ],
+    "en": [
+      "Skin covered in epidermal keratin scales",
+      "Amniotic egg: they breed away from water",
+      "Ectothermic: their activity depends on ambient temperature",
+      "Always breathe with lungs"
+    ]
+  },
+  "contrast": {
+    "es": "En la clasificación cladística, Reptilia solo es un grupo natural si incluye a las aves (clado Sauropsida, o Reptilia redefinido). El grupo del bestiario agrupa a los saurópsidos que no son aves.",
+    "en": "In cladistic classification Reptilia is only a natural group if it includes birds (clade Sauropsida, or Reptilia redefined). The bestiary's group gathers the sauropsids that are not birds."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Reptile",
+      "url": "https://en.wikipedia.org/wiki/Reptile",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Reptilia",
+      "url": "https://es.wikipedia.org/wiki/Reptilia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

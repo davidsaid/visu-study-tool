@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "El mustélido más pequeño: cuerpo diminuto, muy alargado y flexible",
+      "Cabeza roma no más gruesa que el cuello, con ojos oscuros y saltones",
+      "Dorso pardo y vientre blanco separados por una línea recta",
+      "Patas y cola cortas; la cola mide menos de la mitad del cuerpo y no tiene punta negra",
+      "En latitudes altas el pelaje se vuelve blanco puro en invierno"
+    ],
+    "en": [
+      "The smallest mustelid: tiny, very elongated, flexible body",
+      "Blunt head no thicker than the neck, with dark bulging eyes",
+      "Brown upperparts and white underparts divided by a straight line",
+      "Short legs and tail; the tail is under half the body length and lacks a black tip",
+      "In the far north the coat turns pure white in winter"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Mustela erminea",
+      "es": "El armiño es mayor y conserva la punta de la cola negra tanto en verano como en invierno.",
+      "en": "The stoat is larger and keeps a black tail tip in both summer and winter."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son bastante más pequeñas que los machos.",
+    "en": "Females are considerably smaller than males."
+  },
+  "etymology": {
+    "es": "nivalis procede del latín nix «nieve», porque en invierno adquiere un pelaje blanco.",
+    "en": "nivalis comes from Latin nix 'snow', as it grows a white winter coat."
+  },
+  "sources": [
+    {
+      "title": "Mustela nivalis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Mustela_nivalis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Least weasel — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Least_weasel",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Équido robusto, más grande y cabezón que el asno doméstico",
+      "Pelaje leonado o pardo rojizo en verano, más amarillento o grisáceo en invierno",
+      "Franja dorsal negra bordeada de blanco a lo largo del lomo",
+      "Vientre, grupa y hocico blancos",
+      "Orejas más cortas que las de los asnos africanos y patas sin rayas"
+    ],
+    "en": [
+      "Stocky equid, larger and bigger-headed than the domestic donkey",
+      "Reddish-brown or tawny coat in summer, more yellowish or greyish in winter",
+      "Black, white-bordered stripe running down the middle of the back",
+      "White belly, rump and muzzle",
+      "Shorter ears than African wild asses, and no leg stripes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Equus quagga",
+      "es": "La cebra tiene todo el cuerpo listado en blanco y negro; el onagro solo lleva la franja oscura del lomo.",
+      "en": "The zebra is boldly striped black and white all over; the onager has only the dark stripe along its back."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos suelen ser más grandes que las hembras.",
+    "en": "Males are usually larger than females."
+  },
+  "etymology": {
+    "es": "Equus = «caballo» (latín); hemionus, del griego hēmíonos = «medio asno». Onagro viene del griego «asno salvaje».",
+    "en": "Equus = 'horse' (Latin); hemionus, from Greek hēmíonos = 'half-donkey'. Onager comes from Greek for 'wild donkey'."
+  },
+  "sources": [
+    {
+      "title": "Equus hemionus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Equus_hemionus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Onager — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Onager",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Murciélago grande con cabeza de zorro: ojos grandes y orejas pequeñas",
+      "Anillo de pelo amarillo pálido alrededor de los ojos («anteojos»)",
+      "Manto amarillo pálido sobre espalda, cuello y hombros",
+      "Sin cola; garra en el pulgar y en el índice de cada ala",
+      "Orejas puntiagudas sin trago"
+    ],
+    "en": [
+      "Large bat with a fox-like head: big eyes and small ears",
+      "Ring of pale yellow fur around the eyes ('spectacles')",
+      "Pale yellow mantle across back, neck and shoulders",
+      "No tail; claw on the thumb and index finger of each wing",
+      "Pointed ears without a tragus"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pipistrellus pipistrellus",
+      "es": "El murciélago enano es diminuto (3,5–8 g), de hocico corto y orejas cortas con un trago largo.",
+      "en": "The common pipistrelle is tiny (3.5–8 g), with a short muzzle and short ears with a long tragus."
+    }
+  ],
+  "etymology": {
+    "es": "Pteropus, del griego πτερόν (pterón, «ala») y πούς (poús, «pie»).",
+    "en": "Pteropus, from Greek πτερόν (pterón, 'wing') and πούς (poús, 'foot')."
+  },
+  "sources": [
+    {
+      "title": "Spectacled flying fox — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Spectacled_flying_fox",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pteropus conspicillatus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Pteropus_conspicillatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pteropus — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Pteropus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pipistrellus pipistrellus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Pipistrellus_pipistrellus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuello y patas larguísimos con un cuerpo relativamente corto; hasta 5 m de altura",
+      "Manchas oscuras (naranja, castaño o casi negro) separadas por líneas de pelo claro, blanco o crema",
+      "Osiconos cubiertos de piel en la cabeza; en los machos adultos acaban en perillas calvas",
+      "Lengua prensil larga, de color púrpura negruzco",
+      "Cola de un metro acabada en un largo mechón oscuro"
+    ],
+    "en": [
+      "Very long neck and legs with a relatively short body; up to 5 m tall",
+      "Dark patches (orange, chestnut or almost black) separated by pale, white or cream hair",
+      "Skin-covered ossicones on the head; in adult males they end in bald knobs",
+      "Long, prehensile, purplish-black tongue",
+      "One-metre tail ending in a long dark tuft"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Okapia johnstoni",
+      "es": "El okapi tiene el cuello y las patas mucho más cortos, pelaje pardo rojizo liso y rayas blancas horizontales en patas y cuartos traseros.",
+      "en": "The okapi has a much shorter neck and legs, a plain reddish-brown coat and white horizontal stripes on the legs and hindquarters."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más grandes y pesados que las hembras y se oscurecen con la edad; sus osiconos acaban en perillas calvas, mientras que los de las hembras son finos y con un penacho de pelo.",
+    "en": "Males are larger and heavier than females and darken with age; their ossicones end in bald knobs, whereas females' are slender with a tuft of hair."
+  },
+  "etymology": {
+    "es": "camelopardalis significa en latín «camello leopardo».",
+    "en": "camelopardalis is Latin for 'camel-leopard'."
+  },
+  "sources": [
+    {
+      "title": "Giraffa camelopardalis — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Giraffa_camelopardalis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Okapi — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Okapi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

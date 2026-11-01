@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave no voladora del tamaño de una gallina, sin cola visible",
+      "Pico largo, delgado y algo curvado hacia abajo",
+      "Plumaje rojizo con algunas listas",
+      "Grandes vibrisas en la comisura del pico"
+    ],
+    "en": [
+      "Flightless, hen-sized bird with no visible tail",
+      "Long, slender, slightly down-curved bill",
+      "Rufous plumage with some streaking",
+      "Large bristles (vibrissae) around the gape"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "La hembra es más pesada que el macho (2,1–3,9 kg frente a 1,6–2,8 kg).",
+    "en": "The female is heavier than the male (2.1–3.9 kg versus 1.6–2.8 kg)."
+  },
+  "etymology": {
+    "es": "Apteryx, del griego a- «sin» y ptéryx «ala»; australis, del latín auster, el viento del sur, con -alis «relativo a».",
+    "en": "Apteryx is from Greek a- 'without' and pteryx 'wing'; australis is from Latin auster, the south wind, plus -alis 'relating to'."
+  },
+  "trivia": {
+    "es": [
+      "Pone el huevo más grande en proporción a su tamaño."
+    ],
+    "en": [
+      "It lays the largest egg relative to its body size."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Apteryx australis",
+      "url": "https://es.wikipedia.org/wiki/Apteryx_australis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Southern brown kiwi",
+      "url": "https://en.wikipedia.org/wiki/Southern_brown_kiwi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

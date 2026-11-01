@@ -1,0 +1,179 @@
+{
+ "Apis mellifera": {
+  "P1034": [
+   {
+    "en": "pollen",
+    "es": "polen",
+    "qid": "Q79932"
+   },
+   {
+    "en": "nectar",
+    "es": "néctar",
+    "qid": "Q171934"
+   }
+  ],
+  "P141": [
+   {
+    "en": "Data Deficient",
+    "es": "especie con datos insuficientes",
+    "qid": "Q3245245"
+   }
+  ],
+  "P183": [],
+  "P2974": [],
+  "P9714": [
+   {
+    "en": "Michigan",
+    "es": "Míchigan",
+    "qid": "Q1166"
+   }
+  ],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Western_honey_bee",
+  "eswiki": "https://es.wikipedia.org/wiki/Apis_mellifera",
+  "label_en": "Apis mellifera",
+  "label_es": "Apis mellifera",
+  "qid": "Q30034"
+ },
+ "Araneus diadematus": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Araneus_diadematus",
+  "eswiki": "https://es.wikipedia.org/wiki/Araneus_diadematus",
+  "label_en": "Araneus diadematus",
+  "label_es": "Araneus diadematus",
+  "qid": "Q337509"
+ },
+ "Armadillidium vulgare": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Armadillidium_vulgare",
+  "eswiki": "https://es.wikipedia.org/wiki/Armadillidium_vulgare",
+  "label_en": "Armadillidium vulgare",
+  "label_es": "Armadillidium vulgare",
+  "qid": "Q1300629"
+ },
+ "Buthus occitanus": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Buthus_occitanus",
+  "eswiki": "https://es.wikipedia.org/wiki/Buthus_occitanus",
+  "label_en": "Buthus occitanus",
+  "label_es": "Buthus occitanus",
+  "qid": "Q1402833"
+ },
+ "Carcinus maenas": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Carcinus_maenas",
+  "eswiki": "https://es.wikipedia.org/wiki/Carcinus_maenas",
+  "label_en": "Carcinus maenas",
+  "label_es": "Carcinus maenas",
+  "qid": "Q27779"
+ },
+ "Coccinella septempunctata": {
+  "P1034": [
+   {
+    "en": "aphid",
+    "es": "Aphidoidea",
+    "qid": "Q183350"
+   },
+   {
+    "en": "Greenhouse whitefly",
+    "es": "Trialeurodes vaporariorum",
+    "qid": "Q581988"
+   },
+   {
+    "en": "Diaphorina citri",
+    "es": "Diaphorina citri",
+    "qid": "Q5271771"
+   }
+  ],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [
+   "Mariquita"
+  ],
+  "enwiki": "https://en.wikipedia.org/wiki/Coccinella_septempunctata",
+  "eswiki": "https://es.wikipedia.org/wiki/Coccinella_septempunctata",
+  "label_en": "Coccinella septempunctata",
+  "label_es": "Coccinella septempunctata",
+  "qid": "Q159543"
+ },
+ "Gryllus campestris": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [
+   {
+    "en": "Cuba",
+    "es": "Cuba",
+    "qid": "Q241"
+   }
+  ],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Gryllus_campestris",
+  "eswiki": "https://es.wikipedia.org/wiki/Gryllus_campestris",
+  "label_en": "Gryllus campestris",
+  "label_es": "Gryllus campestris",
+  "qid": "Q727567"
+ },
+ "Musca domestica": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Housefly",
+  "eswiki": "https://es.wikipedia.org/wiki/Musca_domestica",
+  "label_en": "Musca domestica",
+  "label_es": "mosca doméstica",
+  "qid": "Q166111"
+ },
+ "Papilio machaon": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Papilio_machaon",
+  "eswiki": "https://es.wikipedia.org/wiki/Papilio_machaon",
+  "label_en": "Papilio machaon",
+  "label_es": "Papilio machaon",
+  "qid": "Q179530"
+ },
+ "Scutigera coleoptrata": {
+  "P1034": [],
+  "P141": [],
+  "P183": [],
+  "P2974": [],
+  "P9714": [],
+  "common_es": [],
+  "enwiki": "https://en.wikipedia.org/wiki/Scutigera_coleoptrata",
+  "eswiki": "https://es.wikipedia.org/wiki/Scutigera_coleoptrata",
+  "label_en": "Scutigera coleoptrata",
+  "label_es": "Scutigera coleoptrata",
+  "qid": "Q367643"
+ }
+}

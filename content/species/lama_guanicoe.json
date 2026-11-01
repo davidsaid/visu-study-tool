@@ -1,0 +1,43 @@
+{
+  "field_marks": {
+    "es": [
+      "Camélido esbelto sin joroba, de cuello largo",
+      "Color pardo claro a canela oscuro muy uniforme, blanco por debajo",
+      "Cara y cabeza grises u oscuras",
+      "Ojos grandes de pestañas gruesas y orejas puntiagudas"
+    ],
+    "en": [
+      "Slender humpless camelid with a long neck",
+      "Very uniform light brown to dark cinnamon colour, white underneath",
+      "Grey or dark face and head",
+      "Large eyes with thick lashes and pointed ears"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lama glama",
+      "es": "La llama es doméstica y de colores muy variables; el guanaco casi no varía de color.",
+      "en": "The llama is domestic and very variable in colour; the guanaco hardly varies."
+    },
+    {
+      "binomial": "Camelus ferus",
+      "es": "El camello salvaje tiene jorobas; el guanaco no.",
+      "en": "The wild camel has humps; the guanaco has none."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lama guanicoe — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Lama_guanicoe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Guanaco — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Guanaco",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

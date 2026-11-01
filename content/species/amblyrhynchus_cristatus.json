@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Iguana maciza, negruzca o gris, que vive en costas rocosas de lava",
+      "Hocico corto y romo con escamas cónicas y puntiagudas en lo alto de la cabeza",
+      "Hilera de espinas desde la nuca a lo largo del dorso hasta la cola",
+      "Cola aplanada lateralmente, para nadar; garras largas y afiladas",
+      "Machos de algunas islas con manchas rojo rosado y turquesa en celo"
+    ],
+    "en": [
+      "Thickset blackish or grey iguana living on rocky lava shores",
+      "Short, blunt snout with pointed conical scales on top of the head",
+      "Row of spines from the nape along the back to the tail",
+      "Laterally flattened tail for swimming; long, sharp claws",
+      "Males on some islands show pinkish-red and turquoise markings when breeding"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Iguana iguana",
+      "es": "La iguana verde es verde, con una gran papada, un escudo circular en la mejilla y una cola larga y fina.",
+      "en": "The green iguana is green, with a large dewlap, a round cheek shield and a long, slender tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son bastante más largos y pesan el doble que las hembras, con la cabeza más ancha y espinas más largas.",
+    "en": "Males are markedly longer and weigh about twice as much as females, with broader heads and longer spines."
+  },
+  "etymology": {
+    "es": "Amblyrhynchus = gr. amblys (romo) + rhynchos (hocico); cristatus = «crestado» en latín, por la cresta de espinas del dorso.",
+    "en": "Amblyrhynchus = Gk amblys (blunt) + rhynchos (snout); cristatus = Latin 'crested', for the crest of spines on the back."
+  },
+  "trivia": {
+    "es": [
+      "Es el único lagarto actual que se alimenta en el mar: come casi solo algas y expulsa el exceso de sal por glándulas nasales."
+    ],
+    "en": [
+      "It is the only living lizard that forages in the sea: it eats almost only algae and expels excess salt through nasal glands."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Marine iguana",
+      "url": "https://en.wikipedia.org/wiki/Marine_iguana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Amblyrhynchus cristatus",
+      "url": "https://es.wikipedia.org/wiki/Amblyrhynchus_cristatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Iguana iguana",
+      "url": "https://es.wikipedia.org/wiki/Iguana_iguana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

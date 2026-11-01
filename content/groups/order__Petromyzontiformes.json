@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "es": "Único orden de las lampreas (clase Hyperoartia), con unas 38 especies actuales en tres familias. En el bestiario: la lamprea de mar (Petromyzon marinus) y la lamprea de río (Lampetra fluviatilis).",
+    "en": "The only order of lampreys (class Hyperoartia), with about 38 living species in three families. In the bestiary: the sea lamprey (Petromyzon marinus) and the river lamprey (Lampetra fluviatilis)."
+  },
+  "traits": {
+    "es": [
+      "Boca en ventosa con dientes córneos y una lengua córnea para raspar",
+      "Siete poros branquiales a cada lado",
+      "Cuerpo alargado sin escamas ni aletas pares"
+    ],
+    "en": [
+      "Sucker mouth with horny teeth and a rasping horny tongue",
+      "Seven gill pores on each side",
+      "Elongated body without scales or paired fins"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las anguilas (Anguilliformes), peces con mandíbulas y aletas pectorales, ni con los mixinos, que tienen barbillas.",
+    "en": "Do not confuse with eels (Anguilliformes), which are jawed fish with pectoral fins, or with hagfishes, which have barbels."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Lamprey",
+      "url": "https://en.wikipedia.org/wiki/Lamprey",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Hyperoartia",
+      "url": "https://es.wikipedia.org/wiki/Hyperoartia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

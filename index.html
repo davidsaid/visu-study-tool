@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>Herramienta de estudio para VISU</title>
+<link rel="stylesheet" href="app/style.css">
+</head>
+<body>
+<a class="sr" href="#main">Saltar al contenido</a>
+<div class="nostore-banner" id="nostore" role="alert" hidden></div>
+<div class="app" id="app">
+  <nav class="rail" id="rail" aria-label="Principal"></nav>
+  <header class="topbar" id="topbar"></header>
+  <div class="savebar top" id="savebar" role="status"></div>
+  <main class="main" id="main" tabindex="-1"><noscript>Esta web necesita JavaScript. / This site needs JavaScript.</noscript></main>
+  <aside class="aside" id="aside"></aside>
+</div>
+<nav class="tabbar" id="tabbar" aria-label="Principal"></nav>
+<div id="pop" class="popover" role="dialog" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<div id="live" class="sr" aria-live="polite"></div>
+<div id="notice-host"></div>
+<input type="file" id="importfile" accept="application/json,.json" hidden>
+<!-- Classic scripts only (no modules, no fetch) so the site also works when opened from a downloaded folder. -->
+<script src="data/collections.js"></script>
+<script src="app/collection.js"></script>
+<script src="vendor/ts-fsrs-5.4.2.umd.js"></script>
+<script src="app/i18n.js"></script>
+<script src="app/engine.js"></script>
+<script src="app/store.js"></script>
+<script src="app/ui.js"></script>
+<script src="app/views-practice.js"></script>
+<script src="app/views-explore.js"></script>
+<script src="app/views-info.js"></script>
+<script src="app/main.js"></script>
+</body>
+</html>

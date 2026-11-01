@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Guacamayo grande (84–90 cm), con la cola puntiaguda más larga que el cuerpo",
+      "Plumaje mayoritariamente rojo escarlata",
+      "Coberteras alares mayores amarillas y plumas de vuelo azul oscuro por encima",
+      "Obispillo y coberteras de la cola azul claro",
+      "Piel facial desnuda blanca; mandíbula superior color hueso y la inferior negra"
+    ],
+    "en": [
+      "Large macaw (84–90 cm) with a pointed tail longer than its body",
+      "Mostly scarlet plumage",
+      "Yellow greater wing coverts and dark blue upper flight feathers",
+      "Light blue rump and tail coverts",
+      "Bare white facial skin; pale horn upper mandible and black lower mandible"
+    ]
+  },
+  "lookalikes": [],
+  "etymology": {
+    "es": "Según la Wikipedia en español, el nombre procede de las lenguas tupíes de Brasil, en las que ara significa «fuerte» y macao, «guacamayo».",
+    "en": "According to Spanish Wikipedia, the name comes from the Tupian languages of Brazil, in which ara means 'strong' and macao means 'macaw'."
+  },
+  "trivia": {
+    "es": [
+      "Es el ave nacional de Honduras."
+    ],
+    "en": [
+      "It is the national bird of Honduras."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Ara macao",
+      "url": "https://es.wikipedia.org/wiki/Ara_macao",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Scarlet macaw",
+      "url": "https://en.wikipedia.org/wiki/Scarlet_macaw",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

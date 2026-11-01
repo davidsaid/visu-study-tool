@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo muy alargado y esbelto con hocico largo y estrechamente cónico",
+      "Aletas pectorales muy largas, estrechas y algo falciformes",
+      "Azul metálico intenso por encima, más claro en los flancos y vientre blanco",
+      "Ojos grandes con membrana nictitante",
+      "Lóbulo superior de la caudal muy alargado"
+    ],
+    "en": [
+      "Very long, slender body with a long, narrowly conical snout",
+      "Very long, narrow, slightly sickle-shaped pectoral fins",
+      "Intense metallic blue above, lighter on the flanks, white belly",
+      "Large eyes with a nictitating membrane",
+      "Very elongated upper tail lobe"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Isurus oxyrinchus",
+      "es": "El marrajo es más robusto, con aletas pectorales cortas y triangulares y caudal en media luna de lóbulos casi iguales.",
+      "en": "The shortfin mako is stockier, with short triangular pectoral fins and a crescent tail with nearly equal lobes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son más grandes y mucho más pesadas que los machos.",
+    "en": "Females are larger and much heavier than males."
+  },
+  "trivia": {
+    "es": [
+      "Una vez muerta, su color azul se vuelve gris apagado."
+    ],
+    "en": [
+      "Once dead, its blue colour fades to dull grey."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Prionace glauca",
+      "url": "https://es.wikipedia.org/wiki/Prionace_glauca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Blue shark",
+      "url": "https://en.wikipedia.org/wiki/Blue_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Shortfin mako shark",
+      "url": "https://en.wikipedia.org/wiki/Shortfin_mako_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

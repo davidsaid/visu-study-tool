@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez plano de cuerpo romboidal, casi circular",
+      "Ambos ojos en el lado izquierdo",
+      "Cara superior con tubérculos óseos rugosos y color variable según el fondo",
+      "Dorsal larga que empieza entre los ojos y la boca",
+      "Línea lateral curvada sobre la pectoral; caudal con manchas"
+    ],
+    "en": [
+      "Flatfish with a rhomboid, almost circular body",
+      "Both eyes on the left side",
+      "Upper side with rough bony tubercles, colour varying with the bottom",
+      "Long dorsal fin starting between the eyes and mouth",
+      "Lateral line arched over the pectoral fin; spotted tail fin"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Solea solea",
+      "es": "El lenguado es ovalado y alargado, con los ojos en el lado derecho y sin tubérculos óseos.",
+      "en": "The sole is oval and elongated, with its eyes on the right side and no bony tubercles."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más pequeños que las hembras.",
+    "en": "Males are smaller than females."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Scophthalmus maxima",
+      "url": "https://es.wikipedia.org/wiki/Scophthalmus_maxima",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Turbot",
+      "url": "https://en.wikipedia.org/wiki/Turbot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common sole",
+      "url": "https://en.wikipedia.org/wiki/Common_sole",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

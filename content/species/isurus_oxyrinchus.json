@@ -1,0 +1,67 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo fusiforme e hidrodinámico con hocico cónico muy puntiagudo",
+      "Dorso azul metálico brillante, vientre blanco y límite neto entre ambos",
+      "Caudal en media luna con lóbulos casi iguales y una quilla lateral marcada en el pedúnculo",
+      "Boca estrecha en U con dientes largos de bordes lisos",
+      "Juveniles con una mancha negruzca en la punta del hocico"
+    ],
+    "en": [
+      "Streamlined, spindle-shaped body with a sharply pointed conical snout",
+      "Brilliant metallic blue back, white belly, with a sharp line between them",
+      "Crescent tail with nearly equal lobes and a strong keel on the tail base",
+      "Narrow U-shaped mouth with long smooth-edged teeth",
+      "Juveniles have a blackish smudge on the snout tip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Carcharodon carcharias",
+      "es": "El tiburón blanco es más macizo, de dorso gris, hocico más corto y grueso y dientes triangulares aserrados.",
+      "en": "The white shark is bulkier, grey above, with a shorter, thicker snout and serrated triangular teeth."
+    },
+    {
+      "binomial": "Prionace glauca",
+      "es": "La tintorera es más esbelta y ligera, con aletas pectorales mucho más largas.",
+      "en": "The blue shark is slimmer and lighter-bodied, with much longer pectoral fins."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser mayores que los machos.",
+    "en": "Females are usually larger than males."
+  },
+  "etymology": {
+    "es": "Isurus = gr. ísos (igual) + ourá (cola), por los lóbulos casi iguales de la caudal; oxyrinchus = gr. oxýs (agudo) + rhýnchos (hocico).",
+    "en": "Isurus = Gk ísos (equal) + ourá (tail), for the near-equal tail lobes; oxyrinchus = Gk oxýs (sharp) + rhýnchos (snout)."
+  },
+  "trivia": {
+    "es": [
+      "Es el tiburón más rápido conocido: alcanza 74 km/h en arrancadas."
+    ],
+    "en": [
+      "It is the fastest known shark, reaching 74 km/h in bursts."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Isurus oxyrinchus",
+      "url": "https://es.wikipedia.org/wiki/Isurus_oxyrinchus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Shortfin mako shark",
+      "url": "https://en.wikipedia.org/wiki/Shortfin_mako_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Blue shark",
+      "url": "https://en.wikipedia.org/wiki/Blue_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

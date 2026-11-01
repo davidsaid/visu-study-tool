@@ -1,0 +1,73 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave gigante no voladora, la más alta y pesada del mundo",
+      "Macho negro con las primarias y la cola blancas",
+      "Hembra y machos jóvenes de color pardo grisáceo y blanco",
+      "Cabeza pequeña, cuello y patas largos casi desnudos",
+      "Solo dos dedos en cada pata"
+    ],
+    "en": [
+      "Giant flightless bird, the tallest and heaviest in the world",
+      "Male black with white primaries and white tail",
+      "Female and young males greyish-brown and white",
+      "Small head; long, nearly bare neck and legs",
+      "Only two toes on each foot"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Rhea americana",
+      "es": "El ñandú es mucho menor, de plumaje gris y con tres dedos en cada pata en lugar de dos.",
+      "en": "The greater rhea is much smaller, grey-plumaged, and has three toes per foot instead of two."
+    },
+    {
+      "binomial": "Casuarius casuarius",
+      "es": "El casuario tiene el plumaje negro y rasposo, la cara azul, barbas rojas y un casco sobre la cabeza.",
+      "en": "The southern cassowary has bristly black plumage, a blue face, red wattles and a casque on its head."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho es negro con las primarias y la cola blancas; la hembra es pardo grisácea y algo menor.",
+    "en": "The male is black with white primaries and tail; the female is greyish-brown and somewhat smaller."
+  },
+  "etymology": {
+    "es": "Struthio, del latín tardío, significa «avestruz»; camelus, «camello», alude al nombre griego strouthokámēlos, «gorrión-camello», por su hábitat seco.",
+    "en": "Struthio is Late Latin for 'ostrich'; camelus ('camel') alludes to the Greek name strouthokamelos, 'camel-sparrow', referring to its dry habitat."
+  },
+  "trivia": {
+    "es": [
+      "Tiene los ojos más grandes de todos los vertebrados terrestres: unos 5 cm de diámetro."
+    ],
+    "en": [
+      "It has the largest eyes of any land vertebrate, about 5 cm across."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Struthio camelus",
+      "url": "https://es.wikipedia.org/wiki/Struthio_camelus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common ostrich",
+      "url": "https://en.wikipedia.org/wiki/Common_ostrich",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Rhea americana",
+      "url": "https://es.wikipedia.org/wiki/Rhea_americana",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Casuarius casuarius",
+      "url": "https://es.wikipedia.org/wiki/Casuarius_casuarius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

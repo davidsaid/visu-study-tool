@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Gran ave no voladora de plumaje negro, rígido y rasposo",
+      "Cara y cuello azules, con la nuca roja y dos barbas rojas colgantes",
+      "Casco córneo pardo sobre la cabeza",
+      "Pies de tres dedos con una uña en forma de daga en el interno",
+      "Juveniles pardos con rayas longitudinales"
+    ],
+    "en": [
+      "Large flightless bird with stiff, bristly black plumage",
+      "Blue face and neck, red nape and two hanging red wattles",
+      "Brown horn-like casque on top of the head",
+      "Three-toed feet with a dagger-like claw on the inner toe",
+      "Juveniles brown with lengthwise stripes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Struthio camelus",
+      "es": "El avestruz tiene el cuello y la cabeza casi desnudos y grisáceos o rosados, sin casco ni barbas, y solo dos dedos.",
+      "en": "The ostrich has a nearly bare grey or pink head and neck, no casque or wattles, and only two toes."
+    }
+  ],
+  "dimorphism": {
+    "es": "El plumaje es igual en ambos sexos, pero la hembra es mayor y tiene el casco y el pico más largos y las partes desnudas más vivas.",
+    "en": "Plumage is the same in both sexes, but the female is larger, with a longer casque and bill and brighter bare parts."
+  },
+  "etymology": {
+    "es": "El nombre Casuarius casuarius deriva del nombre malayo del ave, kesuari.",
+    "en": "The name Casuarius casuarius derives from the bird's Malay name, kesuari."
+  },
+  "trivia": {
+    "es": [
+      "Es la segunda ave más pesada del mundo, solo superada por el avestruz."
+    ],
+    "en": [
+      "It is the world's second-heaviest bird, after the ostrich."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Casuarius casuarius",
+      "url": "https://es.wikipedia.org/wiki/Casuarius_casuarius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Southern cassowary",
+      "url": "https://en.wikipedia.org/wiki/Southern_cassowary",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Struthio camelus",
+      "url": "https://es.wikipedia.org/wiki/Struthio_camelus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

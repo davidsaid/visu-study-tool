@@ -1,0 +1,63 @@
+{
+  "field_marks": {
+    "es": [
+      "Disco en rombo algo más ancho que largo, con hocico puntiagudo algo saliente",
+      "Cola fina en látigo, de la mitad de largo que el disco, con un aguijón aserrado venenoso",
+      "Pliegues de piel por encima y por debajo de la cola, detrás del aguijón",
+      "Coloración lisa y uniforme; piel casi toda lisa"
+    ],
+    "en": [
+      "Diamond-shaped disc slightly wider than long, with a pointed, slightly protruding snout",
+      "Slender whip-like tail, about half the disc length, with a serrated venomous spine",
+      "Skin folds above and below the tail behind the spine",
+      "Plain, uniform colour; mostly smooth skin"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Myliobatis aquila",
+      "es": "El águila marina tiene grandes pectorales triangulares, hocico romo y redondeado, una aleta dorsal y dorso pardo oscuro o negro.",
+      "en": "The common eagle ray has large triangular pectoral fins, a blunt rounded snout, a dorsal fin and a dark brown or black back."
+    },
+    {
+      "binomial": "Torpedo torpedo",
+      "es": "La tremielga tiene el disco casi circular, una cola corta con dos dorsales y caudal, y ocelos azules.",
+      "en": "The common torpedo has a nearly circular disc, a short tail with two dorsals and a caudal fin, and blue eyespots."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Los romanos la llamaban pastinaca y los griegos trygon."
+    ],
+    "en": [
+      "The Romans called it pastinaca and the Greeks trygon."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Dasyatis pastinaca",
+      "url": "https://es.wikipedia.org/wiki/Dasyatis_pastinaca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common stingray",
+      "url": "https://en.wikipedia.org/wiki/Common_stingray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common eagle ray",
+      "url": "https://en.wikipedia.org/wiki/Common_eagle_ray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common torpedo",
+      "url": "https://en.wikipedia.org/wiki/Common_torpedo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

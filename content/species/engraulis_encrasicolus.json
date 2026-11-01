@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez pequeño (unos 13–20 cm), de cuerpo redondeado y esbelto",
+      "Boca muy hendida: la comisura llega por detrás del ojo",
+      "Hocico puntiagudo que sobresale por delante de la mandíbula inferior",
+      "Dorso azul, verde o gris y vientre plateado",
+      "Franja plateada a lo largo del costado, que se pierde con la edad"
+    ],
+    "en": [
+      "Small fish (about 13–20 cm) with a round, slender body",
+      "Deeply cleft mouth: the gape extends behind the eye",
+      "Pointed snout projecting beyond the lower jaw",
+      "Blue, green or grey back and silvery belly",
+      "Silvery stripe along the side that fades with age"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sardina pilchardus",
+      "es": "La sardina tiene el dorso verde u oliva y los flancos dorados, y no tiene la boca hendida hasta detrás del ojo.",
+      "en": "The sardine is green or olive above with golden flanks, and lacks the mouth slit reaching behind the eye."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son mayores que los machos.",
+    "en": "Females are larger than males."
+  },
+  "etymology": {
+    "es": "Engraulis y encrasicolus son nombres del griego antiguo que significan «anchoa» y «pez pequeño».",
+    "en": "Engraulis and encrasicolus are Ancient Greek names meaning 'anchovy' and 'small fish'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Engraulis encrasicolus",
+      "url": "https://es.wikipedia.org/wiki/Engraulis_encrasicolus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European anchovy",
+      "url": "https://en.wikipedia.org/wiki/European_anchovy",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European pilchard",
+      "url": "https://en.wikipedia.org/wiki/European_pilchard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

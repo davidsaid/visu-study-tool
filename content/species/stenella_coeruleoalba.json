@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Delfín oceánico pequeño, de hasta 2,6 m",
+      "Una o dos bandas oscuras que van del ojo a la aleta pectoral y por el flanco hasta la cola",
+      "Flancos gris claro o azulados por encima de las bandas",
+      "Dorso, aleta dorsal, melón y hocico azul oscuro; vientre blanco o rosado",
+      "Todos los apéndices oscuros"
+    ],
+    "en": [
+      "Small oceanic dolphin, up to 2.6 m",
+      "One or two dark bands running from the eye to the flipper and along the flank to the tail",
+      "Light grey or bluish flanks above the bands",
+      "Dark blue back, dorsal fin, melon and beak; white or pink belly",
+      "All appendages dark"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Stenella frontalis",
+      "es": "El delfín moteado del Atlántico tiene forma y tamaño parecidos; la clave es la coloración: solo el listado muestra las bandas oscuras del ojo a la cola.",
+      "en": "The Atlantic spotted dolphin has a similar shape and size; the key is colouring: the striped dolphin shows the dark eye-to-tail bands."
+    },
+    {
+      "binomial": "Orcinus orca",
+      "es": "La orca es muchísimo mayor, negra y blanca, con una enorme aleta dorsal triangular.",
+      "en": "The orca is far larger, black and white, with a huge triangular dorsal fin."
+    }
+  ],
+  "dimorphism": {
+    "es": "No hay apenas dimorfismo: los machos (2,6 m, 160 kg) son solo algo mayores que las hembras (2,4 m, 150 kg).",
+    "en": "Hardly any dimorphism: males (2.6 m, 160 kg) are only slightly larger than females (2.4 m, 150 kg)."
+  },
+  "sources": [
+    {
+      "title": "Stenella coeruleoalba — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Stenella_coeruleoalba",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Striped dolphin — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Striped_dolphin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Orcinus orca — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Orcinus_orca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

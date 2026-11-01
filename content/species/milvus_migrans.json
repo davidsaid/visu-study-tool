@@ -1,0 +1,73 @@
+{
+  "field_marks": {
+    "es": [
+      "Rapaz mediana (50–60 cm) de plumaje pardo oscuro, sin tonos rojizos",
+      "Cabeza y cuello más pálidos, con una mancha oscura tras el ojo",
+      "Cola larga ligeramente escotada, visible en vuelo",
+      "Cera y comisura amarillas, pico negro y patas amarillas",
+      "Partes inferiores pardo claras con aspecto listado"
+    ],
+    "en": [
+      "Medium-sized raptor (50–60 cm) with dark brown plumage, no rufous",
+      "Paler head and neck with a dark patch behind the eye",
+      "Long, slightly notched tail, visible in flight",
+      "Yellow cere and gape, black bill and yellow legs",
+      "Pale brown, streaked-looking underparts"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Milvus milvus",
+      "es": "El milano real es mayor, rojizo, con cabeza gris plateada y cola muy ahorquillada.",
+      "en": "The red kite is larger and rufous, with a silvery-grey head and a deeply forked tail."
+    },
+    {
+      "binomial": "Buteo buteo",
+      "es": "El busardo ratonero tiene la cola corta y redondeada, sin escotadura.",
+      "en": "The common buzzard has a short, rounded tail with no notch."
+    }
+  ],
+  "dimorphism": {
+    "es": "Plumaje igual en ambos sexos; el macho es algo menor.",
+    "en": "Same plumage in both sexes; the male is slightly smaller."
+  },
+  "etymology": {
+    "es": "Milvus es la palabra latina para el milano real; migrans significa «que migra», del latín migrare.",
+    "en": "Milvus is the Latin word for the red kite; migrans means 'migrating', from Latin migrare."
+  },
+  "trivia": {
+    "es": [
+      "Se considera la rapaz accipítrida más abundante del mundo, con hasta 6,7 millones de individuos."
+    ],
+    "en": [
+      "It is thought to be the world's most abundant accipitrid, with up to 6.7 million individuals."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Milvus migrans",
+      "url": "https://es.wikipedia.org/wiki/Milvus_migrans",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Black kite",
+      "url": "https://en.wikipedia.org/wiki/Black_kite",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Milvus milvus",
+      "url": "https://es.wikipedia.org/wiki/Milvus_milvus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common buzzard",
+      "url": "https://en.wikipedia.org/wiki/Common_buzzard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

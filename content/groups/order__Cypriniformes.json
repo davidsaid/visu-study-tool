@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Carpas, barbos, bremas, lochas y afines: un gran orden de teleósteos ostariofisios, casi exclusivamente de agua dulce y ausente de Australia y Sudamérica. En el bestiario: el barbo comiza (Luciobarbus comizo), la carpa (Cyprinus carpio) y el carpín dorado (Carassius auratus).",
+    "en": "Carps, barbs, minnows, loaches and relatives: a large order of ostariophysan teleosts, almost exclusively freshwater and absent from Australia and South America. In the bestiary: the Iberian barbel (Luciobarbus comizo), the common carp (Cyprinus carpio) and the goldfish (Carassius auratus)."
+  },
+  "traits": {
+    "es": [
+      "Aparato de Weber, que conecta la vejiga natatoria con el oído interno",
+      "Una sola aleta dorsal, sin aleta adiposa",
+      "Boca sin dientes; dientes faríngeos en la garganta que muelen contra una almohadilla del cráneo",
+      "Kinetmoide: pequeño hueso medio del hocico exclusivo del orden"
+    ],
+    "en": [
+      "Weberian apparatus linking the swim bladder to the inner ear",
+      "A single dorsal fin, no adipose fin",
+      "Toothless mouth; pharyngeal teeth in the throat grind against a pad on the skull",
+      "Kinethmoid: a small median snout bone unique to the order"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los caraciformes (pirañas, tetras): suelen tener una pequeña aleta adiposa entre la dorsal y la cola y dientes en la boca.",
+    "en": "Do not confuse with characins (piranhas, tetras): these often have a small adipose fin between the dorsal fin and tail, and teeth in the mouth."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Cypriniformes",
+      "url": "https://en.wikipedia.org/wiki/Cypriniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Cypriniformes",
+      "url": "https://es.wikipedia.org/wiki/Cypriniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

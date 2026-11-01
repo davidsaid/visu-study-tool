@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "es": "Aves de corral en sentido amplio: el clado que une las gallináceas (Galliformes) y las anátidas (Anseriformes), apoyado por datos anatómicos, moleculares y de retrotransposones. En el bestiario: urogallo, perdiz roja, perdiz pardilla, ánsar común, ánade azulón y porrón europeo.",
+    "en": "Fowl: the clade joining gamebirds (Galliformes) and waterfowl (Anseriformes), supported by anatomical, molecular and retrotransposon data. In the bestiary: capercaillie, red-legged partridge, grey partridge, greylag goose, mallard and common pochard."
+  },
+  "traits": {
+    "es": [
+      "Puestas muy numerosas, a menudo de más de 5 o incluso 10 huevos",
+      "Muchas especies son polígamas, cuando la mayoría de las aves son monógamas",
+      "Grupo muy diverso en forma: muchos rasgos compartidos son primitivos y también aparecen en las paleognatas"
+    ],
+    "en": [
+      "Large clutches, often more than 5 or even 10 eggs",
+      "Many species are polygamous, whereas most birds are monogamous",
+      "Very diverse in form: many shared traits are primitive and also found in palaeognaths"
+    ]
+  },
+  "contrast": {
+    "es": "Es el grupo hermano de Neoaves; los machos de anátidas conservan el pene, que se ha perdido en Neoaves.",
+    "en": "It is the sister group of Neoaves; male waterfowl retain a penis, which has been lost in Neoaves."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Fowl",
+      "url": "https://en.wikipedia.org/wiki/Fowl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Galloanserae",
+      "url": "https://es.wikipedia.org/wiki/Galloanserae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Anseriformes",
+      "url": "https://en.wikipedia.org/wiki/Anseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

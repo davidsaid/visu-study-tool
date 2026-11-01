@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Pastinacas y afines: uno de los cuatro órdenes de batoideos, antes incluido en Rajiformes; su forma aplanada evolucionó de manera independiente a la de las rayas. En el bestiario: la pastinaca, la manta (Mobula mobular) y el águila marina.",
+    "en": "Stingrays and allies: one of the four batoid orders, formerly included in Rajiformes; the flattened shape of its derived members evolved independently of the skates. In the bestiary: the common stingray, the giant devil ray (Mobula mobular) and the common eagle ray."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo en forma de disco y cola larga y fina",
+      "Aguijones aserrados en la base de la cola",
+      "Aletas pélvicas de un solo lóbulo",
+      "Generalmente sin aleta dorsal",
+      "Grandes aletas pectorales soldadas a la cabeza (salvo en los miliobátidos)"
+    ],
+    "en": [
+      "Disc-shaped body and long, thin tail",
+      "Serrated stinging spines at the base of the tail",
+      "Single-lobed pelvic fins",
+      "Usually no dorsal fin",
+      "Large pectoral fins fused to the head (except in eagle rays)"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las rayas (Rajiformes), con las que antes se agrupaban: los miliobatiformes se distinguen por sus aletas pélvicas de un solo lóbulo, la falta de aleta dorsal y los aguijones de la cola.",
+    "en": "Do not confuse with skates (Rajiformes), with which they were formerly grouped: stingrays differ in their single-lobed pelvic fins, lack of a dorsal fin and tail stings."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Myliobatiformes",
+      "url": "https://en.wikipedia.org/wiki/Myliobatiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Myliobatiformes",
+      "url": "https://es.wikipedia.org/wiki/Myliobatiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

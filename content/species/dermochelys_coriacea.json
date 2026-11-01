@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "La tortuga más grande: hasta 2,7 m y más de 500 kg",
+      "Sin caparazón óseo: dorso de piel gruesa y coriácea",
+      "Siete quillas longitudinales a lo largo del dorso",
+      "Negro o gris oscuro con motas blanco-rosadas; vientre claro",
+      "Aletas delanteras enormes, sin uñas"
+    ],
+    "en": [
+      "The largest turtle: up to 2.7 m and over 500 kg",
+      "No bony shell: back covered in thick, leathery skin",
+      "Seven lengthwise ridges along the back",
+      "Black or dark grey with white-pink speckles; pale underside",
+      "Enormous, clawless front flippers"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Caretta caretta",
+      "es": "La tortuga boba tiene un caparazón duro de escudos, pardo rojizo, y la cabeza muy grande.",
+      "en": "The loggerhead has a hard, reddish-brown scuted shell and a very large head."
+    }
+  ],
+  "etymology": {
+    "es": "Dermochelys coriacea significa literalmente «tortuga de piel coriácea», por la textura de su caparazón.",
+    "en": "Dermochelys coriacea literally means 'leathery skin-turtle', for the texture of its carapace."
+  },
+  "trivia": {
+    "es": [
+      "El nombre «laúd» compara las quillas del dorso con el instrumento musical."
+    ],
+    "en": [
+      "The name 'lute turtle' compares the ridges on its back with the musical instrument."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Dermochelys coriacea",
+      "url": "https://es.wikipedia.org/wiki/Dermochelys_coriacea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Leatherback sea turtle",
+      "url": "https://en.wikipedia.org/wiki/Leatherback_sea_turtle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Caretta caretta",
+      "url": "https://es.wikipedia.org/wiki/Caretta_caretta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

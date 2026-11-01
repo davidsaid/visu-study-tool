@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Avutardas y sisones (familia Otididae, unas 26 especies): grandes aves terrestres de estepas y llanuras secas, antes incluidas en Gruiformes. En el bestiario: la avutarda euroasiática (Otis tarda).",
+    "en": "Bustards (family Otididae, about 26 species): large ground birds of steppes and dry grasslands, formerly placed in Gruiformes. In the bestiary: the great bustard (Otis tarda)."
+  },
+  "traits": {
+    "es": [
+      "Aves grandes y erguidas; la avutarda común está entre las aves voladoras más pesadas",
+      "Fuerte dimorfismo sexual: los machos pueden pesar más del doble que las hembras",
+      "Patas fuertes con las que caminan con paso firme",
+      "Alas anchas y largas"
+    ],
+    "en": [
+      "Large, upright birds; the great bustard is among the heaviest flying birds",
+      "Strong sexual dimorphism: males may weigh more than twice as much as females",
+      "Strong legs on which they walk steadily",
+      "Broad, long wings"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Bustard",
+      "url": "https://en.wikipedia.org/wiki/Bustard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Otididae",
+      "url": "https://es.wikipedia.org/wiki/Otididae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

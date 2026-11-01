@@ -1,0 +1,37 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo corpulento y fusiforme, sin extremidades traseras",
+      "Cola en forma de pala redondeada (espátula)",
+      "Extremidades delanteras transformadas en aletas a modo de remo",
+      "Cabeza unida al cuerpo sin cuello aparente y sin pabellones auriculares",
+      "Piel gruesa, gris a parda, arrugada y con pelo escaso, a menudo cubierta de algas"
+    ],
+    "en": [
+      "Bulky, spindle-shaped body with no hind limbs",
+      "Rounded, spatula-shaped paddle tail",
+      "Forelimbs modified into paddle-like flippers",
+      "Head joins the body with no visible neck and no external ear flaps",
+      "Thick grey-to-brown wrinkled skin with sparse hair, often covered with algae"
+    ]
+  },
+  "dimorphism": {
+    "es": "Las hembras suelen ser algo más grandes que los machos.",
+    "en": "Females are typically slightly larger than males."
+  },
+  "sources": [
+    {
+      "title": "Trichechus manatus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Trichechus_manatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "West Indian manatee — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/West_Indian_manatee",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

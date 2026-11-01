@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado y esbelto, de aspecto felino, con patas cortas",
+      "Pelaje gris pálido a amarillento con hileras de motas negras y una raya negra dorsal",
+      "Cola larga, tan larga como el cuerpo, con 8–13 anillos negros y punta blanca",
+      "Cabeza pequeña y cónica de hocico fino; manchas blancas junto a los ojos y oscuras bajo ellos",
+      "Orejas grandes, erectas y redondeadas"
+    ],
+    "en": [
+      "Long, slender, cat-like body with short legs",
+      "Pale grey to yellowish coat with rows of black spots and a black dorsal stripe",
+      "Long tail, as long as the body, with 8–13 black rings and a white tip",
+      "Small, conical head with a pointed muzzle; white patches by the eyes and dark ones below",
+      "Large, erect, rounded ears"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Felis silvestris",
+      "es": "El gato montés tiene rayas en lugar de motas, cuerpo menos alargado y cola gruesa de punta negra.",
+      "en": "The wildcat has stripes rather than spots, a less elongated body and a thick black-tipped tail."
+    },
+    {
+      "binomial": "Herpestes ichneumon",
+      "es": "El meloncillo es de color gris uniforme, sin motas, y su cola acaba en un pincel negro.",
+      "en": "The Egyptian mongoose is uniformly grey, unspotted, with a black-tufted tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son alrededor de un 10 % mayores que las hembras.",
+    "en": "Males are about 10% larger than females."
+  },
+  "sources": [
+    {
+      "title": "Genetta genetta — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Genetta_genetta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Common genet — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Common_genet",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

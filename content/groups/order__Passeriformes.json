@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Pájaros: el orden de aves más grande, con unas 140 familias y unas 6500 especies, más de la mitad de todas las aves. En el bestiario: 18 especies, entre ellas la alondra, la lavandera blanca, el petirrojo, el mirlo, el carbonero común, el gorrión, la urraca y el cuervo.",
+    "en": "Perching birds: the largest order of birds, with about 140 families and some 6,500 species, more than half of all birds. In the bestiary: 18 species, among them the skylark, white wagtail, robin, blackbird, great tit, house sparrow, magpie and raven."
+  },
+  "traits": {
+    "es": [
+      "Pie anisodáctilo: tres dedos hacia delante y uno (el hallux) hacia atrás, largo e insertado a la misma altura",
+      "Dedos sin membranas",
+      "Tendón que cierra el pie automáticamente al posarse, lo que les permite dormir en una rama",
+      "Mayoría de tamaño pequeño; normalmente 12 plumas en la cola",
+      "Los oscinos controlan muy bien la siringe y emiten cantos complejos"
+    ],
+    "en": [
+      "Anisodactyl foot: three toes forward and one (the hallux) back, long and set at the same level",
+      "Toes without webbing",
+      "A tendon that locks the foot automatically when perching, so they can sleep on a branch",
+      "Mostly small; usually 12 tail feathers",
+      "Oscines have fine control of the syrinx and produce complex songs"
+    ]
+  },
+  "contrast": {
+    "es": "Sus parientes más cercanos son los loros (Psittaciformes), que se distinguen por sus patas zigodáctilas y su pico ganchudo.",
+    "en": "Their closest relatives are the parrots (Psittaciformes), which differ in their zygodactyl feet and hooked bill."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Passerine",
+      "url": "https://en.wikipedia.org/wiki/Passerine",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Passeriformes",
+      "url": "https://es.wikipedia.org/wiki/Passeriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Falconiformes",
+      "url": "https://en.wikipedia.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

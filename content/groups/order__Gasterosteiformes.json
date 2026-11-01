@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Espinosos y afines: pequeños teleósteos acantopterigios marinos, salobres o de agua dulce. Las clasificaciones modernas los tratan como suborden (Gasterosteoidei) dentro de perciformes o escorpeniformes, y separan a los caballitos de mar, antes incluidos aquí. En el bestiario: el espinoso (Gasterosteus aculeatus).",
+    "en": "Sticklebacks and relatives: small acanthopterygian teleosts of the sea, brackish or fresh water. Modern classifications treat them as a suborder (Gasterosteoidei) within Perciformes or Scorpaeniformes, and remove the seahorses that were once included. In the bestiary: the three-spined stickleback (Gasterosteus aculeatus)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo a menudo acorazado con placas dérmicas; en los flancos, una sola fila de placas",
+      "Boca pequeña con mandíbula superior protráctil",
+      "Peces pequeños: el mayor apenas supera los 20 cm",
+      "Los machos construyen nidos de plantas pegadas con una sustancia adhesiva producida en los riñones"
+    ],
+    "en": [
+      "Body often armoured with dermal plates; on the flanks, a single row of plates",
+      "Small mouth with a protractile upper jaw",
+      "Small fish: the largest barely exceeds 20 cm",
+      "Males build nests of plant material glued with an adhesive made in the kidneys"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Gasterosteoidei",
+      "url": "https://en.wikipedia.org/wiki/Gasterosteoidei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Gasterosteiformes",
+      "url": "https://es.wikipedia.org/wiki/Gasterosteiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

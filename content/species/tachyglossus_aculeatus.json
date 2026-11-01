@@ -1,0 +1,35 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo cubierto de pelo y púas",
+      "Hocico largo y fino, en forma de tubo",
+      "Patas delanteras muy fuertes con garras para excavar",
+      "Se enrolla en bola y muestra las púas cuando se siente amenazado"
+    ],
+    "en": [
+      "Body covered in fur and spines",
+      "Long, thin, tube-like snout",
+      "Very strong forelimbs with digging claws",
+      "Curls into a ball, showing its spines, when threatened"
+    ]
+  },
+  "etymology": {
+    "es": "Tachyglossus = «lengua rápida» (griego tachys, «rápido», + glossa, «lengua»); aculeatus = «espinoso» en latín.",
+    "en": "Tachyglossus = 'fast tongue' (Greek tachys, 'fast', + glossa, 'tongue'); aculeatus = 'spiny' in Latin."
+  },
+  "sources": [
+    {
+      "title": "Tachyglossus aculeatus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Tachyglossus_aculeatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Short-beaked echidna — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Short-beaked_echidna",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

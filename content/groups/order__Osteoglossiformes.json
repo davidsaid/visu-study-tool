@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "es": "«Lenguas óseas»: orden relativamente primitivo de teleósteos con al menos 245 especies actuales, todas de agua dulce, en Sudamérica, África, Australia y el sur de Asia. En el bestiario: el arapaima (Arapaima gigas), que puede superar los 4 m.",
+    "en": "'Bony tongues': a relatively primitive order of teleosts with at least 245 living species, all freshwater, in South America, Africa, Australia and southern Asia. In the bestiary: the arapaima (Arapaima gigas), which can exceed 4 m."
+  },
+  "traits": {
+    "es": [
+      "Lengua ósea o con dientes",
+      "La parte anterior del tubo digestivo pasa por la izquierda del esófago y el estómago (en los demás peces, por la derecha)",
+      "Exclusivamente de agua dulce; distribución típica de Gondwana"
+    ],
+    "en": [
+      "Bony or toothed tongue",
+      "The forward part of the gut passes to the left of the oesophagus and stomach (to the right in all other fish)",
+      "Freshwater only; a typical Gondwanan distribution"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Osteoglossiformes",
+      "url": "https://en.wikipedia.org/wiki/Osteoglossiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Osteoglossiformes",
+      "url": "https://es.wikipedia.org/wiki/Osteoglossiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

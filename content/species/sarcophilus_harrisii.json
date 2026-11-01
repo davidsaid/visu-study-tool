@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo robusto y achaparrado con cabeza grande",
+      "Pelaje negro, a menudo con manchas blancas irregulares en el pecho y la grupa",
+      "Cola de aproximadamente la mitad de la longitud del cuerpo",
+      "Patas delanteras algo más largas que las traseras"
+    ],
+    "en": [
+      "Squat, stocky body with a large head",
+      "Black fur, often with irregular white patches on chest and rump",
+      "Tail about half the body length",
+      "Forelegs slightly longer than hind legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Thylacinus cynocephalus",
+      "es": "El tilacino era mayor, de aspecto de perro, pardo amarillento y con rayas oscuras.",
+      "en": "The thylacine was bigger and dog-like, yellow-brown with dark stripes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos suelen ser mayores (unos 8 kg) que las hembras (unos 6 kg).",
+    "en": "Males are usually larger (about 8 kg) than females (about 6 kg)."
+  },
+  "etymology": {
+    "es": "Sarcophilus harrisii = «amante de la carne de Harris», en honor a George Harris, que lo describió.",
+    "en": "Sarcophilus harrisii = 'Harris's flesh-lover', honouring George Harris, who described it."
+  },
+  "trivia": {
+    "es": [
+      "Es el mayor marsupial carnívoro que sobrevive."
+    ],
+    "en": [
+      "It is the largest surviving carnivorous marsupial."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Sarcophilus harrisii — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Sarcophilus_harrisii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Tasmanian devil — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Tasmanian_devil",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

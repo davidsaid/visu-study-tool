@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Aspecto vagamente porcino, con el lomo muy arqueado y el cuerpo robusto",
+      "Hocico largo parecido al de un cerdo",
+      "Piel gruesa con pelo escaso y áspero, más oscuro en las patas",
+      "Uñas grandes, aplanadas y en forma de pala, a medio camino entre garra y pezuña",
+      "Patas delanteras de cuatro dedos (sin pulgar) y traseras de cinco"
+    ],
+    "en": [
+      "Vaguely pig-like, with a stout body and a strongly arched back",
+      "Long snout resembling a pig's",
+      "Thick skin with sparse, coarse hair, darker on the legs",
+      "Large, flattened, shovel-like nails, halfway between claws and hooves",
+      "Four-toed forefeet (no thumb) and five-toed hind feet"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Myrmecophaga tridactyla",
+      "es": "El oso hormiguero tiene el hocico largo y estrecho, una cola larga y muy peluda y una franja negra en forma de chaleco; el cerdo hormiguero tiene hocico de cerdo y pelo escaso.",
+      "en": "The giant anteater has a long narrow muzzle, a long bushy tail and a black vest-like band; the aardvark has a pig-like snout and sparse hair."
+    }
+  ],
+  "dimorphism": {
+    "es": "No presenta dimorfismo sexual.",
+    "en": "It shows no sexual dimorphism."
+  },
+  "etymology": {
+    "es": "Orycteropus, del griego oryktḗr («excavador») y poús («pie»): «pie excavador», por sus madrigueras; afer alude a África.",
+    "en": "Orycteropus, from Greek oryktḗr ('digger') and poús ('foot'): 'burrowing foot', for its burrows; afer refers to Africa."
+  },
+  "trivia": {
+    "es": [
+      "Su nombre en inglés, aardvark, viene del neerlandés y significa «cerdo de tierra»."
+    ],
+    "en": [
+      "Its English name, aardvark, comes from Dutch and means 'earth pig'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Orycteropus afer — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Orycteropus_afer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Aardvark — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Aardvark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "La mayor rapaz del Viejo Mundo (98–120 cm; envergadura 2,5–3,1 m)",
+      "Plumaje casi todo negro, salpicado de pardo oscuro en el dorso",
+      "Cabeza y cuello negros y casi desnudos, con algo de plumón",
+      "Gorguera de plumas pardo oscuras en la base del cuello",
+      "Pico gris claro con la punta negra; los jóvenes son aún más oscuros"
+    ],
+    "en": [
+      "The largest Old World raptor (98–120 cm; wingspan 2.5–3.1 m)",
+      "Plumage almost all black, flecked dark brown on the back",
+      "Black, nearly bare head and neck with some down",
+      "Ruff of dark brown feathers at the base of the neck",
+      "Pale grey bill with a black tip; juveniles are even darker"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gyps fulvus",
+      "es": "El buitre leonado tiene el cuerpo ocre, la cabeza blanca y una gorguera blanca.",
+      "en": "The griffon vulture has a tawny body, a white head and a white ruff."
+    }
+  ],
+  "dimorphism": {
+    "es": "Ambos sexos tienen plumaje idéntico; las hembras pueden ser algo más pesadas.",
+    "en": "Both sexes have identical plumage; females may be slightly heavier."
+  },
+  "etymology": {
+    "es": "Aegypius es una palabra griega (aigypiós) para «buitre» o un ave parecida; monachus significa «monje», por la cabeza calva y la gorguera, que recuerdan una capucha monacal.",
+    "en": "Aegypius is a Greek word (aigypios) for 'vulture' or a similar bird; monachus means 'monk', after the bald head and ruff resembling a monk's cowl."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Aegypius monachus",
+      "url": "https://es.wikipedia.org/wiki/Aegypius_monachus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Cinereous vulture",
+      "url": "https://en.wikipedia.org/wiki/Cinereous_vulture",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Gyps fulvus",
+      "url": "https://es.wikipedia.org/wiki/Gyps_fulvus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

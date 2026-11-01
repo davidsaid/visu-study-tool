@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuartos delanteros y cuello muy desarrollados y grupa baja y redondeada",
+      "Pelaje corto amarillento a rojizo con manchas pardo oscuro irregulares",
+      "Cabeza ancha y plana con hocico romo y orejas redondeadas",
+      "Crin corta y erizada; cola corta con un mechón oscuro a modo de pompón"
+    ],
+    "en": [
+      "Massive neck and forequarters with low, rounded hindquarters",
+      "Short yellowish to reddish coat with irregular dark brown spots",
+      "Broad, flat head with a blunt muzzle and rounded ears",
+      "Short bristly mane; short tail with a dark, pompom-like tuft"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lycaon pictus",
+      "es": "El licaón tiene manchas negras, amarillas y blancas irregulares, orejas grandes y cola de punta blanca.",
+      "en": "The African wild dog has irregular black, yellow and white blotches, large ears and a white-tipped tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "La hembra es considerablemente mayor que el macho y lo domina.",
+    "en": "Females are considerably larger than males and dominate them."
+  },
+  "etymology": {
+    "es": "Crocuta procede del griego krokóttas, derivado del sánscrito, que designaba originalmente al chacal dorado.",
+    "en": "Crocuta comes from Greek krokottas, from a Sanskrit word originally meaning the golden jackal."
+  },
+  "sources": [
+    {
+      "title": "Crocuta crocuta — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Crocuta_crocuta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Spotted hyena — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Spotted_hyena",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

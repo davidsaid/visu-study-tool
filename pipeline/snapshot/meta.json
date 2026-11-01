@@ -1,0 +1,71 @@
+{
+ "datasets": {
+  "amniote_lhd": {
+   "download": "https://ndownloader.figshare.com/files/8067269",
+   "sha256": "f7a8973452625422868ff33cc6fc2362e965eede173b2fd4262ed1668abe0f2f",
+   "source": "amniote_lhd"
+  },
+  "amphibio": {
+   "download": "https://ndownloader.figshare.com/files/8828578",
+   "sha256": "15185ffec078423ff7b99d1f16d4daa351a5a8861dd27e5574d05f9a58bc4626",
+   "source": "amphibio"
+  },
+  "anage": {
+   "download": "https://genomics.senescence.info/species/dataset.zip",
+   "sha256": "e3ddb66e32e973a79932859ba53013e8f60d957c6ec01c6eb573e3ea3018d630",
+   "source": "anage"
+  },
+  "avonet": {
+   "download": "https://ndownloader.figshare.com/files/34480856",
+   "sha256": "eb645e83dddb40f1654a3e8d721998dbca76eff540231b7b809267c1e96f8d3e",
+   "source": "avonet"
+  },
+  "combine": {
+   "download": "https://ndownloader.figshare.com/files/27703263",
+   "sha256": "14ace2dff03b71c20dc923a9eb293aaadc29934e21c6f11fa30d1b70e5abab92",
+   "source": "combine"
+  },
+  "elton_birds": {
+   "download": "https://ndownloader.figshare.com/files/5631081",
+   "sha256": "97216eb1797da077169ebb1ebea275db293b09fc62f8bb8911f9beb98c50d321",
+   "source": "elton"
+  },
+  "elton_mammals": {
+   "download": "https://ndownloader.figshare.com/files/5631084",
+   "sha256": "51acbe6215b3c1f742463ff3fb37ef607150c052e0f7a9dc0d97fcaca61d3f76",
+   "source": "elton"
+  },
+  "mdd": {
+   "download": "https://zenodo.org/api/records/21654811/files/MDD_v2.5_6904species.csv/content",
+   "sha256": "0d07a7e9409712fa86c1e3afadcf4c67bf4f9e16d5693a878e11ec1bf6860493",
+   "source": "mdd"
+  },
+  "miteco": {
+   "download": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/conservacion-de-especies/esp-prot-especial/TablaLESRPE-CEEA-30062025_v2.xlsx",
+   "sha256": "48e44fb6433522edbc9dec71c89429a59317025a84c4592229a64b840d618dba",
+   "source": "miteco"
+  },
+  "pantheria": {
+   "download": "https://ndownloader.figshare.com/files/5604752",
+   "sha256": "fe84274a39ba73b3c9b6950b78ba44c545852db9809d1549b0071cfdde46df9f",
+   "source": "pantheria"
+  },
+  "repttraits": {
+   "download": "https://ndownloader.figshare.com/files/45408133",
+   "sha256": "74eb6fd0e2626c75bdbeacb50a08b1762eee42e2b3cfda4a0f1134b84971718a",
+   "source": "repttraits"
+  },
+  "squambase": {
+   "download": "https://zenodo.org/api/records/10602503/files/Supplementary_Table_S1_-_squamBase1.xlsx/content",
+   "sha256": "e850eb807240e1012d0af3e5f2c33a84dab406d50e86a8e3dc591f51a64912af",
+   "source": "squambase"
+  },
+  "tos": {
+   "download": "https://zenodo.org/api/records/4932291/files/vert.data-may19.csv/content",
+   "sha256": "b7dc3ba79bd5cd07f38cc4ed1c98c02e213691d69bff4d946b6a91b09cb551c1",
+   "source": "tos"
+  }
+ },
+ "retrieved": "2026-11-01",
+ "species": 308
+}

@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Machos con cuernos muy gruesos y separados, curvados hacia fuera, arriba y atrás",
+      "Machos adultos con barba oscura de chivo bajo la mandíbula",
+      "Pelaje pardo o canela con manchas oscuras en la parte baja de las patas (en machos, también en costados, hombros y vientre)",
+      "Centro del vientre blanco y cola negra y corta",
+      "Patas cortas y pezuñas grandes y flexibles"
+    ],
+    "en": [
+      "Males with very thick, wide-set horns curving out, up and back",
+      "Adult males with a dark goatee under the jaw",
+      "Brown or cinnamon coat with dark patches on the lower legs (in males extending to flanks, shoulders and belly)",
+      "White mid-belly and a short black tail",
+      "Short legs and large, flexible hooves"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Rupicapra pyrenaica",
+      "es": "El rebeco es más pequeño y esbelto, con cuernos cortos en gancho en ambos sexos y antifaz oscuro.",
+      "en": "The chamois is smaller and slimmer, with short hooked horns in both sexes and a dark eye mask."
+    },
+    {
+      "binomial": "Capra hircus",
+      "es": "La hembra se parece bastante a una cabra doméstica, pero la cabra montés tiene los cuernos más separados que otras especies de Capra.",
+      "en": "Females look much like a domestic goat, but the ibex's horns are set wider apart than in other Capra species."
+    }
+  ],
+  "dimorphism": {
+    "es": "Fuerte: los machos pesan hasta 120 kg (hembras 30–45 kg) y sus cuernos pueden triplicar en longitud a los de las hembras.",
+    "en": "Strong: males weigh up to 120 kg (females 30–45 kg) and their horns can be three times as long as females'."
+  },
+  "sources": [
+    {
+      "title": "Capra pyrenaica — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Capra_pyrenaica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Iberian ibex — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Iberian_ibex",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

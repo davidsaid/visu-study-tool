@@ -1,0 +1,47 @@
+{
+  "field_marks": {
+    "es": [
+      "Antifaz de pelo negro alrededor de los ojos, muy contrastado",
+      "Cola poblada con anillos alternos claros y oscuros",
+      "Pelaje gris, pardo o negro",
+      "Patas delanteras muy hábiles, como manos (sus huellas recuerdan a manos de niño)"
+    ],
+    "en": [
+      "Strongly contrasting black 'bandit mask' around the eyes",
+      "Bushy tail with alternating light and dark rings",
+      "Grey, brown or black fur",
+      "Very dexterous, hand-like forepaws (tracks resemble a child's hands)"
+    ]
+  },
+  "dimorphism": {
+    "es": "Los machos suelen pesar un 15–20 % más que las hembras.",
+    "en": "Males are usually 15–20% heavier than females."
+  },
+  "etymology": {
+    "es": "Procyon, del griego pro «antes» + kýōn «perro»; Procyon lotor significa en latín «lavador antes del perro».",
+    "en": "Procyon from Greek pro 'before' + kýōn 'dog'; Procyon lotor means 'before-dog washer' in Latin."
+  },
+  "trivia": {
+    "es": [
+      "«Mapache» viene del náhuatl mapachtli, «el que toma todo en sus manos»."
+    ],
+    "en": [
+      "'Mapache' comes from Nahuatl mapachtli, 'the one who takes everything in its hands'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Procyon lotor — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Procyon_lotor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Raccoon — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Raccoon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

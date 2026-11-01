@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Peces pipa, caballitos de mar, peces trompeta, salmonetes, dragoncillos y afines. Muchos se camuflan entre las algas, nadando incluso en posición vertical. En el bestiario: el caballito de mar (Hippocampus zosterae).",
+    "en": "Pipefishes, seahorses, trumpetfishes, goatfishes, dragonets and relatives. Many hide among seaweed, some even swimming upright. In the bestiary: the dwarf seahorse (Hippocampus zosterae)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo alargado y estrecho rodeado de anillos óseos",
+      "Boca pequeña y tubular que succiona presas a corta distancia",
+      "En los singnátidos, el macho incuba los huevos en una bolsa o pegados a la cola",
+      "Camuflaje críptico frecuente"
+    ],
+    "en": [
+      "Elongated, narrow body encased in bony rings",
+      "Small, tubular mouth that sucks in prey at close range",
+      "In syngnathids, the male broods the eggs in a pouch or attached to the tail",
+      "Frequent cryptic camouflage"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Syngnathiformes",
+      "url": "https://en.wikipedia.org/wiki/Syngnathiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Syngnathiformes",
+      "url": "https://es.wikipedia.org/wiki/Syngnathiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

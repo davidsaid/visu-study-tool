@@ -1,0 +1,61 @@
+{
+  "field_marks": {
+    "es": [
+      "Delfín enorme y robusto, de dorso negro y partes inferiores blancas con bordes nítidos",
+      "Mancha blanca ovalada detrás y encima del ojo",
+      "Mancha gris en forma de silla de montar detrás de la aleta dorsal",
+      "Aleta dorsal muy alta y triangular (hasta 1,8 m en los machos)",
+      "Aletas pectorales grandes, redondeadas, en forma de pala"
+    ],
+    "en": [
+      "Huge, robust dolphin with a black back and sharply bordered white underparts",
+      "White oval patch behind and above the eye",
+      "Grey saddle patch behind the dorsal fin",
+      "Very tall, triangular dorsal fin (up to 1.8 m in males)",
+      "Large, rounded, paddle-shaped flippers"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pseudorca crassidens",
+      "es": "Los jóvenes de orca vistos de lejos pueden confundirse con la falsa orca; el patrón blanco y negro nítido de la orca la delata.",
+      "en": "Young orcas seen from afar can be confused with the false killer whale; the orca's crisp black-and-white pattern gives it away."
+    },
+    {
+      "binomial": "Grampus griseus",
+      "es": "Los jóvenes de orca vistos a distancia pueden confundirse con el calderón gris; el patrón blanco y negro de la orca adulta es inconfundible.",
+      "en": "Young orcas seen at a distance can be confused with Risso's dolphin; the adult orca's black-and-white pattern is unmistakable."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mayores (6–8 m frente a 5–7 m) y su aleta dorsal, de hasta 1,8 m, es un triángulo alto más del doble que la de la hembra, que es más curvada.",
+    "en": "Males are larger (6–8 m versus 5–7 m) and their dorsal fin, up to 1.8 m, is a tall triangle more than twice the size of the female's, which is more curved."
+  },
+  "etymology": {
+    "es": "Orcinus deriva del latín orca, «vasija panzuda», con un sufijo masculino.",
+    "en": "Orcinus derives from Latin orca, 'a large-bellied pot', with a masculine suffix."
+  },
+  "trivia": {
+    "es": [
+      "Los balleneros vascos la llamaban «asesina ballena», origen del nombre inglés killer whale."
+    ],
+    "en": [
+      "Basque whalers called it 'asesina ballena' ('whale killer')."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Orcinus orca — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Orcinus_orca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Orca — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Orca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

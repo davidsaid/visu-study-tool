@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Placentarios: la inmensa mayoría de los mamíferos actuales (más de 5100 especies), cuyas crías permanecen en el útero hasta una fase avanzada, nutridas por una placenta alantoica. Se dividen en tres grandes linajes: Afrotheria, Xenarthra y Boreoeutheria. En el bestiario: todos los órdenes de mamíferos salvo los monotremas y los cuatro órdenes de marsupiales.",
+    "en": "Placentals: the vast majority of living mammals (over 5,100 species), whose young stay in the uterus until a late stage, nourished by an allantoic placenta. They fall into three major lineages: Afrotheria, Xenarthra and Boreoeutheria. In the bestiary: every mammal order except the monotremes and the four marsupial orders."
+  },
+  "traits": {
+    "es": [
+      "Gestación larga en el útero; sin marsupio",
+      "Sin huesos epipúbicos en la pelvis",
+      "Sin cloaca: los conductos urogenitales y el ano se abren por separado",
+      "Cuerpo calloso que une los hemisferios cerebrales"
+    ],
+    "en": [
+      "Long gestation in the uterus; no pouch",
+      "No epipubic bones on the pelvis",
+      "No cloaca: urogenital ducts and anus open separately",
+      "A corpus callosum joining the brain hemispheres"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los marsupiales: también tienen placenta, pero breve y rudimentaria, y las crías nacen muy inmaduras.",
+    "en": "Do not confuse with marsupials: they also have a placenta, but a brief, rudimentary one, and their young are born very immature."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Placentalia",
+      "url": "https://en.wikipedia.org/wiki/Placentalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Placentalia",
+      "url": "https://es.wikipedia.org/wiki/Placentalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

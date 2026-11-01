@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Eslizón pequeño (hasta 16–17 cm) de cuerpo corto, grueso y cilíndrico",
+      "Escamas lisas y brillantes",
+      "Patas cortas con cinco dedos; cola ancha",
+      "Pardo claro, pardo amarillento u oliva con muchos ocelos pequeños bordeados de negro",
+      "Cabeza pequeña y triangular con hocico redondeado"
+    ],
+    "en": [
+      "Small skink (up to 16–17 cm) with a short, thick, cylindrical body",
+      "Smooth, glossy scales",
+      "Short legs with five toes; broad tail",
+      "Pale brown, yellowish-brown or olive with many small black-edged eyespots",
+      "Small triangular head with a rounded snout"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Anguis fragilis",
+      "es": "El lución carece de patas por completo; el eslizón ibérico tiene cuatro patas cortas con cinco dedos.",
+      "en": "The slow worm has no legs at all; Bedriaga's skink has four short legs with five toes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son mayores que los machos.",
+    "en": "Females are larger than males."
+  },
+  "etymology": {
+    "es": "bedriagai honra al herpetólogo ruso Jacques von Bedriaga.",
+    "en": "bedriagai honours the Russian herpetologist Jacques von Bedriaga."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Chalcides bedriagai",
+      "url": "https://es.wikipedia.org/wiki/Chalcides_bedriagai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Chalcides bedriagai",
+      "url": "https://en.wikipedia.org/wiki/Chalcides_bedriagai",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

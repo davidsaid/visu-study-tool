@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "La mayoría de los marsupiales carnívoros de Australia: cuoles, dunarts, el numbat y el demonio de Tasmania. En el bestiario: el lobo marsupial o tilacino (extinguido recientemente) y el diablo de Tasmania.",
+    "en": "Most of Australia's carnivorous marsupials: quolls, dunnarts, the numbat and the Tasmanian devil. In the bestiary: the thylacine or Tasmanian wolf (recently extinct) and the Tasmanian devil."
+  },
+  "traits": {
+    "es": [
+      "Mayoritariamente carnívoros o insectívoros, con dientes afilados",
+      "Molares inferiores de tipo carnicero",
+      "Poliprotodontos: varios pares de incisivos, no un solo par grande",
+      "Sin sindactilia (los dedos del pie no están fusionados)",
+      "Marsupio poco desarrollado, en algunas especies visible solo en la cría"
+    ],
+    "en": [
+      "Mostly carnivorous or insectivorous, with sharp teeth",
+      "Carnassial-like lower molars",
+      "Polyprotodont: several pairs of incisors rather than one large pair",
+      "No syndactyly (toes not fused)",
+      "Poorly developed pouch, in some species visible only when breeding"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los diprotodontos (canguros, koala), herbívoros con un par de grandes incisivos inferiores y los dedos 2 y 3 del pie unidos.",
+    "en": "Do not confuse with diprotodonts (kangaroos, koala): herbivores with one pair of large lower incisors and toes 2 and 3 joined."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Dasyuromorphia",
+      "url": "https://en.wikipedia.org/wiki/Dasyuromorphia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Dasyuromorphia",
+      "url": "https://es.wikipedia.org/wiki/Dasyuromorphia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

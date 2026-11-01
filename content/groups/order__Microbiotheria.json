@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Orden de marsupiales con una sola especie viva, el monito de monte (Dromiciops gliroides), de los bosques templados de Chile y Argentina. Aunque es americano, pertenece a Australidelphia y está más emparentado con los marsupiales australianos que con las zarigüeyas.",
+    "en": "A marsupial order with a single living species, the monito del monte (Dromiciops gliroides), from the temperate forests of Chile and Argentina. Although American, it belongs to Australidelphia and is closer to the Australian marsupials than to opossums."
+  },
+  "traits": {
+    "es": [
+      "Marsupial pequeño (20–25 cm con la cola) de hocico corto y ojos grandes y oscuros",
+      "Cola prensil",
+      "Hembras con marsupio de cuatro mamas",
+      "Nocturno y trepador; puede hibernar en inviernos duros"
+    ],
+    "en": [
+      "Small marsupial (20–25 cm including the tail) with a short snout and large dark eyes",
+      "Prehensile tail",
+      "Females have a pouch with four teats",
+      "Nocturnal and arboreal; may hibernate in harsh winters"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las zarigüeyas (Didelphimorphia): durante un tiempo se incluyó en ellas, pero la anatomía y la genética lo sitúan junto a los marsupiales australianos.",
+    "en": "Do not confuse with opossums (Didelphimorphia): it was once placed among them, but anatomy and genetics place it with the Australian marsupials."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Microbiotheria",
+      "url": "https://en.wikipedia.org/wiki/Microbiotheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Microbiotheria",
+      "url": "https://es.wikipedia.org/wiki/Microbiotheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Monito del monte",
+      "url": "https://en.wikipedia.org/wiki/Monito_del_monte",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Dromiciops gliroides",
+      "url": "https://es.wikipedia.org/wiki/Dromiciops_gliroides",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

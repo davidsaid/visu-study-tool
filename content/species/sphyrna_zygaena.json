@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Cabeza aplanada y extendida a los lados en forma de martillo, con los ojos en los extremos",
+      "Borde frontal del martillo curvo y sin muesca central (de ahí «liso»)",
+      "Primera dorsal moderadamente alta y en forma de hoz",
+      "Gris azulado a pardo verdoso por encima, flancos claros y vientre blanco grisáceo"
+    ],
+    "en": [
+      "Flattened head extended sideways into a hammer, with the eyes at the tips",
+      "Front edge of the hammer curved with no central notch (hence 'smooth')",
+      "Moderately tall, sickle-shaped first dorsal fin",
+      "Bluish-grey to greenish-brown above, pale flanks and greyish-white belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sphyrna lewini",
+      "es": "Otros peces martillo grandes tienen una muesca en el centro del borde frontal de la cabeza.",
+      "en": "Other large hammerheads have a notch in the centre of the front edge of the head."
+    }
+  ],
+  "etymology": {
+    "es": "zygaena viene del griego zygòn, «yugo», por la forma de la cabeza.",
+    "en": "zygaena comes from Greek zygòn, 'yoke', for the shape of the head."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Sphyrna zygaena",
+      "url": "https://es.wikipedia.org/wiki/Sphyrna_zygaena",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Smooth hammerhead",
+      "url": "https://en.wikipedia.org/wiki/Smooth_hammerhead",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

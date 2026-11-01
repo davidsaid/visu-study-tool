@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Muy pequeño (20–25 cm con la cola; 20–42 g)",
+      "Hocico corto y ojos grandes y oscuros",
+      "Dorso pardo grisáceo y vientre blanco o gris",
+      "Cola prensil"
+    ],
+    "en": [
+      "Very small (20–25 cm including tail; 20–42 g)",
+      "Short snout and large dark eyes",
+      "Greyish-brown back and white or grey belly",
+      "Prehensile tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Eliomys quercinus",
+      "es": "Recuerda a un lirón (de ahí gliroides), pero es un marsupial sudamericano con cola prensil.",
+      "en": "It recalls a dormouse (hence gliroides), but it is a South American marsupial with a prehensile tail."
+    }
+  ],
+  "etymology": {
+    "es": "Dromiciops = «con aspecto de Dromicia» (el antiguo género del pósum pigmeo de Tasmania; griego ops, «aspecto»); gliroides = «parecido a un lirón» (latín glis, gliris, «lirón», + griego -oides).",
+    "en": "Dromiciops = 'Dromicia-like' (the old genus of the Tasmanian pygmy possum; Greek ops, 'appearance'); gliroides = 'dormouse-like' (Latin glis, gliris, 'dormouse', + Greek -oides)."
+  },
+  "trivia": {
+    "es": [
+      "Pese a su nombre, no tiene ningún parentesco con los monos."
+    ],
+    "en": [
+      "Despite its Spanish name ('little mountain monkey'), it is not related to primates."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Dromiciops gliroides — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Dromiciops_gliroides",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Southern monito del monte — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Southern_monito_del_monte",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

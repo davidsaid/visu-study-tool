@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Salamandras y tritones: anfibios de cuerpo alargado y cola presente toda la vida, casi todos del hemisferio norte. En el bestiario hay nueve, desde la salamandra gigante de China hasta el gallipato, los tritones ibéricos, el proteo y el ajolote.",
+    "en": "Salamanders and newts: elongated amphibians that keep their tail throughout life, almost all from the Northern Hemisphere. The bestiary has nine, from the Chinese giant salamander to the Iberian ribbed newt, the Iberian newts, the olm and the axolotl."
+  },
+  "traits": {
+    "es": [
+      "Cola bien desarrollada en larvas y adultos",
+      "Dos pares de patas cortas de longitud parecida, que salen en ángulo recto del cuerpo",
+      "Piel sin escamas, húmeda y lisa (aterciopelada o verrugosa en algunos tritones)",
+      "Dedos sin uñas: normalmente cuatro delante y cinco detrás",
+      "Larvas con branquias externas; muchas especies conservan rasgos larvarios de adultas (pedomorfosis), como el ajolote"
+    ],
+    "en": [
+      "Well-developed tail in both larvae and adults",
+      "Two pairs of short limbs of similar length, projecting at right angles to the body",
+      "Skin without scales, moist and smooth (velvety or warty in some newts)",
+      "Toes without claws: usually four in front and five behind",
+      "Larvae with external gills; many species keep larval features as adults (paedomorphosis), like the axolotl"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las lagartijas: su parecido es solo la forma corporal primitiva de los tetrápodos; las salamandras tienen la piel húmeda sin escamas y los dedos sin uñas. Sus parientes más cercanos son las ranas.",
+    "en": "Do not confuse with lizards: the resemblance is just the ancestral tetrapod body plan; salamanders have moist, scaleless skin and clawless toes. Their closest relatives are the frogs."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Salamander",
+      "url": "https://en.wikipedia.org/wiki/Salamander",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Caudata",
+      "url": "https://es.wikipedia.org/wiki/Caudata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

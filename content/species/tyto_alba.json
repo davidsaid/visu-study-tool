@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Rapaz nocturna mediana (33–35 cm), de aspecto pálido",
+      "Gran disco facial blanco en forma de corazón",
+      "Cabeza y dorso moteados de gris o pardo; partes inferiores de blanco a pardo, a veces con motas oscuras",
+      "Alas largas y cola corta y cuadrada; vuelo ondulante y silencioso",
+      "Patas emplumadas y colgantes"
+    ],
+    "en": [
+      "Medium-sized nocturnal raptor (33–35 cm), pale-looking",
+      "Large, heart-shaped white facial disc",
+      "Head and back mottled grey or brown; underparts white to brown, sometimes speckled dark",
+      "Long wings and a short, square tail; undulating, silent flight",
+      "Feathered, dangling legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Strix aluco",
+      "es": "El cárabo es más robusto, de cabeza redonda, con plumaje pardo rojizo o gris listado y un disco facial gris pardusco sencillo, no blanco en corazón.",
+      "en": "The tawny owl is stockier and round-headed, with streaked rufous or grey plumage and a plain greyish-brown facial disc, not a white heart."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los sexos son muy parecidos; las hembras son de media un 10 % más pesadas.",
+    "en": "The sexes are very similar; females average about 10% heavier."
+  },
+  "etymology": {
+    "es": "alba procede del latín albus, «blanco», porque es mucho más blanca que otras lechuzas que conocía Scopoli.",
+    "en": "alba is from Latin albus, 'white', as it is much whiter than other owls Scopoli knew."
+  },
+  "trivia": {
+    "es": [
+      "No ulula: emite un chillido largo y estremecedor."
+    ],
+    "en": [
+      "It does not hoot but gives an eerie, drawn-out screech."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Tyto alba",
+      "url": "https://es.wikipedia.org/wiki/Tyto_alba",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Western barn owl",
+      "url": "https://en.wikipedia.org/wiki/Western_barn_owl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Strix aluco",
+      "url": "https://es.wikipedia.org/wiki/Strix_aluco",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

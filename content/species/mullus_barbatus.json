@@ -1,0 +1,40 @@
+{
+  "field_marks": {
+    "es": [
+      "Color rosado a rojo, sin marcas llamativas en las aletas",
+      "Un par de barbillas en el mentón, no más largas que las pectorales",
+      "Hocico corto y empinado",
+      "Cuerpo alargado, algo comprimido; dos aletas dorsales"
+    ],
+    "en": [
+      "Rose-pink to red, without distinctive fin markings",
+      "A pair of chin barbels no longer than the pectoral fins",
+      "Short, steep snout",
+      "Elongated, somewhat compressed body; two dorsal fins"
+    ]
+  },
+  "lookalikes": [],
+  "trivia": {
+    "es": [
+      "Usa las barbillas como órganos sensoriales para localizar presas en el fondo."
+    ],
+    "en": [
+      "It uses its barbels as sense organs to find prey on the bottom."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Mullus barbatus",
+      "url": "https://es.wikipedia.org/wiki/Mullus_barbatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Mullus barbatus",
+      "url": "https://en.wikipedia.org/wiki/Mullus_barbatus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

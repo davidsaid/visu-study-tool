@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo macizo con cabeza puntiaguda y hocico aplanado y cónico",
+      "Dos aletas dorsales grandes, de base ancha y tamaño parecido, retrasadas respecto a las pectorales",
+      "Nada con la boca abierta, mostrando hileras de dientes largos, afilados y salientes",
+      "Caudal con el lóbulo superior largo",
+      "Dorso gris pardo con manchas pardo-rojizas, sobre todo en la mitad posterior; vientre claro"
+    ],
+    "en": [
+      "Bulky body with a pointed head and a flattened conical snout",
+      "Two large, broad-based dorsal fins of similar size, set behind the pectorals",
+      "Swims with its mouth open, showing rows of long, sharp, protruding teeth",
+      "Tail with a long upper lobe",
+      "Grey-brown back with reddish-brown spots, mostly on the rear half; pale belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Carcharodon carcharias",
+      "es": "El tiburón blanco tiene una primera dorsal mucho mayor que la segunda, dientes triangulares aserrados y dorso gris sin manchas.",
+      "en": "The white shark has a first dorsal far larger than the second, serrated triangular teeth and an unspotted grey back."
+    }
+  ],
+  "etymology": {
+    "es": "Carcharias taurus significa «tiburón toro».",
+    "en": "Carcharias taurus means 'bull shark'."
+  },
+  "trivia": {
+    "es": [
+      "Puede tragar aire en superficie para mantenerse suspendido en el agua casi sin esfuerzo."
+    ],
+    "en": [
+      "It can gulp air at the surface to hover in the water with little effort."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Carcharias taurus",
+      "url": "https://es.wikipedia.org/wiki/Carcharias_taurus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Sand tiger shark",
+      "url": "https://en.wikipedia.org/wiki/Sand_tiger_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Carcharodon carcharias",
+      "url": "https://es.wikipedia.org/wiki/Carcharodon_carcharias",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

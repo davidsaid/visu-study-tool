@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo fusiforme y potente, con escamas pequeñas",
+      "En el mar, dorso verde azulado y flancos plateados",
+      "Manchas negras sobre todo por encima de la línea lateral; caudal normalmente sin manchas",
+      "Todas las aletas, salvo la adiposa, ribeteadas de negro",
+      "En agua dulce, al reproducirse, pardo rojizo a verdoso con moteado rojo o naranja"
+    ],
+    "en": [
+      "Powerful, spindle-shaped body with small scales",
+      "At sea, blue-green back and silvery sides",
+      "Black spots mainly above the lateral line; tail fin usually unspotted",
+      "All fins except the adipose edged in black",
+      "In fresh water when breeding, reddish-brown to greenish with red or orange mottling"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Salmo trutta",
+      "es": "La trucha tiene la caudal sin escotadura y pintas rojas con halo claro en los flancos.",
+      "en": "The brown trout has an unforked tail and red, pale-ringed spots on its sides."
+    },
+    {
+      "binomial": "Oncorhynchus nerka",
+      "es": "El salmón rojo no tiene manchas en el dorso ni en la cola y, al reproducirse, se vuelve rojo con la cabeza verde.",
+      "en": "The sockeye has no spots on the back or tail and turns red with a green head when spawning."
+    }
+  ],
+  "dimorphism": {
+    "es": "En la época de cría el moteado rojo es muy patente en los machos, que adquieren un tono verde o rojo.",
+    "en": "When breeding the red mottling is most obvious in males, which take on a green or red tinge."
+  },
+  "etymology": {
+    "es": "Salmo salar procede del latín salmo, «salmón», y salar, «saltador».",
+    "en": "Salmo salar comes from Latin salmo, 'salmon', and salar, 'leaper'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Salmo salar",
+      "url": "https://es.wikipedia.org/wiki/Salmo_salar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic salmon",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_salmon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Brown trout",
+      "url": "https://en.wikipedia.org/wiki/Brown_trout",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Sockeye salmon",
+      "url": "https://en.wikipedia.org/wiki/Sockeye_salmon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

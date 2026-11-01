@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez diminuto: machos de 1,5–4 cm y hembras de 3–7 cm",
+      "Machos con manchas, salpicaduras o rayas de colores muy variados",
+      "Machos con aletas caudal y dorsal grandes y ornamentales",
+      "Hembras silvestres de color gris, mayores que los machos"
+    ],
+    "en": [
+      "Tiny fish: males 1.5–4 cm, females 3–7 cm",
+      "Males with spots, splashes or stripes in a wide range of colours",
+      "Males with large, ornamental tail and dorsal fins",
+      "Wild females grey and larger than males"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gambusia affinis",
+      "es": "La gambusia es de un gris apagado en ambos sexos, con aletas redondeadas sin adornos.",
+      "en": "The mosquitofish is dull grey in both sexes, with plain rounded fins."
+    }
+  ],
+  "dimorphism": {
+    "es": "Muy marcado: los machos son más pequeños y coloridos, con aletas ornamentales y la anal transformada en gonopodio; las hembras son grises.",
+    "en": "Very marked: males are smaller and colourful, with ornamental fins and an anal fin modified into a gonopodium; females are grey."
+  },
+  "etymology": {
+    "es": "«Guppy» viene del sinónimo Girardinus guppii, dedicado a Robert John Lechmere Guppy, que envió ejemplares de Trinidad al Museo de Historia Natural de Londres.",
+    "en": "'Guppy' comes from the synonym Girardinus guppii, named after Robert John Lechmere Guppy, who sent specimens from Trinidad to the Natural History Museum in London."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Poecilia reticulata",
+      "url": "https://es.wikipedia.org/wiki/Poecilia_reticulata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Guppy",
+      "url": "https://en.wikipedia.org/wiki/Guppy",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Mosquitofish",
+      "url": "https://en.wikipedia.org/wiki/Mosquitofish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

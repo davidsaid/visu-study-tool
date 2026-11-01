@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Peces óseos en sentido cladístico: vertebrados con mandíbulas cuyo esqueleto interno es principalmente de hueso. Se dividen en actinopterigios (aletas radiadas) y sarcopterigios (aletas lobuladas), y estos últimos incluyen a los tetrápodos, así que el clado abarca también anfibios, reptiles, aves y mamíferos.",
+    "en": "Bony fishes in the cladistic sense: jawed vertebrates whose internal skeleton is mainly bone. They split into ray-finned (Actinopterygii) and lobe-finned fishes (Sarcopterygii); the latter include the tetrapods, so the clade also covers amphibians, reptiles, birds and mammals."
+  },
+  "traits": {
+    "es": [
+      "Endoesqueleto formado sobre todo por tejido óseo",
+      "Cabeza y cintura pectoral cubiertas por grandes huesos dérmicos",
+      "Branquias en una cámara cubierta por un opérculo, con una sola abertura a cada lado",
+      "Divertículos respiratorios del esófago, convertidos en vejiga natatoria o en pulmones"
+    ],
+    "en": [
+      "Endoskeleton made mostly of bone tissue",
+      "Head and pectoral girdle covered by large dermal bones",
+      "Gills in a chamber covered by an operculum, with a single opening on each side",
+      "Respiratory outpouchings of the oesophagus, which became swim bladders or lungs"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los condrictios (tiburones, rayas, quimeras), de esqueleto cartilaginoso y con válvula espiral en el intestino, en lugar de ciegos pilóricos.",
+    "en": "Do not confuse with cartilaginous fishes (sharks, rays, chimaeras), which have a cartilage skeleton and a spiral valve in the intestine instead of pyloric caeca."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Osteichthyes",
+      "url": "https://en.wikipedia.org/wiki/Osteichthyes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Osteichthyes",
+      "url": "https://es.wikipedia.org/wiki/Osteichthyes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

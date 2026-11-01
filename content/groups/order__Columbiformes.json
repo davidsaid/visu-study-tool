@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Palomas y tórtolas (familia Columbidae, única actual del orden), con unas 320 especies vivas; incluye también al extinto dodo. En el bestiario: la paloma torcaz y la tórtola europea.",
+    "en": "Pigeons and doves (family Columbidae, the only living family of the order), with about 320 living species; it also includes the extinct dodo. In the bestiary: the common wood pigeon and the European turtle dove."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo robusto y compacto con cabeza pequeña y cuello corto",
+      "Pico corto y fino con una cera carnosa en la base",
+      "Patas cortas",
+      "Ambos progenitores alimentan a los pollos con «leche de buche»"
+    ],
+    "en": [
+      "Stout, compact body with a small head and short neck",
+      "Short, slender bill with a fleshy cere at the base",
+      "Short legs",
+      "Both parents feed the young on 'crop milk'"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Columbidae",
+      "url": "https://en.wikipedia.org/wiki/Columbidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Columbiformes",
+      "url": "https://es.wikipedia.org/wiki/Columbiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

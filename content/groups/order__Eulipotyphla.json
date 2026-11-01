@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "«Insectívoros verdaderos»: erizos, musarañas, topos, desmanes y solenodontes, reunidos tras deshacerse el antiguo orden Insectivora, que resultó polifilético. En el bestiario: el erizo europeo, la musaraña gris, el desmán ibérico y el topo europeo.",
+    "en": "'True insectivores': hedgehogs, shrews, moles, desmans and solenodons, grouped together after the old order Insectivora proved polyphyletic. In the bestiary: the European hedgehog, the greater white-toothed shrew, the Pyrenean desman and the European mole."
+  },
+  "traits": {
+    "es": [
+      "Animales pequeños (unos 8–30 cm) de hocico largo y puntiagudo",
+      "Dientes adaptados a sujetar y triturar presas, sobre todo invertebrados",
+      "Pelaje denso, salvo los erizos, cubiertos de púas defensivas",
+      "Sin ciego intestinal (de ahí «Lipotyphla»)"
+    ],
+    "en": [
+      "Small animals (about 8–30 cm) with a long, pointed snout",
+      "Teeth adapted to hold and crush prey, mostly invertebrates",
+      "Furry, except hedgehogs, which bear defensive spines",
+      "No caecum (hence 'Lipotyphla', 'lacking blind gut')"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las musarañas elefante (Macroscelidea, afroterios) ni con las tupayas (Scandentia), antes incluidas en Insectivora.",
+    "en": "Do not confuse with elephant shrews (Macroscelidea, afrotherians) or treeshrews (Scandentia), formerly included in Insectivora."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Eulipotyphla",
+      "url": "https://en.wikipedia.org/wiki/Eulipotyphla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Eulipotyphla",
+      "url": "https://es.wikipedia.org/wiki/Eulipotyphla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Sengi",
+      "url": "https://en.wikipedia.org/wiki/Sengi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Treeshrew",
+      "url": "https://en.wikipedia.org/wiki/Treeshrew",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

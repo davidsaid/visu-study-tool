@@ -1,0 +1,65 @@
+{
+  "field_marks": {
+    "es": [
+      "Uno de los búhos más grandes del mundo (56–75 cm; envergadura de hasta 1,88 m)",
+      "Grandes penachos en forma de orejas",
+      "Ojos anaranjados muy llamativos",
+      "Partes superiores pardas con manchas oscuras; partes inferiores ante con listas oscuras",
+      "Garganta blanca y disco facial castaño enmarcado de oscuro"
+    ],
+    "en": [
+      "One of the world's largest owls (56–75 cm; wingspan up to 1.88 m)",
+      "Large ear tufts",
+      "Striking orange eyes",
+      "Brown upperparts mottled dark; buff underparts streaked dark",
+      "White throat and a chestnut facial disc framed in dark"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Strix aluco",
+      "es": "El cárabo es mucho menor, sin penachos y con los ojos oscuros.",
+      "en": "The tawny owl is much smaller, without ear tufts and with dark eyes."
+    },
+    {
+      "binomial": "Athene noctua",
+      "es": "El mochuelo es diminuto (unos 22 cm), de cabeza plana y sin penachos, con ojos amarillos.",
+      "en": "The little owl is tiny (about 22 cm), flat-headed, without ear tufts and with yellow eyes."
+    }
+  ],
+  "dimorphism": {
+    "es": "La hembra es mayor; por lo demás hay poco dimorfismo, aunque los penachos suelen estar más erguidos en los machos.",
+    "en": "The female is larger; otherwise dimorphism is slight, though the ear tufts are usually held more erect in males."
+  },
+  "etymology": {
+    "es": "Bubo procede de la onomatopeya de su llamada y ya se usaba en los bestiarios medievales.",
+    "en": "Bubo derives from an onomatopoeia of its call and was already used in medieval bestiaries."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Bubo bubo",
+      "url": "https://es.wikipedia.org/wiki/Bubo_bubo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian eagle-owl",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_eagle-owl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Strix aluco",
+      "url": "https://es.wikipedia.org/wiki/Strix_aluco",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Athene noctua",
+      "url": "https://es.wikipedia.org/wiki/Athene_noctua",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

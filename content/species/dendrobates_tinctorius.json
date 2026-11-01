@@ -1,0 +1,40 @@
+{
+  "field_marks": {
+    "es": [
+      "Rana venenosa grande para su familia (unos 5 cm)",
+      "Colorido aposemático muy variable según la población",
+      "Dorso normalmente negro con manchas o bandas naranjas, amarillas, verdes, blancas o azules",
+      "Banda negra en los flancos; vientre negro con un retículo de color"
+    ],
+    "en": [
+      "Large for a poison dart frog (about 5 cm)",
+      "Very variable warning colouration, differing between populations",
+      "Back usually black with orange, yellow, green, white or blue spots or bands",
+      "Black band along the sides; black belly with a coloured network"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Los machos son menores y más delgados, con discos digitales mayores y en forma de corazón (circulares en las hembras).",
+    "en": "Males are smaller and slimmer, with larger, heart-shaped toe discs (circular in females)."
+  },
+  "etymology": {
+    "es": "tinctorius no alude a sus colores, sino a la leyenda de que algunos pueblos indígenas usaban su veneno para cambiar el color de las plumas de los loros.",
+    "en": "tinctorius refers not to its colours but to a legend that some indigenous peoples used its poison to change the colour of parrot feathers."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Dendrobates tinctorius",
+      "url": "https://es.wikipedia.org/wiki/Dendrobates_tinctorius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Dyeing poison dart frog",
+      "url": "https://en.wikipedia.org/wiki/Dyeing_poison_dart_frog",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

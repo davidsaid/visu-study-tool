@@ -1,0 +1,3093 @@
+{
+ "checked": "2026-11-01",
+ "links": {
+  "https://vimeo.com/117783224": {
+   "checked_url": "https://vimeo.com/117783224",
+   "host": "vimeo.com",
+   "http_status": 200,
+   "status": "ok",
+   "url": "https://vimeo.com/117783224"
+  },
+  "https://www.youtube.com/watch?v=-DwU_9u5-6s": {
+   "checked_url": "https://www.youtube.com/watch?v=-DwU_9u5-6s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=-DwU_9u5-6s"
+  },
+  "https://www.youtube.com/watch?v=-GjSf6i3RNU": {
+   "checked_url": "https://www.youtube.com/watch?v=-GjSf6i3RNU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=-GjSf6i3RNU"
+  },
+  "https://www.youtube.com/watch?v=-P4OKQaas1Q": {
+   "checked_url": "https://www.youtube.com/watch?v=-P4OKQaas1Q",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=-P4OKQaas1Q"
+  },
+  "https://www.youtube.com/watch?v=-Q31Dp_-4Zw": {
+   "checked_url": "https://www.youtube.com/watch?v=-Q31Dp_-4Zw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=-Q31Dp_-4Zw"
+  },
+  "https://www.youtube.com/watch?v=-eXfDNtESeI": {
+   "checked_url": "https://www.youtube.com/watch?v=-eXfDNtESeI",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=-eXfDNtESeI"
+  },
+  "https://www.youtube.com/watch?v=-mNf_77cjac": {
+   "checked_url": "https://www.youtube.com/watch?v=-mNf_77cjac",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=-mNf_77cjac"
+  },
+  "https://www.youtube.com/watch?v=01XNqQLLCg4": {
+   "checked_url": "https://www.youtube.com/watch?v=01XNqQLLCg4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=01XNqQLLCg4"
+  },
+  "https://www.youtube.com/watch?v=03jH1E1Y1ss": {
+   "checked_url": "https://www.youtube.com/watch?v=03jH1E1Y1ss",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=03jH1E1Y1ss"
+  },
+  "https://www.youtube.com/watch?v=07bY9mMF4Cc": {
+   "checked_url": "https://www.youtube.com/watch?v=07bY9mMF4Cc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=07bY9mMF4Cc"
+  },
+  "https://www.youtube.com/watch?v=0Ax5XEtmtFg": {
+   "checked_url": "https://www.youtube.com/watch?v=0Ax5XEtmtFg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0Ax5XEtmtFg"
+  },
+  "https://www.youtube.com/watch?v=0CkZb0IXSOM": {
+   "checked_url": "https://www.youtube.com/watch?v=0CkZb0IXSOM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0CkZb0IXSOM"
+  },
+  "https://www.youtube.com/watch?v=0R_T2lzxjtI": {
+   "checked_url": "https://www.youtube.com/watch?v=0R_T2lzxjtI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0R_T2lzxjtI"
+  },
+  "https://www.youtube.com/watch?v=0SM107sqfOo": {
+   "checked_url": "https://www.youtube.com/watch?v=0SM107sqfOo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0SM107sqfOo"
+  },
+  "https://www.youtube.com/watch?v=0bzwJ1X3qZQ": {
+   "checked_url": "https://www.youtube.com/watch?v=0bzwJ1X3qZQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0bzwJ1X3qZQ"
+  },
+  "https://www.youtube.com/watch?v=0dUuKlRKFEs&t=158s": {
+   "checked_url": "https://www.youtube.com/watch?v=0dUuKlRKFEs&t=158s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0dUuKlRKFEs&t=158s"
+  },
+  "https://www.youtube.com/watch?v=0jUXUUvVzIw": {
+   "checked_url": "https://www.youtube.com/watch?v=0jUXUUvVzIw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0jUXUUvVzIw"
+  },
+  "https://www.youtube.com/watch?v=0oM6QpGiuAk": {
+   "checked_url": "https://www.youtube.com/watch?v=0oM6QpGiuAk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=0oM6QpGiuAk"
+  },
+  "https://www.youtube.com/watch?v=162c-B_vPrk": {
+   "checked_url": "https://www.youtube.com/watch?v=162c-B_vPrk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=162c-B_vPrk"
+  },
+  "https://www.youtube.com/watch?v=1DIWQLG35EY": {
+   "checked_url": "https://www.youtube.com/watch?v=1DIWQLG35EY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=1DIWQLG35EY"
+  },
+  "https://www.youtube.com/watch?v=1mkWT2gWqTg": {
+   "checked_url": "https://www.youtube.com/watch?v=1mkWT2gWqTg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=1mkWT2gWqTg"
+  },
+  "https://www.youtube.com/watch?v=2Aebg-s0fCA": {
+   "checked_url": "https://www.youtube.com/watch?v=2Aebg-s0fCA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=2Aebg-s0fCA"
+  },
+  "https://www.youtube.com/watch?v=2Gydq5nSSYk": {
+   "checked_url": "https://www.youtube.com/watch?v=2Gydq5nSSYk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=2Gydq5nSSYk"
+  },
+  "https://www.youtube.com/watch?v=2Vb7-OcFpTA": {
+   "checked_url": "https://www.youtube.com/watch?v=2Vb7-OcFpTA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=2Vb7-OcFpTA"
+  },
+  "https://www.youtube.com/watch?v=2_sbiyM7UIQ": {
+   "checked_url": "https://www.youtube.com/watch?v=2_sbiyM7UIQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=2_sbiyM7UIQ"
+  },
+  "https://www.youtube.com/watch?v=38KeRBXBz7Y": {
+   "checked_url": "https://www.youtube.com/watch?v=38KeRBXBz7Y",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=38KeRBXBz7Y"
+  },
+  "https://www.youtube.com/watch?v=39zXHRkDMo8": {
+   "checked_url": "https://www.youtube.com/watch?v=39zXHRkDMo8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=39zXHRkDMo8"
+  },
+  "https://www.youtube.com/watch?v=3Bs-HvN2udw": {
+   "checked_url": "https://www.youtube.com/watch?v=3Bs-HvN2udw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=3Bs-HvN2udw"
+  },
+  "https://www.youtube.com/watch?v=3QI-yFP1Enw": {
+   "checked_url": "https://www.youtube.com/watch?v=3QI-yFP1Enw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=3QI-yFP1Enw"
+  },
+  "https://www.youtube.com/watch?v=3T-5H81IApY": {
+   "checked_url": "https://www.youtube.com/watch?v=3T-5H81IApY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=3T-5H81IApY"
+  },
+  "https://www.youtube.com/watch?v=3WIxtVtK8So&t=42s": {
+   "checked_url": "https://www.youtube.com/watch?v=3WIxtVtK8So&t=42s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=3WIxtVtK8So&t=42s"
+  },
+  "https://www.youtube.com/watch?v=3kSTjgCx2Us": {
+   "checked_url": "https://www.youtube.com/watch?v=3kSTjgCx2Us",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=3kSTjgCx2Us"
+  },
+  "https://www.youtube.com/watch?v=477fu2Agv8Y": {
+   "checked_url": "https://www.youtube.com/watch?v=477fu2Agv8Y",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=477fu2Agv8Y"
+  },
+  "https://www.youtube.com/watch?v=48eQ5LCCYGg": {
+   "checked_url": "https://www.youtube.com/watch?v=48eQ5LCCYGg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=48eQ5LCCYGg"
+  },
+  "https://www.youtube.com/watch?v=4CWRIKEmFvM": {
+   "checked_url": "https://www.youtube.com/watch?v=4CWRIKEmFvM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=4CWRIKEmFvM"
+  },
+  "https://www.youtube.com/watch?v=4jl_txxYQEA&t=120s": {
+   "checked_url": "https://www.youtube.com/watch?v=4jl_txxYQEA&t=120s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=4jl_txxYQEA&t=120s"
+  },
+  "https://www.youtube.com/watch?v=4m5Ym-X3sNk": {
+   "checked_url": "https://www.youtube.com/watch?v=4m5Ym-X3sNk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=4m5Ym-X3sNk"
+  },
+  "https://www.youtube.com/watch?v=57zi0bv9uKs": {
+   "checked_url": "https://www.youtube.com/watch?v=57zi0bv9uKs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=57zi0bv9uKs"
+  },
+  "https://www.youtube.com/watch?v=5FK9tWT5pA4": {
+   "checked_url": "https://www.youtube.com/watch?v=5FK9tWT5pA4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=5FK9tWT5pA4"
+  },
+  "https://www.youtube.com/watch?v=5JZU5SrJYWM": {
+   "checked_url": "https://www.youtube.com/watch?v=5JZU5SrJYWM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=5JZU5SrJYWM"
+  },
+  "https://www.youtube.com/watch?v=5YBqz2vwjus": {
+   "checked_url": "https://www.youtube.com/watch?v=5YBqz2vwjus",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=5YBqz2vwjus"
+  },
+  "https://www.youtube.com/watch?v=5fFKuODpkmI": {
+   "checked_url": "https://www.youtube.com/watch?v=5fFKuODpkmI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=5fFKuODpkmI"
+  },
+  "https://www.youtube.com/watch?v=5sdLFTsiK1k": {
+   "checked_url": "https://www.youtube.com/watch?v=5sdLFTsiK1k",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=5sdLFTsiK1k"
+  },
+  "https://www.youtube.com/watch?v=5ul2n9yM-4c": {
+   "checked_url": "https://www.youtube.com/watch?v=5ul2n9yM-4c",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=5ul2n9yM-4c"
+  },
+  "https://www.youtube.com/watch?v=6VsI6Psae4Y": {
+   "checked_url": "https://www.youtube.com/watch?v=6VsI6Psae4Y",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=6VsI6Psae4Y"
+  },
+  "https://www.youtube.com/watch?v=6gt0X-27GXM": {
+   "checked_url": "https://www.youtube.com/watch?v=6gt0X-27GXM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=6gt0X-27GXM"
+  },
+  "https://www.youtube.com/watch?v=6hpBhKtcUfE": {
+   "checked_url": "https://www.youtube.com/watch?v=6hpBhKtcUfE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=6hpBhKtcUfE"
+  },
+  "https://www.youtube.com/watch?v=76By9DVRCcY": {
+   "checked_url": "https://www.youtube.com/watch?v=76By9DVRCcY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=76By9DVRCcY"
+  },
+  "https://www.youtube.com/watch?v=78psLr20YSo": {
+   "checked_url": "https://www.youtube.com/watch?v=78psLr20YSo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=78psLr20YSo"
+  },
+  "https://www.youtube.com/watch?v=7KEh86_1kq4": {
+   "checked_url": "https://www.youtube.com/watch?v=7KEh86_1kq4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=7KEh86_1kq4"
+  },
+  "https://www.youtube.com/watch?v=7ZEYPp4QGkg": {
+   "checked_url": "https://www.youtube.com/watch?v=7ZEYPp4QGkg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=7ZEYPp4QGkg"
+  },
+  "https://www.youtube.com/watch?v=7fdYFb5uo7o": {
+   "checked_url": "https://www.youtube.com/watch?v=7fdYFb5uo7o",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=7fdYFb5uo7o"
+  },
+  "https://www.youtube.com/watch?v=7iFzIMZRsoI": {
+   "checked_url": "https://www.youtube.com/watch?v=7iFzIMZRsoI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=7iFzIMZRsoI"
+  },
+  "https://www.youtube.com/watch?v=7klSOTFp5ZI": {
+   "checked_url": "https://www.youtube.com/watch?v=7klSOTFp5ZI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=7klSOTFp5ZI"
+  },
+  "https://www.youtube.com/watch?v=7xjImFKyEY4": {
+   "checked_url": "https://www.youtube.com/watch?v=7xjImFKyEY4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=7xjImFKyEY4"
+  },
+  "https://www.youtube.com/watch?v=81208rRvvsE": {
+   "checked_url": "https://www.youtube.com/watch?v=81208rRvvsE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=81208rRvvsE"
+  },
+  "https://www.youtube.com/watch?v=8IJEKUwAZMA": {
+   "checked_url": "https://www.youtube.com/watch?v=8IJEKUwAZMA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=8IJEKUwAZMA"
+  },
+  "https://www.youtube.com/watch?v=8QFUvpH5MC4": {
+   "checked_url": "https://www.youtube.com/watch?v=8QFUvpH5MC4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=8QFUvpH5MC4"
+  },
+  "https://www.youtube.com/watch?v=8ecqxHltdjI": {
+   "checked_url": "https://www.youtube.com/watch?v=8ecqxHltdjI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=8ecqxHltdjI"
+  },
+  "https://www.youtube.com/watch?v=8navgU8-tw0": {
+   "checked_url": "https://www.youtube.com/watch?v=8navgU8-tw0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=8navgU8-tw0"
+  },
+  "https://www.youtube.com/watch?v=9CIAGB2TVsM": {
+   "checked_url": "https://www.youtube.com/watch?v=9CIAGB2TVsM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=9CIAGB2TVsM"
+  },
+  "https://www.youtube.com/watch?v=9TSJRM7iPEI": {
+   "checked_url": "https://www.youtube.com/watch?v=9TSJRM7iPEI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=9TSJRM7iPEI"
+  },
+  "https://www.youtube.com/watch?v=9WjSjFM4EmM": {
+   "checked_url": "https://www.youtube.com/watch?v=9WjSjFM4EmM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=9WjSjFM4EmM"
+  },
+  "https://www.youtube.com/watch?v=9apG1ILx_PY": {
+   "checked_url": "https://www.youtube.com/watch?v=9apG1ILx_PY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=9apG1ILx_PY"
+  },
+  "https://www.youtube.com/watch?v=9rCzI3ldL1w": {
+   "checked_url": "https://www.youtube.com/watch?v=9rCzI3ldL1w",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=9rCzI3ldL1w"
+  },
+  "https://www.youtube.com/watch?v=AEOt0T6dg5Q": {
+   "checked_url": "https://www.youtube.com/watch?v=AEOt0T6dg5Q",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=AEOt0T6dg5Q"
+  },
+  "https://www.youtube.com/watch?v=AS4zC0Vkgvs": {
+   "checked_url": "https://www.youtube.com/watch?v=AS4zC0Vkgvs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=AS4zC0Vkgvs"
+  },
+  "https://www.youtube.com/watch?v=Aa8JUl824Cc": {
+   "checked_url": "https://www.youtube.com/watch?v=Aa8JUl824Cc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Aa8JUl824Cc"
+  },
+  "https://www.youtube.com/watch?v=AtV7-V1i938": {
+   "checked_url": "https://www.youtube.com/watch?v=AtV7-V1i938",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=AtV7-V1i938"
+  },
+  "https://www.youtube.com/watch?v=BMdI1rCgT68": {
+   "checked_url": "https://www.youtube.com/watch?v=BMdI1rCgT68",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=BMdI1rCgT68"
+  },
+  "https://www.youtube.com/watch?v=BRot9En8wlc": {
+   "checked_url": "https://www.youtube.com/watch?v=BRot9En8wlc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=BRot9En8wlc"
+  },
+  "https://www.youtube.com/watch?v=C37pQA0073g": {
+   "checked_url": "https://www.youtube.com/watch?v=C37pQA0073g",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=C37pQA0073g"
+  },
+  "https://www.youtube.com/watch?v=CUYALZ6AKHg": {
+   "checked_url": "https://www.youtube.com/watch?v=CUYALZ6AKHg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=CUYALZ6AKHg"
+  },
+  "https://www.youtube.com/watch?v=CdamJB0mYEQ": {
+   "checked_url": "https://www.youtube.com/watch?v=CdamJB0mYEQ",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=CdamJB0mYEQ"
+  },
+  "https://www.youtube.com/watch?v=CjCMa3OSLOM": {
+   "checked_url": "https://www.youtube.com/watch?v=CjCMa3OSLOM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=CjCMa3OSLOM"
+  },
+  "https://www.youtube.com/watch?v=CqPQVeIo_QE": {
+   "checked_url": "https://www.youtube.com/watch?v=CqPQVeIo_QE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=CqPQVeIo_QE"
+  },
+  "https://www.youtube.com/watch?v=D5eALDaTIIM": {
+   "checked_url": "https://www.youtube.com/watch?v=D5eALDaTIIM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=D5eALDaTIIM"
+  },
+  "https://www.youtube.com/watch?v=DPNopmfKj98": {
+   "checked_url": "https://www.youtube.com/watch?v=DPNopmfKj98",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=DPNopmfKj98"
+  },
+  "https://www.youtube.com/watch?v=DbCrgCrBYi4": {
+   "checked_url": "https://www.youtube.com/watch?v=DbCrgCrBYi4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=DbCrgCrBYi4"
+  },
+  "https://www.youtube.com/watch?v=E2CRx0OPp6s": {
+   "checked_url": "https://www.youtube.com/watch?v=E2CRx0OPp6s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=E2CRx0OPp6s"
+  },
+  "https://www.youtube.com/watch?v=EIwrw4xyT1E": {
+   "checked_url": "https://www.youtube.com/watch?v=EIwrw4xyT1E",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=EIwrw4xyT1E"
+  },
+  "https://www.youtube.com/watch?v=Ed5lFU86-sM": {
+   "checked_url": "https://www.youtube.com/watch?v=Ed5lFU86-sM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Ed5lFU86-sM"
+  },
+  "https://www.youtube.com/watch?v=Ei3NrFvInTw": {
+   "checked_url": "https://www.youtube.com/watch?v=Ei3NrFvInTw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Ei3NrFvInTw"
+  },
+  "https://www.youtube.com/watch?v=Enn4MIQLrHE": {
+   "checked_url": "https://www.youtube.com/watch?v=Enn4MIQLrHE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Enn4MIQLrHE"
+  },
+  "https://www.youtube.com/watch?v=F0tyPcxuhpo": {
+   "checked_url": "https://www.youtube.com/watch?v=F0tyPcxuhpo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=F0tyPcxuhpo"
+  },
+  "https://www.youtube.com/watch?v=F2SU8ixnBss": {
+   "checked_url": "https://www.youtube.com/watch?v=F2SU8ixnBss",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=F2SU8ixnBss"
+  },
+  "https://www.youtube.com/watch?v=FBK_T4lE8hw": {
+   "checked_url": "https://www.youtube.com/watch?v=FBK_T4lE8hw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=FBK_T4lE8hw"
+  },
+  "https://www.youtube.com/watch?v=FKq1NNJz154": {
+   "checked_url": "https://www.youtube.com/watch?v=FKq1NNJz154",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=FKq1NNJz154"
+  },
+  "https://www.youtube.com/watch?v=FLxYl9HAx-Y": {
+   "checked_url": "https://www.youtube.com/watch?v=FLxYl9HAx-Y",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=FLxYl9HAx-Y"
+  },
+  "https://www.youtube.com/watch?v=FZtc7oweNsY": {
+   "checked_url": "https://www.youtube.com/watch?v=FZtc7oweNsY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=FZtc7oweNsY"
+  },
+  "https://www.youtube.com/watch?v=FcV-MWm3tBw": {
+   "checked_url": "https://www.youtube.com/watch?v=FcV-MWm3tBw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=FcV-MWm3tBw"
+  },
+  "https://www.youtube.com/watch?v=Fd5iXbLEVCI": {
+   "checked_url": "https://www.youtube.com/watch?v=Fd5iXbLEVCI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Fd5iXbLEVCI"
+  },
+  "https://www.youtube.com/watch?v=G-amYDmTGHM": {
+   "checked_url": "https://www.youtube.com/watch?v=G-amYDmTGHM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=G-amYDmTGHM"
+  },
+  "https://www.youtube.com/watch?v=GGcUVAeYuEw": {
+   "checked_url": "https://www.youtube.com/watch?v=GGcUVAeYuEw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=GGcUVAeYuEw"
+  },
+  "https://www.youtube.com/watch?v=GHpBiaNjHJ0": {
+   "checked_url": "https://www.youtube.com/watch?v=GHpBiaNjHJ0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=GHpBiaNjHJ0"
+  },
+  "https://www.youtube.com/watch?v=GM3v0esGq1E": {
+   "checked_url": "https://www.youtube.com/watch?v=GM3v0esGq1E",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=GM3v0esGq1E"
+  },
+  "https://www.youtube.com/watch?v=GYURYVdS4p0": {
+   "checked_url": "https://www.youtube.com/watch?v=GYURYVdS4p0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=GYURYVdS4p0"
+  },
+  "https://www.youtube.com/watch?v=Gku7m8XQb6w": {
+   "checked_url": "https://www.youtube.com/watch?v=Gku7m8XQb6w",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Gku7m8XQb6w"
+  },
+  "https://www.youtube.com/watch?v=Gr5yLVVe65o": {
+   "checked_url": "https://www.youtube.com/watch?v=Gr5yLVVe65o",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Gr5yLVVe65o"
+  },
+  "https://www.youtube.com/watch?v=GyPHiQfgQAc": {
+   "checked_url": "https://www.youtube.com/watch?v=GyPHiQfgQAc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=GyPHiQfgQAc"
+  },
+  "https://www.youtube.com/watch?v=H9zIQa4Ek2s": {
+   "checked_url": "https://www.youtube.com/watch?v=H9zIQa4Ek2s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=H9zIQa4Ek2s"
+  },
+  "https://www.youtube.com/watch?v=HN5XXAoWLQM": {
+   "checked_url": "https://www.youtube.com/watch?v=HN5XXAoWLQM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=HN5XXAoWLQM"
+  },
+  "https://www.youtube.com/watch?v=HTnEQ86mDpE": {
+   "checked_url": "https://www.youtube.com/watch?v=HTnEQ86mDpE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=HTnEQ86mDpE"
+  },
+  "https://www.youtube.com/watch?v=HbMhn9HpyNw": {
+   "checked_url": "https://www.youtube.com/watch?v=HbMhn9HpyNw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=HbMhn9HpyNw"
+  },
+  "https://www.youtube.com/watch?v=Hj4O2diqyyk": {
+   "checked_url": "https://www.youtube.com/watch?v=Hj4O2diqyyk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Hj4O2diqyyk"
+  },
+  "https://www.youtube.com/watch?v=Ht9CRLaA8Ro": {
+   "checked_url": "https://www.youtube.com/watch?v=Ht9CRLaA8Ro",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Ht9CRLaA8Ro"
+  },
+  "https://www.youtube.com/watch?v=IAF5N-HwgOc": {
+   "checked_url": "https://www.youtube.com/watch?v=IAF5N-HwgOc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=IAF5N-HwgOc"
+  },
+  "https://www.youtube.com/watch?v=IeYHee-M4T8": {
+   "checked_url": "https://www.youtube.com/watch?v=IeYHee-M4T8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=IeYHee-M4T8"
+  },
+  "https://www.youtube.com/watch?v=Ip3i3jBGVB8": {
+   "checked_url": "https://www.youtube.com/watch?v=Ip3i3jBGVB8",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=Ip3i3jBGVB8"
+  },
+  "https://www.youtube.com/watch?v=JGPApyguM9M": {
+   "checked_url": "https://www.youtube.com/watch?v=JGPApyguM9M",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=JGPApyguM9M"
+  },
+  "https://www.youtube.com/watch?v=JK2aDxLijjw": {
+   "checked_url": "https://www.youtube.com/watch?v=JK2aDxLijjw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=JK2aDxLijjw"
+  },
+  "https://www.youtube.com/watch?v=JMgN_Pq9mm8": {
+   "checked_url": "https://www.youtube.com/watch?v=JMgN_Pq9mm8",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=JMgN_Pq9mm8"
+  },
+  "https://www.youtube.com/watch?v=JSKjAcL3z_A": {
+   "checked_url": "https://www.youtube.com/watch?v=JSKjAcL3z_A",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=JSKjAcL3z_A"
+  },
+  "https://www.youtube.com/watch?v=JXuvecyl6F8": {
+   "checked_url": "https://www.youtube.com/watch?v=JXuvecyl6F8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=JXuvecyl6F8"
+  },
+  "https://www.youtube.com/watch?v=JeKE95V39VU": {
+   "checked_url": "https://www.youtube.com/watch?v=JeKE95V39VU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=JeKE95V39VU"
+  },
+  "https://www.youtube.com/watch?v=JeSveZiLGO0": {
+   "checked_url": "https://www.youtube.com/watch?v=JeSveZiLGO0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=JeSveZiLGO0"
+  },
+  "https://www.youtube.com/watch?v=K14hUE76Xi4": {
+   "checked_url": "https://www.youtube.com/watch?v=K14hUE76Xi4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=K14hUE76Xi4"
+  },
+  "https://www.youtube.com/watch?v=KOOqd1_otLs": {
+   "checked_url": "https://www.youtube.com/watch?v=KOOqd1_otLs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=KOOqd1_otLs"
+  },
+  "https://www.youtube.com/watch?v=KU_BzJYPbjs": {
+   "checked_url": "https://www.youtube.com/watch?v=KU_BzJYPbjs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=KU_BzJYPbjs"
+  },
+  "https://www.youtube.com/watch?v=Ku3hWLXZ4hY": {
+   "checked_url": "https://www.youtube.com/watch?v=Ku3hWLXZ4hY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Ku3hWLXZ4hY"
+  },
+  "https://www.youtube.com/watch?v=L2h302_1m8c": {
+   "checked_url": "https://www.youtube.com/watch?v=L2h302_1m8c",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=L2h302_1m8c"
+  },
+  "https://www.youtube.com/watch?v=LF0E_ccaceg": {
+   "checked_url": "https://www.youtube.com/watch?v=LF0E_ccaceg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=LF0E_ccaceg"
+  },
+  "https://www.youtube.com/watch?v=LkSFIQ72HG4": {
+   "checked_url": "https://www.youtube.com/watch?v=LkSFIQ72HG4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=LkSFIQ72HG4"
+  },
+  "https://www.youtube.com/watch?v=M8ZLBzGm8iQ": {
+   "checked_url": "https://www.youtube.com/watch?v=M8ZLBzGm8iQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=M8ZLBzGm8iQ"
+  },
+  "https://www.youtube.com/watch?v=MGLS_c2lNaM": {
+   "checked_url": "https://www.youtube.com/watch?v=MGLS_c2lNaM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MGLS_c2lNaM"
+  },
+  "https://www.youtube.com/watch?v=MI5x4v19OiE": {
+   "checked_url": "https://www.youtube.com/watch?v=MI5x4v19OiE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MI5x4v19OiE"
+  },
+  "https://www.youtube.com/watch?v=MJkb2bWWILA": {
+   "checked_url": "https://www.youtube.com/watch?v=MJkb2bWWILA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MJkb2bWWILA"
+  },
+  "https://www.youtube.com/watch?v=MaP9YlFdYdY": {
+   "checked_url": "https://www.youtube.com/watch?v=MaP9YlFdYdY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MaP9YlFdYdY"
+  },
+  "https://www.youtube.com/watch?v=MfrrKEKgeLk": {
+   "checked_url": "https://www.youtube.com/watch?v=MfrrKEKgeLk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MfrrKEKgeLk"
+  },
+  "https://www.youtube.com/watch?v=MnUOsPOPWAE": {
+   "checked_url": "https://www.youtube.com/watch?v=MnUOsPOPWAE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MnUOsPOPWAE"
+  },
+  "https://www.youtube.com/watch?v=MrzMNkeAKDM": {
+   "checked_url": "https://www.youtube.com/watch?v=MrzMNkeAKDM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MrzMNkeAKDM"
+  },
+  "https://www.youtube.com/watch?v=MwdM3Z4KbtQ": {
+   "checked_url": "https://www.youtube.com/watch?v=MwdM3Z4KbtQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MwdM3Z4KbtQ"
+  },
+  "https://www.youtube.com/watch?v=MyGcBNLUl_Y": {
+   "checked_url": "https://www.youtube.com/watch?v=MyGcBNLUl_Y",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=MyGcBNLUl_Y"
+  },
+  "https://www.youtube.com/watch?v=N0F1rUF0HNI": {
+   "checked_url": "https://www.youtube.com/watch?v=N0F1rUF0HNI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=N0F1rUF0HNI"
+  },
+  "https://www.youtube.com/watch?v=NBFw7GYlBio": {
+   "checked_url": "https://www.youtube.com/watch?v=NBFw7GYlBio",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=NBFw7GYlBio"
+  },
+  "https://www.youtube.com/watch?v=NEBnrpU29XM": {
+   "checked_url": "https://www.youtube.com/watch?v=NEBnrpU29XM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=NEBnrpU29XM"
+  },
+  "https://www.youtube.com/watch?v=NKXQkIBi29o": {
+   "checked_url": "https://www.youtube.com/watch?v=NKXQkIBi29o",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=NKXQkIBi29o"
+  },
+  "https://www.youtube.com/watch?v=NSy6TmFRsHE": {
+   "checked_url": "https://www.youtube.com/watch?v=NSy6TmFRsHE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=NSy6TmFRsHE"
+  },
+  "https://www.youtube.com/watch?v=NlF7WFgcjnw": {
+   "checked_url": "https://www.youtube.com/watch?v=NlF7WFgcjnw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=NlF7WFgcjnw"
+  },
+  "https://www.youtube.com/watch?v=Nui6UqWmSXM": {
+   "checked_url": "https://www.youtube.com/watch?v=Nui6UqWmSXM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Nui6UqWmSXM"
+  },
+  "https://www.youtube.com/watch?v=OHPs_PdY65g": {
+   "checked_url": "https://www.youtube.com/watch?v=OHPs_PdY65g",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=OHPs_PdY65g"
+  },
+  "https://www.youtube.com/watch?v=OROGtzDGk7c": {
+   "checked_url": "https://www.youtube.com/watch?v=OROGtzDGk7c",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=OROGtzDGk7c"
+  },
+  "https://www.youtube.com/watch?v=OdcrgPysxpg": {
+   "checked_url": "https://www.youtube.com/watch?v=OdcrgPysxpg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=OdcrgPysxpg"
+  },
+  "https://www.youtube.com/watch?v=OgR2FR-e9iE": {
+   "checked_url": "https://www.youtube.com/watch?v=OgR2FR-e9iE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=OgR2FR-e9iE"
+  },
+  "https://www.youtube.com/watch?v=OnI2XjahMnQ": {
+   "checked_url": "https://www.youtube.com/watch?v=OnI2XjahMnQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=OnI2XjahMnQ"
+  },
+  "https://www.youtube.com/watch?v=P7Yb_koYsoA": {
+   "checked_url": "https://www.youtube.com/watch?v=P7Yb_koYsoA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=P7Yb_koYsoA"
+  },
+  "https://www.youtube.com/watch?v=PLEJt8eEyp4": {
+   "checked_url": "https://www.youtube.com/watch?v=PLEJt8eEyp4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=PLEJt8eEyp4"
+  },
+  "https://www.youtube.com/watch?v=PM4Y5m3HziE": {
+   "checked_url": "https://www.youtube.com/watch?v=PM4Y5m3HziE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=PM4Y5m3HziE"
+  },
+  "https://www.youtube.com/watch?v=Pk-G8g3wXOg": {
+   "checked_url": "https://www.youtube.com/watch?v=Pk-G8g3wXOg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Pk-G8g3wXOg"
+  },
+  "https://www.youtube.com/watch?v=Pw9ydMEAaG0": {
+   "checked_url": "https://www.youtube.com/watch?v=Pw9ydMEAaG0",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=Pw9ydMEAaG0"
+  },
+  "https://www.youtube.com/watch?v=Q5KkgEEzUJE": {
+   "checked_url": "https://www.youtube.com/watch?v=Q5KkgEEzUJE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Q5KkgEEzUJE"
+  },
+  "https://www.youtube.com/watch?v=Q5ro2Sle9x0": {
+   "checked_url": "https://www.youtube.com/watch?v=Q5ro2Sle9x0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Q5ro2Sle9x0"
+  },
+  "https://www.youtube.com/watch?v=Q8hZMCS3--A": {
+   "checked_url": "https://www.youtube.com/watch?v=Q8hZMCS3--A",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Q8hZMCS3--A"
+  },
+  "https://www.youtube.com/watch?v=QEwcZX41Xh8": {
+   "checked_url": "https://www.youtube.com/watch?v=QEwcZX41Xh8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=QEwcZX41Xh8"
+  },
+  "https://www.youtube.com/watch?v=QYcALyY32UA": {
+   "checked_url": "https://www.youtube.com/watch?v=QYcALyY32UA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=QYcALyY32UA"
+  },
+  "https://www.youtube.com/watch?v=Qj6zzu_WVE8": {
+   "checked_url": "https://www.youtube.com/watch?v=Qj6zzu_WVE8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Qj6zzu_WVE8"
+  },
+  "https://www.youtube.com/watch?v=Qm9rPtV5-ag": {
+   "checked_url": "https://www.youtube.com/watch?v=Qm9rPtV5-ag",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Qm9rPtV5-ag"
+  },
+  "https://www.youtube.com/watch?v=QoHy-dsaGC4": {
+   "checked_url": "https://www.youtube.com/watch?v=QoHy-dsaGC4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=QoHy-dsaGC4"
+  },
+  "https://www.youtube.com/watch?v=QpjzrbJgs68": {
+   "checked_url": "https://www.youtube.com/watch?v=QpjzrbJgs68",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=QpjzrbJgs68"
+  },
+  "https://www.youtube.com/watch?v=QsPrRzaZUE8": {
+   "checked_url": "https://www.youtube.com/watch?v=QsPrRzaZUE8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=QsPrRzaZUE8"
+  },
+  "https://www.youtube.com/watch?v=R1LGJM1Gn20": {
+   "checked_url": "https://www.youtube.com/watch?v=R1LGJM1Gn20",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=R1LGJM1Gn20"
+  },
+  "https://www.youtube.com/watch?v=RRAmjMUdC_I": {
+   "checked_url": "https://www.youtube.com/watch?v=RRAmjMUdC_I",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=RRAmjMUdC_I"
+  },
+  "https://www.youtube.com/watch?v=SA_ZVq4hM1c": {
+   "checked_url": "https://www.youtube.com/watch?v=SA_ZVq4hM1c",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=SA_ZVq4hM1c"
+  },
+  "https://www.youtube.com/watch?v=SDTGS8WHxqA": {
+   "checked_url": "https://www.youtube.com/watch?v=SDTGS8WHxqA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=SDTGS8WHxqA"
+  },
+  "https://www.youtube.com/watch?v=SMAqe8un7Sw": {
+   "checked_url": "https://www.youtube.com/watch?v=SMAqe8un7Sw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=SMAqe8un7Sw"
+  },
+  "https://www.youtube.com/watch?v=ScQqjpU5Z8c": {
+   "checked_url": "https://www.youtube.com/watch?v=ScQqjpU5Z8c",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ScQqjpU5Z8c"
+  },
+  "https://www.youtube.com/watch?v=SeLQ1sF9Y_c": {
+   "checked_url": "https://www.youtube.com/watch?v=SeLQ1sF9Y_c",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=SeLQ1sF9Y_c"
+  },
+  "https://www.youtube.com/watch?v=SlikDx4IbAw": {
+   "checked_url": "https://www.youtube.com/watch?v=SlikDx4IbAw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=SlikDx4IbAw"
+  },
+  "https://www.youtube.com/watch?v=SxnqN4YKbn8": {
+   "checked_url": "https://www.youtube.com/watch?v=SxnqN4YKbn8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=SxnqN4YKbn8"
+  },
+  "https://www.youtube.com/watch?v=TD6RkIpqSIw": {
+   "checked_url": "https://www.youtube.com/watch?v=TD6RkIpqSIw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=TD6RkIpqSIw"
+  },
+  "https://www.youtube.com/watch?v=TP9gWDOcY9k": {
+   "checked_url": "https://www.youtube.com/watch?v=TP9gWDOcY9k",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=TP9gWDOcY9k"
+  },
+  "https://www.youtube.com/watch?v=TUaDVTxVLI4": {
+   "checked_url": "https://www.youtube.com/watch?v=TUaDVTxVLI4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=TUaDVTxVLI4"
+  },
+  "https://www.youtube.com/watch?v=Td6rEeQS7hM": {
+   "checked_url": "https://www.youtube.com/watch?v=Td6rEeQS7hM",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=Td6rEeQS7hM"
+  },
+  "https://www.youtube.com/watch?v=U7WyvSkJsG8": {
+   "checked_url": "https://www.youtube.com/watch?v=U7WyvSkJsG8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=U7WyvSkJsG8"
+  },
+  "https://www.youtube.com/watch?v=UJef0iblJJg": {
+   "checked_url": "https://www.youtube.com/watch?v=UJef0iblJJg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=UJef0iblJJg"
+  },
+  "https://www.youtube.com/watch?v=UN6I9oHAqZI": {
+   "checked_url": "https://www.youtube.com/watch?v=UN6I9oHAqZI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=UN6I9oHAqZI"
+  },
+  "https://www.youtube.com/watch?v=UuAPjsWqobo": {
+   "checked_url": "https://www.youtube.com/watch?v=UuAPjsWqobo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=UuAPjsWqobo"
+  },
+  "https://www.youtube.com/watch?v=VntDfyQYg9s": {
+   "checked_url": "https://www.youtube.com/watch?v=VntDfyQYg9s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=VntDfyQYg9s"
+  },
+  "https://www.youtube.com/watch?v=Vo-St_VXc20": {
+   "checked_url": "https://www.youtube.com/watch?v=Vo-St_VXc20",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Vo-St_VXc20"
+  },
+  "https://www.youtube.com/watch?v=W1tbmBP2cZ0": {
+   "checked_url": "https://www.youtube.com/watch?v=W1tbmBP2cZ0O.",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": " (trailing characters removed from 'https://www.youtube.com/watch?v=W1tbmBP2cZ0O.')",
+   "repaired_url": "https://www.youtube.com/watch?v=W1tbmBP2cZ0",
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=W1tbmBP2cZ0"
+  },
+  "https://www.youtube.com/watch?v=W5raHArDRCQ": {
+   "checked_url": "https://www.youtube.com/watch?v=W5raHArDRCQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=W5raHArDRCQ"
+  },
+  "https://www.youtube.com/watch?v=WDp5s_z8zlE": {
+   "checked_url": "https://www.youtube.com/watch?v=WDp5s_z8zlE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=WDp5s_z8zlE"
+  },
+  "https://www.youtube.com/watch?v=WFc-dJMgitA": {
+   "checked_url": "https://www.youtube.com/watch?v=WFc-dJMgitA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=WFc-dJMgitA"
+  },
+  "https://www.youtube.com/watch?v=WTgqLP9YNwc": {
+   "checked_url": "https://www.youtube.com/watch?v=WTgqLP9YNwc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=WTgqLP9YNwc"
+  },
+  "https://www.youtube.com/watch?v=W_bj3UR514Y": {
+   "checked_url": "https://www.youtube.com/watch?v=W_bj3UR514Y",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=W_bj3UR514Y"
+  },
+  "https://www.youtube.com/watch?v=WeYMqnPaF9A": {
+   "checked_url": "https://www.youtube.com/watch?v=WeYMqnPaF9A",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=WeYMqnPaF9A"
+  },
+  "https://www.youtube.com/watch?v=XFF-7hV6D9o": {
+   "checked_url": "https://www.youtube.com/watch?v=XFF-7hV6D9o",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=XFF-7hV6D9o"
+  },
+  "https://www.youtube.com/watch?v=XJRFpv5gIdA": {
+   "checked_url": "https://www.youtube.com/watch?v=XJRFpv5gIdA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=XJRFpv5gIdA"
+  },
+  "https://www.youtube.com/watch?v=XMvoShv3RKk": {
+   "checked_url": "https://www.youtube.com/watch?v=XMvoShv3RKk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=XMvoShv3RKk"
+  },
+  "https://www.youtube.com/watch?v=Xc03kOUj98A": {
+   "checked_url": "https://www.youtube.com/watch?v=Xc03kOUj98A",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Xc03kOUj98A"
+  },
+  "https://www.youtube.com/watch?v=YDnz_JzihBU": {
+   "checked_url": "https://www.youtube.com/watch?v=YDnz_JzihBU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=YDnz_JzihBU"
+  },
+  "https://www.youtube.com/watch?v=Z4WQwL65TuI": {
+   "checked_url": "https://www.youtube.com/watch?v=Z4WQwL65TuI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Z4WQwL65TuI"
+  },
+  "https://www.youtube.com/watch?v=ZNgl7BAz2MI": {
+   "checked_url": "https://www.youtube.com/watch?v=ZNgl7BAz2MI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ZNgl7BAz2MI"
+  },
+  "https://www.youtube.com/watch?v=ZOPvZxZLUt8": {
+   "checked_url": "https://www.youtube.com/watch?v=ZOPvZxZLUt8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ZOPvZxZLUt8"
+  },
+  "https://www.youtube.com/watch?v=ZVO-pfU-B7Q": {
+   "checked_url": "https://www.youtube.com/watch?v=ZVO-pfU-B7Q",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ZVO-pfU-B7Q"
+  },
+  "https://www.youtube.com/watch?v=ZcEaf-vQcHc": {
+   "checked_url": "https://www.youtube.com/watch?v=ZcEaf-vQcHc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ZcEaf-vQcHc"
+  },
+  "https://www.youtube.com/watch?v=Zhe5AaZVgmk": {
+   "checked_url": "https://www.youtube.com/watch?v=Zhe5AaZVgmk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Zhe5AaZVgmk"
+  },
+  "https://www.youtube.com/watch?v=Zz-mVllhL7Q": {
+   "checked_url": "https://www.youtube.com/watch?v=Zz-mVllhL7Q",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=Zz-mVllhL7Q"
+  },
+  "https://www.youtube.com/watch?v=_3K26ygyVTI": {
+   "checked_url": "https://www.youtube.com/watch?v=_3K26ygyVTI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=_3K26ygyVTI"
+  },
+  "https://www.youtube.com/watch?v=_4Qt2wtb3aQ": {
+   "checked_url": "https://www.youtube.com/watch?v=_4Qt2wtb3aQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=_4Qt2wtb3aQ"
+  },
+  "https://www.youtube.com/watch?v=_Ycl2a3IzvE": {
+   "checked_url": "https://www.youtube.com/watch?v=_Ycl2a3IzvE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=_Ycl2a3IzvE"
+  },
+  "https://www.youtube.com/watch?v=_s3-Te68H90": {
+   "checked_url": "https://www.youtube.com/watch?v=_s3-Te68H90",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=_s3-Te68H90"
+  },
+  "https://www.youtube.com/watch?v=a2rHoPtRPwM": {
+   "checked_url": "https://www.youtube.com/watch?v=a2rHoPtRPwM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=a2rHoPtRPwM"
+  },
+  "https://www.youtube.com/watch?v=a4M_3KmZGLU": {
+   "checked_url": "https://www.youtube.com/watch?v=a4M_3KmZGLU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=a4M_3KmZGLU"
+  },
+  "https://www.youtube.com/watch?v=aB4wm4vI7sY": {
+   "checked_url": "https://www.youtube.com/watch?v=aB4wm4vI7sY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=aB4wm4vI7sY"
+  },
+  "https://www.youtube.com/watch?v=aNKT6CUiBHI": {
+   "checked_url": "https://www.youtube.com/watch?v=aNKT6CUiBHI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=aNKT6CUiBHI"
+  },
+  "https://www.youtube.com/watch?v=aOGx46_mOmI": {
+   "checked_url": "https://www.youtube.com/watch?v=aOGx46_mOmI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=aOGx46_mOmI"
+  },
+  "https://www.youtube.com/watch?v=aZTaF2KCg-0": {
+   "checked_url": "https://www.youtube.com/watch?v=aZTaF2KCg-0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=aZTaF2KCg-0"
+  },
+  "https://www.youtube.com/watch?v=ajsSvYHN0Oo": {
+   "checked_url": "https://www.youtube.com/watch?v=ajsSvYHN0Oo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ajsSvYHN0Oo"
+  },
+  "https://www.youtube.com/watch?v=apzUshe3VEI": {
+   "checked_url": "https://www.youtube.com/watch?v=apzUshe3VEI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=apzUshe3VEI"
+  },
+  "https://www.youtube.com/watch?v=b86Ub88vIi8": {
+   "checked_url": "https://www.youtube.com/watch?v=b86Ub88vIi8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=b86Ub88vIi8"
+  },
+  "https://www.youtube.com/watch?v=bKTeDNmppPs": {
+   "checked_url": "https://www.youtube.com/watch?v=bKTeDNmppPs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=bKTeDNmppPs"
+  },
+  "https://www.youtube.com/watch?v=bRi4yNu0hms": {
+   "checked_url": "https://www.youtube.com/watch?v=bRi4yNu0hms",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=bRi4yNu0hms"
+  },
+  "https://www.youtube.com/watch?v=bSFoDc1N5us": {
+   "checked_url": "https://www.youtube.com/watch?v=bSFoDc1N5us",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=bSFoDc1N5us"
+  },
+  "https://www.youtube.com/watch?v=bvkBbRBdMTU": {
+   "checked_url": "https://www.youtube.com/watch?v=bvkBbRBdMTU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=bvkBbRBdMTU"
+  },
+  "https://www.youtube.com/watch?v=cGVz2O3SQ9I": {
+   "checked_url": "https://www.youtube.com/watch?v=cGVz2O3SQ9I",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=cGVz2O3SQ9I"
+  },
+  "https://www.youtube.com/watch?v=d97wWFKSOE4": {
+   "checked_url": "https://www.youtube.com/watch?v=d97wWFKSOE4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=d97wWFKSOE4"
+  },
+  "https://www.youtube.com/watch?v=dDPEWwgCg8k": {
+   "checked_url": "https://www.youtube.com/watch?v=dDPEWwgCg8k",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=dDPEWwgCg8k"
+  },
+  "https://www.youtube.com/watch?v=dEBbQUkc9nE": {
+   "checked_url": "https://www.youtube.com/watch?v=dEBbQUkc9nE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=dEBbQUkc9nE"
+  },
+  "https://www.youtube.com/watch?v=dMwcXrB7GhU": {
+   "checked_url": "https://www.youtube.com/watch?v=dMwcXrB7GhU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=dMwcXrB7GhU"
+  },
+  "https://www.youtube.com/watch?v=dhfcutcvsLU": {
+   "checked_url": "https://www.youtube.com/watch?v=dhfcutcvsLU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=dhfcutcvsLU"
+  },
+  "https://www.youtube.com/watch?v=djUm-kcBriM": {
+   "checked_url": "https://www.youtube.com/watch?v=djUm-kcBriM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=djUm-kcBriM"
+  },
+  "https://www.youtube.com/watch?v=djzTTRTFw4A": {
+   "checked_url": "https://www.youtube.com/watch?v=djzTTRTFw4A",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=djzTTRTFw4A"
+  },
+  "https://www.youtube.com/watch?v=e9jdUnUh3XE": {
+   "checked_url": "https://www.youtube.com/watch?v=e9jdUnUh3XE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=e9jdUnUh3XE"
+  },
+  "https://www.youtube.com/watch?v=eR-aeIxdxsw": {
+   "checked_url": "https://www.youtube.com/watch?v=eR-aeIxdxsw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=eR-aeIxdxsw"
+  },
+  "https://www.youtube.com/watch?v=f98KXN8gjaM": {
+   "checked_url": "https://www.youtube.com/watch?v=f98KXN8gjaM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=f98KXN8gjaM"
+  },
+  "https://www.youtube.com/watch?v=fEh_jW7e9aU": {
+   "checked_url": "https://www.youtube.com/watch?v=fEh_jW7e9aU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=fEh_jW7e9aU"
+  },
+  "https://www.youtube.com/watch?v=fc5_XVck_h8": {
+   "checked_url": "https://www.youtube.com/watch?v=fc5_XVck_h8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=fc5_XVck_h8"
+  },
+  "https://www.youtube.com/watch?v=feT1a56P4TA": {
+   "checked_url": "https://www.youtube.com/watch?v=feT1a56P4TA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=feT1a56P4TA"
+  },
+  "https://www.youtube.com/watch?v=fg0bUv0EPH8": {
+   "checked_url": "https://www.youtube.com/watch?v=fg0bUv0EPH8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=fg0bUv0EPH8"
+  },
+  "https://www.youtube.com/watch?v=fimkP4uE6fY": {
+   "checked_url": "https://www.youtube.com/watch?v=fimkP4uE6fY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=fimkP4uE6fY"
+  },
+  "https://www.youtube.com/watch?v=fvfSaRba4GU": {
+   "checked_url": "https://www.youtube.com/watch?v=fvfSaRba4GU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=fvfSaRba4GU"
+  },
+  "https://www.youtube.com/watch?v=g-cJHAcaRkc": {
+   "checked_url": "https://www.youtube.com/watch?v=g-cJHAcaRkc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=g-cJHAcaRkc"
+  },
+  "https://www.youtube.com/watch?v=gGsKDjvwVM8": {
+   "checked_url": "https://www.youtube.com/watch?v=gGsKDjvwVM8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=gGsKDjvwVM8"
+  },
+  "https://www.youtube.com/watch?v=gMXam56pj10": {
+   "checked_url": "https://www.youtube.com/watch?v=gMXam56pj10",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=gMXam56pj10"
+  },
+  "https://www.youtube.com/watch?v=gstyJ99tHro": {
+   "checked_url": "https://www.youtube.com/watch?v=gstyJ99tHro",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=gstyJ99tHro"
+  },
+  "https://www.youtube.com/watch?v=hOBpUZsDOug": {
+   "checked_url": "https://www.youtube.com/watch?v=hOBpUZsDOug",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=hOBpUZsDOug"
+  },
+  "https://www.youtube.com/watch?v=hwSnJAd44e4": {
+   "checked_url": "https://www.youtube.com/watch?v=hwSnJAd44e4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=hwSnJAd44e4"
+  },
+  "https://www.youtube.com/watch?v=i1YhhtejsS4": {
+   "checked_url": "https://www.youtube.com/watch?v=i1YhhtejsS4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=i1YhhtejsS4"
+  },
+  "https://www.youtube.com/watch?v=i6YSzmHyDmc": {
+   "checked_url": "https://www.youtube.com/watch?v=i6YSzmHyDmc",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=i6YSzmHyDmc"
+  },
+  "https://www.youtube.com/watch?v=iaG5p_IH53A": {
+   "checked_url": "https://www.youtube.com/watch?v=iaG5p_IH53A",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=iaG5p_IH53A"
+  },
+  "https://www.youtube.com/watch?v=ihUjH-jkOr4": {
+   "checked_url": "https://www.youtube.com/watch?v=ihUjH-jkOr4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ihUjH-jkOr4"
+  },
+  "https://www.youtube.com/watch?v=jEmCxtiniis": {
+   "checked_url": "https://www.youtube.com/watch?v=jEmCxtiniis",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=jEmCxtiniis"
+  },
+  "https://www.youtube.com/watch?v=jNwiJzXycqw": {
+   "checked_url": "https://www.youtube.com/watch?v=jNwiJzXycqw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=jNwiJzXycqw"
+  },
+  "https://www.youtube.com/watch?v=jTAjtPHxshY": {
+   "checked_url": "https://www.youtube.com/watch?v=jTAjtPHxshY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=jTAjtPHxshY"
+  },
+  "https://www.youtube.com/watch?v=k-AKVEheu4g": {
+   "checked_url": "https://www.youtube.com/watch?v=k-AKVEheu4g",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=k-AKVEheu4g"
+  },
+  "https://www.youtube.com/watch?v=k-iczsoTYTY": {
+   "checked_url": "https://www.youtube.com/watch?v=k-iczsoTYTY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=k-iczsoTYTY"
+  },
+  "https://www.youtube.com/watch?v=k9qtdYZiuhs": {
+   "checked_url": "https://www.youtube.com/watch?v=k9qtdYZiuhs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=k9qtdYZiuhs"
+  },
+  "https://www.youtube.com/watch?v=kVS7cZBojk8": {
+   "checked_url": "https://www.youtube.com/watch?v=kVS7cZBojk8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=kVS7cZBojk8"
+  },
+  "https://www.youtube.com/watch?v=kjdJaO-BNUk": {
+   "checked_url": "https://www.youtube.com/watch?v=kjdJaO-BNUk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=kjdJaO-BNUk"
+  },
+  "https://www.youtube.com/watch?v=kxwn2AmjmLM": {
+   "checked_url": "https://www.youtube.com/watch?v=kxwn2AmjmLM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=kxwn2AmjmLM"
+  },
+  "https://www.youtube.com/watch?v=lH6TqJbG5tw": {
+   "checked_url": "https://www.youtube.com/watch?v=lH6TqJbG5tw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=lH6TqJbG5tw"
+  },
+  "https://www.youtube.com/watch?v=lKq04iO1LM8": {
+   "checked_url": "https://www.youtube.com/watch?v=lKq04iO1LM8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=lKq04iO1LM8"
+  },
+  "https://www.youtube.com/watch?v=lLT3PuB1KHk&t=102s": {
+   "checked_url": "https://www.youtube.com/watch?v=lLT3PuB1KHk&t=102s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=lLT3PuB1KHk&t=102s"
+  },
+  "https://www.youtube.com/watch?v=mUY8GAR4bmU": {
+   "checked_url": "https://www.youtube.com/watch?v=mUY8GAR4bmU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=mUY8GAR4bmU"
+  },
+  "https://www.youtube.com/watch?v=mUjjkAI56qM": {
+   "checked_url": "https://www.youtube.com/watch?v=mUjjkAI56qM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=mUjjkAI56qM"
+  },
+  "https://www.youtube.com/watch?v=mWroJOgGAgM": {
+   "checked_url": "https://www.youtube.com/watch?v=mWroJOgGAgM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=mWroJOgGAgM"
+  },
+  "https://www.youtube.com/watch?v=mkSGgaC12ms": {
+   "checked_url": "https://www.youtube.com/watch?v=mkSGgaC12ms",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=mkSGgaC12ms"
+  },
+  "https://www.youtube.com/watch?v=nGQmSavgSp0": {
+   "checked_url": "https://www.youtube.com/watch?v=nGQmSavgSp0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=nGQmSavgSp0"
+  },
+  "https://www.youtube.com/watch?v=nHKYplECais": {
+   "checked_url": "https://www.youtube.com/watch?v=nHKYplECais",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=nHKYplECais"
+  },
+  "https://www.youtube.com/watch?v=naVtU6ENOwk": {
+   "checked_url": "https://www.youtube.com/watch?v=naVtU6ENOwk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=naVtU6ENOwk"
+  },
+  "https://www.youtube.com/watch?v=niuYzXfCwS4": {
+   "checked_url": "https://www.youtube.com/watch?v=niuYzXfCwS4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=niuYzXfCwS4"
+  },
+  "https://www.youtube.com/watch?v=njT5pod2PZI": {
+   "checked_url": "https://www.youtube.com/watch?v=njT5pod2PZI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=njT5pod2PZI"
+  },
+  "https://www.youtube.com/watch?v=o2xizNnNoUs": {
+   "checked_url": "https://www.youtube.com/watch?v=o2xizNnNoUs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=o2xizNnNoUs"
+  },
+  "https://www.youtube.com/watch?v=o6lpDsBYX6A&t=250s": {
+   "checked_url": "https://www.youtube.com/watch?v=o6lpDsBYX6A&t=250s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=o6lpDsBYX6A&t=250s"
+  },
+  "https://www.youtube.com/watch?v=oOGaSdu9RLE": {
+   "checked_url": "https://www.youtube.com/watch?v=oOGaSdu9RLE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=oOGaSdu9RLE"
+  },
+  "https://www.youtube.com/watch?v=oarY0cWWiIE": {
+   "checked_url": "https://www.youtube.com/watch?v=oarY0cWWiIE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=oarY0cWWiIE"
+  },
+  "https://www.youtube.com/watch?v=ol7EhKEUiBs": {
+   "checked_url": "https://www.youtube.com/watch?v=ol7EhKEUiBs",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ol7EhKEUiBs"
+  },
+  "https://www.youtube.com/watch?v=owKFlNU_T5w": {
+   "checked_url": "https://www.youtube.com/watch?v=owKFlNU_T5w",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=owKFlNU_T5w"
+  },
+  "https://www.youtube.com/watch?v=p0LvUupcJ98": {
+   "checked_url": "https://www.youtube.com/watch?v=p0LvUupcJ98",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=p0LvUupcJ98"
+  },
+  "https://www.youtube.com/watch?v=p5r-Hayo40Q": {
+   "checked_url": "https://www.youtube.com/watch?v=p5r-Hayo40Q",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=p5r-Hayo40Q"
+  },
+  "https://www.youtube.com/watch?v=pFinPN1PunU": {
+   "checked_url": "https://www.youtube.com/watch?v=pFinPN1PunU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=pFinPN1PunU"
+  },
+  "https://www.youtube.com/watch?v=pSTZjVEGf8A": {
+   "checked_url": "https://www.youtube.com/watch?v=pSTZjVEGf8A",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=pSTZjVEGf8A"
+  },
+  "https://www.youtube.com/watch?v=pc-dsH21d_E": {
+   "checked_url": "https://www.youtube.com/watch?v=pc-dsH21d_E",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=pc-dsH21d_E"
+  },
+  "https://www.youtube.com/watch?v=podk5P3msmk": {
+   "checked_url": "https://www.youtube.com/watch?v=podk5P3msmk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=podk5P3msmk"
+  },
+  "https://www.youtube.com/watch?v=ptNLWuZF84s": {
+   "checked_url": "https://www.youtube.com/watch?v=ptNLWuZF84s",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ptNLWuZF84s"
+  },
+  "https://www.youtube.com/watch?v=qTrPgxuT1k0": {
+   "checked_url": "https://www.youtube.com/watch?v=qTrPgxuT1k0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=qTrPgxuT1k0"
+  },
+  "https://www.youtube.com/watch?v=qnF8yIIxHpU": {
+   "checked_url": "https://www.youtube.com/watch?v=qnF8yIIxHpU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=qnF8yIIxHpU"
+  },
+  "https://www.youtube.com/watch?v=qozbxgBY-OQ": {
+   "checked_url": "https://www.youtube.com/watch?v=qozbxgBY-OQ",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=qozbxgBY-OQ"
+  },
+  "https://www.youtube.com/watch?v=r8SFvsix_AE": {
+   "checked_url": "https://www.youtube.com/watch?v=r8SFvsix_AE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=r8SFvsix_AE"
+  },
+  "https://www.youtube.com/watch?v=rujqtgnPArU": {
+   "checked_url": "https://www.youtube.com/watch?v=rujqtgnPArU",
+   "host": "www.youtube.com",
+   "oembed": 401,
+   "playability": "OK",
+   "playable_in_embed": "false",
+   "reason": "",
+   "status": "link_only",
+   "url": "https://www.youtube.com/watch?v=rujqtgnPArU"
+  },
+  "https://www.youtube.com/watch?v=sg3EyrpAyPo": {
+   "checked_url": "https://www.youtube.com/watch?v=sg3EyrpAyPo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=sg3EyrpAyPo"
+  },
+  "https://www.youtube.com/watch?v=sijm9jM8dA4": {
+   "checked_url": "https://www.youtube.com/watch?v=sijm9jM8dA4",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=sijm9jM8dA4"
+  },
+  "https://www.youtube.com/watch?v=snRmp_wZWls": {
+   "checked_url": "https://www.youtube.com/watch?v=snRmp_wZWls",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=snRmp_wZWls"
+  },
+  "https://www.youtube.com/watch?v=ssEZWMsQg_8": {
+   "checked_url": "https://www.youtube.com/watch?v=ssEZWMsQg_8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ssEZWMsQg_8"
+  },
+  "https://www.youtube.com/watch?v=tAOkW12SBL8": {
+   "checked_url": "https://www.youtube.com/watch?v=tAOkW12SBL8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=tAOkW12SBL8"
+  },
+  "https://www.youtube.com/watch?v=tEagwzRFkIM": {
+   "checked_url": "https://www.youtube.com/watch?v=tEagwzRFkIM",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=tEagwzRFkIM"
+  },
+  "https://www.youtube.com/watch?v=tQc-cbkv6dI": {
+   "checked_url": "https://www.youtube.com/watch?v=tQc-cbkv6dI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=tQc-cbkv6dI"
+  },
+  "https://www.youtube.com/watch?v=tUUYj2xiiX0": {
+   "checked_url": "https://www.youtube.com/watch?v=tUUYj2xiiX0",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=tUUYj2xiiX0"
+  },
+  "https://www.youtube.com/watch?v=tYgQ8vvpoic": {
+   "checked_url": "https://www.youtube.com/watch?v=tYgQ8vvpoic",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=tYgQ8vvpoic"
+  },
+  "https://www.youtube.com/watch?v=u-hzRex24Xg": {
+   "checked_url": "https://www.youtube.com/watch?v=u-hzRex24Xg",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=u-hzRex24Xg"
+  },
+  "https://www.youtube.com/watch?v=uLka2uN62fo": {
+   "checked_url": "https://www.youtube.com/watch?v=uLka2uN62fo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=uLka2uN62fo"
+  },
+  "https://www.youtube.com/watch?v=uO9RyLlegR8": {
+   "checked_url": "https://www.youtube.com/watch?v=uO9RyLlegR8",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=uO9RyLlegR8"
+  },
+  "https://www.youtube.com/watch?v=uapP1yldldk": {
+   "checked_url": "https://www.youtube.com/watch?v=uapP1yldldk",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=uapP1yldldk"
+  },
+  "https://www.youtube.com/watch?v=ufzkHrLFZFw": {
+   "checked_url": "https://www.youtube.com/watch?v=ufzkHrLFZFw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ufzkHrLFZFw"
+  },
+  "https://www.youtube.com/watch?v=ukGhodFAP9w": {
+   "checked_url": "https://www.youtube.com/watch?v=ukGhodFAP9w",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=ukGhodFAP9w"
+  },
+  "https://www.youtube.com/watch?v=uul07yatpNo": {
+   "checked_url": "https://www.youtube.com/watch?v=uul07yatpNo",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=uul07yatpNo"
+  },
+  "https://www.youtube.com/watch?v=vGs9SZp27gU": {
+   "checked_url": "https://www.youtube.com/watch?v=vGs9SZp27gU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=vGs9SZp27gU"
+  },
+  "https://www.youtube.com/watch?v=vbT_v5fHxgI": {
+   "checked_url": "https://www.youtube.com/watch?v=vbT_v5fHxgI",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=vbT_v5fHxgI"
+  },
+  "https://www.youtube.com/watch?v=xTq3YnxTVic": {
+   "checked_url": "https://www.youtube.com/watch?v=xTq3YnxTVic",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=xTq3YnxTVic"
+  },
+  "https://www.youtube.com/watch?v=xjiu1eVt6hw": {
+   "checked_url": "https://www.youtube.com/watch?v=xjiu1eVt6hw",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=xjiu1eVt6hw"
+  },
+  "https://www.youtube.com/watch?v=xku3pMkfnlU": {
+   "checked_url": "https://www.youtube.com/watch?v=xku3pMkfnlU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=xku3pMkfnlU"
+  },
+  "https://www.youtube.com/watch?v=xu08nwgGNFc": {
+   "checked_url": "https://www.youtube.com/watch?v=xu08nwgGNFc",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=xu08nwgGNFc"
+  },
+  "https://www.youtube.com/watch?v=yGIIJFA4zrU": {
+   "checked_url": "https://www.youtube.com/watch?v=yGIIJFA4zrU",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=yGIIJFA4zrU"
+  },
+  "https://www.youtube.com/watch?v=yOLEUZK4j80": {
+   "checked_url": "https://www.youtube.com/watch?v=yOLEUZK4j80",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=yOLEUZK4j80"
+  },
+  "https://www.youtube.com/watch?v=zOmzUrpSPcY": {
+   "checked_url": "https://www.youtube.com/watch?v=zOmzUrpSPcY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=zOmzUrpSPcY"
+  },
+  "https://www.youtube.com/watch?v=zULd933VRUA": {
+   "checked_url": "https://www.youtube.com/watch?v=zULd933VRUA",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=zULd933VRUA"
+  },
+  "https://www.youtube.com/watch?v=z_w86tx64IY": {
+   "checked_url": "https://www.youtube.com/watch?v=z_w86tx64IY",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=z_w86tx64IY"
+  },
+  "https://www.youtube.com/watch?v=zkeB25ULJSE": {
+   "checked_url": "https://www.youtube.com/watch?v=zkeB25ULJSE",
+   "host": "www.youtube.com",
+   "oembed": 200,
+   "playability": null,
+   "playable_in_embed": null,
+   "reason": null,
+   "status": "ok",
+   "url": "https://www.youtube.com/watch?v=zkeB25ULJSE"
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Disco casi circular formado por las aletas pectorales",
+      "Dorso pardo claro con cinco ocelos azules (pueden ser de 0 a 9)",
+      "Cola corta y gruesa con dos dorsales de tamaño parecido y una caudal grande",
+      "Pequeñas protuberancias en el borde de los espiráculos",
+      "Órganos eléctricos visibles bajo la piel a ambos lados de la cabeza"
+    ],
+    "en": [
+      "Nearly circular disc formed by the pectoral fins",
+      "Light brown back with five blue eyespots (0 to 9 possible)",
+      "Short, thick tail with two dorsal fins of similar size and a large caudal fin",
+      "Small knobs on the rims of the spiracles",
+      "Electric organs visible under the skin on either side of the head"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Dasyatis pastinaca",
+      "es": "La pastinaca tiene el disco en rombo y una cola larga en látigo con aguijón, sin ocelos azules.",
+      "en": "The common stingray has a diamond-shaped disc and a long whip tail with a spine, and no blue eyespots."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras alcanzan mayor tamaño que los machos y tienen la cola algo más corta.",
+    "en": "Females grow larger than males and have slightly shorter tails."
+  },
+  "etymology": {
+    "es": "Torpedo era el nombre romano de las rayas eléctricas, del latín torpere, «entumecerse».",
+    "en": "Torpedo was the Roman name for electric rays, from Latin torpere, 'to be numb'."
+  },
+  "trivia": {
+    "es": [
+      "Puede dar descargas eléctricas de hasta 200 voltios."
+    ],
+    "en": [
+      "It can deliver electric shocks of up to 200 volts."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Torpedo torpedo",
+      "url": "https://es.wikipedia.org/wiki/Torpedo_torpedo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common torpedo",
+      "url": "https://en.wikipedia.org/wiki/Common_torpedo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common stingray",
+      "url": "https://en.wikipedia.org/wiki/Common_stingray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

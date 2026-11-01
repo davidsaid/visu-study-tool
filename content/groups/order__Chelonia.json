@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Tortugas (orden Testudines o Chelonia): reptiles con un caparazón que se forma sobre todo a partir de las costillas, con unas 360 especies terrestres, de agua dulce y marinas. En el bestiario hay siete, entre ellas la tortuga boba, la tortuga laúd, la tortuga mora, el galápago leproso y la tortuga gigante de las Galápagos.",
+    "en": "Turtles (order Testudines or Chelonia): reptiles with a shell built mainly from the ribs, with about 360 terrestrial, freshwater and marine species. The bestiary has seven, including the loggerhead, the leatherback, the spur-thighed tortoise, the Mediterranean pond turtle and the Galápagos giant tortoise."
+  },
+  "traits": {
+    "es": [
+      "Caparazón óseo: espaldar abombado arriba y peto más plano abajo, cubiertos de escudos de queratina",
+      "Columna vertebral soldada en gran parte al espaldar",
+      "Sin dientes: pico córneo que recubre las mandíbulas",
+      "Cuello retráctil, en dos modalidades: de lado (pleurodiros) o en vertical hacia dentro (criptodiros)"
+    ],
+    "en": [
+      "Bony shell: a domed carapace above and a flatter plastron below, covered by keratin scutes",
+      "Much of the backbone fused to the carapace",
+      "No teeth: a horny beak covers the jaws",
+      "Retractable neck, in two styles: sideways (side-necked) or straight back (hidden-necked)"
+    ]
+  },
+  "contrast": {
+    "es": "Pese a su aspecto, son arcosaurios en sentido amplio (Archelosauria): sus parientes vivos más cercanos son los cocodrilos y las aves, no los lagartos.",
+    "en": "Despite their looks they belong to Archelosauria: their closest living relatives are crocodilians and birds, not lizards."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Turtle",
+      "url": "https://en.wikipedia.org/wiki/Turtle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Testudines",
+      "url": "https://es.wikipedia.org/wiki/Testudines",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

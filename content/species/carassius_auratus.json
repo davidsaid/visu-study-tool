@@ -1,0 +1,57 @@
+{
+  "field_marks": {
+    "es": [
+      "Ciprínido pequeño (12–22 cm en libertad) de hocico relativamente puntiagudo",
+      "Los salvajes, pardos; los domésticos, rojos, naranjas, amarillos, blancos, negros o mezclados",
+      "Sin mancha negra en la base de la cola",
+      "Razas con formas de cuerpo y aletas muy variadas (p. ej. colas dobles)"
+    ],
+    "en": [
+      "Small cyprinid (12–22 cm in the wild) with a relatively pointed snout",
+      "Wild fish are brownish; domestic ones red, orange, yellow, white, black or mixed",
+      "No black spot at the base of the tail",
+      "Breeds with very varied body and fin shapes (e.g. double tails)"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cyprinus carpio",
+      "es": "La carpa es mucho mayor y tiene cuatro barbillas en el labio superior.",
+      "en": "The common carp is much larger and has four barbels on the upper lip."
+    },
+    {
+      "binomial": "Carassius carassius",
+      "es": "La carpa crucián tiene el hocico redondeado, es siempre dorado-bronce y de joven tiene una mancha negra en la base de la cola.",
+      "en": "The crucian carp has a rounded snout, is always golden-bronze and has a black tail-base spot when young."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Es una de las especies domésticas de pez más antiguas: se seleccionó por su color en la China imperial hace más de mil años."
+    ],
+    "en": [
+      "It is one of the oldest domesticated fish: it was bred for colour in imperial China over a thousand years ago."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Carassius auratus",
+      "url": "https://es.wikipedia.org/wiki/Carassius_auratus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Goldfish",
+      "url": "https://en.wikipedia.org/wiki/Goldfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Cyprinus carpio",
+      "url": "https://es.wikipedia.org/wiki/Cyprinus_carpio",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

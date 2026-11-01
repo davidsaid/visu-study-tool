@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo cubierto de grandes escamas córneas superpuestas, como una armadura",
+      "Vientre y cara interna de las patas sin escamas",
+      "Cola gruesa y larga, con casi la mitad de las escamas",
+      "Cabeza cónica, ojos pequeños y oscuros y hocico largo",
+      "Patas fuertes con garras afiladas; puede enrollarse en bola"
+    ],
+    "en": [
+      "Body covered in large overlapping keratin scales, like armour",
+      "Belly and inner legs unscaled",
+      "Long, thick tail bearing almost half of the scales",
+      "Cone-shaped head, small dark eyes and long muzzle",
+      "Powerful limbs with sharp claws; can roll into a ball"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Dasypus novemcinctus",
+      "es": "El armadillo tiene un caparazón de placas óseas unidas por bandas flexibles de piel, no escamas superpuestas, y no puede enrollarse en bola.",
+      "en": "The armadillo has a shell of bony plates joined by flexible skin bands, not overlapping scales, and cannot roll into a ball."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser más pequeñas que los machos.",
+    "en": "Females are generally smaller than males."
+  },
+  "sources": [
+    {
+      "title": "Indian pangolin — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Indian_pangolin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Manis crassicaudata — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Manis_crassicaudata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Nine-banded armadillo — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Nine-banded_armadillo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

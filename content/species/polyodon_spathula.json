@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico (rostro) plano y en forma de pala, de un tercio de la longitud del cuerpo",
+      "Piel lisa, sin escamas",
+      "Cuerpo de tiburón con cola heterocerca",
+      "Ojos pequeños y opérculo grande que se estrecha hacia atrás",
+      "Boca grande"
+    ],
+    "en": [
+      "Flat, paddle-shaped snout (rostrum) about a third of the body length",
+      "Smooth, scaleless skin",
+      "Shark-like body with a heterocercal tail",
+      "Small eyes and a large, tapering gill-cover flap",
+      "Large mouth"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Acipenser sturio",
+      "es": "El esturión tiene cinco filas de placas óseas y un hocico puntiagudo con barbillas, no una pala.",
+      "en": "The sturgeon has five rows of bony plates and a pointed snout with barbels, not a paddle."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen vivir más y crecer más que los machos.",
+    "en": "Females typically live longer and grow larger than males."
+  },
+  "etymology": {
+    "es": "Polyodon es un compuesto griego que significa «muchos dientes», quizá inspirado en sus branquispinas en peine.",
+    "en": "Polyodon is a Greek compound meaning 'many-toothed', probably inspired by its comb-like gill rakers."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Polyodon spathula",
+      "url": "https://es.wikipedia.org/wiki/Polyodon_spathula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): American paddlefish",
+      "url": "https://en.wikipedia.org/wiki/American_paddlefish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Acipenser sturio",
+      "url": "https://es.wikipedia.org/wiki/Acipenser_sturio",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

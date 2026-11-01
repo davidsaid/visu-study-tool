@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Culebra robusta de cabeza pequeña y morro agudo",
+      "Adultos pardo amarillentos con dos líneas oscuras paralelas a lo largo del dorso",
+      "Jóvenes grises o amarillentos con manchas negras en forma de «H» que dibujan una escalera de mano",
+      "Línea oscura desde detrás del ojo hasta la comisura; ojo oscuro de pupila redonda"
+    ],
+    "en": [
+      "Robust snake with a small head and a pointed snout",
+      "Adults yellowish-brown with two parallel dark stripes along the back",
+      "Juveniles grey or yellowish with black H-shaped marks forming a ladder pattern",
+      "Dark stripe from behind the eye to the angle of the jaw; dark eye with a round pupil"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Malpolon monspessulanus",
+      "es": "La culebra bastarda tiene una «ceja» supraocular muy saliente y carece de las dos líneas dorsales paralelas.",
+      "en": "The Montpellier snake has a very prominent supraocular 'brow' and lacks the two parallel back stripes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son algo mayores que los machos.",
+    "en": "Females are slightly larger than males."
+  },
+  "trivia": {
+    "es": [
+      "Su nombre común viene del dibujo en escalera de los jóvenes, que se pierde con la edad."
+    ],
+    "en": [
+      "Its common name comes from the juveniles' ladder pattern, which fades with age."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Zamenis scalaris",
+      "url": "https://es.wikipedia.org/wiki/Zamenis_scalaris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Ladder snake",
+      "url": "https://en.wikipedia.org/wiki/Ladder_snake",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Malpolon monspessulanus",
+      "url": "https://es.wikipedia.org/wiki/Malpolon_monspessulanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave alta y grande (100–130 cm), de cuello y patas largos y plumaje gris pizarra",
+      "Frente y loras negruzcas con el píleo desnudo y rojo",
+      "Banda blanca desde detrás del ojo por el cuello; frente del cuello negruzca",
+      "Coberteras alargadas que caen como un «penacho» sobre la cola",
+      "Vuela con el cuello extendido y las alas rectas y planas"
+    ],
+    "en": [
+      "Tall, large bird (100–130 cm) with long neck and legs and slate-grey plumage",
+      "Blackish forehead and lores with a bare red crown",
+      "White stripe from behind the eye down the neck; blackish foreneck",
+      "Elongated coverts drooping over the tail like a bustle",
+      "Flies with neck extended on straight, flat wings"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ardea cinerea",
+      "es": "La garza real vuela con el cuello recogido en S, mientras que la grulla lo lleva extendido; además la garza tiene cabeza blanca con lista negra y pico amarillo en forma de daga.",
+      "en": "The grey heron flies with its neck retracted in an S, whereas the crane extends it; the heron also has a white head with a black stripe and a dagger-like yellow bill."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son algo mayores y más pesados que las hembras.",
+    "en": "Males are slightly larger and heavier than females."
+  },
+  "etymology": {
+    "es": "Grus es la palabra latina para «grulla», de la que también deriva el nombre español.",
+    "en": "Grus is the Latin word for 'crane'."
+  },
+  "trivia": {
+    "es": [
+      "Los juveniles carecen del dibujo del cuello y del penacho, y tienen el píleo emplumado."
+    ],
+    "en": [
+      "Juveniles lack the neck pattern and the drooping plumes, and have a fully feathered crown."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Grus grus",
+      "url": "https://es.wikipedia.org/wiki/Grus_grus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common crane",
+      "url": "https://en.wikipedia.org/wiki/Common_crane",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Ardea cinerea",
+      "url": "https://es.wikipedia.org/wiki/Ardea_cinerea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

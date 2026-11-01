@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Roedor grande con aspecto de liebre: orejas erguidas y patas largas",
+      "Patas traseras más largas y musculosas; pies compactos casi como pezuñas",
+      "Cola corta, aplanada y sin pelo",
+      "Dorso gris con mancha blanca en la grupa separada por una zona negra",
+      "Vientre blanco, flancos y barbilla algo anaranjados"
+    ],
+    "en": [
+      "Large hare-like rodent with upright ears and long legs",
+      "Hind legs longer and more muscular; compressed, almost hoof-like feet",
+      "Short, flattened, hairless tail",
+      "Grey back with a white rump patch separated by a black area",
+      "White belly, somewhat orange flanks and chin"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lepus granatensis",
+      "es": "La mara, aunque parece una liebre, tiene pies casi como pezuñas, cola corta sin pelo y una mancha blanca en la grupa bordeada de negro.",
+      "en": "Though hare-like, the mara has almost hoof-like feet, a short hairless tail and a black-bordered white rump patch."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Es el roedor más veloz: puede alcanzar 45 km/h."
+    ],
+    "en": [
+      "It is the fastest rodent, reaching 45 km/h."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Dolichotis patagonum — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Dolichotis_patagonum",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Patagonian mara — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Patagonian_mara",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

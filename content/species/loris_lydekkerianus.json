@@ -1,0 +1,45 @@
+{
+  "field_marks": {
+    "es": [
+      "Extremidades extremadamente finas y alargadas",
+      "Ojos grandes, muy juntos y dirigidos al frente, rodeados de pelo oscuro",
+      "Franja blanca de pelo entre los ojos",
+      "Pelaje corto gris o rojizo en el dorso y vientre blanco o beis",
+      "Cola vestigial"
+    ],
+    "en": [
+      "Extremely thin, slender limbs",
+      "Large, close-set, forward-facing eyes ringed with dark fur",
+      "White stripe of fur between the eyes",
+      "Short grey or reddish fur on the back and a white or buff belly",
+      "Vestigial tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Loris tardigradus",
+      "es": "El loris esbelto rojo, solo de Sri Lanka, tiene un hocico más puntiagudo que el loris esbelto gris.",
+      "en": "The red slender loris, found only in Sri Lanka, has a more pointed muzzle than the grey slender loris."
+    },
+    {
+      "binomial": "Galago senegalensis",
+      "es": "El gálago tiene cola larga y orejas muy grandes; el loris carece prácticamente de cola.",
+      "en": "The galago has a long tail and very large ears; the loris has almost no tail."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Loris lydekkerianus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Loris_lydekkerianus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Gray slender loris — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Gray_slender_loris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

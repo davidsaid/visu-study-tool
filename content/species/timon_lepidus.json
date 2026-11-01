@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Lagarto muy grande y robusto: 30–60 cm, hasta 90 cm; dos tercios son cola",
+      "Dorso verde, a veces gris o pardo, con punteado negro que puede formar rosetas enlazadas",
+      "Manchas o ocelos azules vivos a lo largo de los flancos",
+      "Collar aserrado bajo la garganta; vientre amarillento o verdoso",
+      "Machos con la cabeza muy ancha; jóvenes con manchas claras bordeadas de negro"
+    ],
+    "en": [
+      "Very large, robust lizard: 30–60 cm, up to 90 cm; two-thirds is tail",
+      "Green back, sometimes grey or brown, with black stippling that may form linked rosettes",
+      "Bright blue spots or ocelli along the flanks",
+      "Serrated collar under the throat; yellowish or greenish belly",
+      "Males have a very broad head; juveniles have pale black-edged spots all over"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Podarcis muralis",
+      "es": "La lagartija roquera es mucho más pequeña (48–68 mm sin cola) y parda o grisácea, sin ocelos azules en hilera en los flancos.",
+      "en": "The common wall lizard is far smaller (48–68 mm without the tail) and brownish or greyish, without rows of blue flank ocelli."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho tiene la cabeza característicamente ancha y es de colores más vivos que la hembra.",
+    "en": "The male has a characteristically broad head and is more brightly coloured than the female."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Ocellated lizard",
+      "url": "https://en.wikipedia.org/wiki/Ocellated_lizard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Timon lepidus",
+      "url": "https://es.wikipedia.org/wiki/Timon_lepidus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Podarcis muralis",
+      "url": "https://es.wikipedia.org/wiki/Podarcis_muralis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Único orden actual de peces pulmonados (dipnoos), con los dipnoos australiano, sudamericanos y africanos; son de agua dulce desde el Carbonífero. En el bestiario: el pez de barro americano (Lepidosiren paradoxa).",
+    "en": "The only living order of lungfishes (dipnoans), with the Australian, South American and African lungfishes; they have lived only in fresh water since the Carboniferous. In the bestiary: the South American lungfish (Lepidosiren paradoxa)."
+  },
+  "traits": {
+    "es": [
+      "Pulmones funcionales: respiran aire de forma obligada",
+      "Aletas pares lobuladas, carnosas",
+      "Pueden estivar, enterrados, cuando se seca el agua",
+      "Orificios nasales que sirven para el olfato, no para respirar"
+    ],
+    "en": [
+      "Working lungs: obligate air-breathers",
+      "Lobed, fleshy paired fins",
+      "Can aestivate, buried, when the water dries up",
+      "Nostrils used for smell, not for breathing"
+    ]
+  },
+  "contrast": {
+    "es": "Son los parientes vivos más cercanos de los tetrápodos. No confundir con el celacanto, marino y de aguas profundas, cuyo pulmón no sirve para respirar.",
+    "en": "They are the closest living relatives of tetrapods. Do not confuse with the coelacanth, a deep-water marine fish whose lung does not work for breathing."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Ceratodontiformes",
+      "url": "https://en.wikipedia.org/wiki/Ceratodontiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Dipnoi",
+      "url": "https://es.wikipedia.org/wiki/Dipnoi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sarcopterygii",
+      "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

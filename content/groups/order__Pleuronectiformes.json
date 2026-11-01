@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Peces planos: platijas, gallos, rodaballos y lenguados, casi todos marinos, que viven tumbados de lado sobre fondos arenosos. Algunas clasificaciones recientes los tratan como suborden (Pleuronectoidei) de los carangiformes. En el bestiario: el rodaballo (Scophthalmus maximus) y el lenguado (Solea solea).",
+    "en": "Flatfishes: flounders, megrims, turbots and soles, nearly all marine, that lie on one side on sandy bottoms. Some recent classifications treat them as a suborder (Pleuronectoidei) of Carangiformes. In the bestiary: the turbot (Scophthalmus maximus) and the common sole (Solea solea)."
+  },
+  "traits": {
+    "es": [
+      "Adultos asimétricos, con los dos ojos en el mismo lado de la cabeza: un ojo «migra» durante la metamorfosis",
+      "Cuerpo comprimido que descansa sobre un costado ciego y sin pigmento; el costado superior, pigmentado, sirve de camuflaje",
+      "Ojos protuberantes",
+      "Aleta dorsal que se prolonga sobre la cabeza"
+    ],
+    "en": [
+      "Asymmetrical adults with both eyes on the same side of the head: one eye 'migrates' during metamorphosis",
+      "Compressed body resting on an unpigmented blind side; the pigmented upper side serves as camouflage",
+      "Protruding eyes",
+      "Dorsal fin extending onto the head"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Flatfish",
+      "url": "https://en.wikipedia.org/wiki/Flatfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Pleuronectiformes",
+      "url": "https://es.wikipedia.org/wiki/Pleuronectiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

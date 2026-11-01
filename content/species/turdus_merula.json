@@ -1,0 +1,67 @@
+{
+  "field_marks": {
+    "es": [
+      "Túrdido mediano (23,5–29 cm) de cola larga",
+      "Macho adulto: plumaje negro brillante",
+      "Macho: pico amarillo anaranjado y anillo ocular amarillo",
+      "Hembra: pardo oscuro, garganta blanquecina parda y pecho algo moteado; pico pardo amarillento apagado",
+      "Jóvenes parecidos a la hembra con motas claras por encima"
+    ],
+    "en": [
+      "Medium-sized thrush (23.5–29 cm) with a long tail",
+      "Adult male: glossy black plumage",
+      "Male: orange-yellow bill and yellow eye-ring",
+      "Female: sooty brown, brownish-white throat and weakly mottled breast; dull yellowish-brown bill",
+      "Juveniles like the female with pale spots above"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sturnus unicolor",
+      "es": "El estornino negro tiene un parecido superficial, pero su cuello y su cola son cortos, sus patas rosadas y su plumaje tiene brillo púrpura o verde.",
+      "en": "The spotless starling bears a superficial resemblance, but has a short neck and tail, pink legs and a purple- or green-glossed plumage."
+    },
+    {
+      "binomial": "Turdus torquatus",
+      "es": "El mirlo capiblanco juvenil puede confundirse con él, pero tiene las alas más pálidas.",
+      "en": "A first-year ring ouzel can be confused with it, but has paler wings."
+    }
+  ],
+  "dimorphism": {
+    "es": "Marcado: el macho es negro con pico amarillo anaranjado; la hembra es pardo oscuro con pico apagado.",
+    "en": "Marked: the male is black with an orange-yellow bill; the female is sooty brown with a dull bill."
+  },
+  "etymology": {
+    "es": "Turdus significa «zorzal» y merula «mirlo» en latín.",
+    "en": "Turdus is Latin for 'thrush' and merula for 'blackbird'."
+  },
+  "trivia": {
+    "es": [
+      "Es una de las especies en que más a menudo se observan individuos albinos o leucísticos («mirlos blancos»)."
+    ],
+    "en": [
+      "It is one of the species most often seen with albino or leucistic plumage ('white blackbirds')."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Turdus merula",
+      "url": "https://es.wikipedia.org/wiki/Turdus_merula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common blackbird",
+      "url": "https://en.wikipedia.org/wiki/Common_blackbird",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Sturnus unicolor",
+      "url": "https://es.wikipedia.org/wiki/Sturnus_unicolor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

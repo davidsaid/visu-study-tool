@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Gacela pequeña y esbelta de color arena o leonado claro",
+      "Vientre blanco bordeado por una franja parda en el flanco, con otra franja arenosa encima",
+      "Frente y cara más oscuras que el cuerpo, con bandas faciales",
+      "Orejas largas",
+      "Cuernos anillados y muy curvados, que se abren y luego giran hacia dentro y adelante en las puntas"
+    ],
+    "en": [
+      "Small, slender gazelle, sandy or pale fawn",
+      "White belly bordered by a brown flank stripe, with a sandy stripe above it",
+      "Forehead and face darker than the body, with facial stripes",
+      "Long ears",
+      "Strongly curved horns that bow outwards, then turn inwards and forwards at the tips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gazella gazella",
+      "es": "La gacela de montaña es mayor, con orejas más cortas y cuernos menos curvados.",
+      "en": "The mountain gazelle is larger, with shorter ears and less strongly curved horns."
+    }
+  ],
+  "etymology": {
+    "es": "Gazella dorcas: dorcas viene del griego antiguo δορκάς (dorkás), que designaba al corzo, la gacela o el antílope.",
+    "en": "Gazella dorcas: dorcas comes from Ancient Greek δορκάς (dorkás), which referred to a roe deer, gazelle or antelope."
+  },
+  "sources": [
+    {
+      "title": "Dorcas gazelle — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Dorcas_gazelle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Gazella dorcas — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Gazella_dorcas",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

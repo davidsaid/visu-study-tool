@@ -1,0 +1,47 @@
+{
+  "field_marks": {
+    "es": [
+      "Rata grande y robusta, de pelaje pardo o gris oscuro y vientre más claro",
+      "Cola escamosa, anillada y algo más corta que la cabeza y el cuerpo",
+      "Hocico romo y orejas cortas",
+      "Puede pesar el doble que una rata negra"
+    ],
+    "en": [
+      "Large, stocky rat with brown or dark grey fur and paler underparts",
+      "Scaly, ringed tail slightly shorter than head and body",
+      "Blunt snout and short ears",
+      "Can weigh twice as much as a black rat"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Rattus rattus",
+      "es": "La rata negra es más pequeña y tiene el hocico más afilado y las orejas más largas.",
+      "en": "The black rat is smaller, with a more pointed snout and longer ears."
+    },
+    {
+      "binomial": "Apodemus sylvaticus",
+      "es": "El ratón de campo es mucho más pequeño, con ojos y orejas grandes y la cola tan larga como el cuerpo.",
+      "en": "The wood mouse is much smaller, with large eyes and ears and a tail as long as its body."
+    }
+  ],
+  "etymology": {
+    "es": "norvegicus («noruego»): Berkenhout creyó que había llegado a Inglaterra en barcos noruegos, aunque no es originaria de Noruega.",
+    "en": "norvegicus ('Norwegian'): Berkenhout believed it had reached England on Norwegian ships, though it does not come from Norway."
+  },
+  "sources": [
+    {
+      "title": "Rattus norvegicus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Rattus_norvegicus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Brown rat — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Brown_rat",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "León marino (otárido) grande, con aletas y pequeñas orejas externas",
+      "El macho adulto tiene una cabeza enorme con hocico corto y respingón",
+      "Melena larga de pelo castaño rojizo en el cuello del macho, que llega a los hombros",
+      "Adultos pardos: el macho pardo oscuro, la hembra casi amarillenta; las crías nacen negras"
+    ],
+    "en": [
+      "Large sea lion (eared seal) with flippers and small external ears",
+      "Adult males have a huge head with a short, upturned snout",
+      "Males carry a long reddish-brown mane on the neck reaching the shoulders",
+      "Adults brownish: males dark brown, females almost yellowish; pups are born black"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Phoca vitulina",
+      "es": "La foca común carece de pabellón auricular, tiene el pelaje moteado y no tiene melena.",
+      "en": "The harbour seal lacks ear flaps, has a spotted coat and no mane."
+    }
+  ],
+  "dimorphism": {
+    "es": "Es uno de los otáridos más dimórficos: el macho pesa unos 350 kg y la hembra unos 150 kg.",
+    "en": "One of the most dimorphic eared seals: males weigh about 350 kg, females about 150 kg."
+  },
+  "sources": [
+    {
+      "title": "Otaria flavescens — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Otaria_flavescens",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "South American sea lion — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/South_American_sea_lion",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

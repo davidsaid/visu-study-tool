@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado y afilado sobre patas cortas y oscuras",
+      "Pelaje largo y áspero de color pardo grisáceo uniforme, moteado",
+      "Cola ancha en la base que acaba en un pincel de pelos negros",
+      "Hocico puntiagudo y orejas cortas y redondeadas",
+      "Pupila horizontal, rara entre los carnívoros"
+    ],
+    "en": [
+      "Long, tapering body on short, dark legs",
+      "Long, coarse, uniformly grizzled grey-brown fur",
+      "Tail broad at the base and ending in a black tuft",
+      "Pointed snout and short, rounded ears",
+      "Horizontal pupil, unusual among carnivores"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Genetta genetta",
+      "es": "La gineta tiene motas negras en el cuerpo y la cola anillada en blanco y negro.",
+      "en": "The genet has black spots on the body and a black-and-white ringed tail."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Fue venerado en el Antiguo Egipto por controlar la población de cocodrilos del Nilo, según Diodoro Sículo."
+    ],
+    "en": [
+      "According to Diodorus Siculus it was revered in ancient Egypt for keeping Nile crocodile numbers down."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Herpestes ichneumon — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Herpestes_ichneumon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Egyptian mongoose — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Egyptian_mongoose",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

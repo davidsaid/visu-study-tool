@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Ganso grande y robusto (74–91 cm) de plumaje gris parduzco",
+      "Pico grueso naranja o rosado con uña blanca o parda",
+      "Patas rosadas",
+      "Ala anterior y obispillo gris pálido, visibles en vuelo",
+      "Bajo cola blanquecino y línea blanca en el flanco superior"
+    ],
+    "en": [
+      "Large, bulky goose (74–91 cm), greyish-brown",
+      "Thick orange or pink bill with a white or brown nail",
+      "Pink legs and feet",
+      "Pale grey forewing and rump, visible in flight",
+      "Whitish undertail and a white line along the upper flank"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Anas platyrhynchos",
+      "es": "El ánade azulón es mucho menor; el macho tiene la cabeza verde y la hembra es parda veteada con pico oscuro y anaranjado.",
+      "en": "The mallard is much smaller; the male has a green head and the female is mottled brown with a dark-and-orange bill."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos suelen ser más grandes que las hembras.",
+    "en": "Males are generally larger than females."
+  },
+  "etymology": {
+    "es": "Tanto el género como el epíteto proceden de anser, «ganso» en latín.",
+    "en": "Both genus and epithet come from anser, Latin for 'goose'."
+  },
+  "trivia": {
+    "es": [
+      "Es el antepasado silvestre de las ocas domésticas europeas, domesticado hace al menos 3000 años en el antiguo Egipto."
+    ],
+    "en": [
+      "It is the wild ancestor of European domestic geese, domesticated at least 3,000 years ago in ancient Egypt."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Anser anser",
+      "url": "https://es.wikipedia.org/wiki/Anser_anser",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Greylag goose",
+      "url": "https://en.wikipedia.org/wiki/Greylag_goose",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Anas platyrhynchos",
+      "url": "https://es.wikipedia.org/wiki/Anas_platyrhynchos",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

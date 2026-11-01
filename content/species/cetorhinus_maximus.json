@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Tamaño gigantesco: el segundo pez más grande, tras el tiburón ballena",
+      "Boca cavernosa que lleva muy abierta, casi redonda, al filtrar en superficie",
+      "Hendiduras branquiales muy largas que casi rodean la cabeza",
+      "Hocico cónico, ganchudo en los jóvenes; caudal en media luna con quilla lateral fuerte",
+      "Pardo oscuro a negro o gris pardo por encima, a menudo con cicatrices; más claro por debajo"
+    ],
+    "en": [
+      "Gigantic size: the second-largest fish, after the whale shark",
+      "Cavernous mouth held wide open, almost round, while filter-feeding at the surface",
+      "Very long gill slits that almost encircle the head",
+      "Conical snout, hooked in young fish; crescent tail with a strong lateral keel",
+      "Dark brown to black or greyish-brown above, often scarred; paler below"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Carcharodon carcharias",
+      "es": "El tiburón blanco tiene grandes dientes aserrados, hendiduras branquiales cortas y no nada con la boca abierta filtrando.",
+      "en": "The white shark has large serrated teeth and short gill slits, and does not swim along filtering with its mouth agape."
+    },
+    {
+      "binomial": "Rhincodon typus",
+      "es": "El tiburón ballena tiene la cabeza ancha y plana y el dorso con manchas y rayas claras.",
+      "en": "The whale shark has a broad, flat head and a back covered in pale spots and stripes."
+    }
+  ],
+  "etymology": {
+    "es": "maximus = «el más grande» en latín; Cetorhinus se publicó sin explicación, pero se supone del gr. kētos (monstruo marino, ballena) + rhinē (tiburón).",
+    "en": "maximus = Latin 'greatest'; Cetorhinus was published without an explanation but is presumed to come from Gk kētos (sea monster, whale) + rhinē (shark)."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Cetorhinus maximus",
+      "url": "https://es.wikipedia.org/wiki/Cetorhinus_maximus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Basking shark",
+      "url": "https://en.wikipedia.org/wiki/Basking_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

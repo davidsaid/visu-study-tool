@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Membrana de piel (patagio) que une cuello, patas y cola, dejando libre solo la cabeza",
+      "Incluso los dedos están unidos por membrana",
+      "Cabeza ancha de hocico corto, algo parecida a la de un perro, con ojos grandes y orejas pequeñas",
+      "Pelaje grisáceo o pardo rojizo con motas blancas en el dorso",
+      "Garras cortas, fuertes y curvas para agarrarse a la corteza"
+    ],
+    "en": [
+      "Skin membrane (patagium) linking neck, limbs and tail, leaving only the head free",
+      "Even the fingers are webbed",
+      "Broad, short-snouted, somewhat dog-like head with big eyes and small ears",
+      "Greyish or reddish-brown fur with white mottling on the back",
+      "Short, strong, curved claws for gripping bark"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Petaurus breviceps",
+      "es": "El petauro del azúcar es mucho más pequeño, con una franja negra dorsal y una cola larga y peluda libre de membrana.",
+      "en": "The sugar glider is much smaller, with a black dorsal stripe and a long, furry tail free of membrane."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son algo más grandes que los machos.",
+    "en": "Females are somewhat larger than males."
+  },
+  "etymology": {
+    "es": "Cynocephalus, del griego kúon («perro») y kephalḗ («cabeza»), por su cabeza ancha de hocico corto.",
+    "en": "Cynocephalus, from Greek kúon ('dog') and kephalḗ ('head'), for its broad, short-snouted head."
+  },
+  "sources": [
+    {
+      "title": "Cynocephalus volans — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Cynocephalus_volans",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Philippine flying lemur — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Philippine_flying_lemur",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,53 @@
+{
+  "field_marks": {
+    "es": [
+      "Único cérvido en el que las hembras pueden tener astas",
+      "Astas de los machos grandes y muy ramificadas",
+      "Pelaje muy espeso que forma una especie de melena en el cuello; corto y oscuro en verano",
+      "Pezuñas anchas en forma de media luna, muy abiertas",
+      "Las poblaciones del norte son más blanquecinas y las del sur, más oscuras"
+    ],
+    "en": [
+      "The only deer in which females may carry antlers",
+      "Males' antlers large and heavily branched",
+      "Very thick coat forming a kind of mane on the neck; short and dark in summer",
+      "Broad, crescent-shaped, widely splayed hooves",
+      "Northern populations are whiter, southern ones darker"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Alces alces",
+      "es": "El alce es mucho mayor, solo el macho tiene astas y estas son anchas y palmeadas.",
+      "en": "The moose is much larger, only the bull has antlers, and these are broad and palmate."
+    },
+    {
+      "binomial": "Cervus elaphus",
+      "es": "En el ciervo solo los machos tienen astas.",
+      "en": "In the red deer only males have antlers."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Al caminar produce un chasquido característico por el movimiento de los tendones."
+    ],
+    "en": [
+      "When walking it makes a crackling sound caused by the movement of its tendons."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Rangifer tarandus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Rangifer_tarandus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Reindeer — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Reindeer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

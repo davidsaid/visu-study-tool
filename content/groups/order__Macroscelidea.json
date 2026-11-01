@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Musarañas elefante o sengis: pequeños mamíferos insectívoros africanos, con 16 especies vivas en una familia. Pese a su nombre, están más emparentados con los elefantes que con las musarañas. En el bestiario: la musaraña elefante rojiza (Elephantulus rufescens).",
+    "en": "Elephant shrews or sengis: small insectivorous African mammals, with 16 living species in one family. Despite the name, they are closer to elephants than to shrews. In the bestiary: the rufous elephant shrew (Elephantulus rufescens)."
+  },
+  "traits": {
+    "es": [
+      "Hocico largo y flexible en forma de pequeña trompa",
+      "Patas, sobre todo las traseras, largas en proporción al cuerpo",
+      "Cola escamosa",
+      "Testículos que no descienden a un escroto"
+    ],
+    "en": [
+      "Long, flexible, trunk-like snout",
+      "Legs, especially the hind legs, long for their size",
+      "Scaly tail",
+      "Testes that do not descend into a scrotum"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las musarañas verdaderas (Soricidae, Eulipotyphla): las musarañas elefante son mayores, tienen patas largas y hocico en trompa, y pertenecen a Afrotheria.",
+    "en": "Do not confuse with true shrews (Soricidae, Eulipotyphla): elephant shrews are larger, long-legged, with a trunk-like snout, and belong to Afrotheria."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Sengi",
+      "url": "https://en.wikipedia.org/wiki/Sengi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Macroscelidea",
+      "url": "https://es.wikipedia.org/wiki/Macroscelidea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

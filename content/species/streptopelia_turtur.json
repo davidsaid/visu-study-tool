@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Tórtola pequeña y esbelta (24–29 cm), de tonos pardos",
+      "Mancha listada de negro y blanco a los lados del cuello",
+      "Alas canela con escamado negro (coberteras de centro negruzco)",
+      "Cabeza y flancos gris azulado, pecho vinoso y vientre blanco",
+      "Patas y piel desnuda alrededor del ojo rojas; cola en cuña con bordes y puntas blancos"
+    ],
+    "en": [
+      "Small, slender dove (24–29 cm), brownish",
+      "Black-and-white striped patch on the neck sides",
+      "Cinnamon wings scaled with black (dark-centred coverts)",
+      "Blue-grey head and flanks, pinkish breast and white belly",
+      "Red legs and eye-ring; wedge-shaped tail with white edges and tips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Columba palumbus",
+      "es": "La paloma torcaz es mucho mayor y robusta, con manchas blancas en el cuello y una franja blanca en el ala.",
+      "en": "The common wood pigeon is much larger and bulkier, with white neck patches and a white wing band."
+    }
+  ],
+  "etymology": {
+    "es": "Streptopelia, del griego streptós «collar» (o «cadena») y péleia «paloma», por las manchas del cuello; turtur es la voz latina onomatopéyica para «tórtola».",
+    "en": "Streptopelia, from Greek streptos 'collar' and peleia 'dove', after the neck markings; turtur is the onomatopoeic Latin word for 'turtle dove'."
+  },
+  "trivia": {
+    "es": [
+      "Los juveniles son más pardos, sin la mancha del cuello y con las patas pardas.",
+      "El «turtle» de su nombre inglés no tiene nada que ver con las tortugas: viene del latín turtur, que imita su arrullo."
+    ],
+    "en": [
+      "Juveniles are browner, lack the neck patch and have brown legs.",
+      "The 'turtle' in its English name has nothing to do with turtles: it comes from Latin turtur, imitating its song."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Streptopelia turtur",
+      "url": "https://es.wikipedia.org/wiki/Streptopelia_turtur",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European turtle dove",
+      "url": "https://en.wikipedia.org/wiki/European_turtle_dove",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Columba palumbus",
+      "url": "https://es.wikipedia.org/wiki/Columba_palumbus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

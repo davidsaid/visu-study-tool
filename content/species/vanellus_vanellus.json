@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Limícola de 28–33 cm, de plumaje blanco y negro con el dorso verdoso irisado",
+      "Larga cresta fina en la cabeza",
+      "Píleo, garganta y pecho negros que contrastan con la cara blanca",
+      "Vientre blanco",
+      "Alas anchas y redondeadas; aleteo lento, como de mariposa, con contraste blanco y negro por debajo"
+    ],
+    "en": [
+      "Wader of 28–33 cm, black and white with a green-glossed back",
+      "Long, thin crest on the head",
+      "Black crown, throat and breast contrasting with a white face",
+      "White belly",
+      "Broad, rounded wings; slow, butterfly-like flapping, black and white from below"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "El macho tiene la cresta más larga y el dibujo de la cabeza más nítido; hembras y jóvenes tienen la cresta más corta.",
+    "en": "The male has a longer crest and crisper head markings; females and young have shorter crests."
+  },
+  "etymology": {
+    "es": "Vanellus es el nombre en latín medieval de la avefría y deriva de vannus, el bieldo o aventador para aventar el grano.",
+    "en": "Vanellus is Medieval Latin for the lapwing and derives from vannus, a winnowing fan."
+  },
+  "trivia": {
+    "es": [
+      "«Avefría» alude a que en España se ve sobre todo de octubre a marzo, en los meses fríos."
+    ],
+    "en": [
+      "The Spanish name 'avefría' ('cold bird') reflects that in Spain it is mainly seen from October to March."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Vanellus vanellus",
+      "url": "https://es.wikipedia.org/wiki/Vanellus_vanellus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Northern lapwing",
+      "url": "https://en.wikipedia.org/wiki/Northern_lapwing",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

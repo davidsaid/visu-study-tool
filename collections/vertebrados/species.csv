@@ -1,0 +1,309 @@
+clase,orden,infraorden,nombre_cientifico,nombre_vulgar
+Myxini,Myxiniformes,,Myxine glutinosa,Mixin
+Hyperoartia,Petromyzontiformes,,Petromyzon marinus,Lamprea de mar
+Hyperoartia,Petromyzontiformes,,Lampetra fluviatilis,Lamprea de río
+Chondrichthyes,Chimaeriformes,,Chimaera monstrosa,Quimera
+Chondrichthyes,Orectolobiformes,,Rhincodon typus,Tiburón ballena
+Chondrichthyes,Lamniformes,,Alopias vulpinus,Pez zorro
+Chondrichthyes,Lamniformes,,Carcharodon carcharias,Tiburón blanco
+Chondrichthyes,Lamniformes,,Isurus oxyrinchus,Marrajo
+Chondrichthyes,Lamniformes,,Cetorhinus maximus,Peregrino
+Chondrichthyes,Lamniformes,,Carcharias taurus,Tiburón toro
+Chondrichthyes,Carcharhiniformes,,Scyliorhinus canicula,Pintarroja
+Chondrichthyes,Carcharhiniformes,,Prionace glauca,Tintorera
+Chondrichthyes,Carcharhiniformes,,Sphyrna zygaena,Pez martillo
+Chondrichthyes,Hexanchiformes,,Hexanchus griseus,Cañabota gris
+Chondrichthyes,Squaliformes,,Squalus acanthias,Mielga
+Chondrichthyes,Squatiniformes,,Squatina squatina,Angelote
+Chondrichthyes,Rajiformes,,Dipturus batis,Raya noruega
+Chondrichthyes,Rhinopristiformes,,Rhinobatos rhinobatos,Pez guitarra
+Chondrichthyes,Torpediniformes,,Torpedo torpedo,Tremielga
+Chondrichthyes,Myliobatiformes,,Dasyatis pastinaca,Pastinaca
+Chondrichthyes,Myliobatiformes,,Mobula mobular,Manta
+Chondrichthyes,Myliobatiformes,,Myliobatis aquila,Águila marina
+Actinopterygii,Polypteriformes,,Polypterus bichir,Bichir
+Actinopterygii,Acipenseriformes,,Acipenser sturio,Esturión
+Actinopterygii,Acipenseriformes,,Polyodon spathula,Pez espátula
+Actinopterygii,Lepisosteiformes,,Lepisosteus osseus,Pez lagarto
+Actinopterygii,Amiiformes,,Amia calva,Pez del cieno
+Actinopterygii,Osteoglossiformes,,Arapaima gigas,Arapaima
+Actinopterygii,Anguilliformes,,Anguilla anguilla,Anguila
+Actinopterygii,Anguilliformes,,Conger conger,Congrio
+Actinopterygii,Anguilliformes,,Muraena helena,Morena
+Actinopterygii,Clupeiformes,,Engraulis encrasicolus,Boquerón
+Actinopterygii,Clupeiformes,,Sardina pilchardus,Sardina
+Actinopterygii,Cypriniformes,,Luciobarbus comizo,Barbo comiza
+Actinopterygii,Cypriniformes,,Cyprinus carpio,Carpa
+Actinopterygii,Cypriniformes,,Carassius auratus,Carpín dorado
+Actinopterygii,Siluriformes,,Silurus glanis,Siluro
+Actinopterygii,Characiformes,,Serrasalmus rhombeus,Piraña negra
+Actinopterygii,Characiformes,,Paracheirodon innesi,Tetra neón
+Actinopterygii,Gymnotiformes,,Electrophorus electricus,Anguila eléctrica
+Actinopterygii,Salmoniformes,,Salmo trutta,Trucha
+Actinopterygii,Salmoniformes,,Salmo salar,Salmón
+Actinopterygii,Salmoniformes,,Oncorhynchus nerka,Salmón rojo
+Actinopterygii,Esociformes,,Esox lucius,Lucio
+Actinopterygii,Lophiiformes,,Lophius piscatorius,Rape
+Actinopterygii,Gadiformes,,Merluccius merluccius,Merluza
+Actinopterygii,Gadiformes,,Gadus morhua,Bacalao
+Actinopterygii,Cyprinodontiformes,,Gambusia affinis,Gambusia
+Actinopterygii,Cyprinodontiformes,,Poecilia reticulata,Guppy
+Actinopterygii,Gasterosteiformes,,Gasterosteus aculeatus,Espinoso
+Actinopterygii,Syngnathiformes,,Hippocampus zosterae,Caballito de mar
+Actinopterygii,Scorpaeniformes,,Scorpaena scrofa,Cabracho
+Actinopterygii,Blenniiformes,,Salaria fluviatilis,Fraile
+Actinopterygii,Carangiformes,,Trachurus trachurus,Jurel
+Actinopterygii,Perciformes,,Mullus barbatus,Salmonete de fango
+Actinopterygii,Perciformes,,Epinephelus marginatus,Mero
+Actinopterygii,Spariformes,,Pagellus bogaraveo,Besugo
+Actinopterygii,Spariformes,,Sparus aurata,Dorada
+Actinopterygii,Moroniformes,,Dicentrarchus labrax,Lubina
+Actinopterygii,Scombriformes,,Scomber scombrus,Caballa
+Actinopterygii,Scombriformes,,Thunnus thynnus,Atún
+Actinopterygii,Scombriformes,,Thunnus alalunga,Bonito
+Actinopterygii,Pleuronectiformes,,Scophthalmus maximus,Rodaballo
+Actinopterygii,Pleuronectiformes,,Solea solea,Lenguado
+Sarcopterygii,Coelacanthiformes,,Latimeria chalumnae,Celacanto
+Sarcopterygii,Ceratodontiformes,,Lepidosiren paradoxa,Pez de barro americano
+Amphibia,Gymnophiona,,Ichthyophis glutinosus,Cecilia de Ceilán
+Amphibia,Caudata,,Andrias davidianus,Salamandra gigante de China
+Amphibia,Caudata,,Chioglossa lusitanica,Salamandra rabilarga
+Amphibia,Caudata,,Pleurodeles waltl,Gallipato
+Amphibia,Caudata,,Salamandra salamandra,Salamandra común
+Amphibia,Caudata,,Lissotriton helveticus,Tritón palmeado
+Amphibia,Caudata,,Lissotriton boscai,Tritón ibérico
+Amphibia,Caudata,,Calotriton asper,Tritón de los Pirineos
+Amphibia,Caudata,,Proteus anguinus,Proteo
+Amphibia,Caudata,,Ambystoma mexicanum,Ajolote
+Amphibia,Salientia,,Bufo spinosus,Sapo común ibérico
+Amphibia,Salientia,,Epidalea calamita,Sapo corredor
+Amphibia,Salientia,,Alytes cisternasii,Sapo partero ibérico
+Amphibia,Salientia,,Pelophylax perezi,Rana verde común
+Amphibia,Salientia,,Rana iberica,Rana patilarga
+Amphibia,Salientia,,Hyla molleri,Ranita de San Antonio ibérica
+Amphibia,Salientia,,Rhinoderma darwinii,Sapito de Darwin
+Amphibia,Salientia,,Pipa pipa,Sapo de Surinam
+Amphibia,Salientia,,Dendrobates tinctorius,Rana punta de flecha
+Reptilia,Chelonia,,Nilssonia gangetica,Tortuga de caparazón blando del Ganges
+Reptilia,Chelonia,,Caretta caretta,Tortuga boba
+Reptilia,Chelonia,,Dermochelys coriacea,Tortuga laúd
+Reptilia,Chelonia,,Macrochelys temminckii,Tortuga caimán
+Reptilia,Chelonia,,Testudo graeca,Tortuga mora
+Reptilia,Chelonia,,Mauremys leprosa,Galápago leproso
+Reptilia,Chelonia,,Chelonoidis niger,Tortuga gigante de las Galápagos
+Reptilia,Sphenodontia,,Sphenodon punctatus,Tuátara
+Reptilia,Squamata,,Iguana iguana,Iguana común
+Reptilia,Squamata,,Amblyrhynchus cristatus,Iguana marina
+Reptilia,Squamata,,Agama agama,Agama común
+Reptilia,Squamata,,Chamaeleo chamaeleon,Camaleón común
+Reptilia,Squamata,,Tarentola mauritanica,Salamanquesa común
+Reptilia,Squamata,,Chalcides bedriagai,Eslizón ibérico
+Reptilia,Squamata,,Timon lepidus,Lagarto ocelado ibérico
+Reptilia,Squamata,,Podarcis muralis,Lagartija roquera
+Reptilia,Squamata,,Psammodromus algirus,Lagartija colilarga
+Reptilia,Squamata,,Anguis fragilis,Lución
+Reptilia,Squamata,,Heloderma suspectum,Monstruo de Gila
+Reptilia,Squamata,,Varanus komodoensis,Varano de Komodo
+Reptilia,Squamata,,Varanus niloticus,Varano del Nilo
+Reptilia,Squamata,,Blanus cinereus,Culebrilla ciega común
+Reptilia,Squamata,,Eunectes murinus,Anaconda
+Reptilia,Squamata,,Malpolon monspessulanus,Culebra bastarda
+Reptilia,Squamata,,Natrix astreptophora,Culebra de collar mediterránea
+Reptilia,Squamata,,Zamenis scalaris,Culebra de escalera
+Reptilia,Squamata,,Naja naja,Cobra
+Reptilia,Squamata,,Laticauda colubrina,Serpiente de mar
+Reptilia,Squamata,,Vipera latastei,Víbora hocicuda
+Reptilia,Squamata,,Crotalus horridus,Serpiente de cascabel
+Reptilia,Crocodylia,,Crocodylus niloticus,Cocodrilo del Nilo
+Reptilia,Crocodylia,,Alligator mississippiensis,Aligátor americano
+Reptilia,Crocodylia,,Gavialis gangeticus,Gavial
+Aves,Struthioniformes,,Struthio camelus,Avestruz
+Aves,Rheiformes,,Rhea americana,Ñandú
+Aves,Tinamiformes,,Nothura maculosa,Tinamú común
+Aves,Casuariiformes,,Casuarius casuarius,Casuario
+Aves,Apterygiformes,,Apteryx australis,Kiwi sureño
+Aves,Galliformes,,Tetrao urogallus,Urogallo común
+Aves,Galliformes,,Alectoris rufa,Perdiz roja
+Aves,Galliformes,,Perdix perdix,Perdiz pardilla
+Aves,Anseriformes,,Anser anser,Ánsar común
+Aves,Anseriformes,,Anas platyrhynchos,Ánade azulón
+Aves,Anseriformes,,Aythya ferina,Porrón europeo
+Aves,Caprimulgiformes,,Caprimulgus europaeus,Chotacabras europeo
+Aves,Caprimulgiformes,,Apus apus,Vencejo común
+Aves,Caprimulgiformes,,Mellisuga helenae,Colibrí zunzuncito
+Aves,Caprimulgiformes,,Steatornis caripensis,Guácharo
+Aves,Columbiformes,,Columba palumbus,Paloma torcaz
+Aves,Columbiformes,,Streptopelia turtur,Tórtola europea
+Aves,Cuculiformes,,Cuculus canorus,Cuco
+Aves,Otidiformes,,Otis tarda,Avutarda euroasiática
+Aves,Gruiformes,,Grus grus,Grulla común
+Aves,Gruiformes,,Fulica atra,Focha común
+Aves,Phoenicopteriformes,,Phoenicopterus roseus,Flamenco común
+Aves,Charadriiformes,,Vanellus vanellus,Avefría europea
+Aves,Charadriiformes,,Recurvirostra avosetta,Avoceta común
+Aves,Charadriiformes,,Chroicocephalus ridibundus,Gaviota reidora
+Aves,Charadriiformes,,Larus fuscus,Gaviota sombría
+Aves,Charadriiformes,,Fratercula arctica,Frailecillo atlántico
+Aves,Podicipediformes,,Podiceps cristatus,Somormujo lavanco
+Aves,Sphenisciformes,,Aptenodytes forsteri,Pingüino emperador
+Aves,Pelecaniformes,,Pelecanus onocrotalus,Pelícano común
+Aves,Pelecaniformes,,Ardea cinerea,Garza real
+Aves,Pelecaniformes,,Egretta garzetta,Garceta común
+Aves,Pelecaniformes,,Platalea leucorodia,Espátula común
+Aves,Suliformes,,Phalacrocorax carbo,Cormorán grande
+Aves,Ciconiiformes,,Ciconia ciconia,Cigüeña blanca
+Aves,Ciconiiformes,,Ciconia nigra,Cigüeña negra
+Aves,Opisthocomiformes,,Opisthocomus hoazin,Hoacín
+Aves,Accipitriformes,,Gyps fulvus,Buitre leonado
+Aves,Accipitriformes,,Aegypius monachus,Buitre negro
+Aves,Accipitriformes,,Gypaetus barbatus,Quebrantahuesos
+Aves,Accipitriformes,,Neophron percnopterus,Alimoche común
+Aves,Accipitriformes,,Aquila adalberti,Águila imperial ibérica
+Aves,Accipitriformes,,Aquila chrysaetos,Águila real
+Aves,Accipitriformes,,Buteo buteo,Busardo ratonero
+Aves,Accipitriformes,,Milvus milvus,Milano real
+Aves,Accipitriformes,,Milvus migrans,Milano negro
+Aves,Accipitriformes,,Accipiter nisus,Gavilán común
+Aves,Strigiformes,,Tyto alba,Lechuza común
+Aves,Strigiformes,,Bubo bubo,Búho real
+Aves,Strigiformes,,Athene noctua,Mochuelo europeo
+Aves,Strigiformes,,Strix aluco,Cárabo común
+Aves,Bucerotiformes,,Upupa epops,Abubilla común
+Aves,Coraciiformes,,Merops apiaster,Abejaruco europeo
+Aves,Coraciiformes,,Alcedo atthis,Martín pescador común
+Aves,Piciformes,,Dendrocopos major,Pico picapinos
+Aves,Piciformes,,Picus sharpei,Pito real ibérico
+Aves,Falconiformes,,Falco tinnunculus,Cernícalo
+Aves,Falconiformes,,Falco peregrinus,Halcón peregrino
+Aves,Psittaciformes,,Myiopsitta monachus,Cotorra argentina
+Aves,Psittaciformes,,Psittacula krameri,Cotorra de Kramer
+Aves,Psittaciformes,,Psittacus erithacus,Loro gris
+Aves,Psittaciformes,,Ara macao,Guacamayo rojo
+Aves,Passeriformes,,Alauda arvensis,Alondra común
+Aves,Passeriformes,,Motacilla alba,Lavandera blanca
+Aves,Passeriformes,,Lanius meridionalis,Alcaudón real
+Aves,Passeriformes,,Sylvia atricapilla,Curruca capirotada
+Aves,Passeriformes,,Phylloscopus collybita,Mosquitero común
+Aves,Passeriformes,,Saxicola rubicola,Tarabilla europea
+Aves,Passeriformes,,Oenanthe hispanica,Collalba rubia
+Aves,Passeriformes,,Erithacus rubecula,Petirrojo europeo
+Aves,Passeriformes,,Turdus merula,Mirlo común
+Aves,Passeriformes,,Parus major,Carbonero común
+Aves,Passeriformes,,Troglodytes troglodytes,Chochín paleártico
+Aves,Passeriformes,,Fringilla coelebs,Pinzón vulgar
+Aves,Passeriformes,,Carduelis carduelis,Jilguero europeo
+Aves,Passeriformes,,Sturnus unicolor,Estornino negro
+Aves,Passeriformes,,Passer domesticus,Gorrión común
+Aves,Passeriformes,,Pica pica,Urraca común
+Aves,Passeriformes,,Corvus corax,Cuervo grande
+Aves,Passeriformes,,Cyanopica cooki,Rabilargo ibérico
+Mammalia,Monotremata,,Ornithorhynchus anatinus,Ornitorrinco
+Mammalia,Monotremata,,Tachyglossus aculeatus,Equidna de hocico corto
+Mammalia,Didelphimorphia,,Didelphis marsupialis,Zarigüeya
+Mammalia,Microbiotheria,,Dromiciops gliroides,Monito de monte
+Mammalia,Dasyuromorphia,,Thylacinus cynocephalus,Lobo marsupial
+Mammalia,Dasyuromorphia,,Sarcophilus harrisii,Diablo de Tasmania
+Mammalia,Diprotodontia,,Phascolarctos cinereus,Koala
+Mammalia,Diprotodontia,,Petaurus breviceps,Petauro
+Mammalia,Diprotodontia,,Macropus rufus,Canguro Rojo
+Mammalia,Macroscelidea,,Elephantulus rufescens,Musaraña elefante
+Mammalia,Tubulidentata,,Orycteropus afer,Cerdo hormiguero
+Mammalia,Hyracoidea,,Procavia capensis,Damán
+Mammalia,Proboscidea,,Loxodonta africana,Elefante africano
+Mammalia,Proboscidea,,Elephas maximus,Elefante indio
+Mammalia,Sirenia,,Trichechus manatus,Manatí
+Mammalia,Cingulata,,Dasypus novemcinctus,Armadillo
+Mammalia,Pilosa,,Bradypus tridactylus,Perezoso
+Mammalia,Pilosa,,Myrmecophaga tridactyla,Oso hormiguero
+Mammalia,Dermoptera,,Cynocephalus volans,Colugo
+Mammalia,Scandentia,,Tupaia tana,Tupaya
+Mammalia,Primates,,Lemur catta,Lémur de cola anillada
+Mammalia,Primates,,Daubentonia madagascariensis,Aye-aye
+Mammalia,Primates,,Galago senegalensis,Gálago
+Mammalia,Primates,,Loris lydekkerianus,Loris
+Mammalia,Primates,,Tarsius tarsier,Tarsero
+Mammalia,Primates,,Cebus capucinus,Mono capuchino
+Mammalia,Primates,,Alouatta palliata,Mono aullador
+Mammalia,Primates,,Macaca sylvanus,Macaco de Berbería
+Mammalia,Primates,,Papio ursinus,Papión negro
+Mammalia,Primates,,Erythrocebus patas,Mono patas
+Mammalia,Primates,,Colobus guereza,Colobo
+Mammalia,Primates,,Hylobates lar,Gibón
+Mammalia,Primates,,Pongo abelii,Orangután de Sumatra
+Mammalia,Primates,,Gorilla beringei,Gorila de montaña
+Mammalia,Primates,,Pan troglodytes,Chimpancé
+Mammalia,Rodentia,,Rattus norvegicus,Rata parda
+Mammalia,Rodentia,,Apodemus sylvaticus,Ratón de campo
+Mammalia,Rodentia,,Microtus arvalis,Topillo campesino
+Mammalia,Rodentia,,Eliomys quercinus,Lirón careto
+Mammalia,Rodentia,,Sciurus vulgaris,Ardilla roja
+Mammalia,Rodentia,,Castor fiber,Castor europeo
+Mammalia,Rodentia,,Marmota marmota,Marmota alpina
+Mammalia,Rodentia,,Hydrochoerus hydrochaeris,Capibara
+Mammalia,Rodentia,,Dolichotis patagonum,Mara
+Mammalia,Lagomorpha,,Ochotona princeps,Pica
+Mammalia,Lagomorpha,,Oryctolagus cuniculus,Conejo
+Mammalia,Lagomorpha,,Lepus granatensis,Liebre ibérica
+Mammalia,Eulipotyphla,,Erinaceus europaeus,Erizo europeo
+Mammalia,Eulipotyphla,,Crocidura russula,Musaraña gris
+Mammalia,Eulipotyphla,,Galemys pyrenaicus,Desmán ibérico
+Mammalia,Eulipotyphla,,Talpa europaea,Topo europeo
+Mammalia,Chiroptera,,Pteropus conspicillatus,Zorro volador
+Mammalia,Chiroptera,,Pipistrellus pipistrellus,Murciélago enano
+Mammalia,Chiroptera,,Rhinolophus ferrumequinum,Murciélago grande de herradura
+Mammalia,Pholidota,,Manis crassicaudata,Pangolín
+Mammalia,Carnivora,,Lynx pardinus,Lince ibérico
+Mammalia,Carnivora,,Felis silvestris,Gato montés
+Mammalia,Carnivora,,Panthera leo,León
+Mammalia,Carnivora,,Panthera pardus,Leopardo
+Mammalia,Carnivora,,Panthera onca,Jaguar
+Mammalia,Carnivora,,Puma concolor,Puma
+Mammalia,Carnivora,,Acinonyx jubatus,Guepardo
+Mammalia,Carnivora,,Genetta genetta,Gineta
+Mammalia,Carnivora,,Crocuta crocuta,Hiena manchada
+Mammalia,Carnivora,,Herpestes ichneumon,Meloncillo
+Mammalia,Carnivora,,Canis lupus,Lobo
+Mammalia,Carnivora,,Vulpes vulpes,Zorro
+Mammalia,Carnivora,,Chrysocyon brachyurus,Lobo de crin
+Mammalia,Carnivora,,Lycaon pictus,Licaón
+Mammalia,Carnivora,,Ursus arctos,Oso pardo
+Mammalia,Carnivora,,Ailuropoda melanoleuca,Oso panda
+Mammalia,Carnivora,,Phoca vitulina,Foca común
+Mammalia,Carnivora,,Otaria flavescens,Lobo marino
+Mammalia,Carnivora,,Procyon lotor,Mapache
+Mammalia,Carnivora,,Mustela nivalis,Comadreja
+Mammalia,Carnivora,,Martes foina,Garduña
+Mammalia,Carnivora,,Lutra lutra,Nutria paleártica
+Mammalia,Carnivora,,Meles meles,Tejón
+Mammalia,Carnivora,,Gulo gulo,Glotón
+Mammalia,Perissodactyla,,Equus hemionus,Onagro
+Mammalia,Perissodactyla,,Equus quagga,Cebra común
+Mammalia,Perissodactyla,,Tapirus pinchaque,Tapir de montaña
+Mammalia,Perissodactyla,,Rhinoceros unicornis,Rinoceronte indio
+Mammalia,Perissodactyla,,Diceros bicornis,Rinoceronte negro
+Mammalia,Cetartiodactyla,,Lama guanicoe,Guanaco
+Mammalia,Cetartiodactyla,,Camelus ferus,Camello
+Mammalia,Cetartiodactyla,,Sus scrofa,Jabalí
+Mammalia,Cetartiodactyla,,Hippopotamus amphibius,Hipopótamo
+Mammalia,Cetartiodactyla,,Cervus elaphus,Ciervo
+Mammalia,Cetartiodactyla,,Dama dama,Gamo
+Mammalia,Cetartiodactyla,,Capreolus capreolus,Corzo
+Mammalia,Cetartiodactyla,,Rangifer tarandus,Reno
+Mammalia,Cetartiodactyla,,Alces alces,Alce euroasiático
+Mammalia,Cetartiodactyla,,Rupicapra pyrenaica,Rebeco
+Mammalia,Cetartiodactyla,,Capra pyrenaica,Cabra montés
+Mammalia,Cetartiodactyla,,Ovis gmelini,Muflón
+Mammalia,Cetartiodactyla,,Bison bonasus,Bisonte europeo
+Mammalia,Cetartiodactyla,,Gazella dorcas,Gacela común
+Mammalia,Cetartiodactyla,,Saiga tatarica,Saiga
+Mammalia,Cetartiodactyla,,Pantholops hodgsonii,Chirú
+Mammalia,Cetartiodactyla,,Syncerus caffer,Búfalo africano
+Mammalia,Cetartiodactyla,,Connochaetes taurinus,Ñu azul
+Mammalia,Cetartiodactyla,,Antilocapra americana,Berrendo
+Mammalia,Cetartiodactyla,,Giraffa camelopardalis,Jirafa
+Mammalia,Cetartiodactyla,,Okapia johnstoni,Okapi
+Mammalia,Cetartiodactyla,Cetacea,Stenella coeruleoalba,Delfín listado
+Mammalia,Cetartiodactyla,Cetacea,Orcinus orca,Orca
+Mammalia,Cetartiodactyla,Cetacea,Physeter macrocephalus,Cachalote
+Mammalia,Cetartiodactyla,Cetacea,Megaptera novaeangliae,Yubarta
+Mammalia,Cetartiodactyla,Cetacea,Eubalaena glacialis,Ballena franca

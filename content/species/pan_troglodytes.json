@@ -1,0 +1,57 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje grueso marrón oscuro, salvo en la cara, dedos, palmas y plantas",
+      "Brazos mucho más largos que las piernas; manos largas con pulgar corto",
+      "Arcos superciliares marcados y mandíbula proyectada hacia delante",
+      "Orejas circulares, nariz pequeña y labio superior largo y flexible"
+    ],
+    "en": [
+      "Thick dark brown fur except on the face, fingers, palms and soles",
+      "Arms much longer than legs; long hands with a short thumb",
+      "Pronounced brow ridge and forward-projecting jaw",
+      "Circular ears, small nose and a long, flexible upper lip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gorilla beringei",
+      "es": "El gorila es mucho más robusto y pesado, de pelaje negro, y los machos tienen el dorso plateado.",
+      "en": "The gorilla is much more robust and heavier, with black fur, and males have a silver back."
+    },
+    {
+      "binomial": "Pongo abelii",
+      "es": "El orangután tiene pelo largo y rojizo y los machos tienen rebordes en las mejillas.",
+      "en": "The orangutan has long reddish hair and males have cheek flanges."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más pesados que las hembras (34–70 kg frente a 26–50 kg en libertad).",
+    "en": "Males are heavier than females (34–70 kg vs 26–50 kg in the wild)."
+  },
+  "etymology": {
+    "es": "Pan alude al dios griego Pan; troglodytes procede de los trogloditas, un pueblo mítico que vivía en cuevas.",
+    "en": "Pan refers to the Greek god Pan; troglodytes comes from the Troglodytae, a mythical race of cave-dwellers."
+  },
+  "sources": [
+    {
+      "title": "Pan troglodytes — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Pan_troglodytes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Chimpanzee — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Chimpanzee",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Eastern gorilla — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_gorilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

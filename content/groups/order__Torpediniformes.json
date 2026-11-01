@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Rayas eléctricas o torpedos: 69 especies en cuatro familias capaces de producir descargas de 8 a 220 voltios para aturdir presas y defenderse. En el bestiario: la tremielga (Torpedo torpedo).",
+    "en": "Electric rays: 69 species in four families able to produce discharges of 8 to 220 volts to stun prey and for defence. In the bestiary: the common torpedo (Torpedo torpedo)."
+  },
+  "traits": {
+    "es": [
+      "Disco pectoral redondeado",
+      "Cola robusta y musculosa con aleta caudal bien desarrollada y dos aletas dorsales redondeadas",
+      "Piel blanda y suelta, sin dentículos ni espinas",
+      "Un par de órganos eléctricos en forma de riñón en la base de las pectorales"
+    ],
+    "en": [
+      "Rounded pectoral disc",
+      "Stout, muscular tail with a well-developed caudal fin and two rounded dorsal fins",
+      "Soft, loose skin without denticles or thorns",
+      "A pair of kidney-shaped electric organs at the base of the pectoral fins"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las rayas (Rajiformes), de hocico puntiagudo y cola fina, que nadan ondulando las pectorales; los torpedos nadan con la cola.",
+    "en": "Do not confuse with skates (Rajiformes), with a pointed snout and slender tail, which swim by undulating their pectoral fins; electric rays swim with their tail."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Electric ray",
+      "url": "https://en.wikipedia.org/wiki/Electric_ray",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Torpediniformes",
+      "url": "https://es.wikipedia.org/wiki/Torpediniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Rajiformes",
+      "url": "https://en.wikipedia.org/wiki/Rajiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Gnatóstomos: vertebrados con mandíbulas, unas 60 000 especies que suponen el 99 % de los vertebrados actuales. En el bestiario incluye todas las clases salvo los mixinos y las lampreas: peces cartilaginosos, actinopterigios, sarcopterigios y tetrápodos.",
+    "en": "Gnathostomes: jawed vertebrates, some 60,000 species making up 99% of living vertebrates. In the bestiary they include every class except hagfishes and lampreys: cartilaginous fishes, ray-finned fishes, lobe-finned fishes and tetrapods."
+  },
+  "traits": {
+    "es": [
+      "Mandíbulas articuladas que permiten agarrar, sujetar y triturar el alimento",
+      "Dientes verdaderos (perdidos secundariamente en algunos grupos)",
+      "Apéndices pares: aletas pectorales y pélvicas, patas o alas",
+      "Canal semicircular horizontal en el oído interno",
+      "Neuronas con vaina de mielina; bazo y timo"
+    ],
+    "en": [
+      "Hinged jaws for grasping, holding and crushing food",
+      "True teeth (secondarily lost in some groups)",
+      "Paired appendages: pectoral and pelvic fins, legs or wings",
+      "Horizontal semicircular canal in the inner ear",
+      "Myelinated neurons; spleen and thymus"
+    ]
+  },
+  "contrast": {
+    "es": "Se oponen a los ciclóstomos (mixinos y lampreas), vertebrados sin mandíbulas cuya boca circular lleva estructuras córneas en lugar de dientes verdaderos.",
+    "en": "They contrast with the cyclostomes (hagfishes and lampreys), jawless vertebrates whose round mouth bears horny structures instead of true teeth."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Gnathostomata",
+      "url": "https://en.wikipedia.org/wiki/Gnathostomata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Gnathostomata",
+      "url": "https://es.wikipedia.org/wiki/Gnathostomata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Cyclostomi",
+      "url": "https://en.wikipedia.org/wiki/Cyclostomi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

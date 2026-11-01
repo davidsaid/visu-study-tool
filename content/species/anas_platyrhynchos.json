@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Pato de superficie mediano (50–65 cm)",
+      "Macho: cabeza verde botella brillante con collar blanco y pecho castaño purpúreo",
+      "Macho: plumas centrales de la cola negras y rizadas hacia arriba; pico amarillo anaranjado",
+      "Hembra: parda veteada con lista ocular y píleo oscuros; pico oscuro moteado de naranja",
+      "Espejuelo alar azul en ambos sexos"
+    ],
+    "en": [
+      "Medium-sized dabbling duck (50–65 cm)",
+      "Male: glossy bottle-green head, white collar and purple-tinged chestnut breast",
+      "Male: black, upward-curled central tail feathers; yellowish-orange bill",
+      "Female: mottled brown with dark crown and eye-stripe; dark bill mottled orange",
+      "Blue wing speculum in both sexes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Aythya ferina",
+      "es": "El macho de porrón europeo tiene la cabeza castaño rojiza, el pecho negro y el cuerpo gris pálido; es un pato buceador.",
+      "en": "The male common pochard has a chestnut head, black breast and pale grey body; it is a diving duck."
+    }
+  ],
+  "dimorphism": {
+    "es": "Marcado dimorfismo: el macho reproductor tiene la cabeza verde y el collar blanco; la hembra es parda veteada.",
+    "en": "Marked dimorphism: the breeding male has a green head and white collar; the female is mottled brown."
+  },
+  "etymology": {
+    "es": "Anas significa «pato» en latín; platyrhynchos, del griego platýs «ancho» y rhynchós «pico», significa «de pico ancho».",
+    "en": "Anas is Latin for 'duck'; platyrhynchos, from Greek platys 'broad' and rhynchos 'bill', means 'broad-billed'."
+  },
+  "trivia": {
+    "es": [
+      "Es el antepasado de la mayoría de los patos domésticos, con los que es totalmente interfértil."
+    ],
+    "en": [
+      "It is the ancestor of most domestic ducks, with which it is fully interfertile."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Anas platyrhynchos",
+      "url": "https://es.wikipedia.org/wiki/Anas_platyrhynchos",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Mallard",
+      "url": "https://en.wikipedia.org/wiki/Mallard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Aythya ferina",
+      "url": "https://es.wikipedia.org/wiki/Aythya_ferina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

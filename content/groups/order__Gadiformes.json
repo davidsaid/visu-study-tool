@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "es": "Gadiformes o anacantos: bacalaos, merluzas, abadejos, eglefinos, lotas y afines, casi todos marinos de aguas templadas o frías y muchos de gran valor pesquero. En el bestiario: la merluza (Merluccius merluccius) y el bacalao (Gadus morhua).",
+    "en": "Gadiforms or Anacanthini: cods, hakes, pollocks, haddock, burbot and relatives, almost all marine fish of temperate or cold waters, many of great commercial value. In the bestiary: the European hake (Merluccius merluccius) and the Atlantic cod (Gadus morhua)."
+  },
+  "traits": {
+    "es": [
+      "Aletas sin radios espinosos verdaderos (de ahí «anacantos»)",
+      "Aletas pélvicas insertas debajo o delante de las pectorales",
+      "Vejiga natatoria sin conducto neumático (fisoclistos)",
+      "Escamas cicloideas y aleta caudal homocerca",
+      "En los gádidos (bacalao), tres aletas dorsales, dos anales y una barbilla en el mentón"
+    ],
+    "en": [
+      "Fins without true spines (hence 'Anacanthini')",
+      "Pelvic fins inserted below or in front of the pectorals",
+      "Swim bladder without a pneumatic duct (physoclists)",
+      "Cycloid scales and a homocercal tail",
+      "In gadids (cod), three dorsal fins, two anal fins and a chin barbel"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Gadiformes",
+      "url": "https://en.wikipedia.org/wiki/Gadiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Gadiformes",
+      "url": "https://es.wikipedia.org/wiki/Gadiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

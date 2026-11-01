@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Cotorra pequeña o mediana (28–31 cm) de color verde brillante",
+      "Frente, mejillas, garganta y pecho gris claro, con escamado más oscuro",
+      "Vientre verde claro a amarillento",
+      "Pico anaranjado u ocre y patas grisáceas",
+      "Rémiges azul oscuro, visibles en vuelo; cola larga y puntiaguda"
+    ],
+    "en": [
+      "Small to medium parakeet (28–31 cm), bright green",
+      "Pale grey forehead, cheeks, throat and breast with darker scalloping",
+      "Light green to yellowish belly",
+      "Orange or ochre bill and greyish legs",
+      "Dark blue flight feathers, visible in flight; long, tapering tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Psittacula krameri",
+      "es": "La cotorra de Kramer es toda verde, sin gris en la cara ni el pecho, con pico rojo y cola mucho más larga; el macho lleva un collar rosa y negro.",
+      "en": "The rose-ringed parakeet is all green with no grey on face or breast, has a red bill and much longer tail; the male has a pink-and-black neck ring."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son un 5–10 % menores, pero los sexos solo se distinguen con fiabilidad mediante ADN.",
+    "en": "Females are 5–10% smaller, but the sexes can only be reliably told apart by DNA testing."
+  },
+  "etymology": {
+    "es": "Myiopsitta combina el griego mys, myós «ratón» y el neolatín psitta «loro», por la cara y el vientre gris ratón; monachus significa «monje» en latín tardío.",
+    "en": "Myiopsitta combines Greek mus, muos 'mouse' and Neo-Latin psitta 'parrot', after the mouse-grey face and underparts; monachus is Late Latin for 'monk'."
+  },
+  "trivia": {
+    "es": [
+      "Tiene poblaciones asilvestradas autosuficientes en muchas ciudades de Europa y Norteamérica."
+    ],
+    "en": [
+      "It has self-sustaining feral populations in many places in Europe and North America."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Myiopsitta monachus",
+      "url": "https://es.wikipedia.org/wiki/Myiopsitta_monachus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Monk parakeet",
+      "url": "https://en.wikipedia.org/wiki/Monk_parakeet",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Rose-ringed parakeet",
+      "url": "https://en.wikipedia.org/wiki/Rose-ringed_parakeet",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

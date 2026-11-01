@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Collalba pequeña (13,5–15,5 cm)",
+      "Macho en cría: frente y píleo blanquecinos, manto ante y alas negras",
+      "Antifaz negro desde las coberteras auriculares hasta el pico; garganta negra o blanca según el individuo",
+      "Dorso, obispillo y la mayor parte de la cola blancos",
+      "Hembra más parda, pero con el bajo dorso blanco característico"
+    ],
+    "en": [
+      "Small wheatear (13.5–15.5 cm)",
+      "Breeding male: whitish forehead and crown, buff mantle and black wings",
+      "Black mask from the ear coverts to the bill; throat black or white depending on the individual",
+      "White back, rump and most of the tail",
+      "Female browner, but with the characteristic white lower back"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Saxicola rubicola",
+      "es": "El macho de tarabilla europea tiene la cabeza negra y el pecho naranja, sin el obispillo ni la cola blancos.",
+      "en": "The male European stonechat has a black head and orange breast, without the white rump and tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "La hembra es más parda y sus cambios estacionales son menos marcados.",
+    "en": "The female is browner and her seasonal changes are less marked."
+  },
+  "etymology": {
+    "es": "Oenanthe procede del griego oînos «vino» y ánthos «flor»; hispanica significa «española» en latín.",
+    "en": "Oenanthe is from Ancient Greek oenos 'wine' and anthos 'flower'; hispanica is Latin for 'Spanish'."
+  },
+  "trivia": {
+    "es": [
+      "El inglés wheatear no tiene que ver con el trigo: es una corrupción de white arse, «culo blanco», por su obispillo."
+    ],
+    "en": [
+      "The English 'wheatear' has nothing to do with wheat: it is a corruption of 'white arse', after the white rump."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Oenanthe hispanica",
+      "url": "https://es.wikipedia.org/wiki/Oenanthe_hispanica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Western black-eared wheatear",
+      "url": "https://en.wikipedia.org/wiki/Western_black-eared_wheatear",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Saxicola rubicola",
+      "url": "https://es.wikipedia.org/wiki/Saxicola_rubicola",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Quimeras o tiburones fantasma: peces cartilaginosos de aguas profundas, único orden superviviente de los holocéfalos, con unas 47 especies actuales. En el bestiario: la quimera (Chimaera monstrosa).",
+    "en": "Chimaeras or ghost sharks: deep-water cartilaginous fishes, the only surviving order of holocephalans, with about 47 living species. In the bestiary: the rabbit fish (Chimaera monstrosa)."
+  },
+  "traits": {
+    "es": [
+      "Cabeza grande y abultada, boca parecida a la de un conejo y cola larga y fina como de rata",
+      "Branquias cubiertas por un pliegue de piel, con una sola abertura branquial delante de las pectorales",
+      "Espina venenosa delante de la aleta dorsal",
+      "Mandíbula superior soldada al cráneo",
+      "Grandes aletas pectorales con las que parecen «volar» en el agua"
+    ],
+    "en": [
+      "Large bulky head, rabbit-like mouth and a long, thin, rat-like tail",
+      "Gills covered by a flap of skin, with a single gill opening in front of the pectoral fins",
+      "Venomous spine in front of the dorsal fin",
+      "Upper jaw fused to the skull",
+      "Large pectoral fins that make them seem to 'fly' through the water"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los tiburones, que tienen de cinco a siete hendiduras branquiales al descubierto en lugar de una sola abertura cubierta por un pliegue de piel.",
+    "en": "Do not confuse with sharks, which have five to seven exposed gill slits instead of a single opening covered by a skin flap."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Chimaera",
+      "url": "https://en.wikipedia.org/wiki/Chimaera",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Chimaeriformes",
+      "url": "https://es.wikipedia.org/wiki/Chimaeriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Roedor grande de cuerpo y cabeza gruesos y patas cortas",
+      "Orejas pequeñas",
+      "Cola bastante corta, con la punta negra",
+      "Dorso pardo grisáceo y vientre amarillento"
+    ],
+    "en": [
+      "Large rodent with a thick body and head and short legs",
+      "Small ears",
+      "Fairly short tail with a black tip",
+      "Greyish-brown back and yellowish belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sciurus vulgaris",
+      "es": "La ardilla roja es mucho más pequeña y esbelta, con cola larga y poblada y penachos en las orejas.",
+      "en": "The red squirrel is much smaller and slimmer, with a long bushy tail and ear tufts."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Avisa del peligro con una serie de silbidos fuertes."
+    ],
+    "en": [
+      "It warns of danger with a series of loud whistles."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Marmota marmota — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Marmota_marmota",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Alpine marmot — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Alpine_marmot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Sciurus vulgaris — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Sciurus_vulgaris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

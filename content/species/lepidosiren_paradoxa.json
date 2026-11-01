@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo alargado, casi de anguila, de hasta 125 cm",
+      "Aletas pectorales finas como hilos; pélvicas algo mayores y muy retrasadas",
+      "Adultos pardos o grises; juveniles negros con manchas doradas",
+      "Crías parecidas a renacuajos, con cuatro branquias externas"
+    ],
+    "en": [
+      "Elongated, almost eel-like body up to 125 cm long",
+      "Thin, thread-like pectoral fins; pelvic fins somewhat larger and set far back",
+      "Adults brown or grey; juveniles black spotted with gold",
+      "Young resemble tadpoles, with four external gills"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Anguilla anguilla",
+      "es": "La anguila no tiene aletas pélvicas y su dorsal y anal, muy largas, se unen a la caudal en una sola aleta.",
+      "en": "The eel has no pelvic fins, and its very long dorsal and anal fins merge with the tail fin into one."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "En la estación seca se entierra en el barro, en una cámara con agujeros para respirar, y se envuelve en moco."
+    ],
+    "en": [
+      "In the dry season it burrows into the mud in a chamber with air holes and seals itself in mucus."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): South American lungfish",
+      "url": "https://en.wikipedia.org/wiki/South_American_lungfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Lepidosiren paradoxa",
+      "url": "https://es.wikipedia.org/wiki/Lepidosiren_paradoxa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Anguilla anguilla",
+      "url": "https://es.wikipedia.org/wiki/Anguilla_anguilla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

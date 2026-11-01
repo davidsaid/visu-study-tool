@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo de serpiente, cilíndrico, de 20–30 cm, con surcos regulares",
+      "Piel blanco amarillenta o rosada, casi sin pigmento; los órganos se transparentan",
+      "Dos penachos de branquias externas rojas detrás de la cabeza",
+      "Ojos atrofiados cubiertos de piel; cabeza en forma de pera con hocico aplanado",
+      "Patas pequeñas y finas: tres dedos delante y dos detrás"
+    ],
+    "en": [
+      "Snake-like, cylindrical body of 20–30 cm with regularly spaced furrows",
+      "Yellowish-white or pink, almost unpigmented skin; organs show through",
+      "Two tufts of red external gills at the back of the head",
+      "Regressed eyes covered by skin; pear-shaped head with a flattened snout",
+      "Small, thin legs: three toes in front, two behind"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ambystoma mexicanum",
+      "es": "El ajolote tiene la cabeza ancha, ojos visibles sin párpados y dedos largos y finos, en vez de ojos cubiertos y solo tres y dos dedos.",
+      "en": "The axolotl has a broad head, visible lidless eyes and long thin digits, rather than covered eyes and only three and two toes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras crecen más que los machos; por lo demás, solo difieren en la cloaca durante el celo.",
+    "en": "Females grow larger than males; otherwise they differ only in the cloaca when breeding."
+  },
+  "trivia": {
+    "es": [
+      "Se le llama «pez humano» por el color carne de su piel, y antiguamente se creía que era la cría de un dragón."
+    ],
+    "en": [
+      "It is called the 'human fish' for its flesh-coloured skin, and was once believed to be a dragon's offspring."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Proteus anguinus",
+      "url": "https://es.wikipedia.org/wiki/Proteus_anguinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Olm",
+      "url": "https://en.wikipedia.org/wiki/Olm",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Axolotl",
+      "url": "https://en.wikipedia.org/wiki/Axolotl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

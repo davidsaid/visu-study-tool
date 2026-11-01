@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Astas del macho palmeadas, inclinadas hacia atrás",
+      "Pelaje pardo rojizo moteado de blanco en primavera y verano",
+      "Escudo anal blanco enmarcado por dos franjas negras, en forma de corazón partido por la cola de dorso negro",
+      "Vientre, nalgas, parte baja de las patas y cola blancos todo el año",
+      "Capa muy variable: hay individuos casi blancos y otros casi negros"
+    ],
+    "en": [
+      "Male's antlers palmate and swept back",
+      "Reddish-brown coat dotted with white spots in spring and summer",
+      "White rump patch framed by two black stripes, like a heart split by the black-topped tail",
+      "Belly, buttocks, lower legs and tail white all year",
+      "Highly variable coat: some animals are almost white, others almost black"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Cervus elaphus",
+      "es": "El ciervo es mayor, sin motas en el adulto y con astas ramificadas, no palmeadas; en invierno la cierva se separa por el diseño del escudo anal.",
+      "en": "The red deer is larger, unspotted as an adult and has branched, not palmate, antlers; in winter hinds are told apart by the rump pattern."
+    },
+    {
+      "binomial": "Capreolus capreolus",
+      "es": "El corzo es mucho más pequeño, sin manchas de adulto y con astas cortas de tres puntas.",
+      "en": "The roe deer is much smaller, unspotted as an adult and has short three-pointed antlers."
+    }
+  ],
+  "dimorphism": {
+    "es": "Notable: solo los machos tienen astas y son mayores (unos 58 kg frente a 45 kg de media).",
+    "en": "Marked: only males have antlers, and they are larger (about 58 kg vs 45 kg on average)."
+  },
+  "sources": [
+    {
+      "title": "Dama dama — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Dama_dama",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European fallow deer — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_fallow_deer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

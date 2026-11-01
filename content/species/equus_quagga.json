@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Rayas negras y blancas anchas por todo el cuerpo; no hay dos individuos iguales",
+      "Rayas verticales en la parte delantera que se vuelven horizontales hacia la grupa",
+      "Cuerpo rechoncho y patas relativamente cortas",
+      "Crin erguida a lo largo del cuello y mechón de pelo al final de la cola",
+      "Orejas erguidas de punta redondeada"
+    ],
+    "en": [
+      "Broad black-and-white stripes all over; no two individuals are alike",
+      "Stripes vertical on the forequarters, turning horizontal towards the rump",
+      "Stocky body with relatively short legs",
+      "Erect mane along the neck and a tuft of hair at the tail tip",
+      "Upright ears with rounded tips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Equus hemionus",
+      "es": "El onagro es leonado y liso, con una sola franja oscura en el lomo.",
+      "en": "The onager is plain tawny, with just one dark stripe along the back."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más pesados (220–322 kg frente a 175–250 kg) y tienen el cuello más grueso.",
+    "en": "Males are heavier (220–322 kg vs 175–250 kg) and have a thicker neck."
+  },
+  "etymology": {
+    "es": "quagga procede de la palabra khoikhoi para «cebra», una onomatopeya de su reclamo.",
+    "en": "quagga comes from the Khoikhoi word for 'zebra', imitating its call."
+  },
+  "trivia": {
+    "es": [
+      "Antes se llamaba Equus burchellii; pasó a Equus quagga al comprobarse que la extinta cuaga era la misma especie."
+    ],
+    "en": [
+      "It used to be called Equus burchellii; it became Equus quagga once the extinct quagga proved to be the same species."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Equus quagga — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Equus_quagga",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Plains zebra — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Plains_zebra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

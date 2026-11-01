@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Roedor enorme con cuerpo pesado en forma de barril",
+      "Hocico romo, con ojos, narinas y orejas en lo alto de la cabeza",
+      "Sin cola visible (cola vestigial)",
+      "Pelaje áspero, pardo rojizo por encima y pardo amarillento por debajo",
+      "Dedos gruesos, parecidos a pezuñas, unidos por pequeñas membranas"
+    ],
+    "en": [
+      "Huge rodent with a heavy, barrel-shaped body",
+      "Blunt snout, with eyes, nostrils and ears high on the head",
+      "No visible tail (vestigial)",
+      "Coarse fur, reddish-brown above and yellowish-brown below",
+      "Thick, hoof-like toes joined by small webs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Castor fiber",
+      "es": "El castor tiene una cola grande, aplanada y escamosa y patas traseras palmeadas.",
+      "en": "The beaver has a large, flat, scaly tail and webbed hind feet."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son ligeramente más pesadas que los machos.",
+    "en": "Females are slightly heavier than males."
+  },
+  "etymology": {
+    "es": "Hydrochoerus, del griego hydro- «agua» y choíros «cerdo»: «cerdo de agua»; hydrochaeris, de hydro- y chaírō «alegrarse»: «el que disfruta del agua».",
+    "en": "Hydrochoerus, from Greek hydro- 'water' and choíros 'pig': 'water pig'; hydrochaeris, from hydro- and chairō 'to rejoice': 'one who enjoys the water'."
+  },
+  "sources": [
+    {
+      "title": "Hydrochoerus hydrochaeris — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Hydrochoerus_hydrochaeris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Capybara — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Capybara",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Beaver — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Beaver",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

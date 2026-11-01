@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Hoja nasal característica: parte superior puntiaguda e inferior en forma de herradura",
+      "Sin trago en las orejas",
+      "El murciélago de herradura más grande de Europa (envergadura 35–40 cm)",
+      "Pelaje suave y esponjoso, pardo grisáceo por encima y blanco grisáceo por debajo"
+    ],
+    "en": [
+      "Distinctive noseleaf: pointed upper part and horseshoe-shaped lower part",
+      "No tragus in the ears",
+      "Largest horseshoe bat in Europe (wingspan 35–40 cm)",
+      "Soft, fluffy fur, grey-brown above and grey-white below"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pipistrellus pipistrellus",
+      "es": "El murciélago enano es mucho más pequeño, sin hoja nasal y con un trago largo en las orejas.",
+      "en": "The common pipistrelle is much smaller, with no noseleaf and a long tragus in its ears."
+    }
+  ],
+  "dimorphism": {
+    "es": "Dimorfismo ligero: las hembras son algo más grandes que los machos.",
+    "en": "Slight dimorphism: females are slightly larger than males."
+  },
+  "trivia": {
+    "es": [
+      "Emite los ultrasonidos por la nariz, no por la boca."
+    ],
+    "en": [
+      "It emits its ultrasound through the nose, not the mouth."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Greater horseshoe bat — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Greater_horseshoe_bat",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Rhinolophus ferrumequinum — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Rhinolophus_ferrumequinum",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Pipistrellus pipistrellus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Pipistrellus_pipistrellus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,55 @@
+{
+  "field_marks": {
+    "es": [
+      "Búho pequeño (unos 22 cm), rechoncho, de cola corta y cabeza aplanada",
+      "Ojos grandes amarillos con «cejas» blancas que le dan expresión severa",
+      "Partes superiores pardas moteadas de blanco; partes inferiores blancas listadas de pardo",
+      "Patas largas; a menudo posado de día en postes",
+      "Vuelo ondulado, como el de un pájaro carpintero; juveniles más apagados sin motas blancas en el píleo"
+    ],
+    "en": [
+      "Small owl (about 22 cm), plump, short-tailed and flat-headed",
+      "Large yellow eyes with white 'eyebrows' giving a stern expression",
+      "Brown upperparts speckled white; white underparts streaked brown",
+      "Long legs; often perches on posts by day",
+      "Bounding, woodpecker-like flight; juveniles duller without white crown spots"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Otus scops",
+      "es": "El autillo es de color ceniza, tiene un par de penachos en punta y es menos corpulento.",
+      "en": "The Eurasian scops owl is ash-grey, has a pair of pointed ear tufts and is less stocky."
+    },
+    {
+      "binomial": "Strix aluco",
+      "es": "El cárabo es mucho mayor, de cabeza redonda y ojos oscuros.",
+      "en": "The tawny owl is much larger, round-headed and dark-eyed."
+    }
+  ],
+  "etymology": {
+    "es": "Athene honra a la diosa griega Atenea, de la que la lechuza era símbolo de sabiduría; noctua era el nombre latino de una lechuza consagrada a Minerva, su equivalente romana.",
+    "en": "Athene honours the Greek goddess Athena, whose symbol of wisdom was the owl; noctua was the Latin name of an owl sacred to Minerva, her Roman counterpart."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Athene noctua",
+      "url": "https://es.wikipedia.org/wiki/Athene_noctua",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Little owl",
+      "url": "https://en.wikipedia.org/wiki/Little_owl",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Strix aluco",
+      "url": "https://es.wikipedia.org/wiki/Strix_aluco",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

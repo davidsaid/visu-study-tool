@@ -1,0 +1,63 @@
+{
+  "field_marks": {
+    "es": [
+      "Estornino de 21–23 cm, negro, de cuello y cola cortos",
+      "En primavera y verano, plumaje negro aceitoso sin motas, con brillo púrpura o verde",
+      "En invierno, negro grisáceo con motas pálidas muy pequeñas",
+      "Plumas de la garganta largas que forman una «barba» desgreñada",
+      "Patas rosa vivo; pico amarillo en verano, más oscuro en invierno"
+    ],
+    "en": [
+      "Starling of 21–23 cm, black, with a short neck and tail",
+      "In spring and summer, oily black spotless plumage with a purple or green gloss",
+      "In winter, greyish black with very small pale spots",
+      "Long throat feathers forming a shaggy 'beard'",
+      "Bright pink legs; bill yellow in summer, darker in winter"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sturnus vulgaris",
+      "es": "El estornino pinto está mucho más moteado en invierno y tiene las plumas de la garganta más cortas.",
+      "en": "The common starling is much more heavily spotted in winter and has shorter throat feathers."
+    },
+    {
+      "binomial": "Turdus merula",
+      "es": "El mirlo común tiene la cola larga y el macho, pico y anillo ocular amarillo anaranjado.",
+      "en": "The common blackbird has a long tail, and the male an orange-yellow bill and eye-ring."
+    }
+  ],
+  "dimorphism": {
+    "es": "En verano la base del pico es azulada en los machos y rosada en las hembras; los machos son más negros y brillantes.",
+    "en": "In summer the bill base is bluish in males and pinkish in females; males are blacker and glossier."
+  },
+  "trivia": {
+    "es": [
+      "En Castilla y León, Castilla-La Mancha y Aragón se le llama «tordo»."
+    ],
+    "en": [
+      "In Castilla y León, Castilla-La Mancha and Aragón it is called 'tordo'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Sturnus unicolor",
+      "url": "https://es.wikipedia.org/wiki/Sturnus_unicolor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Spotless starling",
+      "url": "https://en.wikipedia.org/wiki/Spotless_starling",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Turdus merula",
+      "url": "https://es.wikipedia.org/wiki/Turdus_merula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

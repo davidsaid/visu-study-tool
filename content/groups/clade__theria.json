@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Terios: los mamíferos vivíparos modernos, es decir, marsupiales y placentarios, que excluye a los monotremas ovíparos. Comprende todos los órdenes de mamíferos del bestiario salvo Monotremata.",
+    "en": "Therians: the modern live-bearing mammals, i.e. marsupials and placentals, excluding the egg-laying monotremes. It covers every mammal order in the bestiary except Monotremata."
+  },
+  "traits": {
+    "es": [
+      "Paren crías vivas sin huevo con cáscara, gracias a una placenta (rudimentaria en los marsupiales)",
+      "Orejas externas (pabellón auricular), rasgo exclusivo de los terios",
+      "Pezones a los que desembocan las glándulas mamarias",
+      "Sin hueso coracoides, a diferencia de los monotremas"
+    ],
+    "en": [
+      "Give birth to live young without a shelled egg, thanks to a placenta (rudimentary in marsupials)",
+      "External ears (pinnae), a trait unique to therians",
+      "Teats into which the mammary glands open",
+      "No coracoid bone, unlike monotremes"
+    ]
+  },
+  "contrast": {
+    "es": "Su grupo hermano son los monotremas (ornitorrinco, equidnas), que ponen huevos, carecen de pabellón auricular y de pezones, y tienen cloaca.",
+    "en": "Their sister group is the monotremes (platypus, echidnas), which lay eggs, lack external ears and teats, and have a cloaca."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Theria",
+      "url": "https://en.wikipedia.org/wiki/Theria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Theria",
+      "url": "https://es.wikipedia.org/wiki/Theria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Monotreme",
+      "url": "https://en.wikipedia.org/wiki/Monotreme",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

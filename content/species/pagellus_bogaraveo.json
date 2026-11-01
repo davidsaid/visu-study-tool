@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo ovalado, alto y comprimido, de espárido típico",
+      "Cabeza corta y redondeada, boca pequeña y ojos muy grandes",
+      "Mancha negra justo encima de la base de la pectoral, al principio de la línea lateral",
+      "Dorso rojizo, flancos plateados con tono rosado y aletas rosa-rojizas"
+    ],
+    "en": [
+      "Oval, deep, compressed body, a typical sea bream",
+      "Short, rounded head, small mouth and very large eyes",
+      "Black spot just above the pectoral fin base, at the start of the lateral line",
+      "Reddish back, silvery flanks with a pink tinge and pinkish-red fins"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Sparus aurata",
+      "es": "La dorada tiene el dorso gris azulado, una banda dorada entre los ojos y una mancha oscura detrás del ojo, no sobre la pectoral.",
+      "en": "The gilthead has a blue-grey back, a golden bar between the eyes and a dark spot behind the eye, not above the pectoral fin."
+    }
+  ],
+  "etymology": {
+    "es": "bogaraveo procede de bogue-raveo, su nombre común en Marsella.",
+    "en": "bogaraveo comes from bogue-raveo, its local name in Marseille."
+  },
+  "trivia": {
+    "es": [
+      "Es hermafrodita protándrico: todos nacen machos y algunos se vuelven hembras entre los 2 y los 7 años."
+    ],
+    "en": [
+      "It is a protandrous hermaphrodite: all start as males and some become females between ages 2 and 7."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Pagellus bogaraveo",
+      "url": "https://es.wikipedia.org/wiki/Pagellus_bogaraveo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Blackspot seabream",
+      "url": "https://en.wikipedia.org/wiki/Blackspot_seabream",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Gilt-head bream",
+      "url": "https://en.wikipedia.org/wiki/Gilt-head_bream",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

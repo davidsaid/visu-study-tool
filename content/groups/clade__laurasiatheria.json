@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "es": "Superorden de placentarios originado en Laurasia que reúne a los eulipotiflos (erizos, musarañas, topos) y al clado Scrotifera: murciélagos, carnívoros, pangolines, perisodáctilos y cetartiodáctilos. Se descubrió por secuencias de ADN y aún no se conocen rasgos anatómicos que unan a todo el grupo. En el bestiario: Eulipotyphla, Chiroptera, Pholidota, Carnivora, Perissodactyla y Cetartiodactyla.",
+    "en": "A superorder of placentals that originated in Laurasia, uniting the eulipotyphlans (hedgehogs, shrews, moles) and the clade Scrotifera: bats, carnivorans, pangolins, perissodactyls and cetartiodactyls. It was discovered from DNA sequences, and no anatomical features uniting the whole group are yet known. In the bestiary: Eulipotyphla, Chiroptera, Pholidota, Carnivora, Perissodactyla and Cetartiodactyla."
+  },
+  "contrast": {
+    "es": "Su grupo hermano es Euarchontoglires (primates, roedores, lagomorfos, colugos y tupayas); juntos forman Boreoeutheria.",
+    "en": "Its sister group is Euarchontoglires (primates, rodents, lagomorphs, colugos and treeshrews); together they form Boreoeutheria."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Laurasiatheria",
+      "url": "https://en.wikipedia.org/wiki/Laurasiatheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Laurasiatheria",
+      "url": "https://es.wikipedia.org/wiki/Laurasiatheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

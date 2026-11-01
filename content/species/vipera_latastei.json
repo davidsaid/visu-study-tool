@@ -1,0 +1,75 @@
+{
+  "field_marks": {
+    "es": [
+      "Víbora pequeña (hasta unos 70–75 cm) de cabeza triangular",
+      "Punta del hocico levantada en un pequeño «cuerno»",
+      "Pupila elíptica y escamas supraoculares muy desarrolladas, como una ceja; cabeza cubierta de escamas pequeñas",
+      "Dorso gris o pardo con una banda vertebral oscura en zigzag y manchas redondeadas en los flancos",
+      "Labios superiores blanquecinos; punta de la cola amarilla"
+    ],
+    "en": [
+      "Small viper (up to about 70–75 cm) with a triangular head",
+      "Snout tip raised into a small 'horn'",
+      "Elliptical pupil and large supraocular scales like a brow; head covered in small scales",
+      "Grey or brown back with a dark zigzag stripe and rounded spots along the flanks",
+      "Whitish upper lip scales; yellow tail tip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Natrix astreptophora",
+      "es": "La culebra de collar mediterránea tiene pupila redonda, cabeza redondeada con grandes placas y carece de cuerno nasal y zigzag.",
+      "en": "The red-eyed grass snake has a round pupil, a rounded head with large plates, and no nose horn or zigzag."
+    },
+    {
+      "binomial": "Crotalus horridus",
+      "es": "La serpiente de cascabel tiene un cascabel en la cola, que es negra, y bandas transversales oscuras en zigzag.",
+      "en": "The timber rattlesnake has a rattle on a black tail and dark zigzag crossbands."
+    }
+  ],
+  "etymology": {
+    "es": "latastei honra al herpetólogo francés Fernand Lataste, colega de Boscá.",
+    "en": "latastei honours the French herpetologist Fernand Lataste, Boscá's colleague."
+  },
+  "trivia": {
+    "es": [
+      "Es la víbora más común de la península ibérica y la de veneno menos tóxico de las tres españolas."
+    ],
+    "en": [
+      "It is the commonest viper in Iberia and has the least toxic venom of Spain's three vipers."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Vipera latastei",
+      "url": "https://es.wikipedia.org/wiki/Vipera_latastei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Vipera latastei",
+      "url": "https://en.wikipedia.org/wiki/Vipera_latastei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Natrix astreptophora",
+      "url": "https://en.wikipedia.org/wiki/Natrix_astreptophora",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Natrix natrix",
+      "url": "https://es.wikipedia.org/wiki/Natrix_natrix",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Timber rattlesnake",
+      "url": "https://en.wikipedia.org/wiki/Timber_rattlesnake",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

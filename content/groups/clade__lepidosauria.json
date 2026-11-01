@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Lepidosaurios: el clado formado por los escamosos (lagartos, serpientes y anfisbenas) y los rincocéfalos, hoy representados solo por el tuátara. En el bestiario agrupa los órdenes Squamata y Sphenodontia.",
+    "en": "Lepidosaurs: the clade formed by squamates (lizards, snakes and amphisbaenians) and rhynchocephalians, today represented only by the tuatara. In the bestiary it groups the orders Squamata and Sphenodontia."
+  },
+  "traits": {
+    "es": [
+      "Escamas de queratina grandes, a menudo imbricadas (solapadas)",
+      "Cola con planos de fractura en las vértebras que permiten la autotomía",
+      "Abertura cloacal en forma de hendidura transversal",
+      "Cráneo diápsido: dos pares de aberturas temporales detrás de la órbita"
+    ],
+    "en": [
+      "Large keratin scales, often overlapping",
+      "Tail with fracture planes in the vertebrae that allow autotomy",
+      "Transverse, slit-like cloacal opening",
+      "Diapsid skull: two pairs of temporal openings behind the eye socket"
+    ]
+  },
+  "contrast": {
+    "es": "Las tortugas y los cocodrilos no son lepidosaurios: pertenecen a Archelosauria, el grupo hermano, junto con las aves.",
+    "en": "Turtles and crocodilians are not lepidosaurs: they belong to Archelosauria, the sister group, together with birds."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Lepidosauria",
+      "url": "https://en.wikipedia.org/wiki/Lepidosauria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Lepidosauria",
+      "url": "https://es.wikipedia.org/wiki/Lepidosauria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Rhynchocephalia",
+      "url": "https://en.wikipedia.org/wiki/Rhynchocephalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

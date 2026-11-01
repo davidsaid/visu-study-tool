@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave acuática grande (70–102 cm) de plumaje negro",
+      "Cola bastante larga",
+      "Garganta amarillenta",
+      "En época de cría, manchas blancas en los muslos y la garganta",
+      "Pico grueso y sin cresta"
+    ],
+    "en": [
+      "Large waterbird (70–102 cm) with black plumage",
+      "Fairly long tail",
+      "Yellowish throat",
+      "White thigh and throat patches in the breeding season",
+      "Thick bill and no crest"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Phalacrocorax aristotelis",
+      "es": "El cormorán moñudo es menor y más delgado, de pico más fino, con cresta y brillo verdoso en el plumaje.",
+      "en": "The European shag is smaller and slimmer, with a thinner bill, a crest and a greenish sheen to its plumage."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos suelen ser mayores y más pesados que las hembras.",
+    "en": "Males are typically larger and heavier than females."
+  },
+  "etymology": {
+    "es": "Phalacrocorax, del griego phalakrós «calvo» y kórax «cuervo»; carbo significa en latín «carbón», por su color negro.",
+    "en": "Phalacrocorax, from Greek phalakros 'bald' and korax 'raven'; carbo is Latin for 'charcoal', after its black colour."
+  },
+  "trivia": {
+    "es": [
+      "«Cormorán» viene del latín corvus marinus, «cuervo marino»."
+    ],
+    "en": [
+      "'Cormorant' comes from Latin corvus marinus, 'sea raven'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Phalacrocorax carbo",
+      "url": "https://es.wikipedia.org/wiki/Phalacrocorax_carbo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Great cormorant",
+      "url": "https://en.wikipedia.org/wiki/Great_cormorant",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

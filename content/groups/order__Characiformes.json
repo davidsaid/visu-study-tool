@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Carácidos y afines: más de 2000 especies de agua dulce, sobre todo de Sudamérica y Centroamérica y unas 200 de África, como pirañas y tetras. En el bestiario: la piraña negra (Serrasalmus rhombeus) y el tetra neón (Paracheirodon innesi).",
+    "en": "Characins and allies: over 2,000 freshwater species, mostly from South and Central America and some 200 from Africa, including piranhas and tetras. In the bestiary: the redeye piranha (Serrasalmus rhombeus) and the neon tetra (Paracheirodon innesi)."
+  },
+  "traits": {
+    "es": [
+      "Aparato de Weber, como los demás ostariofisios",
+      "Suelen tener una pequeña aleta adiposa carnosa entre la dorsal y la caudal",
+      "Dientes en la boca, a menudo fuertes (muchos son carnívoros)",
+      "Cuerpo comprimido lateralmente y cubierto de escamas bien definidas"
+    ],
+    "en": [
+      "Weberian apparatus, like other ostariophysans",
+      "Usually a small fleshy adipose fin between the dorsal and tail fins",
+      "Teeth in the mouth, often strong (many are carnivores)",
+      "Laterally compressed body covered in well-defined scales"
+    ]
+  },
+  "contrast": {
+    "es": "Recuerdan a los cipriniformes (carpas), pero estos no tienen aleta adiposa ni dientes en la boca.",
+    "en": "They resemble cypriniforms (carps), which lack both the adipose fin and teeth in the mouth."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Characiformes",
+      "url": "https://en.wikipedia.org/wiki/Characiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Characiformes",
+      "url": "https://es.wikipedia.org/wiki/Characiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

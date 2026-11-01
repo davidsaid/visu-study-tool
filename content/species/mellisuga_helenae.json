@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Colibrí diminuto (5,5–6,1 cm), el ave más pequeña del mundo, de aspecto redondeado",
+      "Macho: gorguera escarlata iridiscente con plumas laterales alargadas y dorso azulado",
+      "Macho en celo: cabeza, mentón y garganta rojizos o rosados",
+      "Hembra: verde azulada con las partes inferiores gris pálido y puntas de la cola blancas",
+      "Pico negro, fino y puntiagudo"
+    ],
+    "en": [
+      "Tiny hummingbird (5.5–6.1 cm), the world's smallest bird, plump-looking",
+      "Male: iridescent scarlet gorget with elongated side plumes and bluish upperparts",
+      "Breeding male: reddish to pink head, chin and throat",
+      "Female: bluish-green with pale grey underparts and white tail tips",
+      "Slender, pointed black bill"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "La hembra es algo mayor; el macho tiene la gorguera roja y la hembra es verde azulada con la cola punteada de blanco.",
+    "en": "The female is slightly larger; the male has a red gorget while the female is bluish-green with white-tipped tail."
+  },
+  "etymology": {
+    "es": "Mellisuga, del latín mel «miel» y sugere «chupar»; helenae honra a Helena Booth, esposa del anfitrión de Gundlach en Cuba.",
+    "en": "Mellisuga, from Latin mel 'honey' and sugere 'to suck'; helenae honours Helena Booth, wife of Gundlach's host in Cuba."
+  },
+  "trivia": {
+    "es": [
+      "Su nido mide unos 3 cm de diámetro y sus huevos son del tamaño de un grano de café."
+    ],
+    "en": [
+      "Its nest is about 3 cm across and its eggs are the size of a coffee bean."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Mellisuga helenae",
+      "url": "https://es.wikipedia.org/wiki/Mellisuga_helenae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Bee hummingbird",
+      "url": "https://en.wikipedia.org/wiki/Bee_hummingbird",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

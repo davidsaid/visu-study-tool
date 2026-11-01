@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "El mayor flamenco (110–150 cm de alto), con patas y cuello larguísimos",
+      "Plumaje rosa blanquecino con las coberteras alares rojas",
+      "Primarias y secundarias negras, visibles en vuelo",
+      "Pico grueso y curvado hacia abajo, rosado con la punta negra",
+      "Patas enteramente rosadas; subadultos gris blanquecinos con patas oscuras"
+    ],
+    "en": [
+      "The largest flamingo (110–150 cm tall), with extremely long legs and neck",
+      "Pinkish-white plumage with red wing coverts",
+      "Black primaries and secondaries, visible in flight",
+      "Thick, down-bent bill, pink with a black tip",
+      "Entirely pink legs; subadults greyish-white with dark legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Platalea leucorodia",
+      "es": "La espátula es blanca, sin rosa, y tiene un pico recto, aplanado y ensanchado en la punta, negro con punta amarilla.",
+      "en": "The Eurasian spoonbill is white with no pink, and has a straight, flat bill widened at the tip, black with a yellow tip."
+    }
+  ],
+  "etymology": {
+    "es": "Phoenicopterus, del griego phoînix «escarlata» (o «fénix») y pterón «ala», por el rojo de sus alas; roseus significa en latín «rosa».",
+    "en": "Phoenicopterus, from Greek phoinix 'scarlet' (or 'phoenix') and pteron 'wing', after its red wings; roseus is Latin for 'rose-coloured'."
+  },
+  "trivia": {
+    "es": [
+      "Su color procede de los carotenoides de su alimento; en celo se «maquilla» extendiendo secreciones de la glándula uropigial."
+    ],
+    "en": [
+      "Its colour comes from carotenoids in its food; when breeding it applies 'make-up' by spreading uropygial-gland secretions on its feathers."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Phoenicopterus roseus",
+      "url": "https://es.wikipedia.org/wiki/Phoenicopterus_roseus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Greater flamingo",
+      "url": "https://en.wikipedia.org/wiki/Greater_flamingo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Platalea leucorodia",
+      "url": "https://es.wikipedia.org/wiki/Platalea_leucorodia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

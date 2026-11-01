@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "es": "Flamencos y sus parientes extintos (familia Phoenicopteridae); están estrechamente emparentados con los somormujos, con los que forman el clado Mirandornithes. En el bestiario: el flamenco común (Phoenicopterus roseus).",
+    "en": "Flamingos and their extinct relatives (family Phoenicopteridae); they are closely related to grebes, with which they form the clade Mirandornithes. In the bestiary: the greater flamingo (Phoenicopterus roseus)."
+  },
+  "traits": {
+    "es": [
+      "Aves altas y esbeltas, con patas y cuello muy largos",
+      "Pico curvado hacia abajo que filtra el alimento con laminillas y se usa cabeza abajo",
+      "Plumaje rosa o rojo por los carotenoides de la dieta",
+      "Patas palmeadas"
+    ],
+    "en": [
+      "Tall, slender birds with very long legs and neck",
+      "Down-bent bill that filters food with lamellae and is used upside-down",
+      "Pink or red plumage from dietary carotenoids",
+      "Webbed feet"
+    ]
+  },
+  "contrast": {
+    "es": "Su pico acodado y filtrador los separa de cigüeñas, garzas y espátulas, que también tienen patas largas.",
+    "en": "Their bent, filtering bill sets them apart from storks, herons and spoonbills, which also have long legs."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Phoenicopteriformes",
+      "url": "https://en.wikipedia.org/wiki/Phoenicopteriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Phoenicopteriformes",
+      "url": "https://es.wikipedia.org/wiki/Phoenicopteriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Flamingo",
+      "url": "https://en.wikipedia.org/wiki/Flamingo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Phoenicopteridae",
+      "url": "https://es.wikipedia.org/wiki/Phoenicopteridae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Phoenicopterus roseus",
+      "url": "https://es.wikipedia.org/wiki/Phoenicopterus_roseus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

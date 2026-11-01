@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Félido robusto y musculoso, de cabeza voluminosa y patas cortas y fuertes",
+      "Pelaje de amarillo pálido a pardo rojizo con rosetas grandes que encierran uno o más puntos",
+      "Vientre, cuello y cara interna de las patas blancos",
+      "Cola corta para un gran félido",
+      "Existen ejemplares melánicos casi negros («panteras negras») en los que se intuyen las manchas"
+    ],
+    "en": [
+      "Stocky, muscular cat with a massive head and short, powerful legs",
+      "Pale yellow to reddish-tan coat with large rosettes enclosing one or more dots",
+      "White belly, neck and inner legs",
+      "Short tail for a big cat",
+      "Melanistic, near-black individuals ('black panthers') occur, with spots faintly visible"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Panthera pardus",
+      "es": "El leopardo es más pequeño y esbelto, con rosetas más pequeñas, densas y sin punto central.",
+      "en": "The leopard is smaller and lighter, with smaller, denser rosettes lacking a central dot."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser un 10–20 % más pequeñas que los machos.",
+    "en": "Females are typically 10–20% smaller than males."
+  },
+  "etymology": {
+    "es": "Panthera, del latín panthēra (griego pánthēr); onca procede del portugués onça, un gran félido moteado.",
+    "en": "Panthera from Latin panthēra (Greek pánthēr); onca from Portuguese onça, a large spotted cat."
+  },
+  "sources": [
+    {
+      "title": "Panthera onca — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Panthera_onca",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Jaguar — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Jaguar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

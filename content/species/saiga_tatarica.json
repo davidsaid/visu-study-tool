@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Nariz enorme, hinchada y colgante, como una pequeña trompa, con los orificios dirigidos hacia abajo",
+      "Antílope mediano y rechoncho de patas finas y cola muy corta",
+      "Pelaje amarillo rojizo en verano y blanquecino o pardo grisáceo y largo en invierno, con vientre blanco",
+      "Solo los machos tienen cuernos: cortos, gruesos, céreos, algo translúcidos y muy anillados"
+    ],
+    "en": [
+      "Huge, bloated, drooping nose like a small trunk, with downward-pointing nostrils",
+      "Medium-sized, stocky antelope with thin legs and a very short tail",
+      "Yellowish-red coat in summer, long and whitish or greyish-brown in winter, with a white belly",
+      "Only males have horns: short, thick, wax-coloured, slightly translucent and strongly ringed"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pantholops hodgsonii",
+      "es": "El chirú macho tiene cuernos largos, finos y curvados hacia atrás, cara casi negra y rayas negras en las patas, sin la trompa de la saiga.",
+      "en": "The male chiru has long, slender, back-curved horns, an almost black face and black leg stripes, without the saiga's trunk-like nose."
+    }
+  ],
+  "dimorphism": {
+    "es": "Solo el macho tiene cuernos y es más grande que la hembra.",
+    "en": "Only the male has horns, and it is larger than the female."
+  },
+  "sources": [
+    {
+      "title": "Saiga tatarica — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Saiga_tatarica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Saiga antelope — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Saiga_antelope",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Tibetan antelope — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Tibetan_antelope",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,53 @@
+{
+  "field_marks": {
+    "es": [
+      "Mustélido esbelto de pelaje pardo y cola larga y poblada",
+      "Babero blanco en la garganta que se abre en horquilla hacia las patas delanteras",
+      "Nariz de color claro, melocotón o gris",
+      "Cabeza alargada y angulosa, con orejas cortas, redondeadas y separadas",
+      "Patas relativamente cortas, con almohadillas visibles"
+    ],
+    "en": [
+      "Slender brown mustelid with a long, bushy tail",
+      "White throat bib that forks down onto the forelegs",
+      "Pale nose, peach or grey",
+      "Elongated, angular head with short, rounded, widely spaced ears",
+      "Relatively short legs with visible paw pads"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Martes martes",
+      "es": "La marta tiene la nariz negruzca, patas más largas y peludas y un babero que no se bifurca.",
+      "en": "The pine marten has a blackish nose, longer and furrier legs and a bib that does not fork."
+    },
+    {
+      "binomial": "Mustela nivalis",
+      "es": "La comadreja es mucho más pequeña, con cola corta y todo el vientre blanco.",
+      "en": "The least weasel is much smaller, with a short tail and an all-white underside."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Aparece como villana secundaria en Las aventuras de Pinocho, de Collodi."
+    ],
+    "en": [
+      "Beech martens appear as minor villains in Collodi's The Adventures of Pinocchio."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Martes foina — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Martes_foina",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Beech marten — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Beech_marten",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

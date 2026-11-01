@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Tortuga marina de caparazón duro con cabeza muy grande",
+      "Caparazón pardo rojizo, de unos 90 cm en adultos",
+      "Cinco pares de escudos costales y 11–12 pares de marginales",
+      "Piel de la cabeza y el cuello amarilla a parda; plastrón amarillo pálido",
+      "No puede retraer la cabeza ni las aletas en el caparazón"
+    ],
+    "en": [
+      "Hard-shelled sea turtle with a very large head",
+      "Reddish-brown carapace, about 90 cm in adults",
+      "Five pairs of costal scutes and 11–12 pairs of marginals",
+      "Head and neck skin yellow to brown; pale yellow plastron",
+      "Cannot pull its head or flippers into the shell"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Dermochelys coriacea",
+      "es": "La tortuga laúd no tiene escudos óseos: su caparazón es de piel coriácea oscura con siete quillas longitudinales.",
+      "en": "The leatherback has no bony scutes: its shell is dark, leathery skin with seven lengthwise ridges."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos adultos tienen la cola más larga y gruesa, garras más largas, plastrón más corto y caparazón más ancho y menos abombado.",
+    "en": "Adult males have longer, thicker tails, longer claws, a shorter plastron and a wider, flatter carapace."
+  },
+  "trivia": {
+    "es": [
+      "En tierra parece llorar: unas glándulas tras los ojos expulsan el exceso de sal."
+    ],
+    "en": [
+      "On land it seems to cry: glands behind the eyes excrete excess salt."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Caretta caretta",
+      "url": "https://es.wikipedia.org/wiki/Caretta_caretta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Loggerhead sea turtle",
+      "url": "https://en.wikipedia.org/wiki/Loggerhead_sea_turtle",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Dermochelys coriacea",
+      "url": "https://es.wikipedia.org/wiki/Dermochelys_coriacea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

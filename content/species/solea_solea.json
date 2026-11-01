@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez plano de cuerpo ovalado y alargado",
+      "Ojos pequeños y juntos en el lado derecho",
+      "Cara superior pardo grisácea o verdosa; la inferior, blanca",
+      "Boca oblicua con labios protráctiles"
+    ],
+    "en": [
+      "Flatfish with an oval, elongated body",
+      "Small eyes close together on the right side",
+      "Upper side greyish- or greenish-brown; underside white",
+      "Oblique mouth with protrusible lips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Scophthalmus maximus",
+      "es": "El rodaballo es casi circular, con los ojos en el lado izquierdo y tubérculos óseos en la cara superior.",
+      "en": "The turbot is almost circular, with its eyes on the left side and bony tubercles on the upper side."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Nace como un pez normal, con un ojo a cada lado; la metamorfosis empieza hacia el centímetro de longitud."
+    ],
+    "en": [
+      "It hatches as an ordinary fish with an eye on each side; metamorphosis begins at about one centimetre long."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Solea solea",
+      "url": "https://es.wikipedia.org/wiki/Solea_solea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common sole",
+      "url": "https://en.wikipedia.org/wiki/Common_sole",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Scophthalmus maxima",
+      "url": "https://es.wikipedia.org/wiki/Scophthalmus_maxima",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

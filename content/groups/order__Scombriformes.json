@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "es": "Escombriformes o Pelagiaria: 287 especies de percomorfos, en su mayoría pelágicos de mar abierto, que antes se repartían entre los subórdenes Scombroidei y Stromateoidei de los perciformes; su parentesco se basa sobre todo en datos moleculares. En el bestiario: la caballa (Scomber scombrus), el atún rojo (Thunnus thynnus) y el atún blanco o bonito del norte (Thunnus alalunga).",
+    "en": "Scombriformes or Pelagiaria: 287 species of percomorphs, mostly open-ocean pelagic fish, formerly split between the suborders Scombroidei and Stromateoidei of Perciformes; their relationship rests mainly on molecular data. In the bestiary: the Atlantic mackerel (Scomber scombrus), the Atlantic bluefin tuna (Thunnus thynnus) and the albacore (Thunnus alalunga)."
+  },
+  "traits": {
+    "es": [
+      "Escómbridos: dos aletas dorsales y una serie de pínnulas tras la segunda dorsal y la anal",
+      "Aleta caudal rígida y muy ahorquillada, sobre un pedúnculo estrecho y con quillas",
+      "Primera dorsal y aletas pélvicas retráctiles en cavidades del cuerpo",
+      "Cuerpo hidrodinámico de nadador rápido de mar abierto"
+    ],
+    "en": [
+      "Scombrids: two dorsal fins and a row of finlets behind the second dorsal and anal fins",
+      "Rigid, deeply forked tail on a slender, ridged peduncle",
+      "First dorsal and pelvic fins retractable into grooves in the body",
+      "Streamlined body of a fast open-ocean swimmer"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con el jurel (Carangiformes), que tiene escudos espinosos a lo largo de la línea lateral.",
+    "en": "Do not confuse with the horse mackerel (Carangiformes), which has spiny scutes along the lateral line."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Scombriformes",
+      "url": "https://en.wikipedia.org/wiki/Scombriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Scombroidei",
+      "url": "https://es.wikipedia.org/wiki/Scombroidei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Scombridae",
+      "url": "https://en.wikipedia.org/wiki/Scombridae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Scombridae",
+      "url": "https://es.wikipedia.org/wiki/Scombridae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Carangidae",
+      "url": "https://es.wikipedia.org/wiki/Carangidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

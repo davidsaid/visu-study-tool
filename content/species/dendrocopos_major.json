@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro carpintero mediano (20–24 cm) de plumaje blanco y negro",
+      "Gran mancha blanca en el hombro; alas y cola barradas de blanco y negro",
+      "Bajo vientre e infracoberteras rojo escarlata",
+      "Cara blanca cruzada por líneas negras que unen hombro, nuca, pico y pecho",
+      "Macho con mancha carmesí en la nuca; juveniles con el píleo rojo y el bajo vientre rosado"
+    ],
+    "en": [
+      "Medium-sized woodpecker (20–24 cm) with pied black-and-white plumage",
+      "Large white shoulder patch; wings and tail barred black and white",
+      "Scarlet lower belly and undertail",
+      "White face crossed by black lines linking shoulder, nape, bill and breast",
+      "Male has a crimson nape patch; juveniles have a red crown and pinkish lower belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Picus sharpei",
+      "es": "El pito real ibérico es mayor y verde, con píleo rojo y obispillo amarillo verdoso.",
+      "en": "The Iberian green woodpecker is larger and green, with a red crown and yellowish-green rump."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho tiene una mancha carmesí en la nuca que falta en la hembra, por lo demás similar.",
+    "en": "The male has a crimson nape patch, absent from the otherwise similar female."
+  },
+  "etymology": {
+    "es": "Dendrocopos, del griego déndron «árbol» y kópos «golpe»; major procede del latín maior, «mayor».",
+    "en": "Dendrocopos, from Greek dendron 'tree' and kopos 'striking'; major is from Latin maior, 'greater'."
+  },
+  "trivia": {
+    "es": [
+      "Su sonoro tamborileo, como una ráfaga de ametralladora, lo emiten ambos sexos."
+    ],
+    "en": [
+      "Both sexes produce its loud, machine-gun-like drumming."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Dendrocopos major",
+      "url": "https://es.wikipedia.org/wiki/Dendrocopos_major",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Great spotted woodpecker",
+      "url": "https://en.wikipedia.org/wiki/Great_spotted_woodpecker",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Picus sharpei",
+      "url": "https://es.wikipedia.org/wiki/Picus_sharpei",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Tiburones modernos (división Selachii): elasmobranquios hermanos de las rayas. En el bestiario incluye los órdenes Orectolobiformes, Lamniformes, Carcharhiniformes, Hexanchiformes, Squaliformes y Squatiniformes, del tiburón ballena a la mielga y el angelote.",
+    "en": "Modern sharks (division Selachii): elasmobranchs that are the sister group of the rays. In the bestiary they comprise the orders Orectolobiformes, Lamniformes, Carcharhiniformes, Hexanchiformes, Squaliformes and Squatiniformes, from the whale shark to the spiny dogfish and the angelshark."
+  },
+  "traits": {
+    "es": [
+      "Aletas pectorales no soldadas a la cabeza",
+      "De cinco a siete hendiduras branquiales a cada lado de la cabeza",
+      "Endoesqueleto sin costillas",
+      "Piel con dentículos dérmicos"
+    ],
+    "en": [
+      "Pectoral fins not fused to the head",
+      "Five to seven gill slits on each side of the head",
+      "Ribless endoskeleton",
+      "Skin with dermal denticles"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las rayas (Batoidea): en ellas las pectorales están soldadas a la cabeza y las hendiduras branquiales se abren en la cara ventral. El angelote, aplanado, es un tiburón.",
+    "en": "Do not confuse with rays (Batoidea), whose pectoral fins are fused to the head and whose gill slits open on the underside. The flattened angelshark is a shark."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Shark",
+      "url": "https://en.wikipedia.org/wiki/Shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Selachii",
+      "url": "https://es.wikipedia.org/wiki/Selachii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Batomorphi",
+      "url": "https://en.wikipedia.org/wiki/Batomorphi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

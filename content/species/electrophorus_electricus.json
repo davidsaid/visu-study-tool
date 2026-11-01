@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo muy largo y cilíndrico, de hasta 2 m, sin escamas",
+      "Dorso gris pardo oscuro o verdoso; vientre amarillo o anaranjado",
+      "Cabeza aplanada con boca grande y cuadrada en el extremo del hocico",
+      "Aleta anal larguísima que recorre el cuerpo hasta la punta de la cola"
+    ],
+    "en": [
+      "Very long, cylindrical, scaleless body up to 2 m",
+      "Dark grey-brown or greenish back; yellow or orange belly",
+      "Flattened head with a large, square mouth at the tip of the snout",
+      "Very long anal fin running along the body to the tail tip"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Anguilla anguilla",
+      "es": "Pese al nombre no es una anguila verdadera: la anguila eléctrica carece de escamas, tiene el vientre amarillo o anaranjado y la boca cuadrada.",
+      "en": "Despite its name it is not a true eel: the electric eel is scaleless, with a yellow or orange belly and a square mouth."
+    }
+  ],
+  "dimorphism": {
+    "es": "Sin dimorfismo sexual apreciable, aunque las hembras maduras tienen el abdomen más oscuro.",
+    "en": "No obvious sexual dimorphism, although mature females have a darker abdomen."
+  },
+  "trivia": {
+    "es": [
+      "Produce descargas de hasta 850 voltios para cazar, defenderse y comunicarse.",
+      "Respira aire: sube a la superficie cada diez minutos aproximadamente."
+    ],
+    "en": [
+      "It produces discharges of up to 850 volts to hunt, defend itself and communicate.",
+      "It breathes air, surfacing roughly every ten minutes."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Electrophorus electricus",
+      "url": "https://es.wikipedia.org/wiki/Electrophorus_electricus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Electrophorus electricus",
+      "url": "https://en.wikipedia.org/wiki/Electrophorus_electricus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

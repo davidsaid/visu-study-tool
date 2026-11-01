@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Rayas propiamente dichas: batoideos de cuerpo muy deprimido en forma de disco, sobre todo bentónicos, que reposan en fondos de arena o fango. En el bestiario: la raya noruega (Dipturus batis).",
+    "en": "Skates: batoids with a strongly depressed, disc-shaped body, mostly benthic, resting on sandy or muddy sea beds. In the bestiary: the common skate (Dipturus batis)."
+  },
+  "traits": {
+    "es": [
+      "Aletas pectorales muy grandes, unidas a los lados de la cabeza formando un disco",
+      "Hocico delgado y puntiagudo; boca ancha en la cara inferior",
+      "Ojos y grandes espiráculos en la cara superior; hendiduras branquiales en la inferior",
+      "Sin aleta anal ni membrana nictitante; cola fina",
+      "Ponen huevos en cápsulas córneas («bolsas de sirena»)"
+    ],
+    "en": [
+      "Very large pectoral fins joined to the sides of the head to form a disc",
+      "Slender, pointed snout; wide mouth on the underside",
+      "Eyes and large spiracles on top; gill slits underneath",
+      "No anal fin or nictitating membrane; slender tail",
+      "Lay eggs in horny cases ('mermaid's purses')"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las pastinacas y mantas (Myliobatiformes), que tienen aguijones en la cola, aletas pélvicas de un solo lóbulo y generalmente no tienen aleta dorsal.",
+    "en": "Do not confuse with stingrays and devil rays (Myliobatiformes), which have tail stings, single-lobed pelvic fins and usually no dorsal fin."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Rajiformes",
+      "url": "https://en.wikipedia.org/wiki/Rajiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Rajiformes",
+      "url": "https://es.wikipedia.org/wiki/Rajiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "es": "Cálaos, tocos, abubillas y abubillas arbóreas, antes incluidos en Coraciiformes; se distribuyen por África, Asia, Europa y Melanesia. En el bestiario: la abubilla común (Upupa epops).",
+    "en": "Hornbills, ground hornbills, hoopoes and wood hoopoes, formerly placed in Coraciiformes; they range across Africa, Asia, Europe and Melanesia. In the bestiary: the Eurasian hoopoe (Upupa epops)."
+  },
+  "traits": {
+    "es": [
+      "Pico largo y curvado hacia abajo (de ahí el nombre «cuerno de vaca»)",
+      "Abubillas: cresta eréctil de plumas anaranjadas con puntas negras",
+      "Cálaos: pico a menudo de colores vivos, a veces con un casco córneo; atlas y axis fusionados"
+    ],
+    "en": [
+      "Long, down-curved bill (hence the name 'cow horn')",
+      "Hoopoes: erectile crest of orange feathers with black tips",
+      "Hornbills: bill often brightly coloured, sometimes with a horny casque; atlas and axis fused"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Bucerotiformes",
+      "url": "https://en.wikipedia.org/wiki/Bucerotiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Bucerotiformes",
+      "url": "https://es.wikipedia.org/wiki/Bucerotiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Hoopoe",
+      "url": "https://en.wikipedia.org/wiki/Hoopoe",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Upupa epops",
+      "url": "https://es.wikipedia.org/wiki/Upupa_epops",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Hornbill",
+      "url": "https://en.wikipedia.org/wiki/Hornbill",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Bucerotidae",
+      "url": "https://es.wikipedia.org/wiki/Bucerotidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

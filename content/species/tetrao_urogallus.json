@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Gran gallinácea forestal con dimorfismo sexual extremo",
+      "Macho gris oscuro a pardo oscuro, con el pecho verde metálico, «barba» bajo el pico y cola en abanico",
+      "Tubérculos rojos sobre los ojos del macho",
+      "Hembra mucho menor, parda jaspeada de negro y con el vientre más claro y amarillento",
+      "Manchas blancas en los hombros en ambos sexos; patas emplumadas"
+    ],
+    "en": [
+      "Large forest grouse with extreme sexual dimorphism",
+      "Male dark grey to dark brown, with metallic green breast, a 'beard' under the bill and a fan-shaped tail",
+      "Red wattles above the male's eyes",
+      "Female much smaller, brown barred with black, with a paler yellowish belly",
+      "White shoulder spots in both sexes; feathered legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Perdix perdix",
+      "es": "La perdiz pardilla es mucho más pequeña (unos 30 cm), con la cara castaño anaranjada y los flancos grises.",
+      "en": "The grey partridge is much smaller (about 30 cm), with an orange-chestnut face and grey flanks."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho es casi el doble de grande que la hembra y de plumaje oscuro; la hembra es parda y jaspeada.",
+    "en": "The male is nearly twice the size of the female and dark-plumaged; the female is brown and barred."
+  },
+  "etymology": {
+    "es": "Tetrao es una palabra latina usada para el gallo lira y el urogallo; urogallus es un neolatín que imita el alemán Auerhuhn, nombre del urogallo.",
+    "en": "Tetrao is a Latin word used for both the black grouse and the capercaillie; urogallus is a Neo-Latin partial homophone of German Auerhuhn, the capercaillie."
+  },
+  "trivia": {
+    "es": [
+      "El nombre inglés capercaillie procede del gaélico escocés capall coille, «caballo del bosque»."
+    ],
+    "en": [
+      "The English name capercaillie comes from Scottish Gaelic capall coille, 'horse of the woodland'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Tetrao urogallus",
+      "url": "https://es.wikipedia.org/wiki/Tetrao_urogallus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Western capercaillie",
+      "url": "https://en.wikipedia.org/wiki/Western_capercaillie",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Perdix perdix",
+      "url": "https://es.wikipedia.org/wiki/Perdix_perdix",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

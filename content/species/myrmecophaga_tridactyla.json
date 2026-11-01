@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico muy largo, estrecho y cilíndrico, que ocupa casi toda la cabeza",
+      "Ojos, orejas y boca pequeños",
+      "Banda negra con borde blanco en diagonal desde el pecho hacia el lomo, a modo de chaleco",
+      "Cola larga y muy tupida, con una crin que continúa por el lomo",
+      "Grandes garras en las patas delanteras"
+    ],
+    "en": [
+      "Very long, narrow, cylindrical snout taking up most of the head",
+      "Small eyes, ears and mouth",
+      "White-edged black band running diagonally from the chest to the back, like a vest",
+      "Long, very bushy tail, with a mane continuing along the back",
+      "Large claws on the forefeet"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Orycteropus afer",
+      "es": "El cerdo hormiguero tiene hocico de cerdo, pelo escaso y lomo arqueado, sin cola tupida ni chaleco negro.",
+      "en": "The aardvark has a pig-like snout, sparse hair and an arched back, with no bushy tail or black vest."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son más grandes y robustos, aunque a distancia es difícil distinguir los sexos.",
+    "en": "Males are larger and more robust, though the sexes are hard to tell apart at a distance."
+  },
+  "etymology": {
+    "es": "Del griego: Myrmecophaga, de myrmex («hormiga») y phagein («comer»), «comedor de hormigas»; tridactyla, de tri («tres») y daktylos («dedo»).",
+    "en": "From Greek: Myrmecophaga, from myrmex ('ant') and phagein ('to eat'), 'anteater'; tridactyla, from tri ('three') and daktylos ('finger')."
+  },
+  "sources": [
+    {
+      "title": "Myrmecophaga tridactyla — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Myrmecophaga_tridactyla",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Giant anteater — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Giant_anteater",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

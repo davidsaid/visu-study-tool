@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Mixinos o peces bruja: peces sin mandíbulas, marinos, carroñeros y depredadores, con una sola familia actual (Myxinidae). En el bestiario la representa el mixino (Myxine glutinosa).",
+    "en": "Hagfishes: jawless marine fish that scavenge and prey, with a single living family (Myxinidae). In the bestiary it is represented by the Atlantic hagfish (Myxine glutinosa)."
+  },
+  "traits": {
+    "es": [
+      "Cuerpo alargado de aspecto de gusano, sin escamas y normalmente rosado",
+      "Sin aletas pares; cola aplanada en forma de pala",
+      "Seis u ocho barbillas alrededor de la boca y un solo orificio nasal",
+      "Ojos muy rudimentarios, sin cristalino",
+      "Glándulas de la piel que liberan grandes cantidades de moco como defensa"
+    ],
+    "en": [
+      "Elongated, worm-like, scaleless body, usually pinkish",
+      "No paired fins; flattened, paddle-like tail",
+      "Six or eight barbels around the mouth and a single nostril",
+      "Very rudimentary eyes without a lens",
+      "Skin glands that release copious slime as a defence"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con las lampreas (Hyperoartia): estas tienen una boca en ventosa con dientes córneos, siete orificios branquiales a cada lado y ojos bien desarrollados en el adulto, y no tienen barbillas.",
+    "en": "Do not confuse with lampreys (Hyperoartia): lampreys have a sucker mouth with horny teeth, seven gill openings on each side and well-developed adult eyes, and no barbels."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Hagfish",
+      "url": "https://en.wikipedia.org/wiki/Hagfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Myxini",
+      "url": "https://es.wikipedia.org/wiki/Myxini",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Esturiones y peces espátula: actinopterigios basales, el segundo linaje en separarse tras los bichires, con un esqueleto en gran parte cartilaginoso. En el bestiario: el esturión (Acipenser sturio) y el pez espátula (Polyodon spathula).",
+    "en": "Sturgeons and paddlefishes: basal ray-finned fishes, the second lineage to branch off after the bichirs, with a largely cartilaginous skeleton. In the bestiary: the European sturgeon (Acipenser sturio) and the American paddlefish (Polyodon spathula)."
+  },
+  "traits": {
+    "es": [
+      "Esqueleto mayormente cartilaginoso; notocorda persistente en el adulto",
+      "Aleta caudal heterocerca",
+      "Barbillas: cuatro en los esturiones, dos en los peces espátula",
+      "Adultos sin dientes o casi; válvula espiral en el intestino"
+    ],
+    "en": [
+      "Skeleton largely cartilaginous; notochord retained in adults",
+      "Heterocercal tail fin",
+      "Barbels: four in sturgeons, two in paddlefishes",
+      "Adults toothless or nearly so; spiral valve in the intestine"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Acipenseriformes",
+      "url": "https://en.wikipedia.org/wiki/Acipenseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Acipenseriformes",
+      "url": "https://es.wikipedia.org/wiki/Acipenseriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

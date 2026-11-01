@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Aves limícolas, gaviotas y álcidos: un orden diverso de aves pequeñas a medianas casi siempre ligadas al agua, con unas 350–390 especies. En el bestiario: la avefría europea, la avoceta común, la gaviota reidora, la gaviota sombría y el frailecillo atlántico.",
+    "en": "Shorebirds, gulls and auks: a diverse order of small to medium-large birds nearly always tied to water, with about 350–390 species. In the bestiary: the northern lapwing, the pied avocet, the black-headed gull, the lesser black-backed gull and the Atlantic puffin."
+  },
+  "traits": {
+    "es": [
+      "Aspecto muy variado, pero paladar, aparato vocal y tendones de la pata muy similares en todas",
+      "Grandes glándulas nasales que excretan sal",
+      "Incluye limícolas que sondean el barro (avefría, avoceta) y gaviotas y afines, que pescan en el mar; a este último grupo pertenecen también los álcidos, como el frailecillo",
+      "Ala con once plumas de vuelo"
+    ],
+    "en": [
+      "Very varied in appearance, but palate, vocal apparatus and leg tendons are very similar throughout",
+      "Large nasal glands that excrete salt",
+      "Includes waders that probe mud (lapwing, avocet) and gulls and allies, which take fish at sea; the auks, such as the puffin, also belong to the latter group",
+      "Wing with eleven flight feathers"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Charadriiformes",
+      "url": "https://en.wikipedia.org/wiki/Charadriiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Charadriiformes",
+      "url": "https://es.wikipedia.org/wiki/Charadriiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro de 18–19 cm, pardo listado por encima y más claro por debajo",
+      "Cresta corta y roma que puede erizar",
+      "Vientre blanco",
+      "Cola corta con bordes blancos y borde posterior del ala blanquecino, visibles al alejarse en vuelo",
+      "El macho canta suspendido en el aire a 50–100 m de altura"
+    ],
+    "en": [
+      "Bird of 18–19 cm, streaked brown above and paler below",
+      "Short, blunt crest that can be raised",
+      "White belly",
+      "Short tail with white edges and whitish trailing edge to the wing, visible as it flies away",
+      "The male sings while hovering 50–100 m up"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Los sexos son iguales en aspecto; el macho tiene las alas más anchas.",
+    "en": "The sexes look alike; the male has broader wings."
+  },
+  "etymology": {
+    "es": "Alauda es «alondra» en latín, palabra que Plinio creía de origen celta; arvensis significa «de los campos».",
+    "en": "Alauda is Latin for 'lark', a word Pliny thought was Celtic in origin; arvensis means 'of the field'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Alauda arvensis",
+      "url": "https://es.wikipedia.org/wiki/Alauda_arvensis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian skylark",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_skylark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,75 @@
+{
+  "field_marks": {
+    "es": [
+      "Zancuda grande (80–93 cm) de plumaje casi totalmente blanco",
+      "Pico largo y plano, ensanchado en la punta como una espátula; negro con punta amarilla en adultos",
+      "En celo, copete en la nuca y mancha amarilla dorada en la base del cuello",
+      "Patas negras",
+      "Vuela con el cuello extendido; los jóvenes tienen el pico pálido y la punta de las primarias negra"
+    ],
+    "en": [
+      "Large wader (80–93 cm) with almost entirely white plumage",
+      "Long, flat bill widened at the tip like a spoon; black with a yellow tip in adults",
+      "Breeding adults have a nape crest and a golden-yellow breast patch",
+      "Black legs",
+      "Flies with neck outstretched; juveniles have a pale bill and black primary tips"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Egretta garzetta",
+      "es": "La garceta común es menor y tiene un pico fino y puntiagudo, y vuela con el cuello recogido.",
+      "en": "The little egret is smaller with a thin, pointed bill, and flies with its neck retracted."
+    },
+    {
+      "binomial": "Phoenicopterus roseus",
+      "es": "El flamenco es rosado y tiene un pico grueso curvado hacia abajo.",
+      "en": "The greater flamingo is pink and has a thick, down-bent bill."
+    }
+  ],
+  "etymology": {
+    "es": "Platalea es el nombre latino del ave y significa «ancho», por la forma del pico; leucorodia viene del griego leukerōdiós, «espátula», de leukós «blanco» y erōdiós «garza».",
+    "en": "Platalea is the Latin name of the bird and means 'broad', after the bill; leucorodia is from Greek leukerodios, 'spoonbill', from leukos 'white' and erodios 'heron'."
+  },
+  "trivia": {
+    "es": [
+      "En la Edad Media y el Renacimiento se la llamaba «averramía»."
+    ],
+    "en": [
+      "In the Middle Ages and Renaissance it was called 'averramía' in Spanish."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Platalea leucorodia",
+      "url": "https://es.wikipedia.org/wiki/Platalea_leucorodia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Eurasian spoonbill",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_spoonbill",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Egretta garzetta",
+      "url": "https://es.wikipedia.org/wiki/Egretta_garzetta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Phoenicopterus roseus",
+      "url": "https://es.wikipedia.org/wiki/Phoenicopterus_roseus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Grey heron",
+      "url": "https://en.wikipedia.org/wiki/Grey_heron",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

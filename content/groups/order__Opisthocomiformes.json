@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Orden con una sola familia (Opisthocomidae) y un único representante vivo, el hoacín (Opisthocomus hoazin), de la Amazonia y el delta del Orinoco; su posición en el árbol de las aves sigue siendo muy discutida.",
+    "en": "An order with a single family (Opisthocomidae) and a single living member, the hoatzin (Opisthocomus hoazin), of the Amazon and the Orinoco delta; its place in the bird tree is still much debated."
+  },
+  "traits": {
+    "es": [
+      "Cara desnuda de color azul y ojos rojizos",
+      "Cresta eréctil, desaliñada, de color canela",
+      "Los pollos tienen dos garras en cada ala",
+      "Sistema digestivo que fermenta la materia vegetal, algo único entre las aves"
+    ],
+    "en": [
+      "Bare blue face with maroon eyes",
+      "Spiky, permanently erect rufous crest",
+      "Chicks have two claws on each wing",
+      "Digestive system that ferments plant matter, unique among birds"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Opisthocomidae",
+      "url": "https://en.wikipedia.org/wiki/Opisthocomidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Opisthocomidae",
+      "url": "https://es.wikipedia.org/wiki/Opisthocomidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Hoatzin",
+      "url": "https://en.wikipedia.org/wiki/Hoatzin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Opisthocomus hoazin",
+      "url": "https://es.wikipedia.org/wiki/Opisthocomus_hoazin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

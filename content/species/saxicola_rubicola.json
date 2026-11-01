@@ -1,0 +1,73 @@
+{
+  "field_marks": {
+    "es": [
+      "Pájaro pequeño (11,5–13 cm), algo menor que un petirrojo, de alas cortas",
+      "Macho en verano: cabeza y dorso negros, garganta y pecho anaranjados",
+      "Macho: medio collar blanco a los lados del cuello y pequeña mancha blanca en el ala",
+      "Vientre blanco en el macho",
+      "Hembra: parda listada, sin blanco en cuello ni obispillo; solo una mancha alar blanquecina"
+    ],
+    "en": [
+      "Small bird (11.5–13 cm), slightly smaller than a robin, short-winged",
+      "Summer male: black head and back, orange throat and breast",
+      "Male: white half-collar on the neck sides and a small white wing patch",
+      "White belly in the male",
+      "Female: streaked brown, no white on neck or rump; only a buffy-white wing patch"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Erithacus rubecula",
+      "es": "El petirrojo tiene la cara y el pecho naranja y el dorso pardo; no tiene la cabeza negra ni el collar blanco.",
+      "en": "The European robin has an orange face and breast and a brown back; it lacks the black head and white collar."
+    },
+    {
+      "binomial": "Oenanthe hispanica",
+      "es": "La collalba rubia tiene el obispillo y casi toda la cola blancos y un antifaz negro.",
+      "en": "The western black-eared wheatear has a white rump and mostly white tail, and a black mask."
+    }
+  ],
+  "dimorphism": {
+    "es": "Marcado: el macho tiene la cabeza negra, el pecho naranja y manchas blancas; la hembra es parda listada.",
+    "en": "Marked: the male has a black head, orange breast and white patches; the female is streaked brown."
+  },
+  "etymology": {
+    "es": "Saxicola significa «morador de rocas», de saxum «roca» e incola «habitante»; rubicola combina rubus «zarza» e incola: «morador de zarzas».",
+    "en": "Saxicola means 'rock-dweller', from saxum 'rock' and incola 'dwelling in'; rubicola combines rubus 'brambles' with incola: 'bramble-dweller'."
+  },
+  "trivia": {
+    "es": [
+      "Su nombre inglés, stonechat, imita su reclamo, como dos piedras que chocan."
+    ],
+    "en": [
+      "Its English name, stonechat, comes from its call, like two stones knocked together."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Saxicola rubicola",
+      "url": "https://es.wikipedia.org/wiki/Saxicola_rubicola",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European stonechat",
+      "url": "https://en.wikipedia.org/wiki/European_stonechat",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Erithacus rubecula",
+      "url": "https://es.wikipedia.org/wiki/Erithacus_rubecula",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Western black-eared wheatear",
+      "url": "https://en.wikipedia.org/wiki/Western_black-eared_wheatear",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

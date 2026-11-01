@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez rojo cubierto de espinas, de rojo ladrillo a rosa claro con manchas oscuras",
+      "Espinas dorsales venenosas; a menudo una mancha oscura en la dorsal espinosa, entre las espinas 6.ª y 11.ª",
+      "Tentáculos largos sobre los ojos",
+      "Piel que se cubre de algas y le da camuflaje en el fondo"
+    ],
+    "en": [
+      "Red fish covered in spines, brick-red to light pink with dark blotches",
+      "Venomous dorsal spines; often a dark spot on the spiny dorsal fin between the 6th and 11th spines",
+      "Long tentacles above the eyes",
+      "Skin that becomes covered in algae, camouflaging it on the bottom"
+    ]
+  },
+  "lookalikes": [],
+  "etymology": {
+    "es": "scrofa significa «cerda de cría» en latín, probablemente por los nombres italianos scrofano y scrofanello.",
+    "en": "scrofa means 'breeding sow' in Latin, presumably from the Italian names scrofano and scrofanello."
+  },
+  "trivia": {
+    "es": [
+      "Es el mayor pez escorpión del Atlántico oriental; su picadura causa mucho dolor, inflamación e incluso fiebre."
+    ],
+    "en": [
+      "It is the largest scorpionfish of the eastern Atlantic; its sting causes severe pain, swelling and even fever."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Scorpaena scrofa",
+      "url": "https://es.wikipedia.org/wiki/Scorpaena_scrofa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Scorpaena scrofa",
+      "url": "https://en.wikipedia.org/wiki/Scorpaena_scrofa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

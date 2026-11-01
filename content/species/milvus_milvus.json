@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Rapaz esbelta (60–70 cm) de alas largas y cola larga muy ahorquillada",
+      "Cuerpo, cola y coberteras alares rojizos",
+      "Cabeza gris plateada",
+      "En vuelo, primarias blancas por debajo que contrastan con las puntas negras y las secundarias oscuras",
+      "Cola retorcida al cambiar de dirección; juveniles con pecho y vientre ante"
+    ],
+    "en": [
+      "Slender raptor (60–70 cm) with long wings and a long, deeply forked tail",
+      "Rufous body, tail and wing coverts",
+      "Silvery-grey head",
+      "In flight, white primaries below contrasting with black wingtips and dark secondaries",
+      "Tail twists as it changes direction; juveniles have a buff breast and belly"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Milvus migrans",
+      "es": "El milano negro es algo menor, todo oscuro sin rojizo, y tiene la cola mucho menos ahorquillada.",
+      "en": "The black kite is slightly smaller, all dark with no rufous, and has a much less forked tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Aparte del peso (las hembras son mayores), los sexos son similares.",
+    "en": "Apart from weight (females are larger), the sexes are similar."
+  },
+  "etymology": {
+    "es": "milvus era el nombre latino del milano real.",
+    "en": "milvus was the Latin name for the red kite."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Milvus milvus",
+      "url": "https://es.wikipedia.org/wiki/Milvus_milvus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Red kite",
+      "url": "https://en.wikipedia.org/wiki/Red_kite",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Milvus migrans",
+      "url": "https://es.wikipedia.org/wiki/Milvus_migrans",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

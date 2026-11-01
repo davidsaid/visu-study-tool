@@ -1,0 +1,57 @@
+{
+  "field_marks": {
+    "es": [
+      "Félido grande y esbelto de color liso, sin manchas: dorado, gris plateado o rojizo",
+      "Zonas más claras en mandíbulas, barbilla, garganta y vientre",
+      "Cabeza redonda con orejas erguidas",
+      "Cola muy larga (63–95 cm)",
+      "Los cachorros nacen con manchas, ojos azules y anillos en la cola"
+    ],
+    "en": [
+      "Large, slender cat with a plain, unspotted coat: tawny, silvery grey or reddish",
+      "Paler areas on the jaws, chin, throat and underbody",
+      "Round head with erect ears",
+      "Very long tail (63–95 cm)",
+      "Kittens are spotted, blue-eyed and have ringed tails"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Panthera leo",
+      "es": "La leona también es lisa, pero es más corpulenta y su cola acaba en un mechón negro; el macho tiene melena.",
+      "en": "Lionesses are also plain but bulkier with a black tail tuft; males are maned."
+    },
+    {
+      "binomial": "Panthera onca",
+      "es": "El jaguar puede igualar su tamaño, pero es más robusto y está cubierto de rosetas.",
+      "en": "The jaguar can match its size but is stockier and covered in rosettes."
+    }
+  ],
+  "etymology": {
+    "es": "concolor, en latín «de un solo color», por su pelaje uniforme.",
+    "en": "concolor is Latin for 'of one colour', for its uniform coat."
+  },
+  "trivia": {
+    "es": [
+      "No es un verdadero león del género Panthera y no puede rugir."
+    ],
+    "en": [
+      "It is not a true lion of the genus Panthera and cannot roar."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Puma concolor — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Puma_concolor",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Cougar — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Cougar",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

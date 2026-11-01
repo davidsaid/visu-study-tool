@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Cara rosada con pelos blancos dispersos, rodeada de pelaje blanco amarillento",
+      "Cabeza, garganta, pecho y hombros blancos; resto del cuerpo negro",
+      "Casquete negro en forma de V en la coronilla",
+      "Cola prensil negra, tan larga o más que el cuerpo"
+    ],
+    "en": [
+      "Pink face with scattered white hairs, framed by yellowish-white fur",
+      "White head, throat, chest and shoulders; rest of the body black",
+      "Black V-shaped cap on the crown",
+      "Black prehensile tail, as long as or longer than the body"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Alouatta palliata",
+      "es": "El mono aullador es casi todo negro, con franjas doradas en los flancos y la cara negra y desnuda; el capuchino tiene la cara rosada y la parte delantera blanca.",
+      "en": "The mantled howler is almost all black, with golden fringes on the flanks and a bare black face; the capuchin has a pink face and a white front."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son alrededor de un 27 % más pequeñas que los machos.",
+    "en": "Females are about 27% smaller than males."
+  },
+  "etymology": {
+    "es": "capucinus, como el nombre «capuchino», alude a los frailes capuchinos, cuya capucha recuerda la coloración de su cabeza.",
+    "en": "capucinus, like the name 'capuchin', refers to the Capuchin friars, whose cowls resemble the monkey's head coloration."
+  },
+  "sources": [
+    {
+      "title": "Cebus capucinus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Cebus_capucinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Colombian white-faced capuchin — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Colombian_white-faced_capuchin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

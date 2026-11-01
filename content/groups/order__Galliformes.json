@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Gallináceas: aves terrestres de cuerpo pesado, como gallinas, perdices, faisanes, pavos y codornices, con unas 280–290 especies. En el bestiario: el urogallo común, la perdiz roja y la perdiz pardilla.",
+    "en": "Gamebirds or landfowl: heavy-bodied ground birds such as chickens, partridges, pheasants, turkeys and quails, with about 280–290 species. In the bestiary: the western capercaillie, the red-legged partridge and the grey partridge."
+  },
+  "traits": {
+    "es": [
+      "Aspecto de gallina: cuerpo redondeado y alas cortas y romas",
+      "Vuelo corto; prefieren caminar y correr",
+      "Pico y patas fuertes",
+      "Algunos machos adultos tienen espolones dirigidos hacia atrás"
+    ],
+    "en": [
+      "Chicken-like: rounded body and short, blunt wings",
+      "Short flights; they prefer to walk and run",
+      "Strong bill and legs",
+      "Some adult males grow backward-pointing spurs"
+    ]
+  },
+  "contrast": {
+    "es": "Con los Anseriformes, aves semiacuáticas, forman el grupo Galloanserae; las gallináceas, en cambio, son terrestres de pico y patas fuertes.",
+    "en": "With the semi-aquatic Anseriformes they form Galloanserae (fowl); gamebirds, by contrast, are terrestrial, with strong bills and legs."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Galliformes",
+      "url": "https://en.wikipedia.org/wiki/Galliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Galliformes",
+      "url": "https://es.wikipedia.org/wiki/Galliformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave marina pequeña y rechoncha (28–30 cm), negra por encima y blanca por debajo",
+      "Grandes manchas faciales gris pálido en forma de rombo",
+      "Pico ancho y triangular de perfil: mitad distal rojo anaranjada, mitad basal gris pizarra, separadas por una cresta amarilla",
+      "Ojo de aspecto triangular con anillo orbital rojo",
+      "Patas cortas, muy retrasadas, y pies palmeados naranja vivo"
+    ],
+    "en": [
+      "Small, stocky seabird (28–30 cm), black above and white below",
+      "Large, lozenge-shaped pale grey face patches",
+      "Bill broad and triangular in profile: outer half orange-red, inner half slate grey, divided by a yellow ridge",
+      "Triangular-looking eye with a red orbital ring",
+      "Short legs set far back; bright orange webbed feet"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "El macho es por lo general algo mayor, pero ambos sexos tienen la misma coloración.",
+    "en": "The male is generally slightly larger, but both sexes are coloured alike."
+  },
+  "etymology": {
+    "es": "Fratercula, del latín medieval «frailecillo», por su plumaje blanco y negro que recuerda un hábito monacal; arctica, del griego árktos «oso», alude a la Osa Mayor y, por tanto, a su distribución septentrional.",
+    "en": "Fratercula is Medieval Latin for 'little friar', as its black-and-white plumage recalls monastic robes; arctica, from Greek arktos 'bear', refers to the Great Bear constellation and hence its northern range."
+  },
+  "trivia": {
+    "es": [
+      "Las placas de colores del pico se desarrollan en primavera y se desprenden al terminar la cría."
+    ],
+    "en": [
+      "The colourful bill plates grow in spring and are shed after the breeding season."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Fratercula arctica",
+      "url": "https://es.wikipedia.org/wiki/Fratercula_arctica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Atlantic puffin",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_puffin",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

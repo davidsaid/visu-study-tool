@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Peces de aletas lobuladas o carnosas: en el sentido clásico del bestiario, los celacantos y los peces pulmonados (dipnoos). En el bestiario: el celacanto y el pez de barro americano (Lepidosiren paradoxa).",
+    "en": "Lobe-finned fishes: in the classical sense used by the bestiary, the coelacanths and the lungfishes (dipnoans). In the bestiary: the coelacanth and the South American lungfish (Lepidosiren paradoxa)."
+  },
+  "traits": {
+    "es": [
+      "Aletas pares carnosas y lobuladas, unidas al cuerpo por un solo hueso basal",
+      "Dos aletas dorsales con bases separadas",
+      "Aleta caudal dificerca en las especies actuales: la columna llega hasta su extremo",
+      "Esqueleto óseo y dientes con esmalte"
+    ],
+    "en": [
+      "Fleshy, lobed paired fins joined to the body by a single basal bone",
+      "Two dorsal fins with separate bases",
+      "Diphycercal tail in living species: the backbone runs to its tip",
+      "Bony skeleton and enamel-covered teeth"
+    ]
+  },
+  "contrast": {
+    "es": "Es una agrupación clásica, no un clado: los tetrápodos descienden de peces sarcopterigios y el clado Sarcopterygii los incluye. No confundir con los actinopterigios, cuyas aletas solo tienen radios óseos cubiertos de piel, sin lóbulo carnoso.",
+    "en": "This is a classical grouping, not a clade: tetrapods descend from lobe-finned fishes and the clade Sarcopterygii includes them. Do not confuse with ray-finned fishes, whose fins have only skin-covered bony rays and no fleshy lobe."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Sarcopterygii",
+      "url": "https://en.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Sarcopterygii",
+      "url": "https://es.wikipedia.org/wiki/Sarcopterygii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

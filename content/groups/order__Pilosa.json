@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Osos hormigueros y perezosos, xenartros americanos sin coraza (el nombre significa «peludos»). En el bestiario: el perezoso de tres dedos y el oso hormiguero gigante.",
+    "en": "Anteaters and sloths, unarmoured American xenarthrans (the name means 'hairy'). In the bestiary: the three-toed sloth and the giant anteater."
+  },
+  "traits": {
+    "es": [
+      "Articulaciones adicionales entre las vértebras lumbares (xenartria), compartidas con los armadillos",
+      "Dientes anteriores ausentes; los osos hormigueros no tienen ningún diente",
+      "Osos hormigueros: hocico tubular muy largo y lengua fina y pegajosa",
+      "Perezosos: arborícolas y lentos, pasan casi toda la vida colgados boca abajo"
+    ],
+    "en": [
+      "Extra joints between the lumbar vertebrae (xenarthry), shared with armadillos",
+      "No front teeth; anteaters have no teeth at all",
+      "Anteaters: very long tubular snout and thin, sticky tongue",
+      "Sloths: slow tree-dwellers that spend most of their lives hanging upside down"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con el cerdo hormiguero (Tubulidentata), un afroterio con molares y grandes orejas cuyo parecido con los osos hormigueros es convergente.",
+    "en": "Do not confuse with the aardvark (Tubulidentata), an afrothere with molars and large ears whose resemblance to anteaters is convergent."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Pilosa",
+      "url": "https://en.wikipedia.org/wiki/Pilosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Pilosa",
+      "url": "https://es.wikipedia.org/wiki/Pilosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Anteater",
+      "url": "https://en.wikipedia.org/wiki/Anteater",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Sloth",
+      "url": "https://en.wikipedia.org/wiki/Sloth",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

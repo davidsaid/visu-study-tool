@@ -1,0 +1,58 @@
+{
+  "field_marks": {
+    "es": [
+      "Córvido pequeño y esbelto (31–36 cm), de cola larga y alas cortas",
+      "Capirote negro brillante y garganta blanca",
+      "Cuerpo leonado o gris pardusco claro, con tono rosado por debajo",
+      "Alas y cola azul celeste",
+      "Pico y patas negros; sin puntas blancas en la cola"
+    ],
+    "en": [
+      "Small, slender corvid (31–36 cm) with a long tail and short wings",
+      "Glossy black cap and white throat",
+      "Fawn to light grey-fawn body, pinkish below",
+      "Azure-blue wings and tail",
+      "Black bill and legs; no white tips to the tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pica pica",
+      "es": "La urraca es mayor y blanca y negra, con brillo verde y violeta.",
+      "en": "The Eurasian magpie is larger and black and white, with a green and violet sheen."
+    }
+  ],
+  "etymology": {
+    "es": "Cyanopica combina cyano «azul» y pica «urraca», es decir «urraca azul»; cooki honra al coleccionista Samuel Edward Cook.",
+    "en": "Cyanopica combines cyano 'blue' and pica 'magpie', i.e. 'blue magpie'; cooki honours the collector Samuel Edward Cook."
+  },
+  "trivia": {
+    "es": [
+      "Se consideraba la misma especie que el rabilargo asiático, a 9000 km de distancia, hasta que los análisis genéticos los separaron."
+    ],
+    "en": [
+      "It was considered the same species as the azure-winged magpie of East Asia, 9,000 km away, until genetic analyses split them."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Cyanopica cooki",
+      "url": "https://es.wikipedia.org/wiki/Cyanopica_cooki",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Iberian magpie",
+      "url": "https://en.wikipedia.org/wiki/Iberian_magpie",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Pica pica",
+      "url": "https://es.wikipedia.org/wiki/Pica_pica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

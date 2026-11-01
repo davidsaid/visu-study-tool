@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Murciélagos: los únicos mamíferos capaces de volar de verdad; con unas 1400 especies, son el segundo orden de mamíferos más diverso tras los roedores. En el bestiario: el zorro volador de anteojos, el murciélago enano y el murciélago grande de herradura.",
+    "en": "Bats: the only mammals capable of true, sustained flight; with about 1,400 species, the second most diverse mammal order after rodents. In the bestiary: the spectacled flying fox, the common pipistrelle and the greater horseshoe bat."
+  },
+  "traits": {
+    "es": [
+      "Extremidades anteriores convertidas en alas",
+      "Dedos de la mano, salvo el pulgar, muy alargados y unidos por una membrana de piel (patagio)",
+      "Muchas especies se orientan por ecolocalización",
+      "Tamaño desde 2 g hasta los zorros voladores de 1,5 kg"
+    ],
+    "en": [
+      "Forelimbs modified into wings",
+      "Fingers, except the thumb, greatly elongated and joined by a skin membrane (patagium)",
+      "Many species navigate by echolocation",
+      "Size from 2 g up to flying foxes of 1.5 kg"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los colugos (Dermoptera), que solo planean con una membrana entre cuello, patas y cola, sin dedos alargados.",
+    "en": "Do not confuse with colugos (Dermoptera), which only glide on a membrane between neck, limbs and tail, without elongated fingers."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Bat",
+      "url": "https://en.wikipedia.org/wiki/Bat",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Chiroptera",
+      "url": "https://es.wikipedia.org/wiki/Chiroptera",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

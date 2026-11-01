@@ -1,0 +1,50 @@
+{
+  "field_marks": {
+    "es": [
+      "Lagomorfo pequeño y redondeado, de cuerpo ovalado y compacto, pelaje pardo",
+      "Orejas cortas y casi circulares",
+      "Cola tan corta que queda oculta en el pelaje",
+      "Patas cortas, traseras apenas más largas que las delanteras; postura baja",
+      "Pies muy peludos con almohadillas negras en los dedos"
+    ],
+    "en": [
+      "Small, rounded lagomorph with a compact oval body and brown fur",
+      "Short, almost circular ears",
+      "Tail so short it is hidden in the fur",
+      "Short legs, hind legs only slightly longer than forelegs; low stance",
+      "Densely furred feet with black toe pads"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Oryctolagus cuniculus",
+      "es": "El conejo es mucho mayor, con orejas largas y patas traseras claramente más largas que las delanteras.",
+      "en": "The rabbit is much larger, with long ears and hind legs clearly longer than its forelegs."
+    }
+  ],
+  "etymology": {
+    "es": "Ochotona procede de la palabra mongola para «pica».",
+    "en": "Ochotona comes from the Mongolian word for pika."
+  },
+  "sources": [
+    {
+      "title": "American pika — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/American_pika",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Ochotona princeps — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Ochotona_princeps",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Oryctolagus cuniculus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Oryctolagus_cuniculus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

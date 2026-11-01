@@ -1,0 +1,57 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo fusiforme muy robusto con hocico cónico, corto y grueso",
+      "Dorso gris y vientre blanco con límite neto; puntas de las pectorales negras por debajo",
+      "Boca grande en arco, a menudo entreabierta, con dientes grandes, triangulares y aserrados",
+      "Primera dorsal grande; segunda dorsal y anal pequeñas",
+      "Ojos pequeños, redondos y completamente negros"
+    ],
+    "en": [
+      "Very robust, spindle-shaped body with a short, thick conical snout",
+      "Grey back and white underside with a sharp boundary; black tips under the pectoral fins",
+      "Large arched mouth, often ajar, showing big triangular serrated teeth",
+      "Large first dorsal fin; small second dorsal and anal fins",
+      "Small, round, completely black eyes"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Isurus oxyrinchus",
+      "es": "El marrajo es más esbelto, de dorso azul metálico brillante, con hocico más puntiagudo y dientes lisos, no aserrados.",
+      "en": "The mako is slimmer, brilliant metallic blue above, with a more pointed snout and smooth-edged, not serrated, teeth."
+    },
+    {
+      "binomial": "Cetorhinus maximus",
+      "es": "El peregrino tiene una boca cavernosa que lleva abierta para filtrar, hendiduras branquiales que casi rodean la cabeza y dientes diminutos.",
+      "en": "The basking shark has a cavernous mouth held open to filter-feed, gill slits nearly encircling the head and tiny teeth."
+    }
+  ],
+  "etymology": {
+    "es": "Carcharodon = gr. kárkharos (afilado) + odṓn (diente); carcharias = «tiburón» en griego antiguo.",
+    "en": "Carcharodon = Gk kárkharos (sharp) + odṓn (tooth); carcharias = Ancient Greek for 'shark'."
+  },
+  "trivia": {
+    "es": [
+      "Pese al nombre, solo es blanco por debajo; en España se le llama tradicionalmente jaquetón."
+    ],
+    "en": [
+      "Despite its name it is white only underneath; in Spain it is traditionally called jaquetón."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Carcharodon carcharias",
+      "url": "https://es.wikipedia.org/wiki/Carcharodon_carcharias",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Great white shark",
+      "url": "https://en.wikipedia.org/wiki/Great_white_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez diminuto (unos 4 cm) de cuerpo ahusado y aletas transparentes",
+      "Franja azul iridiscente del hocico a la aleta adiposa",
+      "Franja roja en la mitad posterior, desde el centro del cuerpo hasta la base de la caudal",
+      "Pequeña aleta adiposa detrás de la dorsal"
+    ],
+    "en": [
+      "Tiny fish (about 4 cm) with a spindle-shaped body and transparent fins",
+      "Iridescent blue stripe from the snout to the adipose fin",
+      "Red stripe on the rear half, from mid-body to the base of the tail",
+      "Small adipose fin behind the dorsal fin"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Paracheirodon axelrodi",
+      "es": "En el tetra cardenal el rojo se extiende por todo el vientre, desde el hocico hasta el pedúnculo caudal, no solo en la mitad posterior.",
+      "en": "In the cardinal tetra the red runs the whole length of the underside, from snout to tail base, not just the rear half."
+    }
+  ],
+  "dimorphism": {
+    "es": "Dimorfismo leve: la hembra tiene el vientre algo más abultado y la franja iridiscente curvada, recta en el macho.",
+    "en": "Slight dimorphism: the female has a fuller belly and a bent iridescent stripe, straight in the male."
+  },
+  "etymology": {
+    "es": "innesi está dedicado a William T. Innes.",
+    "en": "innesi is named after William T. Innes."
+  },
+  "trivia": {
+    "es": [
+      "Por la noche, mientras descansa, el azul y el rojo se vuelven grises o negros."
+    ],
+    "en": [
+      "At night, while resting, the blue and red turn grey or black."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Paracheirodon innesi",
+      "url": "https://es.wikipedia.org/wiki/Paracheirodon_innesi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Neon tetra",
+      "url": "https://en.wikipedia.org/wiki/Neon_tetra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

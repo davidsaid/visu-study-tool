@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "Ave pequeña y rechoncha (24–26 cm), de aspecto de perdiz",
+      "Partes superiores pardas listadas de ante",
+      "Partes inferiores ante, con listas negras y pardas en el pecho y barras en los flancos",
+      "Píleo negro listado de ante y garganta blanca",
+      "Patas gris amarillento apagado o pardas"
+    ],
+    "en": [
+      "Small, rotund, partridge-like bird (24–26 cm)",
+      "Brown upperparts streaked with buff",
+      "Buff underparts, streaked black and brown on the breast and barred on the flanks",
+      "Black crown streaked with buff; white throat",
+      "Dull yellowish-grey or brown legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Alectoris rufa",
+      "es": "La perdiz roja es mayor y tiene pico y patas rojos y la garganta blanca enmarcada por un collar negro.",
+      "en": "The red-legged partridge is larger, with a red bill and legs and a white throat framed by a black collar."
+    },
+    {
+      "binomial": "Perdix perdix",
+      "es": "La perdiz pardilla tiene la cara castaño anaranjada y una mancha oscura en herradura en el vientre.",
+      "en": "The grey partridge has an orange-chestnut face and a dark horseshoe patch on the belly."
+    }
+  ],
+  "etymology": {
+    "es": "maculosa significa «manchada», por las manchas negras de su plumaje.",
+    "en": "maculosa means 'spotted', referring to the black spots on its plumage."
+  },
+  "trivia": {
+    "es": [
+      "En la región pampeana la llaman «perdiz» porque a los europeos les recordaba a la perdiz roja."
+    ],
+    "en": [
+      "In the Pampas it is called 'perdiz' (partridge) because Europeans thought it resembled the red-legged partridge."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Nothura maculosa",
+      "url": "https://es.wikipedia.org/wiki/Nothura_maculosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Spotted nothura",
+      "url": "https://en.wikipedia.org/wiki/Spotted_nothura",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Alectoris rufa",
+      "url": "https://es.wikipedia.org/wiki/Alectoris_rufa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Perdix perdix",
+      "url": "https://es.wikipedia.org/wiki/Perdix_perdix",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

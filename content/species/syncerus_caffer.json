@@ -1,0 +1,61 @@
+{
+  "field_marks": {
+    "es": [
+      "Bóvido grande y macizo, de cabeza y tronco anchos, cuello grueso y patas cortas",
+      "Pelaje corto y escaso, de pardo rojizo a negro; borla oscura al final de la cola",
+      "Cuernos gruesos que salen hacia los lados y se curvan hacia arriba y hacia dentro en las puntas",
+      "En los machos, las bases de los cuernos se fusionan en un escudo óseo (boss) sobre la frente",
+      "Orejas caídas, bordeadas de pelos largos"
+    ],
+    "en": [
+      "Large, heavily built bovid with a broad head and torso, thick neck and stubby legs",
+      "Short, sparse coat, rusty to black; dark tuft at the end of the tail",
+      "Thick horns that sweep sideways and curve up and inwards at the tips",
+      "In males the horn bases fuse into a bony shield (boss) across the forehead",
+      "Drooping ears fringed with long hairs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Bison bonasus",
+      "es": "El bisonte europeo tiene pelo largo en cabeza, cuello y hombros, una barba en la garganta y cuernos cortos dirigidos hacia arriba, sin escudo frontal.",
+      "en": "The European bison has long hair on the head, neck and shoulders, a throat beard and short upward-pointing horns, with no frontal boss."
+    },
+    {
+      "binomial": "Connochaetes taurinus",
+      "es": "El ñu es gris azulado, con cola larga y negra y cuernos más finos, aunque parecidos a los de la hembra de búfalo.",
+      "en": "The wildebeest is bluish-grey, with a long black tail and slimmer horns, although they resemble those of a female buffalo."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras son más claras, más pequeñas y tienen cuernos menores, sin escudo frontal.",
+    "en": "Females are paler and smaller, with smaller horns and no frontal boss."
+  },
+  "sources": [
+    {
+      "title": "Syncerus caffer — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Syncerus_caffer",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "African buffalo — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/African_buffalo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Bison bonasus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Bison_bonasus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Blue wildebeest — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Blue_wildebeest",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

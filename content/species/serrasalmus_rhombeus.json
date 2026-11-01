@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo romboidal, muy alto en los adultos",
+      "Ojos con el iris rojo intenso, cruzados por una banda negra vertical",
+      "Cabeza robusta y chata, hocico corto y mandíbulas con dientes grandes muy afilados",
+      "Juveniles plateados con manchas ovaladas; adultos grandes de gris plomizo muy oscuro a casi negro",
+      "Caudal con una banda negra en la base y otra en el borde"
+    ],
+    "en": [
+      "Rhombus-shaped body, very deep in adults",
+      "Eyes with a bright red iris, crossed by a vertical black band",
+      "Robust, blunt head, short snout and jaws with large, very sharp teeth",
+      "Juveniles silvery with oval spots; large adults uniformly very dark lead-grey to almost black",
+      "Tail fin with a black band at its base and another along its edge"
+    ]
+  },
+  "lookalikes": [],
+  "trivia": {
+    "es": [
+      "Es la mayor de las pirañas; la oscuridad del cuerpo depende del agua: los ejemplares de aguas claras u oscuras son más negros."
+    ],
+    "en": [
+      "It is the largest piranha; how dark it gets depends on the water: fish from clear or black waters are darker."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Serrasalmus rhombeus",
+      "url": "https://es.wikipedia.org/wiki/Serrasalmus_rhombeus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Redeye piranha",
+      "url": "https://en.wikipedia.org/wiki/Redeye_piranha",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

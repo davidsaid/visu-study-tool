@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Escamosos: el orden más numeroso de reptiles, con lagartos, serpientes y anfisbenas (culebrillas ciegas). En el bestiario hay 22: iguanas, agama, camaleón, salamanquesa, eslizón, lagartos y lagartijas, lución, monstruo de Gila, varanos, la culebrilla ciega y diez serpientes, de la anaconda a la víbora hocicuda.",
+    "en": "Squamates: the largest order of reptiles, with lizards, snakes and amphisbaenians (worm lizards). The bestiary has 22: iguanas, an agama, a chameleon, a gecko, a skink, lizards, the slow worm, the Gila monster, monitors, the Iberian worm lizard and ten snakes, from the anaconda to Lataste's viper."
+  },
+  "traits": {
+    "es": [
+      "Piel con escamas córneas o placas que se mudan periódicamente",
+      "Cráneo cinético: el hueso cuadrado es móvil, lo que permite abrir mucho la boca (sobre todo en serpientes)",
+      "Machos con un par de hemipenes",
+      "Tendencia repetida a perder las patas: serpientes, anfisbenas y varias familias de lagartos (como el lución)"
+    ],
+    "en": [
+      "Skin with horny scales or shields that are moulted periodically",
+      "Kinetic skull: a movable quadrate bone lets the mouth open very wide (especially in snakes)",
+      "Males have paired hemipenes",
+      "Repeated loss of limbs: snakes, amphisbaenians and several lizard families (such as the slow worm)"
+    ]
+  },
+  "contrast": {
+    "es": "Un lagarto sin patas como el lución no es una serpiente: la ausencia de patas ha aparecido varias veces de forma independiente dentro de los escamosos. Frente al tuátara, su grupo hermano, tienen cráneo cinético y hemipenes.",
+    "en": "A legless lizard such as the slow worm is not a snake: limblessness arose several times independently within squamates. Unlike the tuatara, their sister group, they have a kinetic skull and hemipenes."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Squamata",
+      "url": "https://en.wikipedia.org/wiki/Squamata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Squamata",
+      "url": "https://es.wikipedia.org/wiki/Squamata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

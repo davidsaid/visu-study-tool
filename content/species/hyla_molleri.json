@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Ranita arborícola pequeña (3,5–4,5 cm), rechoncha y de piel lisa",
+      "Normalmente verde brillante, aunque puede volverse parda, amarilla o azulada",
+      "Puntas de los dedos ensanchadas en discos adhesivos",
+      "Banda oscura bordeada de amarillo desde la narina hasta la ingle, con un bucle hacia el dorso"
+    ],
+    "en": [
+      "Small (3.5–4.5 cm), plump tree frog with smooth skin",
+      "Usually green, but can turn brown, yellow or bluish",
+      "Toe tips expanded into adhesive discs",
+      "Dark, yellow-edged band from nostril to groin, looping up towards the back"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Pelophylax perezi",
+      "es": "La rana común es mayor (hasta 11 cm), con manchas negras, línea vertebral clara y largas patas palmeadas.",
+      "en": "Perez's frog is larger (up to 11 cm), with black spots, a pale spinal line and long webbed hind legs."
+    }
+  ],
+  "etymology": {
+    "es": "molleri honra a Adolphe F. Moller (1842–1920), botánico portugués.",
+    "en": "molleri honours Adolphe F. Moller (1842–1920), a Portuguese botanist."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Hyla molleri",
+      "url": "https://es.wikipedia.org/wiki/Hyla_molleri",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Hyla molleri",
+      "url": "https://en.wikipedia.org/wiki/Hyla_molleri",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Pelophylax perezi",
+      "url": "https://es.wikipedia.org/wiki/Pelophylax_perezi",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

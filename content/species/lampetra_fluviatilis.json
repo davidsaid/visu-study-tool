@@ -1,0 +1,48 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo muy alargado sin aletas pares",
+      "Disco bucal circular de succión en lugar de mandíbulas, con dientes afilados",
+      "Siete pequeños orificios branquiales a cada lado, detrás del ojo",
+      "Gris oscuro uniforme por encima, blanco amarillento en los flancos y blanco por debajo",
+      "Dos aletas dorsales bien separadas"
+    ],
+    "en": [
+      "Very elongated body without paired fins",
+      "Circular sucking disc instead of jaws, with sharp teeth",
+      "Seven small gill openings on each side behind the eye",
+      "Plain dark grey above, yellowish-white on the sides, white below",
+      "Two well-separated dorsal fins"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Petromyzon marinus",
+      "es": "La lamprea de mar es mucho mayor (hasta 120 cm) y tiene jaspeado negro sobre fondo oliva o pardo-amarillento.",
+      "en": "The sea lamprey is much larger (up to 120 cm) and has black marbling on an olive or yellowish-brown ground."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "Puede ser la forma migradora al mar de la lamprea de arroyo (Lampetra planeri); se distingue de ella por ser mayor y por la mayor separación entre las dorsales."
+    ],
+    "en": [
+      "It may be the sea-going form of the brook lamprey (Lampetra planeri), from which it differs in its larger size and more widely separated dorsal fins."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Lampetra fluviatilis",
+      "url": "https://es.wikipedia.org/wiki/Lampetra_fluviatilis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European river lamprey",
+      "url": "https://en.wikipedia.org/wiki/European_river_lamprey",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

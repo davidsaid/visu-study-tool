@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Pinzón pequeño (11–13,5 cm)",
+      "Cabeza tricolor: máscara facial roja con dibujo blanco y negro",
+      "Alas negras con una ancha franja amarilla, visible posado y en vuelo",
+      "Dorso pardo cálido; partes inferiores blanquecinas con flancos y manchas pectorales ante",
+      "Pico cónico, largo y puntiagudo, de color marfil; cola ahorquillada"
+    ],
+    "en": [
+      "Small finch (11–13.5 cm)",
+      "Three-coloured head: red face mask with a black-and-white pattern",
+      "Black wings with a broad yellow bar, visible perched and in flight",
+      "Warm brown back; whitish underparts with buff flanks and breast patches",
+      "Long, pointed, ivory-coloured conical bill; forked tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Fringilla coelebs",
+      "es": "El pinzón vulgar no tiene la cara roja ni la franja amarilla; sus barras alares son blancas.",
+      "en": "The common chaffinch lacks the red face and yellow wing bar; its wing bars are white."
+    }
+  ],
+  "dimorphism": {
+    "es": "Poca diferencia entre sexos: el macho tiene la máscara roja mayor y más oscura, que pasa por detrás del ojo, y los hombros negros en vez de pardos.",
+    "en": "Little difference between the sexes: the male has a larger, darker red mask extending just behind the eye, and black rather than brown shoulders."
+  },
+  "etymology": {
+    "es": "Carduelis es la palabra latina para «jilguero», derivada de Carduus, un género de cardos, cuyas semillas come.",
+    "en": "Carduelis is the Latin word for 'goldfinch', from Carduus, a genus of thistles whose seeds it eats."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Carduelis carduelis",
+      "url": "https://es.wikipedia.org/wiki/Carduelis_carduelis",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European goldfinch",
+      "url": "https://en.wikipedia.org/wiki/European_goldfinch",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Fringilla coelebs",
+      "url": "https://es.wikipedia.org/wiki/Fringilla_coelebs",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

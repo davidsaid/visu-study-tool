@@ -1,0 +1,37 @@
+{
+  "field_marks": {
+    "es": [
+      "Caparazón de placas óseas con unas nueve bandas flexibles en el centro del dorso",
+      "La armadura cubre también la cabeza, la cola y la cara externa de las patas",
+      "Vientre sin coraza, con piel dura y pelo áspero",
+      "Patas cortas con garras largas para excavar",
+      "Cola larga y acorazada, de longitud parecida a la del cuerpo"
+    ],
+    "en": [
+      "Shell of bony plates with about nine flexible bands across the middle of the back",
+      "Armour also covers the head, tail and outer surfaces of the legs",
+      "Unarmoured belly with tough skin and coarse hair",
+      "Short legs with long digging claws",
+      "Long armoured tail, comparable in length to the body"
+    ]
+  },
+  "etymology": {
+    "es": "novemcinctus alude a las nueve bandas de su armadura.",
+    "en": "novemcinctus refers to the nine bands of its armour."
+  },
+  "sources": [
+    {
+      "title": "Dasypus novemcinctus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Dasypus_novemcinctus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Nine-banded armadillo — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Nine-banded_armadillo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

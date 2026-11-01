@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Negra con manchas o bandas amarillas muy vivas, a veces rojas o anaranjadas",
+      "Cuerpo grueso y cola relativamente corta, sin crestas",
+      "Glándulas parótidas bien visibles en la cabeza",
+      "Adultos de 18–25 cm con la cola"
+    ],
+    "en": [
+      "Black with bright yellow spots or stripes, sometimes red or orange",
+      "Stout body and relatively short tail, with no crests",
+      "Parotoid glands clearly visible on the head",
+      "Adults 18–25 cm including tail"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Chioglossa lusitanica",
+      "es": "La salamandra rabilarga es pequeña y esbelta, con cola muy larga y dos rayas doradas en el dorso.",
+      "en": "The gold-striped salamander is small and slender, with a very long tail and two golden back stripes."
+    }
+  ],
+  "dimorphism": {
+    "es": "Las hembras suelen ser algo mayores que los machos.",
+    "en": "Females are usually somewhat larger than males."
+  },
+  "trivia": {
+    "es": [
+      "Su colorido es una señal de advertencia: la piel contiene sustancias tóxicas que irritan los ojos y la boca de los depredadores."
+    ],
+    "en": [
+      "Its colours are a warning: the skin contains toxins that irritate predators' eyes and mouths."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Salamandra salamandra",
+      "url": "https://es.wikipedia.org/wiki/Salamandra_salamandra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Fire salamander",
+      "url": "https://en.wikipedia.org/wiki/Fire_salamander",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Chioglossa lusitanica",
+      "url": "https://es.wikipedia.org/wiki/Chioglossa_lusitanica",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,67 @@
+{
+  "field_marks": {
+    "es": [
+      "Gaviota grande (51–64 cm), de constitución esbelta",
+      "Dorso y alas gris oscuro o negros, según la subespecie",
+      "Pico amarillo con una mancha roja",
+      "Patas amarillas",
+      "Juveniles con partes superiores escamadas pardo negruzcas; tardan cuatro años en ser adultos"
+    ],
+    "en": [
+      "Large gull (51–64 cm) of slim build",
+      "Dark grey or black back and wings, depending on subspecies",
+      "Yellow bill with a red spot",
+      "Yellow legs",
+      "Juveniles with scaly blackish-brown upperparts; four years to maturity"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Chroicocephalus ridibundus",
+      "es": "La gaviota reidora es mucho menor, con el dorso gris pálido y pico y patas rojos.",
+      "en": "The black-headed gull is much smaller, with a pale grey back and red bill and legs."
+    },
+    {
+      "binomial": "Larus marinus",
+      "es": "El gavión atlántico es mucho mayor y robusto, con patas rosadas en lugar de amarillas y «espejos» blancos mayores en las puntas de las alas.",
+      "en": "The great black-backed gull is much larger and bulkier, with pinkish rather than yellow legs and bigger white wingtip 'mirrors'."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son ligeramente mayores que las hembras.",
+    "en": "Males are slightly larger than females."
+  },
+  "etymology": {
+    "es": "Larus parece haber designado en latín a una gaviota u otra ave marina grande; fuscus significaba «negro» o «pardo oscuro».",
+    "en": "Larus appears to have referred to a gull or other large seabird in Latin; fuscus meant 'black' or 'brown'."
+  },
+  "trivia": {
+    "es": [
+      "Los pollos picotean la mancha roja del pico de los padres para que regurgiten el alimento."
+    ],
+    "en": [
+      "Chicks peck at the red spot on the parent's bill to make it regurgitate food."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Larus fuscus",
+      "url": "https://es.wikipedia.org/wiki/Larus_fuscus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Lesser black-backed gull",
+      "url": "https://en.wikipedia.org/wiki/Lesser_black-backed_gull",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Chroicocephalus ridibundus",
+      "url": "https://es.wikipedia.org/wiki/Chroicocephalus_ridibundus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

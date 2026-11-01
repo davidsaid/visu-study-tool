@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "es": "Halcones y caracarás (familia Falconidae). Antes el orden incluía a todas las rapaces diurnas, pero los análisis genómicos muestran que los halcones están más emparentados con loros y paseriformes (clado Australaves) que con águilas y buitres. En el bestiario: el cernícalo vulgar y el halcón peregrino.",
+    "en": "Falcons and caracaras (family Falconidae). The order once held all diurnal raptors, but genomic analyses show that falcons are closer to parrots and passerines (clade Australaves) than to eagles and vultures. In the bestiary: the common kestrel and the peregrine falcon."
+  },
+  "traits": {
+    "es": [
+      "Pico ganchudo con un «diente» en la mandíbula superior que encaja en una muesca de la inferior",
+      "Matan a sus presas con el pico",
+      "Halcones: alas estrechas y puntiagudas",
+      "Muchas especies con una bigotera o zona malar negra"
+    ],
+    "en": [
+      "Hooked bill with a tomial 'tooth' on the upper mandible that fits a notch in the lower",
+      "Kill prey with the bill",
+      "Falcons: narrow, pointed wings",
+      "Many species have a black malar stripe ('moustache')"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con Accipitriformes (gavilanes, águilas, busardos), que carecen de diente en el pico, matan con las garras y tienen alas más anchas.",
+    "en": "Do not confuse with Accipitriformes (hawks, eagles, buzzards), which lack the bill tooth, kill with their talons and have broader wings."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Falconiformes",
+      "url": "https://en.wikipedia.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Falconiformes",
+      "url": "https://es.wikipedia.org/wiki/Falconiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Falcon",
+      "url": "https://en.wikipedia.org/wiki/Falcon",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

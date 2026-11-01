@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "es": "Grandes aves corredoras no voladoras de Australia y Nueva Guinea: los tres casuarios y el emú, en una sola familia (Casuariidae). En el bestiario: el casuario común (Casuarius casuarius).",
+    "en": "Large flightless running birds of Australia and New Guinea: the three cassowaries and the emu, in a single family (Casuariidae). In the bestiary: the southern cassowary (Casuarius casuarius)."
+  },
+  "traits": {
+    "es": [
+      "Casco córneo sobre la cabeza en los casuarios",
+      "Plumaje negro de plumas ásperas, con aspecto de pelo",
+      "Cuello desnudo azul y rojo, con carúnculas",
+      "Patas de tres dedos; el interno con una uña en forma de puñal"
+    ],
+    "en": [
+      "Horny casque on the head in cassowaries",
+      "Black plumage of coarse, hair-like feathers",
+      "Bare blue-and-red neck with wattles",
+      "Three-toed feet; the inner toe bears a dagger-like claw"
+    ]
+  },
+  "contrast": {
+    "es": "El casco y el cuello de colores lo distinguen del avestruz (dos dedos) y del ñandú (plumaje gris).",
+    "en": "The casque and coloured neck set it apart from the ostrich (two toes) and the rhea (grey plumage)."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Casuariiformes",
+      "url": "https://en.wikipedia.org/wiki/Casuariiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Casuariiformes",
+      "url": "https://es.wikipedia.org/wiki/Casuariiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Cassowary",
+      "url": "https://en.wikipedia.org/wiki/Cassowary",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Casuarius",
+      "url": "https://es.wikipedia.org/wiki/Casuarius",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

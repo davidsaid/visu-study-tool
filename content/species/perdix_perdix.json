@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Perdiz rechoncha de 28–31 cm, de plumaje pardo grisáceo",
+      "Cara y laterales de la cola castaño anaranjados",
+      "Pecho y flancos grises; gran mancha castaño oscura en herradura en el vientre",
+      "Pico pequeño pardo mate y patas grises",
+      "Jóvenes pardo amarillentos, sin las marcas de la cara ni la herradura"
+    ],
+    "en": [
+      "Rotund partridge, 28–31 cm, greyish-brown",
+      "Orange-chestnut face and tail sides",
+      "Grey breast and flanks; large dark chestnut horseshoe patch on the belly",
+      "Small dull brown bill and grey legs",
+      "Juveniles yellow-brown, lacking the face markings and horseshoe"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Alectoris rufa",
+      "es": "La perdiz roja es algo mayor, con pico y patas rojos y garganta blanca con collar negro.",
+      "en": "The red-legged partridge is slightly larger, with a red bill and legs and a white throat with a black collar."
+    }
+  ],
+  "dimorphism": {
+    "es": "Ambos sexos son del mismo tamaño y muy parecidos; la hembra es algo más apagada y tiene la mancha del vientre más pequeña.",
+    "en": "Both sexes are the same size and very similar; the female is slightly duller with a smaller belly patch."
+  },
+  "etymology": {
+    "es": "perdix es la palabra latina para «perdiz», del griego antiguo pérdix.",
+    "en": "perdix is Latin for 'partridge', from Ancient Greek perdix."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Perdix perdix",
+      "url": "https://es.wikipedia.org/wiki/Perdix_perdix",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Grey partridge",
+      "url": "https://en.wikipedia.org/wiki/Grey_partridge",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Alectoris rufa",
+      "url": "https://es.wikipedia.org/wiki/Alectoris_rufa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

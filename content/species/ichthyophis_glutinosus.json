@@ -1,0 +1,54 @@
+{
+  "field_marks": {
+    "es": [
+      "Anfibio sin patas que parece una lombriz grande",
+      "Piel con más de 300 pliegues transversales que simulan segmentos",
+      "Dorso pardo oscuro a negro con reflejos azulados",
+      "Una franja amarilla viva a lo largo de cada flanco",
+      "Hocico redondeado con un par de tentáculos entre los ojos y las narinas"
+    ],
+    "en": [
+      "Legless amphibian resembling a large earthworm",
+      "Skin with over 300 transverse folds that look like segments",
+      "Dark brown to black back with a bluish sheen",
+      "A bright yellow band along each side",
+      "Rounded snout with a pair of tentacles between the eyes and nostrils"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Blanus cinereus",
+      "es": "La culebrilla ciega es un reptil de color rosa grisáceo a pardo, sin franja amarilla en los flancos.",
+      "en": "The Iberian worm lizard is a reptile, greyish pink to brown, with no yellow side stripe."
+    }
+  ],
+  "trivia": {
+    "es": [
+      "La hembra se enrosca alrededor de la puesta y la protege hasta la eclosión."
+    ],
+    "en": [
+      "The female coils around her eggs and guards them until they hatch."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Ichthyophis glutinosus",
+      "url": "https://es.wikipedia.org/wiki/Ichthyophis_glutinosus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Ichthyophis glutinosus",
+      "url": "https://en.wikipedia.org/wiki/Ichthyophis_glutinosus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Blanus cinereus",
+      "url": "https://es.wikipedia.org/wiki/Blanus_cinereus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

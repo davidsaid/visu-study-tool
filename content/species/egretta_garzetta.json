@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "Garza esbelta y mediana (55–65 cm), de plumaje enteramente blanco",
+      "Pico largo, fino y negro, con las loras negras",
+      "Patas negras con los dedos amarillos",
+      "En celo, dos plumas largas y finas en la nuca y largas plumas escapulares",
+      "Iris amarillo"
+    ],
+    "en": [
+      "Slender, medium-sized heron (55–65 cm), entirely white",
+      "Long, slender black bill with black lores",
+      "Black legs with yellow feet",
+      "Breeding adults have two long, thin nape plumes and long scapular plumes",
+      "Yellow iris"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ardea cinerea",
+      "es": "La garza real es mucho mayor, gris, con pico amarillento.",
+      "en": "The grey heron is much larger and grey, with a yellowish bill."
+    },
+    {
+      "binomial": "Platalea leucorodia",
+      "es": "La espátula también es blanca pero mayor, con pico aplanado en forma de espátula y vuelo con el cuello extendido.",
+      "en": "The spoonbill is also white but larger, with a flat spatulate bill, and flies with its neck outstretched."
+    }
+  ],
+  "etymology": {
+    "es": "Egretta procede del provenzal aigrette, diminutivo de aigron, «garza»; garzetta es el nombre italiano del ave.",
+    "en": "Egretta comes from Provençal aigrette, a diminutive of aigron, 'heron'; garzetta is the bird's Italian name."
+  },
+  "trivia": {
+    "es": [
+      "Los juveniles tienen las patas negro verdosas y los dedos de un amarillo más apagado."
+    ],
+    "en": [
+      "Juveniles have greenish-black legs and duller yellow feet."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Egretta garzetta",
+      "url": "https://es.wikipedia.org/wiki/Egretta_garzetta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Little egret",
+      "url": "https://en.wikipedia.org/wiki/Little_egret",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Ardea cinerea",
+      "url": "https://es.wikipedia.org/wiki/Ardea_cinerea",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Platalea leucorodia",
+      "url": "https://es.wikipedia.org/wiki/Platalea_leucorodia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

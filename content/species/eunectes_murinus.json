@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Serpiente enorme y muy pesada, la más pesada del mundo",
+      "Fondo verde oliva o verde oscuro con grandes manchas negras a lo largo del cuerpo",
+      "Manchas ovales negras y ocres en los flancos; vientre más claro",
+      "Cabeza estrecha, sin cuello marcado, con ojos y narinas en posición alta",
+      "Hocico cubierto por seis escamas engrosadas, tres a cada lado"
+    ],
+    "en": [
+      "Huge, very heavy snake, the heaviest in the world",
+      "Olive or dark green ground with large black blotches along the body",
+      "Oval black and ochre markings on the flanks; paler belly",
+      "Narrow head without a distinct neck, with eyes and nostrils set high",
+      "Snout covered by six thickened scales, three on each side"
+    ]
+  },
+  "lookalikes": [],
+  "dimorphism": {
+    "es": "Es el caso más marcado de dimorfismo sexual en serpientes: las hembras son mucho mayores que los machos.",
+    "en": "It is the most extreme case of sexual dimorphism among snakes: females are much larger than males."
+  },
+  "trivia": {
+    "es": [
+      "Mata a sus presas por constricción y pasa largos periodos sumergida al acecho."
+    ],
+    "en": [
+      "It kills its prey by constriction and spends long periods submerged in ambush."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Eunectes murinus",
+      "url": "https://es.wikipedia.org/wiki/Eunectes_murinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Green anaconda",
+      "url": "https://en.wikipedia.org/wiki/Green_anaconda",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

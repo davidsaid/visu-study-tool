@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Mosquitero pequeño y rechoncho (10–12 cm)",
+      "Partes superiores verde apagado lavado de pardo",
+      "Partes inferiores blanco sucio, amarillentas en los flancos",
+      "Ceja blanquecina corta",
+      "Patas oscuras, pico fino y oscuro y proyección primaria corta"
+    ],
+    "en": [
+      "Small, dumpy leaf warbler (10–12 cm)",
+      "Brown-washed dull green upperparts",
+      "Off-white underparts, yellowish on the flanks",
+      "Short whitish supercilium",
+      "Dark legs, fine dark bill and short primary projection"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Phylloscopus ibericus",
+      "es": "El mosquitero ibérico es de colores más vivos, con el obispillo más verdoso y las partes inferiores más amarillas; se separa mejor por el canto.",
+      "en": "The Iberian chiffchaff is brighter, with a greener rump and yellower underparts; it is best told by its song."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho es algo más pesado que la hembra (7–8 g frente a 6–7 g).",
+    "en": "The male is slightly heavier than the female (7–8 g versus 6–7 g)."
+  },
+  "etymology": {
+    "es": "Phylloscopus, del griego phýllon «hoja» y skopéō «mirar», porque buscan alimento entre el follaje; collybita es una corrupción de kollybistḗs, «cambista», por un canto que recuerda el tintineo de monedas.",
+    "en": "Phylloscopus, from Greek phullon 'leaf' and skopeo 'to look at', as they feed among foliage; collybita is a corruption of kollubistes, 'money changer', its song likened to jingling coins."
+  },
+  "trivia": {
+    "es": [
+      "Su nombre inglés, chiffchaff, imita su canto repetitivo."
+    ],
+    "en": [
+      "Its English name, chiffchaff, imitates its repetitive song."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Phylloscopus collybita",
+      "url": "https://es.wikipedia.org/wiki/Phylloscopus_collybita",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common chiffchaff",
+      "url": "https://en.wikipedia.org/wiki/Common_chiffchaff",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

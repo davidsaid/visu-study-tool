@@ -1,0 +1,69 @@
+{
+  "field_marks": {
+    "es": [
+      "Culebra grande: supera a menudo los 2 m, la mayor de Europa",
+      "Ojos grandes bajo escamas supraoculares muy salientes que forman una «ceja» de mirada penetrante",
+      "Dorso oliváceo o pardo claro bastante uniforme, con una «silla de montar» de manchas negruzcas en el tercio anterior en los machos",
+      "Escamas dorsales lisas, nunca aquilladas; vientre amarillento con ligero moteado",
+      "Jóvenes con cinco a siete hileras de manchas oscuras"
+    ],
+    "en": [
+      "Large snake: often over 2 m, the largest in Europe",
+      "Large eyes under very prominent supraocular scales that form a 'brow' and a piercing stare",
+      "Fairly uniform olive or light-brown back, with a 'saddle' of blackish markings on the front third in males",
+      "Smooth, never keeled back scales; yellowish belly lightly speckled",
+      "Juveniles have five to seven rows of dark spots"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Zamenis scalaris",
+      "es": "La culebra de escalera tiene la cabeza pequeña y el morro agudo, y de adulta muestra dos líneas negras paralelas a lo largo del dorso.",
+      "en": "The ladder snake has a small head and pointed snout, and adults show two parallel dark stripes down the back."
+    },
+    {
+      "binomial": "Natrix astreptophora",
+      "es": "La culebra de collar mediterránea tiene el iris rojizo y no presenta la «ceja» saliente de la bastarda.",
+      "en": "The red-eyed grass snake has a reddish iris and lacks the Montpellier snake's prominent 'brow'."
+    }
+  ],
+  "dimorphism": {
+    "es": "La mancha en «silla de montar» del tercio anterior aparece en los machos y solo a veces en las hembras.",
+    "en": "The 'saddle' marking on the front third appears in males and only sometimes in females."
+  },
+  "trivia": {
+    "es": [
+      "Es venenosa opistoglifa (colmillos en la parte trasera de la boca), pero no es peligrosa para las personas."
+    ],
+    "en": [
+      "It is rear-fanged and venomous, but not dangerous to people."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Malpolon monspessulanus",
+      "url": "https://es.wikipedia.org/wiki/Malpolon_monspessulanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Malpolon monspessulanus",
+      "url": "https://en.wikipedia.org/wiki/Malpolon_monspessulanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Zamenis scalaris",
+      "url": "https://es.wikipedia.org/wiki/Zamenis_scalaris",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Natrix astreptophora",
+      "url": "https://en.wikipedia.org/wiki/Natrix_astreptophora",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

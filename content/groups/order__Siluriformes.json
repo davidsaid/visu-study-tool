@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "es": "Peces gato, bagres o siluros: más de 3000 especies, casi todas de agua dulce y la mayoría de fondo y hábitos nocturnos. En el bestiario: el siluro (Silurus glanis), uno de los mayores peces de agua dulce de Eurasia.",
+    "en": "Catfishes: over 3,000 species, almost all freshwater and mostly bottom-dwelling and nocturnal. In the bestiary: the wels catfish (Silurus glanis), one of the largest freshwater fish of Eurasia."
+  },
+  "traits": {
+    "es": [
+      "Barbillas prominentes alrededor de la boca, como bigotes de gato",
+      "Sin escamas: piel desnuda o cuerpo acorazado con placas óseas",
+      "Cabeza pesada y aplanada; vejiga natatoria reducida",
+      "Espinas a menudo afiladas, a veces venenosas, en las aletas dorsal y pectorales"
+    ],
+    "en": [
+      "Prominent barbels around the mouth, like a cat's whiskers",
+      "No scales: naked skin or a body armoured with bony plates",
+      "Heavy, flattened head; reduced swim bladder",
+      "Often sharp, sometimes venomous, spines in the dorsal and pectoral fins"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Catfish",
+      "url": "https://en.wikipedia.org/wiki/Catfish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Siluriformes",
+      "url": "https://es.wikipedia.org/wiki/Siluriformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Colugos o «lémures voladores»: dos especies de planeadores arborícolas del sudeste asiático, en una sola familia (Cynocephalidae). No son primates, pero son sus parientes vivos más cercanos. En el bestiario: el colugo filipino (Cynocephalus volans).",
+    "en": "Colugos or 'flying lemurs': two species of tree-dwelling gliders from Southeast Asia, in a single family (Cynocephalidae). They are not primates but are their closest living relatives. In the bestiary: the Philippine flying lemur (Cynocephalus volans)."
+  },
+  "traits": {
+    "es": [
+      "Patagio: gran membrana de piel que une cuello, patas y cola para planear",
+      "Incisivos en forma de peine, con hasta 20 púas por diente",
+      "Ojos grandes dirigidos hacia delante y orejas pequeñas y redondeadas",
+      "Nocturnos; comen frutos y hojas"
+    ],
+    "en": [
+      "Patagium: a large skin membrane joining neck, limbs and tail, used for gliding",
+      "Comb-like incisors with up to 20 tines per tooth",
+      "Large forward-facing eyes and small rounded ears",
+      "Nocturnal; eat fruit and leaves"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los murciélagos (Chiroptera), que vuelan batiendo alas sostenidas por dedos alargados, ni con los lémures, que son primates.",
+    "en": "Do not confuse with bats (Chiroptera), which fly with flapping wings supported by elongated fingers, or with lemurs, which are primates."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Colugo",
+      "url": "https://en.wikipedia.org/wiki/Colugo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Dermoptera",
+      "url": "https://es.wikipedia.org/wiki/Dermoptera",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

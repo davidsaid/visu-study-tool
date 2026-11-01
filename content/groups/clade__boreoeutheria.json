@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "es": "Magnorden de placentarios, bien respaldado por el ADN, que reúne a los superórdenes hermanos Euarchontoglires y Laurasiatheria: de primates y roedores a murciélagos, carnívoros, ungulados y cetáceos. Salvo excepciones, los machos tienen escroto, un rasgo ancestral del grupo. En el bestiario incluye 11 órdenes, de Rodentia y Primates a Carnivora y Cetartiodactyla.",
+    "en": "A magnorder of placentals, well supported by DNA, uniting the sister superorders Euarchontoglires and Laurasiatheria: from primates and rodents to bats, carnivorans, ungulates and whales. With few exceptions, males have a scrotum, an ancestral feature of the group. In the bestiary it includes 11 orders, from Rodentia and Primates to Carnivora and Cetartiodactyla."
+  },
+  "contrast": {
+    "es": "Los otros dos grandes linajes de placentarios son Afrotheria (elefantes, damanes, sirenios…) y Xenarthra (armadillos, perezosos, osos hormigueros).",
+    "en": "The other two major placental lineages are Afrotheria (elephants, hyraxes, sirenians…) and Xenarthra (armadillos, sloths, anteaters)."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Boreoeutheria",
+      "url": "https://en.wikipedia.org/wiki/Boreoeutheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Boreoeutheria",
+      "url": "https://es.wikipedia.org/wiki/Boreoeutheria",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Placentalia",
+      "url": "https://en.wikipedia.org/wiki/Placentalia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

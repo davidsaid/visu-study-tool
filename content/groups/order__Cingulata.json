@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Armadillos: el único linaje superviviente de un orden de xenartros acorazados originado en Sudamérica, que incluyó a los gliptodontes gigantes. En el bestiario: el armadillo de nueve bandas (Dasypus novemcinctus).",
+    "en": "Armadillos: the only surviving lineage of an order of armoured xenarthrans that arose in South America and included the giant glyptodonts. In the bestiary: the nine-banded armadillo (Dasypus novemcinctus)."
+  },
+  "traits": {
+    "es": [
+      "Coraza dorsal de placas óseas dérmicas (osteodermos) cubiertas de escudos córneos",
+      "Escudos rígidos sobre hombros y caderas, con 3 a 9 bandas móviles entre ellos",
+      "Dientes numerosos, simples y cilíndricos, sin esmalte y de crecimiento continuo",
+      "Nocturnos y excavadores"
+    ],
+    "en": [
+      "Dorsal armour of dermal bone plates (osteoderms) covered by horny scutes",
+      "Rigid shields over shoulders and hips, with 3 to 9 movable bands between them",
+      "Many simple, peg-like teeth without enamel, growing continuously",
+      "Nocturnal diggers"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con el pangolín (Pholidota), cubierto de escamas córneas superpuestas, sin placas óseas y sin dientes.",
+    "en": "Do not confuse with the pangolin (Pholidota), covered in overlapping horny scales, with no bony plates and no teeth."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Cingulata",
+      "url": "https://en.wikipedia.org/wiki/Cingulata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Cingulata",
+      "url": "https://es.wikipedia.org/wiki/Cingulata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

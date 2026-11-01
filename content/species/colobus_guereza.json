@@ -1,0 +1,49 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje negro con fuerte contraste blanco",
+      "Largos flecos de pelo blanco y sedoso a lo largo de los costados y el lomo, formando un «manto» en U",
+      "Cara enmarcada por pelo blanco, con mejillas pobladas",
+      "Cola larga terminada en un penacho blanco",
+      "Manos sin pulgar"
+    ],
+    "en": [
+      "Black coat in strong contrast with white",
+      "Long, silky white fringes along the flanks and back, forming a U-shaped 'mantle'",
+      "Face framed by white hair, with bushy cheeks",
+      "Long tail ending in a white tuft",
+      "Hands without thumbs"
+    ]
+  },
+  "dimorphism": {
+    "es": "Los machos son más grandes y pesados que las hembras.",
+    "en": "Males are larger and heavier than females."
+  },
+  "etymology": {
+    "es": "Colobus, del griego kolobós («mutilado»), por la falta de pulgares; guereza es su nombre local en Etiopía.",
+    "en": "Colobus, from Greek kolobós ('mutilated'), for its lack of thumbs; guereza is its native name in Ethiopia."
+  },
+  "trivia": {
+    "es": [
+      "Las crías nacen con el pelo blanco y la piel rosada, y adquieren la coloración adulta a los tres o cuatro meses."
+    ],
+    "en": [
+      "Infants are born with white hair and pink skin and gain adult colouring at three to four months."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Colobus guereza — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Colobus_guereza",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Mantled guereza — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Mantled_guereza",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

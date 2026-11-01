@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Tiburones alfombra: tiburones sobre todo de fondo, de mares tropicales y templados, muchos con un dibujo moteado que recuerda a una alfombra. Incluye al pez más grande, el tiburón ballena (Rhincodon typus), que es el representante del bestiario.",
+    "en": "Carpet sharks: mostly bottom-dwelling sharks of tropical and temperate seas, many with a mottled, carpet-like pattern. It includes the largest fish, the whale shark (Rhincodon typus), the bestiary's representative."
+  },
+  "traits": {
+    "es": [
+      "Dos aletas dorsales sin espinas",
+      "Boca corta y transversal que no llega por detrás de los ojos",
+      "Barbillas junto a los orificios nasales, unidos a la boca por surcos",
+      "Cinco hendiduras branquiales cortas; la quinta se superpone a la cuarta",
+      "Un espiráculo bajo cada ojo (detrás del ojo en el tiburón ballena)"
+    ],
+    "en": [
+      "Two spineless dorsal fins",
+      "Short, transverse mouth that does not reach behind the eyes",
+      "Barbels by the nostrils, which are linked to the mouth by grooves",
+      "Five short gill slits; the fifth overlaps the fourth",
+      "A spiracle below each eye (behind the eye in the whale shark)"
+    ]
+  },
+  "contrast": {
+    "es": "El tiburón ballena, gigante y filtrador, puede confundirse con el peregrino (Lamniformes); en los lamniformes la boca se extiende bien por detrás de los ojos, mientras que en los orectolobiformes es corta y queda por delante de ellos.",
+    "en": "The giant, filter-feeding whale shark can be confused with the basking shark (Lamniformes); in lamniforms the mouth extends well behind the eyes, whereas in orectolobiforms it is short and stays in front of them."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Carpet shark",
+      "url": "https://en.wikipedia.org/wiki/Carpet_shark",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Orectolobiformes",
+      "url": "https://es.wikipedia.org/wiki/Orectolobiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Lamniformes",
+      "url": "https://es.wikipedia.org/wiki/Lamniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

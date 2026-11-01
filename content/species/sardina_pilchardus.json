@@ -1,0 +1,46 @@
+{
+  "field_marks": {
+    "es": [
+      "Pez pequeño a mediano (15–25 cm), algo alargado, con aspecto de arenque",
+      "Dorso verde u oliva, flancos dorados y vientre plateado",
+      "Las pélvicas nacen bastante por detrás del inicio de la dorsal",
+      "Los dos últimos radios de la anal, más largos que el resto",
+      "Escamas cicloideas y caedizas"
+    ],
+    "en": [
+      "Small to medium (15–25 cm), somewhat elongated, herring-like fish",
+      "Green or olive back, golden flanks and silvery belly",
+      "Pelvic fins start well behind the origin of the dorsal fin",
+      "Last two anal-fin rays longer than the others",
+      "Cycloid scales that are easily shed"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Engraulis encrasicolus",
+      "es": "El boquerón es más fino, con hocico puntiagudo saliente y boca hendida hasta detrás del ojo.",
+      "en": "The anchovy is slimmer, with a projecting pointed snout and a mouth slit reaching behind the eye."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Sardina pilchardus",
+      "url": "https://es.wikipedia.org/wiki/Sardina_pilchardus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European pilchard",
+      "url": "https://en.wikipedia.org/wiki/European_pilchard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): European anchovy",
+      "url": "https://en.wikipedia.org/wiki/European_anchovy",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

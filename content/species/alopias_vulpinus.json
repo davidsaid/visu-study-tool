@@ -1,0 +1,52 @@
+{
+  "field_marks": {
+    "es": [
+      "Lóbulo superior de la caudal enorme, en hoz, casi tan largo como el resto del cuerpo",
+      "Cuerpo en torpedo con hocico corto, cónico y puntiagudo",
+      "Aletas pectorales largas y falciformes",
+      "Dorso pardo violáceo o gris metálico, flancos azulados; el blanco del vientre sube sobre la base de las pectorales",
+      "Segunda dorsal y anal diminutas"
+    ],
+    "en": [
+      "Huge sickle-shaped upper tail lobe, almost as long as the rest of the body",
+      "Torpedo-shaped body with a short, pointed conical snout",
+      "Long, sickle-shaped pectoral fins",
+      "Metallic purplish-brown to grey back, bluish flanks; the white belly extends over the pectoral fin bases",
+      "Tiny second dorsal and anal fins"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Isurus oxyrinchus",
+      "es": "El marrajo tiene la caudal en media luna con dos lóbulos casi iguales, no un lóbulo superior larguísimo.",
+      "en": "The shortfin mako has a crescent tail with two nearly equal lobes, not a hugely elongated upper lobe."
+    }
+  ],
+  "etymology": {
+    "es": "vulpinus deriva del latín vulpes, «zorro».",
+    "en": "vulpinus comes from Latin vulpes, 'fox'."
+  },
+  "trivia": {
+    "es": [
+      "Usa la cola como un látigo para aturdir a los peces de los bancos de los que se alimenta."
+    ],
+    "en": [
+      "It uses its tail like a whip to stun the schooling fish it feeds on."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Common thresher",
+      "url": "https://en.wikipedia.org/wiki/Common_thresher",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Alopias vulpinus",
+      "url": "https://es.wikipedia.org/wiki/Alopias_vulpinus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

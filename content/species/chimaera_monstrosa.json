@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Cabeza grande con ojos grandes y hocico corto, que le dan aire de conejo",
+      "Cuerpo que se estrecha hasta una cola en látigo",
+      "Primera dorsal alta y triangular con una espina que sobresale de la punta",
+      "Aleta anal separada de la caudal, que es lanceolada",
+      "Color plateado verdoso con manchas pardas y líneas blanquecinas; línea lateral visible en la cabeza"
+    ],
+    "en": [
+      "Large head with big eyes and a short snout, giving a rabbit-like look",
+      "Body tapering to a whip-like tail",
+      "Tall triangular first dorsal fin with a spine projecting beyond its tip",
+      "Anal fin separate from the lance-shaped caudal fin",
+      "Silvery green with brown spots and whitish streaks; lateral line clearly visible on the head"
+    ]
+  },
+  "lookalikes": [],
+  "trivia": {
+    "es": [
+      "La espina de la primera dorsal tiene una glándula venenosa; su picadura es muy dolorosa."
+    ],
+    "en": [
+      "The first dorsal spine carries a venom gland; its sting is very painful."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Chimaera monstrosa",
+      "url": "https://es.wikipedia.org/wiki/Chimaera_monstrosa",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Rabbit fish",
+      "url": "https://en.wikipedia.org/wiki/Rabbit_fish",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

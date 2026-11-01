@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "es": "Monotremas: los únicos mamíferos actuales que ponen huevos; cinco especies, todas de Australia y Nueva Guinea. En el bestiario: el ornitorrinco y el equidna de hocico corto.",
+    "en": "Monotremes: the only living mammals that lay eggs; five species, all from Australia and New Guinea. In the bestiary: the platypus and the short-beaked echidna."
+  },
+  "traits": {
+    "es": [
+      "Ovíparos: ponen huevos de cáscara correosa, aunque amamantan a las crías",
+      "Cloaca: un único orificio para los tractos digestivo, urinario y reproductor",
+      "Hocico en forma de pico cubierto de piel correosa; dientes atrofiados o ausentes",
+      "Los machos tienen un espolón en las patas traseras",
+      "Sin pezones: las crías lamen la leche de una zona del vientre materno"
+    ],
+    "en": [
+      "Egg-laying: they lay leathery-shelled eggs, yet nurse their young with milk",
+      "Cloaca: a single opening for the digestive, urinary and reproductive tracts",
+      "Beak-like snout covered in leathery skin; teeth vestigial or absent",
+      "Males have a spur on the hind limbs",
+      "No teats: the young lick milk from a patch on the mother's belly"
+    ]
+  },
+  "contrast": {
+    "es": "El equidna recuerda a un erizo (Eulipotyphla) por sus púas, pero tiene hocico tubular sin dientes y pone huevos.",
+    "en": "The echidna resembles a hedgehog (Eulipotyphla) because of its spines, but it has a toothless tubular snout and lays eggs."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Monotreme",
+      "url": "https://en.wikipedia.org/wiki/Monotreme",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Monotremata",
+      "url": "https://es.wikipedia.org/wiki/Monotremata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Mammal",
+      "url": "https://en.wikipedia.org/wiki/Mammal",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

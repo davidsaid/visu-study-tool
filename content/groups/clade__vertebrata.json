@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Vertebrados o craneados: cordados con cráneo y columna vertebral, unas 65 000–72 000 especies actuales. Es la raíz del árbol del bestiario y reúne sus nueve clases, de los mixinos y lampreas (ciclóstomos) a los mamíferos.",
+    "en": "Vertebrates or craniates: chordates with a skull and a vertebral column, some 65,000–72,000 living species. It is the root of the bestiary tree and unites its nine classes, from hagfishes and lampreys (cyclostomes) to mammals."
+  },
+  "traits": {
+    "es": [
+      "Cráneo de cartílago o hueso que protege el encéfalo",
+      "Columna vertebral que sustituye a la notocorda del embrión (salvo en los peces sin mandíbulas)",
+      "Encéfalo dividido en tres o más regiones",
+      "Corazón muscular de dos o más cámaras",
+      "Oído interno con canales semicirculares y ojos de tipo cámara"
+    ],
+    "en": [
+      "Skull of cartilage or bone protecting the brain",
+      "Vertebral column that replaces the embryonic notochord (except in jawless fishes)",
+      "Brain divided into three or more regions",
+      "Muscular heart with two or more chambers",
+      "Inner ear with semicircular canals, and camera-type eyes"
+    ]
+  },
+  "contrast": {
+    "es": "Los demás cordados, como los cefalocordados (anfioxos) y los tunicados, carecen de cráneo y de columna vertebral; los tunicados son los parientes vivos más cercanos de los vertebrados.",
+    "en": "The other chordates, such as cephalochordates (lancelets) and tunicates, lack a skull and a vertebral column; tunicates are the closest living relatives of vertebrates."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Vertebrate",
+      "url": "https://en.wikipedia.org/wiki/Vertebrate",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Vertebrata",
+      "url": "https://es.wikipedia.org/wiki/Vertebrata",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

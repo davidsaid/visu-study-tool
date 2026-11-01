@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Lémures, gálagos, loris, tarseros, monos y simios, incluidos los humanos; mamíferos adaptados en origen a la vida en los árboles de las selvas tropicales. El bestiario recoge 15 especies, del lémur de cola anillada y el aye-aye al gorila de montaña y el chimpancé.",
+    "en": "Lemurs, galagos, lorises, tarsiers, monkeys and apes, humans included; mammals originally adapted to life in tropical forest trees. The bestiary has 15 species, from the ring-tailed lemur and the aye-aye to the mountain gorilla and the chimpanzee."
+  },
+  "traits": {
+    "es": [
+      "Manos prensiles y pulgar (y casi siempre dedo gordo del pie) oponible",
+      "Uñas planas en lugar de garras en la mayoría de las especies; huellas dactilares",
+      "Ojos dirigidos hacia delante con visión binocular",
+      "Cerebro grande en proporción al cuerpo",
+      "Cinco dedos en cada extremidad"
+    ],
+    "en": [
+      "Grasping hands and an opposable thumb (and usually big toe)",
+      "Flat nails instead of claws in most species; fingerprints",
+      "Forward-facing eyes with binocular vision",
+      "Large brain relative to body size",
+      "Five digits on each limb"
+    ]
+  },
+  "contrast": {
+    "es": "Dentro del orden, los estrepsirrinos (lémures, gálagos, loris) tienen la nariz húmeda y una barra ósea detrás del ojo; los haplorrinos (tarseros, monos, simios), un cierre óseo completo de la órbita.",
+    "en": "Within the order, strepsirrhines (lemurs, galagos, lorises) have a moist nose and a postorbital bar; haplorhines (tarsiers, monkeys, apes) have a fully closed bony eye socket."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Primate",
+      "url": "https://en.wikipedia.org/wiki/Primate",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Primates",
+      "url": "https://es.wikipedia.org/wiki/Primates",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

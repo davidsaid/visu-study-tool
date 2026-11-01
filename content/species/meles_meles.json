@@ -1,0 +1,44 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo robusto y en forma de cuña, más largo y ancho que alto, con patas cortas y fuertes",
+      "Cabeza blanca con dos franjas negras longitudinales que pasan por los ojos",
+      "Lomo de aspecto gris (pelos claros en raíz y punta y oscuros en medio)",
+      "Vientre y patas casi enteramente negros",
+      "Cola corta y orejas pequeñas con la punta blanca"
+    ],
+    "en": [
+      "Robust, wedge-shaped body, longer and wider than tall, with short strong legs",
+      "White head with two black lengthwise stripes running through the eyes",
+      "Greyish-looking back (hairs pale at root and tip, dark in the middle)",
+      "Belly and legs almost entirely black",
+      "Short tail and small white-tipped ears"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Gulo gulo",
+      "es": "El glotón es pardo oscuro, sin la cara blanca con franjas, y con una banda clara en los flancos.",
+      "en": "The wolverine is dark brown, lacks the striped white face and has a pale stripe along its flanks."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos tienen la cabeza más ancha, el cuello más grueso y la cola más estrecha que las hembras.",
+    "en": "Males have broader heads, thicker necks and narrower tails than females."
+  },
+  "sources": [
+    {
+      "title": "Meles meles — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Meles_meles",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "European badger — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/European_badger",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

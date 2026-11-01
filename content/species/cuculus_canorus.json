@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo esbelto y gris con cola larga (32–34 cm)",
+      "Gris pizarra en dorso, cabeza y garganta, con límite neto con el vientre blanco barrado de oscuro",
+      "Iris, anillo ocular, base del pico y patas amarillos",
+      "Patas cortas; a menudo posado con las alas caídas y la cola alzada",
+      "Algunas hembras y muchos juveniles tienen un morfo pardo rojizo barrado"
+    ],
+    "en": [
+      "Slender grey body with a long tail (32–34 cm)",
+      "Slate-grey upperparts, head and throat, sharply cut off from white, dark-barred underparts",
+      "Yellow iris, eye-ring, bill base and feet",
+      "Short legs; often perches with drooped wings and raised tail",
+      "Some females and many juveniles show a barred rufous morph"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Accipiter nisus",
+      "es": "En vuelo recuerda a un gavilán, pero el cuco no levanta las alas por encima del cuerpo al batirlas, como hacen las rapaces.",
+      "en": "In flight it resembles a sparrowhawk, but the cuckoo does not raise its wings above the body when flapping, as raptors do."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos adultos son siempre grises; las hembras pueden ser grises con tono ante en cuello y barrado, o del morfo rojizo.",
+    "en": "Adult males are always grey; females may be grey with a buff wash to the neck and barring, or of the rufous morph."
+  },
+  "etymology": {
+    "es": "Cuculus es la palabra latina para «cuco», onomatopeya de su canto; canorus significa «melodioso», de canere, «cantar».",
+    "en": "Cuculus is Latin for 'cuckoo', an onomatopoeia of its call; canorus means 'melodious', from canere, 'to sing'."
+  },
+  "trivia": {
+    "es": [
+      "Es un parásito de cría: pone sus huevos en nidos de otras especies, como carriceros y acentores."
+    ],
+    "en": [
+      "It is a brood parasite, laying its eggs in the nests of other species such as reed warblers and dunnocks."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Cuculus canorus",
+      "url": "https://es.wikipedia.org/wiki/Cuculus_canorus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Common cuckoo",
+      "url": "https://en.wikipedia.org/wiki/Common_cuckoo",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Accipiter nisus",
+      "url": "https://es.wikipedia.org/wiki/Accipiter_nisus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

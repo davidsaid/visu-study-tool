@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Tetrápodos ectotermos y anamniotas cuya vida suele empezar con una larva acuática con branquias que sufre metamorfosis. Todos los actuales forman los lisanfibios, con tres órdenes, los tres en el bestiario: cecilias (Gymnophiona), salamandras y tritones (Caudata) y ranas y sapos (Salientia/Anura).",
+    "en": "Ectothermic, anamniote tetrapods whose life usually begins as an aquatic, gilled larva that undergoes metamorphosis. All living species form the Lissamphibia, with three orders, all in the bestiary: caecilians (Gymnophiona), salamanders and newts (Caudata) and frogs and toads (Salientia/Anura)."
+  },
+  "traits": {
+    "es": [
+      "Piel desnuda, sin pelo ni escamas externas, húmeda, permeable al agua y llena de glándulas",
+      "Respiración en parte a través de la piel",
+      "Huevos sin amnios, que necesitan agua o humedad para desarrollarse",
+      "Dientes pedicelados, un rasgo exclusivo de los anfibios"
+    ],
+    "en": [
+      "Naked skin without hair or external scales, moist, permeable to water and full of glands",
+      "Part of respiration takes place through the skin",
+      "Eggs without an amnion, needing water or moisture to develop",
+      "Pedicellate teeth, a feature unique to amphibians"
+    ]
+  },
+  "contrast": {
+    "es": "No confundir con los reptiles (p. ej. salamandras frente a lagartijas): los reptiles tienen la piel seca cubierta de escamas, uñas en los dedos y huevos amnióticos que no necesitan agua.",
+    "en": "Do not confuse with reptiles (e.g. salamanders versus lizards): reptiles have dry, scaly skin, clawed toes and amniotic eggs that do not need water."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Amphibian",
+      "url": "https://en.wikipedia.org/wiki/Amphibian",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Amphibia",
+      "url": "https://es.wikipedia.org/wiki/Amphibia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

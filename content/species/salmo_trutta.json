@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "Cuerpo esbelto con cabeza larga y estrecha y boca grande",
+      "Pardo dorado con manchas oscuras y pintas rojas rodeadas de halos claros en los flancos",
+      "Las manchas no llegan a la cola; caudal sin escotadura",
+      "Los juveniles tienen el borde de la adiposa rojo y manchas oscuras en los flancos"
+    ],
+    "en": [
+      "Slender body with a long, narrow head and large mouth",
+      "Golden brown with dark spots and red spots ringed by pale halos on the sides",
+      "Spots do not reach the tail; tail fin not forked",
+      "Juveniles have a red-edged adipose fin and dark blotches along the sides"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Salmo salar",
+      "es": "El salmón tiene la caudal escotada y manchas negras sobre todo por encima de la línea lateral, sin pintas rojas en el adulto.",
+      "en": "The Atlantic salmon has a forked tail and black spots mainly above the lateral line, without red spots in adults."
+    }
+  ],
+  "etymology": {
+    "es": "trutta es el latín para «trucha».",
+    "en": "trutta is Latin for 'trout'."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Salmo trutta",
+      "url": "https://es.wikipedia.org/wiki/Salmo_trutta",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Brown trout",
+      "url": "https://en.wikipedia.org/wiki/Brown_trout",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

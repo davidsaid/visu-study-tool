@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Lampreas: vertebrados sin mandíbulas de cuerpo anguiliforme, marinos o de agua dulce, agrupados en un único orden (Petromyzontiformes). En el bestiario: la lamprea de mar y la lamprea de río.",
+    "en": "Lampreys: eel-shaped jawless vertebrates of the sea or fresh water, grouped in a single order (Petromyzontiformes). In the bestiary: the sea lamprey and the river lamprey."
+  },
+  "traits": {
+    "es": [
+      "Boca circular en ventosa con círculos concéntricos de dientes córneos",
+      "Cuerpo cilíndrico, sin escamas y resbaladizo",
+      "Siete poros branquiales a cada lado de la cabeza",
+      "Un solo orificio nasal en lo alto de la cabeza; sin aletas pares"
+    ],
+    "en": [
+      "Round, funnel-like sucking mouth with concentric rings of horny teeth",
+      "Cylindrical, scaleless, slippery body",
+      "Seven gill pores on each side of the head",
+      "A single nostril on top of the head; no paired fins"
+    ]
+  },
+  "contrast": {
+    "es": "Parecen anguilas, pero no tienen mandíbulas, ni escamas, ni aletas pares; y frente a los mixinos, carecen de barbillas y tienen boca en ventosa.",
+    "en": "They look like eels but have no jaws, scales or paired fins; unlike hagfishes, they lack barbels and have a sucker mouth."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Lamprey",
+      "url": "https://en.wikipedia.org/wiki/Lamprey",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Hyperoartia",
+      "url": "https://es.wikipedia.org/wiki/Hyperoartia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

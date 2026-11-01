@@ -1,0 +1,62 @@
+{
+  "field_marks": {
+    "es": [
+      "Blanca con plumas de vuelo negras",
+      "Pico y patas largos y rojos",
+      "Vuela con el cuello extendido y las patas sobresaliendo de la cola",
+      "Juveniles con pico y patas pardo-anaranjados y el negro teñido de pardo"
+    ],
+    "en": [
+      "White with black flight feathers",
+      "Long red bill and legs",
+      "Flies with neck extended and legs projecting beyond the tail",
+      "Juveniles have duller orange-brown bill and legs, black feathers tinged brown"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Ciconia nigra",
+      "es": "La cigüeña negra tiene el dorso, la cabeza y el cuello negros.",
+      "en": "The black stork has black upperparts, head and neck."
+    },
+    {
+      "binomial": "Neophron percnopterus",
+      "es": "En vuelo lejano, el alimoche tiene un patrón alar parecido, pero es mucho menor y tiene cola en cuña.",
+      "en": "In distant flight the Egyptian vulture has a similar underwing, but is much smaller with a wedge-shaped tail."
+    },
+    {
+      "binomial": "Pelecanus onocrotalus",
+      "es": "El pelícano vuela con el cuello recogido y las patas cortas no sobresalen de la cola.",
+      "en": "The great white pelican flies with its neck retracted, and its short legs do not project beyond the tail."
+    }
+  ],
+  "dimorphism": {
+    "es": "Plumaje idéntico en ambos sexos; los machos son algo mayores de media.",
+    "en": "Identical plumage in both sexes; males are slightly larger on average."
+  },
+  "etymology": {
+    "es": "ciconia es «cigüeña» en latín, repetido en género y especie.",
+    "en": "ciconia is Latin for 'stork', used for both genus and species."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Ciconia ciconia",
+      "url": "https://es.wikipedia.org/wiki/Ciconia_ciconia",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): White stork",
+      "url": "https://en.wikipedia.org/wiki/White_stork",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Ciconia nigra",
+      "url": "https://es.wikipedia.org/wiki/Ciconia_nigra",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

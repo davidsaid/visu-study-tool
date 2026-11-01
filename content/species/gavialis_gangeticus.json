@@ -1,0 +1,56 @@
+{
+  "field_marks": {
+    "es": [
+      "Hocico extremadamente largo y estrecho, ensanchado en la punta",
+      "Unos 110 dientes afilados que encajan entre sí",
+      "Machos adultos con un bulto hueco en la punta del hocico, como un cántaro",
+      "Color oliva, casi negro en el dorso de los adultos viejos; vientre blanco amarillento",
+      "Dedos parcialmente palmeados y crestas en el borde de las patas"
+    ],
+    "en": [
+      "Extremely long, narrow snout, widened at the tip",
+      "About 110 sharp, interlocking teeth",
+      "Adult males have a hollow knob at the snout tip, like a clay pot",
+      "Olive, the back almost black in old adults; yellowish-white belly",
+      "Partly webbed digits and crests on the outer edges of the limbs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Crocodylus niloticus",
+      "es": "El cocodrilo del Nilo tiene el hocico mucho más corto y ancho, sin bulto en la punta.",
+      "en": "The Nile crocodile has a much shorter, broader snout, with no knob at the tip."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mayores y desarrollan el «ghara», un bulto en la punta del hocico: es el único cocodriliano con un dimorfismo sexual tan visible.",
+    "en": "Males are larger and grow the 'ghara', a knob on the snout tip: it is the only crocodilian with such visible sexual dimorphism."
+  },
+  "etymology": {
+    "es": "«Gavial» viene del hindustaní ghara, «cántaro de barro», por el bulto nasal de los machos.",
+    "en": "'Gharial' comes from Hindustani ghara, 'earthen pot', for the males' nasal knob."
+  },
+  "trivia": {
+    "es": [
+      "Es el cocodriliano más acuático: solo sale del agua para asolearse y anidar."
+    ],
+    "en": [
+      "It is the most aquatic crocodilian: it leaves the water only to bask and nest."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Gharial",
+      "url": "https://en.wikipedia.org/wiki/Gharial",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Gavialis gangeticus",
+      "url": "https://es.wikipedia.org/wiki/Gavialis_gangeticus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

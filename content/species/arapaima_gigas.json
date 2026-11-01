@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Uno de los peces de agua dulce más grandes: suele medir 2 m y supera los 3 m",
+      "Cuerpo alargado y aerodinámico con dorsal y anal muy retrasadas, enfrentadas cerca de la cola",
+      "Escamas grandes que cubren todo el cuerpo salvo la cabeza",
+      "Gris verdoso con motas rojas o anaranjadas hacia la cola; caudal redondeada y rojiza",
+      "Cabeza cónica de tono cobrizo con boca orientada hacia arriba"
+    ],
+    "en": [
+      "One of the largest freshwater fish: commonly 2 m, exceeding 3 m",
+      "Long streamlined body with dorsal and anal fins set far back, facing each other near the tail",
+      "Large scales covering the whole body except the head",
+      "Greenish-grey with red or orange flecks towards the tail; rounded reddish tail fin",
+      "Coppery conical head with an upturned mouth"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Lepisosteus osseus",
+      "es": "El pez lagarto también tiene dorsal y anal retrasadas, pero su hocico es una larga aguja con dientes y sus escamas son placas romboidales.",
+      "en": "The longnose gar also has rear-set dorsal and anal fins, but its snout is a long toothed needle and its scales are rhomboid plates."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos maduros muestran mucho más color rojo.",
+    "en": "Mature males show much more red colouring."
+  },
+  "trivia": {
+    "es": [
+      "Debe subir a respirar aire cada pocos minutos, con un sonido parecido a una tos.",
+      "Su nombre brasileño, pirarucu, viene del tupí y significa «pez rojo»."
+    ],
+    "en": [
+      "It must surface to gulp air every few minutes, with a cough-like sound.",
+      "Its Brazilian name, pirarucu, comes from Tupi and means 'red fish'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (ES): Arapaima gigas",
+      "url": "https://es.wikipedia.org/wiki/Arapaima_gigas",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (EN): Arapaima gigas",
+      "url": "https://en.wikipedia.org/wiki/Arapaima_gigas",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Lepisosteus osseus",
+      "url": "https://es.wikipedia.org/wiki/Lepisosteus_osseus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

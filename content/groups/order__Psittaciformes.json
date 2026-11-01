@@ -1,0 +1,39 @@
+{
+  "summary": {
+    "es": "Loros, cotorras, guacamayos y cacatúas: unas 370–410 especies, sobre todo de regiones tropicales y subtropicales. En el bestiario: la cotorra argentina, la cotorra de Kramer, el loro gris y el guacamayo rojo.",
+    "en": "Parrots, parakeets, macaws and cockatoos: about 370–410 species, mostly of tropical and subtropical regions. In the bestiary: the monk parakeet, the rose-ringed parakeet, the grey parrot and the scarlet macaw."
+  },
+  "traits": {
+    "es": [
+      "Pico robusto y curvado; la mandíbula superior, no fusionada al cráneo, se mueve con cierta independencia",
+      "Mandíbula inferior corta, con bordes cortantes, que trabaja contra la superior como un yunque",
+      "Patas zigodáctilas fuertes, dos dedos hacia delante y dos hacia atrás",
+      "Postura erguida"
+    ],
+    "en": [
+      "Strong, curved bill; the upper mandible is not fused to the skull and moves somewhat independently",
+      "Short lower mandible with cutting edges that works against the anvil-like upper one",
+      "Strong zygodactyl feet, two toes forward and two back",
+      "Upright stance"
+    ]
+  },
+  "contrast": {
+    "es": "Los pájaros carpinteros (Piciformes) también son zigodáctilos; lo que identifica a un loro es su pico curvado con la mandíbula superior móvil.",
+    "en": "Woodpeckers (Piciformes) are also zygodactyl; what identifies a parrot is its curved bill with a movable upper mandible."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Parrot",
+      "url": "https://en.wikipedia.org/wiki/Parrot",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Psittaciformes",
+      "url": "https://es.wikipedia.org/wiki/Psittaciformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

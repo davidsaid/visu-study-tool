@@ -1,0 +1,60 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje muy grueso y lanoso, de beige pálido a pardo rojizo, con el vientre blanquecino",
+      "Cara casi negra con prominentes abultamientos nasales",
+      "Machos con cuernos largos (54–60 cm), finos y curvados hacia atrás, anillados en la base",
+      "Machos con rayas negras en las patas; en celo, el cuerpo casi blanco contrasta con la cara y las patas oscuras"
+    ],
+    "en": [
+      "Very thick, woolly coat, pale fawn to reddish-brown, with a whitish belly",
+      "Almost black face with prominent nasal swellings",
+      "Males have long (54–60 cm), slender, back-curved horns, ringed at the base",
+      "Males have black leg stripes; in the rut the almost white body contrasts with the dark face and legs"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Saiga tatarica",
+      "es": "La saiga tiene una nariz en forma de trompa colgante y, en el macho, cuernos cortos, gruesos y de color céreo.",
+      "en": "The saiga has a drooping, trunk-like nose and, in males, short, thick, wax-coloured horns."
+    }
+  ],
+  "dimorphism": {
+    "es": "Los machos son mucho más grandes (unos 39 kg frente a 26 kg) y son los únicos con cuernos y rayas negras en las patas.",
+    "en": "Males are much larger (about 39 kg versus 26 kg) and are the only ones with horns and black leg stripes."
+  },
+  "etymology": {
+    "es": "Pantholops viene del griego y significa «todo antílope».",
+    "en": "Pantholops comes from the Greek for 'all antelope'."
+  },
+  "trivia": {
+    "es": [
+      "Su lana interior, el shahtoosh («rey de las lanas finas» en persa), se usa para tejer chales de lujo, lo que alimenta la caza furtiva."
+    ],
+    "en": [
+      "Its underfur, shahtoosh (Persian for 'king of fine wools'), is woven into luxury shawls, which drives poaching."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Pantholops hodgsonii — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Pantholops_hodgsonii",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Tibetan antelope — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Tibetan_antelope",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Saiga antelope — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Saiga_antelope",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

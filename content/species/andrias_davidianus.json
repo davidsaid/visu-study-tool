@@ -1,0 +1,42 @@
+{
+  "field_marks": {
+    "es": [
+      "El anfibio más grande: suele medir 1,3 m y llega a 1,8 m",
+      "Cabeza ancha y aplanada con boca enorme y ojos pequeños, redondos y sin párpados",
+      "Piel oscura y muy arrugada",
+      "Pardo oscuro jaspeado o moteado; a veces pardo rojizo o negro",
+      "Hilera de tubérculos pareados alrededor de la cabeza y la garganta"
+    ],
+    "en": [
+      "The largest amphibian: usually 1.3 m, up to 1.8 m",
+      "Broad, flat head with a huge mouth and small, round, lidless eyes",
+      "Dark, very wrinkled skin",
+      "Dark brown, mottled or speckled; sometimes reddish brown or black",
+      "A line of paired tubercles round the head and throat"
+    ]
+  },
+  "lookalikes": [],
+  "trivia": {
+    "es": [
+      "Sus voces recuerdan al llanto de un bebé, por lo que en chino se le llama «pez niño»."
+    ],
+    "en": [
+      "Its calls resemble a crying baby, so in Chinese it is called the 'infant fish'."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (EN): Chinese giant salamander",
+      "url": "https://en.wikipedia.org/wiki/Chinese_giant_salamander",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (ES): Andrias davidianus",
+      "url": "https://es.wikipedia.org/wiki/Andrias_davidianus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

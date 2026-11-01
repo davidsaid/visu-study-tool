@@ -1,0 +1,51 @@
+{
+  "field_marks": {
+    "es": [
+      "Pelaje de amarillo pálido a dorado con manchas negras agrupadas en rosetas sin punto central",
+      "Vientre blanco, donde las manchas se difuminan",
+      "Silueta maciza, cabeza redonda y cola larga anillada hacia la punta, más corta que el cuerpo",
+      "Pupilas redondas"
+    ],
+    "en": [
+      "Pale yellow to golden coat with black spots grouped in rosettes without a central dot",
+      "White belly, where the spots fade",
+      "Stocky build, round head and long tail banded towards the tip, shorter than the body",
+      "Round pupils"
+    ]
+  },
+  "lookalikes": [
+    {
+      "binomial": "Panthera onca",
+      "es": "El jaguar es más robusto, de cabeza más cuadrada y rosetas mayores, menos numerosas y con un punto en el centro.",
+      "en": "The jaguar is stockier with a squarer head and larger, fewer rosettes with a central dot."
+    },
+    {
+      "binomial": "Acinonyx jubatus",
+      "es": "El guepardo tiene manchas negras sueltas, no rosetas, y franjas negras en la cara.",
+      "en": "The cheetah has single solid black spots, not rosettes, and black facial stripes."
+    }
+  ],
+  "dimorphism": {
+    "es": "El macho es mayor y más pesado que la hembra.",
+    "en": "Males are larger and heavier than females."
+  },
+  "etymology": {
+    "es": "Panthera, del latín panthera; «leopardo» procede del griego leópardos, quizá de léōn «león» + pardos «moteado».",
+    "en": "Panthera from Latin panthera; 'leopard' comes from Greek leópardos, possibly léōn 'lion' + pardos 'spotted'."
+  },
+  "sources": [
+    {
+      "title": "Panthera pardus — Wikipedia (es)",
+      "url": "https://es.wikipedia.org/wiki/Panthera_pardus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Leopard — Wikipedia (en)",
+      "url": "https://en.wikipedia.org/wiki/Leopard",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

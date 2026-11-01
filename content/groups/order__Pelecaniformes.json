@@ -1,0 +1,75 @@
+{
+  "summary": {
+    "es": "Aves acuáticas medianas y grandes: pelícanos, picozapato y avemartillo, más las garzas (Ardeidae) y los ibis y espátulas (Threskiornithidae). Antes se incluían aquí todas las aves con los cuatro dedos palmeados, pero alcatraces y cormoranes forman hoy el orden Suliformes. En el bestiario: el pelícano común, la garza real, la garceta común y la espátula común.",
+    "en": "Medium-sized and large waterbirds: pelicans, shoebill and hamerkop, plus herons (Ardeidae) and ibises and spoonbills (Threskiornithidae). All birds with four webbed toes were once placed here, but gannets and cormorants now form the order Suliformes. In the bestiary: the great white pelican, the grey heron, the little egret and the Eurasian spoonbill."
+  },
+  "traits": {
+    "es": [
+      "Sin un rasgo externo común: cada familia tiene su pico característico",
+      "Pelícanos: pico muy largo con un enorme saco gular",
+      "Garzas: patas y cuello largos; vuelan con el cuello recogido en forma de S",
+      "Espátulas: pico grande, plano y espatulado"
+    ],
+    "en": [
+      "No single shared external trait: each family has its own distinctive bill",
+      "Pelicans: very long bill with a huge throat pouch",
+      "Herons: long legs and neck; fly with the neck folded into an S-shape",
+      "Spoonbills: large, flat, spatulate bill"
+    ]
+  },
+  "contrast": {
+    "es": "Las garzas se distinguen de cigüeñas, grullas, ibis y espátulas porque vuelan con el cuello recogido y no estirado.",
+    "en": "Herons differ from storks, cranes, ibises and spoonbills in flying with the neck retracted rather than outstretched."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Pelecaniformes",
+      "url": "https://en.wikipedia.org/wiki/Pelecaniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Pelecaniformes",
+      "url": "https://es.wikipedia.org/wiki/Pelecaniformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Pelican",
+      "url": "https://en.wikipedia.org/wiki/Pelican",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Pelecanus",
+      "url": "https://es.wikipedia.org/wiki/Pelecanus",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Heron",
+      "url": "https://en.wikipedia.org/wiki/Heron",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Ardeidae",
+      "url": "https://es.wikipedia.org/wiki/Ardeidae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (en): Spoonbill",
+      "url": "https://en.wikipedia.org/wiki/Spoonbill",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    },
+    {
+      "title": "Wikipedia (es): Plateinae",
+      "url": "https://es.wikipedia.org/wiki/Plateinae",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}
