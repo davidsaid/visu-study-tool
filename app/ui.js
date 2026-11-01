@@ -117,7 +117,8 @@ App.tile = (id, alt, cls, idx) => {
 };
 /* Carousel: every photo of one species in a fixed frame (whole photo, object-fit: contain), with
    arrows, a counter, swipe and arrow keys. The view that owns the state registers
-   App.carouselStep[key] = (newIdx) => { store it; re-render } and renders App.carousel(id, { key, idx }). */
+   App.carouselStep[key] = (newIdx) => { store it; re-render } and renders App.carousel(id, { key, idx }).
+   `inner` is extra HTML inside the frame, under the arrows (e.g. the button that picks a photo). */
 App.carouselStep = {};
 App.carousel = (id, o) => {
   const ps = App.photosOf(id), n = ps.length;
@@ -125,7 +126,7 @@ App.carousel = (id, o) => {
   const idx = ((o.idx || 0) % n + n) % n, p = ps[idx];
   const alt = o.alt != null ? o.alt : App.spName(id);
   const nav = n > 1 ? `<button type="button" class="car-btn prev" data-car-step="-1" aria-label="${L('Foto anterior', 'Previous photo')}">‹</button><button type="button" class="car-btn next" data-car-step="1" aria-label="${L('Foto siguiente', 'Next photo')}">›</button><span class="car-count" aria-hidden="true">${idx + 1} / ${n}</span>` : '';
-  return `<div class="car" data-car="${esc(o.key)}" data-sp="${esc(id)}" data-idx="${idx}" role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}"><div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>${nav}</div>`;
+  return `<div class="car" data-car="${esc(o.key)}" data-sp="${esc(id)}" data-idx="${idx}" role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}"><div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>${o.inner || ''}${nav}</div>`;
 };
 function carouselGo(car, step, refocus) {
   const fn = App.carouselStep[car.dataset.car], n = App.photosOf(car.dataset.sp).length;
@@ -147,7 +148,7 @@ document.addEventListener('pointerdown', e => { const car = e.target.closest && 
 document.addEventListener('pointerup', e => {
   if (!swipe) return;
   const dx = e.clientX - swipe.x, dy = e.clientY - swipe.y, car = swipe.car; swipe = null;
-  if (Math.abs(dx) > 40 && Math.abs(dx) > 1.5 * Math.abs(dy)) carouselGo(car, dx < 0 ? 1 : -1, false);
+  if (Math.abs(dx) > 40 && Math.abs(dx) > 1.5 * Math.abs(dy)) { App.lastSwipe = Date.now(); carouselGo(car, dx < 0 ? 1 : -1, false); }
 });
 document.addEventListener('load', e => {
   const img = e.target;

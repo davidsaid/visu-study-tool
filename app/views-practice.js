@@ -508,7 +508,10 @@ V.cual = function () {
   if (!wrong) {
     body += `<div class="rev-grid" role="group" aria-label="${L('Elige la foto', 'Pick the photo')}">${opts.map((o, i) => {
       let cls = 'rev-opt'; if (rsess.picked === o) cls += ' picked'; if (rev && o === t) cls += ' right';
-      return `<button class="${cls}" data-pick="${esc(o)}" aria-pressed="${rsess.picked === o}" ${locked ? 'disabled' : ''} aria-label="${L('Foto', 'Photo')} ${i + 1}${rev ? ': ' + esc(App.sp(o).binomial) : ''}">${App.tile(o, '', '', rsess.photo[o])}<span class="n">${i + 1}</span>${rev ? `<span class="cap"><i>${esc(App.sp(o).binomial)}</i><br>${esc(App.sp(o).common_es)}</span>` : ''}</button>`;
+      /* Each option is a carousel: the arrows flip its photos, a tap anywhere else on the photo picks it. */
+      const label = `${L('Foto', 'Photo')} ${i + 1}${rev ? ': ' + App.sp(o).binomial : ''}`;
+      const pick = `<button type="button" class="rev-pick" data-pick="${esc(o)}" aria-pressed="${rsess.picked === o}" ${locked ? 'disabled' : ''} aria-label="${esc(L('Elegir', 'Pick') + ' · ' + label)}"></button><span class="n" aria-hidden="true">${i + 1}</span>`;
+      return `<div class="${cls}">${App.carousel(o, { key: `rev-${i}`, idx: rsess.photo[o], alt: label, inner: pick })}${rev ? `<span class="cap"><i>${esc(App.sp(o).binomial)}</i><br>${esc(App.sp(o).common_es)}</span>` : ''}</div>`;
     }).join('')}</div>`;
   }
   if (rsess.phase === 'ask' && rsess.picked) body += confBlock(rsess.conf, true);
@@ -529,7 +532,8 @@ V.cual = function () {
     <ul class="small" style="padding-left:1.1rem"><li><b>${I.lvName(1)}</b>: ${L('otras clases; puedes mostrar u ocultar el nombre vulgar.', 'other classes; you can show or hide the common name.')}</li><li><b>${I.lvName(2)}</b>: ${L('misma clase, otro orden.', 'same class, another order.')}</li><li><b>${I.lvName(3)}</b>: ${L('mismo orden o mismo género.', 'same order or same genus.')}</li></ul>
     <p class="small muted">${L('Solo salen especies con foto.', 'Only species with photos appear.')}</p><a class="btn" href="#nivel">${L('Cambiar de nivel', 'Change level')}</a></section>` : '';
   const main = App.main();
-  main.querySelectorAll('[data-pick]').forEach(b => b.onclick = () => { rsess.picked = b.dataset.pick; V.cual(); App.focusFirst(`[data-pick="${CSS.escape(rsess.picked)}"]`); });
+  opts.forEach((o, i) => { App.carouselStep[`rev-${i}`] = k => { rsess.photo[o] = k; V.cual(); }; });
+  main.querySelectorAll('[data-pick]').forEach(b => b.onclick = () => { if (Date.now() - (App.lastSwipe || 0) < 500) return; rsess.picked = b.dataset.pick; V.cual(); App.focusFirst(`[data-pick="${CSS.escape(rsess.picked)}"]`); });
   main.querySelectorAll('[data-conf]').forEach(b => b.onclick = () => { rsess.conf = b.dataset.conf; V.cual(); App.focusFirst(`[data-conf="${rsess.conf}"]`); });
   const vc = document.getElementById('vernchk'); if (vc) vc.onchange = () => { SET().revShowCommon = vc.checked; Store.save(); V.cual(); const v2 = document.getElementById('vernchk'); if (v2) v2.focus(); };
   const sb = document.getElementById('submitbtn');

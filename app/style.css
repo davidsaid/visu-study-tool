@@ -288,14 +288,20 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .rev-grid .tile { aspect-ratio: 4 / 3; }
 .rev-opt.picked { box-shadow: 0 0 0 3px var(--accent); }
 .rev-opt { padding: 0; border: 3px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); position: relative; display: block; text-align: left; }
-.rev-opt:hover:not([disabled]) { border-color: var(--accent); }
+.rev-opt:has(.rev-pick:not([disabled]):hover) { border-color: var(--accent); }
+.rev-pick { position: absolute; inset: 0; z-index: 0; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.rev-pick[disabled] { cursor: default; }
+.rev-pick:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.rev-opt .car-btn { z-index: 1; width: 36px; height: 36px; font-size: 1.4rem; }
+.rev-opt .car-btn.prev { left: .3rem; }
+.rev-opt .car-btn.next { right: .3rem; }
+.rev-opt .car .car-frame { --maxh: 40vh; }
 .rev-opt .tile { border-radius: 0; }
-.rev-opt .n { position: absolute; top: 6px; left: 6px; width: 28px; height: 28px; border-radius: 50%; background: var(--surface); color: var(--ink); font-weight: 800; display: grid; place-items: center; font-size: .85rem; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+.rev-opt .n { z-index: 1; pointer-events: none; position: absolute; top: 6px; left: 6px; width: 28px; height: 28px; border-radius: 50%; background: var(--surface); color: var(--ink); font-weight: 800; display: grid; place-items: center; font-size: .85rem; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
 .rev-opt.picked { border-color: var(--accent); }
 .rev-opt.right { border-color: var(--ok); }
 .rev-opt.wrong { border-color: var(--error); }
 .rev-opt .cap { display: block; padding: .3rem .5rem; font-size: .8rem; line-height: 1.25; }
-.rev-opt[disabled] { cursor: default; }
 .split-note { display: flex; gap: .6rem; align-items: center; padding: .7rem .8rem; border-radius: 12px; background: var(--accent-soft); margin-top: .8rem; font-size: .92rem; }
 .split-note svg { width: 40px; height: 40px; flex: none; color: var(--accent); }
 

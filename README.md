@@ -22,8 +22,9 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   don't.
 - **Spaced repetition** ([FSRS](https://github.com/open-spaced-repetition/ts-fsrs)): what
   you're about to forget comes back first.
-- **"¿Cuál es?"**: see a scientific name and pick the right photo out of four. The harder
-  the level, the more closely related the other animals.
+- **"¿Cuál es?"**: see a scientific name and pick the right photo out of four; each option
+  can be flipped through all its photos. The harder the level, the more closely related the
+  other animals.
 - **Mistakes teach.** If you confuse two species, you see them side by side with what tells
   them apart. Every mistake also shows **what the name says**: what the Latin or Greek of the
   class, order, genus or species means, as a memory aid.

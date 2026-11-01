@@ -73,7 +73,7 @@ const SCENARIOS = {
   'question': async () => { seedStorage(seen); await open('hoy'); App().set().level = 2; await go('sesion'); setItem('buteo_buteo', 'common'); await type('#typedin', 'Busa'); await click('#hintbtn'); await click('#hintbtn'); },
   'mistake': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro', 'sure'); },
   'misspelling': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('ciconia_ciconia', 'common'); await answerTyped('Cigueña blanca', 'sure'); },
-  'cual': async () => { seedStorage(seen); await open('hoy'); App().set().level = 2; await go('cual-es'); await click('[data-pick]:nth-child(2)'); await click('[data-conf="unsure"]'); },
+  'cual': async () => { seedStorage(seen); await open('hoy'); App().set().level = 2; await go('cual-es'); await click(doc.querySelectorAll('[data-pick]')[1]); await click('[data-conf="unsure"]'); await sleep(+(Q.get('wait') || 0)); },
   'explore': async () => { seedStorage(seen); await open('explorar'); await go('grupo-class-Mammalia'); await click('.trow.kid[data-row="order:Carnivora"]'); await sleep(200); },
   'species': async () => { seedStorage(seen); await open('ficha-' + (Q.get('sp') || 'lynx_pardinus')); const h = doc.getElementById('card-m'); if (h && W < 1000) h.scrollIntoView(); },
   'group': async () => { seedStorage(seen); await open('grupo-order-Accipitriformes'); const h = doc.getElementById('card-m'); if (h && W < 1000) h.scrollIntoView(); },
@@ -249,6 +249,30 @@ const SCENARIOS = {
   },
   'studytree-shot': async () => { seedStorage({ meta: { seenNotice: true }, ui: { studyTree: true } }); await open(Q.get('at') || 'explorar'); await sleep(800); },
   'classmiss-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem(Q.get('sp') || 'scyliorhinus_canicula', 'class'); await answerTyped('wrong'); },
+  /* ¿Cuál es?: every option flips through its photos; flipping neither picks nor loses the pick; alt text never names it. */
+  'cualcar': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 2; await go('cual-es');
+    const r = App().reverseState(), opts = r.opts.slice();
+    const many = opts.findIndex(o => App().photosOf(o).length > 1);
+    const before = r.photo[opts[many]];
+    await click(doc.querySelectorAll('.rev-opt')[many].querySelector('[data-car-step="1"]'));
+    const flipped = App().reverseState().photo[opts[many]] === (before + 1) % App().photosOf(opts[many]).length;
+    const notPicked = !App().reverseState().picked;
+    await click(doc.querySelectorAll('[data-pick]')[many]);
+    const picked = App().reverseState().picked === opts[many];
+    await click(doc.querySelectorAll('.rev-opt')[many].querySelector('[data-car-step="-1"]'));
+    const pickKept = App().reverseState().picked === opts[many] && App().reverseState().photo[opts[many]] === before;
+    /* a touch swipe flips the photo; the click the browser fires after it doesn't pick */
+    const other = opts.findIndex((o, i) => i !== many && App().photosOf(o).length > 1), ob = App().reverseState().photo[opts[other]];
+    const pb = doc.querySelectorAll('[data-pick]')[other], ev = (t, x) => pb.dispatchEvent(new win.PointerEvent(t, { bubbles: true, pointerType: 'touch', clientX: x, clientY: 100 }));
+    ev('pointerdown', 200); ev('pointerup', 100); await sleep(50); const pb2 = doc.querySelectorAll('[data-pick]')[other]; pb2.click(); await sleep(80);
+    const swipe = App().reverseState().photo[opts[other]] !== ob && App().reverseState().picked === opts[many];
+    const carousels = doc.querySelectorAll('.rev-opt .car').length;
+    const altHides = [...doc.querySelectorAll('.rev-opt img')].every((im, i) => !im.alt.includes(App().sp(opts[i]).binomial));
+    await sleep(2000);
+    const loaded = [...doc.querySelectorAll('.rev-opt img')].filter(im => im.complete && im.naturalWidth > 0).length;
+    report({ scenario: 'cualcar', loaded, carousels, swipe, flipped, notPicked, picked, pickKept, altHides });
+  },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },
