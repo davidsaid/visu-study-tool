@@ -120,7 +120,7 @@ def build_tree(species, warnings, rows, root_name=None):
                              f"({orders[s['order']]} and {s['class']})")
     infraorders = OrderedDict((s["infraorder"], s["order"]) for s in species if s["infraorder"])
 
-    deep, nodes, grades, seen, absent = {}, OrderedDict(), set(), set(), set()
+    deep, nodes, grades, seen, absent = {}, OrderedDict(), {}, set(), set()
     for r in rows:
         where = f"curation/clades.csv row {r['_line']}"
         nid = r["node_id"]
@@ -138,7 +138,7 @@ def build_tree(species, warnings, rows, root_name=None):
         if kind == "deep":
             deep[nid] = entry
         elif kind == "grade":
-            grades.add(name)
+            grades[name] = entry
         elif (kind == "class" and name not in classes) or (kind == "order" and name not in orders) or \
                 (kind == "infraorder" and name not in infraorders):
             absent.add(nid)   # a group that is not in this collection
@@ -281,7 +281,9 @@ def build_tree(species, warnings, rows, root_name=None):
     deep_path.reverse()
     deep_path.append({"scientific": nodes[root]["scientific"], "es": nodes[root]["es"], "en": nodes[root]["en"],
                       "source_url": nodes[root]["source_url"]})
-    return {"root": root, "deep_path": deep_path, "nodes": tree}
+    # Names of the list's classes that are grades, not clades (Reptilia): the app's study mode shows them as roots.
+    grade_names = {g: {k: grades[g][k] for k in ("scientific", "es", "en", "source_url")} for g in grades if g in classes}
+    return {"root": root, "deep_path": deep_path, "nodes": tree, "grades": grade_names}
 
 
 # --------------------------------------------------------------------------- species

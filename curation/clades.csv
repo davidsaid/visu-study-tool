@@ -14,7 +14,7 @@ clade:vertebrata,deep:craniata,Vertebrata,Vertebrados,Vertebrates,https://en.wik
 clade:cyclostomata,clade:vertebrata,Cyclostomata,Ciclóstomos,Cyclostomes,https://en.wikipedia.org/wiki/Cyclostomi
 class:Myxini,clade:cyclostomata,Myxini,Mixinos,Hagfishes,https://en.wikipedia.org/wiki/Hagfish
 order:Myxiniformes,class:Myxini,Myxiniformes,Mixiniformes,Hagfishes,https://en.wikipedia.org/wiki/Myxiniformes
-class:Hyperoartia,clade:cyclostomata,Hyperoartia,Lampreas,Lampreys,https://en.wikipedia.org/wiki/Lamprey
+class:Hyperoartia,clade:cyclostomata,Hyperoartia,Hiperoartios (lampreas),Lampreys,https://es.wikipedia.org/wiki/Hyperoartia
 order:Petromyzontiformes,class:Hyperoartia,Petromyzontiformes,Petromizontiformes,Lampreys,https://en.wikipedia.org/wiki/Petromyzontiformes
 clade:gnathostomata,clade:vertebrata,Gnathostomata,Gnatóstomos,Jawed vertebrates,https://en.wikipedia.org/wiki/Gnathostomata
 class:Chondrichthyes,clade:gnathostomata,Chondrichthyes,Condrictios,Cartilaginous fishes,https://en.wikipedia.org/wiki/Chondrichthyes
@@ -66,7 +66,7 @@ order:Moroniformes,clade:teleostei,Moroniformes,Moroniformes,Temperate basses,ht
 order:Scombriformes,clade:teleostei,Scombriformes,Escombriformes,Mackerels and tunas,https://en.wikipedia.org/wiki/Scombriformes
 order:Pleuronectiformes,clade:teleostei,Pleuronectiformes,Pleuronectiformes,Flatfishes,https://en.wikipedia.org/wiki/Flatfish
 clade:sarcopterygii,clade:osteichthyes,Sarcopterygii (clado),Sarcopterigios,Lobe-finned vertebrates,https://en.wikipedia.org/wiki/Sarcopterygii
-class:Sarcopterygii,clade:sarcopterygii,Sarcopterygii,Peces de aletas lobuladas,Lobe-finned fishes,https://en.wikipedia.org/wiki/Sarcopterygii
+class:Sarcopterygii,clade:sarcopterygii,Sarcopterygii,Sarcopterigios (peces de aletas lobuladas),Lobe-finned fishes,https://es.wikipedia.org/wiki/Sarcopterygii
 order:Coelacanthiformes,class:Sarcopterygii,Coelacanthiformes,Celacantiformes,Coelacanths,https://en.wikipedia.org/wiki/Coelacanthiformes
 order:Ceratodontiformes,class:Sarcopterygii,Ceratodontiformes,Ceratodontiformes,Lungfishes,https://en.wikipedia.org/wiki/Ceratodontiformes
 clade:tetrapoda,clade:sarcopterygii,Tetrapoda,Tetrápodos,Tetrapods,https://en.wikipedia.org/wiki/Tetrapod

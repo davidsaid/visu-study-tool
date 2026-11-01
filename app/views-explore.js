@@ -96,7 +96,7 @@ function citer() {
 
 /* ---------- cards ---------- */
 function exam5(id) {
-  return `<div class="exam5" role="group" aria-label="${L('Las cinco casillas del examen', 'The five exam boxes')}">${E.SKILLS.map(k => `<div><span>${I.sk(k)}</span><b class="${k === 'genus' || k === 'species' ? 'sci' : ''}">${esc(E.answerFor(M(), id, k))}</b></div>`).join('')}</div>`;
+  return `<div class="exam5" role="group" aria-label="${L('Las cinco casillas del examen', 'The five exam boxes')}">${E.SKILLS.map(k => { const v = E.answerFor(M(), id, k), es = k === 'class' || k === 'order' ? App.esForm(k, v) : ''; return `<div><span>${I.sk(k)}</span><b class="${k === 'genus' || k === 'species' ? 'sci' : ''}">${esc(v)}</b>${es ? `<small class="es-form">${esc(es)}</small>` : ''}</div>`; }).join('')}</div>`;
 }
 function gradeBand(id) {
   if (!(App.isGradeNode(id) || App.holdsGrade(id))) return '';
@@ -151,7 +151,7 @@ function namesHTML(id, cite) {
     .map(([k, lab]) => [lab, App.nameMeaning(id, k)]).filter(r => r[1]);
   if (!rows.length) return '';
   const draft = rows.some(r => r[1].draft) ? ` <span class="draft">${L('borrador', 'draft')}</span>` : '';
-  return `<h2 class="sec">${L('Qué dice el nombre', 'What the name says')}${draft}</h2><dl class="names-dl">${rows.map(([lab, m]) => `<dt>${lab} <i>${esc(m.name)}</i></dt><dd>${esc(m.text)}${cite.content(m.key, m.sources)}</dd>`).join('')}</dl>`;
+  return `<h2 class="sec">${L('Qué dice el nombre', 'What the name says')}${draft}</h2><dl class="names-dl">${rows.map(([lab, m]) => `<dt>${lab} <i>${esc(m.name)}</i>${m.es ? `<span class="es-form">${L('en español', 'in Spanish')}: ${esc(m.es)}</span>` : ''}</dt><dd>${m.text ? esc(m.text) + cite.content(m.key, m.sources) : ''}</dd>`).join('')}</dl>`;
 }
 function speciesCard(id) {
   const s = App.sp(id), c = (M().content.species || {})[id] || null, cite = citer();
@@ -160,7 +160,7 @@ function speciesCard(id) {
   const iu = facts.find(f => f.field === 'iucn'), es = facts.find(f => f.field === 'spain');
   const st = App.statsOf(id);
   const other = I.lang === 'es' ? s.common_en : s.common_es;
-  const kicker = `<p class="kicker"><span>${L('Clase', 'Class')} ${App.isGradeNode(id) ? `<span class="gr">Reptilia*</span>` : esc(s.class)}</span><span>${L('Orden', 'Order')} ${esc(s.order)}</span>${s.infraorder ? `<span>${esc(s.infraorder)}</span>` : ''}${s.family ? `<span>${esc(s.family)}</span>` : ''}</p>`;
+  const kicker = `<p class="kicker"><span>${L('Clase', 'Class')} ${App.isGradeNode(id) ? `<span class="gr">Reptilia*</span>` : esc(s.class)}${App.esForm('class', s.class) ? ` · ${esc(App.esForm('class', s.class))}` : ''}</span><span>${L('Orden', 'Order')} ${esc(s.order)}${App.esForm('order', s.order) ? ` · ${esc(App.esForm('order', s.order))}` : ''}</span>${s.infraorder ? `<span>${esc(s.infraorder)}</span>` : ''}${s.family ? `<span>${esc(s.family)}</span>` : ''}</p>`;
   const head = `${kicker}<h1 class="ptitle" tabindex="-1">${esc(App.spName(id))}</h1><p class="binom"><i>${esc(s.binomial)}</i>${s.authority ? ` <span class="auth">${esc(s.authority)}</span>` : ''}</p>
     ${other && other !== App.spName(id) ? `<p class="alt">${I.lang === 'es' ? 'EN' : 'ES'}: ${esc(other)}</p>` : ''}${exam5(id)}`;
   const status = `<div class="status-row">${iu && iucnCode(iu) ? `<span class="stat"><span class="iucn ${iucnCode(iu)}">${iucnCode(iu)}</span>${L('UICN', 'IUCN')}: ${L(I.IUCN[iucnCode(iu)][0], I.IUCN[iucnCode(iu)][1])}</span>` : ''}${es ? `<span class="stat">${esc(I.t(es))}</span>` : ''}<span class="stat">${App.ring(st.meter, 18)} ${L('Progreso', 'Progress')} ${pct(st.meter)}${st.mastered ? ' · ' + L('dominada', 'mastered') : ''}</span>${App.hasPhoto(id) ? `<button class="btn" data-practise="${esc(id)}" style="min-height:40px">${L('Practicar', 'Practise')}</button>` : ''}</div>`;

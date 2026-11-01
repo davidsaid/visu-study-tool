@@ -125,6 +125,7 @@ class BuildOutput(unittest.TestCase):
         content = load_js("data/vertebrados/content.js", "content", self.out)
         self.assertNotIn("class:Reptilia", self.data["tree"]["nodes"])
         self.assertIn("etymology", content["groups"]["class:Reptilia"])
+        self.assertEqual(self.data["tree"]["grades"]["Reptilia"]["es"], "Reptiles")
 
     def test_no_parent_of_split_values(self):
         snap = build.load_snapshot()

@@ -219,7 +219,15 @@ const SCENARIOS = {
     const spelling = !!doc.querySelector('.diffrow') && keyText().includes(exp('ciconia_ciconia', 'genus'));
     await click('#nextbtn'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro');
     const wrongSpecies = !!doc.querySelector('.twoup') && keyText().includes(exp('milvus_milvus', 'genus')) && keyText().includes(exp('milvus_migrans', 'genus'));
-    report({ scenario: 'names', card, groupShown, missOrder, spelling, wrongSpecies });
+    await click('#nextbtn'); setItem('scyliorhinus_canicula', 'class'); await answerTyped('wrong');
+    const esClass = keyText().includes('Condrictios');
+    await go('ficha-scyliorhinus_canicula');
+    const esCard = (doc.querySelector('.exam5') || {}).textContent.includes('Condrictios') && (doc.querySelector('.names-dl') || {}).textContent.includes('Condrictios');
+    await go('ficha-timon_lepidus');
+    const esReptiles = (doc.querySelector('.exam5') || {}).textContent.includes('Reptiles');
+    win.VISU_STORE.data.settings.lang = 'en'; win.VISU_STORE.save(); await reload(); await go('ficha-scyliorhinus_canicula');
+    const noEsInEnglish = !(doc.querySelector('.exam5') || {}).textContent.includes('Condrictios');
+    report({ scenario: 'names', card, groupShown, missOrder, spelling, wrongSpecies, esClass, esCard, esReptiles, noEsInEnglish });
   },
   /* Press "Load the YouTube video" on a card; screenshot to see the player (needs network). */
   'video': async () => { seedStorage(seen); await open('ficha-' + (Q.get('sp') || 'milvus_milvus')); const b = doc.querySelector('[data-video]'); if (b) { b.scrollIntoView(); b.click(); } await sleep(8000); const f = doc.querySelector('.video-box iframe'); if (f) f.scrollIntoView(); },
@@ -240,6 +248,7 @@ const SCENARIOS = {
     report({ scenario: 'studytree', onlyClasses, roots: roots.length, reptileFromClass, reptiliaCard, kept, full });
   },
   'studytree-shot': async () => { seedStorage({ meta: { seenNotice: true }, ui: { studyTree: true } }); await open(Q.get('at') || 'explorar'); await sleep(800); },
+  'classmiss-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem(Q.get('sp') || 'scyliorhinus_canicula', 'class'); await answerTyped('wrong'); },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },

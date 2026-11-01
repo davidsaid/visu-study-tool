@@ -68,7 +68,8 @@ function addClassRoots(M) {
       const sp = speciesUnder(M, x);
       if (sp.length && sp.every(s => M.species[s].class === c)) kids.push(x); else (n.children || []).forEach(walk);
     })(M.root);
-    M.nodes = Object.assign({}, M.nodes, { [id]: { id, parent: null, children: kids, rank: 'class', scientific: c, name: null, grade: c, virtual: true } });
+    const g = ((M.bestiary && M.bestiary.tree && M.bestiary.tree.grades) || {})[c];
+    M.nodes = Object.assign({}, M.nodes, { [id]: { id, parent: null, children: kids, rank: 'class', scientific: c, name: g ? { es: g.es, en: g.en } : null, grade: c, virtual: true } });
     M._under = {};
     return id;
   });

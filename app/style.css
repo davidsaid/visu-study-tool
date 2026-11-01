@@ -262,6 +262,7 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .name-key .eyebrow { margin: 0 0 .2rem; }
 .names-dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem .9rem; margin: .4rem 0 0; }
 .names-dl dt { font-weight: 600; }
+.names-dl .es-form, .exam5 .es-form { display: block; font-weight: 400; font-size: .8rem; color: var(--muted); }
 .names-dl dd { margin: 0; }
 @media (max-width: 560px) { .names-dl { grid-template-columns: 1fr; } .names-dl dd { margin-bottom: .4rem; } }
 .tip { font-family: var(--font-plate); font-size: 1.15rem; line-height: 1.35; margin: .3rem 0; }

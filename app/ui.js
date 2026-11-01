@@ -52,6 +52,14 @@ App.hasPhoto = id => App.photosOf(id).length > 0;
 /* Quiz photos are drawn at random for each question (repeats allowed), so what she learns is the
    animal, not one picture's composition or its place in a session. */
 App.randomPhoto = id => Math.floor(Math.random() * Math.max(1, App.photosOf(id).length));
+/* The Spanish form of a class or order name (Chondrichthyes → Condrictios), as said in Spain. Only in the
+   Spanish interface, and only when it differs from the Latin. */
+App.esForm = (rank, sci) => {
+  if (I.lang !== 'es' || !sci) return '';
+  const n = M().nodes[`${rank}:${sci}`], es = n && n.name && n.name.es;
+  const norm = x => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return es && norm(es) !== norm(sci) ? es : '';
+};
 /* "What the name says": the etymology behind one exam box, as a memory aid. Class and order come from their
    group texts; genus, species and common name from the species text. Null when not written yet. */
 App.nameMeaning = (id, skill) => {
@@ -59,7 +67,8 @@ App.nameMeaning = (id, skill) => {
   const gid = skill === 'class' ? `class:${s.class}` : skill === 'order' ? `order:${s.order}` : null;
   const c = gid ? (C.groups || {})[gid] : (C.species || {})[id];
   const text = c && c.etymology ? I.t(c.etymology) : '';
-  return text ? { key: gid || id, name: gid ? gid.split(':')[1] : s.binomial, text, draft: c.status === 'draft', sources: c.sources } : null;
+  const es = gid ? App.esForm(skill, gid.split(':')[1]) : '';
+  return text || es ? { key: gid || id, name: gid ? gid.split(':')[1] : s.binomial, es, text, draft: !!(c && c.status === 'draft'), sources: c && c.sources } : null;
 };
 /* The block shown after a mistake: the meaning of each box involved, once per name, then the names of the
    species it was confused with, for contrast. */
@@ -69,7 +78,7 @@ App.nameKeyHTML = (id, skills, confused) => {
   skills.forEach(k => add(App.nameMeaning(id, k)));
   (confused || []).forEach(o => add(App.nameMeaning(o, 'genus')));
   if (!rows.length) return '';
-  return `<section class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p>${rows.map(m => `<p><i>${esc(m.name)}</i>: ${esc(m.text)}</p>`).join('')}${rows.some(m => m.draft) ? `<p class="tiny muted"><span class="draft">${L('borrador', 'draft')}</span></p>` : ''}</section>`;
+  return `<section class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p>${rows.map(m => `<p><i>${esc(m.name)}</i>${m.es ? ` (${L('en español', 'in Spanish')}, <b>${esc(m.es)}</b>)` : ''}${m.text ? `: ${esc(m.text)}` : ''}</p>`).join('')}${rows.some(m => m.draft) ? `<p class="tiny muted"><span class="draft">${L('borrador', 'draft')}</span></p>` : ''}</section>`;
 };
 const SOURCE_NAME = { commons: 'Wikimedia Commons', inaturalist: 'iNaturalist' };
 App.credit = (p, opts) => {
