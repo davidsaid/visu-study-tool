@@ -94,12 +94,14 @@ function gradeBand(id) {
 function videoBox(id) {
   const v = App.sp(id).video;
   if (!v || !I.url(v.url) || v.status === 'broken') return '';
-  const yt = v.status !== 'link_only' ? ((v.url.match(/[?&]v=([\w-]{6,})/) || v.url.match(/youtu\.be\/([\w-]{6,})/) || v.url.match(/youtube\.com\/(?:embed|shorts)\/([\w-]{6,})/) || [])[1]) : null;
+  /* YouTube refuses embeds that don't say which site they're on (error 153). A downloaded copy opened as a
+     file has no site address to send, so there the video only opens on YouTube. */
+  const yt = v.status !== 'link_only' && location.protocol !== 'file:' ? ((v.url.match(/[?&]v=([\w-]{6,})/) || v.url.match(/youtu\.be\/([\w-]{6,})/) || v.url.match(/youtube\.com\/(?:embed|shorts)\/([\w-]{6,})/) || [])[1]) : null;
   const start = (v.url.match(/[?&]t=(\d+)/) || [])[1];
   const host = (() => { try { return new URL(v.url).hostname.replace(/^www\./, ''); } catch (e) { return ''; } })();
   const channel = v.channel ? (I.url(v.channel_url) ? `<a href="${esc(I.url(v.channel_url))}" target="_blank" rel="noopener">${esc(v.channel)}</a>` : esc(v.channel)) : '';
   return `<h2 class="sec">${L('Vídeo', 'Video')}</h2><div class="video-box">
-    ${yt ? `<p class="small">${L('El vídeo está en YouTube. No se carga nada hasta que pulses el botón; al pulsarlo, tu navegador se conecta con YouTube.', 'The video is on YouTube. Nothing loads until you press the button; when you do, your browser connects to YouTube.')}</p>
+    ${yt ? `<p class="small">${L('El vídeo está en YouTube. No se carga nada hasta que pulses el botón; al pulsarlo, tu navegador se conecta con YouTube y le dice la dirección de esta web (no la de la ficha), que YouTube exige para reproducirlo.', 'The video is on YouTube. Nothing loads until you press the button; when you do, your browser connects to YouTube and tells it this site’s address (not the card’s), which YouTube requires to play it.')}</p>
     <div class="row"><button class="btn primary" data-video="${esc(yt)}" data-start="${esc(start || '')}">${L('Cargar el vídeo de YouTube', 'Load the YouTube video')}</button><a class="btn" href="${esc(I.url(v.url))}" target="_blank" rel="noopener">${L('Abrir en YouTube ↗', 'Open on YouTube ↗')}</a></div>`
     : `<p class="small">${L('Este vídeo no se puede ver dentro de esta web; se abre en', 'This video can’t play inside this site; it opens on')}${host ? ` ${esc(host)}` : ''}.</p><a class="btn" href="${esc(I.url(v.url))}" target="_blank" rel="noopener">${L('Abrir el vídeo ↗', 'Open the video ↗')}</a>`}
     <p class="tiny muted">${v.title ? `«${esc(v.title)}»` : L('Vídeo', 'Video')}${channel ? `, ${L('de', 'by')} ${channel}` : ''}${v.checked ? ` · ${L('enlace comprobado el', 'link checked on')} ${esc(v.checked)}` : ''}.</p></div>`;
@@ -227,7 +229,7 @@ function groupCard(id) {
 function bindCard(host, id) {
   host.querySelectorAll('[data-video]').forEach(b => b.onclick = () => {
     const box = b.closest('.video-box'), st = b.dataset.start ? `&start=${encodeURIComponent(b.dataset.start)}` : '';
-    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(b.dataset.video)}?autoplay=1${st}" title="${L('Vídeo', 'Video')}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(b.dataset.video)}?autoplay=1${st}" title="${L('Vídeo', 'Video')}" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
   });
   host.querySelectorAll('[data-practise]').forEach(b => b.onclick = () => { P().ui.scope = b.dataset.practise; Store.save(); location.hash = 'nivel'; });
   const showPhoto = i => {

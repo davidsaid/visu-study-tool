@@ -61,7 +61,9 @@ The website explains this in plain words on its **Cómo funciona / How it works*
 ### Privacy
 
 No cookies, no analytics, no tracking. Fonts, code and photos are served from this
-repository. Videos load from YouTube only when you press play.
+repository. Videos load from YouTube only when you press play; at that point your browser tells
+YouTube the site's address (not the page you're on), which YouTube requires before it plays an
+embedded video. In a downloaded copy, videos open on YouTube instead.
 
 ### Found a mistake?
 

@@ -81,7 +81,7 @@ V.como = function () {
   <ul><li>${L('<b>Sin cookies</b> ni publicidad.', '<b>No cookies</b> and no ads.')}</li>
     <li>${L('<b>Sin seguimiento</b>: no medimos visitas ni sabemos quién eres.', '<b>No tracking</b>: we don’t count visits or know who you are.')}</li>
     <li>${L('<b>No se envía nada</b> a ningún sitio. Las fotos, los textos y las letras vienen con la propia web.', '<b>Nothing is sent</b> anywhere. Photos, texts and fonts come with the site itself.')}</li>
-    <li>${L('Los <b>vídeos</b> están en YouTube y solo se cargan cuando pulsas el botón. En ese momento tu navegador se conecta con YouTube, que tiene sus propias reglas.', 'The <b>videos</b> are on YouTube and only load when you press the button. At that moment your browser connects to YouTube, which has its own rules.')}</li>
+    <li>${L('Los <b>vídeos</b> están en YouTube y solo se cargan cuando pulsas el botón. En ese momento tu navegador se conecta con YouTube y le dice la dirección de esta web, que YouTube exige para reproducir el vídeo; YouTube tiene sus propias reglas. En una copia descargada, los vídeos se abren en YouTube.', 'The <b>videos</b> are on YouTube and only load when you press the button. At that moment your browser connects to YouTube and tells it this site’s address, which YouTube requires to play the video; YouTube has its own rules. In a downloaded copy, videos open on YouTube.')}</li>
     <li>${L('Para borrar tu progreso, ve a Ajustes → «Borrar», o borra los datos de esta web en tu navegador.', 'To delete your progress, go to Settings → “Delete”, or clear this site’s data in your browser.')}</li></ul>
 
   <h2>${L('De dónde sale el contenido', 'Where the content comes from')}</h2>
