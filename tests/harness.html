@@ -82,7 +82,7 @@ const SCENARIOS = {
     await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="1"]'); await click('#startbtn'); await sleep(150);
     await click('.car [data-car-step="1"]'); await sleep(2500);
   },
-  /* The photo carousel on the species card and on Easy; Medium shows a single photo. */
+  /* The photo carousel on the species card and at every level, in the mock too; flipping keeps typed answers. */
   'carousel': async () => {
     seedStorage(seen); await open('ficha-lynx_pardinus');
     const count = () => ($('.car .car-count') || {}).textContent, credit = () => ($('#gal-lynx_pardinus .credit') || {}).textContent, img = () => ($('.car img') || {}).getAttribute('src');
@@ -111,7 +111,19 @@ const SCENARIOS = {
     App().set().level = 2; win.VISU_STORE.save();
     await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="2"]'); await click('#startbtn'); await sleep(150);
     const medium = { carousel: !!$('.car'), photo: !!$('.quiz-photo img') };
-    report({ scenario: 'carousel', card, easy, medium });
+    if (medium.carousel) {   /* flipping keeps what she typed */
+      await type('#typedin', 'abc'); const before = $('.car .car-count').textContent;
+      await click('.car [data-car-step="1"]');
+      Object.assign(medium, { flipped: $('.car .car-count').textContent !== before, typedKept: ($('#typedin') || {}).value === 'abc' });
+    }
+    seedStorage({ meta: { seenNotice: true }, settings: { mockSize: 5 } }); await go('hoy'); await go('simulacro');
+    const mock = { carousel: !!$('.car[data-car="mock"]') };
+    if (mock.carousel && $('.car [data-car-step="1"]')) {
+      await type('#f-class', 'Aves'); const before = $('.car .car-count').textContent;
+      await click('.car [data-car-step="1"]');
+      Object.assign(mock, { flipped: $('.car .car-count').textContent !== before, typedKept: ($('#f-class') || {}).value === 'Aves' });
+    }
+    report({ scenario: 'carousel', card, easy, medium, mock });
   },
   /* Quiz photos are drawn at random per question: counts per photo index over many draws. */
   'random': async () => {
@@ -169,6 +181,7 @@ const SCENARIOS = {
       samePhotos: lis.every((li, i) => { const ps = App().photosOf(items[i].sp); return li.querySelector('img').getAttribute('src') === ps[items[i].ph % ps.length].file; }) };
     report({ scenario: 'credits', compare, mock });
   },
+  'hard': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; win.VISU_STORE.save(); await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="3"]'); await click('#startbtn'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },
   'badges': async () => { seedStorage(seen); await open('hoy'); await playSession(3, ['right', 'right', 'right']); await go('insignias'); },

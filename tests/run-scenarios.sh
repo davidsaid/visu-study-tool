@@ -14,7 +14,8 @@ run() {   # run <site root> <scenario> <text the result must contain>...
   echo "ok   $s"
 }
 run "$here" persist '"persisted": true'
-run "$here" carousel '"mistakeStillShown": true' '"pickedStillKept": true' '"carousel": false' \
+run "$here" carousel '"mistakeStillShown": true' '"pickedStillKept": true' \
+  '"carousel": true' '"typedKept": true' '"flipped": true' \
   '"altHidesName": true' '"creditHidden": true' '"imgLoaded": true' '"wrapPrev": "4 / 4"' '"creditChanged": true'
 run "$here" random '"stableOnRerender": true'
 run "$here" credits '"sameFile": true' '"samePhotos": true' '"credited": 5'

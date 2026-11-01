@@ -13,12 +13,13 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 ## What it does
 
 - **Practice from photos** at three levels you choose before each session:
-  - **Easy:** multiple choice. You can flip through every photo of the animal.
+  - **Easy:** multiple choice.
   - **Medium:** you type, and can ask for hints.
   - **Hard:** you type with no help, like the exam.
 
-  Each question shows a random photo of the animal, so you learn the animal rather than one
-  picture. Spelling and accents count; capital letters don't.
+  Each question opens on a random photo of the animal, and you can flip through all its photos,
+  so you learn the animal rather than one picture. Spelling and accents count; capital letters
+  don't.
 - **Spaced repetition** ([FSRS](https://github.com/open-spaced-repetition/ts-fsrs)): what
   you're about to forget comes back first.
 - **"¿Cuál es?"**: see a scientific name and pick the right photo out of four. The harder

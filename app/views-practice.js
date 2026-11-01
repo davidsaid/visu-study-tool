@@ -279,11 +279,10 @@ V.session = function () {
   App.aside().innerHTML = App.DESK.matches ? sessionAside(it) : '';
   bindSession(it);
 };
-/* On Easy (multiple choice) she can flip through every photo of the animal; Medium and Hard show one,
-   as the exam does. */
+/* At every level she can flip through every photo of the animal, starting on a random one: a single
+   photo can be hard to read (David, 2026-11-01). */
 function quizPhoto(it, alt) {
-  const o = { alt, idx: sess.photoIdx };
-  return mode() === 'mc' ? App.carousel(it.sp, Object.assign(o, { key: 'quiz' })) : App.photoBox(it.sp, o);
+  return App.carousel(it.sp, { key: 'quiz', alt, idx: sess.photoIdx });
 }
 /* Flipping redraws only the photo (and, once answered, its credit), so the feedback isn't re-announced. */
 App.carouselStep.quiz = i => {
@@ -554,17 +553,29 @@ App.newMock = function () {
   return msess;
 };
 App.mockState = () => msess;
+/* Flipping in the mock redraws only the photo, so the boxes keep what she typed. The results show the
+   last photo she looked at. */
+App.carouselStep.mock = i => {
+  const it = msess && msess.items[msess.i], car = App.main().querySelector('.car[data-car="mock"]');
+  if (!it || !car) return;
+  it.photoIdx = i;
+  const tmp = document.createElement('div');
+  tmp.innerHTML = App.carousel(it.sp, { key: 'mock', alt: (car.querySelector('img') || {}).alt, idx: i });
+  car.replaceWith(tmp.firstElementChild);
+  const n = App.photosOf(it.sp).length;
+  document.getElementById('live').textContent = `${L('Foto', 'Photo')} ${i % n + 1} ${L('de', 'of')} ${n}`;
+};
 V.simulacro = function () {
   App.focusMode(true);
   if (!msess || !msess.items.length) { App.main().innerHTML = `<div class="session-wrap"><h1>${L('Faltan fotos', 'Not enough photos')}</h1><a class="btn" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div><div id="aside-m"></div>`; return; }
   const it = msess.items[msess.i], total = msess.items.length, last = msess.i === total - 1, skills = App.skills();
   App.main().innerHTML = `<div class="session-wrap">${sessTop(msess.i / total, total, msess.i)}
     <div class="row">${levelPill(3)}<span class="skillpill">${L('Simulacro', 'Mock VISU')}</span><span class="tiny muted">${L('Sin correcciones hasta el final.', 'No feedback until the end.')}</span></div>
-    <div class="quiz-photo" style="margin-top:.6rem">${App.photoBox(it.sp, { alt: L('Foto del animal que hay que identificar', 'Photo of the animal to identify'), idx: it.photoIdx })}</div>
+    <div class="quiz-photo" style="margin-top:.6rem">${App.carousel(it.sp, { key: 'mock', alt: L('Foto del animal que hay que identificar', 'Photo of the animal to identify'), idx: it.photoIdx })}</div>
     <form id="mockform" class="sheet" novalidate>${skills.map(k => `<div class="f"><label for="f-${k}">${I.sk(k)}</label><input id="f-${k}" data-field="${k}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" style="${sciSkill(k) ? 'font-style:italic' : ''}"></div>`).join('')}
       <p class="rule">${L('Cuentan la ortografía y las tildes; las mayúsculas, no.', 'Spelling and accents count; capitals don’t.')}</p>
       <button class="btn primary big">${last ? L('Terminar y corregir', 'Finish and mark') : L('Siguiente', 'Next')}</button></form></div><div id="aside-m"></div>`;
-  App.aside().innerHTML = App.DESK.matches ? `<section class="card"><p class="eyebrow">${L('Simulacro de VISU', 'Mock VISU')}</p><p class="small">${L('Como el examen: una foto, la hoja completa y ninguna ayuda. La nota sale al final, sobre 10; con un 5 está superado.', 'Like the exam: one photo, the full sheet and no help. The mark comes at the end, out of 10; 5 is a pass.')}</p><p class="small">${L('Cada casilla cuenta como respuesta en Difícil.', 'Every box counts as an answer on Hard.')}</p></section>` : '';
+  App.aside().innerHTML = App.DESK.matches ? `<section class="card"><p class="eyebrow">${L('Simulacro de VISU', 'Mock VISU')}</p><p class="small">${L('Como el examen: la hoja completa y ninguna ayuda. Puedes pasar las fotos del animal. La nota sale al final, sobre 10; con un 5 está superado.', 'Like the exam: the full sheet and no help. You can flip through the animal’s photos. The mark comes at the end, out of 10; 5 is a pass.')}</p><p class="small">${L('Cada casilla cuenta como respuesta en Difícil.', 'Every box counts as an answer on Hard.')}</p></section>` : '';
   const f = document.getElementById('mockform');
   const first = f.querySelector('input'); if (first && App.DESK.matches) first.focus({ preventScroll: true });
   f.onsubmit = e => {
