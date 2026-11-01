@@ -38,6 +38,7 @@ function buildModel(bestiary, media, content) {
     withPhotos: order.filter(id => photos[id].length),
     _under: {}, _path: {}, values: {}
   };
+  addClassRoots(M);
   /* Distinct values of each skill, keyed by detect key, with the species holding each one. */
   SKILLS.concat('binomial').forEach(k => {
     const byKey = new Map();
@@ -52,6 +53,38 @@ function buildModel(bestiary, media, content) {
   return M;
 }
 
+/* The list's classes, in tree order, as roots for the explorer's study mode. A class that is not a clade (the
+   grade Reptilia) gets a virtual node whose children are the largest groups holding only its species. It has
+   no parent, so paths, kinship and badges still follow the real tree. */
+function addClassRoots(M) {
+  const classes = [];
+  M.order.forEach(id => { const c = M.species[id].class; if (c && !classes.includes(c)) classes.push(c); });
+  M.classRoots = classes.map(c => {
+    const id = `class:${c}`;
+    if (M.nodes[id]) return id;
+    const kids = [];
+    (function walk(x) {
+      const n = M.nodes[x]; if (!n || M.species[x]) return;
+      const sp = speciesUnder(M, x);
+      if (sp.length && sp.every(s => M.species[s].class === c)) kids.push(x); else (n.children || []).forEach(walk);
+    })(M.root);
+    M.nodes = Object.assign({}, M.nodes, { [id]: { id, parent: null, children: kids, rank: 'class', scientific: c, name: null, grade: c, virtual: true } });
+    M._under = {};
+    return id;
+  });
+}
+/* A node's path in study mode: from its class root down. Null for nodes above the classes. */
+function studyPath(M, id) {
+  const sp = speciesUnder(M, id);
+  const c = sp.length && sp.every(s => M.species[s].class === M.species[sp[0]].class) ? M.species[sp[0]].class : null;
+  const root = c && `class:${c}`;
+  if (!root || !M.nodes[root]) return null;
+  const p = pathTo(M, id);
+  if (!M.nodes[root].virtual) return p.slice(p.indexOf(root));
+  if (id === root) return [root];
+  const i = p.findIndex(x => M.nodes[root].children.includes(x));
+  return i < 0 ? null : [root].concat(p.slice(i));
+}
 function answerFor(M, id, skill) {
   const s = M.species[id]; if (!s) return '';
   const genus = s.genus || (s.binomial || '').split(' ')[0];
@@ -411,7 +444,7 @@ function badgeDefs(M) {
   const defs = [];
   Object.keys(M.nodes).forEach(id => {
     const n = M.nodes[id];
-    if (n.rank === 'class') defs.push({ id, kind: 'class', node: id });
+    if (n.rank === 'class' && !n.virtual) defs.push({ id, kind: 'class', node: id });
   });
   Object.keys(M.nodes).forEach(id => {
     const n = M.nodes[id];
@@ -595,7 +628,7 @@ function normalizeProgress(p, now, issues) {
   if (isObj(meta.readiness)) Object.keys(meta.readiness).forEach(k => { const n = YMD.test(k) ? toNum(meta.readiness[k], 0, 1, false) : undefined; if (n === undefined) issues.push('meta.readiness.' + k.slice(0, 20)); else out.meta.readiness[k] = n; });
   const ui = isObj(p.ui) ? p.ui : {};
   ['scope', 'exploreSel'].forEach(k => { const v = field(ui, k, T.id(NODE_ID), null, issues, 'ui.'); if (v !== null) out.ui[k] = v; });
-  ['showDeep', 'showMid'].forEach(k => { const v = field(ui, k, T.bool, undefined, issues, 'ui.'); if (v !== undefined) out.ui[k] = v; });
+  ['showDeep', 'showMid', 'studyTree'].forEach(k => { const v = field(ui, k, T.bool, undefined, issues, 'ui.'); if (v !== undefined) out.ui[k] = v; });
   return out;
 }
 function makeExport(P, now, edition, collection) {
@@ -621,7 +654,7 @@ function parseImport(text, now, collection) {
 
 window.VISU_ENGINE = {
   SKILLS, SCHEMA_VERSION, DAY, MIN,
-  buildModel, answerFor, pathTo, speciesUnder, lca, treeDist,
+  buildModel, answerFor, pathTo, speciesUnder, lca, treeDist, studyPath,
   gradeKey, detectKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, progressInterval, countsForMastery, applyAnswer, dueOf, toFsrs, fromFsrs,

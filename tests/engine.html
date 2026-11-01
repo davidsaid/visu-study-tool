@@ -282,6 +282,16 @@ test('real data', () => {
   bad = [];
   RM.order.forEach(id => ['class', 'order', 'genus', 'species', 'common'].forEach(k => { const mc = E.mcOptions(RM, id, k, rng); if (new Set(mc.options.map(o => E.gradeKey(o.value))).size !== mc.options.length || mc.options.length < 2) bad.push(`${id}:${k}`); }));
   ok('MC options distinct for every card', !bad.length, bad.slice(0, 5).join());
+  /* Study mode: the list's classes as roots, Reptilia as a virtual one beside the real tree. */
+  const classes = [...new Set(RM.order.map(id => RM.species[id].class))];
+  eq('study mode: one root per class of the list', RM.classRoots.slice().sort(), classes.map(c => 'class:' + c).sort());
+  ok('study mode: Reptilia is a virtual root with no parent', RM.nodes['class:Reptilia'] && RM.nodes['class:Reptilia'].virtual && RM.nodes['class:Reptilia'].parent === null);
+  eq('study mode: Reptilia holds exactly the list’s reptiles', E.speciesUnder(RM, 'class:Reptilia').slice().sort(), RM.order.filter(id => RM.species[id].class === 'Reptilia').sort());
+  bad = RM.order.filter(id => { const p = E.studyPath(RM, id); return !p || p[0] !== 'class:' + RM.species[id].class || p[p.length - 1] !== id; });
+  ok('study mode: every species’ path starts at its class and ends at it', !bad.length, bad.slice(0, 5).join());
+  ok('study mode: the real tree is unchanged (no reptile path passes through the virtual class)', RM.order.filter(id => RM.species[id].class === 'Reptilia').every(id => !E.pathTo(RM, id).includes('class:Reptilia')));
+  eq('study mode: nodes above the classes have no study path', [E.studyPath(RM, RM.root), E.studyPath(RM, 'clade:amniota')], [null, null]);
+  ok('study mode: no class badge for the virtual Reptilia', !Object.keys(E.badgeStatus(RM, E.emptyProgress(Date.now()), ['class'], Date.now())).includes('class:Reptilia'));
   const facts = RM.order.reduce((a, id) => a.concat((V.bestiary.species[id].facts || []).map(f => [id, f])), []);
   const unsourced = facts.filter(([, f]) => !Array.isArray(f.src) || !f.src.length).length;
   const unknownSrc = facts.filter(([, f]) => (f.src || []).some(s => !V.bestiary.sources[s])).length;

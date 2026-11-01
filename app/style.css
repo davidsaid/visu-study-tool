@@ -330,6 +330,9 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .deep-list li { min-height: 28px; display: flex; align-items: center; gap: .4rem; }
 .ring { width: 22px; height: 22px; display: block; }
 .ring .bg { stroke: var(--m0); } .ring .fg { stroke: var(--accent); } .ring.full .fg { stroke: var(--gold); }
+.tree-mode { margin: .6rem 0 .4rem; }
+.study-note { margin: .2rem 0 .4rem; }
+.study-note + ul { padding-left: 10px; }   /* room for the Reptilia* hatch on a root row */
 .tree-legend { display: flex; gap: .4rem 1rem; flex-wrap: wrap; align-items: center; font-size: .78rem; color: var(--muted); margin: .8rem 0 .2rem; }
 .tree-legend span { display: inline-flex; align-items: center; gap: .35rem; }
 .hatchkey { display: inline-block; width: 18px; height: 12px; border-radius: 3px; border: 1px solid var(--gold);

@@ -223,6 +223,23 @@ const SCENARIOS = {
   },
   /* Press "Load the YouTube video" on a card; screenshot to see the player (needs network). */
   'video': async () => { seedStorage(seen); await open('ficha-' + (Q.get('sp') || 'milvus_milvus')); const b = doc.querySelector('[data-video]'); if (b) { b.scrollIntoView(); b.click(); } await sleep(8000); const f = doc.querySelector('.video-box iframe'); if (f) f.scrollIntoView(); },
+  /* Explorer study mode: the list's classes as roots, Reptilia included; the full tree is one tap away. */
+  'studytree': async () => {
+    seedStorage(seen); await open('explorar');
+    const rows = () => [...doc.querySelectorAll('#tree .trow')].map(r => r.dataset.row);
+    await click('[data-treemode="study"]');
+    const roots = App().M.classRoots, top = rows();
+    const onlyClasses = top.length === roots.length && top.every(r => roots.includes(r));
+    await go('ficha-timon_lepidus'); const rep = rows();
+    const reptileFromClass = rep[0] === roots[0] && rep.includes('class:Reptilia') && !rep.includes('clade:vertebrata') && !rep.includes('clade:sauropsida') && rep.includes('timon_lepidus');
+    await go('grupo-class-Reptilia');
+    const reptiliaCard = /Reptilia/.test((doc.querySelector('.plate h1') || {}).textContent || '') && !!doc.querySelector('.plate .grade-band');
+    await reload(); const kept = !!doc.querySelector('[data-treemode="study"][aria-pressed="true"]');
+    await go('ficha-timon_lepidus'); await click('[data-treemode="full"]');
+    const full = rows().includes('clade:vertebrata') && !rows().includes('class:Reptilia');
+    report({ scenario: 'studytree', onlyClasses, roots: roots.length, reptileFromClass, reptiliaCard, kept, full });
+  },
+  'studytree-shot': async () => { seedStorage({ meta: { seenNotice: true }, ui: { studyTree: true } }); await open(Q.get('at') || 'explorar'); await sleep(800); },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },

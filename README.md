@@ -27,7 +27,9 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 - **Mistakes teach.** If you confuse two species, you see them side by side with what tells
   them apart. Every mistake also shows **what the name says**: what the Latin or Greek of the
   class, order, genus or species means, as a memory aid.
-- **Explore the tree of life** branch by branch. Every group and species has a card: photos,
+- **Explore the tree of life** branch by branch, either the full tree or, in **study mode**, with
+  each class of the list as the root of its own tree (Reptilia included, although it isn't a
+  clade). Every group and species has a card: photos,
   a video, distribution, diet, size, sexual dimorphism, sex determination, conservation
   status, field marks, look-alikes and the meaning of its names. **Every fact, photo and video names its source.**
 - **Mock exam** with the five-field answer sheet.
@@ -132,7 +134,7 @@ especies vienen en **colecciones**, una por examen; la primera tiene 308 vertebr
   servidores. Si cambias de navegador o de dispositivo, o borras los datos del navegador,
   no lo verás: **guarda una copia** cada semana con *Guardar copia*. Cada colección guarda
   su propio progreso.
-- Practica en tres niveles, juega a **¿Cuál es?**, explora el árbol de la vida rama a rama
+- Practica en tres niveles, juega a **¿Cuál es?**, explora el árbol de la vida rama a rama (completo, o en **modo estudio**, con cada clase de la lista como raíz de su propio árbol)
   y haz simulacros con la hoja de cinco casillas. Cada pregunta muestra una foto al azar del
   animal. Cuentan la ortografía y las tildes; las mayúsculas, no.
 - Cada ficha y cada fallo explican **qué dice el nombre**: qué significa el latín o el griego de

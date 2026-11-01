@@ -15,7 +15,7 @@ except a species' YouTube video, and only after a click (`youtube-nocookie.com`)
 | `store.js` | The progress object in `localStorage`, one key per collection (`visu-progress-v1` for vertebrados, `visu-progress-v1:<id>` for the others); its shape is documented at the top of the file |
 | `ui.js` | Shell, photos, rings and medals, export/import buttons, citation popover, first-visit notice |
 | `views-practice.js` | Today, level picker, photo → name session, exam sheet, "¿Cuál es?", Mock VISU, summaries |
-| `views-explore.js` | The progressive-disclosure tree, species and group cards, badges |
+| `views-explore.js` | The progressive-disclosure tree (full, or study mode rooted at the list's classes), species and group cards, badges |
 | `views-info.js` | "Cómo funciona" and settings |
 | `main.js` | Boot and the hash router |
 | `style.css` | The approved prototype 5 stylesheet, plus a short block of additions at the end |

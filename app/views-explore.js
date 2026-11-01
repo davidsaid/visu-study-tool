@@ -12,7 +12,7 @@ const rowMeter = id => (App.sp(id) ? App.statsOf(id).meter : groupOf(id).meter);
 /* ---------- tree ---------- */
 function rankTag(id) {
   const n = M().nodes[id];
-  if (n.rank === 'class') return `<span class="tag teacher">${L('clase', 'class')}</span>`;
+  if (n.rank === 'class') return n.virtual ? `<span class="tag grade">${L('clase', 'class')} · ${L('grado', 'grade')}</span>` : `<span class="tag teacher">${L('clase', 'class')}</span>`;
   if (n.rank === 'order' || n.rank === 'infraorder') return App.isGradeNode(id) ? `<span class="tag grade">${I.rankName(n.rank)} · Reptilia*</span>` : `<span class="tag teacher">${I.rankName(n.rank)}</span>`;
   if (App.holdsGrade(id)) return `<span class="tag grade">${L('incluye', 'holds')} Reptilia*</span>`;
   return '';
@@ -28,8 +28,12 @@ function trow(id, kind) {
   return `<a class="trow ${kind} ${App.isGradeNode(id) && !isSp ? 'grade' : ''}" href="#${esc(App.routeFor(id))}" ${kind === 'sel' ? 'aria-current="true"' : ''} ${isSp ? '' : `aria-expanded="${kind !== 'kid'}"`} aria-label="${esc(aria)}" data-row="${esc(id)}">
     <span class="chev" aria-hidden="true">${chev}</span>${App.ring(meter)}<span class="lab">${lab}</span><span class="cnt" aria-hidden="true">${isSp ? pct(meter) : `${g.mastered}/${g.total}`}</span></a>`;
 }
+/* Study mode starts at the list's classes, each the root of its own tree, so the eye goes to what sets
+   groups apart rather than to the deep path above them. Nodes above the classes show the classes alone. */
+const studyMode = () => !!UI().studyTree;
 function treeHTML(sel) {
-  const path = E.pathTo(M(), sel), kids = (M().nodes[sel] && M().nodes[sel].children) || [];
+  const study = studyMode(), roots = M().classRoots || [];
+  const path = study ? E.studyPath(M(), sel) || [] : E.pathTo(M(), sel), kids = (M().nodes[sel] && M().nodes[sel].children) || [];
   const compress = !UI().showMid && path.length > 6;
   const items = compress ? [{ id: path[0] }, { mid: path.slice(1, path.length - 5) }].concat(path.slice(-5).map(id => ({ id }))) : path.map(id => ({ id }));
   const nest = k => {
@@ -39,6 +43,11 @@ function treeHTML(sel) {
     if (it.id === sel) return `<li>${trow(sel, 'sel')}<button class="jump-card linkbtn" data-jump>${App.sp(sel) ? L('Ver la ficha ↓', 'See the card ↓') : L('Ver la ficha del grupo ↓', 'See the group card ↓')}</button>${kids.length ? `<ul>${kids.filter(c => M().nodes[c] || App.sp(c)).map(c => `<li>${trow(c, 'kid')}</li>`).join('')}</ul>` : ''}</li>`;
     return `<li>${trow(it.id, 'anc')}<ul>${nest(k + 1)}</ul></li>`;
   };
+  if (study) {
+    const top = roots.map(r => (path[0] === r ? nest(0) : `<li>${trow(r, 'kid')}</li>`)).join('');
+    return `${UI().showMid && path.length > 6 ? `<button class="tmid" data-mid aria-expanded="true">▴ ${L('Plegar los niveles intermedios', 'Fold the levels in between')}</button>` : ''}
+      <p class="tiny muted study-note">${L(`Las ${roots.length} clases de la lista, cada una como raíz de su propio árbol.`, `The list’s ${roots.length} classes, each the root of its own tree.`)}</p><ul>${top}</ul>`;
+  }
   const deep = M().deepPath.filter(d => d && (d.scientific || d.es));
   const dn = d => I.t(d) || d.scientific;
   return `${deep.length ? `<button class="tdeep" data-deep aria-expanded="${!!UI().showDeep}">${UI().showDeep ? '▾' : '▸'} <span><b>${L('Camino profundo', 'Deep path')}</b> · ${esc(dn(deep[0]))} › … › ${esc(dn(deep[deep.length - 1]))} (${deep.length} ${L('niveles', 'levels')})</span></button>
@@ -53,6 +62,7 @@ V.explore = function (id, fromClick) {
   document.getElementById('app').classList.add('explore');
   App.main().innerHTML = `<div class="tree-wrap"><p class="eyebrow">${L('Explorar', 'Explore')}</p><h1>${L('El árbol, rama a rama', 'The tree, one branch at a time')}</h1>
     <p class="small muted">${L('Ves el camino hasta tu selección y un nivel por debajo. Toca un grupo para abrirlo; toca uno de arriba para volver.', 'You see the path to your selection and one level below it. Tap a group to open it; tap one above to go back.')}</p>
+    <div class="seg tree-mode" role="group" aria-label="${L('Vista del árbol', 'Tree view')}"><button data-treemode="study" aria-pressed="${studyMode()}">${L('Modo estudio: por clases', 'Study mode: by class')}</button><button data-treemode="full" aria-pressed="${!studyMode()}">${L('Árbol completo', 'Full tree')}</button></div>
     <nav class="tree" aria-label="${L('Árbol filogenético', 'Phylogenetic tree')}" id="tree">${treeHTML(id)}</nav>
     <div class="tree-legend"><span>${App.ring(0)} ${L('sin ver', 'unseen')}</span><span>${App.ring(.5)} ${L('progreso', 'progress')}</span><span>${App.ring(1)} ${L('dominada', 'mastered')}</span>${Object.values(M().nodes).some(n => n.grade) ? `<span><span class="hatchkey"></span>${L('Reptilia* del temario: un grado, no un clado', 'Syllabus Reptilia*: a grade, not a clade')}</span>` : ''}</div>
     ${P().log.length ? '' : `<p class="tiny muted">${L('Todo empieza a cero: los anillos se llenan a medida que practicas.', 'Everything starts at zero: the rings fill up as you practise.')}</p>`}</div><div id="card-m" class="card-host" tabindex="-1"></div>`;
@@ -61,6 +71,7 @@ V.explore = function (id, fromClick) {
   host.innerHTML = back + (App.sp(id) ? speciesCard(id) : groupCard(id));
   bindCard(host, id);
   if (back && !App.DESK.matches) host.scrollIntoView({ block: 'start' });   // on a phone the card is below the tree
+  document.querySelectorAll('[data-treemode]').forEach(b => b.onclick = () => { UI().studyTree = b.dataset.treemode === 'study'; Store.save(); V.explore(id); const f = document.querySelector(`[data-treemode="${b.dataset.treemode}"]`); if (f) f.focus(); });
   const tree = document.getElementById('tree');
   tree.querySelectorAll('[data-mid]').forEach(b => b.onclick = () => { UI().showMid = !UI().showMid; Store.save(); V.explore(id); focusTree('[data-mid]'); });
   const dp = tree.querySelector('[data-deep]'); if (dp) dp.onclick = () => { UI().showDeep = !UI().showDeep; Store.save(); V.explore(id); focusTree('[data-deep]'); };
@@ -179,7 +190,7 @@ function speciesCard(id) {
 }
 function badgeFor(id) {
   const n = M().nodes[id], k = E.speciesUnder(M(), id).length;
-  if (n.rank === 'class') return { name: L(`Clase ${n.scientific}`, `Class ${n.scientific}`) };
+  if (n.rank === 'class' && !n.virtual) return { name: L(`Clase ${n.scientific}`, `Class ${n.scientific}`) };
   if (n.rank === 'order' && k >= 3) return { name: L(`Dominio de ${n.scientific}`, `Mastery of ${n.scientific}`) };
   return null;
 }
