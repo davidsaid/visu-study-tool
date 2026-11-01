@@ -121,8 +121,6 @@ body.focus-mode .main { padding-bottom: 2rem; }
 
 /* ---------- photos: never crop ---------- */
 .pframe { background: var(--backdrop); border-radius: var(--r); display: flex; justify-content: center; align-items: center; overflow: hidden; }
-.pbox { position: relative; aspect-ratio: var(--ar); width: min(100%, calc(var(--maxh, 52vh) * var(--ar))); max-width: 100%; }
-.pbox img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block; }
 .tile { position: relative; background: var(--backdrop); aspect-ratio: 1 / 1; overflow: hidden; display: block; }
 .tile img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .tile.r43 { aspect-ratio: 4 / 3; }
@@ -131,11 +129,6 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .ph small { display: block; font-style: normal; font-family: var(--font-body); font-size: .62rem; text-transform: uppercase; letter-spacing: .06em; }
 .credit { font-size: .74rem; color: var(--muted); margin: .3rem 0 0; line-height: 1.4; }
 .credit a { color: var(--muted); }
-.pin { position: absolute; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 50%; background: var(--surface); color: var(--ink);
-  border: 2px solid var(--accent); font: 800 14px/26px var(--font-body); text-align: center; box-shadow: 0 1px 5px rgba(0,0,0,.4); }
-.pin.hot { background: var(--accent); color: var(--surface); transform: translate(-50%, -50%) scale(1.25); }
-.pin.err { border-color: var(--error); }
-.pin.okp { border-color: var(--ok); }
 
 /* ---------- today ---------- */
 .today-head { display: flex; justify-content: space-between; align-items: end; gap: 1rem; margin: .2rem 0 1rem; }
@@ -243,13 +236,13 @@ body.focus-mode .main { padding-bottom: 2rem; }
 /* ---------- mistake: comparison plate ---------- */
 .mistake-head .eyebrow { color: var(--error); }
 .mistake-head h1 { font-size: 1.42rem; }
-.twoup { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; margin-top: .8rem; }
+.twoup { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-top: .8rem; }
 .twoup figure { margin: 0; }
 .twoup .lbl { display: flex; justify-content: space-between; gap: .4rem; font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .35rem 0; border-top: 3px solid var(--line); }
 .twoup .yours .lbl { border-color: var(--error); color: var(--error); }
 .twoup .correct .lbl { border-color: var(--ok); color: var(--ok); }
 .twoup .pframe { border-radius: 4px; height: clamp(170px, 34vw, 300px); border: 1px solid var(--rule); }
-.twoup .pframe .pbox { --maxh: clamp(170px, 34vw, 300px); }
+.twoup .car .car-frame { --maxh: clamp(170px, 34vw, 300px); }
 .twoup figcaption { padding-top: .45rem; }
 .twoup .vern { font-family: var(--font-plate); font-size: 1.12rem; line-height: 1.25; }
 .twoup .bin { font-family: var(--font-plate); font-style: italic; font-size: 1.05rem; }
@@ -369,7 +362,6 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .stat .iucn.VU, .stat .iucn.EN, .stat .iucn.CR { border-color: var(--error); color: var(--error); }
 .pinfig { margin: 0; }
 .pinfig .pframe { border-radius: 4px; border: 1px solid var(--rule); padding: 6px; background: var(--surface); }
-.pinfig .pframe .pbox { --maxh: 60vh; }
 .entry-grid { display: grid; gap: 1rem; }
 .facts dl { margin: 0; }
 .facts dt { font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: .7rem; }
@@ -580,7 +572,6 @@ input.numin[type="number"] { width: 6rem; }
 .mock-list li.allok p b::after { content: " ✓"; color: var(--ok); }
 .main:focus, .card-host:focus { outline: none; }
 .ph { min-height: 100%; }
-.pbox > .ph { position: absolute; inset: 0; }
 /* Carousel: a fixed 4:3 frame (capped by --maxh) so the arrows stay put; each photo is shown whole. */
 .car { position: relative; }
 .car .car-frame { width: 100%; aspect-ratio: 4 / 3; max-height: var(--maxh, 52vh); touch-action: pan-y; }

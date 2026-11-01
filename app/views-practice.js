@@ -55,11 +55,10 @@ function binHL(a, b, cls) { return a.split(' ').map((w, i) => (w === (b.split(' 
 /* `idx` / `yoursIdx`: the photos the student saw (of the correct species, and of the one picked in
    "¿Cuál es?"), so they stay on screen and get their credit. */
 function comparePlate(yours, correct, idx, yoursIdx) {
-  const at = id => (id === correct ? idx || 0 : yoursIdx || 0) % Math.max(1, App.photosOf(id).length);
   const fig = (id, cls, tag) => `<figure class="${cls}"><div class="lbl"><span>${tag}</span><span>${L('progreso', 'progress')} ${pct(statsOf(id).meter)}</span></div>
-    ${App.photoBox(id, { alt: App.spName(id), idx: at(id) })}
+    ${App.carousel(id, { key: `cmp-${cls}`, idx: id === correct ? idx : yoursIdx, credit: true })}
     <figcaption><div class="vern"><a href="#${esc(App.routeFor(id))}">${esc(App.sp(id).common_es)}</a></div><div class="bin">${binHL(App.sp(id).binomial, App.sp(cls === 'yours' ? correct : yours).binomial, cls === 'yours' ? 'hl-bad' : 'hl-good')}</div>
-    <div class="tiny muted">${esc(App.sp(id).order)} · ${esc(App.sp(id).class)}</div>${App.credit(App.photosOf(id)[at(id)])}</figcaption></figure>`;
+    <div class="tiny muted">${esc(App.sp(id).order)} · ${esc(App.sp(id).class)}</div></figcaption></figure>`;
   const tip = pairTip(yours, correct), split = E.lca(M(), yours, correct);
   return `<div class="twoup">${fig(yours, 'yours', L('Tu respuesta', 'Your answer'))}${fig(correct, 'correct', L('Respuesta correcta', 'Correct answer'))}</div>
   <section class="key"><p class="eyebrow">${L('La clave', 'The key')}</p>
@@ -274,28 +273,17 @@ V.session = function () {
   if (sess.phase === 'reveal') after = m === 'sheet' ? sheetResultHTML(it) : revealOK(it);
   App.main().innerHTML = `<div class="session-wrap">${top}
     <div class="quiz-photo">${quizPhoto(it, L('Foto del animal que hay que identificar', 'Photo of the animal to identify'))}</div>
-    <div id="qcred">${sess.phase === 'reveal' ? App.credit(App.photosOf(it.sp)[sess.photoIdx % App.photosOf(it.sp).length]) : `<p class="credit">${L('El crédito de la foto aparece al responder (el pie revelaría el nombre).', 'The photo credit appears after you answer (the caption would give the name away).')}</p>`}</div>
     ${pills}<p class="prompt">${esc(promptText(it))}</p>${body}${after}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = App.DESK.matches ? sessionAside(it) : '';
   bindSession(it);
 };
 /* At every level she can flip through every photo of the animal, starting on a random one: a single
    photo can be hard to read (David, 2026-11-01). */
+/* The credit waits for the answer: its caption would give the name away. */
 function quizPhoto(it, alt) {
-  return App.carousel(it.sp, { key: 'quiz', alt, idx: sess.photoIdx });
+  return App.carousel(it.sp, { key: 'quiz', alt, idx: sess.photoIdx, credit: sess.phase === 'reveal' ? true : 'later' });
 }
-/* Flipping redraws only the photo (and, once answered, its credit), so the feedback isn't re-announced. */
-App.carouselStep.quiz = i => {
-  sess.photoIdx = i;
-  const it = curItem(), car = App.main().querySelector('.car[data-car="quiz"]');
-  if (!it || !car) { V.session(); return; }
-  const n = App.photosOf(it.sp).length, tmp = document.createElement('div');
-  tmp.innerHTML = quizPhoto(it, (car.querySelector('img') || {}).alt);
-  car.replaceWith(tmp.firstElementChild);
-  const qc = document.getElementById('qcred');
-  if (qc && sess.phase === 'reveal') qc.innerHTML = App.credit(App.photosOf(it.sp)[i % n]);
-  document.getElementById('live').textContent = `${L('Foto', 'Photo')} ${i % n + 1} ${L('de', 'of')} ${n}`;
-};
+App.carouselStep.quiz = i => { sess.photoIdx = i; };
 function emptySession() {
   App.main().innerHTML = `<div class="session-wrap">${sessTop(0, 0, 0)}<h1>${L('No hay tarjetas para esta sesión', 'No cards for this session')}</h1>
     <p>${M().withPhotos.length ? L('Ya has hecho los repasos y las nuevas de hoy. Puedes repasar igualmente o cambiar de grupo.', 'You’ve done today’s reviews and new cards. You can review anyway or change the group.') : L('Todavía no hay ninguna especie con foto.', 'There are no species with photos yet.')}</p>
@@ -355,13 +343,13 @@ function feedbackHTML(it) {
   const nextBtn = `<button class="btn primary big" id="nextbtn">${left <= 0 ? L('Ver resumen', 'See summary') : L(`Seguir · quedan ${left}`, `Continue · ${left} left`)}</button>`;
   const given = sess.mc ? (sess.picked != null ? sess.mc.options[sess.picked].value : '') : sess.typed.trim();
   const call = calloutsHTML(sess.conf, sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued);
-  const photo = quizPhoto(it), cred = `<div id="qcred">${App.credit(App.photosOf(it.sp)[sess.photoIdx % App.photosOf(it.sp).length])}</div>`;
+  const photo = quizPhoto(it);
   if (r.kind === 'misspelling') {
     /* A misspelling shows only what she typed next to the correct spelling. No explanation. */
     return `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Ortografía', 'Spelling')}</p><h1>${L('No es la grafía correcta', 'Not the right spelling')}</h1></div>
       <section class="card" style="margin-top:.8rem"><div class="diffrow"><span class="small muted">${L('Escribiste', 'You typed')}</span><span class="diff ${sci ? 'sci' : ''}">${esc(given)}</span><span class="small muted">${L('Correcto', 'Correct')}</span><span class="diff ${sci ? 'sci' : ''}">${esc(ans)}</span></div></section>
       ${App.nameKeyHTML(it.sp, [it.skill])}
-      <div class="quiz-photo" style="max-width:360px">${photo}</div>${cred}
+      <div class="quiz-photo" style="max-width:360px">${photo}</div>
       ${call}<div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(it.sp))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
   }
   if (r.kind === 'wrong_species' && r.with && App.sp(r.with[0])) {
@@ -371,7 +359,7 @@ function feedbackHTML(it) {
   }
   const g = (M().content.groups || {})[`order:${s.order}`];
   return `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Fallo', 'Miss')}</p><h1>${given ? `${L('Respondiste', 'You answered')} ${sci ? `<i>${esc(given)}</i>` : esc(given)}; ${L('es', 'it is')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}` : `${L('Es', 'It is')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}`}</h1></div>
-    <div class="quiz-photo" style="margin-top:.8rem">${photo}</div>${cred}
+    <div class="quiz-photo" style="margin-top:.8rem">${photo}</div>
     <p><b>${esc(s.common_es)}</b> · <i>${esc(s.binomial)}</i> · ${esc(s.order)} · ${esc(s.class)}</p>
     ${App.nameKeyHTML(it.sp, [it.skill])}
     ${g && g.contrast ? `<section class="key"><p class="eyebrow">${L('La clave', 'The key')}</p><p class="tip">${esc(I.t(g.contrast))}</p>${g.status === 'draft' ? `<p class="tiny muted"><span class="draft">${L('borrador', 'draft')}</span></p>` : ''}</section>` : ''}
@@ -511,13 +499,13 @@ V.cual = function () {
       /* Each option is a carousel: the arrows flip its photos, a tap anywhere else on the photo picks it. */
       const label = `${L('Foto', 'Photo')} ${i + 1}${rev ? ': ' + App.sp(o).binomial : ''}`;
       const pick = `<button type="button" class="rev-pick" data-pick="${esc(o)}" aria-pressed="${rsess.picked === o}" ${locked ? 'disabled' : ''} aria-label="${esc(L('Elegir', 'Pick') + ' · ' + label)}"></button><span class="n" aria-hidden="true">${i + 1}</span>`;
-      return `<div class="${cls}">${App.carousel(o, { key: `rev-${i}`, idx: rsess.photo[o], alt: label, inner: pick })}${rev ? `<span class="cap"><i>${esc(App.sp(o).binomial)}</i><br>${esc(App.sp(o).common_es)}</span>` : ''}</div>`;
+      return `<div class="${cls}">${App.carousel(o, { key: `rev-${i}`, idx: rsess.photo[o], alt: label, inner: pick, credit: rev || undefined })}${rev ? `<span class="cap"><i>${esc(App.sp(o).binomial)}</i><br>${esc(App.sp(o).common_es)}</span>` : ''}</div>`;
     }).join('')}</div>`;
   }
   if (rsess.phase === 'ask' && rsess.picked) body += confBlock(rsess.conf, true);
   const last = rsess.i === deck.length - 1;
   const nextBtn = `<button class="btn primary big" id="revnext">${last ? L('Terminar', 'Finish') : L('Siguiente', 'Next')}</button>`;
-  if (rev && !wrong) body += `<div class="reveal-ok" role="status"><p class="eyebrow" style="color:var(--ok)">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2>${App.credit(App.photosOf(t)[rsess.photo[t] || 0])}<p class="small">${L('«¿Cuál es?» es un entrenamiento de reconocimiento: queda anotado, pero no programa repasos.', '“Which one is it?” trains recognition: it is logged but schedules no reviews.')}</p><div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(t))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
+  if (rev && !wrong) body += `<div class="reveal-ok" role="status"><p class="eyebrow" style="color:var(--ok)">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2><p class="small">${L('«¿Cuál es?» es un entrenamiento de reconocimiento: queda anotado, pero no programa repasos.', '“Which one is it?” trains recognition: it is logged but schedules no reviews.')}</p><div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(t))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
   if (wrong) {
     const p = rsess.picked, split = E.lca(M(), p, t), sameG = E.answerFor(M(), p, 'genus') === E.answerFor(M(), t, 'genus');
     const ep = x => esc(E.answerFor(M(), x, 'species'));
@@ -532,7 +520,7 @@ V.cual = function () {
     <ul class="small" style="padding-left:1.1rem"><li><b>${I.lvName(1)}</b>: ${L('otras clases; puedes mostrar u ocultar el nombre vulgar.', 'other classes; you can show or hide the common name.')}</li><li><b>${I.lvName(2)}</b>: ${L('misma clase, otro orden.', 'same class, another order.')}</li><li><b>${I.lvName(3)}</b>: ${L('mismo orden o mismo género.', 'same order or same genus.')}</li></ul>
     <p class="small muted">${L('Solo salen especies con foto.', 'Only species with photos appear.')}</p><a class="btn" href="#nivel">${L('Cambiar de nivel', 'Change level')}</a></section>` : '';
   const main = App.main();
-  opts.forEach((o, i) => { App.carouselStep[`rev-${i}`] = k => { rsess.photo[o] = k; V.cual(); }; });
+  opts.forEach((o, i) => { App.carouselStep[`rev-${i}`] = k => { rsess.photo[o] = k; }; });
   main.querySelectorAll('[data-pick]').forEach(b => b.onclick = () => { if (Date.now() - (App.lastSwipe || 0) < 500) return; rsess.picked = b.dataset.pick; V.cual(); App.focusFirst(`[data-pick="${CSS.escape(rsess.picked)}"]`); });
   main.querySelectorAll('[data-conf]').forEach(b => b.onclick = () => { rsess.conf = b.dataset.conf; V.cual(); App.focusFirst(`[data-conf="${rsess.conf}"]`); });
   const vc = document.getElementById('vernchk'); if (vc) vc.onchange = () => { SET().revShowCommon = vc.checked; Store.save(); V.cual(); const v2 = document.getElementById('vernchk'); if (v2) v2.focus(); };
@@ -560,18 +548,8 @@ App.newMock = function () {
   return msess;
 };
 App.mockState = () => msess;
-/* Flipping in the mock redraws only the photo, so the boxes keep what she typed. The results show the
-   last photo she looked at. */
-App.carouselStep.mock = i => {
-  const it = msess && msess.items[msess.i], car = App.main().querySelector('.car[data-car="mock"]');
-  if (!it || !car) return;
-  it.photoIdx = i;
-  const tmp = document.createElement('div');
-  tmp.innerHTML = App.carousel(it.sp, { key: 'mock', alt: (car.querySelector('img') || {}).alt, idx: i });
-  car.replaceWith(tmp.firstElementChild);
-  const n = App.photosOf(it.sp).length;
-  document.getElementById('live').textContent = `${L('Foto', 'Photo')} ${i % n + 1} ${L('de', 'of')} ${n}`;
-};
+/* The results show the last photo she looked at. */
+App.carouselStep.mock = i => { const it = msess && msess.items[msess.i]; if (it) it.photoIdx = i; };
 V.simulacro = function () {
   App.focusMode(true);
   if (!msess || !msess.items.length) { App.main().innerHTML = `<div class="session-wrap"><h1>${L('Faltan fotos', 'Not enough photos')}</h1><a class="btn" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div><div id="aside-m"></div>`; return; }

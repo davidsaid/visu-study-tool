@@ -273,6 +273,18 @@ const SCENARIOS = {
     const loaded = [...doc.querySelectorAll('.rev-opt img')].filter(im => im.complete && im.naturalWidth > 0).length;
     report({ scenario: 'cualcar', loaded, carousels, swipe, flipped, notPicked, picked, pickKept, altHides });
   },
+  /* The side-by-side comparison after a wrong species: both photos flip, each with its own credit. */
+  'comparecar': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro');
+    const figs = [...doc.querySelectorAll('.twoup figure')], cars = figs.map(f => f.querySelector('.car'));
+    const cred = f => (f.querySelector('.car-credit') || {}).textContent, cnt = f => (f.querySelector('.car-count') || {}).textContent;
+    const before = figs.map(f => [cnt(f), cred(f)]);
+    await click(cars[0].querySelector('[data-car-step="1"]')); await click(cars[1].querySelector('[data-car-step="-1"]'));
+    const flippedBoth = figs.every((f, i) => cnt(f) !== before[i][0]);
+    const creditsFollow = figs.every((f, i) => cred(f) && cred(f) !== before[i][1]);
+    const sameScreen = !!doc.querySelector('.mistake-head') && doc.querySelector('.twoup figure') === figs[0];
+    report({ scenario: 'comparecar', carousels: cars.filter(Boolean).length, flippedBoth, creditsFollow, sameScreen });
+  },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },

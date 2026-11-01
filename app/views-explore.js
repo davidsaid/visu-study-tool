@@ -137,7 +137,7 @@ function reportLink(id) {
 const galleryIdx = {};
 function figureHTML(id) {
   const ps = App.photosOf(id), idx = Math.min(galleryIdx[id] || 0, Math.max(0, ps.length - 1));
-  return `<figure class="pinfig" id="gal-${esc(id)}">${App.carousel(id, { key: 'gal', idx })}${App.credit(ps[idx])}
+  return `<figure class="pinfig" id="gal-${esc(id)}">${App.carousel(id, { key: 'gal', idx, credit: true })}
     ${ps.length > 1 ? `<div class="gallery" role="group" aria-label="${L('Más fotos', 'More photos')}">${ps.map((p, i) => `<button type="button" class="gthumb" data-gal="${i}" aria-pressed="${i === idx}" aria-label="${L('Foto', 'Photo')} ${i + 1}">${App.tile(id, '', '', i)}</button>`).join('')}</div>` : ''}</figure>`;
 }
 function iucnCode(f) { const v = String((f && (f.es || f.en || f.value)) || '').trim().toUpperCase(); return I.IUCN[v] ? v : null; }
@@ -243,13 +243,9 @@ function bindCard(host, id) {
     box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(b.dataset.video)}?autoplay=1${st}" title="${L('Vídeo', 'Video')}" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
   });
   host.querySelectorAll('[data-practise]').forEach(b => b.onclick = () => { P().ui.scope = b.dataset.practise; Store.save(); location.hash = 'nivel'; });
-  const showPhoto = i => {
-    galleryIdx[id] = i;
-    const fig = document.getElementById('gal-' + id);
-    if (fig) { fig.outerHTML = figureHTML(id); bindCard(host, id); }
-  };
-  App.carouselStep.gal = showPhoto;
-  host.querySelectorAll('[data-gal]').forEach(b => b.onclick = () => { showPhoto(+b.dataset.gal); const nb = host.querySelector(`[data-gal="${galleryIdx[id]}"]`); if (nb) nb.focus(); });
+  /* The photo widget flips itself; the gallery remembers the photo and keeps its thumbnails in step. */
+  App.carouselStep.gal = i => { galleryIdx[id] = i; host.querySelectorAll('[data-gal]').forEach(t => t.setAttribute('aria-pressed', String(+t.dataset.gal === i))); };
+  host.querySelectorAll('[data-gal]').forEach(b => b.onclick = () => { const car = host.querySelector('.car[data-car="gal"]'); if (car) App.carouselShow(car, +b.dataset.gal); });
 }
 
 /* ---------- BADGES ---------- */

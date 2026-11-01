@@ -101,61 +101,60 @@ function cropAttrs(p) {
   const inset = `inset(${(y * 100).toFixed(2)}% ${((1 - x - w) * 100).toFixed(2)}% ${((1 - y - h) * 100).toFixed(2)}% ${(x * 100).toFixed(2)}%)`;
   return { style: `object-view-box:${inset}`, ar: p.w && p.h ? `${Math.round(p.w * w)}/${Math.round(p.h * h)}` : null };
 }
-/* The whole photo in a box with its own aspect ratio, on a neutral backdrop (object-fit: contain).
-   Unknown sizes start at 4:3 and are corrected when the image loads. */
-App.photoBox = (id, o) => {
-  o = o || {};
-  const ps = App.photosOf(id), p = ps.length ? ps[(o.idx || 0) % ps.length] : null;
-  if (!p) return `<div class="pframe" style="aspect-ratio:4/3">${App.placeholder(id)}</div>`;
-  const ca = cropAttrs(p);
-  const pins = (o.pins || []).map((pt, i) => pt ? `<span class="pin ${pt[2] || ''}" data-pin="${i + 1}" style="left:${pt[0]}%;top:${pt[1]}%" aria-hidden="true">${i + 1}</span>` : '').join('');
-  return `<div class="pframe"><div class="pbox" style="--ar:${ca.ar || '4/3'}" ${ca.ar ? '' : 'data-ar="auto"'}><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(o.alt != null ? o.alt : App.spName(id))}" ${p.w && p.h ? `width="${p.w}" height="${p.h}"` : ''} style="${ca.style}" decoding="async">${pins}</div></div>`;
-};
 App.tile = (id, alt, cls, idx) => {
   const ps = App.photosOf(id), p = ps.length ? ps[(idx || 0) % ps.length] : null;
   return `<span class="tile ${cls || ''}">${p ? `<img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt == null ? App.spName(id) : alt)}" loading="lazy" style="${cropAttrs(p).style}">` : App.placeholder(id)}</span>`;
 };
-/* Carousel: every photo of one species in a fixed frame (whole photo, object-fit: contain), with
-   arrows, a counter, swipe and arrow keys. The view that owns the state registers
-   App.carouselStep[key] = (newIdx) => { store it; re-render } and renders App.carousel(id, { key, idx }).
-   `inner` is extra HTML inside the frame, under the arrows (e.g. the button that picks a photo). */
+/* The animal photo widget, used wherever an animal is shown large: every photo of the species in a fixed
+   frame (whole photo, object-fit: contain), with arrows, a counter, swipe and arrow keys. It flips itself in
+   place, so focus, typed answers and picks survive. Options:
+     key     names the widget on its screen; a view that needs to know the photo on show registers
+             App.carouselStep[key] = (idx) => { store it } (optional);
+     idx     the photo to start on;  alt  the image's alt text (default: the species name);
+     credit  true: the photo's credit under the frame, kept in step; 'later': a note that it appears after
+             answering (it would give the name away); absent: none;
+     inner   extra HTML inside the frame, under the arrows (e.g. the button that picks a photo). */
 App.carouselStep = {};
+const LATER = () => `<p class="credit">${L('El crédito de la foto aparece al responder (el pie revelaría el nombre).', 'The photo credit appears after you answer (the caption would give the name away).')}</p>`;
 App.carousel = (id, o) => {
   const ps = App.photosOf(id), n = ps.length;
   if (!n) return `<div class="pframe" style="aspect-ratio:4/3">${App.placeholder(id)}</div>`;
   const idx = ((o.idx || 0) % n + n) % n, p = ps[idx];
   const alt = o.alt != null ? o.alt : App.spName(id);
   const nav = n > 1 ? `<button type="button" class="car-btn prev" data-car-step="-1" aria-label="${L('Foto anterior', 'Previous photo')}">‹</button><button type="button" class="car-btn next" data-car-step="1" aria-label="${L('Foto siguiente', 'Next photo')}">›</button><span class="car-count" aria-hidden="true">${idx + 1} / ${n}</span>` : '';
-  return `<div class="car" data-car="${esc(o.key)}" data-sp="${esc(id)}" data-idx="${idx}" role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}"><div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>${o.inner || ''}${nav}</div>`;
+  const credit = o.credit === true ? `<div class="car-credit" data-live="1">${App.credit(p)}</div>` : o.credit === 'later' ? `<div class="car-credit">${LATER()}</div>` : '';
+  return `<div class="car" data-car="${esc(o.key || '')}" data-sp="${esc(id)}" data-idx="${idx}" role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}"><div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>${o.inner || ''}${nav}</div>${credit}`;
 };
-function carouselGo(car, step, refocus) {
-  const fn = App.carouselStep[car.dataset.car], n = App.photosOf(car.dataset.sp).length;
-  if (!fn || n < 2) return;
-  const key = car.dataset.car;
-  fn(((+car.dataset.idx + step) % n + n) % n);
-  if (refocus) { const b = document.querySelector(`.car[data-car="${key}"] [data-car-step="${step}"]`); if (b) b.focus(); }
-}
+/* Show photo i in a widget, in place, and tell its view. */
+App.carouselShow = (car, i) => {
+  const ps = App.photosOf(car.dataset.sp), n = ps.length;
+  if (n < 2) return;
+  i = (i % n + n) % n;
+  const p = ps[i], img = car.querySelector('.car-frame img');
+  if (img) { img.src = p.file; img.setAttribute('style', cropAttrs(p).style); }
+  car.dataset.idx = i;
+  car.setAttribute('aria-label', `${L('Foto', 'Photo')} ${i + 1} ${L('de', 'of')} ${n}`);
+  const count = car.querySelector('.car-count'); if (count) count.textContent = `${i + 1} / ${n}`;
+  const cr = car.nextElementSibling; if (cr && cr.classList.contains('car-credit') && cr.dataset.live) cr.innerHTML = App.credit(p);
+  const live = document.getElementById('live'); if (live) live.textContent = `${L('Foto', 'Photo')} ${i + 1} ${L('de', 'of')} ${n}`;
+  const fn = App.carouselStep[car.dataset.car]; if (fn) fn(i, car);
+};
+function carouselGo(car, step) { if (car) App.carouselShow(car, +car.dataset.idx + step); }
 document.addEventListener('click', e => {
   const b = e.target.closest && e.target.closest('[data-car-step]');
-  if (b) carouselGo(b.closest('.car'), +b.dataset.carStep, true);
+  if (b) carouselGo(b.closest('.car'), +b.dataset.carStep);
 });
 document.addEventListener('keydown', e => {
   const car = e.target.closest && e.target.closest('.car');
-  if (car && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { e.preventDefault(); carouselGo(car, e.key === 'ArrowLeft' ? -1 : 1, true); }
+  if (car && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) { e.preventDefault(); carouselGo(car, e.key === 'ArrowLeft' ? -1 : 1); }
 });
 let swipe = null;
 document.addEventListener('pointerdown', e => { const car = e.target.closest && e.target.closest('.car'); swipe = car && e.pointerType !== 'mouse' ? { car, x: e.clientX, y: e.clientY } : null; });
 document.addEventListener('pointerup', e => {
   if (!swipe) return;
   const dx = e.clientX - swipe.x, dy = e.clientY - swipe.y, car = swipe.car; swipe = null;
-  if (Math.abs(dx) > 40 && Math.abs(dx) > 1.5 * Math.abs(dy)) { App.lastSwipe = Date.now(); carouselGo(car, dx < 0 ? 1 : -1, false); }
+  if (Math.abs(dx) > 40 && Math.abs(dx) > 1.5 * Math.abs(dy)) { App.lastSwipe = Date.now(); carouselGo(car, dx < 0 ? 1 : -1); }
 });
-document.addEventListener('load', e => {
-  const img = e.target;
-  if (img.tagName !== 'IMG' || !img.naturalWidth) return;
-  const box = img.parentElement;
-  if (box && box.dataset && box.dataset.ar === 'auto') { box.style.setProperty('--ar', `${img.naturalWidth}/${img.naturalHeight}`); box.removeAttribute('data-ar'); }
-}, true);
 /* A listed photo whose file is missing shows the "no photo" placeholder instead of a broken image;
    on practice screens (focus mode) without the name, which would give the answer away. */
 document.addEventListener('error', e => {

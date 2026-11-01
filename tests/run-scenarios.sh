@@ -23,5 +23,6 @@ run "$here" cardlink '"nameLink": true' '"back": true' '"stillFeedback": true' '
 run "$here" names '"matches": true' '"groupShown": true' '"missOrder": true' '"spelling": true' '"wrongSpecies": true' '"esClass": true' '"esCard": true' '"esReptiles": true' '"noEsInEnglish": true'
 run "$here" studytree '"onlyClasses": true' '"reptileFromClass": true' '"reptiliaCard": true' '"kept": true' '"full": true'
 run "$here" cualcar '"loaded": 4' '"carousels": 4' '"swipe": true' '"flipped": true' '"notPicked": true' '"picked": true' '"pickKept": true' '"altHides": true'
+run "$here" comparecar '"carousels": 2' '"flippedBoth": true' '"creditsFollow": true' '"sameScreen": true'
 run "$site" collections '"importOtherRefused": true' '"key": "visu-progress-v1:artropodos-prueba"' '"log": 1'
 exit $fail
