@@ -8,7 +8,6 @@ const App = window.VISU_APP = { views: {} };
 App.DESK = window.matchMedia('(min-width: 1000px)');
 App.REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-App.P = () => Store.data;
 App.set = () => Store.data.settings;
 App.skills = () => E.SKILLS.filter(k => Store.data.settings.skills[k]);
 App.main = () => document.getElementById('main');
@@ -16,6 +15,30 @@ App.aside = () => document.getElementById('aside');
 App.asideHost = () => (App.DESK.matches ? App.aside() : document.getElementById('aside-m'));
 App.focusMode = on => document.body.classList.toggle('focus-mode', !!on);
 App.focusFirst = sel => { const el = App.main().querySelector(sel); if (el) el.focus(); };
+/* Event delegation: a view declares its handlers once, App.on(type, selector, fn), and fn(el, event) runs for
+   the closest matching element. Redrawing a screen never needs re-binding. */
+const HANDLERS = {};
+App.on = (type, sel, fn) => {
+  if (!HANDLERS[type]) {
+    HANDLERS[type] = [];
+    document.addEventListener(type, e => {
+      for (const [s, f] of HANDLERS[type]) {
+        const el = e.target.closest && e.target.closest(s);
+        if (el) { f(el, e); return; }
+      }
+    });
+  }
+  HANDLERS[type].push([sel, fn]);
+};
+/* Redraw a screen and give the focus back to a control (usually the one just used). */
+App.redraw = (view, focusSel) => { view(); if (focusSel) App.focusFirst(focusSel); };
+
+/* ---------- small shared fragments ---------- */
+App.draftTag = on => (on ? `<span class="draft">${L('borrador', 'draft')}</span>` : '');
+/* `html` is trusted markup (already escaped). Without a usable URL, just the text. */
+App.extLink = (url, html, cls) => (I.url(url) ? `<a ${cls ? `class="${cls}" ` : ''}href="${esc(I.url(url))}" target="_blank" rel="noopener">${html}</a>` : html);
+App.cardLink = (id, cls = 'big') => `<a class="btn ${cls}" href="#${esc(App.routeFor(id))}">${L('Abrir ficha', 'Open card')}</a>`;
+App.mistakeHead = (eyebrow, title) => `<div class="mistake-head"><p class="eyebrow">${eyebrow}</p><h1>${title}</h1></div>`;
 /* Collections (data/collections.js): the list, and the one open now (app/collection.js chose it). */
 App.collections = () => ((window.VISU && window.VISU.collections && window.VISU.collections.list) || []);
 App.collectionName = id => { const c = App.collections().find(x => x.id === id); return c ? I.t(c.name) : id; };
@@ -78,13 +101,16 @@ App.nameKeyHTML = (id, skills, confused) => {
   skills.forEach(k => add(App.nameMeaning(id, k)));
   (confused || []).forEach(o => add(App.nameMeaning(o, 'genus')));
   if (!rows.length) return '';
-  return `<section class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p>${rows.map(m => `<p><i>${esc(m.name)}</i>${m.es ? ` (${L('en español', 'in Spanish')}, <b>${esc(m.es)}</b>)` : ''}${m.text ? `: ${esc(m.text)}` : ''}</p>`).join('')}${rows.some(m => m.draft) ? `<p class="tiny muted"><span class="draft">${L('borrador', 'draft')}</span></p>` : ''}</section>`;
+  const row = m => `<p><i>${esc(m.name)}</i>${m.es ? ` (${L('en español', 'in Spanish')}, <b>${esc(m.es)}</b>)` : ''}${m.text ? `: ${esc(m.text)}` : ''}</p>`;
+  return `<section class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p>${rows.map(row).join('')}
+    ${rows.some(m => m.draft) ? `<p class="tiny muted">${App.draftTag(true)}</p>` : ''}</section>`;
 };
 const SOURCE_NAME = { commons: 'Wikimedia Commons', inaturalist: 'iNaturalist' };
+App.sourceName = p => SOURCE_NAME[p.source] || p.source || L('la fuente', 'the source');
 App.credit = (p, opts) => {
   if (!p) return '';
-  const lic = I.url(p.license_url) ? `<a href="${esc(I.url(p.license_url))}" target="_blank" rel="noopener">${esc(p.license || L('licencia', 'licence'))}</a>` : esc(p.license || '');
-  const src = I.url(p.source_url) ? `<a href="${esc(I.url(p.source_url))}" target="_blank" rel="noopener">${L('original en', 'original on')} ${esc(SOURCE_NAME[p.source] || p.source || L('la fuente', 'the source'))}</a>` : '';
+  const lic = I.url(p.license_url) ? App.extLink(p.license_url, esc(p.license || L('licencia', 'licence'))) : esc(p.license || '');
+  const src = I.url(p.source_url) ? App.extLink(p.source_url, `${L('original en', 'original on')} ${esc(App.sourceName(p))}`) : '';
   const mod = p.modified ? ` · ${esc(L({ resized: 'redimensionada', cropped: 'recortada' }[p.modified] || p.modified, p.modified))}` : '';
   return `<p class="credit">${L('Foto', 'Photo')}: ${esc(p.author || L('autor desconocido', 'unknown author'))} · ${lic}${src ? ' · ' + src : ''}${mod}${opts && opts.note ? ' · ' + opts.note : ''}</p>`;
 };
@@ -115,16 +141,24 @@ App.tile = (id, alt, cls, idx) => {
              answering (it would give the name away); absent: none;
      inner   extra HTML inside the frame, under the arrows (e.g. the button that picks a photo). */
 App.carouselStep = {};
-const LATER = () => `<p class="credit">${L('El crédito de la foto aparece al responder (el pie revelaría el nombre).', 'The photo credit appears after you answer (the caption would give the name away).')}</p>`;
+const LATER = () => `<p class="credit">${L('El crédito de la foto aparece al responder (el pie revelaría el nombre).',
+    'The photo credit appears after you answer (the caption would give the name away).')}</p>`;
 App.carousel = (id, o) => {
   const ps = App.photosOf(id), n = ps.length;
-  if (!n) return `<div class="pframe" style="aspect-ratio:4/3">${App.placeholder(id)}</div>`;
+  if (!n) return `<div class="pframe r43">${App.placeholder(id)}</div>`;
   const idx = ((o.idx || 0) % n + n) % n, p = ps[idx];
   const alt = o.alt != null ? o.alt : App.spName(id);
-  const nav = n > 1 ? `<button type="button" class="car-btn prev" data-car-step="-1" aria-label="${L('Foto anterior', 'Previous photo')}">‹</button><button type="button" class="car-btn next" data-car-step="1" aria-label="${L('Foto siguiente', 'Next photo')}">›</button><span class="car-count" aria-hidden="true">${idx + 1} / ${n}</span>` : '';
-  const credit = o.credit === true ? `<div class="car-credit" data-live="1">${App.credit(p)}</div>` : o.credit === 'later' ? `<div class="car-credit">${LATER()}</div>` : '';
-  const zoom = o.key === 'zoom' ? '' : `<button type="button" class="car-zoom" data-car-zoom aria-label="${L('Ver la foto en grande', 'View the photo larger')}">⤢</button>`;
-  return `<div class="car" data-car="${esc(o.key || '')}" data-sp="${esc(id)}" data-idx="${idx}" data-credit="${o.credit === true ? 'live' : ''}" role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}"><div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>${o.inner || ''}${nav}${zoom}</div>${credit}`;
+  const btn = (cls, attr, label, text) => `<button type="button" class="${cls}" ${attr} aria-label="${label}">${text}</button>`;
+  const nav = n < 2 ? '' : btn('car-btn prev', 'data-car-step="-1"', L('Foto anterior', 'Previous photo'), '‹')
+    + btn('car-btn next', 'data-car-step="1"', L('Foto siguiente', 'Next photo'), '›')
+    + `<span class="car-count" aria-hidden="true">${idx + 1} / ${n}</span>`;
+  const zoom = o.key === 'zoom' ? '' : btn('car-zoom', 'data-car-zoom', L('Ver la foto en grande', 'View the photo larger'), '⤢');
+  const credit = o.credit === true ? `<div class="car-credit" data-live="1">${App.credit(p)}</div>`
+    : o.credit === 'later' ? `<div class="car-credit">${LATER()}</div>` : '';
+  return `<div class="car" data-car="${esc(o.key || '')}" data-sp="${esc(id)}" data-idx="${idx}" data-credit="${o.credit === true ? 'live' : ''}"
+    role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}">
+    <div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>
+    ${o.inner || ''}${nav}${zoom}</div>${credit}`;
 };
 /* Show photo i in a widget, in place, and tell its view. */
 App.carouselShow = (car, i) => {
@@ -204,7 +238,6 @@ App.medalSVG = (text, prog, size, opts) => {
     <text x="38" y="43" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-style="italic" font-weight="700" font-size="14" fill="${earned ? 'var(--gold)' : 'var(--ink)'}">${esc(String(text || '').slice(0, 4))}</text></svg>`;
 };
 App.lvDots = n => `<span class="lvl-dots" aria-hidden="true">${[1, 2, 3].map(i => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</span>`;
-App.emptyNote = (title, body, cta) => `<div class="empty"><b>${title}</b><p class="small">${body}</p>${cta || ''}</div>`;
 
 /* ---------- icons (inline SVG, no icon font) ---------- */
 const ICON = {
@@ -229,7 +262,6 @@ const ICON = {
 };
 
 App.ICON = ICON;
-App.badgeIcon = n => ICON[n] || '';
 
 /* ---------- shell ---------- */
 const TABS = [['hoy', 'Hoy', 'Today'], ['explorar', 'Explorar', 'Explore'], ['insignias', 'Insignias', 'Badges'], ['como-funciona', 'Cómo funciona', 'How it works', 'como'], ['ajustes', 'Ajustes', 'Settings']];
@@ -241,14 +273,17 @@ App.tabOf = r => {
 App.backupState = () => { const r = I.relDays(Store.data.meta.lastBackup); return { r, nudge: r.d >= 7 && Store.data.log.length > 0 }; };
 function savebarHTML() {
   const { r, nudge } = App.backupState();
-  if (!Store.ok) return `<span>${ICON.device}</span><span>${L('Este navegador no deja guardar: tu progreso se perderá al cerrar.', 'This browser won’t let us save: your progress will be lost when you close it.')}</span><button data-export>${L('Guardar copia', 'Save a copy')}</button>`;
-  return `<a class="what" href="#como-funciona">${ICON.device}<span><b>${L('Progreso guardado en este navegador', 'Progress saved in this browser')}</b><br>${L('Última copia', 'Last copy')}: <span class="when">${esc(r.txt)}</span>${nudge ? ' · ' + L('conviene hacer una', 'time to make one') : ''}</span></a><button data-export>${L('Guardar copia', 'Save a copy')}</button>`;
+  if (!Store.ok) return `<span>${ICON.device}</span><span>${L('Este navegador no deja guardar: tu progreso se perderá al cerrar.',
+      'This browser won’t let us save: your progress will be lost when you close it.')}</span><button data-export>${L('Guardar copia', 'Save a copy')}</button>`;
+  return `<a class="what" href="#como-funciona">${ICON.device}<span><b>${L('Progreso guardado en este navegador',
+      'Progress saved in this browser')}</b><br>${L('Última copia', 'Last copy')}: <span class="when">${esc(r.txt)}</span>${nudge ? ' · ' + L('conviene hacer una', 'time to make one') : ''}</span></a><button data-export>${L('Guardar copia', 'Save a copy')}</button>`;
 }
 function savecardHTML() {
   const { r, nudge } = App.backupState();
   if (!Store.ok) return `<div class="savecard nostore" role="status"><b>${L('No se puede guardar aquí', 'Can’t save here')}</b><br>${L('Guarda una copia antes de cerrar.', 'Save a copy before closing.')}<button data-export>${L('Guardar copia', 'Save a copy')}</button></div>`;
-  return `<div class="savecard ${nudge ? 'nudge' : ''}" role="status"><span class="row" style="gap:.4rem;flex-wrap:nowrap"><span style="width:18px;flex:none">${ICON.device}</span><b>${L('Guardado en este navegador', 'Saved in this browser')}</b></span>
-    ${L('Última copia', 'Last copy')}: <span class="when">${esc(r.txt)}</span>${nudge ? `<br><span class="tiny">${L('Conviene guardar una copia cada semana.', 'Save a copy every week or so.')}</span>` : ''}
+  return `<div class="savecard ${nudge ? 'nudge' : ''}" role="status"><span class="row savecard-head"><span class="savecard-ic">${ICON.device}</span><b>${L('Guardado en este navegador', 'Saved in this browser')}</b></span>
+    ${L('Última copia', 'Last copy')}: <span class="when">${esc(r.txt)}</span>${nudge ? `<br><span class="tiny">${L('Conviene guardar una copia cada semana.',
+        'Save a copy every week or so.')}</span>` : ''}
     <button data-export>${L('Guardar copia', 'Save a copy')}</button></div>`;
 }
 App.counts = () => {
@@ -272,11 +307,16 @@ App.shell = route => {
   sb.innerHTML = savebarHTML();
   const nb = document.getElementById('nostore');
   nb.hidden = Store.ok && !Store.error;
-  if (!Store.ok) nb.innerHTML = `<b>${L('Este navegador no deja guardar tu progreso.', 'This browser won’t let us save your progress.')}</b> ${L('Puedes estudiar, pero todo se perderá al cerrar la pestaña. Abre la web en otro navegador (Chrome, Edge o Firefox) o usa la versión en internet; mientras, pulsa «Guardar copia» antes de cerrar.', 'You can study, but everything is lost when you close the tab. Open the site in another browser (Chrome, Edge or Firefox) or use the online version; meanwhile, press “Save a copy” before closing.')} <a href="#como-funciona">${L('Más información', 'More information')}</a>`;
-  else if (Store.error) nb.innerHTML = `<b>${L('No se pudo guardar el último cambio.', 'The last change couldn’t be saved.')}</b> ${Store.error === 'quota' ? L('El navegador no tiene espacio para esta web.', 'The browser has no room left for this site.') : ''} ${L('Guarda una copia para no perderlo.', 'Save a copy so you don’t lose it.')} <button class="linkbtn" data-export>${L('Guardar copia', 'Save a copy')}</button>`;
-  document.getElementById('langbtn').onclick = () => { App.setLang(I.lang === 'es' ? 'en' : 'es'); };
+  if (!Store.ok) nb.innerHTML = `<b>${L('Este navegador no deja guardar tu progreso.',
+      'This browser won’t let us save your progress.')}</b> ${L('Puedes estudiar, pero todo se perderá al cerrar la pestaña. Abre la web en otro navegador (Chrome, Edge o Firefox) o usa la versión en internet; mientras, pulsa «Guardar copia» antes de cerrar.',
+      'You can study, but everything is lost when you close the tab. Open the site in another browser (Chrome, Edge or Firefox) or use the online version; meanwhile, press “Save a copy” before closing.')} <a href="#como-funciona">${L('Más información', 'More information')}</a>`;
+  else if (Store.error) nb.innerHTML = `<b>${L('No se pudo guardar el último cambio.',
+      'The last change couldn’t be saved.')}</b> ${Store.error === 'quota' ? L('El navegador no tiene espacio para esta web.',
+      'The browser has no room left for this site.') : ''} ${L('Guarda una copia para no perderlo.',
+      'Save a copy so you don’t lose it.')} <button class="linkbtn" data-export>${L('Guardar copia', 'Save a copy')}</button>`;
   document.documentElement.lang = I.lang;
 };
+App.on('click', '#langbtn', () => App.setLang(I.lang === 'es' ? 'en' : 'es'));
 App.setLang = lang => { Store.data.settings.lang = lang; I.lang = lang; Store.save(); App.render(true); };
 App.applyTheme = () => { const t = Store.data.settings.theme; if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); else document.documentElement.removeAttribute('data-theme'); };
 
@@ -311,9 +351,12 @@ App.importText = text => {
     res = E.parseImport(text, Date.now(), App.collection());
   } catch (err) {
     App.toast(err.code === 'other_collection' ? L(`Esa copia es de otra colección: <b>${esc(App.collectionName(err.collection))}</b>. Ábrela en Ajustes → Colección y recupera la copia allí. Tu progreso actual sigue igual.`, `That copy belongs to another collection: <b>${esc(App.collectionName(err.collection))}</b>. Open it in Settings → Collection and restore the copy there. Your current progress is unchanged.`)
-      : err.code === 'newer' ? L('Esa copia es de una versión más nueva de la web. Actualiza esta copia de la web y vuelve a intentarlo.', 'That copy comes from a newer version of the site. Update this copy of the site and try again.')
-      : err.code === 'invalid' ? L('Ese archivo tiene datos que no son válidos (quizá se editó a mano o no lo creó esta web), así que no se ha cargado. Tu progreso actual sigue igual.', 'That file contains invalid data (it may have been edited by hand or not made by this site), so it wasn’t loaded. Your current progress is unchanged.')
-      : L('Ese archivo no es una copia de VISU. Elige el archivo .json que guardaste con «Guardar copia».', 'That file isn’t a VISU copy. Pick the .json file you saved with “Save a copy”.'));
+      : err.code === 'newer' ? L('Esa copia es de una versión más nueva de la web. Actualiza esta copia de la web y vuelve a intentarlo.',
+          'That copy comes from a newer version of the site. Update this copy of the site and try again.')
+      : err.code === 'invalid' ? L('Ese archivo tiene datos que no son válidos (quizá se editó a mano o no lo creó esta web), así que no se ha cargado. Tu progreso actual sigue igual.',
+          'That file contains invalid data (it may have been edited by hand or not made by this site), so it wasn’t loaded. Your current progress is unchanged.')
+      : L('Ese archivo no es una copia de VISU. Elige el archivo .json que guardaste con «Guardar copia».',
+          'That file isn’t a VISU copy. Pick the .json file you saved with “Save a copy”.'));
     if (err.issues && window.console) console.warn('VISU import rejected:', err.issues.slice(0, 20));
     return false;
   }
@@ -325,7 +368,8 @@ App.importText = text => {
   App.applyTheme();
   const when = res.exportedAt ? I.fmtDate(res.exportedAt) : '?';
   App.toast(ok ? L(`Copia recuperada: ${res.answers} respuestas. Era del ${esc(when)}.`, `Copy restored: ${res.answers} answers. It was from ${esc(when)}.`)
-    : L('Copia leída, pero este navegador no deja guardarla: se perderá al cerrar.', 'Copy read, but this browser won’t let us keep it: it will be lost when you close.'));
+    : L('Copia leída, pero este navegador no deja guardarla: se perderá al cerrar.',
+        'Copy read, but this browser won’t let us keep it: it will be lost when you close.'));
   App.render(true);
   return true;
 };
@@ -338,8 +382,10 @@ document.getElementById('importfile').addEventListener('change', e => {
 });
 App.backupHTML = () => {
   const { r, nudge } = App.backupState();
-  return `<div class="backup"><div class="status-line">${ICON.device}<span>${Store.ok ? L('Tu progreso se guarda en este navegador, en este dispositivo.', 'Your progress is saved in this browser, on this device.') : L('Este navegador no deja guardar. Guarda una copia antes de cerrar.', 'This browser won’t let us save. Save a copy before closing.')}</span></div>
-    <p class="small" style="margin:0">${L('Última copia', 'Last copy')}: <b style="${nudge ? 'color:var(--gold)' : ''}">${esc(r.txt)}</b>${nudge ? ` · ${L('conviene hacer una', 'time to make one')}` : ''}</p>
+  return `<div class="backup"><div class="status-line">${ICON.device}<span>${Store.ok ? L('Tu progreso se guarda en este navegador, en este dispositivo.',
+      'Your progress is saved in this browser, on this device.') : L('Este navegador no deja guardar. Guarda una copia antes de cerrar.',
+      'This browser won’t let us save. Save a copy before closing.')}</span></div>
+    <p class="small m0">${L('Última copia', 'Last copy')}: <b class="${nudge ? 'gold' : ''}">${esc(r.txt)}</b>${nudge ? ` · ${L('conviene hacer una', 'time to make one')}` : ''}</p>
     <div class="btns"><button class="btn primary" data-export>${ICON.download}${L('Guardar copia', 'Save a copy')}</button><button class="btn" data-import>${ICON.upload}${L('Recuperar copia', 'Restore a copy')}</button></div></div>`;
 };
 
@@ -357,26 +403,32 @@ document.addEventListener('click', e => {
     e.preventDefault();
     if (popFor === b && !pop.hidden) { closePop(); return; }
     const s = App.citeReg[b.dataset.src] || {};
-    pop.innerHTML = `<button class="close" aria-label="${L('Cerrar', 'Close')}">×</button><b>${esc(b.textContent)}. ${esc(s.title || b.dataset.src)}</b>${s.license ? `<span class="muted">${L('Licencia', 'Licence')}: ${esc(s.license)}</span>` : ''}${s.retrieved ? `<span class="muted">${L('Consultado', 'Retrieved')}: ${esc(s.retrieved)}</span>` : ''}<br>${I.url(s.url) ? `<a href="${esc(I.url(s.url))}" target="_blank" rel="noopener">${L('Abrir la fuente ↗', 'Open the source ↗')}</a> · ` : ''}<a href="#" data-ref="${esc(b.dataset.src)}">${L('Ver en referencias', 'See in references')}</a>`;
+    pop.innerHTML = `<button class="close" aria-label="${L('Cerrar', 'Close')}">×</button><b>${esc(b.textContent)}. ${esc(s.title || b.dataset.src)}</b>
+      ${s.license ? `<span class="muted">${L('Licencia', 'Licence')}: ${esc(s.license)}</span>` : ''}
+      ${s.retrieved ? `<span class="muted">${L('Consultado', 'Retrieved')}: ${esc(s.retrieved)}</span>` : ''}<br>
+      ${I.url(s.url) ? `${App.extLink(s.url, L('Abrir la fuente ↗', 'Open the source ↗'))} · ` : ''}<a href="#" data-ref="${esc(b.dataset.src)}">${L('Ver en referencias', 'See in references')}</a>`;
     pop.hidden = false; popFor = b;
     const r = b.getBoundingClientRect();
     pop.style.top = (window.scrollY + r.bottom + 6) + 'px';
     pop.style.left = Math.max(8, Math.min(window.scrollX + r.left - 20, document.documentElement.clientWidth - pop.offsetWidth - 8)) + 'px';
-    pop.querySelector('.close').onclick = closePop;
-    pop.querySelector('[data-ref]').onclick = ev => {
-      ev.preventDefault();
-      const li = document.getElementById('ref-' + ev.target.dataset.ref);
-      closePop();
-      if (li) { li.scrollIntoView({ behavior: App.REDUCED.matches ? 'auto' : 'smooth', block: 'center' }); li.classList.add('flash'); setTimeout(() => li.classList.remove('flash'), 1800); }
-    };
     pop.querySelector('a').focus();
     return;
   }
   if (!e.target.closest('#pop')) closePop();
 });
+App.on('click', '#pop .close', closePop);
+App.on('click', '#pop [data-ref]', (a, e) => {
+  e.preventDefault();
+  const li = document.getElementById('ref-' + a.dataset.ref);
+  closePop();
+  if (li) { li.scrollIntoView({ behavior: App.REDUCED.matches ? 'auto' : 'smooth', block: 'center' }); li.classList.add('flash'); setTimeout(() => li.classList.remove('flash'), 1800); }
+});
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !pop.hidden) { const b = popFor; closePop(); if (b) b.focus(); } });
 
 /* ---------- first-visit notice ---------- */
+const closeNotice = () => { Store.data.meta.seenNotice = true; Store.save(); document.getElementById('notice-host').innerHTML = ''; };
+App.on('click', '#nt-ok', () => { closeNotice(); App.main().focus({ preventScroll: true }); });
+App.on('click', '#nt-more', () => { closeNotice(); location.hash = 'como-funciona'; });
 App.showNotice = () => {
   const host = document.getElementById('notice-host');
   host.innerHTML = `<div class="scrim"><div class="notice" role="dialog" aria-modal="true" aria-labelledby="nt-h">
@@ -384,16 +436,17 @@ App.showNotice = () => {
       <path d="M132 36 h70" stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="5 4"/><path d="M196 30 l8 6 -8 6" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
       <path d="M214 10 h50 l18 18 v38 h-68 z" fill="var(--surface)" stroke="var(--ink)" stroke-width="2"/><text x="248" y="48" text-anchor="middle" font-size="11" font-weight="800" fill="var(--ink)" font-family="system-ui">.json</text></svg>
     <h2 id="nt-h">${L('Hola. Antes de empezar, una cosa importante', 'Hi. One important thing before you start')}</h2>
-    ${Store.ok ? `<p>${L('Tu progreso se guarda <b>solo en este navegador, en este dispositivo</b>. No hay cuentas ni servidores, así que nadie más lo ve.', 'Your progress is saved <b>only in this browser, on this device</b>. There are no accounts or servers, so nobody else sees it.')}</p>
-    <p>${L('Si cambias de navegador o de dispositivo, o borras los datos del navegador, no lo verás. Para no perderlo, <b>guarda una copia</b> de vez en cuando.', 'If you switch browser or device, or clear your browser data, you won’t see it. To keep it safe, <b>save a copy</b> now and then.')}</p>`
-    : `<p><b>${L('Este navegador no deja guardar tu progreso.', 'This browser won’t let us save your progress.')}</b> ${L('Puedes estudiar, pero se perderá al cerrar. Abre la web en otro navegador o usa la versión en internet.', 'You can study, but it is lost when you close. Open the site in another browser or use the online version.')}</p>`}
+    ${Store.ok ? `<p>${L('Tu progreso se guarda <b>solo en este navegador, en este dispositivo</b>. No hay cuentas ni servidores, así que nadie más lo ve.',
+        'Your progress is saved <b>only in this browser, on this device</b>. There are no accounts or servers, so nobody else sees it.')}</p>
+    <p>${L('Si cambias de navegador o de dispositivo, o borras los datos del navegador, no lo verás. Para no perderlo, <b>guarda una copia</b> de vez en cuando.',
+        'If you switch browser or device, or clear your browser data, you won’t see it. To keep it safe, <b>save a copy</b> now and then.')}</p>`
+    : `<p><b>${L('Este navegador no deja guardar tu progreso.',
+        'This browser won’t let us save your progress.')}</b> ${L('Puedes estudiar, pero se perderá al cerrar. Abre la web en otro navegador o usa la versión en internet.',
+        'You can study, but it is lost when you close. Open the site in another browser or use the online version.')}</p>`}
     <p class="small muted">${L('Sin cookies y sin seguimiento.', 'No cookies and no tracking.')}</p>
     <div class="row"><button class="btn primary" id="nt-ok">${L('Entendido', 'Got it')}</button><button class="btn" id="nt-more">${L('Saber más', 'Learn more')}</button></div></div></div>`;
-  const close = () => { Store.data.meta.seenNotice = true; Store.save(); host.innerHTML = ''; };
-  document.getElementById('nt-ok').onclick = () => { close(); App.main().focus({ preventScroll: true }); };
-  document.getElementById('nt-more').onclick = () => { close(); location.hash = 'como-funciona'; };
   host.querySelector('.notice').addEventListener('keydown', e => {
-    if (e.key === 'Escape') { close(); return; }
+    if (e.key === 'Escape') { closeNotice(); return; }
     if (e.key !== 'Tab') return;   // aria-modal: keep focus inside the notice
     const f = host.querySelectorAll('.notice button'), first = f[0], last = f[f.length - 1];
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }

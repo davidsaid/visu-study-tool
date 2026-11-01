@@ -654,14 +654,12 @@ function parseImport(text, now, collection) {
 }
 
 window.VISU_ENGINE = {
-  SKILLS, SCHEMA_VERSION, DAY, MIN,
-  buildModel, answerFor, pathTo, speciesUnder, lca, treeDist, studyPath,
-  gradeKey, detectKey, osa, threshold, classify,
+  SKILLS, SCHEMA_VERSION, DAY, buildModel, answerFor, pathTo, speciesUnder, lca, treeDist, studyPath,
+  gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
-  rating, progressInterval, countsForMastery, applyAnswer, dueOf, toFsrs, fromFsrs,
-  retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
+  rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
   ymd, startOfDay, todayPlan, buildSession, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
-  streak, badgeDefs, badgeStatus, newlyEarned, mockScore,
-  defaultSettings, emptyProgress, normalizeProgress, makeExport, parseImport
+  streak, badgeStatus, newlyEarned, mockScore,
+  emptyProgress, normalizeProgress, makeExport, parseImport
 };
 })();

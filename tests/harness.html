@@ -320,6 +320,67 @@ const SCENARIOS = {
     report({ scenario: 'zoom', opened, synced, creditInZoom, keys, closed, quizAnon, cualZoom });
   },
   'zoom-shot': async () => { seedStorage(seen); await open('ficha-lynx_pardinus'); await click('#gal-lynx_pardinus .car-frame'); await sleep(1500); },
+  /* Every control wired through App.on still works, and no screen throws (window errors are counted). */
+  'controls': async () => {
+    seedStorage(seen); await open('explorar');
+    let errors = 0; win.addEventListener('error', () => errors++);
+    const r = {};
+    await go('ficha-milvus_milvus');
+    await click('[data-treemode="study"]'); r.study = !!$('.study-note') && doc.activeElement.dataset.treemode === 'study';
+    await click('[data-treemode="full"]'); r.full = !$('.study-note');
+    if ($('[data-deep]')) { await click('[data-deep]'); r.deep = !!$('.deep-list'); await click('[data-deep]'); }
+    if ($('#tree [data-mid]')) { await click('#tree [data-mid]'); r.mid = App().set && win.VISU_STORE.data.ui.showMid === true; await click('#tree [data-mid]'); }
+    await click('[data-gal="2"]'); r.gal = ($('.car .car-count') || {}).textContent === '3 / 4' && $('[data-gal="2"]').getAttribute('aria-pressed') === 'true';
+    await click('[data-jump]'); r.jump = true;
+    const pop = () => doc.getElementById('pop');
+    await click('.plate .cite'); const opened = !pop().hidden;
+    await click('#pop [data-ref]'); r.citeRef = opened && pop().hidden && !!$('.refs li.flash');
+    await click('.plate .cite'); await click('#pop .close'); r.citeClose = pop().hidden;
+    App().showNotice(); await sleep(50); await click('#nt-ok'); r.notice = !doc.querySelector('#notice-host .notice') && win.VISU_STORE.data.meta.seenNotice === true;
+    if ($('[data-video]')) { await click('[data-video]'); r.video = !!$('.video-box iframe'); }
+    await click('[data-practise]'); r.practise = location.hash === '' && doc.location.hash === '#nivel' && win.VISU_STORE.data.ui.scope === 'milvus_milvus';
+    await click('[data-game="cual"]'); r.game = win.VISU_STORE.data.settings.game === 'cual' && doc.activeElement.dataset.game === 'cual';
+    await click('[data-level="3"]'); r.level = win.VISU_STORE.data.settings.level === 3;
+    await click('#clearscope'); r.clearscope = !win.VISU_STORE.data.ui.scope;
+    await go('ajustes');
+    await click('[data-theme="dark"]'); r.theme = doc.documentElement.getAttribute('data-theme') === 'dark'; await click('[data-theme="auto"]');
+    await click('[data-lv="2"]'); r.lv = win.VISU_STORE.data.settings.level === 2;
+    await click('[data-skill="common"]'); r.skillOff = win.VISU_STORE.data.settings.skills.common === false; await click('[data-skill="common"]');
+    const num = $('#set-sessionSize'); num.value = '33'; num.dispatchEvent(new win.Event('change', { bubbles: true })); await sleep(50);
+    r.num = win.VISU_STORE.data.settings.sessionSize === 33;
+    await click('#wipe'); r.wipeArmed = /otra vez|again/.test($('#wipe').textContent);
+    await click('#langbtn'); r.lang = win.VISU_STORE.data.settings.lang === 'en'; await click('#langbtn');
+    /* Medium: hint, then "I don't know". */
+    App().set().level = 2; win.VISU_STORE.save(); await go('hoy'); await go('sesion'); await sleep(100);
+    for (let k = 0; k < 30 && App().sessionState().items[0].skill === 'class'; k++) App().newSession('foto', { force: true });
+    App().views.session();
+    await type('#typedin', 'ab'); await click('#hintbtn');
+    r.hint = App().sessionState().hints === 1 && $('#typedin').value === 'ab' && doc.activeElement.id === 'typedin';
+    await click('#dunno'); r.dunno = App().sessionState().phase === 'reveal' && !!$('.mistake-head');
+    await click('#nextbtn'); r.next = App().sessionState().i === 1;
+    /* Typed answer, confidence, check. */
+    await type('#typedin', 'zzzz'); doc.getElementById('typedform').requestSubmit(); await sleep(80);
+    r.typedConf = App().sessionState().phase === 'confidence' && doc.activeElement.dataset.conf !== undefined;
+    await click('[data-conf="unsure"]'); r.confFocus = doc.activeElement.dataset.conf === 'unsure';
+    await click('#submitbtn'); r.check = App().sessionState().phase === 'reveal';
+    /* Exam sheet: hand in. */
+    await go('hoy'); await go('hoja'); await sleep(100);
+    for (const inp of doc.querySelectorAll('#sheetform [data-field]')) inp.value = 'x';
+    doc.getElementById('sheetform').requestSubmit(); await sleep(80);
+    await click('[data-conf="sure"]'); await click('#submitbtn');
+    r.sheet = !!$('.reveal-ok') && App().sessionState().phase === 'reveal';
+    /* ¿Cuál es?: easy shows the common-name switch; pick, confidence, check, next. */
+    App().set().level = 1; win.VISU_STORE.save(); await go('hoy'); await go('cual-es'); await sleep(100);
+    const before = !!win.VISU_STORE.data.settings.revShowCommon, vc = $('#vernchk');
+    vc.checked = !vc.checked; vc.dispatchEvent(new win.Event('change', { bubbles: true })); await sleep(80);
+    r.vern = !!win.VISU_STORE.data.settings.revShowCommon !== before && doc.activeElement.id === 'vernchk';
+    await click(doc.querySelectorAll('[data-pick]')[0]); await click('[data-conf="guess"]');
+    r.cualConf = App().reverseState().conf === 'guess';
+    await click('#submitbtn'); r.cualCheck = App().reverseState().phase === 'reveal';
+    await click('#revnext'); r.cualNext = App().reverseState().i === 1 && App().reverseState().phase === 'ask';
+    r.errors = errors;
+    report(Object.assign({ scenario: 'controls' }, r));
+  },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },

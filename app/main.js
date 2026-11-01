@@ -62,7 +62,8 @@ App.render = function (full) {
 window.addEventListener('hashchange', () => App.render(false));
 App.DESK.addEventListener('change', () => App.render(true));
 window.addEventListener('error', e => {
-  App.toast(L('Algo ha fallado en esta pantalla. Tu progreso guardado no se ha perdido; vuelve a Hoy e inténtalo otra vez.', 'Something went wrong on this screen. Your saved progress is safe; go back to Today and try again.'));
+  App.toast(L('Algo ha fallado en esta pantalla. Tu progreso guardado no se ha perdido; vuelve a Hoy e inténtalo otra vez.',
+      'Something went wrong on this screen. Your saved progress is safe; go back to Today and try again.'));
   if (window.console) console.error(e.error || e.message);
 });
 App.render(true);

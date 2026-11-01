@@ -13,7 +13,7 @@ except a species' YouTube video, and only after a click (`youtube-nocookie.com`)
 | `i18n.js` | `L(es, en)`, bilingual helpers, fixed labels (skills, levels, fact fields, IUCN) |
 | `engine.js` | Grading, the intent router, FSRS scheduling, mastery, distractors, session building, streak, badges, export/import. No DOM, no storage |
 | `store.js` | The progress object in `localStorage`, one key per collection (`visu-progress-v1` for vertebrados, `visu-progress-v1:<id>` for the others); its shape is documented at the top of the file |
-| `ui.js` | Shell, photos, rings and medals, export/import buttons, citation popover, first-visit notice |
+| `ui.js` | Shell, event delegation (`App.on`), shared fragments, the photo widget, rings and medals, export/import buttons, citation popover, first-visit notice |
 | `views-practice.js` | Today, level picker, photo → name session, exam sheet, "¿Cuál es?", Mock VISU, summaries |
 | `views-explore.js` | The progressive-disclosure tree (full, or study mode rooted at the list's classes), species and group cards, badges |
 | `views-info.js` | "Cómo funciona" and settings |
@@ -26,6 +26,16 @@ screenshots and the persistence check; from `file://` it needs Chrome's
 `--allow-file-access-from-files`. `bash tests/run-scenarios.sh <chrome> <site>` runs the scenarios
 with their expected results; `<site>` is a throwaway copy with a second, test-only collection,
 built by `.venv/bin/python tests/fixture_site.py <dir>`.
+
+## How a screen is written
+
+A view function renders its whole screen as one template string into `#main` (and `#aside`). It
+does not bind events: each view file declares its handlers once, at load, with
+`App.on(type, selector, fn)`, a delegated listener on `document`, so a redraw never needs
+re-binding. A handler changes state, then calls `App.redraw(view, focusSelector)` to draw again
+and give the focus back to the control that was used. Repeated markup lives in small helpers
+(`App.cardLink`, `App.mistakeHead`, `App.draftTag`, `App.extLink`, `App.carousel`); styling lives in
+`style.css`, and the only inline styles are computed values (bar widths, photo crops).
 
 ## Decisions taken while building (2026-11-01)
 
