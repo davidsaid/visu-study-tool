@@ -57,8 +57,10 @@ V.explore = function (id, fromClick) {
     <div class="tree-legend"><span>${App.ring(0)} ${L('sin ver', 'unseen')}</span><span>${App.ring(.5)} ${L('progreso', 'progress')}</span><span>${App.ring(1)} ${L('dominada', 'mastered')}</span>${Object.values(M().nodes).some(n => n.grade) ? `<span><span class="hatchkey"></span>${L('Reptilia* del temario: un grado, no un clado', 'Syllabus Reptilia*: a grade, not a clade')}</span>` : ''}</div>
     ${P().log.length ? '' : `<p class="tiny muted">${L('Todo empieza a cero: los anillos se llenan a medida que practicas.', 'Everything starts at zero: the rings fill up as you practise.')}</p>`}</div><div id="card-m" class="card-host" tabindex="-1"></div>`;
   const host = App.DESK.matches ? (App.aside().innerHTML = '<div class="card-host" id="card-d" tabindex="-1"></div>', document.getElementById('card-d')) : document.getElementById('card-m');
-  host.innerHTML = App.sp(id) ? speciesCard(id) : groupCard(id);
+  const back = App.returnTo ? `<a class="btn primary back-to-practice" href="#${esc(App.returnTo)}">← ${L('Volver a la práctica', 'Back to practice')}</a>` : '';
+  host.innerHTML = back + (App.sp(id) ? speciesCard(id) : groupCard(id));
   bindCard(host, id);
+  if (back && !App.DESK.matches) host.scrollIntoView({ block: 'start' });   // on a phone the card is below the tree
   const tree = document.getElementById('tree');
   tree.querySelectorAll('[data-mid]').forEach(b => b.onclick = () => { UI().showMid = !UI().showMid; Store.save(); V.explore(id); focusTree('[data-mid]'); });
   const dp = tree.querySelector('[data-deep]'); if (dp) dp.onclick = () => { UI().showDeep = !UI().showDeep; Store.save(); V.explore(id); focusTree('[data-deep]'); };

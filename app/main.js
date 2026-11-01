@@ -22,18 +22,30 @@ const BYROUTE = {};
 Object.keys(App.M.nodes).forEach(id => { BYROUTE[App.routeFor(id)] = id; });
 App.M.order.forEach(id => { BYROUTE[App.routeFor(id)] = id; });
 
+/* A card opened from a practice screen remembers where it came from: the card shows "Volver a la
+   práctica", and going back (that button or the browser's back) resumes the same question instead of
+   starting a new session. */
+const PRACTICE = ['sesion', 'sesion-repaso', 'hoja', 'cual-es', 'resumen', 'simulacro-resultados'];
+document.addEventListener('click', e => {
+  const a = e.target.closest && e.target.closest('a[href^="#ficha-"], a[href^="#grupo-"]');
+  const here = (location.hash || '#hoy').slice(1);
+  if (a && PRACTICE.includes(here)) App.returnTo = here;
+}, true);
+
 App.render = function (full) {
   let r = (location.hash || '#hoy').slice(1);
   try { r = decodeURIComponent(r); } catch (e) { /* keep raw */ }
+  const resume = !!App.returnTo && r === App.returnTo;
+  if (resume || (!BYROUTE[r] && r !== App.returnTo)) App.returnTo = null;
   App.closePop();
   App.shell(r);
   document.getElementById('app').classList.remove('explore');
   App.aside().innerHTML = '';
   const s = App.sessionState();
-  if (r === 'sesion' || r === 'sesion-repaso') { if (!full || !s || s.game !== 'foto') App.newSession('foto', { force: r === 'sesion-repaso' }); V.session(); }
-  else if (r === 'hoja') { if (!full || !s || s.game !== 'hoja') App.newSession('hoja'); V.session(); }
+  if (r === 'sesion' || r === 'sesion-repaso') { if (!(resume && s && s.game === 'foto') && (!full || !s || s.game !== 'foto')) App.newSession('foto', { force: r === 'sesion-repaso' }); V.session(); }
+  else if (r === 'hoja') { if (!(resume && s && s.game === 'hoja') && (!full || !s || s.game !== 'hoja')) App.newSession('hoja'); V.session(); }
   else if (r === 'resumen') V.resumen();
-  else if (r === 'cual-es') { if (!full || !App.reverseState()) App.newReverse(); V.cual(); }
+  else if (r === 'cual-es') { if (!(resume && App.reverseState()) && (!full || !App.reverseState())) App.newReverse(); V.cual(); }
   else if (r === 'simulacro') { if (!full || !App.mockState() || App.mockState().done) App.newMock(); V.simulacro(); }
   else if (r === 'simulacro-resultados') V.simulacroResultados();
   else if (r === 'nivel') V.nivel();

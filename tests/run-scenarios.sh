@@ -19,5 +19,6 @@ run "$here" carousel '"mistakeStillShown": true' '"pickedStillKept": true' \
   '"altHidesName": true' '"creditHidden": true' '"imgLoaded": true' '"wrapPrev": "4 / 4"' '"creditChanged": true'
 run "$here" random '"stableOnRerender": true'
 run "$here" credits '"sameFile": true' '"samePhotos": true' '"credited": 5'
+run "$here" cardlink '"nameLink": true' '"back": true' '"stillFeedback": true' '"noBackLater": true'
 run "$site" collections '"importOtherRefused": true' '"key": "visu-progress-v1:artropodos-prueba"' '"log": 1'
 exit $fail

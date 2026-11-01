@@ -575,3 +575,5 @@ input.numin[type="number"] { width: 6rem; }
 .car-btn:hover { background: var(--surface); }
 .car-count { position: absolute; right: .6rem; bottom: .6rem; background: rgba(0, 0, 0, .62); color: #fff; font-size: .78rem; font-weight: 700; padding: .15rem .5rem; border-radius: 99px; pointer-events: none; }
 .pinfig .car .car-frame { --maxh: 60vh; }
+.back-to-practice { display: inline-flex; margin: 0 0 .8rem; min-height: 44px; }
+#card-m { scroll-margin-top: 72px; }

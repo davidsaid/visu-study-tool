@@ -182,6 +182,28 @@ const SCENARIOS = {
     report({ scenario: 'credits', compare, mock });
   },
   'hard': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; win.VISU_STORE.save(); await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="3"]'); await click('#startbtn'); await sleep(1500); },
+  /* From a mistake to the animal's card and back to the same question (button, then browser back). */
+  'cardlink': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common');
+    await answerTyped('Milano negro');
+    const sessBefore = App().sessionState(), iBefore = sessBefore.i;
+    const links = [...doc.querySelectorAll('.session-wrap a[href="#ficha-milvus_milvus"]')].length;
+    const nameLink = !!doc.querySelector('.twoup .correct .vern a[href="#ficha-milvus_milvus"]');
+    await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(250);
+    const card = { onCard: location.hash === '' && doc.location.hash === '#ficha-milvus_milvus', back: !!doc.querySelector('.back-to-practice'),
+      title: (doc.querySelector('.plate h1, .plate h2') || {}).textContent };
+    await click('.back-to-practice'); await sleep(250);
+    const s1 = App().sessionState();
+    const viaButton = { sameSession: s1 === sessBefore, sameItem: s1.i === iBefore, stillFeedback: !!doc.querySelector('.mistake-head') };
+    await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(250);
+    win.history.back(); await sleep(400);
+    const s2 = App().sessionState();
+    const viaBrowserBack = { sameSession: s2 === sessBefore, sameItem: s2.i === iBefore, stillFeedback: !!doc.querySelector('.mistake-head') };
+    await go('hoy'); await go('ficha-lynx_pardinus');
+    const noBackLater = !doc.querySelector('.back-to-practice');
+    report({ scenario: 'cardlink', links, nameLink, card, viaButton, viaBrowserBack, noBackLater });
+  },
+  'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },
   'badges': async () => { seedStorage(seen); await open('hoy'); await playSession(3, ['right', 'right', 'right']); await go('insignias'); },

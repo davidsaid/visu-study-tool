@@ -58,7 +58,7 @@ function comparePlate(yours, correct, idx, yoursIdx) {
   const at = id => (id === correct ? idx || 0 : yoursIdx || 0) % Math.max(1, App.photosOf(id).length);
   const fig = (id, cls, tag) => `<figure class="${cls}"><div class="lbl"><span>${tag}</span><span>${L('progreso', 'progress')} ${pct(statsOf(id).meter)}</span></div>
     ${App.photoBox(id, { alt: App.spName(id), idx: at(id) })}
-    <figcaption><div class="vern">${esc(App.sp(id).common_es)}</div><div class="bin">${binHL(App.sp(id).binomial, App.sp(cls === 'yours' ? correct : yours).binomial, cls === 'yours' ? 'hl-bad' : 'hl-good')}</div>
+    <figcaption><div class="vern"><a href="#${esc(App.routeFor(id))}">${esc(App.sp(id).common_es)}</a></div><div class="bin">${binHL(App.sp(id).binomial, App.sp(cls === 'yours' ? correct : yours).binomial, cls === 'yours' ? 'hl-bad' : 'hl-good')}</div>
     <div class="tiny muted">${esc(App.sp(id).order)} · ${esc(App.sp(id).class)}</div>${App.credit(App.photosOf(id)[at(id)])}</figcaption></figure>`;
   const tip = pairTip(yours, correct), split = E.lca(M(), yours, correct);
   return `<div class="twoup">${fig(yours, 'yours', L('Tu respuesta', 'Your answer'))}${fig(correct, 'correct', L('Respuesta correcta', 'Correct answer'))}</div>
@@ -365,7 +365,7 @@ function feedbackHTML(it) {
   if (r.kind === 'wrong_species' && r.with && App.sp(r.with[0])) {
     const verb = sess.mc ? L('Has elegido', 'You picked') : L('Has escrito', 'You wrote');
     return `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Otra especie', 'Another species')}</p><h1>${verb} ${sci ? `<i>${esc(given)}</i>` : esc(given)}; ${L('era', 'it was')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}</h1></div>
-      ${comparePlate(r.with[0], it.sp, sess.photoIdx)}${call}<div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(E.lca(M(), r.with[0], it.sp) || it.sp))}">${L('Comparar en el árbol', 'Compare in the tree')}</a></div></div>`;
+      ${comparePlate(r.with[0], it.sp, sess.photoIdx)}${call}<div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(it.sp))}">${L('Abrir ficha', 'Open card')}</a><a class="btn big" href="#${esc(App.routeFor(E.lca(M(), r.with[0], it.sp) || it.sp))}">${L('Comparar en el árbol', 'Compare in the tree')}</a></div></div>`;
   }
   const g = (M().content.groups || {})[`order:${s.order}`];
   return `<div role="alert"><div class="mistake-head"><p class="eyebrow">${L('Fallo', 'Miss')}</p><h1>${given ? `${L('Respondiste', 'You answered')} ${sci ? `<i>${esc(given)}</i>` : esc(given)}; ${L('es', 'it is')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}` : `${L('Es', 'It is')} ${sci ? `<i>${esc(ans)}</i>` : esc(ans)}`}</h1></div>
@@ -511,7 +511,7 @@ V.cual = function () {
   if (rsess.phase === 'ask' && rsess.picked) body += confBlock(rsess.conf, true);
   const last = rsess.i === deck.length - 1;
   const nextBtn = `<button class="btn primary big" id="revnext">${last ? L('Terminar', 'Finish') : L('Siguiente', 'Next')}</button>`;
-  if (rev && !wrong) body += `<div class="reveal-ok" role="status"><p class="eyebrow" style="color:var(--ok)">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2>${App.credit(App.photosOf(t)[rsess.photo[t] || 0])}<p class="small">${L('«¿Cuál es?» es un entrenamiento de reconocimiento: queda anotado, pero no programa repasos.', '“Which one is it?” trains recognition: it is logged but schedules no reviews.')}</p><div class="actions">${nextBtn}</div></div>`;
+  if (rev && !wrong) body += `<div class="reveal-ok" role="status"><p class="eyebrow" style="color:var(--ok)">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2>${App.credit(App.photosOf(t)[rsess.photo[t] || 0])}<p class="small">${L('«¿Cuál es?» es un entrenamiento de reconocimiento: queda anotado, pero no programa repasos.', '“Which one is it?” trains recognition: it is logged but schedules no reviews.')}</p><div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(t))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
   if (wrong) {
     const p = rsess.picked, split = E.lca(M(), p, t), sameG = E.answerFor(M(), p, 'genus') === E.answerFor(M(), t, 'genus');
     const ep = x => esc(E.answerFor(M(), x, 'species'));
