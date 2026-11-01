@@ -285,6 +285,17 @@ const SCENARIOS = {
     const sameScreen = !!doc.querySelector('.mistake-head') && doc.querySelector('.twoup figure') === figs[0];
     report({ scenario: 'comparecar', carousels: cars.filter(Boolean).length, flippedBoth, creditsFollow, sameScreen });
   },
+  /* The level picker describes "¿Cuál es?" levels (how close the other photos are), not typing levels. */
+  'nivelcual': async () => {
+    seedStorage(seen); await open('nivel'); await click('[data-game="cual"]');
+    const d = [...doc.querySelectorAll('[data-level] .d')].map(x => x.textContent);
+    const cards = /otras clases/.test(d[0]) && /misma clase/.test(d[1]) && /mismo orden/.test(d[2]);
+    const rule = /no programa repasos/.test((doc.querySelector('.note-box') || {}).textContent || '');
+    await click('[data-game="foto"]');
+    const back = /[Oo]pción múltiple|elige/i.test((doc.querySelector('[data-level="1"] .d') || {}).textContent || '') && !/otras clases/.test((doc.querySelector('[data-level="1"] .d') || {}).textContent || '');
+    report({ scenario: 'nivelcual', cards, rule, back, d });
+  },
+  'nivelcual-shot': async () => { seedStorage(seen); await open('nivel'); await click('[data-game="cual"]'); },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },

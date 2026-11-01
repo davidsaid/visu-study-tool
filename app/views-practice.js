@@ -170,6 +170,20 @@ function levelMock(k) {
   if (k === 2) return `<svg class="mock" viewBox="0 0 92 54" aria-hidden="true"><rect x="2" y="4" width="88" height="22" rx="5" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".7"/><text x="9" y="19" font-size="11" font-style="italic" fill="currentColor">Lynx par|</text><rect x="2" y="32" width="46" height="19" rx="9.5" fill="var(--gold-soft)" stroke="var(--gold)" stroke-dasharray="3 2"/><text x="11" y="45" font-size="10" font-weight="700" fill="var(--gold)">${L('Pista', 'Hint')}</text></svg>`;
   return `<svg class="mock" viewBox="0 0 92 54" aria-hidden="true"><rect x="2" y="14" width="88" height="24" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><text x="9" y="30" font-size="11" font-style="italic" fill="currentColor">Lynx pardinus</text></svg>`;
 }
+/* What each level means in "¿Cuál es?": how close the other three photos are in the tree. Shown on the level
+   picker and in the game. */
+const revLevelDesc = k => ({
+  1: L('Las otras fotos son de otras clases. Puedes mostrar u ocultar el nombre vulgar.', 'The other photos are from other classes. You can show or hide the common name.'),
+  2: L('Las otras fotos son de la misma clase, pero de otro orden.', 'The other photos are from the same class, but another order.'),
+  3: L('Las otras fotos son del mismo orden o del mismo género (o lo más cercano que haya).', 'The other photos are from the same order or genus (or the closest available).')
+}[k]);
+const REV_NOTE = () => L('«¿Cuál es?» entrena el reconocimiento: queda anotado, pero no programa repasos ni cuenta para «dominada».', '“Which one is it?” trains recognition: it is logged but schedules no reviews and doesn’t count toward “mastered”.');
+function revAside(inGame) {
+  return `<section class="card"><p class="eyebrow">${L('Cómo se eligen las otras fotos', 'How the other photos are chosen')}</p>
+    <p class="small">${L('Por la distancia en el árbol: cuanto más difícil el nivel, más cerca están las opciones.', 'By distance in the tree: the harder the level, the closer the options.')}</p>
+    <ul class="small" style="padding-left:1.1rem">${[1, 2, 3].map(k => `<li><b>${I.lvName(k)}</b>: ${revLevelDesc(k)}</li>`).join('')}</ul>
+    <p class="small muted">${L('Solo salen especies con foto.', 'Only species with photos appear.')}</p>${inGame ? `<a class="btn" href="#nivel">${L('Cambiar de nivel', 'Change level')}</a>` : ''}</section>`;
+}
 const gameIcon = ic => ic.replace('<svg', '<svg class="mock" style="width:44px;height:44px;color:var(--accent)"');
 V.nivel = function () {
   App.focusMode(false);
@@ -177,20 +191,20 @@ V.nivel = function () {
   const games = [['foto', L('Foto → nombre', 'Photo → name'), L('Ves una foto y respondes una casilla.', 'See a photo and answer one box.'), ICON.photoName],
     ['cual', L('¿Cuál es?', 'Which one is it?'), L('Ves un nombre y eliges la foto.', 'See a name and pick the photo.'), ICON.namePhoto],
     ['hoja', L('Hoja de examen', 'Exam sheet'), L('Las cinco casillas a la vez, siempre sin ayudas.', 'All five boxes at once, always without help.'), ICON.sheet]];
-  const sheet = set.game === 'hoja';
+  const sheet = set.game === 'hoja', rev = set.game === 'cual';
   App.main().innerHTML = `<div class="session-wrap"><p class="eyebrow">${L('Antes de empezar', 'Before you start')}</p><h1>${L('¿Cómo quieres practicar hoy?', 'How do you want to practise today?')}</h1>
     ${scope ? `<div class="note-box info">${L('Practicas solo', 'Practising only')} <b>${esc(App.label(scope))}</b> (${E.scopePool(M(), scope).length} ${L('especies con foto', 'species with photos')}). <button class="linkbtn" id="clearscope">${L('Practicar todo', 'Practise everything')}</button></div>` : ''}
     <h2 style="margin-top:1rem">${L('1. Juego', '1. Game')}</h2>
     <div class="seg-cards" role="group" aria-label="${L('Juego', 'Game')}">${games.map(([k, t, d, ic]) => `<button class="pick" data-game="${k}" aria-pressed="${set.game === k}"><span class="t">${t}</span><span class="d">${d}</span>${gameIcon(ic)}</button>`).join('')}</div>
     <h2>${L('2. Nivel', '2. Level')}</h2>
-    <div class="seg-cards" role="group" aria-label="${L('Nivel', 'Level')}" ${sheet ? 'aria-disabled="true" style="opacity:.55"' : ''}>${[1, 2, 3].map(k => `<button class="pick" data-level="${k}" aria-pressed="${set.level === k}" ${sheet ? 'disabled' : ''}><span class="t">${App.lvDots(k)}${I.lvName(k)}</span><span class="d">${I.lvDes(k)}</span>${levelMock(k)}</button>`).join('')}</div>
-    <div class="note-box"><b>${L('Regla', 'Rule')}:</b> ${I.MASTERY_RULE()}</div>
-    <div class="note-box info">${L('En todos los niveles, antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Así repasas antes lo que creías saber y no sabías.', 'On every level, before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. That way you revisit sooner what you thought you knew but didn’t.')}</div>
+    <div class="seg-cards" role="group" aria-label="${L('Nivel', 'Level')}" ${sheet ? 'aria-disabled="true" style="opacity:.55"' : ''}>${[1, 2, 3].map(k => `<button class="pick" data-level="${k}" aria-pressed="${set.level === k}" ${sheet ? 'disabled' : ''}><span class="t">${App.lvDots(k)}${I.lvName(k)}</span><span class="d">${rev ? revLevelDesc(k) : I.lvDes(k)}</span>${rev ? levelMock(1) : levelMock(k)}</button>`).join('')}</div>
+    <div class="note-box"><b>${L('Regla', 'Rule')}:</b> ${rev ? REV_NOTE() : I.MASTERY_RULE()}</div>
+    <div class="note-box info">${rev ? L('Antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Queda anotado junto a tu respuesta.', 'Before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. It is logged with your answer.') : L('En todos los niveles, antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Así repasas antes lo que creías saber y no sabías.', 'On every level, before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. That way you revisit sooner what you thought you knew but didn’t.')}</div>
     <a class="btn primary big" id="startbtn" href="${set.game === 'cual' ? '#cual-es' : sheet ? '#hoja' : '#sesion'}">${sheet ? L('Empezar la hoja de examen', 'Start the exam sheet') : L(`Empezar en ${I.lvName(set.level)}`, `Start on ${I.lvName(set.level)}`)}</a></div><div id="aside-m"></div>`;
-  App.aside().innerHTML = App.DESK.matches ? `<section class="card"><p class="eyebrow">${L('Qué entrena cada nivel', 'What each level trains')}</p>
+  App.aside().innerHTML = !App.DESK.matches ? '' : rev ? revAside(false) : `<section class="card"><p class="eyebrow">${L('Qué entrena cada nivel', 'What each level trains')}</p>
     <p class="small"><b>${I.lvName(1)}</b>: ${L('reconocer. Ideal para especies nuevas.', 'recognition. Good for new species.')}</p>
     <p class="small"><b>${I.lvName(2)}</b>: ${L('recordar y escribir, con red. Cada pista que pides queda anotada.', 'recall and spelling, with a safety net. Every hint you ask for is recorded.')}</p>
-    <p class="small"><b>${I.lvName(3)}</b>: ${L('lo mismo que pide el examen: foto y respuesta escrita, y la ortografía cuenta.', 'exactly what the exam asks: a photo and a typed answer, and spelling counts.')}</p></section>` : '';
+    <p class="small"><b>${I.lvName(3)}</b>: ${L('lo mismo que pide el examen: foto y respuesta escrita, y la ortografía cuenta.', 'exactly what the exam asks: a photo and a typed answer, and spelling counts.')}</p></section>`;
   App.main().querySelectorAll('[data-game]').forEach(b => b.onclick = () => { set.game = b.dataset.game; Store.save(); V.nivel(); App.focusFirst(`[data-game="${set.game}"]`); });
   App.main().querySelectorAll('[data-level]').forEach(b => b.onclick = () => { set.level = +b.dataset.level; Store.save(); V.nivel(); App.focusFirst(`[data-level="${set.level}"]`); });
   const cs = document.getElementById('clearscope'); if (cs) cs.onclick = () => { P().ui.scope = null; Store.save(); V.nivel(); };
@@ -489,7 +503,7 @@ V.cual = function () {
   const locked = rsess.phase !== 'ask', rev = rsess.phase === 'reveal';
   const wrong = rev && rsess.picked !== t;
   const easy = rsess.level === 1, showCommon = easy && SET().revShowCommon;
-  const distNote = { 1: L('Las otras fotos son de otras clases.', 'The other photos are from other classes.'), 2: L('Las otras fotos son de la misma clase, pero de otro orden.', 'The other photos are from the same class, but another order.'), 3: L('Las otras fotos son del mismo orden o del mismo género (o lo más cercano que haya).', 'The other photos are from the same order or genus (or the closest available).') }[rsess.level];
+  const distNote = revLevelDesc(rsess.level);
   let body = `<div class="rev-prompt"><p class="eyebrow">${L('¿Cuál es?', 'Which one is it?')}</p><div class="binom">${esc(s.binomial)}</div>${showCommon || rev ? `<div class="vern">${esc(s.common_es)}</div>` : ''}
     ${easy && !rev ? `<label class="vern-toggle"><input type="checkbox" id="vernchk" ${SET().revShowCommon ? 'checked' : ''}> ${L('Mostrar el nombre vulgar (más fácil)', 'Show the common name (easier)')}</label>` : ''}</div>
     <div class="row" style="margin-bottom:.6rem">${levelPill(rsess.level)}<span class="tiny muted">${distNote}</span></div>`;
@@ -505,7 +519,7 @@ V.cual = function () {
   if (rsess.phase === 'ask' && rsess.picked) body += confBlock(rsess.conf, true);
   const last = rsess.i === deck.length - 1;
   const nextBtn = `<button class="btn primary big" id="revnext">${last ? L('Terminar', 'Finish') : L('Siguiente', 'Next')}</button>`;
-  if (rev && !wrong) body += `<div class="reveal-ok" role="status"><p class="eyebrow" style="color:var(--ok)">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2><p class="small">${L('«¿Cuál es?» es un entrenamiento de reconocimiento: queda anotado, pero no programa repasos.', '“Which one is it?” trains recognition: it is logged but schedules no reviews.')}</p><div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(t))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
+  if (rev && !wrong) body += `<div class="reveal-ok" role="status"><p class="eyebrow" style="color:var(--ok)">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2><p class="small">${REV_NOTE()}</p><div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(t))}">${L('Abrir ficha', 'Open card')}</a></div></div>`;
   if (wrong) {
     const p = rsess.picked, split = E.lca(M(), p, t), sameG = E.answerFor(M(), p, 'genus') === E.answerFor(M(), t, 'genus');
     const ep = x => esc(E.answerFor(M(), x, 'species'));
@@ -515,10 +529,7 @@ V.cual = function () {
       <div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(split))}">${L('Ver el grupo en el árbol', 'See the group in the tree')}</a></div></div>`;
   }
   App.main().innerHTML = `<div class="session-wrap">${sessTop(prog, deck.length, rsess.i)}${body}</div><div id="aside-m"></div>`;
-  App.aside().innerHTML = App.DESK.matches ? `<section class="card"><p class="eyebrow">${L('Cómo se eligen las otras fotos', 'How the other photos are chosen')}</p>
-    <p class="small">${L('Por la distancia en el árbol: cuanto más difícil el nivel, más cerca están las opciones.', 'By distance in the tree: the harder the level, the closer the options.')}</p>
-    <ul class="small" style="padding-left:1.1rem"><li><b>${I.lvName(1)}</b>: ${L('otras clases; puedes mostrar u ocultar el nombre vulgar.', 'other classes; you can show or hide the common name.')}</li><li><b>${I.lvName(2)}</b>: ${L('misma clase, otro orden.', 'same class, another order.')}</li><li><b>${I.lvName(3)}</b>: ${L('mismo orden o mismo género.', 'same order or same genus.')}</li></ul>
-    <p class="small muted">${L('Solo salen especies con foto.', 'Only species with photos appear.')}</p><a class="btn" href="#nivel">${L('Cambiar de nivel', 'Change level')}</a></section>` : '';
+  App.aside().innerHTML = App.DESK.matches ? revAside(true) : '';
   const main = App.main();
   opts.forEach((o, i) => { App.carouselStep[`rev-${i}`] = k => { rsess.photo[o] = k; }; });
   main.querySelectorAll('[data-pick]').forEach(b => b.onclick = () => { if (Date.now() - (App.lastSwipe || 0) < 500) return; rsess.picked = b.dataset.pick; V.cual(); App.focusFirst(`[data-pick="${CSS.escape(rsess.picked)}"]`); });
