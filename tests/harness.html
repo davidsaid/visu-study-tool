@@ -381,6 +381,15 @@ const SCENARIOS = {
     r.errors = errors;
     report(Object.assign({ scenario: 'controls' }, r));
   },
+  /* A 'course' note names the other course's form and the answer the tool accepts, without "write what the bestiary says". */
+  'coursenote': async () => {
+    seedStorage(seen); await open('hoy');
+    App().M.species.milvus_milvus.corrections = [{ field: 'orden', bestiary_value: 'Accipitriformes', suggested_value: 'Falconiformes', confidence: 'course',
+      collection: 'vertebrados', source_url: 'https://example.org/', note: { es: 'Nota de prueba.', en: 'Test note.' } }];
+    await go('ficha-milvus_milvus');
+    const t = ($('.corrections') || {}).textContent || '';
+    report({ scenario: 'coursenote', names: /curso de «Vertebrados» se escribe\s*Falconiformes/.test(t), accepts: /acepta «Accipitriformes»/.test(t), noRule: !/lo que dice el bestiario/.test(t) });
+  },
   'cardlink-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro'); await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(1500); },
   'como': async () => { seedStorage(seen); await open('como-funciona'); },
   'ajustes': async () => { seedStorage(seen); await open('ajustes'); },

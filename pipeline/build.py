@@ -23,7 +23,7 @@ from sources import SOURCES
 
 CONTENT = ROOT / "content"
 NODE_KINDS = ("deep", "clade", "class", "order", "infraorder", "grade")
-CONFIDENCE = ("certain", "suggested", "contested")
+CONFIDENCE = ("certain", "suggested", "contested", "course")   # course: another collection's course writes it differently
 STATUS = ("pending", "accepted", "rejected")
 VIDEO_STATUS = {"ok": "ok", "link_only": "link_only", "broken": "broken", "unknown": "link_only"}
 
@@ -69,9 +69,9 @@ def make_classifier(verdicts, binomials):
     return classify
 
 
-def load_corrections(ids, warnings):
+def load_corrections(ids, warnings, collection_ids=()):
     cols = ["species_id", "field", "bestiary_value", "suggested_value", "confidence", "source_url",
-            "note_es", "note_en", "status"]
+            "note_es", "note_en", "status", "collection"]
     rows = read_csv(CURATION / "corrections.csv", cols)
     out = []
     for r in rows:
@@ -83,6 +83,9 @@ def load_corrections(ids, warnings):
         if not r["field"]:
             raise BuildError(f"{where}: field is empty")
         check_url(r["source_url"], f"{where}, source_url")
+        if r["confidence"] == "course" and r["collection"] not in collection_ids:
+            raise BuildError(f"{where}: a 'course' note needs the id of the collection whose course writes it differently "
+                             f"(one of {sorted(collection_ids)}), not '{r['collection']}'")
         if r["species_id"] and r["species_id"] not in ids:
             warnings.add(f"{where}: species '{r['species_id']}' is in no collection; row ignored")
             continue
@@ -93,7 +96,8 @@ def load_corrections(ids, warnings):
 def correction(r):
     return {"species_id": r["species_id"] or None, "field": r["field"], "bestiary_value": r["bestiary_value"],
             "suggested_value": r["suggested_value"] or None, "confidence": r["confidence"],
-            "source_url": r["source_url"] or None, "note": {"es": r["note_es"], "en": r["note_en"]}}
+            "source_url": r["source_url"] or None, "note": {"es": r["note_es"], "en": r["note_en"]},
+            "collection": r["collection"] or None}
 
 
 # --------------------------------------------------------------------------- tree
@@ -565,7 +569,7 @@ def build(out=ROOT, collections_dir=COLLECTIONS, snapshot_dir=SNAPSHOT):
                          f"(e.g. {missing[:3]}). Run pipeline/refresh.py.")
     classify = make_classifier(load_synonym_verdicts(), {s["binomial"] for s in all_sp.values()})
     shared_warnings = Warnings()
-    corrections = load_corrections(set(all_sp), shared_warnings)
+    corrections = load_corrections(set(all_sp), shared_warnings, {c["id"] for c in collections})
     clade_rows = read_clades()
 
     retrieved = snap["meta"]["retrieved"]

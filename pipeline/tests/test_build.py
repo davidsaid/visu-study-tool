@@ -384,6 +384,28 @@ class LinkStatus(unittest.TestCase):
                 parse_videos(p, {"bubo_bubo"})
 
 
+class CourseNotes(unittest.TestCase):
+    """A 'course' correction says another collection's course writes a name differently; it must name that collection."""
+    HEADER = "species_id,field,bestiary_value,suggested_value,confidence,source_url,note_es,note_en,status,collection\n"
+
+    def load(self, row, collections=("vertebrados",)):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "corrections.csv").write_text(self.HEADER + row + "\n", encoding="utf-8")
+            saved, build.CURATION = build.CURATION, Path(d)
+            try:
+                return build.load_corrections({"milvus_milvus"}, build.Warnings(), set(collections))
+            finally:
+                build.CURATION = saved
+
+    def test_course_note_keeps_its_collection(self):
+        rows = self.load("milvus_milvus,orden,Accipitriformes,Falconiformes,course,https://example.org/,n,n,accepted,vertebrados")
+        self.assertEqual(build.correction(rows[0])["collection"], "vertebrados")
+
+    def test_course_note_needs_a_known_collection(self):
+        with self.assertRaisesRegex(BuildError, "collection"):
+            self.load("milvus_milvus,orden,Accipitriformes,Falconiformes,course,https://example.org/,n,n,accepted,artropodos")
+
+
 class LoudFailure(unittest.TestCase):
     def parse(self, text):
         with tempfile.TemporaryDirectory() as d:

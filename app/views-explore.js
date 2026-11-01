@@ -164,12 +164,18 @@ const FIELD_LABEL = { class: ['Clase', 'Class'], order: ['Orden', 'Order'], genu
 function correctionsHTML(list) {
   if (!Array.isArray(list) || !list.length) return '';
   const conf = { certain: L('segura', 'certain'), suggested: L('sugerida', 'suggested'), contested: L('discutida', 'contested') };
-  const item = c => `<div class="correction">
-    <p><b>${esc(FIELD_LABEL[c.field] ? L(...FIELD_LABEL[c.field]) : c.field)}</b>: ${L('el bestiario dice', 'the bestiary says')} <b>${esc(c.bestiary_value)}</b>;
-      ${L('autoridad actual', 'current authority')}: <b>${esc(c.suggested_value)}</b>${c.confidence ? ` ${tag('', esc(conf[c.confidence] || c.confidence))}` : ''}</p>
-    ${c.note ? `<p class="small">${esc(I.t(c.note))}</p>` : ''}
-    <p class="tiny muted">${L('En el examen se escribe lo que dice el bestiario.', 'In the exam, write what the bestiary says.')}
-      ${I.url(c.source_url) ? App.extLink(c.source_url, L('Fuente ↗', 'Source ↗')) : ''}</p></div>`;
+  /* A 'course' note: another collection's course writes this differently. The answer stays the shared one,
+     so the card says which one the tool accepts instead of telling the student what to write. */
+  const item = c => {
+    const field = `<b>${esc(FIELD_LABEL[c.field] ? L(...FIELD_LABEL[c.field]) : c.field)}</b>`, was = esc(c.bestiary_value), now = esc(c.suggested_value);
+    const course = c.confidence === 'course', where = esc(App.collectionName(c.collection));
+    const head = course ? `${field}: ${L(`en el curso de «${where}» se escribe`, `the “${where}” course writes`)} <b>${now}</b>`
+      : `${field}: ${L('el bestiario dice', 'the bestiary says')} <b>${was}</b>; ${L('autoridad actual', 'current authority')}: <b>${now}</b>${c.confidence ? ` ${tag('', esc(conf[c.confidence] || c.confidence))}` : ''}`;
+    const rule = course ? L(`Esta herramienta acepta «${was}», la respuesta común a todas las colecciones.`, `This tool accepts “${was}”, the answer shared by every collection.`)
+      : L('En el examen se escribe lo que dice el bestiario.', 'In the exam, write what the bestiary says.');
+    return `<div class="correction"><p>${head}</p>${c.note && I.t(c.note) ? `<p class="small">${esc(I.t(c.note))}</p>` : ''}
+      <p class="tiny muted">${rule} ${I.url(c.source_url) ? App.extLink(c.source_url, L('Fuente ↗', 'Source ↗')) : ''}</p></div>`;
+  };
   return `<section class="corrections"><h2 class="sec">${L('Notas sobre el bestiario', 'Notes on the bestiary')}</h2>${list.map(item).join('')}</section>`;
 }
 /* "Report an error": a prefilled GitHub issue. A plain link: nothing is sent until she submits it on GitHub. */

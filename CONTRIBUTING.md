@@ -92,8 +92,9 @@ not to the bestiary. Improving a species' card improves it for every bestiary th
 **A species has one set of exam answers.** Every bestiary that includes a species must agree on
 its class, order, scientific name and common name, and the build stops if they don't. If your
 course names something differently from what is already here, keep the existing answer and add a
-row to `curation/corrections.csv` explaining the other name (`confidence: contested`, a source,
-notes in Spanish and English, `status: accepted`). Once merged, the card shows both.
+row to `curation/corrections.csv` with your course's name for it: `confidence: course`, `collection:` your
+collection's id, a source, notes in Spanish and English, and `status: accepted`. Once merged, the
+card says that your course writes it that way and which answer the tool accepts.
 
 **Your own site.** You can also copy this repository on GitHub (fork it), switch on GitHub Pages
 and edit the collections, and you'll have your own site with no server. Improvements to shared
@@ -200,5 +201,5 @@ Paste this into your agent along with your request:
 - **Bestiarios:** cualquiera puede añadir uno en `collections/<id>/` (ver
   [`COLECCIONES.md`](COLECCIONES.md)). Cada bestiario guarda su propio progreso; las fotos, los
   textos y los datos de cada especie son comunes. Si tu curso nombra una especie de otra forma,
-  mantén la respuesta que ya existe y añade una nota en `curation/corrections.csv`.
+  mantén la respuesta que ya existe y añade una nota de tipo `course` en `curation/corrections.csv`.
 - Publica solo lo que tienes derecho a publicar: tu propia lista, no el documento de otra persona.

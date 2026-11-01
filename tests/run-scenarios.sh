@@ -27,5 +27,6 @@ run "$here" comparecar '"carousels": 2' '"flippedBoth": true' '"creditsFollow": 
 run "$here" nivelcual '"cards": true' '"rule": true' '"back": true'
 run "$here" zoom '"opened": true' '"synced": true' '"creditInZoom": true' '"keys": true' '"closed": true' '"quizAnon": true' '"cualZoom": true'
 run "$here" controls '"study": true' '"full": true' '"deep": true' '"mid": true' '"gal": true' '"citeRef": true' '"citeClose": true' '"notice": true' '"practise": true' '"game": true' '"level": true' '"clearscope": true' '"theme": true' '"lv": true' '"skillOff": true' '"num": true' '"wipeArmed": true' '"lang": true' '"hint": true' '"dunno": true' '"next": true' '"typedConf": true' '"confFocus": true' '"check": true' '"sheet": true' '"vern": true' '"cualConf": true' '"cualCheck": true' '"cualNext": true' '"errors": 0'
+run "$here" coursenote '"names": true' '"accepts": true' '"noRule": true'
 run "$site" collections '"importOtherRefused": true' '"key": "visu-progress-v1:artropodos-prueba"' '"log": 1'
 exit $fail
