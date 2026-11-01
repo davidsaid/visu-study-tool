@@ -190,7 +190,7 @@ function speciesCard(id) {
 }
 function badgeFor(id) {
   const n = M().nodes[id], k = E.speciesUnder(M(), id).length;
-  if (n.rank === 'class' && !n.virtual) return { name: L(`Clase ${n.scientific}`, `Class ${n.scientific}`) };
+  if (n.rank === 'class') return { name: L(`Clase ${n.scientific}`, `Class ${n.scientific}`) };
   if (n.rank === 'order' && k >= 3) return { name: L(`Dominio de ${n.scientific}`, `Mastery of ${n.scientific}`) };
   return null;
 }
@@ -283,7 +283,7 @@ V.insignias = function () {
     <section class="card"><h2>${L('Hábitos', 'Habits')}</h2><div class="medals">${habits.map(medal).join('')}</div></section>
     <section class="card"><h2>${L('Ramas del árbol', 'Tree branches')}</h2><p class="tiny muted">${L('Las clases y los órdenes con 3 especies o más.', 'Classes, and orders with 3 or more species.')}</p>
       <div class="medals">${branch.map(medal).join('')}</div>
-      <p class="tiny muted">* ${L('Orden de la clase Reptilia del temario (grado parafilético).', 'Order of the syllabus class Reptilia (paraphyletic grade).')}</p></section>
+      <p class="tiny muted">* ${L('La clase Reptilia del temario y sus órdenes: un grado parafilético, no un clado.', 'The syllabus class Reptilia and its orders: a paraphyletic grade, not a clade.')}</p></section>
     <section class="card"><h2>${L('Conseguidas', 'Earned')}</h2>${earnedIds.length ? `<div class="earned-list">${earnedIds.map(id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44)}<b>${esc(App.badgeName(id))}</b><span class="tiny muted">${esc(I.fmtDate(earned[id].at))}</span></div>`).join('')}</div>` : `<p class="small muted">${L('Todavía ninguna. La primera llega al terminar tu primera sesión.', 'None yet. The first one comes when you finish your first session.')}</p>`}</section><div id="aside-m"></div>`;
   App.asideHost().innerHTML = `<section class="card"><p class="eyebrow">${L('Cómo se ganan', 'How they’re earned')}</p><p class="small">${L('Una especie está dominada cuando sus casillas del examen están dominadas: FSRS predice que las recuerdas con un 90 % de probabilidad y su estabilidad pasa de 7 días.', 'A species is mastered when its exam boxes are: FSRS predicts you recall them with 90% probability and their stability exceeds 7 days.')}</p><p class="small">${I.MASTERY_RULE()}</p><p class="small">${L('Las insignias ganadas no se pierden; si el dominio baja, piden un repaso.', 'Earned badges are never taken away; if mastery drops, they ask for a review.')}</p></section>`;
 };

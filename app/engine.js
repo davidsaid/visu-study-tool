@@ -55,7 +55,7 @@ function buildModel(bestiary, media, content) {
 
 /* The list's classes, in tree order, as roots for the explorer's study mode. A class that is not a clade (the
    grade Reptilia) gets a virtual node whose children are the largest groups holding only its species. It has
-   no parent, so paths, kinship and badges still follow the real tree. */
+   no parent, so paths and kinship still follow the real tree; like every class, it has a badge. */
 function addClassRoots(M) {
   const classes = [];
   M.order.forEach(id => { const c = M.species[id].class; if (c && !classes.includes(c)) classes.push(c); });
@@ -444,7 +444,7 @@ function badgeDefs(M) {
   const defs = [];
   Object.keys(M.nodes).forEach(id => {
     const n = M.nodes[id];
-    if (n.rank === 'class' && !n.virtual) defs.push({ id, kind: 'class', node: id });
+    if (n.rank === 'class') defs.push({ id, kind: 'class', node: id });
   });
   Object.keys(M.nodes).forEach(id => {
     const n = M.nodes[id];
