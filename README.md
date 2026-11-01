@@ -81,6 +81,12 @@ edit or add `collections/<id>/species.csv` on GitHub and open a pull request. Th
 fetch the new species' data and photos, and the site updates when the pull request is
 merged.
 
+## Contributing
+
+Pull requests are welcome, including ones made with an AI coding agent. Read
+**[CONTRIBUTING.md](CONTRIBUTING.md)** first: what to change, the sources and licences every
+contribution needs, and the tests it must pass.
+
 ## For developers
 
 | Path | Contents |
