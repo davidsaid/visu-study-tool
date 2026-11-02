@@ -160,13 +160,13 @@ V.hoy = function () {
     <a class="btn primary big" href="#nivel">${L('Elegir nivel y empezar', 'Choose a level and start')}</a>`;
   else if (!total) sessionBody = `<h2 id="sesh">${L('Nada pendiente ahora', 'Nothing due right now')}</h2>
     <p class="small">${plan.dueToday ? L(`${plan.dueToday} repasos vuelven más tarde hoy.`, `${plan.dueToday} reviews come back later today.`) : L('Has hecho los repasos y las nuevas de hoy.',
-        'You’ve done today’s reviews and new cards.')} ${L('Puedes repasar igualmente.', 'You can review anyway.')}</p>
+        'You’ve done today’s reviews and new cards.')} ${L('Puedes repasar igualmente.', 'You can review anyway.')} <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>
     <a class="btn primary big" href="#sesion-repaso">${L('Repasar igualmente', 'Review anyway')}</a>`;
   else sessionBody = `<h2 id="sesh">${total} ${L('tarjetas', 'cards')} · ≈ ${mins} min</h2>
     <div class="split" aria-hidden="true"><span class="due" style="width:${dueW}%"></span><span class="new" style="width:${100 - dueW}%"></span></div>
     <div class="legend"><span><i class="dot due"></i>${Math.min(plan.dueNow, total)} ${L('repasos pendientes', 'reviews due')}</span><span><i class="dot new"></i>${Math.max(0, total - plan.dueNow)} ${L('nuevas', 'new')}</span></div>
     <a class="btn primary big" href="#nivel">${L('Elegir nivel y empezar', 'Choose a level and start')}</a>
-    <p class="lvl-now">${L('Último nivel', 'Last level')}: <b>${I.lvName(set.level)}</b> · <a href="#sesion">${L('repetir sin preguntar', 'repeat without asking')}</a></p>`;
+    <p class="lvl-now">${L('Último nivel', 'Last level')}: <b>${I.lvName(set.level)}</b> · <a href="#sesion">${L('repetir sin preguntar', 'repeat without asking')}</a> · <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>`;
   App.main().innerHTML = `
   <div class="today-head"><div><p class="eyebrow">${esc(dateStr)}</p><h1>${fresh ? L('Te damos la bienvenida a la Herramienta de estudio para VISU',
       'Welcome to the VISU Study Tool') : L('Esto es lo que toca hoy', 'Here’s today’s plan')}</h1></div>
@@ -415,7 +415,7 @@ function emptySession() {
   App.main().innerHTML = `<div class="session-wrap">${sessTop(0, 0, 0)}<h1>${L('No hay tarjetas para esta sesión', 'No cards for this session')}</h1>
     <p>${M().withPhotos.length ? L('Ya has hecho los repasos y las nuevas de hoy. Puedes repasar igualmente o cambiar de grupo.',
         'You’ve done today’s reviews and new cards. You can review anyway or change the group.') : L('Todavía no hay ninguna especie con foto.',
-        'There are no species with photos yet.')}</p>
+        'There are no species with photos yet.')} <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>
     <div class="actions"><a class="btn primary big" href="#${sess && sess.game === 'grupo' ? 'grupos-repaso' : 'sesion-repaso'}">${L('Repasar igualmente', 'Review anyway')}</a>
       <a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div></div><div id="aside-m"></div>`;
 }

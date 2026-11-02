@@ -381,6 +381,19 @@ const SCENARIOS = {
     const groups = gs.game === 'grupo' && gs.items.length > 0 && gs.items.every(x => birds.has(x.sp));
     report({ scenario: 'vistazo-quota', species, groups });
   },
+  /* "Cómo funciona tu plan de estudio": its own route scrolls to the section, and Today, Settings and an empty session link to it. */
+  'plan': async () => {
+    seedStorage(Object.assign({}, seen, { log: [{ ts: Date.now() - 864e5, card: 'milvus_milvus:class', game: 'foto', level: 1, kind: 'right' }] })); await open('hoy');
+    const today = !!$('a[href="#como-funciona-plan"]');
+    await go('ajustes'); const settings = !!$('#set-newPerDay').closest('.switch-row').querySelector('a[href="#como-funciona-plan"]');
+    await click('a[href="#como-funciona-plan"]'); await sleep(150);
+    const h = $('#plan'), section = !!h && /plan de estudio/.test(h.textContent) && /10 especies nuevas al día \(50 tarjetas\)/.test(h.parentNode.textContent);
+    const top = h.getBoundingClientRect().top, scrolled = win.scrollY > 200 && top > 40 && top < 120, tab = !!$('.tab[href="#como-funciona"][aria-current="page"]');
+    App().set().newPerDay = 1; App().set().level = 1; win.VISU_STORE.save();
+    const P = win.VISU_STORE.data; ['class', 'order', 'genus', 'species', 'common'].forEach(k => { P.cards['milvus_milvus:' + k] = { p: { first: Date.now(), due: Date.now() + 864e5 } }; });
+    await go('sesion'); const empty = !!$('.session-wrap a[href="#como-funciona-plan"]') && !$('[data-opt]');
+    report({ scenario: "plan", today, settings, section, scrolled, tab, empty });
+  },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
   'sobra': async () => {

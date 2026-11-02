@@ -75,7 +75,9 @@ is sent anywhere. That means:
   loads it back in any browser.
 - Each collection keeps its own progress, and its own copies.
 
-The website explains this in plain words on its **Cómo funciona / How it works** page.
+The website explains this in plain words on its **Cómo funciona / How it works** page, along with
+how the study plan works: the daily limit on new species, what comes back when, and a suggested path.
+Today, Settings and an empty session link straight to that section (`#como-funciona-plan`).
 
 ### Privacy
 

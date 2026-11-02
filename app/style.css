@@ -492,6 +492,7 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .how { max-width: 680px; }
 .how h1 { font-size: 1.8rem; }
 .how .lede { font-size: 1.1rem; }
+.how h2 { scroll-margin-top: 5rem; }   /* clear of the sticky top bar when a link jumps to a section */
 .how h2 { margin: 1.6rem 0 .5rem; font-size: 1.25rem; }
 .how ul, .how ol { padding-left: 1.2rem; }
 .how li { margin: .35rem 0; }

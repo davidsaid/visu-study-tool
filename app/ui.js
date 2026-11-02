@@ -272,6 +272,7 @@ const TABS = [['hoy', 'Hoy', 'Today'], ['explorar', 'Explorar', 'Explore'], ['in
 App.tabOf = r => {
   if (/^(nivel|sesion|hoja|cual-es|resumen|simulacro.*)$/.test(r)) return 'hoy';
   if (r === 'explorar' || r.startsWith('ficha-') || r.startsWith('grupo-')) return 'explorar';
+  if (r === 'como-funciona-plan') return 'como-funciona';
   return r;
 };
 App.backupState = () => { const r = I.relDays(Store.data.meta.lastBackup); return { r, nudge: r.d >= 7 && Store.data.log.length > 0 }; };

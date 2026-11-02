@@ -57,10 +57,11 @@ App.render = function (full) {
   else if (BYROUTE[r]) V.explore(BYROUTE[r], !full);
   else if (r === 'insignias') V.insignias();
   else if (r === 'ajustes') V.ajustes();
-  else if (r === 'como-funciona') V.como();
+  else if (r === 'como-funciona' || r === 'como-funciona-plan') V.como();
   else if (r === 'aviso') { V.hoy(); App.showNotice(); }
   else V.hoy();
   if (!BYROUTE[r] || full) window.scrollTo(0, 0);
+  if (r === 'como-funciona-plan') document.getElementById('plan').scrollIntoView();
 };
 
 window.addEventListener('hashchange', () => App.render(false));
