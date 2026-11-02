@@ -178,6 +178,11 @@ test('sessions', () => {
   ok('species without photos are never asked', E.buildSession(M, P, { now, skills, size: 99, force: true }).every(x => x.sp !== 'petromyzon_marinus'));
   const scoped = E.buildSession(M, E.emptyProgress(now), { now, skills, size: 50, scope: 'order:Carnivora', rng: E.rngFrom(3) });
   ok('group scope only asks that group', scoped.length && scoped.every(x => M.species[x.sp].order === 'Carnivora'));
+  const spent = E.emptyProgress(now); spent.settings.newPerDay = 1;
+  E.SKILLS.forEach(k => { spent.cards['milvus_milvus:' + k] = { p: { first: now, due: now + E.DAY } }; });
+  eq('with the day\'s new cards used up, a session has none', E.buildSession(M, spent, { now, skills, size: 50, scope: 'order:Carnivora' }).length, 0);
+  const intro = E.buildSession(M, spent, { now, skills, size: 50, scope: 'order:Carnivora', introduce: true });
+  ok('the check after a first look introduces the group anyway', intro.length && intro.every(x => M.species[x.sp].order === 'Carnivora'));
   const days = {}; [0, 1, 3, 4].forEach(d => { days[E.ymd(now - d * DAY)] = 1; });
   eq('streak forgives one missed day', E.streak(days, now), 4);
   days[E.ymd(now - 2 * DAY)] = 0; delete days[E.ymd(now - 4 * DAY)]; delete days[E.ymd(now - 3 * DAY)];

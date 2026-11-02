@@ -364,6 +364,23 @@ const SCENARIOS = {
     const orders = doc.querySelectorAll('.look-order .car').length >= 1 && App().lookState().slides.every(x => x.startsWith('order:'));
     report({ scenario: 'vistazo', suggested: !!suggested && /^#vistazo-order-/.test(suggested), button, first, second, check, unlocked, free, remembered, orders, n });
   },
+  /* The check after a first look shows that group even when today's new cards are used up (a long day of practice). */
+  'vistazo-quota': async () => {
+    seedStorage(seen); await open('hoy');
+    const P = win.VISU_STORE.data, later = Date.now() + 864e5;
+    P.settings.newPerDay = 1;
+    ['class', 'order', 'genus', 'species', 'common'].forEach(k => { P.cards['milvus_milvus:' + k] = { p: { first: Date.now(), due: later } }; });
+    P.cards['order:Accipitriformes:group'] = { p: { first: Date.now(), due: later } };
+    await go('vistazo-order-Strigiformes'); while ($('#looknext')) await click('#looknext');
+    await click('[data-lookcheck="foto"]'); await sleep(250);
+    const under = new Set(Eng().speciesUnder(App().M, 'order:Strigiformes')), ss = App().sessionState();
+    const species = ss.items.length > 0 && ss.items.every(x => under.has(x.sp)) && !!$('[data-opt]');
+    await go('vistazo-class-Aves'); while ($('#looknext')) await click('#looknext');
+    await click('[data-lookcheck="grupo"]'); await sleep(250);
+    const gs = App().sessionState(), birds = new Set(Eng().speciesUnder(App().M, 'class:Aves'));
+    const groups = gs.game === 'grupo' && gs.items.length > 0 && gs.items.every(x => birds.has(x.sp));
+    report({ scenario: 'vistazo-quota', species, groups });
+  },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
   'sobra': async () => {

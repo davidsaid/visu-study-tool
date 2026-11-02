@@ -390,7 +390,8 @@ function buildSession(M, P, opts) {
     else if (d <= now) due.push({ sp: id, skill: k, due: d });
   }));
   due.sort((a, b) => a.due - b.due);
-  const allowance = Math.max(0, P.settings.newPerDay * skills.length - newIntroducedToday(P, now));
+  /* `introduce`: the check after a first look shows that group whatever is left of the day's new cards. */
+  const allowance = opts.introduce ? size : Math.max(0, P.settings.newPerDay * skills.length - newIntroducedToday(P, now));
   let items = due.slice(0, size).map(x => ({ sp: x.sp, skill: x.skill }));
   items = items.concat(fresh.slice(0, Math.min(allowance, size - items.length)));
   if (!items.length && opts.force) {
@@ -423,7 +424,7 @@ function buildGroupSession(M, P, opts) {
   const all = groupItems(M, scopePool(M, opts.scope), opts.skills), due = g => dueOf(P.cards[g.card]);
   const ready = shuffle(all.filter(g => due(g) != null && due(g) <= now), rng).sort((a, b) => due(a) - due(b));
   const fresh = all.filter(g => due(g) == null).sort((a, b) => GROUP_SKILLS.indexOf(a.skill) - GROUP_SKILLS.indexOf(b.skill) || b.members.length - a.members.length);
-  const allowance = Math.max(0, P.settings.newPerDay - newIntroducedToday(P, now, true));
+  const allowance = opts.introduce ? size : Math.max(0, P.settings.newPerDay - newIntroducedToday(P, now, true));
   let items = ready.slice(0, size).concat(fresh.slice(0, Math.max(0, Math.min(allowance, size - ready.length))));
   if (!items.length && opts.force) items = shuffle(all, rng).sort((a, b) => (due(a) || 0) - (due(b) || 0)).slice(0, size);
   return items;
