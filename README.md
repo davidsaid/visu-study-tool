@@ -24,7 +24,8 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   you're about to forget comes back first.
 - **"Primer vistazo"** (first look): page through a group with nothing graded. An order shows
   its species one by one (photos, names, first field marks); a class shows its orders. It ends
-  with an Easy round on that group. Today suggests the order with the most species not seen yet.
+  with an Easy round on that group only (your saved practice group and level don't change). Today
+  suggests the order with the most species not seen yet, skipping the orders you've finished looking at.
 - **"¿Qué grupo es?"**: see up to four animals of one class or order and name the group, on the
   same three levels, with its own spaced repetition. The way in for someone who doesn't know the
   animals yet: classes first, then the largest orders. A class's card can quiz just its orders.

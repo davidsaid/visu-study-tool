@@ -351,9 +351,18 @@ const SCENARIOS = {
     await click(endCheck); await sleep(250);
     const ss = App().sessionState(), under = new Set(Eng().speciesUnder(App().M, 'order:Accipitriformes'));
     const check = win.location.hash === '#sesion' && ss.level === 1 && ss.items.length > 0 && ss.items.every(x => under.has(x.sp)) && !!doc.querySelector('[data-opt]');
+    const saved = win.VISU_STORE.data, unlocked = !saved.ui.scope && saved.settings.level === 2;   // the check is a one-off round
+    await go('hoy'); await go('sesion');
+    const later = App().sessionState(), free = later.level === 2 && later.items.some(x => !under.has(x.sp));
+    /* A finished look is remembered, also after a reload, and Today moves on to another order. */
+    const sug = suggested && suggested.slice(1), sugNode = sug && App().M.nodes['order:' + sug.replace(/^vistazo-order-/, '')] && 'order:' + sug.replace(/^vistazo-order-/, '');
+    await go(sug); while ($('#looknext')) await click('#looknext');
+    await go('hoy'); await reload();
+    const next = (doc.querySelector('a.game[href^="#vistazo-"]') || {}).getAttribute?.('href') || null;
+    const remembered = ['order:Accipitriformes', sugNode].every(x => (win.VISU_STORE.data.ui.looked || []).includes(x)) && !!next && next !== suggested;
     await go('vistazo-class-Aves');
     const orders = doc.querySelectorAll('.look-order .car').length >= 1 && App().lookState().slides.every(x => x.startsWith('order:'));
-    report({ scenario: 'vistazo', suggested: !!suggested && /^#vistazo-order-/.test(suggested), button, first, second, check, orders, n });
+    report({ scenario: 'vistazo', suggested: !!suggested && /^#vistazo-order-/.test(suggested), button, first, second, check, unlocked, free, remembered, orders, n });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

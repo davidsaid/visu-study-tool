@@ -27,7 +27,7 @@ run "$here" comparecar '"carousels": 2' '"flippedBoth": true' '"creditsFollow": 
 run "$here" diff '"pairs": true' '"parts": true' '"sides": true' '"links": true' '"fewer": true'
 run "$here" grupo '"onlyOrders": true' '"grid": true' '"hidden": true' '"prompt": true' '"compare": true' '"named": true' '"bothNames": true' '"saved": true' '"right": true' '"kept": true'
 run "$here" grupo-mc '"game": "grupo"' '"n": 4' '"hasAnswer": true' '"logged": true'
-run "$here" vistazo '"suggested": true' '"button": true' '"first": true' '"second": true' '"check": true' '"orders": true'
+run "$here" vistazo '"suggested": true' '"button": true' '"first": true' '"second": true' '"check": true' '"unlocked": true' '"free": true' '"remembered": true' '"orders": true'
 run "$here" sobra '"four": true' '"hidden": true' '"disabled": true' '"explained": true' '"day": true' '"right": true' '"relevel": true'
 run "$here" parejas '"today": true' '"mine": true' '"ask": true' '"miss": true' '"logged": true' '"right": true'
 run "$here" nivelcual '"cards": true' '"rule": true' '"back": true'

@@ -579,7 +579,7 @@ const NODE_ID = /^[A-Za-z0-9_.-]{1,80}(:[A-Za-z0-9_.-]{1,80})?$/;
 const BADGE_ID = /^[a-z]+:[A-Za-z0-9_.-]{1,100}$/;   // the colon keeps "__proto__" out
 const YMD = /^\d{4}-\d{2}-\d{2}$/;
 const TIME_MAX = 8.64e15;
-const MAX_LOG = 100000, MAX_MOCKS = 20, MAX_MOCK_ITEMS = 200, MAX_TYPED = 80;
+const MAX_LOG = 100000, MAX_MOCKS = 20, MAX_MOCK_ITEMS = 200, MAX_TYPED = 80, MAX_LOOKED = 2000;
 const own = (o, k) => isObj(o) && Object.prototype.hasOwnProperty.call(o, k) && o[k] !== undefined;
 const toNum = (v, min, max, int) => {
   const n = typeof v === 'number' ? v : typeof v === 'string' && /^\s*-?\d+(\.\d+)?\s*$/.test(v) ? Number(v) : NaN;
@@ -703,6 +703,10 @@ function normalizeProgress(p, now, issues) {
   const ui = isObj(p.ui) ? p.ui : {};
   ['scope', 'exploreSel'].forEach(k => { const v = field(ui, k, T.id(NODE_ID), null, issues, 'ui.'); if (v !== null) out.ui[k] = v; });
   ['showDeep', 'showMid', 'studyTree'].forEach(k => { const v = field(ui, k, T.bool, undefined, issues, 'ui.'); if (v !== undefined) out.ui[k] = v; });
+  if (own(ui, 'looked')) {   // groups whose "Primer vistazo" was finished, since 2026-11-02
+    if (Array.isArray(ui.looked) && ui.looked.length <= MAX_LOOKED && ui.looked.every(v => typeof v === 'string' && NODE_ID.test(v))) out.ui.looked = ui.looked.slice();
+    else issues.push('ui.looked');
+  }
   return out;
 }
 function makeExport(P, now, edition, collection) {

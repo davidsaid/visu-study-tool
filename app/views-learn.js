@@ -16,11 +16,13 @@ App.lookRoute = node => 'vistazo-' + App.routeFor(node).replace(/^grupo-/, '');
 App.canLook = node => { const n = M().nodes[node]; return !!n && !App.sp(node) && (n.rank === 'class' ? orderSlides(node).length > 1 : E.scopePool(M(), node).length > 1 && n.rank !== 'clade'); };
 const orderSlides = node => E.groupItems(M(), E.scopePool(M(), node), ['order']).map(g => g.node);
 function slidesOf(node) { return M().nodes[node].rank === 'class' ? orderSlides(node) : E.scopePool(M(), node); }
-/* What Today suggests: the order with the most species not seen yet (at least two with photos). */
+/* What Today suggests: the order with the most species not seen yet (at least two with photos), skipping the
+   orders whose first look was finished. */
+const looked = () => P().ui.looked || [];
 App.nextLook = function () {
   const unseen = id => !App.skills().some(k => P().cards[E.cardId(id, k)]);
   const best = E.groupItems(M(), M().withPhotos, ['order']).map(g => ({ node: g.node, n: g.members.filter(unseen).length, total: g.members.length }))
-    .filter(g => g.total > 1 && g.n > 0 && App.canLook(g.node)).sort((a, b) => b.n - a.n)[0];
+    .filter(g => g.total > 1 && g.n > 0 && !looked().includes(g.node) && App.canLook(g.node)).sort((a, b) => b.n - a.n)[0];
   return best || null;
 };
 
@@ -64,11 +66,16 @@ V.vistazo = function (node) {
     ${body}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = '';
 };
-const step = d => { look.i = Math.max(0, Math.min(look.slides.length, look.i + d)); V.vistazo(look.node); App.main().focus(); window.scrollTo(0, 0); };
+const step = d => {
+  look.i = Math.max(0, Math.min(look.slides.length, look.i + d));
+  if (look.i === look.slides.length && !looked().includes(look.node)) { P().ui.looked = looked().concat(look.node); Store.save(); }
+  V.vistazo(look.node); App.main().focus(); window.scrollTo(0, 0);
+};
 App.on('click', '#lookprev', () => step(-1));
 App.on('click', '#looknext', () => step(1));
 App.on('click', '#lookagain', () => { look.i = 0; V.vistazo(look.node); });
-App.on('click', '[data-lookcheck]', b => { P().ui.scope = look.node; if (b.dataset.lookcheck === 'foto') SET().level = 1; else SET().game = 'grupo'; Store.save(); });
+/* The check is one round on this group only: the saved practice group and level stay as they were. */
+App.on('click', '[data-lookcheck]', b => { App.onceSession = { scope: look.node, level: b.dataset.lookcheck === 'foto' ? 1 : null }; });
 App.lookState = () => look;
 
 /* ---------- ¿CUÁL SOBRA? ---------- */

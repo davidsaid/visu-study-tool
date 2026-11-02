@@ -289,11 +289,13 @@ let sess = null;
 App.sessionState = () => sess;
 App.newSession = function (game, opts) {
   opts = opts || {};
-  const now = Date.now(), set = SET(), skills = App.skills(), scope = P().ui.scope && M().nodes[P().ui.scope] ? P().ui.scope : null;
+  const once = App.onceSession || {};   // a one-off round (the check after a first look) overrides the saved group and level
+  App.onceSession = null;
+  const now = Date.now(), set = SET(), skills = App.skills(), saved = once.scope || P().ui.scope, scope = saved && M().nodes[saved] ? saved : null;
   const base = { now, skills, scope, size: set.sessionSize, force: !!opts.force };
   const items = game === 'hoja' ? E.buildSheetSession(M(), P(), Object.assign(base, { size: Math.max(5, Math.round(set.sessionSize / 2)) }))
     : game === 'grupo' ? E.buildGroupSession(M(), P(), base) : E.buildSession(M(), P(), base);
-  sess = { game, level: game === 'hoja' ? 3 : set.level, items, i: 0, results: [], startedAt: now, done: false };
+  sess = { game, level: game === 'hoja' ? 3 : once.level || set.level, items, i: 0, results: [], startedAt: now, done: false };
   resetItem();
   return sess;
 };

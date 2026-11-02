@@ -248,10 +248,12 @@ test('export/import', () => {
   eq('numbers in strings are coerced', E.normalizeProgress({ settings: { newPerDay: '15', level: 3 }, createdAt: '2026-11-01T10:00:00Z' }, now).settings.newPerDay, 15);
   eq('ISO dates are coerced to ms', E.normalizeProgress({ createdAt: '2026-11-01T10:00:00Z' }, now).createdAt, Date.UTC(2026, 10, 1, 10));
   eq('long typed text is cut to 80 characters', E.normalizeProgress({ log: [{ ts: now, card: 'milvus_milvus:genus', kind: 'wrong', typed: 'x'.repeat(500) }] }, now).log[0].typed.length, 80);
+  const badLooked = []; E.normalizeProgress({ ui: { looked: ['order:Accipitriformes', '<img onerror=x>'] } }, now, badLooked);
+  eq('a bad first-look list is rejected', badLooked, ['ui.looked']);
   eq('unknown keys are dropped', Object.keys(E.normalizeProgress({ evil: 1, settings: { evil: 2 } }, now)).includes('evil') || 'evil' in E.normalizeProgress({ settings: { evil: 2 } }, now).settings, false);
   const full = JSON.parse(file);
   full.progress.mocks[0] = { id: 'mock-abc', at: now, skills: ['class', 'order'], items: [{ sp: 'milvus_milvus', typed: { class: 'Aves', order: 'x' }, ok: { class: true, order: false, genus: false, species: false, common: false } }], ok: 1, total: 5, score10: 2, passed: false };
-  full.progress.ui = { scope: 'order:Accipitriformes', exploreSel: 'milvus_milvus', showDeep: true };
+  full.progress.ui = { scope: 'order:Accipitriformes', exploreSel: 'milvus_milvus', showDeep: true, looked: ['order:Accipitriformes', 'class:Aves'] };
   full.progress.meta.readiness = { '2026-11-01': 0.25 };
   eq('a real file with every section imports unchanged', JSON.stringify(E.parseImport(JSON.stringify(full), now).progress), JSON.stringify(full.progress));
 });
