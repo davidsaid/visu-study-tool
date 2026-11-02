@@ -13,6 +13,13 @@
       "Male: red iris; dark bill with a blue-grey central band",
       "Female: brown in front and greyish-brown behind, with a pale line behind the eye and a brown iris",
       "Grey legs at all ages"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["sexes", "head", "colour"],
+      ["sexes", "head"],
+      ["sexes", "colour", "head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

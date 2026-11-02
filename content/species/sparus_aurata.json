@@ -13,6 +13,13 @@
       "Large dark spot behind the eye and a red edge to the gill cover",
       "Blue-grey back, silvery flanks",
       "Large head with thick lips; tail fin edged in black"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["head", "fins"]
     ]
   },
   "lookalikes": [

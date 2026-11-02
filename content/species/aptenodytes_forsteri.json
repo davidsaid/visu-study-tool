@@ -13,6 +13,13 @@
       "Pale yellow breast",
       "Bright yellow ear patches on the sides of the head",
       "Streamlined body and stiff, flipper-like wings"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour", "head", "wings"],
+      ["colour"],
+      ["head"],
+      ["shape", "wings"]
     ]
   },
   "lookalikes": [

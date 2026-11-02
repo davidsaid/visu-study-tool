@@ -11,6 +11,12 @@
       "Short backward-hooked horns in both sexes",
       "Pale head and throat with a dark mask across the eyes",
       "Dark stripe along the back; ruddy brown in summer, blackish or brown in winter"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["head"],
+      ["colour"]
     ]
   },
   "lookalikes": [

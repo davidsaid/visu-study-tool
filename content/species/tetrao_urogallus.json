@@ -13,6 +13,13 @@
       "Red wattles above the male's eyes",
       "Female much smaller, brown barred with black, with a paler yellowish belly",
       "White shoulder spots in both sexes; feathered legs"
+    ],
+    "parts": [
+      ["shape", "sexes"],
+      ["sexes", "colour", "head"],
+      ["sexes", "head"],
+      ["sexes", "shape", "colour"],
+      ["colour", "legs"]
     ]
   },
   "lookalikes": [

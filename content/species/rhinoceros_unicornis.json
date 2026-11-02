@@ -11,6 +11,12 @@
       "Thick grey-brown skin divided into armour-like plates with pinkish folds",
       "Wart-like bumps on the shoulders and upper legs",
       "Almost hairless except for eyelashes, ear fringes and tail brush"
+    ],
+    "parts": [
+      ["head", "sexes"],
+      ["skin"],
+      ["skin", "legs"],
+      ["skin", "head", "tail"]
     ]
   },
   "lookalikes": [

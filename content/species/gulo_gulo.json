@@ -13,6 +13,13 @@
       "Pale buff stripe running along the flanks from the shoulders to the rump",
       "Broad, rounded head with small eyes and short ears; sometimes a silvery facial mask",
       "Bushy tail and large paws with strong claws"
+    ],
+    "parts": [
+      ["shape"],
+      ["skin", "colour"],
+      ["colour"],
+      ["head"],
+      ["tail", "legs"]
     ]
   },
   "lookalikes": [

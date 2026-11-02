@@ -13,6 +13,13 @@
       "Olive or brownish-green, shading to a yellowish to white belly",
       "Flanks marked with short, pale bar-like spots on a dark background",
       "Young fish green with yellow stripes that later break up into spots"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["head"],
+      ["colour"],
+      ["colour"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

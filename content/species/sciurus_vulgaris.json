@@ -11,6 +11,12 @@
       "Ear tufts, very conspicuous in winter",
       "Long bushy tail, almost as long as the body",
       "White belly contrasting with the back"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["tail"],
+      ["colour"]
     ]
   },
   "lookalikes": [

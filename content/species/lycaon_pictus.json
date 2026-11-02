@@ -13,6 +13,13 @@
       "Front of the face and throat always black",
       "Huge, rounded, erect ears",
       "Distal half of the tail always white"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["colour"],
+      ["head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

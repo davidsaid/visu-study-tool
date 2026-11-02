@@ -13,6 +13,13 @@
       "Thick, armour-like ganoid scales",
       "Dark grey above, with a dark vertical mark and bands on the flanks, strongest in juveniles",
       "Broad head"
+    ],
+    "parts": [
+      ["shape"],
+      ["fins"],
+      ["skin"],
+      ["colour", "young"],
+      ["head"]
     ]
   },
   "lookalikes": [

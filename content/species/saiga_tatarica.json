@@ -11,6 +11,12 @@
       "Medium-sized, stocky antelope with thin legs and a very short tail",
       "Yellowish-red coat in summer, long and whitish or greyish-brown in winter, with a white belly",
       "Only males have horns: short, thick, wax-coloured, slightly translucent and strongly ringed"
+    ],
+    "parts": [
+      ["head"],
+      ["shape", "legs", "tail"],
+      ["colour", "skin"],
+      ["sexes", "head"]
     ]
   },
   "lookalikes": [

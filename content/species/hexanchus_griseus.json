@@ -13,6 +13,13 @@
       "Stout body with a broad head and a short, blunt, rounded snout",
       "Fluorescent green eyes",
       "Greyish-brown to black, with a paler belly and a pale lateral line"
+    ],
+    "parts": [
+      ["skin"],
+      ["fins"],
+      ["shape", "head"],
+      ["head"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

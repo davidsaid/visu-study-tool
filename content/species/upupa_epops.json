@@ -13,6 +13,13 @@
       "Long, slender, slightly down-curved bill",
       "Wings and tail boldly barred black and white; the black tail has a broad white band",
       "Undulating, butterfly-like flight"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head"],
+      ["wings", "tail"],
+      ["behaviour"]
     ]
   },
   "lookalikes": [],

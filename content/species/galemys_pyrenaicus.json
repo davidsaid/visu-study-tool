@@ -13,6 +13,13 @@
       "Large webbed hind feet; clawed, mole-like forefeet",
       "Grey-brown fur with silvery sheen on the underside",
       "Small (≈25 cm including tail, 35–80 g)"
+    ],
+    "parts": [
+      ["head"],
+      ["tail"],
+      ["legs"],
+      ["skin", "colour"],
+      ["shape"]
     ]
   },
   "lookalikes": [

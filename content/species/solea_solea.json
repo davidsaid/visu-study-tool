@@ -11,6 +11,12 @@
       "Small eyes close together on the right side",
       "Upper side greyish- or greenish-brown; underside white",
       "Oblique mouth with protrusible lips"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

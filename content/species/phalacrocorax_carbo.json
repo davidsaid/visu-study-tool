@@ -13,6 +13,13 @@
       "Yellowish throat",
       "White thigh and throat patches in the breeding season",
       "Thick bill and no crest"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["tail"],
+      ["head"],
+      ["colour", "legs", "head"],
+      ["head"]
     ]
   },
   "lookalikes": [

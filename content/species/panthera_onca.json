@@ -13,6 +13,13 @@
       "White belly, neck and inner legs",
       "Short tail for a big cat",
       "Melanistic, near-black individuals ('black panthers') occur, with spots faintly visible"
+    ],
+    "parts": [
+      ["shape", "head", "legs"],
+      ["colour"],
+      ["colour"],
+      ["tail"],
+      ["colour"]
     ]
   },
   "lookalikes": [

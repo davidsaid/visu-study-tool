@@ -13,6 +13,13 @@
       "Grey head and upper neck",
       "Male: chestnut breast and lower neck and, when breeding, long white 'whiskers' at the bill base",
       "In flight, long wings largely white"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["head"],
+      ["sexes", "colour", "head"],
+      ["wings"]
     ]
   },
   "lookalikes": [],

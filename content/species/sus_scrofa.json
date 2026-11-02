@@ -13,6 +13,13 @@
       "Erectile mane along the back and a short, thick neck",
       "Small, deep-set eyes; protruding tusks in adult males",
       "Piglets have pale lengthwise stripes"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["skin", "colour", "legs"],
+      ["skin", "head"],
+      ["head", "sexes"],
+      ["young", "colour"]
     ]
   },
   "dimorphism": {

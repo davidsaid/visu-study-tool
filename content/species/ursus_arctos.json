@@ -13,6 +13,13 @@
       "Highly variable colour: from very dark brown to pale golden, including greyish shades",
       "Very broad paws with long digging claws",
       "Cubs often have a whitish collar that disappears after the first moult"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour"],
+      ["legs"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

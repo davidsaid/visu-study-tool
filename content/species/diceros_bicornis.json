@@ -11,6 +11,12 @@
       "Pointed, prehensile, hook-shaped upper lip",
       "Slightly darker grey than the white rhino",
       "Carries its head high, as a browser"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["behaviour", "head"]
     ]
   },
   "lookalikes": [

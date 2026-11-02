@@ -13,6 +13,13 @@
       "Short legs with five toes; broad tail",
       "Pale brown, yellowish-brown or olive with many small black-edged eyespots",
       "Small triangular head with a rounded snout"
+    ],
+    "parts": [
+      ["shape"],
+      ["skin"],
+      ["legs", "tail"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Off-white underparts, yellowish on the flanks",
       "Short whitish supercilium",
       "Dark legs, fine dark bill and short primary projection"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["colour"],
+      ["head"],
+      ["legs", "head", "wings"]
     ]
   },
   "lookalikes": [

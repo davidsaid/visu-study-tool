@@ -13,6 +13,13 @@
       "Sturdy tusks curving outwards and forwards, in both sexes",
       "Trunk tip with two finger-like projections",
       "Grey skin with very sparse hair"
+    ],
+    "parts": [
+      ["head"],
+      ["shape"],
+      ["head", "sexes"],
+      ["head"],
+      ["skin"]
     ]
   },
   "lookalikes": [

@@ -11,6 +11,12 @@
       "Pale buff to golden-brown or grey coat, paler underneath",
       "Vestigial tail, almost invisible at a distance",
       "Well-developed sitting pads (ischial callosities) on the rump"
+    ],
+    "parts": [
+      ["head"],
+      ["colour", "skin"],
+      ["tail"],
+      ["skin"]
     ]
   },
   "lookalikes": [

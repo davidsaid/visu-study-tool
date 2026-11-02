@@ -11,6 +11,12 @@
       "Row of non-venomous thorns along the tail",
       "Olive-grey to brown upper side, often spotted; pale blue-grey underside",
       "Very large: the biggest and heaviest skate in Europe"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["tail"],
+      ["colour"],
+      ["shape"]
     ]
   },
   "lookalikes": [

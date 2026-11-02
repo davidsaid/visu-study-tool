@@ -13,6 +13,13 @@
       "Thick grey-brown fur, darker or paler depending on habitat",
       "Long black whiskers on the muzzle",
       "A pair of long, pointed upper incisors like small tusks"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["skin", "colour"],
+      ["head"],
+      ["head"]
     ]
   },
   "dimorphism": {

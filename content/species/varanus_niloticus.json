@@ -13,6 +13,13 @@
       "Tail with greenish-yellow bars",
       "Throat and underside ochre- to cream-yellow, often faintly barred",
       "Forked tongue; nostrils set high on the snout"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["tail"],
+      ["head", "colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

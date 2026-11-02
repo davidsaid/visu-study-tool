@@ -13,6 +13,13 @@
       "Breeding male: reddish to pink head, chin and throat",
       "Female: bluish-green with pale grey underparts and white tail tips",
       "Slender, pointed black bill"
+    ],
+    "parts": [
+      ["shape"],
+      ["sexes", "head", "colour"],
+      ["sexes", "head"],
+      ["sexes", "colour", "tail"],
+      ["head"]
     ]
   },
   "lookalikes": [],

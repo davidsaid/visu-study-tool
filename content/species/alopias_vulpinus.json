@@ -13,6 +13,13 @@
       "Long, sickle-shaped pectoral fins",
       "Metallic purplish-brown to grey back, bluish flanks; the white belly extends over the pectoral fin bases",
       "Tiny second dorsal and anal fins"
+    ],
+    "parts": [
+      ["fins"],
+      ["shape", "head"],
+      ["fins"],
+      ["colour"],
+      ["fins"]
     ]
   },
   "lookalikes": [

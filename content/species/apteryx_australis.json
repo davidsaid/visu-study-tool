@@ -11,6 +11,12 @@
       "Long, slender, slightly down-curved bill",
       "Rufous plumage with some streaking",
       "Large bristles (vibrissae) around the gape"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["head"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [],

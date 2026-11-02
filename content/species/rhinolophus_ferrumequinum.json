@@ -11,6 +11,12 @@
       "No tragus in the ears",
       "Largest horseshoe bat in Europe (wingspan 35–40 cm)",
       "Soft, fluffy fur, grey-brown above and grey-white below"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["shape", "wings"],
+      ["skin", "colour"]
     ]
   },
   "lookalikes": [

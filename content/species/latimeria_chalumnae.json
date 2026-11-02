@@ -13,6 +13,13 @@
       "Lobed, muscular-based fins, like limbs",
       "Three-lobed tail, an unusual trait",
       "Large, thick, hard scales"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["fins"],
+      ["fins"],
+      ["skin"]
     ]
   },
   "lookalikes": [],

@@ -11,6 +11,12 @@
       "Very variable warning colouration, differing between populations",
       "Back usually black with orange, yellow, green, white or blue spots or bands",
       "Black band along the sides; black belly with a coloured network"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["colour"],
+      ["colour"]
     ]
   },
   "lookalikes": [],

@@ -13,6 +13,13 @@
       "Face framed by white hair, with bushy cheeks",
       "Long tail ending in a white tuft",
       "Hands without thumbs"
+    ],
+    "parts": [
+      ["colour"],
+      ["skin", "colour"],
+      ["head"],
+      ["tail"],
+      ["legs"]
     ]
   },
   "dimorphism": {

@@ -13,6 +13,13 @@
       "Tail so short it is hidden in the fur",
       "Short legs, hind legs only slightly longer than forelegs; low stance",
       "Densely furred feet with black toe pads"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["head"],
+      ["tail"],
+      ["legs"],
+      ["legs"]
     ]
   },
   "lookalikes": [

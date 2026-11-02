@@ -13,6 +13,13 @@
       "Buff underparts, streaked black and brown on the breast and barred on the flanks",
       "Black crown streaked with buff; white throat",
       "Dull yellowish-grey or brown legs"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["colour"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

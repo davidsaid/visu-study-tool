@@ -13,6 +13,13 @@
       "Silvery-white belly and lower flank, unmarked",
       "Two widely separated dorsal fins and finlets behind the dorsal and anal fins",
       "Sickle-shaped tail fin"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["colour"],
+      ["fins"],
+      ["fins"]
     ]
   },
   "lookalikes": [

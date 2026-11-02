@@ -11,6 +11,12 @@
       "Long pointed ears and a square-shaped muzzle",
       "Muscular hind legs for hopping and a strong tail used as a tripod",
       "Males short red-brown fur, paler below; females blue-grey"
+    ],
+    "parts": [
+      ["shape", "sexes"],
+      ["head"],
+      ["legs", "tail"],
+      ["sexes", "colour"]
     ]
   },
   "dimorphism": {

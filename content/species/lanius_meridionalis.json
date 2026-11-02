@@ -13,6 +13,13 @@
       "Broad black mask and a clear white supercilium",
       "Greyish-pink wash to breast and belly",
       "Moderate white patch on the primaries, no white on the secondaries"
+    ],
+    "parts": [
+      ["head", "legs"],
+      ["colour", "head"],
+      ["head"],
+      ["colour"],
+      ["wings"]
     ]
   },
   "lookalikes": [

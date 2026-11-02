@@ -11,6 +11,12 @@
       "Wild fish are brownish; domestic ones red, orange, yellow, white, black or mixed",
       "No black spot at the base of the tail",
       "Breeds with very varied body and fin shapes (e.g. double tails)"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["colour", "fins"],
+      ["shape", "fins"]
     ]
   },
   "lookalikes": [

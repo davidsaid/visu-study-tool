@@ -13,6 +13,13 @@
       "Fawn to light grey-fawn body, pinkish below",
       "Azure-blue wings and tail",
       "Black bill and legs; no white tips to the tail"
+    ],
+    "parts": [
+      ["shape", "tail", "wings"],
+      ["head"],
+      ["colour"],
+      ["wings", "tail"],
+      ["head", "legs", "tail"]
     ]
   },
   "lookalikes": [

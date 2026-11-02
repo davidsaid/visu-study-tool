@@ -13,6 +13,13 @@
       "Large dewlap under the chin, its edge serrated with triangular scales",
       "Large round shield on each side of the head",
       "Very long, whip-like tail, somewhat flattened from side to side"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["skin", "head", "tail"],
+      ["head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

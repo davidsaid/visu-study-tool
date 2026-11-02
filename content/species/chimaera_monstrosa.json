@@ -13,6 +13,13 @@
       "Tall triangular first dorsal fin with a spine projecting beyond its tip",
       "Anal fin separate from the lance-shaped caudal fin",
       "Silvery green with brown spots and whitish streaks; lateral line clearly visible on the head"
+    ],
+    "parts": [
+      ["head"],
+      ["shape", "tail"],
+      ["fins"],
+      ["fins"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [],

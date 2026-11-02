@@ -13,6 +13,13 @@
       "Adults dull, uniform brown to reddish-grey; juveniles green with yellow and black areas",
       "Long, yellow, deeply forked tongue",
       "Tail as long as the body"
+    ],
+    "parts": [
+      ["shape"],
+      ["shape", "skin"],
+      ["colour", "young"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

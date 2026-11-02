@@ -11,6 +11,12 @@
       "Round ears thickly furred inside and out",
       "Back light grey to chocolate brown, belly whitish",
       "Curved sharp claws, with two opposable digits on the forepaws, for climbing"
+    ],
+    "parts": [
+      ["shape", "head", "tail"],
+      ["head"],
+      ["colour"],
+      ["legs"]
     ]
   },
   "dimorphism": {

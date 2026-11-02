@@ -13,6 +13,13 @@
       "Elliptical pupil and large supraocular scales like a brow; head covered in small scales",
       "Grey or brown back with a dark zigzag stripe and rounded spots along the flanks",
       "Whitish upper lip scales; yellow tail tip"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["head", "tail"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Tail fin running from behind the head to the vent",
       "Broad head and lidless eyes",
       "Underdeveloped limbs with long, thin digits"
+    ],
+    "parts": [
+      ["shape", "young"],
+      ["head", "skin"],
+      ["tail"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

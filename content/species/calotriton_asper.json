@@ -13,6 +13,13 @@
       "Rough skin with small tubercles; no crest on back or tail",
       "Dark brown, olive or grey back, sometimes with a yellowish stripe along the spine",
       "Yellow, orange or red belly with dark blotches at the sides"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["head", "legs"],
+      ["skin"],
+      ["colour"],
+      ["colour"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Striking orange eyes",
       "Brown upperparts mottled dark; buff underparts streaked dark",
       "White throat and a chestnut facial disc framed in dark"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

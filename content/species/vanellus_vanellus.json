@@ -13,6 +13,13 @@
       "Black crown, throat and breast contrasting with a white face",
       "White belly",
       "Broad, rounded wings; slow, butterfly-like flapping, black and white from below"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head", "colour"],
+      ["colour"],
+      ["wings", "behaviour"]
     ]
   },
   "lookalikes": [],

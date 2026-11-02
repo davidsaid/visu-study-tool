@@ -13,6 +13,13 @@
       "Male: black bib on throat and breast, pale grey cheeks and underparts",
       "Chocolate wings with a white wing bar; warm brown back streaked black",
       "Female: pale brown and grey, without bold head markings"
+    ],
+    "parts": [
+      ["shape", "legs", "head"],
+      ["sexes", "head"],
+      ["sexes", "head", "colour"],
+      ["wings", "colour"],
+      ["sexes", "colour"]
     ]
   },
   "lookalikes": [

@@ -11,6 +11,12 @@
       "Large eye in a white ring broken by a dark patch towards the back",
       "Large hairless ears",
       "Brown to reddish-brown back and white belly; long dark tail"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["head"],
+      ["colour", "tail"]
     ]
   },
   "dimorphism": {

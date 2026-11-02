@@ -11,6 +11,12 @@
       "Long red bill and legs",
       "Flies with neck extended and legs projecting beyond the tail",
       "Juveniles have duller orange-brown bill and legs, black feathers tinged brown"
+    ],
+    "parts": [
+      ["colour", "wings"],
+      ["head", "legs"],
+      ["behaviour"],
+      ["young", "head", "legs"]
     ]
   },
   "lookalikes": [

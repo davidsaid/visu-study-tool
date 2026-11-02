@@ -13,6 +13,13 @@
       "Bluish-black streaks down the front of the neck; black on the shoulders and flanks",
       "Long, straight, powerful pinkish-yellow bill; yellow iris and brown legs",
       "Slow flight with the neck retracted in an S and arched wings"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head", "colour"],
+      ["head", "legs"],
+      ["behaviour", "head", "wings"]
     ]
   },
   "lookalikes": [

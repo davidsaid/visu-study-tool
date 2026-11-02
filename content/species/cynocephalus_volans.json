@@ -13,6 +13,13 @@
       "Broad, short-snouted, somewhat dog-like head with big eyes and small ears",
       "Greyish or reddish-brown fur with white mottling on the back",
       "Short, strong, curved claws for gripping bark"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["legs"],
+      ["head"],
+      ["skin", "colour"],
+      ["legs"]
     ]
   },
   "lookalikes": [

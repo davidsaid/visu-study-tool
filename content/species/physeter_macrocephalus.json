@@ -13,6 +13,13 @@
       "No dorsal fin: a hump and a series of ridges on the rear third of the back",
       "Grey skin wrinkled like a prune",
       "Thick, triangular tail flukes raised when diving"
+    ],
+    "parts": [
+      ["head", "shape"],
+      ["head"],
+      ["fins", "shape"],
+      ["skin"],
+      ["tail", "behaviour"]
     ]
   },
   "lookalikes": [

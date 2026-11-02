@@ -13,6 +13,13 @@
       "Black stripe along the middle of the back",
       "Large eyes and hairless ears",
       "Bushy, relatively short tail"
+    ],
+    "parts": [
+      ["head"],
+      ["colour"],
+      ["colour"],
+      ["head"],
+      ["tail"]
     ]
   },
   "dimorphism": {

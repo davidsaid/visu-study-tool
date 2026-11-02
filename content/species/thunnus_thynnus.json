@@ -13,6 +13,13 @@
       "Dark blue back, grey underside and a gold sheen over the body",
       "Bright yellow finlets and a crescent tail",
       "Relatively short pectoral fins"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour"],
+      ["fins"],
+      ["fins"]
     ]
   },
   "lookalikes": [

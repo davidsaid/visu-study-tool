@@ -11,6 +11,12 @@
       "Large dark eyes and a big, elongated head",
       "Large ears, which set it apart from Mus mice",
       "Long tail, equal to or longer than the body"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

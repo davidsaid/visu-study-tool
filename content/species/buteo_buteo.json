@@ -13,6 +13,13 @@
       "Short, slightly rounded tail, finely barred with a dark subterminal band",
       "Often a pale 'U' across the breast separating the dark chest from the flanks",
       "In flight, broad wings with dark primary tips and pale patches on the flight feathers"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["tail"],
+      ["colour"],
+      ["wings", "behaviour"]
     ]
   },
   "lookalikes": [

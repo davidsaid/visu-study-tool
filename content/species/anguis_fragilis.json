@@ -11,6 +11,12 @@
       "Thick, smooth, glossy scales",
       "Small eyes with movable eyelids",
       "Highly variable colour; some local forms are bluish"
+    ],
+    "parts": [
+      ["shape", "sexes"],
+      ["skin"],
+      ["head"],
+      ["colour"]
     ]
   },
   "lookalikes": [

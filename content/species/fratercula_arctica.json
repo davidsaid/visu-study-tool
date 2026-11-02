@@ -13,6 +13,13 @@
       "Bill broad and triangular in profile: outer half orange-red, inner half slate grey, divided by a yellow ridge",
       "Triangular-looking eye with a red orbital ring",
       "Short legs set far back; bright orange webbed feet"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [],

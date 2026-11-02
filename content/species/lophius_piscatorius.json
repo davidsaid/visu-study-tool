@@ -13,6 +13,13 @@
       "First dorsal spine modified into a 'fishing rod' with a lure at the tip",
       "Scaleless skin with seaweed-like fringes around the head and body",
       "Pectoral and pelvic fins used like feet to walk on the bottom"
+    ],
+    "parts": [
+      ["head", "shape"],
+      ["head"],
+      ["fins", "head"],
+      ["skin"],
+      ["fins", "behaviour"]
     ]
   },
   "lookalikes": [],

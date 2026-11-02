@@ -13,6 +13,13 @@
       "Grey breast and flanks; large dark chestnut horseshoe patch on the belly",
       "Small dull brown bill and grey legs",
       "Juveniles yellow-brown, lacking the face markings and horseshoe"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head", "tail"],
+      ["colour"],
+      ["head", "legs"],
+      ["young", "colour", "head"]
     ]
   },
   "lookalikes": [

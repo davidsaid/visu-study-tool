@@ -13,6 +13,13 @@
       "Male: orange-yellow bill and yellow eye-ring",
       "Female: sooty brown, brownish-white throat and weakly mottled breast; dull yellowish-brown bill",
       "Juveniles like the female with pale spots above"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["sexes", "colour"],
+      ["sexes", "head"],
+      ["sexes", "colour", "head"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

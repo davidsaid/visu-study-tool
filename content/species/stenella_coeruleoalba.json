@@ -13,6 +13,13 @@
       "Light grey or bluish flanks above the bands",
       "Dark blue back, dorsal fin, melon and beak; white or pink belly",
       "All appendages dark"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["colour"],
+      ["colour", "fins", "head"],
+      ["fins"]
     ]
   },
   "lookalikes": [

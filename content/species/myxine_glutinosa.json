@@ -13,6 +13,13 @@
       "Mouth surrounded by six barbels",
       "A single gill opening on each side of the front of the body",
       "Brown, reddish, purplish or grey, paler below; body coated in thick slime"
+    ],
+    "parts": [
+      ["shape", "fins", "head"],
+      ["head"],
+      ["head"],
+      ["skin"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "White or grey cheeks and striking white whiskers",
       "Pale grey limbs",
       "Long tail"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["colour", "head"],
+      ["head"],
+      ["legs"],
+      ["tail"]
     ]
   },
   "dimorphism": {

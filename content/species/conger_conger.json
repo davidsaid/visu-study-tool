@@ -13,6 +13,13 @@
       "Row of small white dots along the lateral line",
       "Almost conical head with a rounded, prominent snout",
       "Has pectoral fins; dorsal and anal fins joined to the tail fin"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["skin", "colour"],
+      ["head"],
+      ["fins"]
     ]
   },
   "lookalikes": [

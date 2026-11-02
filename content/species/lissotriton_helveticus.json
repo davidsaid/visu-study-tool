@@ -11,6 +11,12 @@
       "A dark stripe along the head running through the eye",
       "Yellow to light orange belly; throat always unspotted",
       "Breeding male: filament at the tail tip, webbed hind feet and a low back crest"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["colour", "head"],
+      ["sexes", "tail", "legs"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Pincer-like opposable toes and a prehensile tail",
       "Variable colour, yellowish-brown to green or dark brown, with two pale lines along the sides",
       "Small 'beard' of scales under the throat"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["legs", "tail"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [],

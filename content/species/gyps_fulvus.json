@@ -13,6 +13,13 @@
       "White head, typical of a vulture",
       "White ruff at the base of the neck",
       "Yellowish hooked bill; grey feet with short, blunt claws"
+    ],
+    "parts": [
+      ["shape", "wings", "tail"],
+      ["colour", "wings"],
+      ["head"],
+      ["head"],
+      ["head", "legs"]
     ]
   },
   "lookalikes": [

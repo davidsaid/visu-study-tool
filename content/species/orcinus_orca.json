@@ -13,6 +13,13 @@
       "Grey saddle patch behind the dorsal fin",
       "Very tall, triangular dorsal fin (up to 1.8 m in males)",
       "Large, rounded, paddle-shaped flippers"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["colour", "fins"],
+      ["fins", "sexes"],
+      ["fins"]
     ]
   },
   "lookalikes": [

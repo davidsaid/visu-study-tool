@@ -11,6 +11,12 @@
       "Very long tail, about two thirds of total length",
       "Blackish back with two parallel golden stripes meeting at the tail base",
       "Protruding eyes and short legs"
+    ],
+    "parts": [
+      ["shape"],
+      ["tail"],
+      ["colour"],
+      ["head", "legs"]
     ]
   },
   "lookalikes": [

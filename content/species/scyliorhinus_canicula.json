@@ -13,6 +13,13 @@
       "Pale belly, cream or greyish-white",
       "Two dorsal fins set far back towards the tail",
       "Nostrils under the snout joined to the mouth by a groove"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["colour"],
+      ["fins"],
+      ["head"]
     ]
   },
   "lookalikes": [

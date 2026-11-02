@@ -13,6 +13,13 @@
       "Large chisel-like incisors with orange enamel",
       "Webbed hind feet and hand-like front feet",
       "Brown fur, from light chestnut-rust to blackish brown depending on region"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["tail", "skin"],
+      ["head"],
+      ["legs"],
+      ["skin", "colour"]
     ]
   },
   "lookalikes": [

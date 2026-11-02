@@ -13,6 +13,13 @@
       "Long, slightly notched tail, visible in flight",
       "Yellow cere and gape, black bill and yellow legs",
       "Pale brown, streaked-looking underparts"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["tail", "behaviour"],
+      ["head", "legs"],
+      ["colour"]
     ]
   },
   "lookalikes": [

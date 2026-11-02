@@ -13,6 +13,13 @@
       "Yellow greater wing coverts and dark blue upper flight feathers",
       "Light blue rump and tail coverts",
       "Bare white facial skin; pale horn upper mandible and black lower mandible"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["colour"],
+      ["wings"],
+      ["colour", "tail"],
+      ["head"]
     ]
   },
   "lookalikes": [],

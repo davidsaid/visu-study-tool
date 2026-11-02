@@ -11,6 +11,12 @@
       "Long orange-red coat with an erectile black mane on the nape and along the spine",
       "Very large, long ears on a small, elongated head",
       "Black muzzle; white throat and often a whitish tail tip"
+    ],
+    "parts": [
+      ["legs", "shape"],
+      ["colour", "skin"],
+      ["head"],
+      ["head", "tail"]
     ]
   },
   "lookalikes": [

@@ -24,6 +24,7 @@ run "$here" names '"matches": true' '"groupShown": true' '"missOrder": true' '"s
 run "$here" studytree '"onlyClasses": true' '"reptileFromClass": true' '"reptiliaCard": true' '"kept": true' '"full": true'
 run "$here" cualcar '"loaded": 4' '"carousels": 4' '"swipe": true' '"flipped": true' '"notPicked": true' '"picked": true' '"pickKept": true' '"altHides": true'
 run "$here" comparecar '"carousels": 2' '"flippedBoth": true' '"creditsFollow": true' '"sameScreen": true'
+run "$here" diff '"pairs": true' '"parts": true' '"sides": true' '"links": true' '"fewer": true'
 run "$here" nivelcual '"cards": true' '"rule": true' '"back": true'
 run "$here" zoom '"opened": true' '"synced": true' '"creditInZoom": true' '"keys": true' '"closed": true' '"quizAnon": true' '"cualZoom": true'
 run "$here" controls '"study": true' '"full": true' '"deep": true' '"mid": true' '"gal": true' '"citeRef": true' '"citeClose": true' '"notice": true' '"practise": true' '"game": true' '"level": true' '"clearscope": true' '"theme": true' '"lv": true' '"skillOff": true' '"num": true' '"wipeArmed": true' '"lang": true' '"hint": true' '"dunno": true' '"next": true' '"typedConf": true' '"confFocus": true' '"check": true' '"sheet": true' '"vern": true' '"cualConf": true' '"cualCheck": true' '"cualNext": true' '"errors": 0'

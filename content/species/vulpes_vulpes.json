@@ -13,6 +13,13 @@
       "Long, very bushy tail with a white tip",
       "Whitish belly and throat; narrow muzzle",
       "Melanistic, grey or 'silver' forms occur"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head", "legs"],
+      ["tail"],
+      ["colour", "head"],
+      ["colour"]
     ]
   },
   "lookalikes": [

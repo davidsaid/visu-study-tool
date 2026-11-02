@@ -11,6 +11,12 @@
       "Snout drawn out into a fleshy nasal appendage",
       "Back green or brownish; long, slender limbs",
       "Black belly with large white blotches, unique to each individual"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["colour", "legs"],
+      ["colour"]
     ]
   },
   "lookalikes": [],

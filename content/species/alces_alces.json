@@ -13,6 +13,13 @@
       "Large nose and prehensile upper lip",
       "Fold of skin hanging under the chin (dewlap or bell)",
       "Vestigial tail, only 5–12 cm"
+    ],
+    "parts": [
+      ["shape"],
+      ["sexes", "head"],
+      ["head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

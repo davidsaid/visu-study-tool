@@ -13,6 +13,13 @@
       "Large lidless eyes with a vertical pupil",
       "Broad toes with adhesive lamellae underneath for climbing walls",
       "Brownish-grey or brown with paler and darker spots; darker by day than by night"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["skin"],
+      ["head"],
+      ["legs"],
+      ["colour"]
     ]
   },
   "lookalikes": [

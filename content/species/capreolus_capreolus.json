@@ -11,6 +11,12 @@
       "Reddish-brown coat in summer, greyish in winter, when a white rump patch appears",
       "Male's antlers short (20–25 cm), usually three-pointed",
       "Fawns are reddish with many white spots"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["sexes", "head"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

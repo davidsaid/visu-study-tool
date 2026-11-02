@@ -13,6 +13,13 @@
       "Forehead and face darker than the body, with facial stripes",
       "Long ears",
       "Strongly curved horns that bow outwards, then turn inwards and forwards at the tips"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["colour"],
+      ["head"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

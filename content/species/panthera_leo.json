@@ -13,6 +13,13 @@
       "Long tail ending in a black tuft",
       "Short, rounded head with round ears",
       "Cubs are spotted; the spots fade with age"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["sexes", "head"],
+      ["tail"],
+      ["head"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Crescent tail with nearly equal lobes and a strong keel on the tail base",
       "Narrow U-shaped mouth with long smooth-edged teeth",
       "Juveniles have a blackish smudge on the snout tip"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["fins"],
+      ["head"],
+      ["young", "head"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "White wing band, very conspicuous in flight",
       "Grey plumage, bluish head and pinkish breast; tail with a black terminal band",
       "Pale yellow iris; pink bill with a yellow tip"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["head"],
+      ["wings"],
+      ["colour", "head", "tail"],
+      ["head"]
     ]
   },
   "lookalikes": [

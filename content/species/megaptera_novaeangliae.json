@@ -13,6 +13,13 @@
       "Short dorsal fin; the back arches when diving (hence 'humpback')",
       "Few throat grooves (14–35), from the lower jaw to the navel",
       "Tail flukes with a black-and-white pattern and scars unique to each individual"
+    ],
+    "parts": [
+      ["fins"],
+      ["shape", "head", "colour"],
+      ["fins", "behaviour"],
+      ["head"],
+      ["fins"]
     ]
   },
   "lookalikes": [

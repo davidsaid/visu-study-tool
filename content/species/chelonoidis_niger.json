@@ -11,6 +11,12 @@
       "Large bony shell, dull brown or grey, sometimes with lichens",
       "Depending on the island, a domed shell with a short neck or a 'saddleback' shell with a long neck",
       "Thick, stumpy legs with dry skin and hard scales"
+    ],
+    "parts": [
+      ["shape"],
+      ["skin"],
+      ["skin", "head"],
+      ["legs", "skin"]
     ]
   },
   "lookalikes": [

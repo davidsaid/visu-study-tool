@@ -13,6 +13,13 @@
       "Slate or bluish-grey to greyish-brown coat with a silvery-blue sheen",
       "Long black tail",
       "Horns in both sexes that extend sideways, then curve up and inwards, like parentheses"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour", "skin"],
+      ["tail"],
+      ["head", "sexes"]
     ]
   },
   "lookalikes": [

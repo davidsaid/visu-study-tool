@@ -13,6 +13,13 @@
       "Head that lengthens markedly with age, with a long, narrow snout",
       "Barbels short relative to the head",
       "Males show prominent nuptial tubercles on the front of the head in May–June"
+    ],
+    "parts": [
+      ["shape"],
+      ["shape", "tail"],
+      ["head"],
+      ["head"],
+      ["sexes", "head"]
     ]
   },
   "lookalikes": [

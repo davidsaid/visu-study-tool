@@ -11,6 +11,12 @@
       "Slender whip-like tail, about half the disc length, with a serrated venomous spine",
       "Skin folds above and below the tail behind the spine",
       "Plain, uniform colour; mostly smooth skin"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["tail"],
+      ["tail", "skin"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

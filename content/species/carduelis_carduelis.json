@@ -13,6 +13,13 @@
       "Black wings with a broad yellow bar, visible perched and in flight",
       "Warm brown back; whitish underparts with buff flanks and breast patches",
       "Long, pointed, ivory-coloured conical bill; forked tail"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["wings"],
+      ["colour"],
+      ["head", "tail"]
     ]
   },
   "lookalikes": [

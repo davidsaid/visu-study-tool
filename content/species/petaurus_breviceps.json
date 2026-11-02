@@ -13,6 +13,13 @@
       "Black stripe from the nose to mid-back",
       "Large eyes and a short pointed snout",
       "Furry tail almost as long as the body"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["skin", "colour"],
+      ["colour", "head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "dimorphism": {

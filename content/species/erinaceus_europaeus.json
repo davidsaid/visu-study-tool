@@ -13,6 +13,13 @@
       "Dark band between forehead and spines, and others along the sides of the snout",
       "Mobile, pointed snout; small eyes and small rounded ears",
       "Rolls into a ball when threatened"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["skin", "colour"],
+      ["head", "colour"],
+      ["head"],
+      ["behaviour"]
     ]
   },
   "lookalikes": [

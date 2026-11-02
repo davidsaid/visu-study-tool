@@ -11,6 +11,12 @@
       "Yellow-brown coat with 13–21 dark transverse stripes on the back and tail base",
       "Stiff tail, thick at the base, merging into the body like a kangaroo's",
       "Rounded, erect ears"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour", "tail"],
+      ["tail"],
+      ["head"]
     ]
   },
   "lookalikes": [

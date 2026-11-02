@@ -13,6 +13,13 @@
       "White stripe of fur between the eyes",
       "Short grey or reddish fur on the back and a white or buff belly",
       "Vestigial tail"
+    ],
+    "parts": [
+      ["legs", "shape"],
+      ["head"],
+      ["head"],
+      ["skin", "colour"],
+      ["tail"]
     ]
   },
   "lookalikes": [

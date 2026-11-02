@@ -13,6 +13,13 @@
       "Light green to yellowish belly",
       "Orange or ochre bill and greyish legs",
       "Dark blue flight feathers, visible in flight; long, tapering tail"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["colour"],
+      ["head", "legs"],
+      ["wings", "tail"]
     ]
   },
   "lookalikes": [

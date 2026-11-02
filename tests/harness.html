@@ -285,6 +285,18 @@ const SCENARIOS = {
     const sameScreen = !!doc.querySelector('.mistake-head') && doc.querySelector('.twoup figure') === figs[0];
     report({ scenario: 'comparecar', carousels: cars.filter(Boolean).length, flippedBoth, creditsFollow, sameScreen });
   },
+  /* After a wrong species, the two cards' field marks line up by body part: only parts both describe, yours left, the right one right. */
+  'diff': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro');
+    const labs = [...doc.querySelectorAll('.diff .dlab')].map(x => x.textContent);
+    const rows = labs.length, pairs = doc.querySelectorAll('.diff .yours').length === rows && doc.querySelectorAll('.diff .correct').length === rows;
+    const parts = ['Cabeza', 'Cola', 'Color y dibujo'].every(l => labs.includes(l)) && !labs.includes('Aletas');
+    const sides = /pardo oscuro/.test(doc.querySelector('.diff .yours').textContent) && /rojizos|ahorquillada/.test(doc.querySelector('.diff .correct').textContent);
+    const links = doc.querySelectorAll('.diff-src a').length === 2;
+    const fewer = doc.querySelectorAll('.diff .correct')[0].textContent.split(' · ').length === 1;   // a mark covering several parts is not repeated in each
+    report({ scenario: 'diff', rows, pairs, parts, sides, links, fewer, labs });
+  },
+  'diff-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem(Q.get('sp') || 'milvus_milvus', 'common'); await answerTyped(Q.get('typed') || 'Milano negro'); doc.querySelector('.key').scrollIntoView(); },
   /* The level picker describes "¿Cuál es?" levels (how close the other photos are), not typing levels. */
   'nivelcual': async () => {
     seedStorage(seen); await open('nivel'); await click('[data-game="cual"]');

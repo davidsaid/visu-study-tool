@@ -13,6 +13,13 @@
       "Webbed toes on all four feet",
       "Long tail, thick at the base",
       "Swims with the body submerged and only the head above water"
+    ],
+    "parts": [
+      ["shape", "legs", "head"],
+      ["skin", "colour", "head"],
+      ["legs"],
+      ["tail"],
+      ["behaviour"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Long, slender fingers with pads on the tips",
       "Thin, sparsely haired tail with a dense, dark-haired end",
       "Short, silky grey or yellowish-grey fur"
+    ],
+    "parts": [
+      ["head"],
+      ["legs"],
+      ["legs"],
+      ["tail"],
+      ["skin", "colour"]
     ]
   },
   "lookalikes": [

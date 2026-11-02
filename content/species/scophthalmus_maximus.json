@@ -13,6 +13,13 @@
       "Upper side with rough bony tubercles, colour varying with the bottom",
       "Long dorsal fin starting between the eyes and mouth",
       "Lateral line arched over the pectoral fin; spotted tail fin"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["skin", "colour"],
+      ["fins"],
+      ["skin", "fins"]
     ]
   },
   "lookalikes": [

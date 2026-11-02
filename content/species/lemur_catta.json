@@ -13,6 +13,13 @@
       "White or cream chest and throat",
       "Grey to rosy-brown back",
       "Slender build"
+    ],
+    "parts": [
+      ["tail"],
+      ["head"],
+      ["colour", "head"],
+      ["colour"],
+      ["shape"]
     ]
   },
   "dimorphism": {

@@ -13,6 +13,13 @@
       "Brownish-grey back with dark spots and small, often orange warts",
       "Visible eardrum, smaller than the eye",
       "Pale, unspotted belly"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["colour", "skin"],
+      ["head"],
+      ["colour"]
     ]
   },
   "lookalikes": [

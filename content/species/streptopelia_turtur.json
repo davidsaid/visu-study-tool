@@ -13,6 +13,13 @@
       "Cinnamon wings scaled with black (dark-centred coverts)",
       "Blue-grey head and flanks, pinkish breast and white belly",
       "Red legs and eye-ring; wedge-shaped tail with white edges and tips"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["wings"],
+      ["head", "colour"],
+      ["legs", "head", "tail"]
     ]
   },
   "lookalikes": [

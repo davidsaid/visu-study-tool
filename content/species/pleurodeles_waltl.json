@@ -13,6 +13,13 @@
       "A row of 7–10 orange spots along each side, where the rib tips lie",
       "Usually brownish grey with dark spots, paler below",
       "Laterally compressed tail, sometimes with orange edges"
+    ],
+    "parts": [
+      ["shape", "head", "tail"],
+      ["skin"],
+      ["colour"],
+      ["colour"],
+      ["tail"]
     ]
   },
   "lookalikes": [

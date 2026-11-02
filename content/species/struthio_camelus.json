@@ -13,6 +13,13 @@
       "Female and young males greyish-brown and white",
       "Small head; long, nearly bare neck and legs",
       "Only two toes on each foot"
+    ],
+    "parts": [
+      ["shape"],
+      ["sexes", "colour", "wings"],
+      ["sexes", "young", "colour"],
+      ["head", "legs"],
+      ["legs"]
     ]
   },
   "lookalikes": [

@@ -11,6 +11,12 @@
       "Four black stripes on the forehead and a black line along the spine",
       "Thick, broad tail with a blunt black tip and 2–3 closed black rings",
       "Irregular dark stripes on the flanks breaking into blotches on the hind legs"
+    ],
+    "parts": [
+      ["colour", "shape"],
+      ["head", "colour"],
+      ["tail"],
+      ["colour", "legs"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Yellowish, orange or reddish stripes on the neck",
       "Worn, dirty look, often with algae growing on the shell",
       "Juveniles have orange or reddish spots on the scutes and legs"
+    ],
+    "parts": [
+      ["skin", "colour"],
+      ["skin"],
+      ["head"],
+      ["skin"],
+      ["young", "skin", "legs"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Prominent, parallel parotoid glands",
       "Blurry green blotches on an ochre ground; greenish iris and horizontal pupil",
       "Short hind legs: it walks or runs rather than hops"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["head"],
+      ["colour", "head"],
+      ["legs", "behaviour"]
     ]
   },
   "lookalikes": [

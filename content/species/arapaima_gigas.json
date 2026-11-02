@@ -13,6 +13,13 @@
       "Large scales covering the whole body except the head",
       "Greenish-grey with red or orange flecks towards the tail; rounded reddish tail fin",
       "Coppery conical head with an upturned mouth"
+    ],
+    "parts": [
+      ["shape"],
+      ["shape", "fins"],
+      ["skin"],
+      ["colour", "fins"],
+      ["head"]
     ]
   },
   "lookalikes": [

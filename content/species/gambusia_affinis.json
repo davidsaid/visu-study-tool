@@ -11,6 +11,12 @@
       "Upturned mouth",
       "Rounded dorsal and tail fins",
       "Male with a pointed anal fin (gonopodium); female with a dark gravid spot at the rear of the abdomen"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["fins"],
+      ["sexes", "fins"]
     ]
   },
   "lookalikes": [

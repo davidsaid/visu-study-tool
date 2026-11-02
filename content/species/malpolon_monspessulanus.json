@@ -13,6 +13,13 @@
       "Fairly uniform olive or light-brown back, with a 'saddle' of blackish markings on the front third in males",
       "Smooth, never keeled back scales; yellowish belly lightly speckled",
       "Juveniles have five to seven rows of dark spots"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour", "sexes"],
+      ["skin", "colour"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

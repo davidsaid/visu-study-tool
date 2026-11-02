@@ -13,6 +13,13 @@
       "Male: white half-collar on the neck sides and a small white wing patch",
       "White belly in the male",
       "Female: streaked brown, no white on neck or rump; only a buffy-white wing patch"
+    ],
+    "parts": [
+      ["shape", "wings"],
+      ["sexes", "head", "colour"],
+      ["sexes", "head", "wings"],
+      ["sexes", "colour"],
+      ["sexes", "colour", "wings"]
     ]
   },
   "lookalikes": [

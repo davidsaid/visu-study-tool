@@ -11,6 +11,12 @@
       "Front edge of the hammer curved with no central notch (hence 'smooth')",
       "Moderately tall, sickle-shaped first dorsal fin",
       "Bluish-grey to greenish-brown above, pale flanks and greyish-white belly"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

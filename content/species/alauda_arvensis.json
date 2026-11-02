@@ -13,6 +13,13 @@
       "White belly",
       "Short tail with white edges and whitish trailing edge to the wing, visible as it flies away",
       "The male sings while hovering 50–100 m up"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["colour"],
+      ["tail", "wings", "behaviour"],
+      ["sexes", "behaviour"]
     ]
   },
   "lookalikes": [],

@@ -13,6 +13,13 @@
       "Lemon-yellow breast with a black central stripe from bib to vent",
       "Olive-green back; blue-grey wings with a white wing bar",
       "Blue-grey tail with white outer tips"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour"],
+      ["colour", "wings"],
+      ["tail"]
     ]
   },
   "lookalikes": [

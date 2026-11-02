@@ -13,6 +13,13 @@
       "Thin-lipped mouth that can be protruded",
       "Golden, greenish-brown or greyish back and yellowish to white belly",
       "Brightly coloured ornamental forms (koi); some breeds have few or no scales"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

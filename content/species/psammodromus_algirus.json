@@ -11,6 +11,12 @@
       "Large, flat, pointed and clearly keeled scales on the back and flanks",
       "Metallic brown with two conspicuous white or yellowish stripes on each side",
       "Males have blue shoulder spots; throat and sides of head turn orange when breeding"
+    ],
+    "parts": [
+      ["tail"],
+      ["skin"],
+      ["colour"],
+      ["sexes", "colour", "head"]
     ]
   },
   "lookalikes": [

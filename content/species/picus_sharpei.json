@@ -13,6 +13,13 @@
       "Strongly contrasting yellowish-green rump",
       "Little black on the head: dark grey, not black, eye-ring",
       "Male has an entirely red moustache"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["colour"],
+      ["head"],
+      ["sexes", "head"]
     ]
   },
   "lookalikes": [

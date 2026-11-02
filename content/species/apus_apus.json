@@ -13,6 +13,13 @@
       "Very long, sickle- or crescent-shaped wings",
       "Short, shallowly forked tail",
       "Very short legs; rarely perches except clinging to walls"
+    ],
+    "parts": [
+      ["colour"],
+      ["head"],
+      ["wings"],
+      ["tail"],
+      ["legs", "behaviour"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Rather plain greyish-brown facial disc",
       "Two morphs: rufous-brown or greyish-brown upperparts; whitish underparts streaked brown",
       "Greenish-yellow bill; flies with long glides on rounded wings"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["head", "behaviour", "wings"]
     ]
   },
   "lookalikes": [

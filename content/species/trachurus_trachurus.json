@@ -13,6 +13,13 @@
       "Two dorsal fins: the first tall with thin spines, the second much longer",
       "Eye with a well-developed adipose eyelid",
       "Dark blue back, silvery flanks, white belly and a dark spot on the gill cover"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["skin"],
+      ["fins"],
+      ["head"],
+      ["colour", "head"]
     ]
   },
   "lookalikes": [

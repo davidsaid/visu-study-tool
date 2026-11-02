@@ -13,6 +13,13 @@
       "White belly, armpits and undertail coverts",
       "Bright red bill, legs and bare skin around the eye",
       "Long breast feathers forming a shaggy ruff"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour", "head", "wings"],
+      ["colour"],
+      ["head", "legs"],
+      ["skin", "head"]
     ]
   },
   "lookalikes": [

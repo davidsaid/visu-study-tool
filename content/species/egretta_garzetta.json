@@ -13,6 +13,13 @@
       "Black legs with yellow feet",
       "Breeding adults have two long, thin nape plumes and long scapular plumes",
       "Yellow iris"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["legs"],
+      ["head", "skin"],
+      ["head"]
     ]
   },
   "lookalikes": [

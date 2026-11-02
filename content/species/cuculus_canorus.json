@@ -13,6 +13,13 @@
       "Yellow iris, eye-ring, bill base and feet",
       "Short legs; often perches with drooped wings and raised tail",
       "Some females and many juveniles show a barred rufous morph"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["colour", "head"],
+      ["head", "legs"],
+      ["legs", "behaviour"],
+      ["sexes", "young", "colour"]
     ]
   },
   "lookalikes": [

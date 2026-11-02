@@ -13,6 +13,13 @@
       "Grey, brown, black or olive, often covered in algae",
       "Radiating yellow patterns around the eyes and star-like fleshy 'eyelashes'",
       "Long, thick tail; worm-like lure on the tongue"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["skin"],
+      ["colour"],
+      ["head"],
+      ["tail", "head"]
     ]
   },
   "lookalikes": [],

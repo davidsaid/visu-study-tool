@@ -13,6 +13,13 @@
       "Very short blackish bill with a huge, bristle-fringed gape",
       "Long, narrow wings and tail; silent, buoyant flight",
       "In flight the male shows white patches on three primaries and white outer-tail tips; the female shows none"
+    ],
+    "parts": [
+      ["colour"],
+      ["head"],
+      ["head"],
+      ["wings", "tail", "behaviour"],
+      ["sexes", "wings", "tail"]
     ]
   },
   "lookalikes": [

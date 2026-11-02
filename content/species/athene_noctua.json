@@ -13,6 +13,13 @@
       "Brown upperparts speckled white; white underparts streaked brown",
       "Long legs; often perches on posts by day",
       "Bounding, woodpecker-like flight; juveniles duller without white crown spots"
+    ],
+    "parts": [
+      ["shape", "tail", "head"],
+      ["head"],
+      ["colour"],
+      ["legs", "behaviour"],
+      ["behaviour", "young"]
     ]
   },
   "lookalikes": [

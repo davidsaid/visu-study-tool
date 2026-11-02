@@ -13,6 +13,13 @@
       "Long, slender tail with a large spine at its base and no tail fin",
       "A single dorsal fin",
       "Brown or blackish back and white belly"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["head"],
+      ["tail"],
+      ["fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

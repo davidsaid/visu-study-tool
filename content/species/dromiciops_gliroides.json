@@ -11,6 +11,12 @@
       "Short snout and large dark eyes",
       "Greyish-brown back and white or grey belly",
       "Prehensile tail"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour"],
+      ["tail"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Male: rust-red face, throat and breast fading to creamy pink on the belly; brown back and olive-green rump",
       "Both sexes have two contrasting white wing bars and white tail sides",
       "Female more subdued in colour"
+    ],
+    "parts": [
+      ["shape"],
+      ["sexes", "head"],
+      ["sexes", "head", "colour"],
+      ["wings", "tail"],
+      ["sexes", "colour"]
     ]
   },
   "lookalikes": [

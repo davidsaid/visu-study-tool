@@ -13,6 +13,13 @@
       "Colour ranges from brownish black to tan or grey",
       "V-shaped nostrils",
       "No ear flap: just an ear opening behind the eye"
+    ],
+    "parts": [
+      ["shape", "fins", "head"],
+      ["colour"],
+      ["colour"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

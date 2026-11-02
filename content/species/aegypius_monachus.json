@@ -13,6 +13,13 @@
       "Black, nearly bare head and neck with some down",
       "Ruff of dark brown feathers at the base of the neck",
       "Pale grey bill with a black tip; juveniles are even darker"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["head"],
+      ["head"],
+      ["head", "young"]
     ]
   },
   "lookalikes": [

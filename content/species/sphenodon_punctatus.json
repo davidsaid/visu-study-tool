@@ -11,6 +11,12 @@
       "Crest of triangular skin folds along the back, larger in males",
       "No visible external ear",
       "Tip of the upper jaw shaped like a beak or chisel"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["skin", "sexes"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

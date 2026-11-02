@@ -11,6 +11,12 @@
       "Back brown, yellowish or dull green with dark spots",
       "Orange or reddish belly with bold black spots, often in lines",
       "Males lack a back crest; only a low tail crest when breeding and a tiny tail filament"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["colour"],
+      ["sexes", "tail"]
     ]
   },
   "lookalikes": [

@@ -11,6 +11,12 @@
       "Thin, thread-like pectoral fins; pelvic fins somewhat larger and set far back",
       "Adults brown or grey; juveniles black spotted with gold",
       "Young resemble tadpoles, with four external gills"
+    ],
+    "parts": [
+      ["shape"],
+      ["fins"],
+      ["colour", "young"],
+      ["young"]
     ]
   },
   "lookalikes": [

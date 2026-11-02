@@ -11,6 +11,12 @@
       "Black head with a yellow upper lip and snout; the yellow extends back above the eye",
       "Flattened, paddle-shaped tail for swimming",
       "Yellowish belly with wide ventral scales"
+    ],
+    "parts": [
+      ["colour"],
+      ["head"],
+      ["tail"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

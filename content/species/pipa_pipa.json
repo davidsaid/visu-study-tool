@@ -13,6 +13,13 @@
       "Light brown or olive with darker spots and many tubercles",
       "Front fingers tipped with small star-shaped appendages",
       "Long, strong, broadly webbed hind legs; short, weak forelimbs"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour", "skin"],
+      ["legs"],
+      ["legs"]
     ]
   },
   "lookalikes": [],

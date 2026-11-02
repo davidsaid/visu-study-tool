@@ -13,6 +13,13 @@
       "Pointed snout; tiny eyes hidden in the fur",
       "No external ears",
       "Fur usually dark grey (white or tan individuals occur)"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["legs"],
+      ["head"],
+      ["head"],
+      ["skin", "colour"]
     ]
   },
   "lookalikes": [

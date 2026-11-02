@@ -13,6 +13,13 @@
       "White of the belly extends along the inner legs to the toes",
       "Reddish outer legs; black-tipped tail",
       "Large hind legs"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["legs", "colour"],
+      ["legs", "tail"],
+      ["legs"]
     ]
   },
   "lookalikes": [

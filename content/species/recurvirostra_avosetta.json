@@ -13,6 +13,13 @@
       "Black cap extending down the back of the neck",
       "White wings with black primaries and two black bands (scapulars and coverts)",
       "Long bluish legs that project beyond the tail in flight"
+    ],
+    "parts": [
+      ["colour", "shape"],
+      ["head"],
+      ["head"],
+      ["wings"],
+      ["legs", "behaviour"]
     ]
   },
   "lookalikes": [],

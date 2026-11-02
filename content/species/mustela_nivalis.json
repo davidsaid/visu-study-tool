@@ -13,6 +13,13 @@
       "Brown upperparts and white underparts divided by a straight line",
       "Short legs and tail; the tail is under half the body length and lacks a black tip",
       "In the far north the coat turns pure white in winter"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour"],
+      ["legs", "tail"],
+      ["colour"]
     ]
   },
   "lookalikes": [

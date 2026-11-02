@@ -13,6 +13,13 @@
       "Arms nearly twice as long as the hind legs; short tail",
       "Long, coarse grey-brown fur, often greenish from algae",
       "Pale yellow throat patch"
+    ],
+    "parts": [
+      ["head"],
+      ["legs"],
+      ["legs", "tail"],
+      ["skin", "colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

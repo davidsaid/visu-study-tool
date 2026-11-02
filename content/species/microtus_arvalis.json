@@ -11,6 +11,12 @@
       "Short ears that barely protrude from the fur",
       "Short tail, about a quarter of total length",
       "Yellowish-brown back and greyish-white belly; juveniles are greyish"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["tail"],
+      ["colour", "young"]
     ]
   },
   "lookalikes": [

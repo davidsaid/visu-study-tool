@@ -13,6 +13,13 @@
       "White face, belly and back",
       "Oval, erect ears; thick, woolly coat",
       "A thumb-like 'sixth digit' on the forepaws"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head", "legs", "colour"],
+      ["head", "colour"],
+      ["head", "skin"],
+      ["legs"]
     ]
   },
   "lookalikes": [

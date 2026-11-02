@@ -13,6 +13,13 @@
       "Tail broad at the base and ending in a black tuft",
       "Pointed snout and short, rounded ears",
       "Horizontal pupil, unusual among carnivores"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["skin", "colour"],
+      ["tail"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

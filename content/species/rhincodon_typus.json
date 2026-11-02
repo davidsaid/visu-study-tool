@@ -13,6 +13,13 @@
       "Dark grey back with pale spots and stripes in a checkerboard pattern; white belly",
       "Three prominent ridges running along the sides",
       "Small eyes at the corners of the head; five large gill slits"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour"],
+      ["shape", "skin"],
+      ["head", "skin"]
     ]
   },
   "lookalikes": [

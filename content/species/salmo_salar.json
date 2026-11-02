@@ -13,6 +13,13 @@
       "Black spots mainly above the lateral line; tail fin usually unspotted",
       "All fins except the adipose edged in black",
       "In fresh water when breeding, reddish-brown to greenish with red or orange mottling"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["colour", "fins"],
+      ["fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

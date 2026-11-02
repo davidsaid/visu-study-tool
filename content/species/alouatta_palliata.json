@@ -11,6 +11,12 @@
       "Fringe of long golden or yellowish hairs on the flanks (the 'mantle')",
       "Large head with a bare black face",
       "Long, strong prehensile tail with a hairless pad near the tip"
+    ],
+    "parts": [
+      ["colour", "skin"],
+      ["skin", "colour"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "White hands and feet",
       "Ring of white hair around the black face",
       "Coat black or dark brown, or else blond to sandy"
+    ],
+    "parts": [
+      ["legs", "shape"],
+      ["tail"],
+      ["legs"],
+      ["head"],
+      ["colour"]
     ]
   },
   "dimorphism": {

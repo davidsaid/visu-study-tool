@@ -13,6 +13,13 @@
       "Very long gill slits that almost encircle the head",
       "Conical snout, hooked in young fish; crescent tail with a strong lateral keel",
       "Dark brown to black or greyish-brown above, often scarred; paler below"
+    ],
+    "parts": [
+      ["shape"],
+      ["head", "behaviour"],
+      ["skin", "head"],
+      ["head", "young", "fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

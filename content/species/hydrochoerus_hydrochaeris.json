@@ -13,6 +13,13 @@
       "No visible tail (vestigial)",
       "Coarse fur, reddish-brown above and yellowish-brown below",
       "Thick, hoof-like toes joined by small webs"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["tail"],
+      ["skin", "colour"],
+      ["legs"]
     ]
   },
   "lookalikes": [

@@ -11,6 +11,12 @@
       "Long, thin, tube-like snout",
       "Very strong forelimbs with digging claws",
       "Curls into a ball, showing its spines, when threatened"
+    ],
+    "parts": [
+      ["skin"],
+      ["head"],
+      ["legs"],
+      ["behaviour"]
     ]
   },
   "etymology": {

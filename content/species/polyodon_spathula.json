@@ -13,6 +13,13 @@
       "Shark-like body with a heterocercal tail",
       "Small eyes and a large, tapering gill-cover flap",
       "Large mouth"
+    ],
+    "parts": [
+      ["head"],
+      ["skin"],
+      ["shape", "tail"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

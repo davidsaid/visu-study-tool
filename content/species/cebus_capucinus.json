@@ -11,6 +11,12 @@
       "White head, throat, chest and shoulders; rest of the body black",
       "Black V-shaped cap on the crown",
       "Black prehensile tail, as long as or longer than the body"
+    ],
+    "parts": [
+      ["head"],
+      ["head", "colour"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

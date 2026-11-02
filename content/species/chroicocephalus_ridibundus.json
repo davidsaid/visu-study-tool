@@ -13,6 +13,13 @@
       "In winter, white head with two dark spots behind the eye",
       "Red bill and legs",
       "In flight, white leading edge to the outer wing and black primary tips"
+    ],
+    "parts": [
+      ["shape", "colour", "wings"],
+      ["head"],
+      ["head"],
+      ["head", "legs"],
+      ["wings"]
     ]
   },
   "lookalikes": [

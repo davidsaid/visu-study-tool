@@ -13,6 +13,13 @@
       "Breeding adults have a nape crest and a golden-yellow breast patch",
       "Black legs",
       "Flies with neck outstretched; juveniles have a pale bill and black primary tips"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head", "colour"],
+      ["legs"],
+      ["behaviour", "young", "head"]
     ]
   },
   "lookalikes": [

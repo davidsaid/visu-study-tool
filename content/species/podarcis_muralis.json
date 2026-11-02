@@ -11,6 +11,12 @@
       "Greyish-brown, sometimes greenish, with a line of black dots down the back and a dark band on each side",
       "Throat reticulated with black",
       "Whitish, yellow or reddish-orange belly, sometimes with blue spots on the outer scales"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["head"],
+      ["colour"]
     ]
   },
   "lookalikes": [

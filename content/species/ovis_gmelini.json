@@ -13,6 +13,13 @@
       "Males have large horns curving back almost into a full circle",
       "Pale flank (saddle) patch in males, especially in winter",
       "Females hornless or with very short horns"
+    ],
+    "parts": [
+      ["shape", "legs", "skin"],
+      ["colour"],
+      ["sexes", "head"],
+      ["sexes", "colour"],
+      ["sexes", "head"]
     ]
   },
   "lookalikes": [

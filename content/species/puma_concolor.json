@@ -13,6 +13,13 @@
       "Round head with erect ears",
       "Very long tail (63–95 cm)",
       "Kittens are spotted, blue-eyed and have ringed tails"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["colour", "head"],
+      ["head"],
+      ["tail"],
+      ["young", "colour", "head"]
     ]
   },
   "lookalikes": [

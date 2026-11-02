@@ -11,6 +11,12 @@
       "Dorsal and anal fins with very long bases",
       "Variable greenish colour with spots, dark crossbars and wavy markings",
       "A branched cirrus above each eye and a band of small dots running diagonally down from the eye"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["fins"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [],

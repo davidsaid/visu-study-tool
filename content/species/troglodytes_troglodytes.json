@@ -13,6 +13,13 @@
       "Finely barred darker, even on wings and tail",
       "Very short tail, usually held cocked up",
       "Cream supercilium and a fine dark brown bill"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["colour", "wings", "tail"],
+      ["tail", "behaviour"],
+      ["head"]
     ]
   },
   "lookalikes": [],

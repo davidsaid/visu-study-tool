@@ -13,6 +13,13 @@
       "Stocky body with relatively short legs",
       "Erect mane along the neck and a tuft of hair at the tail tip",
       "Upright ears with rounded tips"
+    ],
+    "parts": [
+      ["colour"],
+      ["colour"],
+      ["shape", "legs"],
+      ["head", "tail"],
+      ["head"]
     ]
   },
   "lookalikes": [

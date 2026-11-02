@@ -11,6 +11,12 @@
       "Males with spots, splashes or stripes in a wide range of colours",
       "Males with large, ornamental tail and dorsal fins",
       "Wild females grey and larger than males"
+    ],
+    "parts": [
+      ["shape", "sexes"],
+      ["sexes", "colour"],
+      ["sexes", "fins"],
+      ["sexes", "colour", "shape"]
     ]
   },
   "lookalikes": [

@@ -11,6 +11,12 @@
       "Almost black face with prominent nasal swellings",
       "Males have long (54–60 cm), slender, back-curved horns, ringed at the base",
       "Males have black leg stripes; in the rut the almost white body contrasts with the dark face and legs"
+    ],
+    "parts": [
+      ["skin", "colour"],
+      ["head"],
+      ["sexes", "head"],
+      ["sexes", "legs", "colour"]
     ]
   },
   "lookalikes": [

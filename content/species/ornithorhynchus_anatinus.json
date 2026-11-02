@@ -11,6 +11,12 @@
       "Wide, flat, furry beaver-like tail",
       "Short webbed feet, with more webbing on the front feet",
       "Dark brown fur above, paler below"
+    ],
+    "parts": [
+      ["head"],
+      ["tail"],
+      ["legs"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

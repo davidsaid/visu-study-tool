@@ -13,6 +13,13 @@
       "Light lead-grey back, silvery-grey flanks and silvery-white underside",
       "Black spot on the gill cover, which carries strong spines",
       "Young fish, and sometimes adults, have black spots on the back and sides"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["head"],
+      ["colour"],
+      ["head"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

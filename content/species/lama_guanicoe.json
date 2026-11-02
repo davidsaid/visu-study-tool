@@ -11,6 +11,12 @@
       "Very uniform light brown to dark cinnamon colour, white underneath",
       "Grey or dark face and head",
       "Large eyes with thick lashes and pointed ears"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

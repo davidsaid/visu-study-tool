@@ -13,6 +13,13 @@
       "Dark grey to dark brown with small spots",
       "Dorsal fin starting just behind the head and joining the tail and anal fins",
       "Long, robust mouth with long, sharp teeth"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["fins", "skin"],
+      ["colour"],
+      ["fins"],
+      ["head"]
     ]
   },
   "lookalikes": [

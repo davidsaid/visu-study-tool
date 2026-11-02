@@ -13,6 +13,13 @@
       "Thick horns that sweep sideways and curve up and inwards at the tips",
       "In males the horn bases fuse into a bony shield (boss) across the forehead",
       "Drooping ears fringed with long hairs"
+    ],
+    "parts": [
+      ["shape", "head", "legs"],
+      ["skin", "colour", "tail"],
+      ["head"],
+      ["sexes", "head"],
+      ["head"]
     ]
   },
   "lookalikes": [

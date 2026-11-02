@@ -13,6 +13,13 @@
       "Black tear-like streaks running from the eyes to the mouth",
       "Tawny to cream coat with evenly spaced solid black spots, not rosettes",
       "Unmarked white chin, throat and belly"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["colour", "head"]
     ]
   },
   "lookalikes": [

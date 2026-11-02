@@ -11,6 +11,12 @@
       "At sea, metallic blue or greenish back and silver sides, with no spots on back or tail",
       "When spawning, bright red body with an olive-green head",
       "Breeding males have a black snout and jaw and a strongly compressed body"
+    ],
+    "parts": [
+      ["shape", "head", "skin"],
+      ["colour"],
+      ["colour", "head"],
+      ["sexes", "head", "shape"]
     ]
   },
   "lookalikes": [

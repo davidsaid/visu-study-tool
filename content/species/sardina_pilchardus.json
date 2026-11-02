@@ -13,6 +13,13 @@
       "Pelvic fins start well behind the origin of the dorsal fin",
       "Last two anal-fin rays longer than the others",
       "Cycloid scales that are easily shed"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["fins"],
+      ["fins"],
+      ["skin"]
     ]
   },
   "lookalikes": [

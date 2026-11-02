@@ -13,6 +13,13 @@
       "White-edged black band running diagonally from the chest to the back, like a vest",
       "Long, very bushy tail, with a mane continuing along the back",
       "Large claws on the forefeet"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["tail", "skin"],
+      ["legs"]
     ]
   },
   "lookalikes": [

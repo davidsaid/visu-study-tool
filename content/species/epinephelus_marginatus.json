@@ -13,6 +13,13 @@
       "Yellowish-gold underside",
       "Narrow white edges on the anal, tail and often pectoral fins",
       "Rounded, convex tail edge; three spines on the gill cover"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["colour"],
+      ["fins"],
+      ["fins", "head"]
     ]
   },
   "lookalikes": [],

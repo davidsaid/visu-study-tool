@@ -11,6 +11,12 @@
       "Short yellowish to reddish coat with irregular dark brown spots",
       "Broad, flat head with a blunt muzzle and rounded ears",
       "Short bristly mane; short tail with a dark, pompom-like tuft"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["skin", "colour"],
+      ["head"],
+      ["head", "tail"]
     ]
   },
   "lookalikes": [

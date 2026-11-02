@@ -13,6 +13,13 @@
       "Short, thick tail with two dorsal fins of similar size and a large caudal fin",
       "Small knobs on the rims of the spiracles",
       "Electric organs visible under the skin on either side of the head"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["colour"],
+      ["tail", "fins"],
+      ["head"],
+      ["head", "skin"]
     ]
   },
   "lookalikes": [

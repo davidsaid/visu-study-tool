@@ -13,6 +13,13 @@
       "Adult males have a hollow knob at the snout tip, like a clay pot",
       "Olive, the back almost black in old adults; yellowish-white belly",
       "Partly webbed digits and crests on the outer edges of the limbs"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["sexes", "head"],
+      ["colour"],
+      ["legs"]
     ]
   },
   "lookalikes": [

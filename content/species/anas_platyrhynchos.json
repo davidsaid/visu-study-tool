@@ -13,6 +13,13 @@
       "Male: black, upward-curled central tail feathers; yellowish-orange bill",
       "Female: mottled brown with dark crown and eye-stripe; dark bill mottled orange",
       "Blue wing speculum in both sexes"
+    ],
+    "parts": [
+      ["shape"],
+      ["sexes", "head", "colour"],
+      ["sexes", "tail", "head"],
+      ["sexes", "colour", "head"],
+      ["wings", "sexes"]
     ]
   },
   "lookalikes": [

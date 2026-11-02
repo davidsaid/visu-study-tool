@@ -13,6 +13,13 @@
       "Female: much larger, brown or grey-brown above and brown-barred below",
       "Long, slender yellow legs; yellow to orange iris",
       "Juvenile warm brown with rusty fringes and coarse barring below"
+    ],
+    "parts": [
+      ["shape", "wings", "tail"],
+      ["sexes", "colour"],
+      ["sexes", "shape", "colour"],
+      ["legs", "head"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

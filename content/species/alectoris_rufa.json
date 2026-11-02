@@ -13,6 +13,13 @@
       "White throat framed by a black stripe running from the bill through the eye into a collar",
       "Black streaking on the upper breast",
       "Grey flanks barred with white, rufous, chestnut and black"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head", "legs"],
+      ["head"],
+      ["colour"],
+      ["colour"]
     ]
   },
   "lookalikes": [

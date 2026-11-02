@@ -13,6 +13,13 @@
       "Bare yellow face and long neck hackles",
       "Long, slender bill hooked at the tip",
       "Wedge-shaped tail; juveniles are brown"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour", "wings"],
+      ["head"],
+      ["head"],
+      ["tail", "young"]
     ]
   },
   "lookalikes": [

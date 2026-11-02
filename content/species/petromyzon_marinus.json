@@ -13,6 +13,13 @@
       "Seven gill openings behind the eye",
       "Olive or yellowish-brown back and sides with black marbling; paler belly",
       "Large: up to 120 cm"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["head"],
+      ["skin"],
+      ["colour"],
+      ["shape"]
     ]
   },
   "lookalikes": [

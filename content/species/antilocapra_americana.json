@@ -13,6 +13,13 @@
       "Large white rump patch whose hair bristles when alarmed",
       "White bands across the throat",
       "Long, slender legs; antelope-like build, with the back higher than the shoulders"
+    ],
+    "parts": [
+      ["head", "sexes"],
+      ["colour", "head"],
+      ["colour", "behaviour"],
+      ["head", "colour"],
+      ["legs", "shape"]
     ]
   },
   "lookalikes": [

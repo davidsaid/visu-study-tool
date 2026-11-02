@@ -11,6 +11,12 @@
       "Dark grey-brown or greenish back; yellow or orange belly",
       "Flattened head with a large, square mouth at the tip of the snout",
       "Very long anal fin running along the body to the tail tip"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["head"],
+      ["fins"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Robust, blunt head, short snout and jaws with large, very sharp teeth",
       "Juveniles silvery with oval spots; large adults uniformly very dark lead-grey to almost black",
       "Tail fin with a black band at its base and another along its edge"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["head"],
+      ["young", "colour"],
+      ["fins"]
     ]
   },
   "lookalikes": [],

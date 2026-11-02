@@ -11,6 +11,12 @@
       "Head at right angles to the body; swims upright",
       "Highly variable colour: white, beige, yellow, green, brown or black, sometimes speckled",
       "Often bears small skin outgrowths (cirri) resembling algae"
+    ],
+    "parts": [
+      ["shape"],
+      ["head", "behaviour"],
+      ["colour"],
+      ["skin"]
     ]
   },
   "lookalikes": [

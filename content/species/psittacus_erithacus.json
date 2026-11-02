@@ -13,6 +13,13 @@
       "Black bill",
       "Head and wings darker than the body; head and body feathers with slight white edges",
       "Yellow iris in adults; juveniles have dark grey to black eyes"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["tail"],
+      ["head"],
+      ["colour", "head", "wings"],
+      ["head", "young"]
     ]
   },
   "lookalikes": [],

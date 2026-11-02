@@ -13,6 +13,13 @@
       "White rump patch framed by two black stripes, like a heart split by the black-topped tail",
       "Belly, buttocks, lower legs and tail white all year",
       "Highly variable coat: some animals are almost white, others almost black"
+    ],
+    "parts": [
+      ["sexes", "head"],
+      ["colour"],
+      ["colour", "tail"],
+      ["colour", "legs", "tail"],
+      ["colour"]
     ]
   },
   "lookalikes": [

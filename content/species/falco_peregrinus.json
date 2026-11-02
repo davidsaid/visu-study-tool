@@ -13,6 +13,13 @@
       "Black head with a broad black moustache",
       "White to rusty underparts with fine dark barring",
       "Long, narrow tail, barred with a black tip"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour", "wings"],
+      ["head"],
+      ["colour"],
+      ["tail"]
     ]
   },
   "lookalikes": [

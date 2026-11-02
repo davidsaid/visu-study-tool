@@ -13,6 +13,13 @@
       "Black, white-bordered stripe running down the middle of the back",
       "White belly, rump and muzzle",
       "Shorter ears than African wild asses, and no leg stripes"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["colour"],
+      ["colour", "head"],
+      ["head", "legs"]
     ]
   },
   "lookalikes": [

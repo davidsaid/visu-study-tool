@@ -11,6 +11,12 @@
       "Adult males have a huge head with a short, upturned snout",
       "Males carry a long reddish-brown mane on the neck reaching the shoulders",
       "Adults brownish: males dark brown, females almost yellowish; pups are born black"
+    ],
+    "parts": [
+      ["shape", "fins", "head"],
+      ["sexes", "head"],
+      ["sexes", "head"],
+      ["colour", "sexes", "young"]
     ]
   },
   "lookalikes": [

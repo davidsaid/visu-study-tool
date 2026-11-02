@@ -13,6 +13,13 @@
       "Bare face, hands, feet and chest; fur mainly black",
       "Adult males have a silvery 'saddle' on the back (silverback)",
       "The mountain gorilla's fur has a somewhat bluish tinge"
+    ],
+    "parts": [
+      ["shape", "head", "legs"],
+      ["head"],
+      ["skin", "colour"],
+      ["sexes", "colour"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Large arched mouth, often ajar, showing big triangular serrated teeth",
       "Large first dorsal fin; small second dorsal and anal fins",
       "Small, round, completely black eyes"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour", "fins"],
+      ["head"],
+      ["fins"],
+      ["head"]
     ]
   },
   "lookalikes": [

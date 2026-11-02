@@ -13,6 +13,13 @@
       "Pale, peach-coloured face with black whiskers",
       "Large ears, usually black",
       "Long naked tail, like a giant rat's"
+    ],
+    "parts": [
+      ["shape"],
+      ["skin", "colour"],
+      ["head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Legs feathered down to the toes ('booted eagle')",
       "Immatures with white at the tail base and often white wing patches",
       "Soars with wings raised in a V (dihedral)"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["legs"],
+      ["young", "tail", "wings"],
+      ["behaviour", "wings"]
     ]
   },
   "lookalikes": [

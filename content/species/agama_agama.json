@@ -11,6 +11,12 @@
       "Dominant male with a blue body and a yellow tail",
       "Females, juveniles and subordinate males have an olive-green head",
       "White underside and a tail with a pale central stripe bordered by dark patches"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["sexes", "colour", "tail"],
+      ["sexes", "young", "head"],
+      ["colour", "tail"]
     ]
   },
   "lookalikes": [],

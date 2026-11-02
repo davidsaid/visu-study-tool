@@ -11,6 +11,12 @@
       "A sharp spine in front of each of its two dorsal fins",
       "No anal fin",
       "Greyish-brown back with white spots"
+    ],
+    "parts": [
+      ["shape"],
+      ["fins"],
+      ["fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

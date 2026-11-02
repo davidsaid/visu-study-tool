@@ -13,6 +13,13 @@
       "Two dorsal fins behind the pelvic fins; tail without lobes",
       "Row of thorns along the midline of the back",
       "Greyish-brown, khaki or yellowish back; white belly"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["fins"],
+      ["skin"],
+      ["colour"]
     ]
   },
   "lookalikes": [

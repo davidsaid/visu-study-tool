@@ -13,6 +13,13 @@
       "Back and sides with many warts of varied shape, sometimes spiny",
       "Grey, olive, brown or almost black",
       "Hind feet partly webbed"
+    ],
+    "parts": [
+      ["shape", "sexes"],
+      ["head", "skin"],
+      ["skin"],
+      ["colour"],
+      ["legs"]
     ]
   },
   "lookalikes": [

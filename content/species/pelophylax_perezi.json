@@ -13,6 +13,13 @@
       "Lacks the dark temporal patch of brown frogs",
       "Conspicuous bronze eardrum and dorsolateral folds",
       "Males have greyish vocal sacs at the corners of the mouth"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["colour"],
+      ["head", "colour"],
+      ["head", "skin"],
+      ["sexes", "head"]
     ]
   },
   "lookalikes": [

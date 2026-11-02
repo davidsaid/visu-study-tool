@@ -11,6 +11,12 @@
       "White belly, where the spots fade",
       "Stocky build, round head and long tail banded towards the tip, shorter than the body",
       "Round pupils"
+    ],
+    "parts": [
+      ["colour"],
+      ["colour"],
+      ["shape", "head", "tail"],
+      ["head"]
     ]
   },
   "lookalikes": [

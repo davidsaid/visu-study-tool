@@ -13,6 +13,13 @@
       "Lower jaw slightly longer than the upper",
       "Small vertical gill openings on the sides; no pelvic fins",
       "Greenish-brown colour"
+    ],
+    "parts": [
+      ["shape"],
+      ["fins"],
+      ["head"],
+      ["skin", "fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Cinnamon-buff underparts with black-edged white diamond spots",
       "Flattened, strongly hooked bill surrounded by long chestnut bristles",
       "Small feet, useful only for clinging to vertical surfaces"
+    ],
+    "parts": [
+      ["shape", "wings"],
+      ["colour", "head", "wings"],
+      ["colour"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

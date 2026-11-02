@@ -11,6 +11,12 @@
       "Only stags carry antlers, shed every year; in big stags the top tines form a 'crown'",
       "In autumn many stags grow a dark neck-and-shoulder mane (not the Iberian subspecies)",
       "Fawns are reddish with white spots"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["sexes", "head"],
+      ["sexes", "head", "skin"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

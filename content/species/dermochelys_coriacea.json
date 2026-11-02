@@ -13,6 +13,13 @@
       "Seven lengthwise ridges along the back",
       "Black or dark grey with white-pink speckles; pale underside",
       "Enormous, clawless front flippers"
+    ],
+    "parts": [
+      ["shape"],
+      ["skin"],
+      ["skin"],
+      ["colour"],
+      ["fins"]
     ]
   },
   "lookalikes": [

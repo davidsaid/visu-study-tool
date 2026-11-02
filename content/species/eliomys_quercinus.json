@@ -11,6 +11,12 @@
       "Large, prominent ears and big eyes",
       "Reddish-brown or grey back and white underside, strongly contrasting",
       "Long tail ending in a tuft of hair, white at the tip"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["tail"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Head and back mottled grey or brown; underparts white to brown, sometimes speckled dark",
       "Long wings and a short, square tail; undulating, silent flight",
       "Feathered, dangling legs"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["colour", "head"],
+      ["wings", "tail", "behaviour"],
+      ["legs"]
     ]
   },
   "lookalikes": [

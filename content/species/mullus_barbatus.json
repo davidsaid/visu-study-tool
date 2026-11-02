@@ -11,6 +11,12 @@
       "A pair of chin barbels no longer than the pectoral fins",
       "Short, steep snout",
       "Elongated, somewhat compressed body; two dorsal fins"
+    ],
+    "parts": [
+      ["colour", "fins"],
+      ["head"],
+      ["head"],
+      ["shape", "fins"]
     ]
   },
   "lookalikes": [],

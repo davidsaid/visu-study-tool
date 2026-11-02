@@ -13,6 +13,13 @@
       "Very thick coat forming a kind of mane on the neck; short and dark in summer",
       "Broad, crescent-shaped, widely splayed hooves",
       "Northern populations are whiter, southern ones darker"
+    ],
+    "parts": [
+      ["sexes", "head"],
+      ["sexes", "head"],
+      ["skin", "head"],
+      ["legs"],
+      ["colour"]
     ]
   },
   "lookalikes": [

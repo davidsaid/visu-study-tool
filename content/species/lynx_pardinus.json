@@ -11,6 +11,12 @@
       "Long facial ruff hanging from the cheeks",
       "Tawny coat with well-defined black spots",
       "Long legs and a short black-tipped tail"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["legs", "tail"]
     ]
   },
   "lookalikes": [

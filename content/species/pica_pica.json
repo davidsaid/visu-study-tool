@@ -13,6 +13,13 @@
       "Pure white belly and scapulars",
       "Long, graduated black tail glossed green and purple",
       "Short, rounded wings; primaries show white when the wing opens; black bill and legs"
+    ],
+    "parts": [
+      ["colour", "shape", "tail"],
+      ["head", "colour"],
+      ["colour", "wings"],
+      ["tail"],
+      ["wings", "head", "legs"]
     ]
   },
   "lookalikes": [

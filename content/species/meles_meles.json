@@ -13,6 +13,13 @@
       "Greyish-looking back (hairs pale at root and tip, dark in the middle)",
       "Belly and legs almost entirely black",
       "Short tail and small white-tipped ears"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["head"],
+      ["colour", "skin"],
+      ["colour", "legs"],
+      ["tail", "head"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Orange underparts and ear patch; white throat and neck patch",
       "Long, straight, dagger-like bill",
       "Very short, bright red legs"
+    ],
+    "parts": [
+      ["shape", "head", "tail"],
+      ["colour"],
+      ["colour", "head"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

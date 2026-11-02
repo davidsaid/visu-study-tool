@@ -13,6 +13,13 @@
       "Dorsal and anal fins set far back near the tail",
       "Olive-brown to green, white below, with dark spots on body and fins",
       "Juveniles have a black horizontal stripe along the body"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["head"],
+      ["fins"],
+      ["colour", "fins"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

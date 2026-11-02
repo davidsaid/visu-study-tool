@@ -13,6 +13,13 @@
       "A protruding spur on the back of each thigh",
       "Undivided supracaudal scute; short tail without a horny tip",
       "Yellow head with black spots and bulging eyes"
+    ],
+    "parts": [
+      ["skin", "shape"],
+      ["skin"],
+      ["legs"],
+      ["tail", "skin"],
+      ["head"]
     ]
   },
   "lookalikes": [

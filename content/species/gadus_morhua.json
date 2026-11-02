@@ -11,6 +11,12 @@
       "A strong barbel on the chin",
       "Brown or green back with spots, silvery belly",
       "Lateral line clearly visible as a stripe"
+    ],
+    "parts": [
+      ["fins"],
+      ["head"],
+      ["colour"],
+      ["skin"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Red iris",
       "Long lobed toes; legs blackish to greenish or yellow",
       "Juveniles brownish with pale throat and breast, no shield"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head"],
+      ["legs"],
+      ["young", "colour", "head"]
     ]
   },
   "lookalikes": [],

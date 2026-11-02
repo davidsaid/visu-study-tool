@@ -13,6 +13,13 @@
       "Bright blue spots or ocelli along the flanks",
       "Serrated collar under the throat; yellowish or greenish belly",
       "Males have a very broad head; juveniles have pale black-edged spots all over"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["colour"],
+      ["colour"],
+      ["head", "colour"],
+      ["sexes", "head", "young"]
     ]
   },
   "lookalikes": [

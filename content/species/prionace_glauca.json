@@ -13,6 +13,13 @@
       "Intense metallic blue above, lighter on the flanks, white belly",
       "Large eyes with a nictitating membrane",
       "Very elongated upper tail lobe"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["fins"],
+      ["colour"],
+      ["head"],
+      ["fins"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Black mask from the ear coverts to the bill; throat black or white depending on the individual",
       "White back, rump and most of the tail",
       "Female browner, but with the characteristic white lower back"
+    ],
+    "parts": [
+      ["shape"],
+      ["sexes", "head", "wings"],
+      ["head"],
+      ["colour", "tail"],
+      ["sexes", "colour"]
     ]
   },
   "lookalikes": [

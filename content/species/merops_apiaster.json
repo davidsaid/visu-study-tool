@@ -13,6 +13,13 @@
       "Black stripe through the eye; red iris in adults",
       "Blue-green breast and belly; green wings",
       "Long, slender, slightly curved black bill; two elongated central tail feathers"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head", "colour"],
+      ["head"],
+      ["colour", "wings"],
+      ["head", "tail"]
     ]
   },
   "lookalikes": [

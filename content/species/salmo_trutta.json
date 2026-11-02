@@ -11,6 +11,12 @@
       "Golden brown with dark spots and red spots ringed by pale halos on the sides",
       "Spots do not reach the tail; tail fin not forked",
       "Juveniles have a red-edged adipose fin and dark blotches along the sides"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["colour", "fins"],
+      ["young", "fins", "colour"]
     ]
   },
   "lookalikes": [

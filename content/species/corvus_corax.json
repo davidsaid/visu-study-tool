@@ -13,6 +13,13 @@
       "Large, strong, slightly curved black bill",
       "Long, shaggy throat feathers",
       "Long, wedge- or diamond-shaped tail, visible in flight"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["colour", "skin"],
+      ["head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

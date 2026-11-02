@@ -13,6 +13,13 @@
       "Two dorsal fins: the first tall and triangular, the second long, nearly matching the anal fin",
       "Tail fin with a straight-cut edge",
       "Blue-grey back, silvery sides, whitish belly; straight, darker lateral line"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["fins"],
+      ["fins"],
+      ["colour", "skin"]
     ]
   },
   "lookalikes": [

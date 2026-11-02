@@ -13,6 +13,13 @@
       "Thick skin with sparse, coarse hair, darker on the legs",
       "Large, flattened, shovel-like nails, halfway between claws and hooves",
       "Four-toed forefeet (no thumb) and five-toed hind feet"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["skin"],
+      ["legs"],
+      ["legs"]
     ]
   },
   "lookalikes": [

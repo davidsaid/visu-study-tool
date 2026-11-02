@@ -13,6 +13,13 @@
       "Long anal fin reaching the tail fin; small dorsal fin set well forward",
       "Very slimy skin, black to greenish-brown depending on the water; pale yellow to white belly",
       "Wide mouth with many rows of small teeth"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["fins"],
+      ["skin", "colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Pale nose, peach or grey",
       "Elongated, angular head with short, rounded, widely spaced ears",
       "Relatively short legs with visible paw pads"
+    ],
+    "parts": [
+      ["shape", "colour", "tail"],
+      ["colour", "head", "legs"],
+      ["head"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

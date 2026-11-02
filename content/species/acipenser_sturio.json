@@ -13,6 +13,13 @@
       "Very prominent, pointed, wedge-shaped snout with four barbels beneath",
       "Heterocercal tail (longer upper lobe) and dorsal fin set far back",
       "Greenish-brown to blackish back, silvery flanks and white belly"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["skin"],
+      ["head"],
+      ["fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

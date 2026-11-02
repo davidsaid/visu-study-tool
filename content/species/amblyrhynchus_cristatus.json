@@ -13,6 +13,13 @@
       "Row of spines from the nape along the back to the tail",
       "Laterally flattened tail for swimming; long, sharp claws",
       "Males on some islands show pinkish-red and turquoise markings when breeding"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head", "skin"],
+      ["skin", "tail"],
+      ["tail", "legs"],
+      ["sexes", "colour"]
     ]
   },
   "lookalikes": [

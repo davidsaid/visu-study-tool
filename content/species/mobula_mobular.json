@@ -13,6 +13,13 @@
       "Small dorsal fin with a white tip",
       "Long, thin tail with a short serrated spine",
       "Bluish-black or dark brown back and white belly"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["head", "fins"],
+      ["fins"],
+      ["tail"],
+      ["colour"]
     ]
   },
   "lookalikes": [

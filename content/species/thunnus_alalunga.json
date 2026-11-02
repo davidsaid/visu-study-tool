@@ -11,6 +11,12 @@
       "Remarkably long pectoral fins",
       "Deep blue back and silvery-white belly",
       "Moderate size: up to 1.4 m"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["fins"],
+      ["colour"],
+      ["shape"]
     ]
   },
   "lookalikes": [

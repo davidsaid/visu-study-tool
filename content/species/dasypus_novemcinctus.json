@@ -13,6 +13,13 @@
       "Unarmoured belly with tough skin and coarse hair",
       "Short legs with long digging claws",
       "Long armoured tail, comparable in length to the body"
+    ],
+    "parts": [
+      ["skin"],
+      ["skin", "head", "tail"],
+      ["skin"],
+      ["legs"],
+      ["tail"]
     ]
   },
   "etymology": {

@@ -13,6 +13,13 @@
       "Pointed snout projecting beyond the lower jaw",
       "Blue, green or grey back and silvery belly",
       "Silvery stripe along the side that fades with age"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["colour"]
     ]
   },
   "lookalikes": [

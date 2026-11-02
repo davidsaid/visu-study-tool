@@ -11,6 +11,12 @@
       "Iridescent blue stripe from the snout to the adipose fin",
       "Red stripe on the rear half, from mid-body to the base of the tail",
       "Small adipose fin behind the dorsal fin"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["colour"],
+      ["colour"],
+      ["fins"]
     ]
   },
   "lookalikes": [

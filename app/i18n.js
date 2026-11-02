@@ -38,6 +38,12 @@ I.FIELD = {
   lifespan: ['Longevidad', 'Lifespan'], reproduction: ['Reproducción', 'Reproduction'], activity: ['Actividad', 'Activity'],
   migration: ['Migración', 'Migration'], iucn: ['UICN (mundial)', 'IUCN (global)'], spain: ['Catálogo español', 'Spanish catalogue']
 };
+/* Body parts a field mark can describe (content field_marks.parts); the order is the order of the comparison rows. */
+I.PART = {
+  shape: ['Forma y tamaño', 'Shape and size'], head: ['Cabeza', 'Head'], colour: ['Color y dibujo', 'Colour and pattern'],
+  skin: ['Piel y cobertura', 'Skin and covering'], wings: ['Alas', 'Wings'], fins: ['Aletas', 'Fins'], legs: ['Patas', 'Legs'],
+  tail: ['Cola', 'Tail'], sexes: ['Machos y hembras', 'Males and females'], young: ['Jóvenes', 'Young'], behaviour: ['Comportamiento', 'Behaviour']
+};
 I.fieldName = f => (I.FIELD[f] ? I.L(I.FIELD[f][0], I.FIELD[f][1]) : f);
 I.IUCN = {
   LC: ['Preocupación menor', 'Least concern'], NT: ['Casi amenazada', 'Near threatened'], VU: ['Vulnerable', 'Vulnerable'],

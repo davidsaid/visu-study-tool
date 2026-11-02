@@ -11,6 +11,12 @@
       "Arms much longer than legs; long hands with a short thumb",
       "Pronounced brow ridge and forward-projecting jaw",
       "Circular ears, small nose and a long, flexible upper lip"
+    ],
+    "parts": [
+      ["skin", "colour"],
+      ["legs", "shape"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

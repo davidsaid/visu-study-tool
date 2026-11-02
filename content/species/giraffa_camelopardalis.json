@@ -13,6 +13,13 @@
       "Skin-covered ossicones on the head; in adult males they end in bald knobs",
       "Long, prehensile, purplish-black tongue",
       "One-metre tail ending in a long dark tuft"
+    ],
+    "parts": [
+      ["shape", "head", "legs"],
+      ["colour"],
+      ["head", "sexes"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [

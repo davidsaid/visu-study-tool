@@ -11,6 +11,12 @@
       "Venomous dorsal spines; often a dark spot on the spiny dorsal fin between the 6th and 11th spines",
       "Long tentacles above the eyes",
       "Skin that becomes covered in algae, camouflaging it on the bottom"
+    ],
+    "parts": [
+      ["colour", "skin"],
+      ["fins"],
+      ["head"],
+      ["skin"]
     ]
   },
   "lookalikes": [],

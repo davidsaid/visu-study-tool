@@ -13,6 +13,13 @@
       "Swims with its mouth open, showing rows of long, sharp, protruding teeth",
       "Tail with a long upper lobe",
       "Grey-brown back with reddish-brown spots, mostly on the rear half; pale belly"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["fins"],
+      ["behaviour", "head"],
+      ["fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

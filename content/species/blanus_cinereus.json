@@ -13,6 +13,13 @@
       "Tiny eyes covered by skin",
       "Fleshy pink, greyish pink, violet or brown; paler belly",
       "Short tail with the same scales as the body"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["tail", "skin"]
     ]
   },
   "lookalikes": [

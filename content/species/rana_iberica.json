@@ -13,6 +13,13 @@
       "Dark streak from nostril to eye and a thin white line on the upper lip",
       "Eardrum behind the eye, about half its size; distinct dorsolateral fold",
       "Hind legs sometimes barred dark brown; centre of the throat unspotted"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["head"],
+      ["head", "skin"],
+      ["legs", "head"]
     ]
   },
   "lookalikes": [

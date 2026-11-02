@@ -13,6 +13,13 @@
       "Grey upperparts and whitish underparts",
       "White face with black crown and nape",
       "Black-throated subspecies turn white-throated in winter; the British form (yarrellii) has a black back"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["tail", "behaviour"],
+      ["colour"],
+      ["head"],
+      ["colour", "head"]
     ]
   },
   "lookalikes": [

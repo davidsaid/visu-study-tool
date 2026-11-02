@@ -13,6 +13,13 @@
       "Two tufts of red external gills at the back of the head",
       "Regressed eyes covered by skin; pear-shaped head with a flattened snout",
       "Small, thin legs: three toes in front, two behind"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["skin", "colour"],
+      ["head", "skin"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

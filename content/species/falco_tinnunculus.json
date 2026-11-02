@@ -13,6 +13,13 @@
       "Male: blue-grey head and tail, with fewer spots",
       "Female: brown tail barred with black",
       "Black-tipped tail; black claws"
+    ],
+    "parts": [
+      ["shape", "wings", "tail"],
+      ["colour"],
+      ["sexes", "head", "tail"],
+      ["sexes", "tail"],
+      ["tail", "legs"]
     ]
   },
   "lookalikes": [

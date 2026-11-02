@@ -13,6 +13,13 @@
       "Red eyes and black lores; dagger-like bill",
       "Dark brown upperparts, white underparts and rufous flanks",
       "In winter loses the ruffs: white face including above the eye, and a pink bill"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [],

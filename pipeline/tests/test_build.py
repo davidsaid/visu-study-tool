@@ -7,6 +7,7 @@ The build writes into a temporary directory, so running the tests never touches 
 """
 import hashlib
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -404,6 +405,30 @@ class CourseNotes(unittest.TestCase):
     def test_course_note_needs_a_known_collection(self):
         with self.assertRaisesRegex(BuildError, "collection"):
             self.load("milvus_milvus,orden,Accipitriformes,Falconiformes,course,https://example.org/,n,n,accepted,artropodos")
+
+
+class MarkParts(unittest.TestCase):
+    """Each field mark is labelled with the body parts it describes; the labels must line up and be known."""
+    def marks(self, parts):
+        return {"field_marks": {"es": ["a", "b"], "en": ["a", "b"], "parts": parts}}
+
+    def test_valid_labels_pass(self):
+        build.check_mark_parts(self.marks([["legs", "head"], ["sexes"]]), "x")
+        build.check_mark_parts({"field_marks": {"es": ["a"], "en": ["a"]}}, "x")   # labels are optional
+
+    def test_one_label_list_per_mark(self):
+        with self.assertRaisesRegex(BuildError, "one entry per field mark"):
+            build.check_mark_parts(self.marks([["legs"]]), "x")
+
+    def test_unknown_or_empty_label(self):
+        for bad in ([["legs"], ["beak"]], [["legs"], []], [["legs"], ["a", "b", "c", "d"]]):
+            with self.assertRaisesRegex(BuildError, "1 to 3"):
+                build.check_mark_parts(self.marks(bad), "x")
+
+    def test_app_names_every_label(self):
+        i18n = (build.ROOT / "app" / "i18n.js").read_text(encoding="utf-8")
+        block = re.search(r"I\.PART = \{(.*?)\};", i18n, re.S).group(1)
+        self.assertEqual(tuple(re.findall(r"(\w+): \[", block)), build.MARK_PARTS)
 
 
 class LoudFailure(unittest.TestCase):

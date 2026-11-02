@@ -13,6 +13,13 @@
       "Strongly arched mouth starting above the eye; very large head",
       "Short, paddle-like flippers",
       "V-shaped blowhole producing a heart-shaped blow"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["head", "skin"],
+      ["head"],
+      ["fins"],
+      ["head", "behaviour"]
     ]
   },
   "lookalikes": [

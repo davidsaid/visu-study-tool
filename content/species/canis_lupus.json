@@ -13,6 +13,13 @@
       "Relatively small, triangular ears",
       "Dense two-layered coat, typically greyish, making it look bulkier",
       "Long legs and yellow eyes"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["head"],
+      ["skin", "colour"],
+      ["legs", "head"]
     ]
   },
   "lookalikes": [

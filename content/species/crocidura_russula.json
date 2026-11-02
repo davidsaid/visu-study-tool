@@ -13,6 +13,13 @@
       "Brown or grey-brown back (dark grey in winter) and pale grey belly",
       "Relatively short tail, 3–4.5 cm",
       "White teeth, with no red-pigmented tips"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["colour"],
+      ["tail"],
+      ["head"]
     ]
   },
   "lookalikes": [

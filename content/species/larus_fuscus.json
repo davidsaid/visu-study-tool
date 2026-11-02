@@ -13,6 +13,13 @@
       "Yellow bill with a red spot",
       "Yellow legs",
       "Juveniles with scaly blackish-brown upperparts; four years to maturity"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour", "wings"],
+      ["head"],
+      ["legs"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

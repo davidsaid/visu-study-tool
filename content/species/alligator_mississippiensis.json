@@ -11,6 +11,12 @@
       "With the mouth closed the upper jaw covers the lower teeth; the fourth lower tooth is hidden",
       "Very dark back, olive, brown, grey or blackish; cream-coloured underside",
       "Males 3.4–4.8 m long"
+    ],
+    "parts": [
+      ["head"],
+      ["head"],
+      ["colour"],
+      ["sexes", "shape"]
     ]
   },
   "lookalikes": [

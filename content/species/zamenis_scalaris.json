@@ -11,6 +11,12 @@
       "Adults yellowish-brown with two parallel dark stripes along the back",
       "Juveniles grey or yellowish with black H-shaped marks forming a ladder pattern",
       "Dark stripe from behind the eye to the angle of the jaw; dark eye with a round pupil"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour"],
+      ["young", "colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

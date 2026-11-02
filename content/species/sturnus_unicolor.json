@@ -13,6 +13,13 @@
       "In winter, greyish black with very small pale spots",
       "Long throat feathers forming a shaggy 'beard'",
       "Bright pink legs; bill yellow in summer, darker in winter"
+    ],
+    "parts": [
+      ["shape", "colour", "tail"],
+      ["colour"],
+      ["colour"],
+      ["head"],
+      ["legs", "head"]
     ]
   },
   "lookalikes": [

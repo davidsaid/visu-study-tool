@@ -13,6 +13,13 @@
       "No scales: bony plates on the back, flanks and belly",
       "Olive or silvery-green back, sometimes mottled brown; silvery flanks and belly",
       "Breeding males with blue eyes and a bright red throat and belly"
+    ],
+    "parts": [
+      ["shape"],
+      ["fins"],
+      ["skin"],
+      ["colour"],
+      ["sexes", "head", "colour"]
     ]
   },
   "lookalikes": [],

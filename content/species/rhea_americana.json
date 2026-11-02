@@ -13,6 +13,13 @@
       "Bare, wrinkled skin around the eyes",
       "Long featherless legs with three toes",
       "Fairly long wings, used for balance in sharp turns"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head", "colour", "sexes"],
+      ["head"],
+      ["legs"],
+      ["wings", "behaviour"]
     ]
   },
   "lookalikes": [

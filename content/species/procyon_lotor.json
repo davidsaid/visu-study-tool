@@ -11,6 +11,12 @@
       "Bushy tail with alternating light and dark rings",
       "Grey, brown or black fur",
       "Very dexterous, hand-like forepaws (tracks resemble a child's hands)"
+    ],
+    "parts": [
+      ["head"],
+      ["tail"],
+      ["colour", "skin"],
+      ["legs"]
     ]
   },
   "dimorphism": {

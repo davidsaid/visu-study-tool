@@ -13,6 +13,13 @@
       "Yellowish-green flanks with dark patches in oblique stripes",
       "With the mouth closed the enlarged fourth lower tooth shows, fitting into a notch in the upper jaw",
       "Relatively long snout; green eyes"
+    ],
+    "parts": [
+      ["shape", "sexes"],
+      ["colour"],
+      ["colour"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

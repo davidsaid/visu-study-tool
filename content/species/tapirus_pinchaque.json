@@ -11,6 +11,12 @@
       "Conspicuous white band around the lips",
       "White bands along the upper edge of the ears",
       "Long flexible proboscis and a short, stubby tail"
+    ],
+    "parts": [
+      ["colour", "skin"],
+      ["head"],
+      ["head"],
+      ["head", "tail"]
     ]
   },
   "lookalikes": [

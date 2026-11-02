@@ -11,6 +11,12 @@
       "Wool always sandy-coloured, short and sparse",
       "Lithe body, slender legs and very narrow feet",
       "Slit-like nostrils and a double row of long eyelashes"
+    ],
+    "parts": [
+      ["shape"],
+      ["skin", "colour"],
+      ["shape", "legs"],
+      ["head"]
     ]
   },
   "lookalikes": [

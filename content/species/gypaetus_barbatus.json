@@ -13,6 +13,13 @@
       "Creamy forehead with a black band through the eye and black chin bristles forming a 'beard'",
       "Grey-blue to grey-black upperparts; head, breast and legs washed orange or rusty",
       "Juveniles blackish-brown; they take five to seven years to mature"
+    ],
+    "parts": [
+      ["shape", "wings", "tail"],
+      ["head"],
+      ["head"],
+      ["colour", "head", "legs"],
+      ["young"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Very broad wings with black tips and trailing edge",
       "Slow flight with the neck retracted in an S",
       "Immatures greyish"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["wings"],
+      ["behaviour", "head"],
+      ["young"]
     ]
   },
   "lookalikes": [

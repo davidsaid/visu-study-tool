@@ -13,6 +13,13 @@
       "Long, thick tail bearing almost half of the scales",
       "Cone-shaped head, small dark eyes and long muzzle",
       "Powerful limbs with sharp claws; can roll into a ball"
+    ],
+    "parts": [
+      ["skin"],
+      ["skin", "legs"],
+      ["tail"],
+      ["head"],
+      ["legs", "behaviour"]
     ]
   },
   "lookalikes": [

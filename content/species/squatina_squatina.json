@@ -13,6 +13,13 @@
       "Broad head with a terminal mouth, eyes on top and barbels in front of the nostrils",
       "Two dorsal fins on the tail, no anal fin; lower tail lobe larger than the upper",
       "Reddish-grey or greenish-brown back with many small light and dark spots"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["fins"],
+      ["head"],
+      ["fins"],
+      ["colour"]
     ]
   },
   "lookalikes": [

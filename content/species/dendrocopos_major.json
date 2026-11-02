@@ -13,6 +13,13 @@
       "Scarlet lower belly and undertail",
       "White face crossed by black lines linking shoulder, nape, bill and breast",
       "Male has a crimson nape patch; juveniles have a red crown and pinkish lower belly"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["wings", "tail"],
+      ["colour", "tail"],
+      ["head"],
+      ["sexes", "young", "head"]
     ]
   },
   "lookalikes": [

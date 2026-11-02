@@ -13,6 +13,13 @@
       "Pale yellow mantle across back, neck and shoulders",
       "No tail; claw on the thumb and index finger of each wing",
       "Pointed ears without a tragus"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["head"],
+      ["colour"],
+      ["tail", "wings"],
+      ["head"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Black primaries and secondaries, visible in flight",
       "Thick, down-bent bill, pink with a black tip",
       "Entirely pink legs; subadults greyish-white with dark legs"
+    ],
+    "parts": [
+      ["shape", "legs", "head"],
+      ["colour", "wings"],
+      ["wings"],
+      ["head"],
+      ["legs", "young"]
     ]
   },
   "lookalikes": [

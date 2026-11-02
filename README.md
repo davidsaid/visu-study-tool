@@ -26,7 +26,8 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   can be flipped through all its photos. The harder the level, the more closely related the
   other animals.
 - **Mistakes teach.** If you confuse two species, you see them side by side with what tells
-  them apart. Every mistake also shows **what the name says**: what the Latin or Greek of the
+  them apart, and their field marks lined up part by part (head, tail, colouring…) next to
+  their size. Every mistake also shows **what the name says**: what the Latin or Greek of the
   class, order, genus or species means, as a memory aid.
 - **Explore the tree of life** branch by branch, either the full tree or, in **study mode**, with
   each class of the list as the root of its own tree (Reptilia included, although it isn't a

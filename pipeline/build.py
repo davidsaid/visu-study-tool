@@ -25,6 +25,7 @@ CONTENT = ROOT / "content"
 NODE_KINDS = ("deep", "clade", "class", "order", "infraorder", "grade")
 CONFIDENCE = ("certain", "suggested", "contested", "course")   # course: another collection's course writes it differently
 STATUS = ("pending", "accepted", "rejected")
+MARK_PARTS = ("shape", "head", "colour", "skin", "wings", "fins", "legs", "tail", "sexes", "young", "behaviour")  # app/i18n.js I.PART
 VIDEO_STATUS = {"ok": "ok", "link_only": "link_only", "broken": "broken", "unknown": "link_only"}
 
 
@@ -350,6 +351,21 @@ def build_species(species, snap, classify, corrections, videos, report):
 
 # --------------------------------------------------------------------------- content and media
 
+def check_mark_parts(obj, where):
+    """field_marks.parts labels each field mark with the body parts it describes (1-3 of MARK_PARTS),
+    so a mistake screen can line two species' marks up part by part."""
+    fm = obj.get("field_marks") or {}
+    parts = fm.get("parts")
+    if parts is None:
+        return
+    n = len(fm.get("es") or [])
+    if len(parts) != n or len(fm.get("en") or []) != n:
+        raise BuildError(f"{where}: field_marks.parts needs one entry per field mark ({n}), got {len(parts)}")
+    for i, p in enumerate(parts):
+        if not isinstance(p, list) or not 1 <= len(p) <= 3 or any(x not in MARK_PARTS for x in p):
+            raise BuildError(f"{where}: field_marks.parts[{i}] must list 1 to 3 of {', '.join(MARK_PARTS)}")
+
+
 def compile_content(tree, warnings, registry, report, used_ids, classes=()):
     """The content files of this collection's tree nodes, plus those of the list's classes that are not tree
     nodes (the grade Reptilia), whose etymology the cards show. used_ids collects every id used by some
@@ -366,6 +382,7 @@ def compile_content(tree, warnings, registry, report, used_ids, classes=()):
             if nid not in tree["nodes"] and nid not in extra:
                 continue
             used_ids.add(f"content/{kind}/{path.name}")
+            check_mark_parts(obj, f"content/{kind}/{path.name}")
             content[kind][nid] = obj
             for src in obj.get("sources") or []:
                 url = src.get("url")

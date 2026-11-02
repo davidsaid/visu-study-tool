@@ -13,6 +13,13 @@
       "Brown horn-like casque on top of the head",
       "Three-toed feet with a dagger-like claw on the inner toe",
       "Juveniles brown with lengthwise stripes"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["head"],
+      ["head"],
+      ["legs"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

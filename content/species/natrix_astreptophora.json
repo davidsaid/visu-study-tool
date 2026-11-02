@@ -11,6 +11,12 @@
       "Thick body, rounded head and round pupil",
       "Brown or dark green, sometimes grey or black, with black markings",
       "Pale underside with irregular black markings"
+    ],
+    "parts": [
+      ["head"],
+      ["shape", "head"],
+      ["colour"],
+      ["colour"]
     ]
   },
   "lookalikes": [

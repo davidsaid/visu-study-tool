@@ -13,6 +13,13 @@
       "Pale tawny nape and crown",
       "Dark tail without pale bands",
       "Juveniles uniform pale straw with broad black wing bands; they pass through 'chequered' stages"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["wings"],
+      ["head"],
+      ["tail"],
+      ["young", "colour", "wings"]
     ]
   },
   "lookalikes": [

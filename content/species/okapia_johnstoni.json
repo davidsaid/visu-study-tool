@@ -13,6 +13,13 @@
       "White horizontal zebra-like stripes on the legs and hindquarters, and white ankles",
       "Greyish-white face, throat and chest; large, flexible ears",
       "Males have short, hair-covered ossicones"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["legs", "colour"],
+      ["head"],
+      ["sexes", "head"]
     ]
   },
   "lookalikes": [

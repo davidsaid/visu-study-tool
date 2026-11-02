@@ -13,6 +13,13 @@
       "White stripe from behind the eye down the neck; blackish foreneck",
       "Elongated coverts drooping over the tail like a bustle",
       "Flies with neck extended on straight, flat wings"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head"],
+      ["wings", "tail"],
+      ["behaviour", "wings"]
     ]
   },
   "lookalikes": [

@@ -11,6 +11,12 @@
       "Black fur, often with irregular white patches on chest and rump",
       "Tail about half the body length",
       "Forelegs slightly longer than hind legs"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["colour", "skin"],
+      ["tail"],
+      ["legs"]
     ]
   },
   "lookalikes": [

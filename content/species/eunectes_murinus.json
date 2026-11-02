@@ -13,6 +13,13 @@
       "Oval black and ochre markings on the flanks; paler belly",
       "Narrow head without a distinct neck, with eyes and nostrils set high",
       "Snout covered by six thickened scales, three on each side"
+    ],
+    "parts": [
+      ["shape"],
+      ["colour"],
+      ["colour"],
+      ["head"],
+      ["head", "skin"]
     ]
   },
   "lookalikes": [],

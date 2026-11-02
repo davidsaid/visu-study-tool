@@ -11,6 +11,12 @@
       "Small ears",
       "Fairly short tail with a black tip",
       "Greyish-brown back and yellowish belly"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["head"],
+      ["tail"],
+      ["colour"]
     ]
   },
   "lookalikes": [

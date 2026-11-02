@@ -11,6 +11,12 @@
       "Olive above; yellowish below",
       "Head with a black streak from between the eyes to the nape, crossed by two or three inverted-V black marks",
       "Young have fine black vermiculations on the back, without eyespots"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["head"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [],

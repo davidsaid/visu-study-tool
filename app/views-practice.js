@@ -19,15 +19,45 @@ function lastConfusion() {
   }
   return null;
 }
-/* The authored tip for a confusable pair: the correct card's look-alike note, else the other card's, else field marks. */
-function pairTip(yours, correct) {
+/* The authored note for a confusable pair: the correct card's look-alike note, else the other card's. */
+function pairNote(yours, correct) {
   const C = M().content.species || {};
   const by = (a, b) => { const c = C[a]; if (!c || !Array.isArray(c.lookalikes)) return null; return c.lookalikes.find(x => x && x.binomial === App.sp(b).binomial) || null; };
   const t = by(correct, yours) || by(yours, correct);
-  if (t) return { text: I.t(t), draft: (C[correct] || C[yours] || {}).status === 'draft' };
-  const fm = C[correct] && I.list(C[correct].field_marks);
-  if (fm && fm.length) return { text: fm.slice(0, 3).join(' · '), draft: C[correct].status === 'draft' };
-  return null;
+  return t ? { text: I.t(t), draft: (C[correct] || C[yours] || {}).status === 'draft' } : null;
+}
+/* A short tip for a pair: its authored note, else the correct card's first field marks. */
+function pairTip(yours, correct) {
+  const C = M().content.species || {}, fm = C[correct] && I.list(C[correct].field_marks);
+  return pairNote(yours, correct) || (fm && fm.length ? { text: fm.slice(0, 3).join(' · '), draft: C[correct].status === 'draft' } : null);
+}
+/* Two species' field marks lined up by body part (content field_marks.parts), then their size and activity facts.
+   Only parts both cards describe make a row. Each mark sits in its first such part; when one side has no mark of its
+   own in a row, it borrows its first mark about that part. A row of borrowed marks only is dropped. */
+const DIFF_FACTS = ['length', 'mass', 'activity'];
+function diffRows(yours, correct) {
+  const marks = id => {
+    const fm = ((M().content.species || {})[id] || {}).field_marks, ps = fm && Array.isArray(fm.parts) ? fm.parts : [];
+    return I.list(fm).map((t, i) => ({ t, ps: ps[i] || [] }));
+  };
+  const A = marks(yours), B = marks(correct), has = (ms, p) => ms.some(m => m.ps.includes(p));
+  const shared = Object.keys(I.PART).filter(p => has(A, p) && has(B, p));
+  const cell = (ms, p) => {
+    const own = ms.filter(m => m.ps.find(x => shared.includes(x)) === p);
+    return { own: own.length > 0, text: (own.length ? own : ms.filter(m => m.ps.includes(p)).slice(0, 1)).map(m => m.t).join(' · ') };
+  };
+  const fact = (id, f) => { const x = (App.sp(id).facts || []).find(v => v && v.field === f); return x && I.t(x); };
+  return shared.map(p => [L(...I.PART[p]), cell(A, p), cell(B, p)]).filter(([, a, b]) => a.own || b.own).map(([l, a, b]) => [l, a.text, b.text])
+    .concat(DIFF_FACTS.map(f => [I.fieldName(f), fact(yours, f), fact(correct, f)]).filter(r => r[1] && r[2] && r[1] !== r[2]));
+}
+function diffHTML(yours, correct) {
+  const rows = diffRows(yours, correct);
+  if (!rows.length) return '';
+  const C = M().content.species || {}, draft = [yours, correct].some(id => (C[id] || {}).status === 'draft');
+  const name = id => `<a href="#${esc(App.routeFor(id))}">${esc(App.spName(id))}</a>`;
+  return `<p class="eyebrow mt">${L('Compara parte por parte', 'Compare part by part')}</p>
+    <div class="diff">${rows.map(([lab, y, c]) => `<p class="dlab">${esc(lab)}</p><p class="yours">${esc(y)}</p><p class="correct">${esc(c)}</p>`).join('')}</div>
+    <p class="tiny muted diff-src">${L('Rasgos y datos de las fichas de', 'Field marks and facts from the cards of')} ${name(yours)} ${L('y', 'and')} ${name(correct)}${L(', con sus fuentes.', ', with their sources.')} ${App.draftTag(draft)}</p>`;
 }
 function sessTop(prog, total, idx, exitTo) {
   return `<div class="sess-top"><a class="iconbtn" href="#${exitTo || 'hoy'}" aria-label="${L('Salir de la sesión', 'Leave session')}">${ICON.close}</a>
@@ -68,11 +98,11 @@ function comparePlate(yours, correct, idx, yoursIdx) {
     <figcaption><div class="vern"><a href="#${esc(App.routeFor(id))}">${esc(App.sp(id).common_es)}</a></div>
       <div class="bin">${binHL(App.sp(id).binomial, App.sp(cls === 'yours' ? correct : yours).binomial, cls === 'yours' ? 'hl-bad' : 'hl-good')}</div>
       <div class="tiny muted">${esc(App.sp(id).order)} · ${esc(App.sp(id).class)}</div></figcaption></figure>`;
-  const tip = pairTip(yours, correct), split = E.lca(M(), yours, correct);
+  const tip = pairNote(yours, correct), diff = diffHTML(yours, correct), split = E.lca(M(), yours, correct);
   return `<div class="twoup">${fig(yours, 'yours', L('Tu respuesta', 'Your answer'))}${fig(correct, 'correct', L('Respuesta correcta', 'Correct answer'))}</div>
   <section class="key"><p class="eyebrow">${L('La clave', 'The key')}</p>
-    ${tip ? `<p class="tip">${esc(tip.text)}</p>${tip.draft ? `<p class="tiny muted">${App.draftTag(true)}</p>` : ''}`
-      : `<p class="small muted">${L('Pista de esta pareja: pendiente de redactar. Mientras, compara las dos fichas.', 'Tip for this pair: not written yet. Meanwhile, compare the two cards.')}</p>`}
+    ${tip ? `<p class="tip">${esc(tip.text)}</p>${tip.draft ? `<p class="tiny muted">${App.draftTag(true)}</p>` : ''}` : ''}${diff}
+    ${tip || diff ? '' : `<p class="small muted">${L('Pista de esta pareja: pendiente de redactar. Mientras, compara las dos fichas.', 'Tip for this pair: not written yet. Meanwhile, compare the two cards.')}</p>`}
     ${split ? `<p class="tiny muted">${L('En el árbol se separan en', 'In the tree they split at')} <a href="#${esc(App.routeFor(split))}">${esc(App.label(split))}</a>.</p>` : ''}</section>`;
 }
 function calloutsHTML(conf, due, requeued) {

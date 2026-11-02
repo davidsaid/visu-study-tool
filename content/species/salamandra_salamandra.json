@@ -11,6 +11,12 @@
       "Stout body and relatively short tail, with no crests",
       "Parotoid glands clearly visible on the head",
       "Adults 18–25 cm including tail"
+    ],
+    "parts": [
+      ["colour"],
+      ["shape", "tail"],
+      ["head"],
+      ["shape"]
     ]
   },
   "lookalikes": [

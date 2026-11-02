@@ -13,6 +13,13 @@
       "Often a rust-coloured stripe along the spine",
       "Black, velvety-looking tail; some individuals almost entirely black",
       "Keeled back scales"
+    ],
+    "parts": [
+      ["shape", "tail"],
+      ["colour"],
+      ["colour"],
+      ["tail", "colour"],
+      ["skin"]
     ]
   },
   "lookalikes": [

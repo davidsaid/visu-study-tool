@@ -13,6 +13,13 @@
       "Pink legs and feet",
       "Pale grey forewing and rump, visible in flight",
       "Whitish undertail and a white line along the upper flank"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["legs"],
+      ["wings", "colour"],
+      ["colour", "tail"]
     ]
   },
   "lookalikes": [

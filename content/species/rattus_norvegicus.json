@@ -11,6 +11,12 @@
       "Scaly, ringed tail slightly shorter than head and body",
       "Blunt snout and short ears",
       "Can weigh twice as much as a black rat"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["tail", "skin"],
+      ["head"],
+      ["shape"]
     ]
   },
   "lookalikes": [

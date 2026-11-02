@@ -11,6 +11,12 @@
       "Usually green, but can turn brown, yellow or bluish",
       "Toe tips expanded into adhesive discs",
       "Dark, yellow-edged band from nostril to groin, looping up towards the back"
+    ],
+    "parts": [
+      ["shape", "skin"],
+      ["colour"],
+      ["legs"],
+      ["colour", "head"]
     ]
   },
   "lookalikes": [

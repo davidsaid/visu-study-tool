@@ -13,6 +13,13 @@
       "Irregular pink, yellow or white markings on a black or brown ground",
       "Short, thick tail used to store fat",
       "Massive head with a stout snout and small eyes"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["skin"],
+      ["colour"],
+      ["tail"],
+      ["head"]
     ]
   },
   "lookalikes": [],

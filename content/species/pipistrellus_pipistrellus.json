@@ -13,6 +13,13 @@
       "Short muzzle with glandular swellings on the sides",
       "Variable brown fur; darker face, sometimes almost black",
       "Dark, hairless wing and tail membranes"
+    ],
+    "parts": [
+      ["shape", "wings"],
+      ["head"],
+      ["head"],
+      ["skin", "colour", "head"],
+      ["wings", "tail"]
     ]
   },
   "lookalikes": [

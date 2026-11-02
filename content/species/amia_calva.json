@@ -13,6 +13,13 @@
       "Bright green paired and anal fins",
       "Black eyespot at the base of the tail, ringed with orange-yellow in young males",
       "White or cream underside"
+    ],
+    "parts": [
+      ["fins"],
+      ["shape", "colour"],
+      ["fins"],
+      ["tail", "sexes", "young"],
+      ["colour"]
     ]
   },
   "lookalikes": [

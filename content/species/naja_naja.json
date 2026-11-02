@@ -11,6 +11,12 @@
       "Mark on the back of the hood: two ocelli joined by a curved line, like spectacles",
       "Elliptical, flattened head barely distinct from the neck; short, rounded snout; round pupil",
       "Highly variable colour; adults often have salt-and-pepper speckling on the back"
+    ],
+    "parts": [
+      ["shape", "behaviour", "head"],
+      ["head"],
+      ["head"],
+      ["colour"]
     ]
   },
   "lookalikes": [

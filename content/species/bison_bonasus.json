@@ -13,6 +13,13 @@
       "Small 'beard' on the throat",
       "Short, thick, upward-pointing horns in both sexes",
       "Short hair on the lower legs"
+    ],
+    "parts": [
+      ["shape"],
+      ["head", "colour", "skin"],
+      ["head"],
+      ["head"],
+      ["legs", "skin"]
     ]
   },
   "lookalikes": [

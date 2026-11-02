@@ -13,6 +13,13 @@
       "Female and juveniles: reddish-brown cap",
       "Olive-grey upperparts and light grey underparts, whiter on the throat",
       "Grey legs; blackish bill with grey lower mandible"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["sexes", "head"],
+      ["sexes", "young", "head"],
+      ["colour"],
+      ["legs", "head"]
     ]
   },
   "lookalikes": [

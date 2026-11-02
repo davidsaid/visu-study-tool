@@ -13,6 +13,13 @@
       "Back convex or level, not sagging",
       "Trunk tip with a single finger-like projection",
       "Females lack tusks or have barely visible ones"
+    ],
+    "parts": [
+      ["head"],
+      ["shape", "head"],
+      ["shape"],
+      ["head"],
+      ["sexes", "head"]
     ]
   },
   "lookalikes": [

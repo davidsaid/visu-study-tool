@@ -11,6 +11,12 @@
       "Long ears (4–8 cm) without black tips",
       "Oval head and large eyes",
       "Very short tail; hind legs longer than forelegs"
+    ],
+    "parts": [
+      ["skin", "colour"],
+      ["head"],
+      ["head"],
+      ["tail", "legs"]
     ]
   },
   "lookalikes": [

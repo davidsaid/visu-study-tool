@@ -13,6 +13,13 @@
       "Very large ears and a short muzzle",
       "Strong hind legs adapted for leaping",
       "Long tail, longer than the body"
+    ],
+    "parts": [
+      ["shape", "skin", "colour"],
+      ["head"],
+      ["head"],
+      ["legs"],
+      ["tail"]
     ]
   },
   "lookalikes": [

@@ -147,7 +147,7 @@ or `Public domain` (Commons only). Every photo is listed in the generated `media
 
 ```js
 { species: { "lynx_pardinus": {
-    field_marks: { es: [..], en: [..] },
+    field_marks: { es: [..], en: [..], parts: [["shape", "wings"], ..] },
     lookalikes: [ { binomial, es, en } ],
     dimorphism: { es, en }, etymology: { es, en }, trivia: { es: [..], en: [..] },
     sources: [ { title, url, license, retrieved } ],
@@ -159,6 +159,12 @@ or `Public domain` (Commons only). Every photo is listed in the generated `media
 
 `content/species/<id>.json` and `content/groups/<node_id>.json` contain exactly one of
 these objects. In group file names the colon becomes `__`: `order__Accipitriformes.json`.
+
+`field_marks.parts` (optional) has one entry per field mark: the body parts it describes, 1 to 3 of
+`shape`, `head`, `colour`, `skin`, `wings`, `fins`, `legs`, `tail`, `sexes`, `young`, `behaviour`, most
+important first. After a wrong species, the mistake screen uses them to line the two cards' marks up
+part by part. They add no facts, so they need no source. The build stops if the counts don't match or
+a label is unknown.
 
 `etymology` is "what the name says": for a species, the meaning of the genus and the epithet;
 for a group, the roots of its name. The app shows it as a memory aid on the cards (class, order

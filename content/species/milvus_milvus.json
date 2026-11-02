@@ -13,6 +13,13 @@
       "Silvery-grey head",
       "In flight, white primaries below contrasting with black wingtips and dark secondaries",
       "Tail twists as it changes direction; juveniles have a buff breast and belly"
+    ],
+    "parts": [
+      ["shape", "wings", "tail"],
+      ["colour", "tail", "wings"],
+      ["head"],
+      ["wings", "behaviour"],
+      ["behaviour", "tail", "young"]
     ]
   },
   "lookalikes": [

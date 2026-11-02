@@ -11,6 +11,12 @@
       "Long, downward-sloping face, its most distinctive feature",
       "Patch of rough hair on the nape; males have no mane",
       "Long tail and bare callosities at the base of the tail"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["head", "skin", "sexes"],
+      ["tail", "skin"]
     ]
   },
   "lookalikes": [

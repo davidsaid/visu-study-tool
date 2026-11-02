@@ -11,6 +11,12 @@
       "Short, rounded head, small mouth and very large eyes",
       "Black spot just above the pectoral fin base, at the start of the lateral line",
       "Reddish back, silvery flanks with a pink tinge and pinkish-red fins"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["colour", "fins"],
+      ["colour", "fins"]
     ]
   },
   "lookalikes": [

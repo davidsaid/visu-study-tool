@@ -13,6 +13,13 @@
       "Long tail, as long as the body, with 8–13 black rings and a white tip",
       "Small, conical head with a pointed muzzle; white patches by the eyes and dark ones below",
       "Large, erect, rounded ears"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["colour"],
+      ["tail"],
+      ["head"],
+      ["head"]
     ]
   },
   "lookalikes": [

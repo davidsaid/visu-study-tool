@@ -13,6 +13,13 @@
       "Very large, bat-like ears",
       "Large yellow eyes",
       "Very thin, elongated third finger with a hooked nail"
+    ],
+    "parts": [
+      ["skin", "colour"],
+      ["tail"],
+      ["head"],
+      ["head"],
+      ["legs"]
     ]
   },
   "lookalikes": [

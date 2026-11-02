@@ -13,6 +13,13 @@
       "Five pairs of costal scutes and 11–12 pairs of marginals",
       "Head and neck skin yellow to brown; pale yellow plastron",
       "Cannot pull its head or flippers into the shell"
+    ],
+    "parts": [
+      ["shape", "head"],
+      ["skin", "colour"],
+      ["skin"],
+      ["head", "colour"],
+      ["head", "fins"]
     ]
   },
   "lookalikes": [

@@ -13,6 +13,13 @@
       "Very long, graduated bluish tail, a large part of its total length",
       "Adult male has a pink-and-black neck ring",
       "Females and immatures lack a ring or show a faint grey one"
+    ],
+    "parts": [
+      ["shape", "colour"],
+      ["head"],
+      ["tail"],
+      ["sexes", "head"],
+      ["sexes", "young", "head"]
     ]
   },
   "lookalikes": [

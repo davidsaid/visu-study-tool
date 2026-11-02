@@ -13,6 +13,13 @@
       "Seven small gill openings on each side behind the eye",
       "Plain dark grey above, yellowish-white on the sides, white below",
       "Two well-separated dorsal fins"
+    ],
+    "parts": [
+      ["shape", "fins"],
+      ["head"],
+      ["skin", "head"],
+      ["colour"],
+      ["fins"]
     ]
   },
   "lookalikes": [

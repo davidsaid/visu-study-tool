@@ -13,6 +13,13 @@
       "Dark, very wrinkled skin",
       "Dark brown, mottled or speckled; sometimes reddish brown or black",
       "A line of paired tubercles round the head and throat"
+    ],
+    "parts": [
+      ["shape"],
+      ["head"],
+      ["skin"],
+      ["colour"],
+      ["head", "skin"]
     ]
   },
   "lookalikes": [],

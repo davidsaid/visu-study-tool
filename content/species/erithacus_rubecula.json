@@ -13,6 +13,13 @@
       "Brown upperparts and whitish belly",
       "Black bill and eyes; brown legs",
       "Juveniles spotted brown and buff, initially without orange"
+    ],
+    "parts": [
+      ["shape"],
+      ["head", "colour"],
+      ["colour"],
+      ["head", "legs"],
+      ["young", "colour"]
     ]
   },
   "lookalikes": [

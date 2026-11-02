@@ -13,6 +13,13 @@
       "Forelimbs modified into paddle-like flippers",
       "Head joins the body with no visible neck and no external ear flaps",
       "Thick grey-to-brown wrinkled skin with sparse hair, often covered with algae"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["tail"],
+      ["fins"],
+      ["head"],
+      ["skin"]
     ]
   },
   "dimorphism": {

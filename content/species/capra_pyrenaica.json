@@ -13,6 +13,13 @@
       "Brown or cinnamon coat with dark patches on the lower legs (in males extending to flanks, shoulders and belly)",
       "White mid-belly and a short black tail",
       "Short legs and large, flexible hooves"
+    ],
+    "parts": [
+      ["sexes", "head"],
+      ["sexes", "head"],
+      ["colour", "legs", "sexes"],
+      ["colour", "tail"],
+      ["legs"]
     ]
   },
   "lookalikes": [

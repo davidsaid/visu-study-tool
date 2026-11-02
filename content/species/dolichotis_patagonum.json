@@ -13,6 +13,13 @@
       "Short, flattened, hairless tail",
       "Grey back with a white rump patch separated by a black area",
       "White belly, somewhat orange flanks and chin"
+    ],
+    "parts": [
+      ["shape", "head", "legs"],
+      ["legs"],
+      ["tail"],
+      ["colour"],
+      ["colour", "head"]
     ]
   },
   "lookalikes": [

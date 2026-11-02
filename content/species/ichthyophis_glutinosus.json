@@ -13,6 +13,13 @@
       "Dark brown to black back with a bluish sheen",
       "A bright yellow band along each side",
       "Rounded snout with a pair of tentacles between the eyes and nostrils"
+    ],
+    "parts": [
+      ["shape"],
+      ["skin"],
+      ["colour"],
+      ["colour"],
+      ["head"]
     ]
   },
   "lookalikes": [

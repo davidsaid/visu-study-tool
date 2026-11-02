@@ -13,6 +13,13 @@
       "Eyes, ears and nostrils set high on the head, showing above the water",
       "Very wide mouth with large lower canine tusks",
       "Short tail"
+    ],
+    "parts": [
+      ["shape", "legs"],
+      ["skin", "colour"],
+      ["head"],
+      ["head"],
+      ["tail"]
     ]
   },
   "lookalikes": [
