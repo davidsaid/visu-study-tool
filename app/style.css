@@ -525,7 +525,10 @@ body.focus-mode .main { padding-bottom: 2rem; }
 /* ---------- desktop ---------- */
 @media (min-width: 640px) {
   .twoup { gap: 1.4rem; }
-  .entry-grid.has-facts { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: start; column-gap: 1.6rem; }
+  .facts dl { display: grid; grid-template-columns: minmax(9rem, max-content) minmax(0, 1fr); column-gap: 1.4rem; }
+  .facts dt, .facts dt:first-child, .facts dd { margin-top: 0; padding: .5rem 0; border-top: 1px solid var(--rule); }
+  .facts dt { padding-top: .75rem; }
+  .facts dt:first-of-type, .facts dt:first-of-type + dd { border-top: 0; }
   .how .twoways { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 520px) {

@@ -235,7 +235,7 @@ function speciesCard(id) {
     ${App.hasPhoto(id) ? `<button class="btn compact" data-practise="${esc(id)}">${L('Practicar', 'Practise')}</button>` : ''}</div>`;
   const fact = f => `<dt>${esc(I.fieldName(f.field))}</dt><dd>${factValue(f)}${cite.bestiary(f.src)}${f.note ? `<span class="tiny muted"> · ${esc(I.t(f.note))}</span>` : ''}</dd>`;
   const factsHTML = facts.length ? `<section class="facts"><h2 class="sec first">${L('Datos', 'Facts')}</h2><dl>${facts.map(fact).join('')}</dl></section>` : '';
-  let body = `<div class="entry-grid ${factsHTML ? 'has-facts' : ''}"><div>${figureHTML(id)}</div>${factsHTML}</div>${namesHTML(id, cite)}`;
+  let body = `<div class="entry-grid"><div>${figureHTML(id)}</div>${factsHTML}</div>${namesHTML(id, cite)}`;
   if (c) {
     const cs = cite.content(id, c.sources), marks = I.list(c.field_marks), triv = I.list(c.trivia);
     const look = Array.isArray(c.lookalikes) ? c.lookalikes.filter(x => x && x.binomial) : [];
