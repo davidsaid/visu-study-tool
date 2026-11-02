@@ -428,6 +428,23 @@ function buildGroupSession(M, P, opts) {
   if (!items.length && opts.force) items = shuffle(all, rng).sort((a, b) => (due(a) || 0) - (due(b) || 0)).slice(0, size);
   return items;
 }
+/* "¿Cuál sobra?": three species of one order and one of another. The odd one is from another class (Easy), from
+   the same class (Medium) or the closest species of another order (Hard). Only orders with three species with photos. */
+function buildOddOne(M, opts) {
+  const rng = opts.rng || Math.random, lv = opts.level || 2;
+  const groups = shuffle(groupItems(M, scopePool(M, opts.scope), ['order']).filter(g => g.members.length >= 3), rng).slice(0, opts.size || 10);
+  return groups.map(g => {
+    const three = shuffle(g.members, rng).slice(0, 3), T = M.species[three[0]];
+    const others = M.withPhotos.filter(x => M.species[x].order !== T.order);
+    let cand = lv === 1 ? others.filter(x => M.species[x].class !== T.class) : lv === 2 ? others.filter(x => M.species[x].class === T.class) : [];
+    if (!cand.length) {
+      const d = x => Math.min.apply(null, three.map(y => treeDist(M, x, y)));
+      cand = others.map(x => [x, d(x)]).sort((a, b) => a[1] - b[1]).slice(0, 3).map(a => a[0]);
+    }
+    const odd = cand[Math.floor(rng() * cand.length)];
+    return { node: g.node, three, odd, opts: shuffle(three.concat(odd), rng) };
+  });
+}
 /* Avoid the same animal twice in a row: the second photo would give the answer away. */
 function spreadSpecies(items) {
   const out = items.slice();
@@ -687,7 +704,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
+  ymd, startOfDay, todayPlan, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

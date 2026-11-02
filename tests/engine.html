@@ -302,6 +302,14 @@ test('real data', () => {
   eq('group session: new groups capped at the daily allowance, classes first', [gs.length, gs.slice(0, nClass).every(g => g.skill === 'class')], [10, true]);
   const og = E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: ['order'], scope: 'class:Aves', size: 10 });
   ok('group session: larger groups come first', og.every((g, i) => !i || og[i - 1].members.length >= g.members.length) && og[0].members.length > 1);
+  bad = [];
+  [1, 2, 3].forEach(lv => E.buildOddOne(RM, { level: lv, size: 40, rng }).forEach(q => {
+    const o = q.node.split(':')[1], oc = RM.species[q.three[0]].class, odd = RM.species[q.odd];
+    const fine = q.three.every(x => RM.species[x].order === o) && odd.order !== o && q.opts.length === 4 && new Set(q.opts).size === 4
+      && (lv !== 1 || odd.class !== oc) && (lv !== 2 || odd.class === oc);
+    if (!fine) bad.push(`${q.node}@${lv}`);
+  }));
+  ok('odd one out: three of one order, one of another, by level (other class / same class / closest)', !bad.length, bad.slice(0, 5).join());
   ok('group session: practising one class never asks for the class itself', E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, scope: 'class:Aves', size: 50, force: true }).every(g => g.skill === 'order'));
   const PG = E.emptyProgress(now2); PG.cards['order:Accipitriformes:group'] = { p: { seen: 1, ok: 1, streak: 1, due: now2 + 6e5, first: now2, last: now2 }, m: null };
   eq('group cards don’t use up the species’ new cards for the day', E.todayPlan(RM, PG, { now: now2, skills: GS }).newAvailable, E.todayPlan(RM, E.emptyProgress(now2), { now: now2, skills: GS }).newAvailable);

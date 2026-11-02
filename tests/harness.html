@@ -356,6 +356,26 @@ const SCENARIOS = {
     report({ scenario: 'vistazo', suggested: !!suggested && /^#vistazo-order-/.test(suggested), button, first, second, check, orders, n });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
+  /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
+  'sobra': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 2; await click('a.game[href="#sobra"]'); await sleep(200);
+    const st = App().oddState(), q = st.items[0];
+    const four = doc.querySelectorAll('.rev-grid .rev-opt .car').length === 4 && !doc.querySelector('.rev-grid .cap');
+    const hidden = [...doc.querySelectorAll('.rev-grid img')].every(im => !q.opts.some(id => im.alt.includes(App().sp(id).binomial)));
+    const disabled = doc.querySelector('#oddcheck').disabled;
+    const wrong = q.three[0];
+    await click(`[data-oddpick="${wrong}"]`); await click('#oddcheck');
+    const explained = !!doc.querySelector('.mistake-head') && doc.querySelectorAll('.group-cmp .yours, .group-cmp .correct').length === 2 && doc.querySelectorAll('.rev-grid .cap').length === 4;
+    const day = Object.values(win.VISU_STORE.data.days).reduce((a, b) => a + b, 0) === 1 && win.VISU_STORE.data.log.length === 0;
+    await click('#oddnext');
+    const q2 = App().oddState().items[1];
+    await click(`[data-oddpick="${q2.odd}"]`); await click('#oddcheck');
+    const right = !!doc.querySelector('.reveal-ok') && App().oddState().ok === 1;
+    await click('[data-oddlevel="3"]');
+    const relevel = App().oddState().level === 3 && App().oddState().i === 0 && App().set().level === 3;
+    report({ scenario: 'sobra', four, hidden, disabled, explained, day, right, relevel });
+  },
+  'sobra-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = +(Q.get('lv') || 3); await go('sobra'); if (Q.get('miss')) { await click(`[data-oddpick="${App().oddState().items[0].three[0]}"]`); await click('#oddcheck'); } },
   /* The level picker describes "¿Cuál es?" levels (how close the other photos are), not typing levels. */
   'nivelcual': async () => {
     seedStorage(seen); await open('nivel'); await click('[data-game="cual"]');

@@ -29,6 +29,9 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   same three levels, with its own spaced repetition. The way in for someone who doesn't know the
   animals yet: classes first, then the largest orders. A class's card can quiz just its orders.
   A wrong group shows both groups side by side, with what each has in common.
+- **"¿Cuál sobra?"** (odd one out): four photos, three from one order; pick the one that isn't.
+  The odd one comes from another class (Easy), the same class (Medium) or is the closest relative
+  of another order (Hard). The answer shows both orders and what each has in common.
 - **"¿Cuál es?"**: see a scientific name and pick the right photo out of four; each option
   can be flipped through all its photos. The harder the level, the more closely related the
   other animals.

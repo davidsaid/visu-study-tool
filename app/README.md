@@ -14,7 +14,7 @@ except a species' YouTube video, and only after a click (`youtube-nocookie.com`)
 | `engine.js` | Grading, the intent router, FSRS scheduling, mastery, distractors, session building, streak, badges, export/import. No DOM, no storage |
 | `store.js` | The progress object in `localStorage`, one key per collection (`visu-progress-v1` for vertebrados, `visu-progress-v1:<id>` for the others); its shape is documented at the top of the file |
 | `ui.js` | Shell, event delegation (`App.on`), shared fragments, the photo widget, rings and medals, export/import buttons, citation popover, first-visit notice |
-| `views-learn.js` | "Primer vistazo": a group's species (or a class's orders) one by one, nothing graded |
+| `views-learn.js` | "Primer vistazo": a group's species (or a class's orders) one by one, nothing graded; "¿Cuál sobra?", the odd one out |
 | `views-practice.js` | Today, level picker, photo → name session, "¿Qué grupo es?", exam sheet, "¿Cuál es?", Mock VISU, summaries |
 | `views-explore.js` | The progressive-disclosure tree (full, or study mode rooted at the list's classes), species and group cards, badges |
 | `views-info.js` | "Cómo funciona" and settings |

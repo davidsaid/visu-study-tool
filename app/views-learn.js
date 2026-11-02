@@ -1,4 +1,5 @@
-/* VISU · learning screens for animals not met yet: "Primer vistazo" (a first look at a group, nothing graded).
+/* VISU · learning screens for animals not met yet: "Primer vistazo" (a first look at a group, nothing graded) and
+   "¿Cuál sobra?" (the odd one out among four photos).
    Loaded after views-practice.js, whose shared pieces it reuses through App. */
 (function () {
 'use strict';
@@ -69,4 +70,75 @@ App.on('click', '#looknext', () => step(1));
 App.on('click', '#lookagain', () => { look.i = 0; V.vistazo(look.node); });
 App.on('click', '[data-lookcheck]', b => { P().ui.scope = look.node; if (b.dataset.lookcheck === 'foto') SET().level = 1; else SET().game = 'grupo'; Store.save(); });
 App.lookState = () => look;
+
+/* ---------- ¿CUÁL SOBRA? ---------- */
+/* Pick the photo that is not of the same order as the other three. Practice only: it counts as a study day. */
+let odd = null;
+const oddLevelDesc = k => ({
+  1: L('La que sobra es de otra clase.', 'The odd one is from another class.'),
+  2: L('La que sobra es de la misma clase, pero de otro orden.', 'The odd one is from the same class, but another order.'),
+  3: L('La que sobra es el pariente más cercano de otro orden.', 'The odd one is the closest relative from another order.')
+}[k]);
+App.newOdd = function (level) {
+  const lv = level || SET().level, scope = P().ui.scope && M().nodes[P().ui.scope] ? P().ui.scope : null;
+  const items = E.buildOddOne(M(), { level: lv, scope, size: 10 });
+  odd = { level: lv, items: items.length ? items : E.buildOddOne(M(), { level: lv, size: 10 }), i: 0, ok: 0 };
+  resetOdd();
+  return odd;
+};
+App.oddState = () => odd;
+function resetOdd() {
+  const q = odd.items[odd.i];
+  Object.assign(odd, { picked: null, phase: 'ask', photo: {} });
+  if (q) q.opts.forEach(o => { odd.photo[o] = App.randomPhoto(o); });
+}
+const orderOf = id => `order:${App.sp(id).order}`;
+V.sobra = function () {
+  App.focusMode(true);
+  const q = odd.items[odd.i], n = odd.items.length;
+  if (!q) {
+    App.main().innerHTML = `<div class="session-wrap">${App.sessTop(1, n, n - 1)}<p class="eyebrow">${L('¿Cuál sobra?', 'Odd one out')}</p>
+      <h1>${n ? `${odd.ok}/${n} ${L('aciertos', 'correct')}` : L('No hay órdenes con tres especies con foto aquí', 'No order here has three species with photos')}</h1>
+      <div class="actions"><button class="btn primary big" id="oddagain">${L('Otra ronda', 'Another round')}</button><a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div></div><div id="aside-m"></div>`;
+    App.aside().innerHTML = '';
+    return;
+  }
+  const rev = odd.phase === 'reveal', right = rev && odd.picked === q.odd;
+  const levels = `<div class="row mb" role="group" aria-label="${L('Nivel', 'Level')}">${[1, 2, 3].map(k => `<button class="btn compact" data-oddlevel="${k}" aria-pressed="${odd.level === k}">${App.lvDots(k)}${I.lvName(k)}</button>`).join('')}</div>`;
+  const grid = `<div class="rev-grid" role="group" aria-label="${L('Elige la que sobra', 'Pick the odd one')}">${q.opts.map((o, i) => {
+    let cls = 'rev-opt'; if (odd.picked === o) cls += ' picked'; if (rev && o === q.odd) cls += ' right';
+    const label = `${L('Foto', 'Photo')} ${i + 1}${rev ? ': ' + App.sp(o).binomial : ''}`;
+    const pick = `<button type="button" class="rev-pick" data-oddpick="${esc(o)}" aria-pressed="${odd.picked === o}" ${rev ? 'disabled' : ''} aria-label="${esc(L('Elegir', 'Pick') + ' · ' + label)}"></button><span class="n" aria-hidden="true">${i + 1}</span>`;
+    const cap = rev ? `<span class="cap"><a href="#${esc(App.routeFor(o))}">${esc(App.spName(o))}</a><br><i>${esc(App.sp(o).order)}</i></span>` : '';
+    return `<div class="${cls}">${App.carousel(o, { key: `odd-${i}`, idx: odd.photo[o], alt: label, inner: pick, credit: rev || undefined })}${cap}</div>`;
+  }).join('')}</div>${rev ? '' : App.creditLater()}`;
+  const oo = orderOf(q.odd), last = odd.i === n - 1;
+  const result = !rev ? `<button class="btn primary big mt" id="oddcheck" ${odd.picked ? '' : 'disabled'}>${L('Comprobar', 'Check')}</button>`
+    : `<div class="mt" ${right ? 'role="status"' : 'role="alert"'}>${right ? '<div class="reveal-ok">' : ''}${right ? `<p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p></div>` : App.mistakeHead(L('Esa no sobraba', 'That one belonged'),
+        `${esc(App.spName(odd.picked))} ${L('es de', 'is in')} <i>${esc(App.sp(odd.picked).order)}</i>, ${L('como otras dos', 'like two others')}`)}
+      <p>${L('Sobraba', 'The odd one was')} <b>${esc(App.spName(q.odd))}</b>, ${L('de', 'in')} <i>${esc(App.sp(q.odd).order)}</i>${App.sp(q.odd).class !== App.sp(q.three[0]).class ? ` (${L('clase', 'class')} <i>${esc(App.sp(q.odd).class)}</i>)` : ''}.</p>
+      ${App.groupCompare(oo, q.node, [L('La que sobra', 'The odd one'), L('Las otras tres', 'The other three')])}
+      <div class="actions"><button class="btn primary big" id="oddnext">${last ? L('Ver resultado', 'See result') : L('Siguiente', 'Next')}</button></div></div>`;
+  App.main().innerHTML = `<div class="session-wrap">${App.sessTop((odd.i + (rev ? 1 : 0)) / n, n, odd.i)}
+    <p class="eyebrow">${L('¿Cuál sobra?', 'Odd one out')}</p><h1 class="prompt">${L('Tres son del mismo orden. ¿Cuál no?', 'Three are from the same order. Which one isn’t?')}</h1>
+    ${levels}<p class="tiny muted">${oddLevelDesc(odd.level)} ${L('No programa repasos: es para fijarse en lo que comparte cada orden.', 'It schedules no reviews: it trains what each order shares.')}</p>
+    ${grid}${result}</div><div id="aside-m"></div>`;
+  App.aside().innerHTML = '';
+  q.opts.forEach((o, i) => { App.carouselStep[`odd-${i}`] = k => { odd.photo[o] = k; }; });
+};
+App.on('click', '[data-oddpick]', b => {
+  if (Date.now() - (App.lastSwipe || 0) < 500) return;   // the tap that ends a swipe flips the photo, it doesn't pick
+  odd.picked = b.dataset.oddpick;
+  App.redraw(V.sobra, `[data-oddpick="${CSS.escape(odd.picked)}"]`);
+});
+App.on('click', '#oddcheck', () => {
+  if (!odd.picked) return;
+  odd.phase = 'reveal';
+  if (odd.picked === odd.items[odd.i].odd) odd.ok++;
+  Store.recordDay();
+  V.sobra(); App.main().focus();
+});
+App.on('click', '#oddnext', () => { odd.i++; resetOdd(); V.sobra(); App.main().focus(); window.scrollTo(0, 0); });
+App.on('click', '#oddagain', () => { App.newOdd(odd.level); V.sobra(); });
+App.on('click', '[data-oddlevel]', b => { SET().level = +b.dataset.oddlevel; Store.save(); App.newOdd(SET().level); App.redraw(V.sobra, `[data-oddlevel="${SET().level}"]`); });
 })();

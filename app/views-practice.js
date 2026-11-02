@@ -176,6 +176,8 @@ V.hoy = function () {
         `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
         'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
+    <a class="game" href="#sobra">${ICON.groupPhotos}<span><b>${L('¿Cuál sobra?', 'Odd one out')}</b><span class="small muted">${L('Cuatro fotos: tres son del mismo orden y una no. Para fijarte en lo que comparte cada orden.',
+        'Four photos: three share an order and one doesn’t. To notice what each order has in common.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#cual-es">${ICON.namePhoto}<span><b>${L('¿Cuál es?', 'Which one is it?')}</b><span class="small muted">${L('Ves un nombre científico y eliges la foto correcta entre cuatro.',
         'See a scientific name and pick the right photo out of four.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#hoja">${ICON.sheet}<span><b>${L('Hoja de examen', 'Exam sheet')}</b><span class="small muted">${L('Una foto, cinco casillas: clase, orden, género, especie y nombre vulgar.',

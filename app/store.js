@@ -106,5 +106,12 @@ S.recordReverse = function (a, now) {
   S.save();
 };
 
+/* Games that schedule nothing and log nothing ("¿Cuál sobra?") still count as a study day. */
+S.recordDay = function (now) {
+  const day = E.ymd(now || Date.now());
+  S.data.days[day] = (S.data.days[day] || 0) + 1;
+  S.save();
+};
+
 window.VISU_STORE = S;
 })();
