@@ -1,5 +1,5 @@
 /* VISU · learning screens for animals not met yet: "Primer vistazo" (a first look at a group, nothing graded) and
-   "¿Cuál sobra?" (the odd one out among four photos).
+   "¿Cuál sobra?" (the odd one out among four photos) and "¿Este o este?" (one photo, two look-alikes).
    Loaded after views-practice.js, whose shared pieces it reuses through App. */
 (function () {
 'use strict';
@@ -141,4 +141,65 @@ App.on('click', '#oddcheck', () => {
 App.on('click', '#oddnext', () => { odd.i++; resetOdd(); V.sobra(); App.main().focus(); window.scrollTo(0, 0); });
 App.on('click', '#oddagain', () => { App.newOdd(odd.level); V.sobra(); });
 App.on('click', '[data-oddlevel]', b => { SET().level = +b.dataset.oddlevel; Store.save(); App.newOdd(SET().level); App.redraw(V.sobra, `[data-oddlevel="${SET().level}"]`); });
+
+/* ---------- ¿ESTE O ESTE? ---------- */
+/* One photo and the two species of a pair; the answer always shows them side by side, part by part. A miss comes
+   back three cards later, once. Practice only: logged so a pair can be settled, nothing scheduled. */
+let pairs = null;
+App.newPairs = function () {
+  pairs = { items: E.buildPairs(M(), P(), { size: 10 }), i: 0, ok: 0, settled: 0 };
+  resetPair();
+  return pairs;
+};
+App.pairState = () => pairs;
+function resetPair() {
+  const p = pairs.items[pairs.i];
+  Object.assign(pairs, { picked: null, phase: 'ask' });
+  if (p) { pairs.photo = App.randomPhoto(p.show); pairs.order = Math.random() < 0.5 ? [p.a, p.b] : [p.b, p.a]; }
+}
+V.parejas = function () {
+  App.focusMode(true);
+  const p = pairs.items[pairs.i], n = pairs.items.length;
+  if (!p) {
+    const open = E.openConfusions(M(), P()).length;
+    App.main().innerHTML = `<div class="session-wrap">${App.sessTop(1, n, n - 1)}<p class="eyebrow">${L('¿Este o este?', 'This one or that one?')}</p>
+      <h1>${n ? `${pairs.ok}/${n} ${L('aciertos', 'correct')}` : L('No hay parejas que practicar', 'No pairs to practise')}</h1>
+      <p class="small">${open === 1 ? L('Te queda 1 confusión abierta. Una pareja se da por resuelta tras tres aciertos seguidos aquí.', '1 open confusion left. A pair is settled after three right answers in a row here.')
+        : open ? L(`Te quedan ${open} confusiones abiertas. Una pareja se da por resuelta tras tres aciertos seguidos aquí.`, `${open} open confusions left. A pair is settled after three right answers in a row here.`)
+        : L('No te queda ninguna confusión abierta.', 'No open confusions left.')}</p>
+      <div class="actions"><button class="btn primary big" id="pairagain">${L('Otra ronda', 'Another round')}</button><a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div></div><div id="aside-m"></div>`;
+    App.aside().innerHTML = '';
+    return;
+  }
+  const rev = pairs.phase === 'reveal', other = p.show === p.a ? p.b : p.a, right = rev && pairs.picked === p.show;
+  const opt = id => {
+    let cls = 'opt'; if (pairs.picked === id) cls += ' picked'; if (rev) { if (id === p.show) cls += ' right'; else if (pairs.picked === id) cls += ' wrong'; }
+    return `<button class="${cls}" data-pairpick="${esc(id)}" aria-pressed="${pairs.picked === id}" ${rev ? 'disabled' : ''}>${esc(App.spName(id))} · <i>${esc(App.sp(id).binomial)}</i></button>`;
+  };
+  const result = !rev ? `<button class="btn primary big mt" id="paircheck" ${pairs.picked ? '' : 'disabled'}>${L('Comprobar', 'Check')}</button>`
+    : `<div class="mt" ${right ? 'role="status"' : 'role="alert"'}>${right ? `<div class="reveal-ok"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p><h2>${esc(App.spName(p.show))}</h2></div>`
+        : App.mistakeHead(L('Era la otra', 'It was the other one'), `${L('Es', 'It is')} ${esc(App.spName(p.show))}, ${L('no', 'not')} ${esc(App.spName(other))}`)}
+      ${App.comparePlate(other, p.show, pairs.photo, undefined, right ? [L('La otra', 'The other one'), L('Esta foto', 'This photo')] : undefined)}
+      <div class="actions"><button class="btn primary big" id="pairnext">${pairs.i === n - 1 ? L('Ver resultado', 'See result') : L('Siguiente', 'Next')}</button></div></div>`;
+  App.main().innerHTML = `<div class="session-wrap">${App.sessTop((pairs.i + (rev ? 1 : 0)) / n, n, pairs.i)}
+    <p class="eyebrow">${L('¿Este o este?', 'This one or that one?')}${p.mine ? ` · <span class="gold">${L('una confusión tuya', 'one of your confusions')}</span>` : ''}</p>
+    ${rev ? '' : `<div class="quiz-photo">${App.carousel(p.show, { key: 'pair', idx: pairs.photo, alt: L('Foto del animal', 'Photo of the animal'), credit: 'later' })}</div>`}
+    <p class="prompt">${L('¿Cuál de las dos es?', 'Which of the two is it?')}</p>
+    <div class="options" role="group" aria-label="${L('Opciones', 'Options')}">${pairs.order.map(opt).join('')}</div>${result}</div><div id="aside-m"></div>`;
+  App.aside().innerHTML = '';
+};
+App.carouselStep.pair = i => { pairs.photo = i; };
+App.on('click', '[data-pairpick]', b => { pairs.picked = b.dataset.pairpick; App.redraw(V.parejas, `[data-pairpick="${CSS.escape(pairs.picked)}"]`); });
+App.on('click', '#paircheck', () => {
+  const p = pairs.items[pairs.i];
+  if (!pairs.picked) return;
+  const right = pairs.picked === p.show;
+  pairs.phase = 'reveal';
+  if (right) pairs.ok++;
+  else if (!p.requeued) pairs.items.splice(Math.min(pairs.items.length, pairs.i + 4), 0, Object.assign({}, p, { requeued: true, show: Math.random() < 0.5 ? p.a : p.b }));
+  Store.recordPair({ shown: p.show, other: p.show === p.a ? p.b : p.a, right });
+  V.parejas(); App.main().focus();
+});
+App.on('click', '#pairnext', () => { pairs.i++; resetPair(); V.parejas(); App.main().focus(); window.scrollTo(0, 0); });
+App.on('click', '#pairagain', () => { App.newPairs(); V.parejas(); });
 })();

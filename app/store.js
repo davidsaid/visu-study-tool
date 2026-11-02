@@ -10,8 +10,8 @@
      cards["order:Accipitriformes:group"] = the same, for naming a group from several photos (since schemaVersion 2)
      p = { seen, ok, streak, due, first, last }    m = { due, s, d, ed, sd, reps, lapses, ls, st, last }  (times in ms)
    - log: append-only, one row per answered box:
-     { ts, card, game: foto|hoja|mock|cual|grupo, level: 1|2|3, rating: FSRS rating or null, hints, conf: guess|unsure|sure|null,
-       kind: right|misspelling|wrong|wrong_species, with: [species] (wrong_species only), typed (wrong answers only) }
+     { ts, card, game: foto|hoja|mock|cual|grupo|par, level: 1|2|3, rating: FSRS rating or null, hints, conf: guess|unsure|sure|null,
+       kind: right|misspelling|wrong|wrong_species, with: [species] (wrong_species, and the pair's other species in 'par'), typed (wrong answers only) }
    - days["2026-11-01"] = answers that day (streak); badges[id] = { tier, at }; mocks = finished Mock VISU results. */
 (function () {
 'use strict';
@@ -106,6 +106,13 @@ S.recordReverse = function (a, now) {
   S.save();
 };
 
+/* "¿Este o este?" logs the photo's species and the other one of the pair; it schedules nothing. a = { shown, other, right }. */
+S.recordPair = function (a, now) {
+  now = now || Date.now();
+  S.data.log.push({ ts: now, card: E.cardId(a.shown, 'species'), game: 'par', level: null, rating: null, hints: 0, conf: null,
+    kind: a.right ? 'right' : 'wrong_species', with: [a.other] });
+  S.recordDay(now);
+};
 /* Games that schedule nothing and log nothing ("¿Cuál sobra?") still count as a study day. */
 S.recordDay = function (now) {
   const day = E.ymd(now || Date.now());

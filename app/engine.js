@@ -7,7 +7,7 @@
 const SKILLS = ['class', 'order', 'genus', 'species', 'common'];
 const SPECIES_SKILLS = ['genus', 'species', 'common', 'binomial'];   // a valid other value names another animal
 const DAY = 864e5, MIN = 6e4;
-const SCHEMA_VERSION = 2;   // 2 (2026-11-02): group cards ('order:X:group') and the 'grupo' game
+const SCHEMA_VERSION = 3;   // 2 (2026-11-02): group cards ('order:X:group') and the 'grupo' game; 3: the 'par' drill in the log
 
 /* ---------------------------------------------------------------- data model */
 function buildModel(bestiary, media, content) {
@@ -445,6 +445,33 @@ function buildOddOne(M, opts) {
     return { node: g.node, three, odd, opts: shuffle(three.concat(odd), rng) };
   });
 }
+/* "¿Este o este?": pairs of species to tell apart. The student's own confusions come first (any wrong_species answer),
+   most recent first; a pair is settled after three right answers in a row in this drill. Look-alike pairs from the
+   cards fill the rest. Drill rows log the other species of the pair in `with`, right or wrong. */
+const pairKey = (a, b) => (a < b ? `${a}|${b}` : `${b}|${a}`);
+function pairStates(M, P) {
+  const st = new Map();
+  P.log.forEach(r => {
+    const sp = r.card.split(':')[0], o = r.with && r.with[0];
+    if (!o || !M.species[sp] || !M.species[o] || sp === o || (r.game !== 'par' && r.kind !== 'wrong_species')) return;
+    const k = pairKey(sp, o), e = st.get(k) || { a: sp, b: o, at: 0, n: 0, streak: 0 };
+    if (r.game === 'par' && r.kind === 'right') e.streak++;
+    else { e.n++; e.at = r.ts; e.streak = 0; }
+    st.set(k, e);
+  });
+  return st;
+}
+const openConfusions = (M, P) => Array.from(pairStates(M, P).values()).filter(e => e.n > 0 && e.streak < 3).sort((x, y) => y.at - x.at);
+function buildPairs(M, P, opts) {
+  const rng = opts.rng || Math.random, size = opts.size || 10, st = pairStates(M, P), photo = id => M.photos[id] && M.photos[id].length;
+  const mine = openConfusions(M, P).filter(e => photo(e.a) && photo(e.b)).slice(0, size).map(e => ({ a: e.a, b: e.b, mine: true }));
+  const byName = new Map(M.order.map(id => [M.species[id].binomial, id])), seen = new Set(mine.map(e => pairKey(e.a, e.b))), look = [];
+  M.withPhotos.forEach(id => (((M.content.species || {})[id] || {}).lookalikes || []).forEach(x => {
+    const o = x && byName.get(x.binomial), k = o && pairKey(id, o);
+    if (o && o !== id && photo(o) && !seen.has(k) && !((st.get(k) || {}).streak >= 3)) { seen.add(k); look.push({ a: id, b: o, mine: false }); }
+  }));
+  return mine.concat(shuffle(look, rng)).slice(0, size).map(p => Object.assign(p, { show: rng() < 0.5 ? p.a : p.b }));
+}
 /* Avoid the same animal twice in a row: the second photo would give the answer away. */
 function spreadSpecies(items) {
   const out = items.slice();
@@ -599,7 +626,7 @@ function cleanLogRow(r, issues, path) {
   const ts = field(r, 'ts', T.time, undefined, issues, path), card = field(r, 'card', T.id(CARD_ID), undefined, issues, path),
     kind = field(r, 'kind', T.oneOf(['right', 'misspelling', 'wrong', 'wrong_species']), undefined, issues, path);
   if (ts === undefined || card === undefined || kind === undefined) { issues.push(path + '(ts, card, kind)'); return null; }
-  const row = { ts, card, game: field(r, 'game', T.oneOf(['foto', 'hoja', 'mock', 'cual', 'grupo']), null, issues, path),
+  const row = { ts, card, game: field(r, 'game', T.oneOf(['foto', 'hoja', 'mock', 'cual', 'grupo', 'par']), null, issues, path),
     level: field(r, 'level', T.oneOf([1, 2, 3]), null, issues, path), rating: field(r, 'rating', T.int(0, 4), null, issues, path),
     hints: field(r, 'hints', T.int(0, 3), 0, issues, path), conf: field(r, 'conf', T.oneOf(['guess', 'unsure', 'sure']), null, issues, path), kind };
   if (own(r, 'with')) {
@@ -704,7 +731,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
+  ymd, startOfDay, todayPlan, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

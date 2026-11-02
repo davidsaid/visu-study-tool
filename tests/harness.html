@@ -376,6 +376,32 @@ const SCENARIOS = {
     report({ scenario: 'sobra', four, hidden, disabled, explained, day, right, relevel });
   },
   'sobra-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = +(Q.get('lv') || 3); await go('sobra'); if (Q.get('miss')) { await click(`[data-oddpick="${App().oddState().items[0].three[0]}"]`); await click('#oddcheck'); } },
+  /* "¿Este o este?": an own confusion comes first; a miss shows both side by side part by part and comes back; the answer is logged as a drill row. */
+  'parejas': async () => {
+    const t = Date.now() - 6e4;
+    seedStorage(Object.assign({ log: [{ ts: t, card: 'milvus_milvus:species', game: 'foto', level: 3, rating: 1, hints: 0, conf: 'sure', kind: 'wrong_species', with: ['milvus_migrans'] }] }, seen));
+    await open('hoy');
+    const today = /1 confusión abierta/.test((doc.querySelector('a.game[href="#parejas"]') || {}).textContent || '') && !!doc.querySelector('.confusion-mini') && !!doc.querySelector('a.btn[href="#parejas"]');
+    await click('a.game[href="#parejas"]'); await sleep(200);
+    const st = App().pairState(), p = st.items[0];
+    const mine = p.mine && [p.a, p.b].sort().join() === 'milvus_migrans,milvus_milvus' && /confusión tuya/.test(doc.querySelector('.eyebrow').textContent);
+    const ask = !!doc.querySelector('.quiz-photo .car') && doc.querySelectorAll('[data-pairpick]').length === 2 && doc.querySelector('#paircheck').disabled;
+    const wrong = p.show === p.a ? p.b : p.a, n0 = st.items.length;
+    await click(`[data-pairpick="${wrong}"]`); await click('#paircheck');
+    const miss = !!doc.querySelector('.mistake-head') && doc.querySelectorAll('.twoup .car').length === 2 && doc.querySelectorAll('.diff .dlab').length > 0 && App().pairState().items.length === n0 + 1;
+    const row = win.VISU_STORE.data.log.slice(-1)[0];
+    const logged = row.game === 'par' && row.kind === 'wrong_species' && row.card === p.show + ':species' && row.with[0] === wrong;
+    await click('#pairnext');
+    const p2 = App().pairState().items[1];
+    await click(`[data-pairpick="${p2.show}"]`); await click('#paircheck');
+    const right = !!doc.querySelector('.reveal-ok') && /Esta foto/.test(doc.querySelector('.twoup .correct .lbl').textContent) && win.VISU_STORE.data.log.slice(-1)[0].kind === 'right';
+    report({ scenario: 'parejas', today, mine, ask, miss, logged, right });
+  },
+  'parejas-shot': async () => {
+    seedStorage(Object.assign({ log: [{ ts: Date.now() - 6e4, card: 'milvus_milvus:species', game: 'foto', level: 3, rating: 1, hints: 0, conf: 'sure', kind: 'wrong_species', with: ['milvus_migrans'] }] }, seen));
+    await open('hoy'); await go('parejas');
+    if (Q.get('miss')) { const p = App().pairState().items[0]; await click(`[data-pairpick="${p.show === p.a ? p.b : p.a}"]`); await click('#paircheck'); }
+  },
   /* The level picker describes "¿Cuál es?" levels (how close the other photos are), not typing levels. */
   'nivelcual': async () => {
     seedStorage(seen); await open('nivel'); await click('[data-game="cual"]');

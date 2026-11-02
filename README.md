@@ -32,6 +32,9 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 - **"¿Cuál sobra?"** (odd one out): four photos, three from one order; pick the one that isn't.
   The odd one comes from another class (Easy), the same class (Medium) or is the closest relative
   of another order (Hard). The answer shows both orders and what each has in common.
+- **"¿Este o este?"** (this one or that one?): one photo and two look-alike species. Your own
+  confusions come first; a pair is settled after three right answers in a row. Look-alike pairs
+  from the cards fill the round. Every answer shows the two side by side, part by part.
 - **"¿Cuál es?"**: see a scientific name and pick the right photo out of four; each option
   can be flipped through all its photos. The harder the level, the more closely related the
   other animals.

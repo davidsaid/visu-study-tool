@@ -92,14 +92,15 @@ function binHL(a, b, cls) { return a.split(' ').map((w, i) => (w === (b.split(' 
 /* Atlas comparison plate: what she answered next to the right animal, with the key to tell them apart. */
 /* `idx` / `yoursIdx`: the photos the student saw (of the correct species, and of the one picked in
    "¿Cuál es?"), so they stay on screen and get their credit. */
-function comparePlate(yours, correct, idx, yoursIdx) {
+function comparePlate(yours, correct, idx, yoursIdx, tags) {
   const fig = (id, cls, tag) => `<figure class="${cls}"><div class="lbl"><span>${tag}</span><span>${L('progreso', 'progress')} ${pct(statsOf(id).meter)}</span></div>
     ${App.carousel(id, { key: `cmp-${cls}`, idx: id === correct ? idx : yoursIdx, credit: true })}
     <figcaption><div class="vern"><a href="#${esc(App.routeFor(id))}">${esc(App.sp(id).common_es)}</a></div>
       <div class="bin">${binHL(App.sp(id).binomial, App.sp(cls === 'yours' ? correct : yours).binomial, cls === 'yours' ? 'hl-bad' : 'hl-good')}</div>
       <div class="tiny muted">${esc(App.sp(id).order)} · ${esc(App.sp(id).class)}</div></figcaption></figure>`;
   const tip = pairNote(yours, correct), diff = diffHTML(yours, correct), split = E.lca(M(), yours, correct);
-  return `<div class="twoup">${fig(yours, 'yours', L('Tu respuesta', 'Your answer'))}${fig(correct, 'correct', L('Respuesta correcta', 'Correct answer'))}</div>
+  const [ta, tb] = tags || [L('Tu respuesta', 'Your answer'), L('Respuesta correcta', 'Correct answer')];
+  return `<div class="twoup">${fig(yours, 'yours', ta)}${fig(correct, 'correct', tb)}</div>
   <section class="key"><p class="eyebrow">${L('La clave', 'The key')}</p>
     ${tip ? `<p class="tip">${esc(tip.text)}</p>${tip.draft ? `<p class="tiny muted">${App.draftTag(true)}</p>` : ''}` : ''}${diff}
     ${tip || diff ? '' : `<p class="small muted">${L('Pista de esta pareja: pendiente de redactar. Mientras, compara las dos fichas.', 'Tip for this pair: not written yet. Meanwhile, compare the two cards.')}</p>`}
@@ -148,7 +149,7 @@ V.hoy = function () {
   const st = E.streak(P().days, now);
   const examDays = set.examDate ? Math.ceil((new Date(set.examDate + 'T09:00:00') - now) / DAY) : null;
   const dateStr = new Date(now).toLocaleDateString(I.locale(), { weekday: 'long', day: 'numeric', month: 'long' });
-  const nb = nextBadge(), look = App.nextLook();
+  const nb = nextBadge(), look = App.nextLook(), openConf = E.openConfusions(M(), P()).length;
   const dueGroups = E.groupItems(M(), M().withPhotos, skills).filter(g => { const d = E.dueOf(P().cards[g.card]); return d != null && d <= now; }).length;
   const nbMissing = nb ? E.speciesUnder(M(), nb.def.node).filter(id => !statsOf(id).mastered) : [];
   const dueW = total ? Math.min(plan.dueNow, total) / total * 100 : 0;
@@ -176,7 +177,9 @@ V.hoy = function () {
         `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
         'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
-    <a class="game" href="#sobra">${ICON.groupPhotos}<span><b>${L('¿Cuál sobra?', 'Odd one out')}</b><span class="small muted">${L('Cuatro fotos: tres son del mismo orden y una no. Para fijarte en lo que comparte cada orden.',
+    <a class="game" href="#parejas">${ICON.pair}<span><b>${L('¿Este o este?', 'This one or that one?')}</b><span class="small muted">${L('Una foto y dos especies que se parecen: ¿cuál es? Empieza por las que tú has confundido.',
+        'One photo and two look-alike species: which is it? Your own confusions come first.')}${openConf ? ` <b>${openConf === 1 ? L('1 confusión abierta.', '1 open confusion.') : L(`${openConf} confusiones abiertas.`, `${openConf} open confusions.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
+    <a class="game" href="#sobra">${ICON.oddOne}<span><b>${L('¿Cuál sobra?', 'Odd one out')}</b><span class="small muted">${L('Cuatro fotos: tres son del mismo orden y una no. Para fijarte en lo que comparte cada orden.',
         'Four photos: three share an order and one doesn’t. To notice what each order has in common.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#cual-es">${ICON.namePhoto}<span><b>${L('¿Cuál es?', 'Which one is it?')}</b><span class="small muted">${L('Ves un nombre científico y eliges la foto correcta entre cuatro.',
         'See a scientific name and pick the right photo out of four.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
@@ -209,7 +212,8 @@ V.hoy = function () {
   <section class="card"><p class="eyebrow">${L('Confusión pendiente', 'Open confusion')}</p>
     ${conf ? `<div class="confusion-mini"><figure>${App.tile(conf.yours, null, 'r43')}<figcaption class="small"><i>${esc(App.sp(conf.yours).binomial)}</i></figcaption></figure><span class="vs">vs</span>
     <figure>${App.tile(conf.correct, null, 'r43')}<figcaption class="small"><i>${esc(App.sp(conf.correct).binomial)}</i></figcaption></figure></div>
-    ${(() => { const t = pairTip(conf.yours, conf.correct); return t ? `<p class="small">${esc(t.text)}</p>` : ''; })()}${App.cardLink(conf.correct, '')}`
+    ${(() => { const t = pairTip(conf.yours, conf.correct); return t ? `<p class="small">${esc(t.text)}</p>` : ''; })()}
+    <div class="row">${App.cardLink(conf.correct, '')}<a class="btn" href="#parejas">${L('Practicar tus confusiones', 'Practise your confusions')}</a></div>`
     : `<p class="small muted">${L('Aún no hay ninguna. Cuando confundas dos especies, aparecerán aquí juntas, con la clave para distinguirlas.',
         'None yet. When you mix up two species, they’ll show up here side by side, with the key to tell them apart.')}</p>`}</section>
   <section class="card"><p class="eyebrow">${L('Tu colección', 'Your collection')}</p>

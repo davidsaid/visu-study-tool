@@ -310,6 +310,18 @@ test('real data', () => {
     if (!fine) bad.push(`${q.node}@${lv}`);
   }));
   ok('odd one out: three of one order, one of another, by level (other class / same class / closest)', !bad.length, bad.slice(0, 5).join());
+  /* "¿Este o este?": own confusions first, settled after three right drill answers in a row; look-alikes fill the rest. */
+  const PP = E.emptyProgress(now2), conf = (sp, o, t) => ({ ts: t, card: sp + ':species', game: 'foto', level: 3, rating: 1, hints: 0, conf: null, kind: 'wrong_species', with: [o] });
+  const drill = (sp, o, right, t) => ({ ts: t, card: sp + ':species', game: 'par', level: null, rating: null, hints: 0, conf: null, kind: right ? 'right' : 'wrong_species', with: [o] });
+  PP.log.push(conf('milvus_milvus', 'milvus_migrans', 1), conf('bubo_bubo', 'strix_aluco', 2));
+  const pr = E.buildPairs(RM, PP, { size: 10, rng });
+  eq('pairs: own confusions first, most recent first', pr.slice(0, 2).map(p => [p.a, p.b, p.mine]), [['bubo_bubo', 'strix_aluco', true], ['milvus_milvus', 'milvus_migrans', true]]);
+  ok('pairs: the rest are look-alikes from the cards, both with photos, shown species is one of the two', pr.length === 10 && pr.slice(2).every(p => !p.mine && RM.photos[p.a].length && RM.photos[p.b].length) && pr.every(p => p.show === p.a || p.show === p.b));
+  PP.log.push(drill('milvus_migrans', 'milvus_milvus', true, 3), drill('milvus_milvus', 'milvus_migrans', true, 4), drill('milvus_migrans', 'milvus_milvus', true, 5));
+  eq('pairs: three right answers in a row settle a confusion', E.openConfusions(RM, PP).map(e => e.a), ['bubo_bubo']);
+  PP.log.push(drill('strix_aluco', 'bubo_bubo', true, 6), drill('strix_aluco', 'bubo_bubo', false, 7));
+  eq('pairs: a miss in the drill resets the count', E.openConfusions(RM, PP).map(e => [e.a, e.streak]), [['bubo_bubo', 0]]);
+  ok('pairs: drill rows survive validation', E.normalizeProgress(JSON.parse(JSON.stringify(PP)), now2).log.length === PP.log.length);
   ok('group session: practising one class never asks for the class itself', E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, scope: 'class:Aves', size: 50, force: true }).every(g => g.skill === 'order'));
   const PG = E.emptyProgress(now2); PG.cards['order:Accipitriformes:group'] = { p: { seen: 1, ok: 1, streak: 1, due: now2 + 6e5, first: now2, last: now2 }, m: null };
   eq('group cards don’t use up the species’ new cards for the day', E.todayPlan(RM, PG, { now: now2, skills: GS }).newAvailable, E.todayPlan(RM, E.emptyProgress(now2), { now: now2, skills: GS }).newAvailable);
