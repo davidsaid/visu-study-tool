@@ -7,7 +7,7 @@
 const SKILLS = ['class', 'order', 'genus', 'species', 'common'];
 const SPECIES_SKILLS = ['genus', 'species', 'common', 'binomial'];   // a valid other value names another animal
 const DAY = 864e5, MIN = 6e4;
-const SCHEMA_VERSION = 1;
+const SCHEMA_VERSION = 2;   // 2 (2026-11-02): group cards ('order:X:group') and the 'grupo' game
 
 /* ---------------------------------------------------------------- data model */
 function buildModel(bestiary, media, content) {
@@ -352,9 +352,10 @@ function readinessAt(P, now) {
 const ymd = ts => { const d = new Date(ts); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
 const startOfDay = ts => { const d = new Date(ts); d.setHours(0, 0, 0, 0); return +d; };
 
-function newIntroducedToday(P, now) {
+/* New cards started today; species and group cards have separate allowances. */
+function newIntroducedToday(P, now, groups) {
   const t0 = startOfDay(now);
-  let n = 0; for (const k in P.cards) { const p = P.cards[k].p; if (p && p.first >= t0) n++; }
+  let n = 0; for (const k in P.cards) { const p = P.cards[k].p; if (p && p.first >= t0 && isGroupCard(k) === !!groups) n++; }
   return n;
 }
 /* What Today offers: due cards and how many new ones may still be introduced. */
@@ -398,6 +399,34 @@ function buildSession(M, P, opts) {
     items = all.sort((a, b) => a.due - b.due).slice(0, size).map(x => ({ sp: x.sp, skill: x.skill }));
   }
   return spreadSpecies(shuffle(items, rng));
+}
+/* "¿Qué grupo es?": several photos of one class or order, and the student names the group. A group card is
+   "<node id>:group" (e.g. "order:Accipitriformes:group") and has the same { p, m } state as a species card.
+   Each item carries a member species (`sp`), which grading, hints and options use, and every member with a photo. */
+const GROUP_SKILLS = ['class', 'order'];
+const groupCardId = node => `${node}:group`;
+const isGroupCard = k => /:group$/.test(k);
+function groupItems(M, pool, skills) {
+  const out = new Map();
+  pool.forEach(id => GROUP_SKILLS.filter(k => skills.includes(k)).forEach(k => {
+    const node = `${k}:${answerFor(M, id, k)}`, card = groupCardId(node);
+    if (!out.has(card)) out.set(card, { sp: id, skill: k, node, card, members: [] });
+    out.get(card).members.push(id);
+  }));
+  /* A group holding the whole pool (the class when practising one class) would be no question. */
+  return Array.from(out.values()).filter(g => g.members.length < pool.length || pool.length === 1);
+}
+/* Due groups first (most overdue first), then new ones within the day's allowance: classes before orders, larger
+   groups first, so the first questions show several different animals. */
+function buildGroupSession(M, P, opts) {
+  const now = opts.now, size = opts.size || 20, rng = opts.rng || Math.random;
+  const all = groupItems(M, scopePool(M, opts.scope), opts.skills), due = g => dueOf(P.cards[g.card]);
+  const ready = shuffle(all.filter(g => due(g) != null && due(g) <= now), rng).sort((a, b) => due(a) - due(b));
+  const fresh = all.filter(g => due(g) == null).sort((a, b) => GROUP_SKILLS.indexOf(a.skill) - GROUP_SKILLS.indexOf(b.skill) || b.members.length - a.members.length);
+  const allowance = Math.max(0, P.settings.newPerDay - newIntroducedToday(P, now, true));
+  let items = ready.slice(0, size).concat(fresh.slice(0, Math.max(0, Math.min(allowance, size - ready.length))));
+  if (!items.length && opts.force) items = shuffle(all, rng).sort((a, b) => (due(a) || 0) - (due(b) || 0)).slice(0, size);
+  return items;
 }
 /* Avoid the same animal twice in a row: the second photo would give the answer away. */
 function spreadSpecies(items) {
@@ -501,7 +530,7 @@ const isObj = x => x && typeof x === 'object' && !Array.isArray(x);
    so only known keys with the expected type survive; numbers in strings are coerced and strings
    are length-limited. Each rejected value is pushed onto `issues`. */
 const SPECIES_ID = /^[a-z0-9_-]{1,80}$/;
-const CARD_ID = /^[a-z0-9_-]{1,80}:(class|order|genus|species|common)$/;
+const CARD_ID = /^([a-z0-9_-]{1,80}:(class|order|genus|species|common)|(class|order):[A-Za-z0-9_.-]{1,80}:group)$/;
 const NODE_ID = /^[A-Za-z0-9_.-]{1,80}(:[A-Za-z0-9_.-]{1,80})?$/;
 const BADGE_ID = /^[a-z]+:[A-Za-z0-9_.-]{1,100}$/;   // the colon keeps "__proto__" out
 const YMD = /^\d{4}-\d{2}-\d{2}$/;
@@ -553,7 +582,7 @@ function cleanLogRow(r, issues, path) {
   const ts = field(r, 'ts', T.time, undefined, issues, path), card = field(r, 'card', T.id(CARD_ID), undefined, issues, path),
     kind = field(r, 'kind', T.oneOf(['right', 'misspelling', 'wrong', 'wrong_species']), undefined, issues, path);
   if (ts === undefined || card === undefined || kind === undefined) { issues.push(path + '(ts, card, kind)'); return null; }
-  const row = { ts, card, game: field(r, 'game', T.oneOf(['foto', 'hoja', 'mock', 'cual']), null, issues, path),
+  const row = { ts, card, game: field(r, 'game', T.oneOf(['foto', 'hoja', 'mock', 'cual', 'grupo']), null, issues, path),
     level: field(r, 'level', T.oneOf([1, 2, 3]), null, issues, path), rating: field(r, 'rating', T.int(0, 4), null, issues, path),
     hints: field(r, 'hints', T.int(0, 3), 0, issues, path), conf: field(r, 'conf', T.oneOf(['guess', 'unsure', 'sure']), null, issues, path), kind };
   if (own(r, 'with')) {
@@ -600,7 +629,7 @@ function normalizeProgress(p, now, issues) {
   if (own(p, 'settings') && !isObj(p.settings)) issues.push('settings');
   out.settings = {
     lang: field(s, 'lang', T.oneOf(['es', 'en']), d.lang, issues, S), theme: field(s, 'theme', T.oneOf(['auto', 'light', 'dark']), d.theme, issues, S),
-    level: field(s, 'level', T.oneOf([1, 2, 3]), d.level, issues, S), game: field(s, 'game', T.oneOf(['foto', 'cual', 'hoja']), d.game, issues, S),
+    level: field(s, 'level', T.oneOf([1, 2, 3]), d.level, issues, S), game: field(s, 'game', T.oneOf(['foto', 'cual', 'hoja', 'grupo']), d.game, issues, S),
     skills: {}, examDate: field(s, 'examDate', T.id(YMD), null, issues, S),
     newPerDay: field(s, 'newPerDay', T.int(1, 60), d.newPerDay, issues, S), sessionSize: field(s, 'sessionSize', T.int(5, 100), d.sessionSize, issues, S),
     mockSize: field(s, 'mockSize', T.int(5, 100), d.mockSize, issues, S), revShowCommon: field(s, 'revShowCommon', T.bool, d.revShowCommon, issues, S)
@@ -658,7 +687,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, buildSession, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
+  ymd, startOfDay, todayPlan, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

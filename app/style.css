@@ -309,6 +309,14 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .rev-prompt .vern { font-size: 1.05rem; color: var(--muted); margin-top: .2rem; }
 .rev-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
 .rev-grid .tile { aspect-ratio: 4 / 3; }
+.group-grid { margin-bottom: .8rem; }
+.group-grid.one { grid-template-columns: minmax(0, 1fr); max-width: 30rem; }
+.group-grid .rev-opt .car .car-frame { --maxh: 32vh; }
+.group-cmp .lbl { font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .35rem 0; border-top: 3px solid var(--line); }
+.group-cmp .yours .lbl { border-color: var(--error); color: var(--error); }
+.group-cmp .correct .lbl { border-color: var(--ok); color: var(--ok); }
+.group-cmp .vern { font-family: var(--font-plate); font-size: 1.15rem; margin: .2rem 0 .4rem; }
+.group-cmp .thumbs { margin-bottom: .4rem; }
 .rev-opt.picked { box-shadow: 0 0 0 3px var(--accent); }
 .rev-opt { padding: 0; border: 3px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); position: relative; display: block; text-align: left; }
 .rev-opt:has(.rev-pick:not([disabled]):hover) { border-color: var(--accent); }

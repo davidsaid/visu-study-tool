@@ -158,6 +158,7 @@ App.on('click', '[data-video]', b => {
     allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 });
 App.on('click', '[data-practise]', b => { P().ui.scope = b.dataset.practise; Store.save(); location.hash = 'nivel'; });
+App.on('click', '[data-groupgame]', b => { P().ui.scope = b.dataset.groupgame; P().settings.game = 'grupo'; Store.save(); location.hash = 'grupos'; });
 
 const FIELD_LABEL = { class: ['Clase', 'Class'], order: ['Orden', 'Order'], genus: ['Género', 'Genus'], species: ['Especie', 'Species'], epithet: ['Especie', 'Species'],
   common: ['Nombre vulgar', 'Common name'], common_es: ['Nombre vulgar', 'Common name'], binomial: ['Nombre científico', 'Scientific name'] };
@@ -284,7 +285,9 @@ function groupCard(id) {
     <div class="mast-box">${badge ? App.medalSVG(n.scientific, earned ? 1 : prog, 64, { earned: !!earned }) : App.ring(gs.meter, 56)}<div><div class="pctn">${pct(gs.meter)}</div>
       <p class="small tight">${gs.mastered} ${L('de', 'of')} ${gs.total} ${L('especies dominadas', 'species mastered')}</p>
       ${badge ? `<p class="small tight"><b>${L('Insignia', 'Badge')}:</b> ${esc(App.badgeName(id))} · ${earned ? L('conseguida', 'earned') : pct(prog)}</p>` : ''}
-      ${sp.some(App.hasPhoto) ? `<button class="btn primary practise-btn" data-practise="${esc(id)}">${L('Practicar este grupo', 'Practise this group')}</button>` : ''}</div></div>
+      ${n.rank === 'class' || n.rank === 'order' ? `<p class="small tight"><b>${L('Reconocer el grupo', 'Recognising the group')}:</b> ${pct(E.cardMeter(P().cards[E.groupCardId(id)], Date.now()))}</p>` : ''}
+      ${sp.some(App.hasPhoto) ? `<button class="btn primary practise-btn" data-practise="${esc(id)}">${L('Practicar este grupo', 'Practise this group')}</button>` : ''}
+      ${E.groupItems(M(), E.scopePool(M(), id), App.skills()).length > 1 ? `<button class="btn practise-btn" data-groupgame="${esc(id)}">${L('¿Qué grupo es? Sus órdenes', 'Which group is it? Its orders')}</button>` : ''}</div></div>
     ${App.skillBars(sp)}`;
   if (traits.length || contrast) {
     h += `<h2 class="sec">${L('Rasgos diagnósticos', 'Diagnostic traits')}${cs} ${draft}</h2>

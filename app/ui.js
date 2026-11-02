@@ -95,11 +95,11 @@ App.nameMeaning = (id, skill) => {
 };
 /* The block shown after a mistake: the meaning of each box involved, once per name, then the names of the
    species it was confused with, for contrast. */
-App.nameKeyHTML = (id, skills, confused) => {
+App.nameKeyHTML = (id, skills, confused, confusedSkill = 'genus') => {
   const seen = new Set(), rows = [];
   const add = m => { if (m && !seen.has(m.key)) { seen.add(m.key); rows.push(m); } };
   skills.forEach(k => add(App.nameMeaning(id, k)));
-  (confused || []).forEach(o => add(App.nameMeaning(o, 'genus')));
+  (confused || []).forEach(o => add(App.nameMeaning(o, confusedSkill)));
   if (!rows.length) return '';
   const row = m => `<p><i>${esc(m.name)}</i>${m.es ? ` (${L('en español', 'in Spanish')}, <b>${esc(m.es)}</b>)` : ''}${m.text ? `: ${esc(m.text)}` : ''}</p>`;
   return `<section class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p>${rows.map(row).join('')}
@@ -143,6 +143,7 @@ App.tile = (id, alt, cls, idx) => {
 App.carouselStep = {};
 const LATER = () => `<p class="credit">${L('El crédito de la foto aparece al responder (el pie revelaría el nombre).',
     'The photo credit appears after you answer (the caption would give the name away).')}</p>`;
+App.creditLater = LATER;
 App.carousel = (id, o) => {
   const ps = App.photosOf(id), n = ps.length;
   if (!n) return `<div class="pframe r43">${App.placeholder(id)}</div>`;
@@ -256,6 +257,7 @@ const ICON = {
   upload: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M7 9l5-5 5 5M5 20h14"/></svg>',
   bulb: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>',
   photoName: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="22" height="18" rx="3"/><path d="M7 22l6-7 5 5 3-3 4 5"/><path d="M30 14h7M30 20h5M8 32h24" stroke-linecap="round"/></svg>',
+  groupPhotos: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="14" height="11" rx="2"/><rect x="22" y="5" width="14" height="11" rx="2"/><rect x="4" y="19" width="14" height="11" rx="2"/><rect x="22" y="19" width="14" height="11" rx="2"/><path d="M10 35h20" stroke-linecap="round"/></svg>',
   namePhoto: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14" stroke-linecap="round"/><rect x="5" y="15" width="13" height="10" rx="2"/><rect x="22" y="15" width="13" height="10" rx="2"/><rect x="5" y="28" width="13" height="9" rx="2"/><rect x="22" y="28" width="13" height="9" rx="2" stroke-width="3"/></svg>',
   sheet: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="4" width="24" height="32" rx="3"/><path d="M13 11h14M13 17h14M13 23h14M13 29h9" stroke-linecap="round"/></svg>',
   tree: '<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 34 20 20M20 20l14 14M20 20V6M13 27l7 7"/></svg>'

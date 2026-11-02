@@ -297,6 +297,44 @@ const SCENARIOS = {
     report({ scenario: 'diff', rows, pairs, parts, sides, links, fewer, labs });
   },
   'diff-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem(Q.get('sp') || 'milvus_milvus', 'common'); await answerTyped(Q.get('typed') || 'Milano negro'); doc.querySelector('.key').scrollIntoView(); },
+  /* "¿Qué grupo es?" from a class card: only its orders; photos without names; a wrong order shows both groups; the answer is a group card. */
+  'grupo': async () => {
+    seedStorage(seen); await open('grupo-class-Aves'); await sleep(200);
+    App().set().level = 3; await click('[data-groupgame]'); await sleep(200);
+    const s = App().sessionState(), it = s.items[0];
+    const onlyOrders = s.game === 'grupo' && s.items.length > 1 && s.items.every(x => x.skill === 'order' && /:group$/.test(x.card));
+    const cars = doc.querySelectorAll('.group-grid .car').length, grid = cars === Math.min(4, it.members.length);
+    const hidden = !doc.querySelector('.group-grid .cap') && [...doc.querySelectorAll('.group-grid img')].every(im => !it.members.some(id => im.alt.includes(App().sp(id).binomial)));
+    const prompt = /orden/.test(doc.querySelector('.prompt').textContent);
+    const wrongVal = it.node === 'order:Strigiformes' ? 'Passeriformes' : 'Strigiformes';
+    await answerTyped(wrongVal);
+    const yours = doc.querySelector('.group-cmp .yours');
+    const compare = !!yours && yours.textContent.includes(wrongVal) && doc.querySelector('.group-cmp .correct').textContent.includes(it.node.split(':')[1]);
+    const named = doc.querySelectorAll('.group-grid .cap').length === cars;
+    const nameKey = [...doc.querySelectorAll('.name-key p i')].map(x => x.textContent);
+    const bothNames = nameKey.includes(wrongVal) && nameKey.includes(it.node.split(':')[1]);
+    const P = win.VISU_STORE.data, row = P.log[P.log.length - 1];
+    const saved = row.card === it.card && row.game === 'grupo' && !!P.cards[it.card] && !P.cards[it.sp + ':order'];
+    await click('#nextbtn');
+    const it2 = App().sessionState().items[App().sessionState().i];
+    await answerTyped('right');
+    const right = !!doc.querySelector('.reveal-ok .group-cmp .correct') && doc.querySelectorAll('.group-grid').length === 1;
+    await reload(); await sleep(200);
+    const kept = !!win.VISU_STORE.data.cards[it2.card];
+    report({ scenario: 'grupo', onlyOrders, grid, hidden, prompt, compare, named, bothNames, saved, right, kept, n: s.items.length });
+  },
+  'grupo-mc': async () => {
+    seedStorage({ meta: { seenNotice: true }, ui: { scope: 'class:Aves' } }); await open('hoy'); App().set().level = 1; await go('grupos');
+    const s = App().sessionState(), it = s.items[0];
+    const opts = [...doc.querySelectorAll('[data-opt]')].map(b => b.textContent);
+    await click('[data-opt="0"]'); await click('[data-conf="sure"]'); await click('#submitbtn');
+    const row = win.VISU_STORE.data.log.slice(-1)[0];
+    report({ scenario: 'grupo-mc', game: s.game, n: opts.length, hasAnswer: opts.includes(it.node.split(':')[1]), logged: row && row.card === it.card && row.level === 1, hash: win.location.hash });
+  },
+  'grupo-shot': async () => {
+    seedStorage({ meta: { seenNotice: true }, ui: { scope: Q.get('scope') || 'class:Aves' } }); await open('hoy'); App().set().level = +(Q.get('lv') || 3); await go('grupos');
+    if (Q.get('miss')) await answerTyped(Q.get('miss'));
+  },
   /* The level picker describes "¿Cuál es?" levels (how close the other photos are), not typing levels. */
   'nivelcual': async () => {
     seedStorage(seen); await open('nivel'); await click('[data-game="cual"]');

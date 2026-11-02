@@ -149,6 +149,7 @@ V.hoy = function () {
   const examDays = set.examDate ? Math.ceil((new Date(set.examDate + 'T09:00:00') - now) / DAY) : null;
   const dateStr = new Date(now).toLocaleDateString(I.locale(), { weekday: 'long', day: 'numeric', month: 'long' });
   const nb = nextBadge();
+  const dueGroups = E.groupItems(M(), M().withPhotos, skills).filter(g => { const d = E.dueOf(P().cards[g.card]); return d != null && d <= now; }).length;
   const nbMissing = nb ? E.speciesUnder(M(), nb.def.node).filter(id => !statsOf(id).mastered) : [];
   const dueW = total ? Math.min(plan.dueNow, total) / total * 100 : 0;
   const scopeNote = P().ui.scope && M().nodes[P().ui.scope] ? `<p class="lvl-now">${L('Practicando solo', 'Practising only')}: <b>${esc(App.label(P().ui.scope))}</b> · <a href="#nivel">${L('cambiar', 'change')}</a></p>` : '';
@@ -171,6 +172,8 @@ V.hoy = function () {
     <p class="small muted right">${examDays != null && examDays >= 0 ? `${L('Examen en', 'Exam in')} <b>${examDays} ${examDays === 1 ? L('día', 'day') : L('días', 'days')}</b>` : `<a href="#ajustes">${L('Fijar la fecha del examen', 'Set the exam date')}</a>`}</p></div>
   <section class="card session-card" aria-labelledby="sesh"><p class="eyebrow">${L('Sesión de hoy', 'Today’s session')}</p>${sessionBody}${scopeNote}</section>
   <section class="card"><p class="eyebrow">${L('Otras formas de practicar', 'Other ways to practise')}</p><div class="games">
+    <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
+        'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#cual-es">${ICON.namePhoto}<span><b>${L('¿Cuál es?', 'Which one is it?')}</b><span class="small muted">${L('Ves un nombre científico y eliges la foto correcta entre cuatro.',
         'See a scientific name and pick the right photo out of four.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#hoja">${ICON.sheet}<span><b>${L('Hoja de examen', 'Exam sheet')}</b><span class="small muted">${L('Una foto, cinco casillas: clase, orden, género, especie y nombre vulgar.',
@@ -245,6 +248,7 @@ V.nivel = function () {
   const set = SET(), scope = P().ui.scope && M().nodes[P().ui.scope] ? P().ui.scope : null;
   const games = [['foto', L('Foto → nombre', 'Photo → name'), L('Ves una foto y respondes una casilla.',
       'See a photo and answer one box.'), ICON.photoName],
+    ['grupo', L('¿Qué grupo es?', 'Which group is it?'), L('Ves varias fotos y nombras su clase u orden.', 'See several photos and name their class or order.'), ICON.groupPhotos],
     ['cual', L('¿Cuál es?', 'Which one is it?'), L('Ves un nombre y eliges la foto.', 'See a name and pick the photo.'), ICON.namePhoto],
     ['hoja', L('Hoja de examen', 'Exam sheet'), L('Las cinco casillas a la vez, siempre sin ayudas.',
         'All five boxes at once, always without help.'), ICON.sheet]];
@@ -260,7 +264,7 @@ V.nivel = function () {
     <div class="note-box info">${rev ? L('Antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Queda anotado junto a tu respuesta.',
         'Before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. It is logged with your answer.') : L('En todos los niveles, antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Así repasas antes lo que creías saber y no sabías.',
         'On every level, before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. That way you revisit sooner what you thought you knew but didn’t.')}</div>
-    <a class="btn primary big" id="startbtn" href="${set.game === 'cual' ? '#cual-es' : sheet ? '#hoja' : '#sesion'}">${sheet ? L('Empezar la hoja de examen', 'Start the exam sheet') : L(`Empezar en ${I.lvName(set.level)}`, `Start on ${I.lvName(set.level)}`)}</a></div><div id="aside-m"></div>`;
+    <a class="btn primary big" id="startbtn" href="#${{ cual: 'cual-es', hoja: 'hoja', grupo: 'grupos' }[set.game] || 'sesion'}">${sheet ? L('Empezar la hoja de examen', 'Start the exam sheet') : L(`Empezar en ${I.lvName(set.level)}`, `Start on ${I.lvName(set.level)}`)}</a></div><div id="aside-m"></div>`;
   App.aside().innerHTML = !App.DESK.matches ? '' : rev ? revAside(false) : `<section class="card"><p class="eyebrow">${L('Qué entrena cada nivel', 'What each level trains')}</p>
     <p class="small"><b>${I.lvName(1)}</b>: ${L('reconocer. Ideal para especies nuevas.', 'recognition. Good for new species.')}</p>
     <p class="small"><b>${I.lvName(2)}</b>: ${L('recordar y escribir, con red. Cada pista que pides queda anotada.',
@@ -280,7 +284,7 @@ App.newSession = function (game, opts) {
   const now = Date.now(), set = SET(), skills = App.skills(), scope = P().ui.scope && M().nodes[P().ui.scope] ? P().ui.scope : null;
   const base = { now, skills, scope, size: set.sessionSize, force: !!opts.force };
   const items = game === 'hoja' ? E.buildSheetSession(M(), P(), Object.assign(base, { size: Math.max(5, Math.round(set.sessionSize / 2)) }))
-    : E.buildSession(M(), P(), base);
+    : game === 'grupo' ? E.buildGroupSession(M(), P(), base) : E.buildSession(M(), P(), base);
   sess = { game, level: game === 'hoja' ? 3 : set.level, items, i: 0, results: [], startedAt: now, done: false };
   resetItem();
   return sess;
@@ -288,12 +292,20 @@ App.newSession = function (game, opts) {
 function resetItem() {
   Object.assign(sess, { phase: 'ask', picked: null, typed: '', hints: 0, conf: null, sheet: {}, res: null, outcome: null, mc: null, sheetRes: null });
   const it = sess.items[sess.i];
-  if (it && sess.game === 'foto' && sess.level === 1) sess.mc = E.mcOptions(M(), it.sp, it.skill);
-  if (it) sess.photoIdx = App.randomPhoto(it.sp);
+  if (it && sess.game !== 'hoja' && sess.level === 1) sess.mc = E.mcOptions(M(), it.sp, it.skill);
+  if (it && it.card) {   // a group: up to four of its species, each on a random photo
+    sess.gshow = E.shuffle(it.members, Math.random).slice(0, 4);
+    sess.gphoto = {}; sess.gshow.forEach(id => { sess.gphoto[id] = App.randomPhoto(id); });
+  } else if (it) sess.photoIdx = App.randomPhoto(it.sp);
 }
 const curItem = () => sess.items[sess.i];
 const mode = () => (sess.game === 'hoja' ? 'sheet' : sess.level === 1 ? 'mc' : 'typed');
 function promptText(it) {
+  if (it.card) {
+    const many = sess.gshow.length > 1;
+    return it.skill === 'class' ? (many ? L('¿De qué clase son estos animales?', 'Which class are these animals?') : L('¿A qué clase pertenece?', 'Which class does it belong to?'))
+      : many ? L('¿De qué orden son estos animales?', 'Which order are these animals?') : L('¿De qué orden es?', 'Which order is it?');
+  }
   if (it.skill === 'sheet') return L('Rellena las casillas, como en el examen', 'Fill in the boxes, as in the exam');
   return { class: L('¿A qué clase pertenece?', 'Which class does it belong to?'), order: L('¿De qué orden es?', 'Which order is it?'),
     genus: L('¿De qué género es?', 'Which genus is it?'), species: L('¿Qué especie es? Escribe solo el epíteto específico',
@@ -315,6 +327,7 @@ V.session = function () {
   if (!sess || !sess.items.length) return emptySession();
   if (sess.i >= sess.items.length) { location.hash = 'resumen'; return; }
   const it = curItem(), m = mode(), total = sess.items.length;
+  if (it.card) sess.gshow.forEach((id, i) => { App.carouselStep[`grp-${i}`] = k => { sess.gphoto[id] = k; }; });
   const prog = (sess.i + (sess.phase === 'reveal' ? 1 : 0)) / total;
   const top = sessTop(prog, total, sess.i);
   if (sess.phase === 'reveal' && m !== 'sheet' && sess.res.kind !== 'right') {
@@ -350,7 +363,7 @@ V.session = function () {
   else if (m === 'mc' && sess.phase === 'ask' && sess.picked != null) after = confBlock(sess.conf, true);
   if (sess.phase === 'reveal') after = m === 'sheet' ? sheetResultHTML(it) : revealOK(it);
   App.main().innerHTML = `<div class="session-wrap">${top}
-    <div class="quiz-photo">${quizPhoto(it, L('Foto del animal que hay que identificar', 'Photo of the animal to identify'))}</div>
+    ${it.card ? groupGrid(sess.phase === 'reveal') : `<div class="quiz-photo">${quizPhoto(it, L('Foto del animal que hay que identificar', 'Photo of the animal to identify'))}</div>`}
     ${pills}<p class="prompt">${esc(promptText(it))}</p>${body}${after}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = App.DESK.matches ? sessionAside(it) : '';
   const ti = document.getElementById('typedin');
@@ -363,12 +376,37 @@ function quizPhoto(it, alt) {
   return App.carousel(it.sp, { key: 'quiz', alt, idx: sess.photoIdx, credit: sess.phase === 'reveal' ? true : 'later' });
 }
 App.carouselStep.quiz = i => { sess.photoIdx = i; };
+/* "¿Qué grupo es?": the group's photos as a grid of carousels. Names and credits wait for the answer. */
+function groupGrid(reveal) {
+  return `<div class="rev-grid group-grid ${sess.gshow.length === 1 ? 'one' : ''}" role="group" aria-label="${L('Fotos del grupo', 'Photos of the group')}">${sess.gshow.map((id, i) => {
+    const alt = `${L('Foto', 'Photo')} ${i + 1}${reveal ? ': ' + App.sp(id).binomial : ''}`;
+    return `<div class="rev-opt">${App.carousel(id, { key: `grp-${i}`, idx: sess.gphoto[id], alt, credit: reveal || undefined })}
+      ${reveal ? `<span class="cap"><a href="#${esc(App.routeFor(id))}"><i>${esc(App.sp(id).binomial)}</i></a><br>${esc(App.sp(id).common_es)}</span>` : ''}</div>`;
+  }).join('')}</div>${reveal ? '' : App.creditLater()}`;
+}
+const groupLink = (node, cls) => (M().nodes[node] ? `<a class="btn ${cls}" href="#${esc(App.routeFor(node))}">${L('Abrir el grupo', 'Open the group')}</a>` : '');
+/* A group's name (with its Spanish form), a few of its species and what they have in common, from its card. */
+function groupBlock(node, cls, tag) {
+  const [rank, val] = node.split(':'), es = App.esForm(rank, val), g = (M().content.groups || {})[node];
+  const sp = M().withPhotos.filter(id => E.answerFor(M(), id, rank) === val), traits = g ? I.list(g.traits).slice(0, 4) : [];
+  const name = `<i>${esc(val)}</i>${es ? ` · ${esc(es)}` : ''}`;
+  return `<div class="${cls}"><div class="lbl"><span>${tag}</span></div>
+    <p class="vern">${M().nodes[node] ? `<a href="#${esc(App.routeFor(node))}">${name}</a>` : name}</p>
+    <div class="thumbs">${sp.slice(0, 4).map(id => `<a href="#${esc(App.routeFor(id))}" title="${esc(App.spName(id))}">${App.tile(id)}</a>`).join('')}</div>
+    ${traits.length ? `<ul class="small list-tight">${traits.map(t => `<li>${esc(t)}</li>`).join('')}</ul>${App.draftTag(g.status === 'draft')}` : ''}</div>`;
+}
+/* After naming the wrong group: both groups side by side, then the right one's "do not confuse with". */
+function groupCompare(other, node) {
+  const g = (M().content.groups || {})[node];
+  return `<div class="twoup group-cmp">${groupBlock(other, 'yours', L('Tu respuesta', 'Your answer'))}${groupBlock(node, 'correct', L('Respuesta correcta', 'Correct answer'))}</div>
+    ${g && g.contrast && I.t(g.contrast) ? keyBox(I.t(g.contrast), g.status === 'draft') : ''}`;
+}
 function emptySession() {
   App.main().innerHTML = `<div class="session-wrap">${sessTop(0, 0, 0)}<h1>${L('No hay tarjetas para esta sesión', 'No cards for this session')}</h1>
     <p>${M().withPhotos.length ? L('Ya has hecho los repasos y las nuevas de hoy. Puedes repasar igualmente o cambiar de grupo.',
         'You’ve done today’s reviews and new cards. You can review anyway or change the group.') : L('Todavía no hay ninguna especie con foto.',
         'There are no species with photos yet.')}</p>
-    <div class="actions"><a class="btn primary big" href="#sesion-repaso">${L('Repasar igualmente', 'Review anyway')}</a>
+    <div class="actions"><a class="btn primary big" href="#${sess && sess.game === 'grupo' ? 'grupos-repaso' : 'sesion-repaso'}">${L('Repasar igualmente', 'Review anyway')}</a>
       <a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div></div><div id="aside-m"></div>`;
 }
 function sessionAside(it) {
@@ -376,7 +414,8 @@ function sessionAside(it) {
   return `<section class="card"><p class="eyebrow">${L('Nivel de esta sesión', 'This session’s level')}</p><p><b>${App.lvDots(sess.level)}${I.lvName(sess.level)}</b></p>
     <p class="small muted">${sess.game === 'hoja' ? L('Hoja de examen: siempre sin ayudas.', 'Exam sheet: always without help.') : I.lvDes(sess.level)}</p>
     <p class="small">${I.MASTERY_RULE()}</p><a class="btn" href="#nivel">${L('Cambiar de nivel', 'Change level')}</a></section>
-  ${sess.phase === 'reveal' ? `<section class="card"><p class="eyebrow">${L('Tus casillas de este animal', 'Your boxes for this animal')}</p>${skillBars([it.sp])}</section>` : ''}
+  ${sess.phase !== 'reveal' ? '' : it.card ? `<section class="card"><p class="eyebrow">${L('Reconocer este grupo', 'Recognising this group')}</p>${groupBar(it.card)}</section>`
+    : `<section class="card"><p class="eyebrow">${L('Tus casillas de este animal', 'Your boxes for this animal')}</p>${skillBars([it.sp])}</section>`}
   <section class="card"><p class="eyebrow">${L('Siguientes', 'Up next')}</p><div class="thumbs">${up.map(d => `<span>${App.tile(d.sp, L('Tarjeta pendiente', 'Upcoming card'))}</span>`).join('')
     || `<span class="small muted bare">${L('Última tarjeta', 'Last card')}</span>`}</div></section>`;
 }
@@ -389,6 +428,8 @@ function skillBars(ids) {
   return `<div class="skillbars">${E.SKILLS.map(bar).join('')}</div>`;
 }
 App.skillBars = skillBars;
+const groupBar = card => { const v = E.cardMeter(P().cards[card], Date.now()); return `<div class="bar"><span style="width:${v * 100}%"></span></div><p class="tiny muted">${pct(v)}</p>`; };
+App.groupBar = groupBar;
 
 const fieldInput = (k, value, locked) => `<input id="f-${k}" data-field="${k}" class="${sciSkill(k) ? 'sci' : ''}" value="${esc(value || '')}" ${locked ? 'disabled' : ''}
   autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">`;
@@ -423,6 +464,12 @@ function levelCountNote() {
 }
 function revealOK(it) {
   const s = App.sp(it.sp), last = sess.i === sess.items.length - 1;
+  if (it.card) {
+    return `<div class="reveal-ok" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
+      <div class="group-cmp mt">${groupBlock(it.node, 'correct', L('Lo que tienen en común', 'What they have in common'))}</div>
+      <p class="small">${levelCountNote()}</p><p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}.</p>
+      <div class="row mt"><button class="btn primary grow" id="nextbtn">${nextLabel(last)}</button>${groupLink(it.node, '')}</div></div>`;
+  }
   return `<div class="reveal-ok" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
     <h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2><p class="small">${esc(s.class)} › ${esc(s.order)}</p>
     <p class="small">${levelCountNote()}</p>
@@ -435,12 +482,12 @@ function feedbackHTML(it) {
   const nextBtn = `<button class="btn primary big" id="nextbtn">${left <= 0 ? L('Ver resumen', 'See summary') : L(`Seguir · quedan ${left}`, `Continue · ${left} left`)}</button>`;
   const given = sess.mc ? (sess.picked != null ? sess.mc.options[sess.picked].value : '') : sess.typed.trim();
   const after = (extra) => `${calloutsHTML(sess.conf, sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}
-    <div class="actions">${nextBtn}${App.cardLink(it.sp)}${extra || ''}</div>`;
+    <div class="actions">${nextBtn}${it.card ? groupLink(it.node, 'big') : App.cardLink(it.sp)}${extra || ''}</div>`;
   if (r.kind === 'misspelling') {
     /* A misspelling shows only what she typed next to the correct spelling. No explanation. */
     return `<div role="alert">${App.mistakeHead(L('Ortografía', 'Spelling'), L('No es la grafía correcta', 'Not the right spelling'))}
       <section class="card mt">${diffRow(given, ans, sci)}</section>
-      ${App.nameKeyHTML(it.sp, [it.skill])}<div class="quiz-photo narrow">${quizPhoto(it)}</div>${after()}</div>`;
+      ${App.nameKeyHTML(it.sp, [it.skill])}${it.card ? groupGrid(true) : `<div class="quiz-photo narrow">${quizPhoto(it)}</div>`}${after()}</div>`;
   }
   if (r.kind === 'wrong_species' && r.with && App.sp(r.with[0])) {
     const verb = sess.mc ? L('Has elegido', 'You picked') : L('Has escrito', 'You wrote'), tree = E.lca(M(), r.with[0], it.sp) || it.sp;
@@ -450,6 +497,12 @@ function feedbackHTML(it) {
   }
   const g = (M().content.groups || {})[`order:${s.order}`];
   const title = given ? `${L('Respondiste', 'You answered')} ${sciWrap(sci, given)}; ${L('es', 'it is')} ${sciWrap(sci, ans)}` : `${L('Es', 'It is')} ${sciWrap(sci, ans)}`;
+  if (it.card) {
+    const other = r.value && `${it.skill}:${r.value}` !== it.node ? `${it.skill}:${r.value}` : null;
+    return `<div role="alert">${App.mistakeHead(L('Fallo', 'Miss'), title)}${groupGrid(true)}
+      ${other ? groupCompare(other, it.node) : `<div class="group-cmp mt">${groupBlock(it.node, 'correct', L('Lo que tienen en común', 'What they have in common'))}</div>`}
+      ${App.nameKeyHTML(it.sp, [it.skill], other ? [M().withPhotos.find(id => E.answerFor(M(), id, it.skill) === r.value)].filter(Boolean) : [], it.skill)}${after()}</div>`;
+  }
   return `<div role="alert">${App.mistakeHead(L('Fallo', 'Miss'), title)}
     <div class="quiz-photo mt">${quizPhoto(it)}</div>
     <p><b>${esc(s.common_es)}</b> · <i>${esc(s.binomial)}</i> · ${esc(s.order)} · ${esc(s.class)}</p>
@@ -513,15 +566,16 @@ function resolve(it) {
   } else {
     sess.res = judge(it);
     const typed = mode() === 'mc' ? sess.mc.options[sess.picked].value : sess.typed;
-    const rec = Store.recordAnswer({ sp: it.sp, skill: it.skill, level: sess.level, kind: sess.res.kind, hints: sess.hints, conf: sess.conf, game: 'foto', typed, with: sess.res.with }, now);
+    const rec = Store.recordAnswer({ sp: it.sp, skill: it.skill, level: sess.level, kind: sess.res.kind, hints: sess.hints, conf: sess.conf,
+      game: it.card ? 'grupo' : 'foto', card: it.card, typed, with: sess.res.with }, now);
     let requeued = false;
     if ((sess.res.kind !== 'right' || sess.conf === 'guess') && (it.requeued || 0) < 2) {
       const at = Math.min(sess.items.length, sess.i + 1 + E.requeueGap());
-      sess.items.splice(at, 0, { sp: it.sp, skill: it.skill, requeued: (it.requeued || 0) + 1 });
+      sess.items.splice(at, 0, Object.assign({}, it, { requeued: (it.requeued || 0) + 1 }));
       requeued = true;
     }
     sess.outcome = { due: rec.due, requeued };
-    sess.results.push({ sp: it.sp, skill: it.skill, kind: sess.res.kind });
+    sess.results.push({ sp: it.sp, skill: it.skill, kind: sess.res.kind, node: it.card && it.node });
   }
   sess.phase = 'reveal';
   V.session();
@@ -563,7 +617,8 @@ V.resumen = function () {
   <div class="note-box">${sess.level === 3 ? L(`Tus ${ok} aciertos en Difícil cuentan para «dominada».`, `Your ${ok} correct answers on Hard count toward “mastered”.`) : L('Estos aciertos suben tu progreso. Para «dominada», repítelos en Difícil.',
       'These answers raise your progress. For “mastered”, repeat them on Hard.')}</div>
   ${sess.newBadges && sess.newBadges.length ? `<section class="card"><h2>${L('Insignia nueva', 'New badge')}</h2><div class="earned-list">${sess.newBadges.map(id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44)}<b>${esc(App.badgeName(id))}</b></div>`).join('')}</div></section>` : ''}
-  ${misses.length ? `<section class="card"><h2>${L('Para repasar', 'To review')}</h2><div class="thumbs">${misses.slice(0, 12).map(r => `<a href="#${esc(App.routeFor(r.sp))}" title="${esc(App.spName(r.sp))}">${App.tile(r.sp)}</a>`).join('')}</div></section>` : ''}
+  ${misses.length ? `<section class="card"><h2>${L('Para repasar', 'To review')}</h2><div class="thumbs">${misses.slice(0, 12).map(r => r.node
+      ? `<a href="#${esc(App.routeFor(r.node))}" title="${esc(App.label(r.node))}">${App.tile(r.sp)}</a>` : `<a href="#${esc(App.routeFor(r.sp))}" title="${esc(App.spName(r.sp))}">${App.tile(r.sp)}</a>`).join('')}</div></section>` : ''}
   <div class="actions"><a class="btn primary big" href="#nivel">${L('Otra ronda', 'Another round')}</a><a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div><div id="aside-m"></div>`;
   App.aside().innerHTML = '';
 };

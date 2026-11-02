@@ -7,9 +7,10 @@
    Stored shape (also the "progress" member of an exported file):
    { schemaVersion, createdAt, settings, cards, log, days, badges, mocks, stats, meta, ui }
    - cards["lynx_pardinus:genus"] = { p: progress counter (Easy/Medium/Hard), m: FSRS state (Hard without hints only) }
+     cards["order:Accipitriformes:group"] = the same, for naming a group from several photos (since schemaVersion 2)
      p = { seen, ok, streak, due, first, last }    m = { due, s, d, ed, sd, reps, lapses, ls, st, last }  (times in ms)
    - log: append-only, one row per answered box:
-     { ts, card, game: foto|hoja|mock|cual, level: 1|2|3, rating: FSRS rating or null, hints, conf: guess|unsure|sure|null,
+     { ts, card, game: foto|hoja|mock|cual|grupo, level: 1|2|3, rating: FSRS rating or null, hints, conf: guess|unsure|sure|null,
        kind: right|misspelling|wrong|wrong_species, with: [species] (wrong_species only), typed (wrong answers only) }
    - days["2026-11-01"] = answers that day (streak); badges[id] = { tier, at }; mocks = finished Mock VISU results. */
 (function () {
@@ -77,10 +78,11 @@ S.wipe = function () {
   return S.save();
 };
 
-/* Records one answered box and saves. a = { sp, skill, level, kind, hints, conf, game, typed, with }. */
+/* Records one answered box and saves. a = { sp, skill, level, kind, hints, conf, game, typed, with, card? };
+   `card` names a group card, otherwise the card is the species' box. */
 S.recordAnswer = function (a, now) {
   now = now || Date.now();
-  const P = S.data, id = E.cardId(a.sp, a.skill);
+  const P = S.data, id = a.card || E.cardId(a.sp, a.skill);
   const res = E.applyAnswer(P.cards[id], { level: a.level, kind: a.kind, hints: a.hints || 0, conf: a.conf || null }, now);
   P.cards[id] = res.card;
   const row = { ts: now, card: id, game: a.game, level: a.level, rating: res.rating, hints: a.hints || 0, conf: a.conf || null, kind: a.kind };

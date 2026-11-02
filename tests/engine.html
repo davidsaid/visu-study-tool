@@ -291,6 +291,22 @@ test('real data', () => {
   ok('study mode: every species’ path starts at its class and ends at it', !bad.length, bad.slice(0, 5).join());
   ok('study mode: the real tree is unchanged (no reptile path passes through the virtual class)', RM.order.filter(id => RM.species[id].class === 'Reptilia').every(id => !E.pathTo(RM, id).includes('class:Reptilia')));
   eq('study mode: nodes above the classes have no study path', [E.studyPath(RM, RM.root), E.studyPath(RM, 'clade:amniota')], [null, null]);
+  /* "¿Qué grupo es?": group cards for every class and order with photos. */
+  const now2 = Date.now(), GS = ['class', 'order'];
+  const groups = E.groupItems(RM, RM.withPhotos, GS);
+  const nClass = new Set(RM.withPhotos.map(id => RM.species[id].class)).size, nOrder = new Set(RM.withPhotos.map(id => RM.species[id].order)).size;
+  eq('groups: one per class and per order with photos', groups.length, nClass + nOrder);
+  ok('groups: every group is a tree node, and its members share its name', groups.every(g => RM.nodes[g.node] && g.members.every(id => E.answerFor(RM, id, g.skill) === g.node.split(':')[1])), groups.filter(g => !RM.nodes[g.node]).map(g => g.node).join());
+  ok('groups: card ids pass the progress whitelist', groups.every(g => E.normalizeProgress({ cards: { [g.card]: { p: { seen: 1 } } } }, now2).cards[g.card]));
+  const gs = E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, size: 20 });
+  eq('group session: new groups capped at the daily allowance, classes first', [gs.length, gs.slice(0, nClass).every(g => g.skill === 'class')], [10, true]);
+  const og = E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: ['order'], scope: 'class:Aves', size: 10 });
+  ok('group session: larger groups come first', og.every((g, i) => !i || og[i - 1].members.length >= g.members.length) && og[0].members.length > 1);
+  ok('group session: practising one class never asks for the class itself', E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, scope: 'class:Aves', size: 50, force: true }).every(g => g.skill === 'order'));
+  const PG = E.emptyProgress(now2); PG.cards['order:Accipitriformes:group'] = { p: { seen: 1, ok: 1, streak: 1, due: now2 + 6e5, first: now2, last: now2 }, m: null };
+  eq('group cards don’t use up the species’ new cards for the day', E.todayPlan(RM, PG, { now: now2, skills: GS }).newAvailable, E.todayPlan(RM, E.emptyProgress(now2), { now: now2, skills: GS }).newAvailable);
+  const gl = E.normalizeProgress({ log: [{ ts: now2, card: 'class:Aves:group', game: 'grupo', kind: 'wrong', level: 3 }], settings: { game: 'grupo' } }, now2);
+  eq('a group answer and the group game survive validation', [gl.log.length && gl.log[0].game, gl.settings.game], ['grupo', 'grupo']);
   ok('every class of the list has a badge, Reptilia included', classes.every(c => Object.keys(E.badgeStatus(RM, E.emptyProgress(Date.now()), ['class'], Date.now())).includes('class:' + c)));
   const facts = RM.order.reduce((a, id) => a.concat((V.bestiary.species[id].facts || []).map(f => [id, f])), []);
   const unsourced = facts.filter(([, f]) => !Array.isArray(f.src) || !f.src.length).length;
