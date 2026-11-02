@@ -22,6 +22,9 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   don't.
 - **Spaced repetition** ([FSRS](https://github.com/open-spaced-repetition/ts-fsrs)): what
   you're about to forget comes back first.
+- **"Primer vistazo"** (first look): page through a group with nothing graded. An order shows
+  its species one by one (photos, names, first field marks); a class shows its orders. It ends
+  with an Easy round on that group. Today suggests the order with the most species not seen yet.
 - **"¿Qué grupo es?"**: see up to four animals of one class or order and name the group, on the
   same three levels, with its own spaced repetition. The way in for someone who doesn't know the
   animals yet: classes first, then the largest orders. A class's card can quiz just its orders.
@@ -146,7 +149,7 @@ especies vienen en **colecciones**, una por examen; la primera tiene 308 vertebr
   servidores. Si cambias de navegador o de dispositivo, o borras los datos del navegador,
   no lo verás: **guarda una copia** cada semana con *Guardar copia*. Cada colección guarda
   su propio progreso.
-- Practica en tres niveles, juega a **¿Qué grupo es?** (varias fotos de una clase u orden: nombra
+- Empieza con un **primer vistazo** a un grupo (sin preguntas), practica en tres niveles, juega a **¿Qué grupo es?** (varias fotos de una clase u orden: nombra
   el grupo; la mejor forma de empezar) y a **¿Cuál es?**, explora el árbol de la vida rama a rama (completo, o en **modo estudio**, con cada clase de la lista como raíz de su propio árbol)
   y haz simulacros con la hoja de cinco casillas. Cada pregunta muestra una foto al azar del
   animal. Cuentan la ortografía y las tildes; las mayúsculas, no.

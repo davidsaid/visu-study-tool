@@ -286,6 +286,7 @@ function groupCard(id) {
       <p class="small tight">${gs.mastered} ${L('de', 'of')} ${gs.total} ${L('especies dominadas', 'species mastered')}</p>
       ${badge ? `<p class="small tight"><b>${L('Insignia', 'Badge')}:</b> ${esc(App.badgeName(id))} · ${earned ? L('conseguida', 'earned') : pct(prog)}</p>` : ''}
       ${n.rank === 'class' || n.rank === 'order' ? `<p class="small tight"><b>${L('Reconocer el grupo', 'Recognising the group')}:</b> ${pct(E.cardMeter(P().cards[E.groupCardId(id)], Date.now()))}</p>` : ''}
+      ${App.canLook(id) ? `<a class="btn practise-btn" href="#${esc(App.lookRoute(id))}">${L('Primer vistazo', 'First look')}</a>` : ''}
       ${sp.some(App.hasPhoto) ? `<button class="btn primary practise-btn" data-practise="${esc(id)}">${L('Practicar este grupo', 'Practise this group')}</button>` : ''}
       ${E.groupItems(M(), E.scopePool(M(), id), App.skills()).length > 1 ? `<button class="btn practise-btn" data-groupgame="${esc(id)}">${L('¿Qué grupo es? Sus órdenes', 'Which group is it? Its orders')}</button>` : ''}</div></div>
     ${App.skillBars(sp)}`;

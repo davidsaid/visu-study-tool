@@ -29,7 +29,7 @@ const PRACTICE = ['sesion', 'sesion-repaso', 'grupos', 'grupos-repaso', 'hoja', 
 document.addEventListener('click', e => {
   const a = e.target.closest && e.target.closest('a[href^="#ficha-"], a[href^="#grupo-"]');
   const here = (location.hash || '#hoy').slice(1);
-  if (a && PRACTICE.includes(here)) App.returnTo = here;
+  if (a && (PRACTICE.includes(here) || here.startsWith('vistazo-'))) App.returnTo = here;
 }, true);
 
 App.render = function (full) {
@@ -49,6 +49,7 @@ App.render = function (full) {
   else if (r === 'cual-es') { if (!(resume && App.reverseState()) && (!full || !App.reverseState())) App.newReverse(); V.cual(); }
   else if (r === 'simulacro') { if (!full || !App.mockState() || App.mockState().done) App.newMock(); V.simulacro(); }
   else if (r === 'simulacro-resultados') V.simulacroResultados();
+  else if (r.startsWith('vistazo-') && BYROUTE['grupo-' + r.slice(8)]) V.vistazo(BYROUTE['grupo-' + r.slice(8)]);
   else if (r === 'nivel') V.nivel();
   else if (r === 'explorar') V.explore(Store.data.ui.exploreSel || App.M.root, false);
   else if (BYROUTE[r]) V.explore(BYROUTE[r], !full);

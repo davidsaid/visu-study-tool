@@ -335,6 +335,27 @@ const SCENARIOS = {
     seedStorage({ meta: { seenNotice: true }, ui: { scope: Q.get('scope') || 'class:Aves' } }); await open('hoy'); App().set().level = +(Q.get('lv') || 3); await go('grupos');
     if (Q.get('miss')) await answerTyped(Q.get('miss'));
   },
+  /* "Primer vistazo": Today suggests a group; an order shows its species one by one, a class its orders; the end starts an Easy check of that group. */
+  'vistazo': async () => {
+    seedStorage(seen); await open('hoy');
+    const suggested = (doc.querySelector('a.game[href^="#vistazo-"]') || {}).getAttribute?.('href') || null;
+    await go('grupo-order-Accipitriformes');
+    const button = !!doc.querySelector('a[href="#vistazo-order-Accipitriformes"]');
+    await go('vistazo-order-Accipitriformes');
+    const st = App().lookState(), n = st.slides.length;
+    const first = !!doc.querySelector('.look-slide .car') && doc.querySelector('.look-name').textContent === App().spName(st.slides[0]) && !!doc.querySelector('.look-slide .car-credit a');
+    await click('#looknext');
+    const second = doc.querySelector('.look-name').textContent === App().spName(st.slides[1]) && !doc.querySelector('#lookprev').disabled;
+    for (let i = 1; i < n; i++) await click('#looknext');
+    const endCheck = doc.querySelector('[data-lookcheck="foto"]');
+    await click(endCheck); await sleep(250);
+    const ss = App().sessionState(), under = new Set(Eng().speciesUnder(App().M, 'order:Accipitriformes'));
+    const check = win.location.hash === '#sesion' && ss.level === 1 && ss.items.length > 0 && ss.items.every(x => under.has(x.sp)) && !!doc.querySelector('[data-opt]');
+    await go('vistazo-class-Aves');
+    const orders = doc.querySelectorAll('.look-order .car').length >= 1 && App().lookState().slides.every(x => x.startsWith('order:'));
+    report({ scenario: 'vistazo', suggested: !!suggested && /^#vistazo-order-/.test(suggested), button, first, second, check, orders, n });
+  },
+  'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* The level picker describes "¿Cuál es?" levels (how close the other photos are), not typing levels. */
   'nivelcual': async () => {
     seedStorage(seen); await open('nivel'); await click('[data-game="cual"]');

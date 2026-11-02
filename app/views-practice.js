@@ -148,7 +148,7 @@ V.hoy = function () {
   const st = E.streak(P().days, now);
   const examDays = set.examDate ? Math.ceil((new Date(set.examDate + 'T09:00:00') - now) / DAY) : null;
   const dateStr = new Date(now).toLocaleDateString(I.locale(), { weekday: 'long', day: 'numeric', month: 'long' });
-  const nb = nextBadge();
+  const nb = nextBadge(), look = App.nextLook();
   const dueGroups = E.groupItems(M(), M().withPhotos, skills).filter(g => { const d = E.dueOf(P().cards[g.card]); return d != null && d <= now; }).length;
   const nbMissing = nb ? E.speciesUnder(M(), nb.def.node).filter(id => !statsOf(id).mastered) : [];
   const dueW = total ? Math.min(plan.dueNow, total) / total * 100 : 0;
@@ -172,6 +172,8 @@ V.hoy = function () {
     <p class="small muted right">${examDays != null && examDays >= 0 ? `${L('Examen en', 'Exam in')} <b>${examDays} ${examDays === 1 ? L('día', 'day') : L('días', 'days')}</b>` : `<a href="#ajustes">${L('Fijar la fecha del examen', 'Set the exam date')}</a>`}</p></div>
   <section class="card session-card" aria-labelledby="sesh"><p class="eyebrow">${L('Sesión de hoy', 'Today’s session')}</p>${sessionBody}${scopeNote}</section>
   <section class="card"><p class="eyebrow">${L('Otras formas de practicar', 'Other ways to practise')}</p><div class="games">
+    ${look ? `<a class="game" href="#${esc(App.lookRoute(look.node))}">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}: <i>${esc(look.node.split(':')[1])}</i></b><span class="small muted">${L(`Mira sus especies una a una, sin preguntas. Tiene ${look.n} que aún no has visto.`,
+        `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
         'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#cual-es">${ICON.namePhoto}<span><b>${L('¿Cuál es?', 'Which one is it?')}</b><span class="small muted">${L('Ves un nombre científico y eliges la foto correcta entre cuatro.',
@@ -396,9 +398,9 @@ function groupBlock(node, cls, tag) {
     ${traits.length ? `<ul class="small list-tight">${traits.map(t => `<li>${esc(t)}</li>`).join('')}</ul>${App.draftTag(g.status === 'draft')}` : ''}</div>`;
 }
 /* After naming the wrong group: both groups side by side, then the right one's "do not confuse with". */
-function groupCompare(other, node) {
-  const g = (M().content.groups || {})[node];
-  return `<div class="twoup group-cmp">${groupBlock(other, 'yours', L('Tu respuesta', 'Your answer'))}${groupBlock(node, 'correct', L('Respuesta correcta', 'Correct answer'))}</div>
+function groupCompare(other, node, tags) {
+  const g = (M().content.groups || {})[node], [ta, tb] = tags || [L('Tu respuesta', 'Your answer'), L('Respuesta correcta', 'Correct answer')];
+  return `<div class="twoup group-cmp">${groupBlock(other, 'yours', ta)}${groupBlock(node, 'correct', tb)}</div>
     ${g && g.contrast && I.t(g.contrast) ? keyBox(I.t(g.contrast), g.status === 'draft') : ''}`;
 }
 function emptySession() {
@@ -428,6 +430,9 @@ function skillBars(ids) {
   return `<div class="skillbars">${E.SKILLS.map(bar).join('')}</div>`;
 }
 App.skillBars = skillBars;
+/* Shared with the learning screens (views-learn.js). */
+Object.assign(App, { groupBlock: (...a) => groupBlock(...a), groupCompare: (...a) => groupCompare(...a), comparePlate: (...a) => comparePlate(...a),
+  diffHTML: (...a) => diffHTML(...a), sessTop: (...a) => sessTop(...a), levelPill: lv => levelPill(lv) });
 const groupBar = card => { const v = E.cardMeter(P().cards[card], Date.now()); return `<div class="bar"><span style="width:${v * 100}%"></span></div><p class="tiny muted">${pct(v)}</p>`; };
 App.groupBar = groupBar;
 

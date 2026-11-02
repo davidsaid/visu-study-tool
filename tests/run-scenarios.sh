@@ -27,6 +27,7 @@ run "$here" comparecar '"carousels": 2' '"flippedBoth": true' '"creditsFollow": 
 run "$here" diff '"pairs": true' '"parts": true' '"sides": true' '"links": true' '"fewer": true'
 run "$here" grupo '"onlyOrders": true' '"grid": true' '"hidden": true' '"prompt": true' '"compare": true' '"named": true' '"bothNames": true' '"saved": true' '"right": true' '"kept": true'
 run "$here" grupo-mc '"game": "grupo"' '"n": 4' '"hasAnswer": true' '"logged": true'
+run "$here" vistazo '"suggested": true' '"button": true' '"first": true' '"second": true' '"check": true' '"orders": true'
 run "$here" nivelcual '"cards": true' '"rule": true' '"back": true'
 run "$here" zoom '"opened": true' '"synced": true' '"creditInZoom": true' '"keys": true' '"closed": true' '"quizAnon": true' '"cualZoom": true'
 run "$here" controls '"study": true' '"full": true' '"deep": true' '"mid": true' '"gal": true' '"citeRef": true' '"citeClose": true' '"notice": true' '"practise": true' '"game": true' '"level": true' '"clearscope": true' '"theme": true' '"lv": true' '"skillOff": true' '"num": true' '"wipeArmed": true' '"lang": true' '"hint": true' '"dunno": true' '"next": true' '"typedConf": true' '"confFocus": true' '"check": true' '"sheet": true' '"vern": true' '"cualConf": true' '"cualCheck": true' '"cualNext": true' '"errors": 0'

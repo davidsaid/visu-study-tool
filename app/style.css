@@ -310,6 +310,10 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .rev-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
 .rev-grid .tile { aspect-ratio: 4 / 3; }
 .group-grid { margin-bottom: .8rem; }
+.look-slide .car .car-frame { --maxh: 46vh; }
+.look-text { padding-top: .6rem; }
+.look-name { font-family: var(--font-plate); font-size: 1.6rem; margin: .2rem 0 0; }
+.look-nav { margin-top: 1.2rem; gap: .6rem; }
 .group-grid.one { grid-template-columns: minmax(0, 1fr); max-width: 30rem; }
 .group-grid .rev-opt .car .car-frame { --maxh: 32vh; }
 .group-cmp .lbl { font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .35rem 0; border-top: 3px solid var(--line); }
