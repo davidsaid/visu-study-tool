@@ -394,6 +394,22 @@ const SCENARIOS = {
     await go('sesion'); const empty = !!$('.session-wrap a[href="#como-funciona-plan"]') && !$('[data-opt]');
     report({ scenario: "plan", today, settings, section, scrolled, tab, empty });
   },
+  /* Explore's search: scientific or common name, accents and capitals ignored; Enter opens the first match. */
+  'search': async () => {
+    seedStorage(seen); await open('explorar');
+    const hits = () => Array.from(doc.querySelectorAll('#sp-hits a')).map(a => a.getAttribute('href'));
+    await type('#sp-q', 'CIGUENA'); const accents = hits().join() === '#ficha-ciconia_ciconia,#ficha-ciconia_nigra';
+    await type('#sp-q', 'buho real'); const common = hits()[0] === '#ficha-bubo_bubo';
+    await type('#sp-q', 'buteo b'); const sci = hits()[0] === '#ficha-buteo_buteo' && !!$('#sp-hits a .tile');
+    await type('#sp-q', 'ciconia'); const sciFirst = hits().length >= 2 && hits().slice(0, 2).every(h => /ciconia_/.test(h));
+    await type('#sp-q', 'a'); const capped = hits().length === 8 && /escribe más letras/.test($('#sp-hits').textContent);
+    await type('#sp-q', 'zzzz'); const none = !hits().length && /Ninguna especie/.test($('#sp-hits').textContent);
+    await type('#sp-q', ''); const cleared = $('#sp-hits').innerHTML === '';
+    await type('#sp-q', 'cigüeña negra'); $('.sp-search').requestSubmit(); await sleep(250);
+    const enter = win.location.hash === '#ficha-ciconia_nigra' && /Cigüeña negra/.test(doc.body.textContent);
+    report({ scenario: 'search', accents, common, sci, sciFirst, capped, none, cleared, enter });
+  },
+  'search-shot': async () => { seedStorage(seen); await open('explorar'); await type('#sp-q', Q.get('q') || 'cig'); },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
   'sobra': async () => {

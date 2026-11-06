@@ -77,6 +77,9 @@ V.explore = function (id, fromClick) {
   App.main().innerHTML = `<div class="tree-wrap"><p class="eyebrow">${L('Explorar', 'Explore')}</p><h1>${L('El árbol, rama a rama', 'The tree, one branch at a time')}</h1>
     <p class="small muted">${L('Ves el camino hasta tu selección y un nivel por debajo. Toca un grupo para abrirlo; toca uno de arriba para volver.',
         'You see the path to your selection and one level below it. Tap a group to open it; tap one above to go back.')}</p>
+    <form class="sp-search" role="search" autocomplete="off"><label class="tiny muted" for="sp-q">${L('Buscar una especie', 'Find a species')}</label>
+      <input type="search" id="sp-q" placeholder="${L('Nombre científico o común', 'Scientific or common name')}" spellcheck="false" aria-controls="sp-hits">
+      <ul id="sp-hits" class="sp-hits" aria-live="polite"></ul></form>
     <div class="seg tree-mode" role="group" aria-label="${L('Vista del árbol', 'Tree view')}">${mode('study', L('Modo estudio: por clases', 'Study mode: by class'))}${mode('full', L('Árbol completo', 'Full tree'))}</div>
     <nav class="tree" aria-label="${L('Árbol filogenético', 'Phylogenetic tree')}" id="tree">${treeHTML(id)}</nav>
     <div class="tree-legend">${legend}</div>
@@ -92,6 +95,31 @@ V.explore = function (id, fromClick) {
     if (App.DESK.matches) App.aside().scrollTop = 0;
   }
 };
+/* ---------- search ---------- */
+/* Any part of the scientific name or of either common name; accents, ü, ñ and capitals don't matter here
+   (it is for finding, not grading). Names that start with the query, or with a word of it, come first. */
+const plain = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+const MAX_HITS = 8;
+App.searchSpecies = function (q) {
+  q = plain(q);
+  if (!q) return [];
+  const score = id => {
+    const s = App.sp(id), names = [s.binomial, s.common_es, s.common_en].map(plain).filter(Boolean);
+    if (names.some(n => n.startsWith(q))) return 0;
+    if (names.some(n => n.split(/[\s-]+/).some(w => w.startsWith(q)))) return 1;
+    return names.some(n => n.includes(q)) ? 2 : -1;
+  };
+  return M().order.map(id => ({ id, r: score(id) })).filter(x => x.r >= 0).sort((a, b) => a.r - b.r).map(x => x.id);
+};
+App.on('input', '#sp-q', inp => {
+  const hits = App.searchSpecies(inp.value), list = document.getElementById('sp-hits');
+  list.innerHTML = !inp.value.trim() ? '' : !hits.length ? `<li class="tiny muted">${L('Ninguna especie coincide.', 'No species matches.')}</li>`
+    : hits.slice(0, MAX_HITS).map(id => `<li><a href="#${esc(App.routeFor(id))}">${App.tile(id, '')}<span><b>${esc(App.spName(id))}</b><br><i>${esc(App.sp(id).binomial)}</i>
+        <span class="tiny muted">· ${esc(App.sp(id).order)}</span></span></a></li>`).join('')
+      + (hits.length > MAX_HITS ? `<li class="tiny muted">${L(`Y ${hits.length - MAX_HITS} más: escribe más letras.`, `And ${hits.length - MAX_HITS} more: type more letters.`)}</li>` : '');
+});
+/* Enter opens the first match. */
+App.on('submit', '.sp-search', (f, e) => { e.preventDefault(); const a = f.querySelector('.sp-hits a'); if (a) location.hash = a.getAttribute('href').slice(1); });
 const reExplore = focusSel => App.redraw(() => V.explore(UI().exploreSel), focusSel);
 App.on('click', '[data-treemode]', b => { UI().studyTree = b.dataset.treemode === 'study'; Store.save(); reExplore(`[data-treemode="${b.dataset.treemode}"]`); });
 App.on('click', '[data-mid]', () => { UI().showMid = !UI().showMid; Store.save(); reExplore('#tree [data-mid]'); });

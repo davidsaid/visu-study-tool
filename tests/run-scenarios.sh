@@ -30,6 +30,7 @@ run "$here" grupo-mc '"game": "grupo"' '"n": 4' '"hasAnswer": true' '"logged": t
 run "$here" vistazo '"suggested": true' '"button": true' '"first": true' '"second": true' '"check": true' '"unlocked": true' '"free": true' '"remembered": true' '"orders": true'
 run "$here" vistazo-quota '"species": true' '"groups": true'
 run "$here" plan '"today": true' '"settings": true' '"section": true' '"scrolled": true' '"tab": true' '"empty": true'
+run "$here" search '"accents": true' '"common": true' '"sci": true' '"sciFirst": true' '"capped": true' '"none": true' '"cleared": true' '"enter": true'
 run "$here" sobra '"four": true' '"hidden": true' '"disabled": true' '"explained": true' '"day": true' '"right": true' '"relevel": true'
 run "$here" parejas '"today": true' '"mine": true' '"ask": true' '"miss": true' '"logged": true' '"right": true'
 run "$here" nivelcual '"cards": true' '"rule": true' '"back": true'

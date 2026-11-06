@@ -16,7 +16,7 @@ except a species' YouTube video, and only after a click (`youtube-nocookie.com`)
 | `ui.js` | Shell, event delegation (`App.on`), shared fragments, the photo widget, rings and medals, export/import buttons, citation popover, first-visit notice |
 | `views-learn.js` | "Primer vistazo": a group's species (or a class's orders) one by one, nothing graded; "¿Cuál sobra?", the odd one out; "¿Este o este?", the pair drill |
 | `views-practice.js` | Today, level picker, photo → name session, "¿Qué grupo es?", exam sheet, "¿Cuál es?", Mock VISU, summaries |
-| `views-explore.js` | The progressive-disclosure tree (full, or study mode rooted at the list's classes), species and group cards, badges |
+| `views-explore.js` | The progressive-disclosure tree (full, or study mode rooted at the list's classes), species search, species and group cards, badges |
 | `views-info.js` | "Cómo funciona" (saving progress, and the study plan: route `#como-funciona-plan` jumps to it) and settings |
 | `main.js` | Boot and the hash router |
 | `style.css` | The approved prototype 5 stylesheet, plus a short block of additions at the end |

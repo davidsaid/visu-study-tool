@@ -46,7 +46,8 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   class, order, genus or species means, as a memory aid.
 - **Explore the tree of life** branch by branch, either the full tree or, in **study mode**, with
   each class of the list as the root of its own tree (Reptilia included, although it isn't a
-  clade). Every group and species has a card: photos,
+  clade). A search box finds any species by its scientific or common name (accents and capitals
+  don't matter there). Every group and species has a card: photos,
   a video, distribution, diet, size, sexual dimorphism, sex determination, conservation
   status, field marks, look-alikes and the meaning of its names. **Every fact, photo and video names its source.**
 - **Mock exam** with the five-field answer sheet.
