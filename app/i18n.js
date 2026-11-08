@@ -22,7 +22,7 @@ const SKILL_NAME = {
 I.sk = k => I.L(SKILL_NAME[k][0], SKILL_NAME[k][1]);
 
 I.LEVELS = {
-  1: { key: 'facil', es: 'Fácil', en: 'Easy', des: 'Opción múltiple: eliges entre cuatro.', den: 'Multiple choice: pick one of four.' },
+  1: { key: 'facil', es: 'Fácil', en: 'Easy', des: 'Opción múltiple: eliges entre cuatro. Las tarjetas que ya acertaste pasan a escribirse, con pistas.', den: 'Multiple choice: pick one of four. Cards you’ve already got right move on to typing, with hints.' },
   2: { key: 'medio', es: 'Medio', en: 'Medium', des: 'Escribes la respuesta. Si te atascas, pide hasta 3 pistas.', den: 'Type the answer. Stuck? Ask for up to 3 hints.' },
   3: { key: 'dificil', es: 'Difícil', en: 'Hard', des: 'Escribes la respuesta, sin ayudas. Como en el examen.', den: 'Type the answer, no help. Like the exam.' }
 };

@@ -483,6 +483,19 @@ const SCENARIOS = {
     const rule = !!$('.look-order .name-key .suffix') && /con forma de/.test($('.look-order .name-key').textContent);
     report({ scenario: 'lookquiz', meaning, paused, missShown, retry, right, moved, once, rule });
   },
+  /* Easy is multiple choice only until a card is right once; then that card is typed, with hints (Medium). */
+  'onramp': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 1; win.VISU_STORE.save(); await go('sesion'); await sleep(100);
+    const P = win.VISU_STORE.data, E = Eng(), s = App().sessionState();
+    s.items[s.i] = { sp: 'milvus_milvus', skill: 'genus' }; App().resetItem(); App().views.session();
+    const mcFirst = !!$('[data-opt]') && !$('#typedin');
+    P.cards['milvus_milvus:genus'] = E.applyAnswer(null, { level: 1, kind: 'right' }, Date.now() - 864e5).card;
+    App().resetItem(); App().views.session();
+    const typed = !!$('#typedin') && !$('[data-opt]') && !!$('#hintbtn') && /Ya la acertaste en Fácil/.test(doc.body.textContent);
+    await answerTyped('right', 'sure');
+    const last = P.log[P.log.length - 1], logged = last.card === 'milvus_milvus:genus' && last.level === 2 && last.kind === 'right';
+    report({ scenario: 'onramp', mcFirst, typed, logged });
+  },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
   'sobra': async () => {

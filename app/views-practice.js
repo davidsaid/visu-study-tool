@@ -308,14 +308,23 @@ App.newSession = function (game, opts) {
 function resetItem() {
   Object.assign(sess, { phase: 'ask', picked: null, typed: '', hints: 0, conf: null, sheet: {}, res: null, outcome: null, mc: null, sheetRes: null });
   const it = sess.items[sess.i];
-  if (it && sess.game !== 'hoja' && sess.level === 1) sess.mc = E.mcOptions(M(), it.sp, it.skill);
+  sess.lv = levelFor(it);
+  if (it && sess.game !== 'hoja' && sess.lv === 1) sess.mc = E.mcOptions(M(), it.sp, it.skill);
   if (it && it.card) {   // a group: up to four of its species, each on a random photo
     sess.gshow = E.shuffle(it.members, Math.random).slice(0, 4);
     sess.gphoto = {}; sess.gshow.forEach(id => { sess.gphoto[id] = App.randomPhoto(id); });
   } else if (it) sess.photoIdx = App.randomPhoto(it.sp);
 }
+App.resetItem = () => resetItem();   // tests swap in a chosen card and reset it
 const curItem = () => sess.items[sess.i];
-const mode = () => (sess.game === 'hoja' ? 'sheet' : sess.level === 1 ? 'mc' : 'typed');
+/* Easy is a one-step on-ramp per card: multiple choice until she gets the card right once, then typing with hints
+   (Medium) from the next time on (David, 2026-11-08; research report: recall beats recognition for what she must write). */
+function levelFor(it) {
+  if (!it || sess.game === 'hoja' || sess.level !== 1) return sess.level;
+  const c = P().cards[it.card || E.cardId(it.sp, it.skill)];
+  return c && c.p && c.p.ok > 0 ? 2 : 1;
+}
+const mode = () => (sess.game === 'hoja' ? 'sheet' : sess.lv === 1 ? 'mc' : 'typed');
 function promptText(it) {
   if (it.card) {
     const many = sess.gshow.length > 1;
@@ -352,7 +361,7 @@ V.session = function () {
     return;
   }
   const locked = sess.phase !== 'ask';
-  const pills = `<div class="row">${levelPill(sess.level)}<span class="skillpill">${it.skill === 'sheet' ? L('Hoja de examen', 'Exam sheet') : I.sk(it.skill)}</span></div>`;
+  const pills = `<div class="row">${levelPill(sess.lv)}${sess.lv !== sess.level ? `<span class="tiny muted">${L('Ya la acertaste en Fácil: ahora, a escribirla.', 'You got it right on Easy: now type it.')}</span>` : ''}<span class="skillpill">${it.skill === 'sheet' ? L('Hoja de examen', 'Exam sheet') : I.sk(it.skill)}</span></div>`;
   let body = '';
   if (m === 'mc') {
     const sci = it.skill !== 'common';
@@ -366,7 +375,7 @@ V.session = function () {
     body = `<form class="typed" id="typedform"><label class="sr" for="typedin">${esc(promptText(it))}</label>
       <input id="typedin" class="${it.skill !== 'common' ? 'sci' : ''}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(sess.typed)}" ${locked ? 'disabled' : ''} placeholder="…">
       <button class="btn primary" ${locked ? 'disabled' : ''}>${L('Comprobar', 'Check')}</button></form>`;
-    if (sess.level === 2) {
+    if (sess.lv === 2) {
       body += `<div class="hintrow"><button class="hintbtn" id="hintbtn" ${locked || sess.hints >= 3 ? 'disabled' : ''} aria-describedby="hintnote">${ICON.bulb}${sess.hints === 0 ? L('Pista', 'Hint') : sess.hints < 3 ? L(`Otra pista (${sess.hints + 1} de 3)`, `Another hint (${sess.hints + 1} of 3)`) : L('No hay más pistas', 'No more hints')}</button>
         <span class="tiny muted" id="hintnote">${sess.hints ? L(`Pistas usadas: ${sess.hints}. Queda anotado.`, `Hints used: ${sess.hints}. This is recorded.`) : L('Usar una pista queda anotado.', 'Using a hint is recorded.')}</span></div>
         ${sess.hints ? `<ol class="hints">${[1, 2, 3].slice(0, sess.hints).map(k => `<li>${hintHTML(ans, k)}</li>`).join('')}</ol>` : ''}`;
@@ -477,9 +486,9 @@ function sheetResultHTML(it) {
     <div class="actions"><button class="btn primary big" id="nextbtn">${nextLabel(last)}</button>${App.cardLink(it.sp)}</div>`;
 }
 function levelCountNote() {
-  if (sess.level === 3) return L('En Difícil: esta respuesta cuenta para «dominada».', 'On Hard: this answer counts toward “mastered”.');
-  if (sess.level === 2 && sess.hints) return L(`Con ${sess.hints} ${sess.hints === 1 ? 'pista' : 'pistas'}: sube tu progreso, pero no cuenta para «dominada». Queda anotado.`, `With ${sess.hints} hint${sess.hints === 1 ? '' : 's'}: it raises your progress but doesn’t count toward “mastered”. This is recorded.`);
-  return L(`En ${I.lvName(sess.level)}: cuenta como progreso. Para «dominada», acierta en Difícil.`, `On ${I.lvName(sess.level)}: counts as progress. For “mastered”, get it right on Hard.`);
+  if (sess.lv === 3) return L('En Difícil: esta respuesta cuenta para «dominada».', 'On Hard: this answer counts toward “mastered”.');
+  if (sess.lv === 2 && sess.hints) return L(`Con ${sess.hints} ${sess.hints === 1 ? 'pista' : 'pistas'}: sube tu progreso, pero no cuenta para «dominada». Queda anotado.`, `With ${sess.hints} hint${sess.hints === 1 ? '' : 's'}: it raises your progress but doesn’t count toward “mastered”. This is recorded.`);
+  return L(`En ${I.lvName(sess.lv)}: cuenta como progreso. Para «dominada», acierta en Difícil.`, `On ${I.lvName(sess.lv)}: counts as progress. For “mastered”, get it right on Hard.`);
 }
 function revealOK(it) {
   const s = App.sp(it.sp), last = sess.i === sess.items.length - 1;
@@ -581,7 +590,7 @@ function resolve(it) {
   } else {
     sess.res = judge(it);
     const typed = mode() === 'mc' ? sess.mc.options[sess.picked].value : sess.typed;
-    const rec = Store.recordAnswer({ sp: it.sp, skill: it.skill, level: sess.level, kind: sess.res.kind, hints: sess.hints, conf: sess.conf,
+    const rec = Store.recordAnswer({ sp: it.sp, skill: it.skill, level: sess.lv, kind: sess.res.kind, hints: sess.hints, conf: sess.conf,
       game: it.card ? 'grupo' : 'foto', card: it.card, typed, with: sess.res.with }, now);
     let requeued = false;
     if ((sess.res.kind !== 'right' || sess.conf === 'guess') && (it.requeued || 0) < 2) {
