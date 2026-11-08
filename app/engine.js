@@ -378,8 +378,30 @@ function scopePool(M, scope) {
   const under = new Set(speciesUnder(M, scope));
   return base.filter(id => under.has(id));
 }
-/* Photo → one box. Due cards first (most overdue first), then new cards in tree order,
-   so new species arrive order by order and look-alikes get mixed together. */
+/* How a session of `size` cards splits between reviews and new cards: new cards get up to `cap` (a third of the session
+   by default) while the day's allowance lasts, so a pile of due reviews never shuts new species out; room one kind
+   doesn't use goes to the other (David, 2026-11-08). */
+function sessionSplit(dueN, newN, size, cap) {
+  const fresh = Math.min(newN, cap == null ? Math.ceil(size / 3) : cap), due = Math.min(dueN, size - fresh);
+  return { due, fresh: Math.min(newN, size - due) };
+}
+/* Species in groups whose "Primer vistazo" was finished: they are the first new species to practise. */
+function lookedSpecies(M, P) {
+  const out = new Set();
+  ((P.ui && P.ui.looked) || []).forEach(node => { if (M.nodes[node]) speciesUnder(M, node).forEach(id => out.add(id)); });
+  return out;
+}
+/* New species a day so that every species not started yet is started 3 days before the exam (the last days are for
+   reviewing). Null without an exam date, or when the date is too close for new species. */
+function suggestNewPerDay(M, P, skills, now) {
+  const ex = P.settings.examDate ? new Date(P.settings.examDate + 'T09:00:00').getTime() : NaN;
+  const days = Math.round((startOfDay(ex) - startOfDay(now)) / DAY) - 3;
+  if (!(days > 0)) return null;
+  const remaining = M.withPhotos.filter(id => skills.every(k => !P.cards[cardId(id, k)])).length;
+  return remaining ? { remaining, days, perDay: Math.ceil(remaining / days) } : null;
+}
+/* Photo → one box. Due cards first (most overdue first), then new cards: species from groups she has had a first look
+   at, then the rest in tree order, so new species arrive order by order and look-alikes get mixed together. */
 function buildSession(M, P, opts) {
   const now = opts.now, skills = opts.skills, size = opts.size || 20, rng = opts.rng || Math.random;
   const pool = scopePool(M, opts.scope);
@@ -390,10 +412,13 @@ function buildSession(M, P, opts) {
     else if (d <= now) due.push({ sp: id, skill: k, due: d });
   }));
   due.sort((a, b) => a.due - b.due);
+  const looked = lookedSpecies(M, P);
+  fresh.sort((a, b) => (looked.has(b.sp) ? 1 : 0) - (looked.has(a.sp) ? 1 : 0));   // stable: tree order within each part
   /* `introduce`: the check after a first look shows that group whatever is left of the day's new cards. */
   const allowance = opts.introduce ? size : Math.max(0, P.settings.newPerDay * skills.length - newIntroducedToday(P, now));
-  let items = due.slice(0, size).map(x => ({ sp: x.sp, skill: x.skill }));
-  items = items.concat(fresh.slice(0, Math.min(allowance, size - items.length)));
+  const split = sessionSplit(due.length, Math.min(allowance, fresh.length), size, opts.introduce ? size : undefined);
+  let items = due.slice(0, split.due).map(x => ({ sp: x.sp, skill: x.skill }));
+  items = items.concat(fresh.slice(0, split.fresh));
   if (!items.length && opts.force) {
     const all = [];
     pool.forEach(id => skills.forEach(k => all.push({ sp: id, skill: k, due: dueOf(P.cards[cardId(id, k)]) || 0 })));
@@ -736,7 +761,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
+  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

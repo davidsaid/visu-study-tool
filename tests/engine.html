@@ -178,6 +178,21 @@ test('sessions', () => {
   ok('species without photos are never asked', E.buildSession(M, P, { now, skills, size: 99, force: true }).every(x => x.sp !== 'petromyzon_marinus'));
   const scoped = E.buildSession(M, E.emptyProgress(now), { now, skills, size: 50, scope: 'order:Carnivora', rng: E.rngFrom(3) });
   ok('group scope only asks that group', scoped.length && scoped.every(x => M.species[x.sp].order === 'Carnivora'));
+  /* A pile of due reviews keeps a third of the session for new species (David, 2026-11-08). */
+  eq('split: reviews alone leave a third for new cards', E.sessionSplit(500, 50, 20), { due: 13, fresh: 7 });
+  eq('split: room new cards don\'t use goes to reviews', E.sessionSplit(500, 2, 20), { due: 18, fresh: 2 });
+  eq('split: room reviews don\'t use goes to new cards', E.sessionSplit(3, 50, 20), { due: 3, fresh: 17 });
+  const pile = E.emptyProgress(now); pile.settings.newPerDay = 10;
+  ['milvus_milvus', 'milvus_migrans', 'buteo_buteo', 'aquila_chrysaetos'].forEach(id => skills.forEach(k => { pile.cards[id + ':' + k] = { p: { first: now - 3 * E.DAY, due: now - 60000 } }; }));
+  const mixed = E.buildSession(M, pile, { now, skills, size: 20, rng: E.rngFrom(4) });
+  eq('with 20 reviews due, 7 of 20 cards are still new', mixed.filter(x => !pile.cards[x.sp + ':' + x.skill]).length, 7);
+  pile.ui.looked = ['order:Carnivora'];
+  ok('new species come first from groups she has had a first look at', E.buildSession(M, pile, { now, skills, size: 20, rng: E.rngFrom(5) }).filter(x => !pile.cards[x.sp + ':' + x.skill]).every(x => M.species[x.sp].order === 'Carnivora'));
+  const exam = E.emptyProgress(now); exam.settings.examDate = E.ymd(now + 12 * E.DAY);
+  const pace = E.suggestNewPerDay(M, exam, skills, now), withPhotos = M.withPhotos.length;
+  eq('pace: every species not started, over the days until 3 days before the exam', pace && [pace.remaining, pace.days, pace.perDay], [withPhotos, 9, Math.ceil(withPhotos / 9)]);
+  exam.settings.examDate = E.ymd(now + 2 * E.DAY);
+  eq('pace: none when the exam is 3 days away or less', E.suggestNewPerDay(M, exam, skills, now), null);
   const spent = E.emptyProgress(now); spent.settings.newPerDay = 1;
   E.SKILLS.forEach(k => { spent.cards['milvus_milvus:' + k] = { p: { first: now, due: now + E.DAY } }; });
   eq('with the day\'s new cards used up, a session has none', E.buildSession(M, spent, { now, skills, size: 50, scope: 'order:Carnivora' }).length, 0);

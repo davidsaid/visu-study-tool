@@ -351,7 +351,8 @@ const SCENARIOS = {
     const ss = App().sessionState(), under = new Set(Eng().speciesUnder(App().M, 'order:Accipitriformes'));
     const check = win.location.hash === '#sesion' && ss.level === 1 && ss.items.length > 0 && ss.items.every(x => under.has(x.sp)) && !!doc.querySelector('[data-opt]');
     const saved = win.VISU_STORE.data, unlocked = !saved.ui.scope && saved.settings.level === 2;   // the check is a one-off round
-    await go('hoy'); await go('sesion');
+    const kept = saved.ui.looked; saved.ui.looked = [];   // new species from looked groups come first on purpose; this checks the scope alone
+    await go('hoy'); await go('sesion'); saved.ui.looked = kept; win.VISU_STORE.save();
     const later = App().sessionState(), free = later.level === 2 && later.items.some(x => !under.has(x.sp));
     /* A finished look is remembered, also after a reload, and Today moves on to another order. */
     const sug = suggested && suggested.slice(1), sugNode = sug && App().M.nodes['order:' + sug.replace(/^vistazo-order-/, '')] && 'order:' + sug.replace(/^vistazo-order-/, '');
@@ -436,6 +437,23 @@ const SCENARIOS = {
   },
   'answerbar-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 1; win.VISU_STORE.save(); await go('cual-es'); await sleep(100);
     await click(doc.querySelectorAll('[data-pick]')[0]); if (Q.get('check')) { const t = App().reverseState().items[0]; await click(doc.querySelector(`[data-pick="${t}"]`)); await click('[data-conf="sure"]'); } },
+  /* Today with a pile of due reviews: a third of the session stays new, new species come from groups she looked at,
+     and with an exam date Today suggests a daily pace (David, 2026-11-08). */
+  'pace': async () => {
+    seedStorage(seen); await open('hoy');
+    const P = win.VISU_STORE.data, E = Eng(), now = Date.now(), skills = App().skills();
+    App().M.withPhotos.filter(id => App().sp(id).class === 'Aves').slice(0, 30).forEach(id => skills.forEach(k => { P.cards[id + ':' + k] = E.applyAnswer(null, { level: 1, kind: 'right' }, now - 2 * E.DAY).card; }));
+    P.log.push({ ts: now - 2 * E.DAY, card: 'milvus_milvus:class', game: 'foto', level: 1, kind: 'right' });
+    P.settings.examDate = E.ymd(now + 12 * E.DAY); P.ui.looked = ['order:Carnivora']; win.VISU_STORE.save();
+    await go('explorar'); await go('hoy');
+    const split = /13 repasos pendientes/.test($('.legend').textContent) && /7 nuevas/.test($('.legend').textContent);
+    const btn = $('[data-pace]'), note = !!btn && /días para presentarlas/.test(btn.closest('.note-box').textContent);
+    const want = btn && +btn.dataset.pace; if (btn) await click(btn);
+    const applied = P.settings.newPerDay === want && !$('[data-pace]');
+    await go('sesion'); const fresh = App().sessionState().items.filter(x => !P.cards[x.sp + ':' + x.skill]);
+    const lookedFirst = fresh.length === 7 && fresh.every(x => App().sp(x.sp).order === 'Carnivora');
+    report({ scenario: 'pace', split, note, applied, lookedFirst });
+  },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
   'sobra': async () => {

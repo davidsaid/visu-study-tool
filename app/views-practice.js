@@ -140,8 +140,9 @@ V.hoy = function () {
   App.focusMode(false);
   const now = Date.now(), set = SET(), skills = App.skills(), fresh = P().log.length === 0;
   const plan = E.todayPlan(M(), P(), { now, skills });
-  const total = Math.min(set.sessionSize, plan.dueNow + plan.newAvailable);
-  const mins = Math.max(1, Math.round((Math.min(plan.dueNow, total) * 12 + Math.max(0, total - plan.dueNow) * 25) / 60));
+  const split = E.sessionSplit(plan.dueNow, plan.newAvailable, set.sessionSize), total = split.due + split.fresh;
+  const mins = Math.max(1, Math.round((split.due * 12 + split.fresh * 25) / 60));
+  const pace = E.suggestNewPerDay(M(), P(), skills, now);
   const at = E.readinessAt(P(), now), r = E.readiness(M(), P(), skills, at);
   if (!fresh) { P().meta.readiness[E.ymd(now)] = Math.round(r * 1000) / 1000; Store.save(); }
   const hist = Object.keys(P().meta.readiness).sort().slice(-14).map(k => P().meta.readiness[k]);
@@ -152,7 +153,7 @@ V.hoy = function () {
   const nb = nextBadge(), look = App.nextLook(), openConf = E.openConfusions(M(), P()).length;
   const dueGroups = E.groupItems(M(), M().withPhotos, skills).filter(g => { const d = E.dueOf(P().cards[g.card]); return d != null && d <= now; }).length;
   const nbMissing = nb ? E.speciesUnder(M(), nb.def.node).filter(id => !statsOf(id).mastered) : [];
-  const dueW = total ? Math.min(plan.dueNow, total) / total * 100 : 0;
+  const dueW = total ? split.due / total * 100 : 0;
   const scopeNote = P().ui.scope && M().nodes[P().ui.scope] ? `<p class="lvl-now">${L('Practicando solo', 'Practising only')}: <b>${esc(App.label(P().ui.scope))}</b> · <a href="#nivel">${L('cambiar', 'change')}</a></p>` : '';
   let sessionBody;
   if (fresh) sessionBody = `<h2 id="sesh">${L('Empieza por aquí', 'Start here')}</h2>
@@ -164,9 +165,13 @@ V.hoy = function () {
     <a class="btn primary big" href="#sesion-repaso">${L('Repasar igualmente', 'Review anyway')}</a>`;
   else sessionBody = `<h2 id="sesh">${total} ${L('tarjetas', 'cards')} · ≈ ${mins} min</h2>
     <div class="split" aria-hidden="true"><span class="due" style="width:${dueW}%"></span><span class="new" style="width:${100 - dueW}%"></span></div>
-    <div class="legend"><span><i class="dot due"></i>${Math.min(plan.dueNow, total)} ${L('repasos pendientes', 'reviews due')}</span><span><i class="dot new"></i>${Math.max(0, total - plan.dueNow)} ${L('nuevas', 'new')}</span></div>
+    <div class="legend"><span><i class="dot due"></i>${split.due} ${L('repasos pendientes', 'reviews due')}</span><span><i class="dot new"></i>${split.fresh} ${L('nuevas', 'new')}</span></div>
     <a class="btn primary big" href="#nivel">${L('Elegir nivel y empezar', 'Choose a level and start')}</a>
     <p class="lvl-now">${L('Último nivel', 'Last level')}: <b>${I.lvName(set.level)}</b> · <a href="#sesion">${L('repetir sin preguntar', 'repeat without asking')}</a> · <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>`;
+  /* With an exam date: how many new species a day would start every remaining one 3 days before it. */
+  if (pace && pace.perDay > set.newPerDay && !fresh) sessionBody += `<div class="note-box info mt">${L(`Te quedan <b>${pace.remaining}</b> especies por empezar y <b>${pace.days}</b> días para presentarlas (los 3 últimos antes del examen son para repasar). Harían falta unas <b>${pace.perDay}</b> nuevas al día; ahora tienes ${set.newPerDay}.`,
+      `You have <b>${pace.remaining}</b> species left to start and <b>${pace.days}</b> days to start them (the last 3 before the exam are for reviewing). That takes about <b>${pace.perDay}</b> new a day; you have ${set.newPerDay} now.`)}
+    <div class="row mt"><button class="btn compact" data-pace="${Math.min(60, pace.perDay)}">${L(`Usar ${Math.min(60, pace.perDay)} al día`, `Use ${Math.min(60, pace.perDay)} a day`)}</button><a class="small" href="#ajustes">${L('Elegir otro número', 'Pick another number')}</a></div></div>`;
   App.main().innerHTML = `
   <div class="today-head"><div><p class="eyebrow">${esc(dateStr)}</p><h1>${fresh ? L('Te damos la bienvenida a la Herramienta de estudio para VISU',
       'Welcome to the VISU Study Tool') : L('Esto es lo que toca hoy', 'Here’s today’s plan')}</h1></div>
@@ -280,6 +285,7 @@ V.nivel = function () {
     <p class="small"><b>${I.lvName(3)}</b>: ${L('lo mismo que pide el examen: foto y respuesta escrita, y la ortografía cuenta.',
         'exactly what the exam asks: a photo and a typed answer, and spelling counts.')}</p></section>`;
 };
+App.on('click', '[data-pace]', b => { SET().newPerDay = +b.dataset.pace; Store.save(); App.redraw(V.hoy, '#sesh'); });
 App.on('click', '[data-game]', b => { SET().game = b.dataset.game; Store.save(); App.redraw(V.nivel, `[data-game="${b.dataset.game}"]`); });
 App.on('click', '[data-level]', b => { SET().level = +b.dataset.level; Store.save(); App.redraw(V.nivel, `[data-level="${b.dataset.level}"]`); });
 App.on('click', '#clearscope', () => { P().ui.scope = null; Store.save(); V.nivel(); });
