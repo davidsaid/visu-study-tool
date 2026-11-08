@@ -13,7 +13,7 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 ## What it does
 
 - **Practice from photos** at three levels you choose before each session:
-  - **Easy:** multiple choice.
+  - **Easy:** multiple choice, until you get a card right once; from then on that card is typed, with hints.
   - **Medium:** you type, and can ask for hints.
   - **Hard:** you type with no help, like the exam.
 
@@ -23,7 +23,9 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 - **Spaced repetition** ([FSRS](https://github.com/open-spaced-repetition/ts-fsrs)): what
   you're about to forget comes back first.
 - **"Primer vistazo"** (first look): page through a group with nothing graded. An order shows
-  its species one by one (photos, names, first field marks); a class shows its orders. It ends
+  its species one by one (photos, names, first field marks, what the name says); a class shows
+  its orders, with the "-iformes" ("shaped like") naming rule. Every 4 animals, an ungraded
+  "which one was…?" pause. It ends
   with an Easy round on that group only, even if you've used up the day's new cards (your saved
   practice group and level don't change). Today
   suggests the order with the most species not seen yet, skipping the orders you've finished looking at.
@@ -43,7 +45,11 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 - **Mistakes teach.** If you confuse two species, you see them side by side with what tells
   them apart, and their field marks lined up part by part (head, tail, colouring…) next to
   their size. Every mistake also shows **what the name says**: what the Latin or Greek of the
-  class, order, genus or species means, as a memory aid.
+  class, order, genus or species means, as a memory aid. Then **"Inténtalo otra vez"** asks the
+  same question once more from memory (not graded); a misspelling shows the correct form with the
+  missed letters marked.
+- **"Mis fallos"** (my mistakes): a session of the cards you missed in the last 7 days that you
+  haven't since got right on two different days.
 - **Explore the tree of life** branch by branch, either the full tree or, in **study mode**, with
   each class of the list as the root of its own tree (Reptilia included, although it isn't a
   clade). A search box finds any species by its scientific or common name (accents and capitals

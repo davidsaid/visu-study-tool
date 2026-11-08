@@ -193,6 +193,15 @@ test('sessions', () => {
   eq('pace: every species not started, over the days until 3 days before the exam', pace && [pace.remaining, pace.days, pace.perDay], [withPhotos, 9, Math.ceil(withPhotos / 9)]);
   exam.settings.examDate = E.ymd(now + 2 * E.DAY);
   eq('pace: none when the exam is 3 days away or less', E.suggestNewPerDay(M, exam, skills, now), null);
+  /* "Mis fallos": misses of the last 7 days, until right on two different days since. */
+  const ML = E.emptyProgress(now), row = (card, kind, ts) => ML.log.push({ ts, card, game: 'foto', level: 2, kind });
+  row('milvus_milvus:genus', 'wrong', now - E.DAY); row('milvus_milvus:genus', 'right', now - E.DAY + 60000);
+  row('buteo_buteo:order', 'wrong', now - 3 * E.DAY); row('buteo_buteo:order', 'right', now - 2 * E.DAY); row('buteo_buteo:order', 'right', now - E.DAY);
+  row('tyto_alba:common', 'misspelling', now - 10 * E.DAY);
+  row('lynx_pardinus:class', 'wrong', now - 2 * E.DAY); row('lynx_pardinus:common', 'wrong', now - 2 * E.DAY);
+  eq('mistakes: recent misses not yet right on two different days', E.buildMistakes(M, ML, { now, skills: ['genus', 'order', 'class', 'common'], rng: E.rngFrom(6) }).map(x => x.sp + ':' + x.skill).sort(),
+    ['lynx_pardinus:class', 'lynx_pardinus:common', 'milvus_milvus:genus']);
+  eq('mistakes: only the exam boxes she studies', E.buildMistakes(M, ML, { now, skills: ['genus'] }).map(x => x.sp + ':' + x.skill), ['milvus_milvus:genus']);
   const spent = E.emptyProgress(now); spent.settings.newPerDay = 1;
   E.SKILLS.forEach(k => { spent.cards['milvus_milvus:' + k] = { p: { first: now, due: now + E.DAY } }; });
   eq('with the day\'s new cards used up, a session has none', E.buildSession(M, spent, { now, skills, size: 50, scope: 'order:Carnivora' }).length, 0);

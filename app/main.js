@@ -25,7 +25,7 @@ App.M.order.forEach(id => { BYROUTE[App.routeFor(id)] = id; });
 /* A card opened from a practice screen remembers where it came from: the card shows "Volver a la
    práctica", and going back (that button or the browser's back) resumes the same question instead of
    starting a new session. */
-const PRACTICE = ['sesion', 'sesion-repaso', 'grupos', 'grupos-repaso', 'sobra', 'parejas', 'hoja', 'cual-es', 'resumen', 'simulacro-resultados'];
+const PRACTICE = ['sesion', 'sesion-repaso', 'fallos', 'grupos', 'grupos-repaso', 'sobra', 'parejas', 'hoja', 'cual-es', 'resumen', 'simulacro-resultados'];
 document.addEventListener('click', e => {
   const a = e.target.closest && e.target.closest('a[href^="#ficha-"], a[href^="#grupo-"]');
   const here = (location.hash || '#hoy').slice(1);
@@ -43,6 +43,7 @@ App.render = function (full) {
   App.aside().innerHTML = '';
   const s = App.sessionState();
   if (r === 'sesion' || r === 'sesion-repaso') { if (!(resume && s && s.game === 'foto') && (!full || !s || s.game !== 'foto')) App.newSession('foto', { force: r === 'sesion-repaso' }); V.session(); }
+  else if (r === 'fallos') { if (!(resume && s && s.mistakes) && (!full || !s || !s.mistakes)) App.newSession('foto', { mistakes: true }); V.session(); }
   else if (r === 'grupos' || r === 'grupos-repaso') { if (!(resume && s && s.game === 'grupo') && (!full || !s || s.game !== 'grupo')) App.newSession('grupo', { force: r === 'grupos-repaso' }); V.session(); }
   else if (r === 'hoja') { if (!(resume && s && s.game === 'hoja') && (!full || !s || s.game !== 'hoja')) App.newSession('hoja'); V.session(); }
   else if (r === 'resumen') V.resumen();

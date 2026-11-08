@@ -516,6 +516,20 @@ function buildSheetSession(M, P, opts) {
   return out.slice(0, opts.size || 10);
 }
 function buildMock(M, n, rng) { return shuffle(M.withPhotos, rng || Math.random).slice(0, n).map(sp => ({ sp, skill: 'sheet' })); }
+/* "Mis fallos": the species cards she missed in the last `days` days that she hasn't since got right on two
+   different days (successive relearning, research report). Most recent misses first, then spread out. */
+function buildMistakes(M, P, opts) {
+  const now = opts.now, days = opts.days || 7, size = opts.size || 20, since = now - days * DAY;
+  const photo = new Set(M.withPhotos), skills = new Set(opts.skills), state = {};
+  P.log.forEach(r => {
+    const [sp, skill] = String(r.card).split(':');
+    if (isGroupCard(r.card) || !photo.has(sp) || !skills.has(skill) || r.game === 'cual' || r.game === 'par') return;
+    const st = state[r.card] || (state[r.card] = { sp, skill, miss: 0, rightDays: new Set() });
+    if (r.kind !== 'right') { st.miss = r.ts; st.rightDays = new Set(); } else if (st.miss) st.rightDays.add(ymd(r.ts));
+  });
+  const items = Object.values(state).filter(s => s.miss >= since && s.rightDays.size < 2).sort((a, b) => b.miss - a.miss);
+  return spreadSpecies(shuffle(items.slice(0, size).map(s => ({ sp: s.sp, skill: s.skill })), opts.rng || Math.random));
+}
 /* "¿Cuál es?": only species with photos; due species first, the rest at random. */
 function buildReverse(M, P, opts) {
   const rng = opts.rng || Math.random, pool = scopePool(M, opts.scope);
@@ -761,7 +775,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildReverse, requeueGap, scopePool,
+  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

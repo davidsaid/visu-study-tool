@@ -125,6 +125,8 @@ V.como = function () {
     <li>${L('<b>Fácil</b> y luego <b>Medio</b>, hasta que los nombres te suenen.', '<b>Easy</b>, then <b>Medium</b>, until the names feel familiar.')}</li>
     <li>${L('<b>Difícil sin pistas</b>: solo esto cuenta para «dominada».', '<b>Hard without hints</b>: only this counts toward “mastered”.')}</li>
     <li>${L('Cada día, haz primero los repasos: son los que mantienen lo aprendido.', 'Every day, do the reviews first: they keep what you’ve learnt.')}</li></ol>
+  <p>${L('<b>Mis fallos</b> reúne lo que fallaste en los últimos 7 días y aún no has acertado dos días distintos; cuenta como una sesión normal. Tras un fallo, «Inténtalo otra vez» te lo pregunta de nuevo al momento, sin nota.',
+      '<b>My mistakes</b> gathers what you missed in the last 7 days and haven’t yet got right on two different days; it counts as a normal session. After a miss, “Try it again” asks it once more on the spot, ungraded.')}</p>
   <p>${L('<b>Primer vistazo</b>, <b>¿Cuál es?</b>, <b>¿Cuál sobra?</b> y <b>¿Este o este?</b> sirven para familiarizarte: cuentan como día de estudio, pero no cambian cuándo vuelve cada tarjeta.',
       '<b>First look</b>, <b>Which one is it?</b>, <b>Odd one out</b> and <b>This one or that one?</b> are for getting familiar: they count as a study day but don’t change when any card comes back.')}</p>
 

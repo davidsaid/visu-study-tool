@@ -171,6 +171,9 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .session-card .btn.primary { background: #fff; color: #26305f; border-color: #fff; margin-top: 1rem; }
 .session-card .btn.ghost { color: #fff; border-color: rgba(255,255,255,.5); margin-top: .5rem; }
 .session-card .lvl-now { font-size: .85rem; color: #dfe3f8; margin-top: .6rem; }
+/* A note inside the always-dark session card keeps the card's light text, in both themes (light theme had white on pale blue). */
+.session-card .note-box { background: rgba(255,255,255,.1); border-color: #f0c35a; color: #f3f4fb; }
+.session-card .note-box b { color: #fff; }
 .kpis { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
 .kpis .card { margin: 0; }
 .big-num { font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; }

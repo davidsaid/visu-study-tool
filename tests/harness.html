@@ -450,15 +450,16 @@ const SCENARIOS = {
     const P = win.VISU_STORE.data, E = Eng(), now = Date.now(), skills = App().skills();
     App().M.withPhotos.filter(id => App().sp(id).class === 'Aves').slice(0, 30).forEach(id => skills.forEach(k => { P.cards[id + ':' + k] = E.applyAnswer(null, { level: 1, kind: 'right' }, now - 2 * E.DAY).card; }));
     P.log.push({ ts: now - 2 * E.DAY, card: 'milvus_milvus:class', game: 'foto', level: 1, kind: 'right' });
-    P.settings.examDate = E.ymd(now + 12 * E.DAY); P.ui.looked = ['order:Carnivora']; win.VISU_STORE.save();
+    P.settings.examDate = E.ymd(now + 12 * E.DAY); P.ui.looked = ['order:Carnivora']; P.settings.theme = 'light'; win.VISU_STORE.save(); App().applyTheme();
     await go('explorar'); await go('hoy');
     const split = /13 repasos pendientes/.test($('.legend').textContent) && /7 nuevas/.test($('.legend').textContent);
     const btn = $('[data-pace]'), note = !!btn && /días para presentarlas/.test(btn.closest('.note-box').textContent);
+    const nb = btn && btn.closest('.note-box'), readable = !!nb && getComputedStyle(nb).color === 'rgb(243, 244, 251)';   // the dark card's light text, also in the light theme
     const want = btn && +btn.dataset.pace; if (btn) await click(btn);
     const applied = P.settings.newPerDay === want && !$('[data-pace]');
     await go('sesion'); const fresh = App().sessionState().items.filter(x => !P.cards[x.sp + ':' + x.skill]);
     const lookedFirst = fresh.length === 7 && fresh.every(x => App().sp(x.sp).order === 'Carnivora');
-    report({ scenario: 'pace', split, note, applied, lookedFirst });
+    report({ scenario: 'pace', split, note, readable, applied, lookedFirst });
   },
   /* First look: what the names say on each slide, the -iformes rule on order slides, and a pause every 4 slides. */
   'lookquiz': async () => {
@@ -524,6 +525,18 @@ const SCENARIOS = {
     await click(`[data-pick="${t}"]`); await click('#revretrycheck');
     const cualRight = App().reverseState().phase === 'retried' && /Ahora sí/.test(doc.body.textContent) && P.log.length === revN + 1 && !!$('#revnext');
     report({ scenario: 'retry', offered, asks, typedRight, moved, spellAgain, mcRight, cualRetry, cualRight });
+  },
+  /* "Mis fallos": Today offers it after a miss; the session asks the missed card and records answers as usual. */
+  'fallos': async () => {
+    seedStorage(seen); await open('hoy');
+    const none = !$('a.game[href="#fallos"]');
+    App().set().level = 3; win.VISU_STORE.save(); await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('wrong');
+    await go('hoy'); const card = $('a.game[href="#fallos"]'), offered = !!card && /1 tarjeta que fallaste/.test(card.textContent);
+    await click(card); await sleep(150);
+    const s = App().sessionState(), asks = s.mistakes && s.items.length === 1 && s.items[0].sp === 'milvus_milvus' && s.items[0].skill === 'genus';
+    const n = win.VISU_STORE.data.log.length; await answerTyped('right');
+    const recorded = win.VISU_STORE.data.log.length === n + 1;
+    report({ scenario: 'fallos', none, offered, asks, recorded });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

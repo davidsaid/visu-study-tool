@@ -153,6 +153,7 @@ V.hoy = function () {
   const split = E.sessionSplit(plan.dueNow, plan.newAvailable, set.sessionSize), total = split.due + split.fresh;
   const mins = Math.max(1, Math.round((split.due * 12 + split.fresh * 25) / 60));
   const pace = E.suggestNewPerDay(M(), P(), skills, now);
+  const misses = fresh ? 0 : E.buildMistakes(M(), P(), { now, skills, size: 999 }).length;
   const at = E.readinessAt(P(), now), r = E.readiness(M(), P(), skills, at);
   if (!fresh) { P().meta.readiness[E.ymd(now)] = Math.round(r * 1000) / 1000; Store.save(); }
   const hist = Object.keys(P().meta.readiness).sort().slice(-14).map(k => P().meta.readiness[k]);
@@ -188,6 +189,8 @@ V.hoy = function () {
     <p class="small muted right">${examDays != null && examDays >= 0 ? `${L('Examen en', 'Exam in')} <b>${examDays} ${examDays === 1 ? L('día', 'day') : L('días', 'days')}</b>` : `<a href="#ajustes">${L('Fijar la fecha del examen', 'Set the exam date')}</a>`}</p></div>
   <section class="card session-card" aria-labelledby="sesh"><p class="eyebrow">${L('Sesión de hoy', 'Today’s session')}</p>${sessionBody}${scopeNote}</section>
   <section class="card"><p class="eyebrow">${L('Otras formas de practicar', 'Other ways to practise')}</p><div class="games">
+    ${misses ? `<a class="game" href="#fallos">${ICON.clock}<span><b>${L('Mis fallos', 'My mistakes')}</b><span class="small muted">${L(`${misses} ${misses === 1 ? 'tarjeta que fallaste' : 'tarjetas que fallaste'} en los últimos 7 días y aún no has acertado dos días distintos.`,
+        `${misses} ${misses === 1 ? 'card' : 'cards'} you missed in the last 7 days and haven’t yet got right on two different days.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
     ${look ? `<a class="game" href="#${esc(App.lookRoute(look.node))}">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}: <i>${esc(look.node.split(':')[1])}</i></b><span class="small muted">${L(`Mira sus especies una a una, sin preguntas. Tiene ${look.n} que aún no has visto.`,
         `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
@@ -309,9 +312,9 @@ App.newSession = function (game, opts) {
   App.onceSession = null;
   const now = Date.now(), set = SET(), skills = App.skills(), saved = once.scope || P().ui.scope, scope = saved && M().nodes[saved] ? saved : null;
   const base = { now, skills, scope, size: set.sessionSize, force: !!opts.force, introduce: !!once.scope };
-  const items = game === 'hoja' ? E.buildSheetSession(M(), P(), Object.assign(base, { size: Math.max(5, Math.round(set.sessionSize / 2)) }))
+  const items = opts.mistakes ? E.buildMistakes(M(), P(), base) : game === 'hoja' ? E.buildSheetSession(M(), P(), Object.assign(base, { size: Math.max(5, Math.round(set.sessionSize / 2)) }))
     : game === 'grupo' ? E.buildGroupSession(M(), P(), base) : E.buildSession(M(), P(), base);
-  sess = { game, level: game === 'hoja' ? 3 : once.level || set.level, items, i: 0, results: [], startedAt: now, done: false };
+  sess = { game, mistakes: !!opts.mistakes, level: game === 'hoja' ? 3 : once.level || set.level, items, i: 0, results: [], startedAt: now, done: false };
   resetItem();
   return sess;
 };
@@ -440,6 +443,12 @@ function groupCompare(other, node, tags) {
     ${g && g.contrast && I.t(g.contrast) ? keyBox(I.t(g.contrast), g.status === 'draft') : ''}`;
 }
 function emptySession() {
+  if (sess && sess.mistakes) {
+    App.main().innerHTML = `<div class="session-wrap">${sessTop(0, 0, 0)}<h1>${L('No te quedan fallos por repasar', 'No mistakes left to review')}</h1>
+      <p>${L('Los fallos de los últimos 7 días ya los has acertado dos días distintos, o no has fallado ninguno.', 'You’ve got the last 7 days’ misses right on two different days since, or missed none.')}</p>
+      <div class="actions"><a class="btn primary big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div></div><div id="aside-m"></div>`;
+    return;
+  }
   App.main().innerHTML = `<div class="session-wrap">${sessTop(0, 0, 0)}<h1>${L('No hay tarjetas para esta sesión', 'No cards for this session')}</h1>
     <p>${M().withPhotos.length ? L('Ya has hecho los repasos y las nuevas de hoy. Puedes repasar igualmente o cambiar de grupo.',
         'You’ve done today’s reviews and new cards. You can review anyway or change the group.') : L('Todavía no hay ninguna especie con foto.',
