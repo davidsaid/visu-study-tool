@@ -64,16 +64,16 @@ function sessTop(prog, total, idx, exitTo) {
     <div class="bar" role="progressbar" aria-label="${L('Progreso de la sesión', 'Session progress')}" aria-valuenow="${Math.round(prog * 100)}" aria-valuemin="0" aria-valuemax="100"><span style="width:${prog * 100}%"></span></div>
     <span class="small"><b>${Math.min(idx + 1, total)}</b>/${total}</span></div>`;
 }
-function confBlock(conf, ready, label) {
-  const b = (k, es, en) => `<button type="button" class="opt${conf === k ? ' picked' : ''}" data-conf="${k}" aria-pressed="${conf === k}">${L(es, en)}</button>`;
-  return `<div class="conf" role="group" aria-labelledby="confq"><h3 id="confq">${L('Antes de ver la solución: ¿cuánta seguridad tienes?',
-      'Before the answer: how sure are you?')}</h3>
-    <p class="small muted">${label ? L(`Tu respuesta ya está fijada; puedes cambiar tu seguridad hasta que pulses «${label}». Tu seguridad ajusta cuándo vuelve la tarjeta.`, `Your answer is locked in; you can change your confidence until you press “${label}”. Your confidence tunes when the card comes back.`)
-      : L('Puedes cambiar de idea hasta que pulses «Comprobar». Tu seguridad ajusta cuándo vuelve la tarjeta.',
-          'You can change your mind until you press “Check”. Your confidence tunes when the card comes back.')}</p>
-    <div class="options">${b('guess', 'Lo adivino', 'I’m guessing')}${b('unsure', 'Dudo', 'Not sure')}${b('sure', 'Lo sé seguro', 'I know it')}</div>
-    <button type="button" class="btn primary big" id="submitbtn" ${ready && conf ? '' : 'disabled'}>${label || L('Comprobar', 'Check')}</button>
-    ${ready && !conf ? `<p class="tiny muted">${L('Elige tu seguridad para comprobar.', 'Pick how sure you are to check.')}</p>` : ''}</div>`;
+/* "How sure are you?" is the check itself: tapping one of the three answers (David, 2026-11-08). On a phone it is a bar
+   fixed at the bottom of the screen, so answering needs no scrolling; the spacer keeps the last lines of the page above it.
+   `locked`: the answer is already fixed (typed answers, the exam sheet); otherwise the pick can still change. */
+function confBlock(conf, locked) {
+  const b = (k, es, en) => `<button type="button" class="opt${conf === k ? ' picked' : ''}" data-conf="${k}">${L(es, en)}</button>`;
+  return `<div class="answer-space" aria-hidden="true"></div><div class="conf answer-bar" role="group" aria-labelledby="confq" aria-describedby="confnote">
+    <h3 id="confq">${L('¿Cuánta seguridad tienes?', 'How sure are you?')}</h3>
+    <p class="tiny muted" id="confnote">${locked ? L('Toca una para ver la solución. Tu seguridad ajusta cuándo vuelve la tarjeta.', 'Tap one to see the answer. Your confidence tunes when the card comes back.')
+      : L('Toca una para comprobar; hasta entonces puedes cambiar tu elección. Tu seguridad ajusta cuándo vuelve la tarjeta.', 'Tap one to check; until then you can change your pick. Your confidence tunes when the card comes back.')}</p>
+    <div class="options">${b('guess', 'Lo adivino', 'I’m guessing')}${b('unsure', 'Dudo', 'Not sure')}${b('sure', 'Lo sé seguro', 'I know it')}</div></div>`;
 }
 function backIn(due, requeued) {
   if (requeued) return L('Vuelve en esta sesión, dentro de unas pocas tarjetas', 'It comes back in this session, a few cards from now');
@@ -269,9 +269,9 @@ V.nivel = function () {
     <h2>${L('2. Nivel', '2. Level')}</h2>
     <div class="seg-cards ${sheet ? 'dim' : ''}" role="group" aria-label="${L('Nivel', 'Level')}" ${sheet ? 'aria-disabled="true"' : ''}>${[1, 2, 3].map(k => `<button class="pick" data-level="${k}" aria-pressed="${set.level === k}" ${sheet ? 'disabled' : ''}><span class="t">${App.lvDots(k)}${I.lvName(k)}</span><span class="d">${rev ? revLevelDesc(k) : I.lvDes(k)}</span>${rev ? levelMock(1) : levelMock(k)}</button>`).join('')}</div>
     <div class="note-box"><b>${L('Regla', 'Rule')}:</b> ${rev ? REV_NOTE() : I.MASTERY_RULE()}</div>
-    <div class="note-box info">${rev ? L('Antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Queda anotado junto a tu respuesta.',
-        'Before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. It is logged with your answer.') : L('En todos los niveles, antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Así repasas antes lo que creías saber y no sabías.',
-        'On every level, before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. That way you revisit sooner what you thought you knew but didn’t.')}</div>
+    <div class="note-box info">${rev ? L('Antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Tocar una comprueba tu respuesta, y queda anotada junto a ella.',
+        'Before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. Tapping one checks your answer, and it is logged with it.') : L('En todos los niveles, antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Tocar una comprueba tu respuesta. Así repasas antes lo que creías saber y no sabías.',
+        'On every level, before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. Tapping one checks your answer. That way you revisit sooner what you thought you knew but didn’t.')}</div>
     <a class="btn primary big" id="startbtn" href="#${{ cual: 'cual-es', hoja: 'hoja', grupo: 'grupos' }[set.game] || 'sesion'}">${sheet ? L('Empezar la hoja de examen', 'Start the exam sheet') : L(`Empezar en ${I.lvName(set.level)}`, `Start on ${I.lvName(set.level)}`)}</a></div><div id="aside-m"></div>`;
   App.aside().innerHTML = !App.DESK.matches ? '' : rev ? revAside(false) : `<section class="card"><p class="eyebrow">${L('Qué entrena cada nivel', 'What each level trains')}</p>
     <p class="small"><b>${I.lvName(1)}</b>: ${L('reconocer. Ideal para especies nuevas.', 'recognition. Good for new species.')}</p>
@@ -369,8 +369,8 @@ V.session = function () {
     if (!locked) body += `<button class="linkbtn" id="dunno">${L('No lo sé: enséñamelo', 'I don’t know: show me')}</button>`;
   } else body = sheetHTML(it, locked);
   let after = '';
-  if (sess.phase === 'confidence') after = confBlock(sess.conf, true, m === 'mc' ? '' : L('Ver la solución', 'Show the answer'));
-  else if (m === 'mc' && sess.phase === 'ask' && sess.picked != null) after = confBlock(sess.conf, true);
+  if (sess.phase === 'confidence') after = confBlock(sess.conf, true);
+  else if (m === 'mc' && sess.phase === 'ask' && sess.picked != null) after = confBlock(sess.conf, false);
   if (sess.phase === 'reveal') after = m === 'sheet' ? sheetResultHTML(it) : revealOK(it);
   App.main().innerHTML = `<div class="session-wrap">${top}
     ${it.card ? groupGrid(sess.phase === 'reveal') : `<div class="quiz-photo">${quizPhoto(it, L('Foto del animal que hay que identificar', 'Photo of the animal to identify'))}</div>`}
@@ -478,12 +478,12 @@ function levelCountNote() {
 function revealOK(it) {
   const s = App.sp(it.sp), last = sess.i === sess.items.length - 1;
   if (it.card) {
-    return `<div class="reveal-ok" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
+    return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
       <div class="group-cmp mt">${groupBlock(it.node, 'correct', L('Lo que tienen en común', 'What they have in common'))}</div>
       <p class="small">${levelCountNote()}</p><p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}.</p>
       <div class="row mt"><button class="btn primary grow" id="nextbtn">${nextLabel(last)}</button>${groupLink(it.node, '')}</div></div>`;
   }
-  return `<div class="reveal-ok" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
+  return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
     <h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2><p class="small">${esc(s.class)} › ${esc(s.order)}</p>
     <p class="small">${levelCountNote()}</p>
     <p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}.</p>
@@ -521,17 +521,13 @@ function feedbackHTML(it) {
     <p><b>${esc(s.common_es)}</b> · <i>${esc(s.binomial)}</i> · ${esc(s.order)} · ${esc(s.class)}</p>
     ${App.nameKeyHTML(it.sp, [it.skill])}${g && g.contrast ? keyBox(I.t(g.contrast), g.status === 'draft') : ''}${after()}</div>`;
 }
-/* Session controls. "¿Cuál es?" shares the confidence buttons and the check button; route() tells them apart. */
+/* Session controls. "¿Cuál es?" shares the confidence buttons, which also check the answer; route() tells them apart. */
 const onCual = () => route() === 'cual-es';
 App.on('click', '[data-opt]', b => { sess.picked = +b.dataset.opt; App.redraw(V.session, `[data-opt="${sess.picked}"]`); });
 App.on('click', '[data-conf]', b => {
-  const st = onCual() ? rsess : sess;
-  st.conf = b.dataset.conf;
-  App.redraw(onCual() ? V.cual : V.session, `[data-conf="${st.conf}"]`);
-});
-App.on('click', '#submitbtn', () => {
-  if (onCual()) return checkReverse();
-  if (sess.conf && (sess.phase === 'confidence' || sess.picked != null)) resolve(curItem());
+  if (onCual()) { rsess.conf = b.dataset.conf; return checkReverse(); }
+  sess.conf = b.dataset.conf;
+  if (sess.phase === 'confidence' || sess.picked != null) resolve(curItem());
 });
 App.on('submit', '#typedform', (f, e) => {
   e.preventDefault();
@@ -593,6 +589,12 @@ function resolve(it) {
   sess.phase = 'reveal';
   V.session();
   App.main().focus();
+  revealScroll(sess.res.kind === 'right' && mode() !== 'sheet');
+}
+/* After checking: a right answer shows in the bottom bar, so the page stays put; anything else starts at the top. */
+function revealScroll(right) {
+  const sheet = sess && sess.phase === 'reveal' && mode() === 'sheet' && !onCual() && document.querySelector('.reveal-ok');
+  if (sheet) sheet.scrollIntoView({ block: 'start' }); else if (!right) window.scrollTo(0, 0);
 }
 function next() {
   if (sess.i >= sess.items.length - 1) { finishSession(); location.hash = 'resumen'; return; }
@@ -679,10 +681,10 @@ V.cual = function () {
       return `<div class="${cls}">${App.carousel(o, { key: `rev-${i}`, idx: rsess.photo[o], alt: label, inner: pick, credit: rev || undefined })}${cap}</div>`;
     }).join('')}</div>`;
   }
-  if (rsess.phase === 'ask' && rsess.picked) body += confBlock(rsess.conf, true);
+  if (rsess.phase === 'ask' && rsess.picked) body += confBlock(rsess.conf, false);
   const last = rsess.i === deck.length - 1;
   const nextBtn = `<button class="btn primary big" id="revnext">${last ? L('Terminar', 'Finish') : L('Siguiente', 'Next')}</button>`;
-  if (rev && !wrong) body += `<div class="reveal-ok" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2>
+  if (rev && !wrong) body += `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2>
     <p class="small">${REV_NOTE()}</p><div class="actions">${nextBtn}${App.cardLink(t)}</div></div>`;
   if (wrong) {
     const p = rsess.picked, split = E.lca(M(), p, t), sameG = E.answerFor(M(), p, 'genus') === E.answerFor(M(), t, 'genus');
@@ -707,6 +709,7 @@ function checkReverse() {
   rsess.results.push(right);
   Store.recordReverse({ sp: t, level: rsess.level, kind: right ? 'right' : 'wrong_species', conf: rsess.conf, with: right ? null : rsess.picked });
   V.cual(); App.main().focus();
+  revealScroll(right);
 }
 App.on('click', '[data-pick]', b => {
   if (Date.now() - (App.lastSwipe || 0) < 500) return;   // the tap that ends a swipe flips the photo, it doesn't pick

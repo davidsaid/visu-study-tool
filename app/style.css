@@ -247,6 +247,19 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .conf .options { grid-template-columns: repeat(3, 1fr); margin-top: .6rem; }
 .conf .opt { text-align: center; font-size: .95rem; padding: .5rem; }
 .reveal-ok { margin-top: 1rem; padding: 1rem; border-radius: var(--r); background: var(--ok-soft); border: 1px solid var(--ok); }
+/* Answering on a phone: "how sure are you?" and a right answer sit in a bar fixed at the bottom (the tab bar is hidden
+   while practising), so nothing needs scrolling. The spacer lets the end of the page scroll out from under the bar. */
+.answer-space { display: none; }
+@media (max-width: 999px) {
+  .answer-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; margin: 0; max-height: 60vh; overflow-y: auto;
+    border-radius: var(--r) var(--r) 0 0; border-width: 2px 0 0; padding: .7rem 1rem calc(.8rem + env(safe-area-inset-bottom));
+    box-shadow: 0 -6px 18px rgba(0,0,0,.18); }
+  .reveal-ok.answer-bar { border-width: 1px 0 0; }
+  .conf.answer-bar h3 { font-size: 1rem; }
+  .conf.answer-bar .options { margin-top: .45rem; }
+  .answer-space { display: block; height: 9rem; }
+  .answer-space:has(+ .reveal-ok) { height: 16rem; }
+}
 .diffrow { display: grid; grid-template-columns: max-content 1fr; gap: .25rem .8rem; align-items: baseline; }
 .diff { font-size: 1.2rem; letter-spacing: .02em; }
 .diff.sci { font-style: italic; }
@@ -597,7 +610,6 @@ body.focus-mode .main { padding-bottom: 2rem; }
 }
 @media (max-width: 420px) { .topbar .brand small { display: none; } }
 
-.conf #submitbtn { margin-top: .9rem; width: 100%; }
 .vern-toggle { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; margin-top: .4rem; font-size: .92rem; color: var(--muted); cursor: pointer; }
 .vern-toggle input { width: 20px; height: 20px; accent-color: var(--accent); }
 

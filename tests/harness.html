@@ -47,8 +47,7 @@ async function answerTyped(what, conf) {
   const text = what === 'right' ? answer(it.sp, it.skill) : what === 'wrong' ? 'zzzz' : what;
   await type('#typedin', text);
   doc.getElementById('typedform').requestSubmit(); await sleep(80);
-  await click(`[data-conf="${conf || 'sure'}"]`);
-  await click('#submitbtn');
+  await click(`[data-conf="${conf || 'sure'}"]`);   // the confidence button is the check
   return it;
 }
 async function playSession(level, plan) {
@@ -104,7 +103,7 @@ const SCENARIOS = {
     await click('.car [data-car-step="1"]');
     Object.assign(easy, { afterNext: count(), pickedStillKept: !!$('[data-opt="1"].picked'), creditHidden: /aparece al responder|appears after/.test(($('.session-wrap .credit') || {}).textContent || ''), alt: ($('.car img') || {}).alt, altHidesName: (() => { const s = App().sp(App().sessionState().items[App().sessionState().i].sp), a = ($('.car img') || {}).alt || ''; return !a.includes(s.binomial) && !a.includes(s.common_es); })() });
     const st = App().sessionState(), wrongOpt = st.mc.options.findIndex(o => o.value !== st.mc.correct);
-    await click(`[data-opt="${wrongOpt}"]`); await click('[data-conf="sure"]'); await click('#submitbtn');
+    await click(`[data-opt="${wrongOpt}"]`); await click('[data-conf="sure"]');
     easy.mistakeScreen = !!$('.mistake-head'); easy.mistakeCount = count();
     await click('.car [data-car-step="1"]'); easy.mistakeAfterNext = count(); easy.mistakeStillShown = !!$('.mistake-head');
     await sleep(500); easy.imgLoaded = (img => !!img && img.complete && img.naturalWidth > 0)($('.car img'));
@@ -327,7 +326,7 @@ const SCENARIOS = {
     seedStorage({ meta: { seenNotice: true }, ui: { scope: 'class:Aves' } }); await open('hoy'); App().set().level = 1; await go('grupos');
     const s = App().sessionState(), it = s.items[0];
     const opts = [...doc.querySelectorAll('[data-opt]')].map(b => b.textContent);
-    await click('[data-opt="0"]'); await click('[data-conf="sure"]'); await click('#submitbtn');
+    await click('[data-opt="0"]'); await click('[data-conf="sure"]');
     const row = win.VISU_STORE.data.log.slice(-1)[0];
     report({ scenario: 'grupo-mc', game: s.game, n: opts.length, hasAnswer: opts.includes(it.node.split(':')[1]), logged: row && row.card === it.card && row.level === 1, hash: win.location.hash });
   },
@@ -416,6 +415,27 @@ const SCENARIOS = {
     const tracks = Array.from(doc.querySelectorAll('.plates .m')), h = e => Math.round(e.getBoundingClientRect().height);
     report({ scenario: 'platebar', thin: tracks.length >= 3 && tracks.every(t => h(t) === 4 && h(t.firstElementChild) <= 4) });
   },
+  /* On a phone the confidence buttons sit in a bar at the bottom of the screen and tapping one checks: no scrolling to answer. */
+  'answerbar': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 1; win.VISU_STORE.save(); await go('cual-es'); await sleep(100);
+    const inView = el => { const r = el.getBoundingClientRect(); return r.top >= 0 && r.bottom <= win.innerHeight + 1; };
+    const t = App().reverseState().items[0];
+    await click(doc.querySelector(`[data-pick="${t}"]`));
+    const bar = $('.conf.answer-bar'), fixed = !!bar && getComputedStyle(bar).position === 'fixed' && Math.abs(bar.getBoundingClientRect().bottom - win.innerHeight) < 2;
+    const reachable = win.scrollY === 0 && Array.from(doc.querySelectorAll('[data-conf]')).every(inView);
+    await click('[data-conf="sure"]');
+    const ok = $('.reveal-ok.answer-bar'), next = $('#revnext');
+    const rightBar = App().reverseState().phase === 'reveal' && !!ok && getComputedStyle(ok).position === 'fixed' && !!next && inView(next);
+    /* Photo → name on Easy: the same bar after picking an option. */
+    await go('hoy'); await go('sesion'); await sleep(100);
+    await click('[data-opt="0"]');
+    const sessionBar = !!$('.conf.answer-bar') && Array.from(doc.querySelectorAll('[data-conf]')).every(inView);
+    await click('[data-conf="unsure"]');
+    const sessionCheck = App().sessionState().phase === 'reveal';
+    report({ scenario: 'answerbar', fixed, reachable, rightBar, sessionBar, sessionCheck });
+  },
+  'answerbar-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 1; win.VISU_STORE.save(); await go('cual-es'); await sleep(100);
+    await click(doc.querySelectorAll('[data-pick]')[0]); if (Q.get('check')) { const t = App().reverseState().items[0]; await click(doc.querySelector(`[data-pick="${t}"]`)); await click('[data-conf="sure"]'); } },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
   'sobra': async () => {
@@ -539,22 +559,22 @@ const SCENARIOS = {
     /* Typed answer, confidence, check. */
     await type('#typedin', 'zzzz'); doc.getElementById('typedform').requestSubmit(); await sleep(80);
     r.typedConf = App().sessionState().phase === 'confidence' && doc.activeElement.dataset.conf !== undefined;
-    await click('[data-conf="unsure"]'); r.confFocus = doc.activeElement.dataset.conf === 'unsure';
-    await click('#submitbtn'); r.check = App().sessionState().phase === 'reveal';
+    r.bar = !!$('.conf.answer-bar') && getComputedStyle($('.conf.answer-bar')).position === (W < 1000 ? 'fixed' : 'static');
+    await click('[data-conf="unsure"]'); r.check = App().sessionState().phase === 'reveal' && App().sessionState().conf === 'unsure';
     /* Exam sheet: hand in. */
     await go('hoy'); await go('hoja'); await sleep(100);
     for (const inp of doc.querySelectorAll('#sheetform [data-field]')) inp.value = 'x';
     doc.getElementById('sheetform').requestSubmit(); await sleep(80);
-    await click('[data-conf="sure"]'); await click('#submitbtn');
+    await click('[data-conf="sure"]');
     r.sheet = !!$('.reveal-ok') && App().sessionState().phase === 'reveal';
     /* ¿Cuál es?: easy shows the common-name switch; pick, confidence, check, next. */
     App().set().level = 1; win.VISU_STORE.save(); await go('hoy'); await go('cual-es'); await sleep(100);
     const before = !!win.VISU_STORE.data.settings.revShowCommon, vc = $('#vernchk');
     vc.checked = !vc.checked; vc.dispatchEvent(new win.Event('change', { bubbles: true })); await sleep(80);
     r.vern = !!win.VISU_STORE.data.settings.revShowCommon !== before && doc.activeElement.id === 'vernchk';
-    await click(doc.querySelectorAll('[data-pick]')[0]); await click('[data-conf="guess"]');
-    r.cualConf = App().reverseState().conf === 'guess';
-    await click('#submitbtn'); r.cualCheck = App().reverseState().phase === 'reveal';
+    await click(doc.querySelectorAll('[data-pick]')[0]); await click(doc.querySelectorAll('[data-pick]')[1]);
+    r.cualConf = App().reverseState().phase === 'ask' && App().reverseState().picked === doc.querySelectorAll('[data-pick]')[1].dataset.pick && !!$('.conf.answer-bar');   // the pick can still change
+    await click('[data-conf="guess"]'); r.cualCheck = App().reverseState().phase === 'reveal' && App().reverseState().conf === 'guess';
     await click('#revnext'); r.cualNext = App().reverseState().i === 1 && App().reverseState().phase === 'ask';
     r.errors = errors;
     report(Object.assign({ scenario: 'controls' }, r));
