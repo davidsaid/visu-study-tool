@@ -410,6 +410,12 @@ const SCENARIOS = {
     report({ scenario: 'search', accents, common, sci, sciFirst, capped, none, cleared, enter });
   },
   'search-shot': async () => { seedStorage(seen); await open('explorar'); await type('#sp-q', Q.get('q') || 'cig'); },
+  /* A group's plate: each photo's progress bar is a 4px line, not a tall block (iPhone report, 2026-11-08). */
+  'platebar': async () => {
+    seedStorage(seen); await open('grupo-order-Scombriformes');
+    const tracks = Array.from(doc.querySelectorAll('.plates .m')), h = e => Math.round(e.getBoundingClientRect().height);
+    report({ scenario: 'platebar', thin: tracks.length >= 3 && tracks.every(t => h(t) === 4 && h(t.firstElementChild) <= 4) });
+  },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
   'sobra': async () => {
