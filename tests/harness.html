@@ -38,6 +38,12 @@ const $ = sel => doc.querySelector(sel);
 async function click(sel) { const el = typeof sel === 'string' ? $(sel) : sel; if (!el) throw new Error('missing ' + sel); el.click(); await sleep(80); }
 async function type(sel, text) { const el = $(sel); if (!el) throw new Error('missing ' + sel); el.value = text; el.dispatchEvent(new win.Event('input', { bubbles: true })); await sleep(30); }
 const App = () => win.VISU_APP, Eng = () => win.VISU_ENGINE;
+/* First look: one step forward; a "do you remember?" pause on the way is answered (first photo) and passed. */
+async function lookNext() {
+  if ($('#lqcheck')) { await click('[data-lqpick]'); await click('#lqcheck'); await click('#lqnext'); return; }
+  await click('#looknext');
+}
+async function lookToEnd() { while ($('#looknext') || $('#lqcheck')) await lookNext(); }
 const answer = (sp, skill) => Eng().answerFor(App().M, sp, skill);
 const seen = { meta: { seenNotice: true } };
 
@@ -345,7 +351,7 @@ const SCENARIOS = {
     const first = !!doc.querySelector('.look-slide .car') && doc.querySelector('.look-name').textContent === App().spName(st.slides[0]) && !!doc.querySelector('.look-slide .car-credit a');
     await click('#looknext');
     const second = doc.querySelector('.look-name').textContent === App().spName(st.slides[1]) && !doc.querySelector('#lookprev').disabled;
-    for (let i = 1; i < n; i++) await click('#looknext');
+    await lookToEnd();
     const endCheck = doc.querySelector('[data-lookcheck="foto"]');
     await click(endCheck); await sleep(250);
     const ss = App().sessionState(), under = new Set(Eng().speciesUnder(App().M, 'order:Accipitriformes'));
@@ -356,7 +362,7 @@ const SCENARIOS = {
     const later = App().sessionState(), free = later.level === 2 && later.items.some(x => !under.has(x.sp));
     /* A finished look is remembered, also after a reload, and Today moves on to another order. */
     const sug = suggested && suggested.slice(1), sugNode = sug && App().M.nodes['order:' + sug.replace(/^vistazo-order-/, '')] && 'order:' + sug.replace(/^vistazo-order-/, '');
-    await go(sug); while ($('#looknext')) await click('#looknext');
+    await go(sug); await lookToEnd();
     await go('hoy'); await reload();
     const next = (doc.querySelector('a.game[href^="#vistazo-"]') || {}).getAttribute?.('href') || null;
     const remembered = ['order:Accipitriformes', sugNode].every(x => (win.VISU_STORE.data.ui.looked || []).includes(x)) && !!next && next !== suggested;
@@ -371,11 +377,11 @@ const SCENARIOS = {
     P.settings.newPerDay = 1;
     ['class', 'order', 'genus', 'species', 'common'].forEach(k => { P.cards['milvus_milvus:' + k] = { p: { first: Date.now(), due: later } }; });
     P.cards['order:Accipitriformes:group'] = { p: { first: Date.now(), due: later } };
-    await go('vistazo-order-Strigiformes'); while ($('#looknext')) await click('#looknext');
+    await go('vistazo-order-Strigiformes'); await lookToEnd();
     await click('[data-lookcheck="foto"]'); await sleep(250);
     const under = new Set(Eng().speciesUnder(App().M, 'order:Strigiformes')), ss = App().sessionState();
     const species = ss.items.length > 0 && ss.items.every(x => under.has(x.sp)) && !!$('[data-opt]');
-    await go('vistazo-class-Aves'); while ($('#looknext')) await click('#looknext');
+    await go('vistazo-class-Aves'); await lookToEnd();
     await click('[data-lookcheck="grupo"]'); await sleep(250);
     const gs = App().sessionState(), birds = new Set(Eng().speciesUnder(App().M, 'class:Aves'));
     const groups = gs.game === 'grupo' && gs.items.length > 0 && gs.items.every(x => birds.has(x.sp));
@@ -453,6 +459,29 @@ const SCENARIOS = {
     await go('sesion'); const fresh = App().sessionState().items.filter(x => !P.cards[x.sp + ':' + x.skill]);
     const lookedFirst = fresh.length === 7 && fresh.every(x => App().sp(x.sp).order === 'Carnivora');
     report({ scenario: 'pace', split, note, applied, lookedFirst });
+  },
+  /* First look: what the names say on each slide, the -iformes rule on order slides, and a pause every 4 slides. */
+  'lookquiz': async () => {
+    seedStorage(seen); await open('vistazo-order-Accipitriformes');
+    const meaning = !!$('.look-slide .name-key') && /Qué dice el nombre/.test($('.look-slide .name-key').textContent);
+    for (let k = 0; k < 4; k++) await click('#looknext');
+    const st = App().lookState(), q = st.quiz, first4 = st.slides.slice(0, 4);
+    const paused = !!q && st.i === 3 && doc.querySelectorAll('.look-quiz [data-lqpick]').length === 4 && first4.includes(q.target) && !$('#looknext');
+    const wrongKey = q.opts.find(o => o.key !== q.target).key;
+    await click(`[data-lqpick="${wrongKey}"]`); await click('#lqcheck');
+    const missShown = !!$('.look-quiz .rev-opt.right') && !!$('#lqagain');
+    await click('#lqagain');
+    const retry = App().lookState().quiz.phase === 'ask' && App().lookState().quiz.retried && !!$('#lqcheck');
+    await click(`[data-lqpick="${App().lookState().quiz.target}"]`); await click('#lqcheck');
+    const right = /Eso es/.test($('.look-quiz').textContent) && !$('#lqagain');
+    await click('#lqnext');
+    const moved = App().lookState().i === 4 && !App().lookState().quiz;
+    await click('#lookprev'); await click('#looknext');
+    const once = App().lookState().i === 4 && !App().lookState().quiz;
+    await go('vistazo-class-Aves');
+    const k = App().lookState().slides.findIndex(x => /formes$/.test(x)); App().lookState().i = k; App().views.vistazo('class:Aves');
+    const rule = !!$('.look-order .name-key .suffix') && /con forma de/.test($('.look-order .name-key').textContent);
+    report({ scenario: 'lookquiz', meaning, paused, missShown, retry, right, moved, once, rule });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */
