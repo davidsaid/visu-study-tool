@@ -387,9 +387,23 @@ function sessionSplit(dueN, newN, size, cap) {
 }
 /* Species in groups whose "Primer vistazo" was finished: they are the first new species to practise. */
 function lookedSpecies(M, P) {
-  const out = new Set();
-  ((P.ui && P.ui.looked) || []).forEach(node => { if (M.nodes[node]) speciesUnder(M, node).forEach(id => out.add(id)); });
+  const out = new Set(), solos = soloLooks(M);
+  ((P.ui && P.ui.looked) || []).forEach(node => { (M.nodes[node] ? speciesUnder(M, node) : solos[node] || []).forEach(id => out.add(id)); });
   return out;
+}
+/* Species alone in their order (counting species with photos) have no order to look at, so their first look comes in three
+   batches: fish, birds and the other tetrapods. Keys are 'solos:<batch>'; species in tree order; empty batches left out. */
+const SOLO_BATCHES = ['solos:peces', 'solos:aves', 'solos:tetrapodos'];
+function soloLooks(M) {
+  if (M._solos) return M._solos;
+  const perOrder = {}, tetra = new Set(speciesUnder(M, 'clade:tetrapoda')), by = {};
+  M.withPhotos.forEach(id => { const o = M.species[id].order; perOrder[o] = (perOrder[o] || 0) + 1; });
+  M.withPhotos.filter(id => perOrder[M.species[id].order] === 1).forEach(id => {
+    const k = !tetra.has(id) ? SOLO_BATCHES[0] : M.species[id].class === 'Aves' ? SOLO_BATCHES[1] : SOLO_BATCHES[2];
+    (by[k] = by[k] || []).push(id);
+  });
+  const out = {}; SOLO_BATCHES.filter(k => by[k]).forEach(k => { out[k] = by[k]; });   // batches in this order, the order Today offers them
+  return (M._solos = out);
 }
 /* New species a day so that every species not started yet is started 3 days before the exam (the last days are for
    reviewing). Null without an exam date, or when the date is too close for new species. */
@@ -404,7 +418,7 @@ function suggestNewPerDay(M, P, skills, now) {
    at, then the rest in tree order, so new species arrive order by order and look-alikes get mixed together. */
 function buildSession(M, P, opts) {
   const now = opts.now, skills = opts.skills, size = opts.size || 20, rng = opts.rng || Math.random;
-  const pool = scopePool(M, opts.scope);
+  const pool = opts.pool || scopePool(M, opts.scope);   // `pool`: a first look's own species (the single-species batches)
   const due = [], fresh = [];
   pool.forEach(id => skills.forEach(k => {
     const c = P.cards[cardId(id, k)], d = dueOf(c);
@@ -775,7 +789,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool,
+  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool, soloLooks,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

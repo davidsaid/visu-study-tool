@@ -12,24 +12,31 @@ const M = () => App.M, P = () => Store.data, SET = () => Store.data.settings;
 /* A class shows one slide per order (a few of its species and what they share); any other group, one slide per
    species (its photos, names and first field marks). The route carries the group, so a reload keeps it. */
 let look = null;
-App.lookRoute = node => 'vistazo-' + App.routeFor(node).replace(/^grupo-/, '');
-App.canLook = node => { const n = M().nodes[node]; return !!n && !App.sp(node) && (n.rank === 'class' ? orderSlides(node).length > 1 : E.scopePool(M(), node).length > 1 && n.rank !== 'clade'); };
+const solos = node => E.soloLooks(M())[node];
+const SOLO_NAME = { 'solos:peces': ['Peces', 'Fish'], 'solos:aves': ['Aves', 'Birds'], 'solos:tetrapodos': ['Otros tetrápodos', 'Other tetrapods'] };
+App.lookRoute = node => 'vistazo-' + (solos(node) ? node.replace(':', '-') : App.routeFor(node).replace(/^grupo-/, ''));
+App.lookLabel = node => (SOLO_NAME[node] ? L(`${SOLO_NAME[node][0]}: órdenes de una sola especie`, `${SOLO_NAME[node][1]}: single-species orders`) : `<i>${esc(node.split(':')[1])}</i>`);
+App.canLook = node => { if (solos(node)) return true; const n = M().nodes[node]; return !!n && !App.sp(node) && (n.rank === 'class' ? orderSlides(node).length > 1 : E.scopePool(M(), node).length > 1 && n.rank !== 'clade'); };
 const orderSlides = node => E.groupItems(M(), E.scopePool(M(), node), ['order']).map(g => g.node);
-function slidesOf(node) { return M().nodes[node].rank === 'class' ? orderSlides(node) : E.scopePool(M(), node); }
+const isClassLook = node => !solos(node) && M().nodes[node].rank === 'class';
+function slidesOf(node) { return solos(node) ? solos(node) : M().nodes[node].rank === 'class' ? orderSlides(node) : E.scopePool(M(), node); }
 /* What Today suggests: the order with the most species not seen yet (at least two with photos), skipping the
-   orders whose first look was finished. */
+   orders whose first look was finished; once those are done, the single-species batches. */
 const looked = () => P().ui.looked || [];
 App.nextLook = function () {
   const unseen = id => !App.skills().some(k => P().cards[E.cardId(id, k)]);
   const best = E.groupItems(M(), M().withPhotos, ['order']).map(g => ({ node: g.node, n: g.members.filter(unseen).length, total: g.members.length }))
     .filter(g => g.total > 1 && g.n > 0 && !looked().includes(g.node) && App.canLook(g.node)).sort((a, b) => b.n - a.n)[0];
-  return best || null;
+  const solo = Object.keys(E.soloLooks(M())).map(node => ({ node, n: solos(node).filter(unseen).length, total: solos(node).length }))
+    .find(g => g.n > 0 && !looked().includes(g.node));
+  return best || solo || null;
 };
 /* Once every order has had its first look: the one with the most open mistakes (Mis fallos rule), to see again. */
 App.replayLook = function () {
-  const n = {};
+  const n = {}, batchOf = {};
+  Object.entries(E.soloLooks(M())).forEach(([node, ids]) => ids.forEach(id => { batchOf[id] = node; }));
   E.buildMistakes(M(), P(), { now: Date.now(), skills: App.skills(), size: Infinity }).forEach(m => {
-    const node = 'order:' + App.sp(m.sp).order; n[node] = (n[node] || 0) + 1;
+    const node = batchOf[m.sp] || 'order:' + App.sp(m.sp).order; n[node] = (n[node] || 0) + 1;
   });
   const best = Object.keys(n).filter(App.canLook).sort((a, b) => n[b] - n[a])[0];
   return best ? { node: best, misses: n[best] } : null;
@@ -71,8 +78,8 @@ function orderSlide(node) {
 V.vistazo = function (node) {
   App.focusMode(true);
   if (!look || look.node !== node) look = { node, slides: slidesOf(node), i: 0, quiz: null, asked: {} };
-  const { slides } = look, n = slides.length, end = look.i >= n, cls = M().nodes[node].rank === 'class';
-  const name = `<i>${esc(M().nodes[node].scientific || node)}</i>${App.esForm(M().nodes[node].rank, M().nodes[node].scientific) ? ` · ${esc(App.esForm(M().nodes[node].rank, M().nodes[node].scientific))}` : ''}`;
+  const { slides } = look, n = slides.length, end = look.i >= n, cls = isClassLook(node), solo = !!solos(node), back = solo ? 'hoy' : App.routeFor(node);
+  const name = solo ? App.lookLabel(node) : `<i>${esc(M().nodes[node].scientific || node)}</i>${App.esForm(M().nodes[node].rank, M().nodes[node].scientific) ? ` · ${esc(App.esForm(M().nodes[node].rank, M().nodes[node].scientific))}` : ''}`;
   const nav = `<div class="row look-nav"><button class="btn" id="lookprev" ${look.i ? '' : 'disabled'}>‹ ${L('Anterior', 'Previous')}</button>
     <button class="btn primary grow" id="looknext">${look.i === n - 1 ? L('Terminar', 'Finish') : `${L('Siguiente', 'Next')} ›`}</button></div>`;
   const check = cls ? `<a class="btn primary big" href="#grupos" data-lookcheck="grupo">${L('¿Qué grupo es? Sus órdenes', 'Which group is it? Its orders')}</a>`
@@ -80,10 +87,11 @@ V.vistazo = function (node) {
   const body = end ? `<section class="card"><h2>${L('Ya les has echado un vistazo', 'You’ve had a first look')}</h2>
       <p class="small">${cls ? L(`Has visto los ${n} órdenes. Ahora, a ver si los reconoces: varias fotos de un orden y tú dices cuál es.`, `You’ve seen its ${n} orders. Now see if you recognise them: several photos of an order, and you name it.`)
         : L(`Has visto sus ${n} especies. Ahora, una ronda en Fácil (opción múltiple) con ellas: sube tu progreso sin presión.`, `You’ve seen its ${n} species. Now a round on Easy (multiple choice) with them: it raises your progress without pressure.`)}</p>
-      <div class="actions">${check}<button class="btn big" id="lookagain">${L('Verlo otra vez', 'See it again')}</button><a class="btn big" href="#${esc(App.routeFor(node))}">${L('Abrir el grupo', 'Open the group')}</a></div></section>`
+      <div class="actions">${check}<button class="btn big" id="lookagain">${L('Verlo otra vez', 'See it again')}</button>${solo ? '' : `<a class="btn big" href="#${esc(App.routeFor(node))}">${L('Abrir el grupo', 'Open the group')}</a>`}</div></section>`
     : look.quiz ? quizHTML(look.quiz) : `${cls ? orderSlide(slides[look.i]) : speciesSlide(slides[look.i])}${nav}`;
-  App.main().innerHTML = `<div class="session-wrap">${App.sessTop(Math.min(look.i, n) / n, n, Math.min(look.i, n - 1), App.routeFor(node))}
+  App.main().innerHTML = `<div class="session-wrap">${App.sessTop(Math.min(look.i, n) / n, n, Math.min(look.i, n - 1), back)}
     <p class="eyebrow">${L('Primer vistazo', 'First look')} · ${cls ? L('sus órdenes', 'its orders') : L('sus especies', 'its species')}</p><h1>${name}</h1>
+    ${solo ? `<p class="small">${L('Cada una es la única especie de su orden en el bestiario, así que no salen en el vistazo de ningún orden.', 'Each one is the only species of its order in the list, so they don’t come up in any order’s first look.')}</p>` : ''}
     <p class="small muted">${L(`Sin notas: mira y lee, y pasa las fotos de cada animal. Cada ${QUIZ_EVERY}, una pausa para ver si lo recuerdas.`, `No marks: look and read, and flip through each animal’s photos. Every ${QUIZ_EVERY}, a pause to see if you remember.`)}</p>
     ${body}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = '';
@@ -92,7 +100,7 @@ V.vistazo = function (node) {
    looking alone (Tanaka et al. 2005). Nothing is graded or saved; a miss shows the right one and allows one more try. */
 const QUIZ_EVERY = 4;
 function makeQuiz(chunk) {
-  const cls = M().nodes[look.node].rank === 'class';
+  const cls = isClassLook(look.node);
   const opts = chunk.map(x => ({ key: x, sp: cls ? E.shuffle(E.scopePool(M(), x), Math.random)[0] : x })).filter(o => o.sp);
   if (opts.length < 2) return null;
   const q = { cls, target: opts[Math.floor(Math.random() * opts.length)].key, picked: null, phase: 'ask', retried: false };
@@ -139,7 +147,7 @@ App.on('click', '#lookprev', () => step(-1));
 App.on('click', '#looknext', () => step(1));
 App.on('click', '#lookagain', () => { Object.assign(look, { i: 0, quiz: null, asked: {} }); V.vistazo(look.node); });
 /* The check is one round on this group only: the saved practice group and level stay as they were. */
-App.on('click', '[data-lookcheck]', b => { App.onceSession = { scope: look.node, level: b.dataset.lookcheck === 'foto' ? 1 : null }; });
+App.on('click', '[data-lookcheck]', b => { App.onceSession = Object.assign(solos(look.node) ? { pool: look.slides } : { scope: look.node }, { level: b.dataset.lookcheck === 'foto' ? 1 : null }); });
 App.lookState = () => look;
 
 /* ---------- ¿CUÁL SOBRA? ---------- */

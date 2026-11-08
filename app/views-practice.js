@@ -191,11 +191,11 @@ V.hoy = function () {
   <section class="card"><p class="eyebrow">${L('Otras formas de practicar', 'Other ways to practise')}</p><div class="games">
     ${misses ? `<a class="game" href="#fallos">${ICON.clock}<span><b>${L('Mis fallos', 'My mistakes')}</b><span class="small muted">${L(`${misses} ${misses === 1 ? 'tarjeta que fallaste' : 'tarjetas que fallaste'} en los últimos 7 días y aún no has acertado dos días distintos.`,
         `${misses} ${misses === 1 ? 'card' : 'cards'} you missed in the last 7 days and haven’t yet got right on two different days.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
-    ${look ? `<a class="game" href="#${esc(App.lookRoute(look.node))}">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}: <i>${esc(look.node.split(':')[1])}</i></b><span class="small muted">${L(`Mira sus especies una a una, sin preguntas. Tiene ${look.n} que aún no has visto.`,
+    ${look ? `<a class="game" href="#${esc(App.lookRoute(look.node))}">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}: ${App.lookLabel(look.node)}</b><span class="small muted">${L(`Mira sus especies una a una, sin preguntas. Tiene ${look.n} que aún no has visto.`,
         `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>`
-      : !fresh ? `<div class="game done">${ICON.explorar}<span><b>${L('Primer vistazo: ya has visto todos los órdenes', 'First look: you’ve seen every order')}</b><span class="small muted">${replay
-        ? `${L(`Vuelve a mirar <a href="#${esc(App.lookRoute(replay.node))}"><i>${esc(replay.node.split(':')[1])}</i></a>: es donde tienes más fallos abiertos (${replay.misses}).`,
-          `Look again at <a href="#${esc(App.lookRoute(replay.node))}"><i>${esc(replay.node.split(':')[1])}</i></a>: it’s where you have the most open mistakes (${replay.misses}).`)} `
+      : !fresh ? `<div class="game done">${ICON.explorar}<span><b>${L('Primer vistazo: ya has visto todos los grupos', 'First look: you’ve seen every group')}</b><span class="small muted">${replay
+        ? `${L(`Vuelve a mirar <a href="#${esc(App.lookRoute(replay.node))}">${App.lookLabel(replay.node)}</a>: es donde tienes más fallos abiertos (${replay.misses}).`,
+          `Look again at <a href="#${esc(App.lookRoute(replay.node))}">${App.lookLabel(replay.node)}</a>: it’s where you have the most open mistakes (${replay.misses}).`)} `
         : ''}${L('Para repetir otro, ábrelo en <a href="#explorar">Explorar</a> y pulsa «Primer vistazo».', 'To repeat another, open it in <a href="#explorar">Explore</a> and tap “First look”.')}</span></span></div>` : ''}
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
         'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
@@ -315,7 +315,7 @@ App.newSession = function (game, opts) {
   const once = App.onceSession || {};   // a one-off round (the check after a first look) overrides the saved group and level
   App.onceSession = null;
   const now = Date.now(), set = SET(), skills = App.skills(), saved = once.scope || P().ui.scope, scope = saved && M().nodes[saved] ? saved : null;
-  const base = { now, skills, scope, size: set.sessionSize, force: !!opts.force, introduce: !!once.scope };
+  const base = { now, skills, scope, pool: once.pool, size: set.sessionSize, force: !!opts.force, introduce: !!(once.scope || once.pool) };
   const items = opts.mistakes ? E.buildMistakes(M(), P(), base) : game === 'hoja' ? E.buildSheetSession(M(), P(), Object.assign(base, { size: Math.max(5, Math.round(set.sessionSize / 2)) }))
     : game === 'grupo' ? E.buildGroupSession(M(), P(), base) : E.buildSession(M(), P(), base);
   sess = { game, mistakes: !!opts.mistakes, level: game === 'hoja' ? 3 : once.level || set.level, items, i: 0, results: [], startedAt: now, done: false };

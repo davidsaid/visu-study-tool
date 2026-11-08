@@ -30,6 +30,7 @@ run "$here" grupo-mc '"game": "grupo"' '"n": 4' '"hasAnswer": true' '"logged": t
 run "$here" vistazo '"suggested": true' '"button": true' '"first": true' '"second": true' '"check": true' '"unlocked": true' '"free": true' '"remembered": true' '"orders": true'
 run "$here" vistazo-quota '"species": true' '"groups": true'
 run "$here" lookdone '"shown": true' '"replay": true' '"opens": true'
+run "$here" solos '"offered": true' '"slides": true' '"check": true' '"remembered": true'
 run "$here" lookquiz '"meaning": true' '"paused": true' '"missShown": true' '"retry": true' '"right": true' '"moved": true' '"once": true' '"rule": true'
 run "$here" plan '"today": true' '"settings": true' '"section": true' '"scrolled": true' '"tab": true' '"empty": true'
 run "$here" search '"accents": true' '"common": true' '"sci": true' '"sciFirst": true' '"capped": true' '"none": true' '"cleared": true' '"enter": true'

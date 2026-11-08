@@ -541,15 +541,31 @@ const SCENARIOS = {
   /* Every order looked (iPhone report, 2026-11-08): Today keeps a First look card, says so and suggests the order with the most open mistakes. */
   'lookdone': async () => {
     seedStorage(seen); await open('hoy');
-    const allOrders = Object.keys(App().M.nodes).filter(n => n.startsWith('order:'));
+    const allOrders = Object.keys(App().M.nodes).filter(n => n.startsWith('order:')).concat(Object.keys(Eng().soloLooks(App().M)));
     win.VISU_STORE.data.ui.looked = allOrders; win.VISU_STORE.save();
     App().set().level = 3; win.VISU_STORE.save(); await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('wrong');
     await go('hoy');
     const card = $('.game.done'), link = card && card.querySelector('a[href^="#vistazo-"]');
-    const shown = !!card && /ya has visto todos los órdenes/.test(card.textContent) && !$('a.game[href^="#vistazo-"]');
+    const shown = !!card && /ya has visto todos los grupos/.test(card.textContent) && !$('a.game[href^="#vistazo-"]');
     const replay = !!link && link.getAttribute('href') === '#vistazo-order-Accipitriformes' && !!card.querySelector('a[href="#explorar"]');
     await click(link); const opens = win.location.hash === '#vistazo-order-Accipitriformes' && !!$('.look-name');
     report({ scenario: 'lookdone', shown, replay, opens });
+  },
+  /* Species alone in their order: once the orders are done, Today offers their first look in batches (fish first). */
+  'solos': async () => {
+    seedStorage(seen); await open('hoy');
+    const SL = Eng().soloLooks(App().M);
+    win.VISU_STORE.data.ui.looked = Object.keys(App().M.nodes).filter(n => n.startsWith('order:')); win.VISU_STORE.save();
+    await go('sesion'); await go('hoy');   // not a first visit any more
+    const card = $('a.game[href="#vistazo-solos-peces"]'), offered = !!card && /Peces: órdenes de una sola especie/.test(card.textContent);
+    await click(card); await sleep(100);
+    const st = App().lookState(), slides = st.slides.join() === SL['solos:peces'].join() && !!$('.look-slide .car') && !$('a.btn[href^="#grupo-"]');
+    await lookToEnd();
+    const endCheck = $('[data-lookcheck="foto"]'); await click(endCheck); await sleep(250);
+    const ss = App().sessionState(), check = ss.level === 1 && ss.items.length > 0 && ss.items.every(x => SL['solos:peces'].includes(x.sp));
+    await go('hoy'); await reload();
+    const remembered = (win.VISU_STORE.data.ui.looked || []).includes('solos:peces') && !!$('a.game[href="#vistazo-solos-aves"]');
+    report({ scenario: 'solos', offered, slides, check, remembered });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

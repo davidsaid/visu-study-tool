@@ -359,6 +359,15 @@ test('real data', () => {
   const gl = E.normalizeProgress({ log: [{ ts: now2, card: 'class:Aves:group', game: 'grupo', kind: 'wrong', level: 3 }], settings: { game: 'grupo' } }, now2);
   eq('a group answer and the group game survive validation', [gl.log.length && gl.log[0].game, gl.settings.game], ['grupo', 'grupo']);
   ok('every class of the list has a badge, Reptilia included', classes.every(c => Object.keys(E.badgeStatus(RM, E.emptyProgress(Date.now()), ['class'], Date.now())).includes('class:' + c)));
+  /* Single-species orders get their first look in three batches (2026-11-08): every one lands in exactly one batch. */
+  const SL = E.soloLooks(RM), perOrder = {}; RM.withPhotos.forEach(id => { perOrder[RM.species[id].order] = (perOrder[RM.species[id].order] || 0) + 1; });
+  const soloIds = RM.withPhotos.filter(id => perOrder[RM.species[id].order] === 1), batched = [].concat(...Object.values(SL));
+  ok('every single-species order is in one first-look batch', soloIds.length > 0 && batched.length === soloIds.length && soloIds.every(id => batched.includes(id)), JSON.stringify(Object.keys(SL)));
+  ok('the bird batch is birds, the fish batch no tetrapods', (SL['solos:aves'] || []).every(id => RM.species[id].class === 'Aves') && (SL['solos:peces'] || []).every(id => !['Aves', 'Mammalia', 'Reptilia', 'Amphibia'].includes(RM.species[id].class)));
+  const PS = E.emptyProgress(now2); PS.ui.looked = ['solos:aves'];
+  ok('a finished batch puts its species first among the new ones', E.buildSession(RM, PS, { now: now2, skills: ['species'], size: SL['solos:aves'].length, introduce: true }).every(x => SL['solos:aves'].includes(x.sp)));
+  const pooled = E.buildSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, pool: SL['solos:peces'], introduce: true, size: 50 });
+  ok('a pool limits the session to that batch', pooled.length > 0 && pooled.every(x => SL['solos:peces'].includes(x.sp)));
   const facts = RM.order.reduce((a, id) => a.concat((V.bestiary.species[id].facts || []).map(f => [id, f])), []);
   const unsourced = facts.filter(([, f]) => !Array.isArray(f.src) || !f.src.length).length;
   const unknownSrc = facts.filter(([, f]) => (f.src || []).some(s => !V.bestiary.sources[s])).length;
