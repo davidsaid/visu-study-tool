@@ -120,8 +120,8 @@ V.como = function () {
     <li><b>${L('Difícil sin pistas, la hoja de examen y el simulacro', 'Hard without hints, the exam sheet and the mock')}</b>: ${L('FSRS la programa para cuando calcula que la probabilidad de recordarla baja al 90 %. «Lo sé seguro» alarga el intervalo y «Lo adivino» lo acorta.',
         'FSRS schedules it for when it estimates your chance of remembering it drops to 90%. “I know it” lengthens the interval and “I’m guessing” shortens it.')}</li></ul>
   <h3>${L('Camino recomendado', 'Suggested path')}</h3>
-  <ol class="steps-ol"><li>${L('<b>Primer vistazo</b> a un orden: sus especies una a una, sin preguntas. Al terminar, una ronda en Fácil con ese grupo, aunque ya hayas gastado las nuevas de hoy.',
-        'A <b>first look</b> at an order: its species one by one, no questions. At the end, a round on Easy with that group, even if you’ve used up today’s new cards.')}</li>
+  <ol class="steps-ol"><li>${L('<b>Primer vistazo</b> a un orden: sus especies una a una, sin preguntas. Al terminar, una ronda en Fácil con ese grupo, aunque ya hayas gastado las nuevas de hoy. Cuando los hayas visto todos, Hoy te sugiere volver al orden donde tienes más fallos abiertos.',
+        'A <b>first look</b> at an order: its species one by one, no questions. At the end, a round on Easy with that group, even if you’ve used up today’s new cards. Once you’ve seen them all, Today suggests going back to the order with the most open mistakes.')}</li>
     <li>${L('<b>Fácil</b> y luego <b>Medio</b>, hasta que los nombres te suenen.', '<b>Easy</b>, then <b>Medium</b>, until the names feel familiar.')}</li>
     <li>${L('<b>Difícil sin pistas</b>: solo esto cuenta para «dominada».', '<b>Hard without hints</b>: only this counts toward “mastered”.')}</li>
     <li>${L('Cada día, haz primero los repasos: son los que mantienen lo aprendido.', 'Every day, do the reviews first: they keep what you’ve learnt.')}</li></ol>

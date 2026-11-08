@@ -161,7 +161,7 @@ V.hoy = function () {
   const st = E.streak(P().days, now);
   const examDays = set.examDate ? Math.ceil((new Date(set.examDate + 'T09:00:00') - now) / DAY) : null;
   const dateStr = new Date(now).toLocaleDateString(I.locale(), { weekday: 'long', day: 'numeric', month: 'long' });
-  const nb = nextBadge(), look = App.nextLook(), openConf = E.openConfusions(M(), P()).length;
+  const nb = nextBadge(), look = App.nextLook(), replay = look || fresh ? null : App.replayLook(), openConf = E.openConfusions(M(), P()).length;
   const dueGroups = E.groupItems(M(), M().withPhotos, skills).filter(g => { const d = E.dueOf(P().cards[g.card]); return d != null && d <= now; }).length;
   const nbMissing = nb ? E.speciesUnder(M(), nb.def.node).filter(id => !statsOf(id).mastered) : [];
   const dueW = total ? split.due / total * 100 : 0;
@@ -192,7 +192,11 @@ V.hoy = function () {
     ${misses ? `<a class="game" href="#fallos">${ICON.clock}<span><b>${L('Mis fallos', 'My mistakes')}</b><span class="small muted">${L(`${misses} ${misses === 1 ? 'tarjeta que fallaste' : 'tarjetas que fallaste'} en los últimos 7 días y aún no has acertado dos días distintos.`,
         `${misses} ${misses === 1 ? 'card' : 'cards'} you missed in the last 7 days and haven’t yet got right on two different days.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
     ${look ? `<a class="game" href="#${esc(App.lookRoute(look.node))}">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}: <i>${esc(look.node.split(':')[1])}</i></b><span class="small muted">${L(`Mira sus especies una a una, sin preguntas. Tiene ${look.n} que aún no has visto.`,
-        `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
+        `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>`
+      : !fresh ? `<div class="game done">${ICON.explorar}<span><b>${L('Primer vistazo: ya has visto todos los órdenes', 'First look: you’ve seen every order')}</b><span class="small muted">${replay
+        ? `${L(`Vuelve a mirar <a href="#${esc(App.lookRoute(replay.node))}"><i>${esc(replay.node.split(':')[1])}</i></a>: es donde tienes más fallos abiertos (${replay.misses}).`,
+          `Look again at <a href="#${esc(App.lookRoute(replay.node))}"><i>${esc(replay.node.split(':')[1])}</i></a>: it’s where you have the most open mistakes (${replay.misses}).`)} `
+        : ''}${L('Para repetir otro, ábrelo en <a href="#explorar">Explorar</a> y pulsa «Primer vistazo».', 'To repeat another, open it in <a href="#explorar">Explore</a> and tap “First look”.')}</span></span></div>` : ''}
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
         'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#parejas">${ICON.pair}<span><b>${L('¿Este o este?', 'This one or that one?')}</b><span class="small muted">${L('Una foto y dos especies que se parecen: ¿cuál es? Empieza por las que tú has confundido.',

@@ -197,6 +197,7 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .game { display: grid; grid-template-columns: 44px 1fr auto; gap: .7rem; align-items: center; padding: .7rem .8rem; border-radius: 12px; border: 1px solid var(--line);
   background: var(--surface); text-decoration: none; color: var(--ink); min-height: 64px; }
 .game:hover { border-color: var(--accent); }
+.game.done:hover { border-color: var(--line); }
 .game svg { width: 36px; height: 36px; color: var(--accent); }
 .game b { display: block; }
 .game .arrow { color: var(--muted); font-size: 1.3rem; }

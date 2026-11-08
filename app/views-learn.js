@@ -25,6 +25,15 @@ App.nextLook = function () {
     .filter(g => g.total > 1 && g.n > 0 && !looked().includes(g.node) && App.canLook(g.node)).sort((a, b) => b.n - a.n)[0];
   return best || null;
 };
+/* Once every order has had its first look: the one with the most open mistakes (Mis fallos rule), to see again. */
+App.replayLook = function () {
+  const n = {};
+  E.buildMistakes(M(), P(), { now: Date.now(), skills: App.skills(), size: Infinity }).forEach(m => {
+    const node = 'order:' + App.sp(m.sp).order; n[node] = (n[node] || 0) + 1;
+  });
+  const best = Object.keys(n).filter(App.canLook).sort((a, b) => n[b] - n[a])[0];
+  return best ? { node: best, misses: n[best] } : null;
+};
 
 function speciesSlide(id) {
   const s = App.sp(id), c = (M().content.species || {})[id], marks = c ? I.list(c.field_marks).slice(0, 3) : [];
