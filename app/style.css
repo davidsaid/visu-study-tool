@@ -263,6 +263,10 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .diffrow { display: grid; grid-template-columns: max-content 1fr; gap: .25rem .8rem; align-items: baseline; }
 .diff { font-size: 1.2rem; letter-spacing: .02em; }
 .diff.sci { font-style: italic; }
+.spell p { margin: .15rem 0; }
+.spellword { font-size: 1.6rem; font-family: var(--font-plate); letter-spacing: .02em; }
+.spellword mark.dl { background: var(--gold-soft); color: var(--ink); border-bottom: 3px solid var(--gold); border-radius: 2px; padding: 0 1px; }
+.spell .sci { font-style: italic; }
 
 /* exam sheet */
 .sheet { display: grid; gap: .55rem; }

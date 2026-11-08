@@ -221,7 +221,7 @@ const SCENARIOS = {
     const keyText = () => (doc.querySelector('.session-wrap .name-key') || {}).textContent || '';
     const missOrder = !exp('milvus_milvus', 'order') || keyText().includes(exp('milvus_milvus', 'order'));
     await click('#nextbtn'); setItem('ciconia_ciconia', 'common'); await answerTyped('Cigueña blanca');
-    const spelling = !!doc.querySelector('.diffrow') && keyText().includes(exp('ciconia_ciconia', 'genus'));
+    const spelling = Array.from(doc.querySelectorAll('.spell mark.dl')).map(m => m.textContent).join('') === 'ü' && keyText().includes(exp('ciconia_ciconia', 'genus'));   // only the missing letter is marked
     await click('#nextbtn'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro');
     const wrongSpecies = !!doc.querySelector('.twoup') && keyText().includes(exp('milvus_milvus', 'genus')) && keyText().includes(exp('milvus_migrans', 'genus'));
     await click('#nextbtn'); setItem('scyliorhinus_canicula', 'class'); await answerTyped('wrong');
@@ -495,6 +495,35 @@ const SCENARIOS = {
     await answerTyped('right', 'sure');
     const last = P.log[P.log.length - 1], logged = last.card === 'milvus_milvus:genus' && last.level === 2 && last.kind === 'right';
     report({ scenario: 'onramp', mcFirst, typed, logged });
+  },
+  /* After a miss: "Try it again" asks the same question once more from memory; the retry is not recorded. */
+  'retry': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 3; win.VISU_STORE.save(); await go('sesion'); await sleep(100);
+    const P = win.VISU_STORE.data, s = () => App().sessionState();
+    setItem('milvus_milvus', 'genus'); await answerTyped('wrong');
+    const offered = !!$('#retrybtn.primary') && !!$('#nextbtn'), logN = P.log.length, i0 = s().i;
+    await click('#retrybtn');
+    const asks = s().phase === 'retry' && $('#typedin').value === '' && !$('#dunno') && /Otra vez, sin mirar/.test(doc.body.textContent);
+    await type('#typedin', answer('milvus_milvus', 'genus')); doc.getElementById('typedform').requestSubmit(); await sleep(80);
+    const typedRight = s().phase === 'retried' && /Ahora sí/.test($('.reveal-ok').textContent) && P.log.length === logN;
+    await click('#nextbtn'); const moved = s().i === i0 + 1;
+    setItem('ciconia_ciconia', 'common'); await answerTyped('Cigueña blanca'); await click('#retrybtn');
+    await type('#typedin', 'Ciguena blanca'); doc.getElementById('typedform').requestSubmit(); await sleep(80);
+    const spellAgain = /Todavía no/.test($('.reveal-ok').textContent) && Array.from(doc.querySelectorAll('.reveal-ok mark.dl')).map(m => m.textContent).join('') === 'üñ';
+    await click('#nextbtn');
+    App().set().level = 1; s().level = 1; s().items[s().i] = { sp: 'milvus_milvus', skill: 'order' }; App().resetItem(); App().views.session();
+    const wrongOpt = s().mc.options.findIndex(o => o.value !== s().mc.correct);
+    await click(`[data-opt="${wrongOpt}"]`); await click('[data-conf="sure"]'); await click('#retrybtn');
+    const rightOpt = s().mc.options.findIndex(o => o.value === s().mc.correct);
+    await click(`[data-opt="${rightOpt}"]`); await click('#retrycheck');
+    const mcRight = s().phase === 'retried' && !!$('.options .opt.right');
+    App().set().level = 2; win.VISU_STORE.save(); await go('hoy'); await go('cual-es'); await sleep(100);
+    const r = App().reverseState(), t = r.items[0], wrongPick = r.opts.find(o => o !== t), revN = P.log.length;
+    await click(`[data-pick="${wrongPick}"]`); await click('[data-conf="unsure"]'); await click('#revretry');
+    const cualRetry = App().reverseState().phase === 'retry' && !!$('[data-pick]:not([disabled])');
+    await click(`[data-pick="${t}"]`); await click('#revretrycheck');
+    const cualRight = App().reverseState().phase === 'retried' && /Ahora sí/.test(doc.body.textContent) && P.log.length === revN + 1 && !!$('#revnext');
+    report({ scenario: 'retry', offered, asks, typedRight, moved, spellAgain, mcRight, cualRetry, cualRight });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

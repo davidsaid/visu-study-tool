@@ -84,8 +84,18 @@ const clockIcon = () => ICON.clock.replace('<svg', '<svg class="inline-ic"');
 const route = () => (location.hash || '#hoy').slice(1);
 const nextLabel = last => (last ? L('Ver resumen', 'See summary') : L('Siguiente', 'Next'));
 const sciWrap = (sci, v) => (sci ? `<i>${esc(v)}</i>` : esc(v));
-const diffRow = (typed, correct, sci) => `<div class="diffrow"><span class="small muted">${L('Escribiste', 'You typed')}</span><span class="diff ${sci ? 'sci' : ''}">${esc(typed)}</span>
-  <span class="small muted">${L('Correcto', 'Correct')}</span><span class="diff ${sci ? 'sci' : ''}">${esc(correct)}</span></div>`;
+/* The letters of `correct` that her answer lacks or has wrong (longest common subsequence; capitals don't count,
+   accents do). Seeing a misspelling weakens spelling, so the correct form leads and hers stays small (research report). */
+function markedCorrect(typed, correct) {
+  const a = Array.from(E.gradeKey(typed)), b = Array.from(correct.normalize('NFC')), bk = b.map(c => c.toLocaleLowerCase('es'));
+  const T = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--) T[i][j] = a[i] === bk[j] ? T[i + 1][j + 1] + 1 : Math.max(T[i + 1][j], T[i][j + 1]);
+  const keep = new Set();
+  for (let i = 0, j = 0; i < a.length && j < b.length;) { if (a[i] === bk[j]) { keep.add(j); i++; j++; } else if (T[i + 1][j] >= T[i][j + 1]) i++; else j++; }
+  return b.map((c, j) => (keep.has(j) || c === ' ' ? esc(c) : `<mark class="dl">${esc(c)}</mark>`)).join('');
+}
+const diffRow = (typed, correct, sci) => `<div class="spell"><p class="small muted">${L('Se escribe', 'It’s spelt')}</p><p class="spellword ${sci ? 'sci' : ''}">${markedCorrect(typed, correct)}</p>
+  <p class="tiny muted">${L('Escribiste', 'You typed')}: <span class="${sci ? 'sci' : ''}">${esc(typed)}</span></p></div>`;
 const keyBox = (text, draft) => `<section class="key"><p class="eyebrow">${L('La clave', 'The key')}</p><p class="tip">${esc(text)}</p>${draft ? `<p class="tiny muted">${App.draftTag(true)}</p>` : ''}</section>`;
 function binHL(a, b, cls) { return a.split(' ').map((w, i) => (w === (b.split(' ')[i] || '') ? esc(w) : `<span class="${cls}">${esc(w)}</span>`)).join(' '); }
 
@@ -353,21 +363,21 @@ V.session = function () {
   if (sess.i >= sess.items.length) { location.hash = 'resumen'; return; }
   const it = curItem(), m = mode(), total = sess.items.length;
   if (it.card) sess.gshow.forEach((id, i) => { App.carouselStep[`grp-${i}`] = k => { sess.gphoto[id] = k; }; });
-  const prog = (sess.i + (sess.phase === 'reveal' ? 1 : 0)) / total;
+  const prog = (sess.i + (sess.phase === 'ask' || sess.phase === 'confidence' ? 0 : 1)) / total;
   const top = sessTop(prog, total, sess.i);
   if (sess.phase === 'reveal' && m !== 'sheet' && sess.res.kind !== 'right') {
     App.main().innerHTML = `<div class="session-wrap">${top}${feedbackHTML(it)}</div><div id="aside-m"></div>`;
     App.aside().innerHTML = App.DESK.matches ? sessionAside(it) : '';
     return;
   }
-  const locked = sess.phase !== 'ask';
+  const retrying = sess.phase === 'retry' || sess.phase === 'retried', locked = sess.phase !== 'ask' && sess.phase !== 'retry';
   const pills = `<div class="row">${levelPill(sess.lv)}${sess.lv !== sess.level ? `<span class="tiny muted">${L('Ya la acertaste en Fácil: ahora, a escribirla.', 'You got it right on Easy: now type it.')}</span>` : ''}<span class="skillpill">${it.skill === 'sheet' ? L('Hoja de examen', 'Exam sheet') : I.sk(it.skill)}</span></div>`;
   let body = '';
   if (m === 'mc') {
     const sci = it.skill !== 'common';
     body = `<div class="options" role="group" aria-label="${L('Opciones', 'Options')}">${sess.mc.options.map((o, i) => {
       let cls = 'opt'; if (sess.picked === i) cls += ' picked';
-      if (sess.phase === 'reveal') { if (o.value === sess.mc.correct) cls += ' right'; else if (sess.picked === i) cls += ' wrong'; }
+      if (sess.phase === 'reveal' || sess.phase === 'retried') { if (o.value === sess.mc.correct) cls += ' right'; else if (sess.picked === i) cls += ' wrong'; }
       return `<button class="${cls}" data-opt="${i}" aria-pressed="${sess.picked === i}" ${locked ? 'disabled' : ''}>${sci ? `<i>${esc(o.value)}</i>` : esc(o.value)}</button>`;
     }).join('')}</div>`;
   } else if (m === 'typed') {
@@ -375,24 +385,27 @@ V.session = function () {
     body = `<form class="typed" id="typedform"><label class="sr" for="typedin">${esc(promptText(it))}</label>
       <input id="typedin" class="${it.skill !== 'common' ? 'sci' : ''}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(sess.typed)}" ${locked ? 'disabled' : ''} placeholder="…">
       <button class="btn primary" ${locked ? 'disabled' : ''}>${L('Comprobar', 'Check')}</button></form>`;
-    if (sess.lv === 2) {
+    if (sess.lv === 2 && !retrying) {
       body += `<div class="hintrow"><button class="hintbtn" id="hintbtn" ${locked || sess.hints >= 3 ? 'disabled' : ''} aria-describedby="hintnote">${ICON.bulb}${sess.hints === 0 ? L('Pista', 'Hint') : sess.hints < 3 ? L(`Otra pista (${sess.hints + 1} de 3)`, `Another hint (${sess.hints + 1} of 3)`) : L('No hay más pistas', 'No more hints')}</button>
         <span class="tiny muted" id="hintnote">${sess.hints ? L(`Pistas usadas: ${sess.hints}. Queda anotado.`, `Hints used: ${sess.hints}. This is recorded.`) : L('Usar una pista queda anotado.', 'Using a hint is recorded.')}</span></div>
         ${sess.hints ? `<ol class="hints">${[1, 2, 3].slice(0, sess.hints).map(k => `<li>${hintHTML(ans, k)}</li>`).join('')}</ol>` : ''}`;
     } else body += `<p class="tiny muted mt">${L('Sin ayudas. Esta respuesta cuenta para «dominada».',
         'No help. This answer counts toward “mastered”.')}</p>`;
-    if (!locked) body += `<button class="linkbtn" id="dunno">${L('No lo sé: enséñamelo', 'I don’t know: show me')}</button>`;
+    if (!locked && !retrying) body += `<button class="linkbtn" id="dunno">${L('No lo sé: enséñamelo', 'I don’t know: show me')}</button>`;
   } else body = sheetHTML(it, locked);
   let after = '';
   if (sess.phase === 'confidence') after = confBlock(sess.conf, true);
   else if (m === 'mc' && sess.phase === 'ask' && sess.picked != null) after = confBlock(sess.conf, false);
   if (sess.phase === 'reveal') after = m === 'sheet' ? sheetResultHTML(it) : revealOK(it);
-  App.main().innerHTML = `<div class="session-wrap">${top}
-    ${it.card ? groupGrid(sess.phase === 'reveal') : `<div class="quiz-photo">${quizPhoto(it, L('Foto del animal que hay que identificar', 'Photo of the animal to identify'))}</div>`}
+  if (sess.phase === 'retry' && m === 'mc' && sess.picked != null) after = `<div class="answer-space" aria-hidden="true"></div><div class="conf answer-bar"><button class="btn primary big grow" id="retrycheck">${L('Comprobar', 'Check')}</button></div>`;
+  if (sess.phase === 'retried') after = retriedHTML(it);
+  const retryNote = retrying ? `<div class="note-box info"><b>${L('Otra vez, sin mirar', 'Once more, from memory')}.</b> ${L('No cuenta para tu progreso: es para fijarlo. Volverá también dentro de unas tarjetas.', 'It doesn’t count toward your progress: it’s to make it stick. It also comes back a few cards from now.')}</div>` : '';
+  App.main().innerHTML = `<div class="session-wrap">${top}${retryNote}
+    ${it.card ? groupGrid(sess.phase === 'reveal' || sess.phase === 'retried') : `<div class="quiz-photo">${quizPhoto(it, L('Foto del animal que hay que identificar', 'Photo of the animal to identify'))}</div>`}
     ${pills}<p class="prompt">${esc(promptText(it))}</p>${body}${after}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = App.DESK.matches ? sessionAside(it) : '';
   const ti = document.getElementById('typedin');
-  if (ti && !ti.disabled && sess.phase === 'ask' && App.DESK.matches) ti.focus({ preventScroll: true });
+  if (ti && !ti.disabled && (sess.phase === 'ask' || sess.phase === 'retry') && App.DESK.matches) ti.focus({ preventScroll: true });
 };
 /* At every level she can flip through every photo of the animal, starting on a random one: a single
    photo can be hard to read (David, 2026-11-01). */
@@ -504,10 +517,22 @@ function revealOK(it) {
     <p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}.</p>
     <div class="row mt"><button class="btn primary grow" id="nextbtn">${nextLabel(last)}</button>${App.cardLink(it.sp, '')}</div></div>`;
 }
+/* After the retry: right, or the answer once more. The first answer was already recorded; this one is not. */
+function retriedHTML(it) {
+  const r = sess.retryRes, last = sess.i === sess.items.length - 1, ans = E.answerFor(M(), it.sp, it.skill), sci = it.skill !== 'common';
+  const next = `<div class="row mt"><button class="btn primary grow" id="nextbtn">${nextLabel(last)}</button></div>`;
+  if (r.kind === 'right') return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Ahora sí!', 'Got it now!')}</p>
+    <p class="small">${L('Volverá dentro de unas tarjetas y en tus repasos.', 'It comes back a few cards from now and in your reviews.')}</p>${next}</div>`;
+  const typed = mode() === 'typed' ? sess.typed.trim() : '';
+  return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok partial answer-bar" role="status"><p class="eyebrow">${L('Todavía no', 'Not yet')}</p>
+    ${typed && r.kind === 'misspelling' ? diffRow(typed, ans, sci) : `<p>${L('Es', 'It is')} ${sciWrap(sci, ans)}.</p>`}
+    <p class="small">${L('Volverá dentro de unas tarjetas.', 'It comes back a few cards from now.')}</p>${next}</div>`;
+}
 function feedbackHTML(it) {
   const r = sess.res, s = App.sp(it.sp), ans = E.answerFor(M(), it.sp, it.skill), sci = it.skill !== 'common';
   const left = sess.items.length - sess.i - 1;
-  const nextBtn = `<button class="btn primary big" id="nextbtn">${left <= 0 ? L('Ver resumen', 'See summary') : L(`Seguir · quedan ${left}`, `Continue · ${left} left`)}</button>`;
+  const retry = `<button class="btn primary big" id="retrybtn">${L('Inténtalo otra vez', 'Try it again')}</button>`;
+  const nextBtn = `${retry}<button class="btn big" id="nextbtn">${left <= 0 ? L('Saltar y ver el resumen', 'Skip and see the summary') : L('Saltar', 'Skip')}</button>`;
   const given = sess.mc ? (sess.picked != null ? sess.mc.options[sess.picked].value : '') : sess.typed.trim();
   const after = (extra) => `${calloutsHTML(sess.conf, sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}
     <div class="actions">${nextBtn}${it.card ? groupLink(it.node, 'big') : App.cardLink(it.sp)}${extra || ''}</div>`;
@@ -548,8 +573,21 @@ App.on('submit', '#typedform', (f, e) => {
   e.preventDefault();
   sess.typed = document.getElementById('typedin').value;
   if (!sess.typed.trim()) return;
+  if (sess.phase === 'retry') return retryCheck();
   sess.phase = 'confidence'; App.redraw(V.session, '[data-conf]');
 });
+/* "Try it again": after a miss and its explanation, the same question once more from memory, on a fresh photo (or
+   reshuffled options). Ungraded: the miss is recorded and the card still comes back later (David, 2026-11-08). */
+App.on('click', '#retrybtn', () => {
+  const it = curItem();
+  Object.assign(sess, { phase: 'retry', picked: null, typed: '', hints: 0, retryRes: null });
+  if (mode() === 'mc') sess.mc = E.mcOptions(M(), it.sp, it.skill);
+  if (it.card) { sess.gshow = E.shuffle(it.members, Math.random).slice(0, 4); sess.gphoto = {}; sess.gshow.forEach(id => { sess.gphoto[id] = App.randomPhoto(id); }); }
+  else sess.photoIdx = App.randomPhoto(it.sp);
+  V.session(); App.main().focus(); window.scrollTo(0, 0);
+});
+function retryCheck() { sess.retryRes = judge(curItem()); sess.phase = 'retried'; V.session(); }
+App.on('click', '#retrycheck', () => { if (sess.picked != null) retryCheck(); });
 App.on('click', '#hintbtn', () => {
   sess.typed = document.getElementById('typedin').value;
   sess.hints = Math.min(3, sess.hints + 1);
@@ -677,9 +715,9 @@ V.cual = function () {
     return;
   }
   const deck = rsess.items, t = deck[rsess.i], s = App.sp(t), opts = rsess.opts;
-  const prog = (rsess.i + (rsess.phase === 'reveal' ? 1 : 0)) / deck.length;
-  const locked = rsess.phase !== 'ask', rev = rsess.phase === 'reveal';
-  const wrong = rev && rsess.picked !== t;
+  const prog = (rsess.i + (rsess.phase === 'ask' ? 0 : 1)) / deck.length;
+  const retried = rsess.phase === 'retried', locked = rsess.phase !== 'ask' && rsess.phase !== 'retry', rev = rsess.phase === 'reveal' || retried;
+  const wrong = rsess.phase === 'reveal' && rsess.picked !== t;
   const easy = rsess.level === 1, showCommon = easy && SET().revShowCommon;
   let body = `<div class="rev-prompt"><p class="eyebrow">${L('¿Cuál es?', 'Which one is it?')}</p><div class="binom">${esc(s.binomial)}</div>${showCommon || rev ? `<div class="vern">${esc(s.common_es)}</div>` : ''}
     ${easy && !rev ? `<label class="vern-toggle"><input type="checkbox" id="vernchk" ${SET().revShowCommon ? 'checked' : ''}> ${L('Mostrar el nombre vulgar (más fácil)',
@@ -697,9 +735,13 @@ V.cual = function () {
     }).join('')}</div>`;
   }
   if (rsess.phase === 'ask' && rsess.picked) body += confBlock(rsess.conf, false);
+  if (rsess.phase === 'retry') body = `<div class="note-box info"><b>${L('Otra vez, sin mirar', 'Once more, from memory')}.</b> ${L('Las mismas especies, en otro orden y con otras fotos. No cuenta para tu progreso.', 'The same species, in another order and with other photos. It doesn’t count toward your progress.')}</div>${body}`
+    + (rsess.picked ? `<div class="answer-space" aria-hidden="true"></div><div class="conf answer-bar"><button class="btn primary big grow" id="revretrycheck">${L('Comprobar', 'Check')}</button></div>` : '');
   const last = rsess.i === deck.length - 1;
   const nextBtn = `<button class="btn primary big" id="revnext">${last ? L('Terminar', 'Finish') : L('Siguiente', 'Next')}</button>`;
-  if (rev && !wrong) body += `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2>
+  if (retried) body += `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar ${rsess.picked === t ? '' : 'partial'}" role="status"><p class="eyebrow">${rsess.picked === t ? L('¡Ahora sí!', 'Got it now!') : L('Todavía no: es la marcada en verde', 'Not yet: it’s the one marked in green')}</p>
+    <div class="actions">${nextBtn}${App.cardLink(t)}</div></div>`;
+  else if (rev && !wrong) body += `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p><h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2>
     <p class="small">${REV_NOTE()}</p><div class="actions">${nextBtn}${App.cardLink(t)}</div></div>`;
   if (wrong) {
     const p = rsess.picked, split = E.lca(M(), p, t), sameG = E.answerFor(M(), p, 'genus') === E.answerFor(M(), t, 'genus');
@@ -710,7 +752,7 @@ V.cual = function () {
       ${comparePlate(p, t, rsess.photo[t], rsess.photo[p])}${App.nameKeyHTML(t, ['genus'], [p])}
       <div class="split-note">${ICON.tree}<span>${L('Parentesco', 'Kinship')}: ${L('las dos están en', 'both are in')} <b>${esc(App.label(split))}</b>${kin}
         ${L('Distancia en el árbol', 'Tree distance')}: ${E.treeDist(M(), p, t)} ${L('ramas', 'branches')}.</span></div>
-      <div class="actions">${nextBtn}<a class="btn big" href="#${esc(App.routeFor(split))}">${L('Ver el grupo en el árbol', 'See the group in the tree')}</a></div></div>`;
+      <div class="actions"><button class="btn primary big" id="revretry">${L('Inténtalo otra vez', 'Try it again')}</button><button class="btn big" id="revnext">${L('Saltar', 'Skip')}</button><a class="btn big" href="#${esc(App.routeFor(split))}">${L('Ver el grupo en el árbol', 'See the group in the tree')}</a></div></div>`;
   }
   App.main().innerHTML = `<div class="session-wrap">${sessTop(prog, deck.length, rsess.i)}${body}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = App.DESK.matches ? revAside(true) : '';
@@ -732,6 +774,12 @@ App.on('click', '[data-pick]', b => {
   App.redraw(V.cual, `[data-pick="${CSS.escape(rsess.picked)}"]`);
 });
 App.on('change', '#vernchk', c => { SET().revShowCommon = c.checked; Store.save(); App.redraw(V.cual, '#vernchk'); });
+App.on('click', '#revretry', () => {
+  Object.assign(rsess, { phase: 'retry', picked: null });
+  rsess.opts = E.shuffle(rsess.opts.slice(), Math.random); rsess.opts.forEach(o => { rsess.photo[o] = App.randomPhoto(o); });
+  V.cual(); App.main().focus(); window.scrollTo(0, 0);
+});
+App.on('click', '#revretrycheck', () => { if (rsess.picked) { rsess.phase = 'retried'; V.cual(); } });
 App.on('click', '#revnext', () => {
   if (rsess.i === rsess.items.length - 1) {
     if (!rsess.done) { rsess.done = true; P().stats.sessions = (P().stats.sessions || 0) + 1; App.awardBadges(); Store.save(); }
