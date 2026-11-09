@@ -13,9 +13,9 @@ const M = () => App.M, P = () => Store.data, SET = () => Store.data.settings;
    species (its photos, names and first field marks). The route carries the group, so a reload keeps it. */
 let look = null;
 const solos = node => E.soloLooks(M())[node];
-const SOLO_NAME = { 'solos:peces': ['Peces', 'Fish'], 'solos:aves': ['Aves', 'Birds'], 'solos:tetrapodos': ['Otros tetrápodos', 'Other tetrapods'] };
+const SOLO_NAME = { 'solos:peces': ['Otros peces', 'Other fish'], 'solos:aves': ['Otras aves', 'Other birds'], 'solos:tetrapodos': ['Otros tetrápodos', 'Other tetrapods'] };
 App.lookRoute = node => 'vistazo-' + (solos(node) ? node.replace(':', '-') : App.routeFor(node).replace(/^grupo-/, ''));
-App.lookLabel = node => (SOLO_NAME[node] ? L(`${SOLO_NAME[node][0]}: órdenes de una sola especie`, `${SOLO_NAME[node][1]}: single-species orders`) : `<i>${esc(node.split(':')[1])}</i>`);
+App.lookLabel = node => (SOLO_NAME[node] ? L(`${SOLO_NAME[node][0]}: órdenes con una sola especie en el bestiario`, `${SOLO_NAME[node][1]}: orders with a single species in the list`) : `<i>${esc(node.split(':')[1])}</i>`);
 App.canLook = node => { if (solos(node)) return true; const n = M().nodes[node]; return !!n && !App.sp(node) && (n.rank === 'class' ? orderSlides(node).length > 1 : E.scopePool(M(), node).length > 1 && n.rank !== 'clade'); };
 const orderSlides = node => E.groupItems(M(), E.scopePool(M(), node), ['order']).map(g => g.node);
 const isClassLook = node => !solos(node) && M().nodes[node].rank === 'class';
@@ -93,7 +93,7 @@ V.vistazos = function () {
     const mastered = sp.filter(id => E.speciesStats(M(), P(), id, skills, now).mastered).length, sci = node.split(':')[1];
     const short = solos(node) ? L(SOLO_NAME[node][0], SOLO_NAME[node][1]) : sci;
     const name = solos(node) ? esc(short) : `<i>${esc(sci).replace(/(formes|dactyla|morphia)$/, '<wbr>$1')}</i>`;   // Strigi|formes, Perisso|dactyla: the stem, then the Greek or Latin ending
-    const line = solos(node) ? L('una por orden', 'one per order') : fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '';
+    const line = solos(node) ? L('órdenes con 1 sola especie en el bestiario', 'orders with 1 species in the list') : fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '';
     const isSug = sug && node === sug.node;
     const label = [short, `${mastered}/${sp.length} ${L('dominadas', 'mastered')}`, seen ? L('visto', 'looked') : '', fresh ? `${fresh} ${L('nuevas', 'new')}` : '',
       m ? `${m} ${m === 1 ? L('fallo abierto', 'open mistake') : L('fallos abiertos', 'open mistakes')}` : '', isSug ? L('sugerido', 'suggested') : ''].filter(Boolean).join(', ');

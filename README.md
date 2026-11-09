@@ -32,7 +32,8 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   you've looked at it, with its open mistakes and species not started, so any group can be
   looked at again. Its suggestion comes first: the order with
   the most species not started, skipping the ones you've finished looking at. Species that are
-  alone in their order come afterwards, in three batches (fish, birds, other tetrapods). Once
+  alone in their order in the list come afterwards, in three batches ("other fish", "other
+  birds", "other tetrapods"). Once
   you've looked at everything, it suggests the group with the most open mistakes.
 - **"¿Qué grupo es?"**: see up to four animals of one class or order and name the group, on the
   same three levels, with its own spaced repetition. The way in for someone who doesn't know the

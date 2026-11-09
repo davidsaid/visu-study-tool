@@ -559,7 +559,7 @@ const SCENARIOS = {
     const SL = Eng().soloLooks(App().M);
     win.VISU_STORE.data.ui.looked = Object.keys(App().M.nodes).filter(n => n.startsWith('order:')); win.VISU_STORE.save();
     await go('sesion'); await go('hoy');   // not a first visit any more
-    const offered = /Peces: órdenes de una sola especie/.test(($('a.game[href="#vistazos"]') || {}).textContent || '');
+    const offered = /Otros peces: órdenes con una sola especie en el bestiario/.test(($('a.game[href="#vistazos"]') || {}).textContent || '');
     await go('vistazos'); const card = $('[data-suggested]');
     await click(card); await sleep(100);
     const st = App().lookState(), slides = st.slides.join() === SL['solos:peces'].join() && !!$('.look-slide .car') && !$('a.btn[href^="#grupo-"]');
