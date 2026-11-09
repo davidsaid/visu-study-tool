@@ -92,15 +92,15 @@ V.vistazos = function () {
     const sp = solos(node) || E.scopePool(M(), node), fresh = sp.filter(id => !started(id)).length, m = misses[node] || 0, seen = looked().includes(node);
     const mastered = sp.filter(id => E.speciesStats(M(), P(), id, skills, now).mastered).length, sci = node.split(':')[1];
     const short = solos(node) ? L(SOLO_NAME[node][0], SOLO_NAME[node][1]) : sci;
-    const name = solos(node) ? esc(short) : `<i>${esc(sci).replace(/(i?formes)$/, '<wbr>$1')}</i>`;
-    const line = solos(node) ? L('órdenes de 1 especie', 'one-species orders') : fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '';
+    const name = solos(node) ? esc(short) : `<i>${esc(sci).replace(/(formes|dactyla|morphia)$/, '<wbr>$1')}</i>`;   // Strigi|formes, Perisso|dactyla: the stem, then the Greek or Latin ending
+    const line = solos(node) ? L('una por orden', 'one per order') : fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '';
     const isSug = sug && node === sug.node;
     const label = [short, `${mastered}/${sp.length} ${L('dominadas', 'mastered')}`, seen ? L('visto', 'looked') : '', fresh ? `${fresh} ${L('nuevas', 'new')}` : '',
       m ? `${m} ${m === 1 ? L('fallo abierto', 'open mistake') : L('fallos abiertos', 'open mistakes')}` : '', isSug ? L('sugerido', 'suggested') : ''].filter(Boolean).join(', ');
     return `<a class="look-tile ${isSug ? 'sug' : ''}" href="#${esc(App.lookRoute(node))}" ${isSug ? 'data-suggested' : ''} aria-label="${esc(label)}">
       ${isSug ? `<span class="lt-sug" aria-hidden="true">${L('Sugerido', 'Suggested')}</span>` : ''}${seen ? `<span class="lt-seen" aria-hidden="true" title="${L('visto', 'looked')}">✓</span>` : ''}
       ${m ? `<span class="lt-miss" aria-hidden="true" title="${esc(`${m} ${L('fallos abiertos', 'open mistakes')}`)}">${m}</span>` : ''}
-      ${App.medalSVG(solos(node) ? SOLO_MEDAL[node] : sci, sp.length ? mastered / sp.length : 0, 52, { earned: !!P().badges[node] })}
+      ${App.medalSVG(solos(node) ? SOLO_MEDAL[node] : sci, sp.length ? mastered / sp.length : 0, 44, { earned: !!P().badges[node] })}
       <span class="nm" aria-hidden="true">${name}</span>${line ? `<span class="pc" aria-hidden="true">${line}</span>` : ''}</a>`;
   };
   const orders = [...new Set(M().withPhotos.map(id => 'order:' + App.sp(id).order))].filter(o => App.canLook(o));   // tree order

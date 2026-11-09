@@ -665,15 +665,15 @@ input.numin[type="number"] { width: 6rem; }
 #card-m { scroll-margin-top: 72px; }
 
 /* First-look menu (#vistazos): square badge tiles, three a row on a phone. */
-.look-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: .5rem; }
-.look-tile { position: relative; aspect-ratio: 1 / 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem;
+.look-tiles { display: grid; grid-template-columns: repeat(auto-fill, 100px); justify-content: center; gap: .5rem; }   /* fixed size: only the count per row changes */
+.look-tile { position: relative; width: 100px; height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem;
   padding: .4rem .3rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); text-decoration: none; text-align: center; overflow: hidden; }
 .look-tile:hover, .look-tile:focus-visible { border-color: var(--accent); }
 .look-tile.sug { border: 2px solid var(--accent); }
-.look-tile svg { width: 52px; height: 52px; flex: none; }
-.look-tile .nm { font-size: .78rem; font-weight: 700; line-height: 1.15; overflow-wrap: anywhere; }
+.look-tile svg { width: 44px; height: 44px; flex: none; }
+.look-tile .nm { font-size: .74rem; font-weight: 700; line-height: 1.15; overflow-wrap: anywhere; }
 .look-tile .pc { font-size: .66rem; line-height: 1.2; color: var(--muted); }
 .lt-seen { position: absolute; top: .3rem; right: .4rem; color: var(--ok); font-weight: 700; font-size: .85rem; }
 .lt-miss { position: absolute; top: .3rem; left: .35rem; min-width: 1.2rem; height: 1.2rem; padding: 0 .25rem; border-radius: 999px; background: var(--error); color: var(--paper); font-size: .68rem; font-weight: 700; line-height: 1.2rem; }
-.look-tile.sug .lt-seen, .look-tile.sug .lt-miss { top: 1.1rem; }
+.look-tile.sug { padding-top: .9rem; } .look-tile.sug .lt-seen, .look-tile.sug .lt-miss { top: 1.1rem; }
 .lt-sug { position: absolute; top: 0; left: 0; right: 0; font-size: .6rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--accent); color: var(--paper); }
