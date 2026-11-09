@@ -579,7 +579,7 @@ const SCENARIOS = {
     const tab = !!$('#tabbar a[href="#hoy"][aria-current="page"]');
     /* Tiles keep one size (only how many fit a row changes) and their text stays inside; "-formes" names break before the ending. */
     const tiles = Array.from(doc.querySelectorAll('.look-tile'));
-    const fixed = tiles.every(t => t.offsetWidth === 100 && t.offsetHeight === 100);
+    const fixed = tiles.every(t => t.offsetWidth === 150 && t.offsetHeight === 150);
     const fits = tiles.every(t => { const b = t.getBoundingClientRect(); return Array.from(t.children).every(c => { const r = c.getBoundingClientRect(); return r.top >= b.top - 0.5 && r.bottom <= b.bottom + 0.5; }); });
     const wbr = !!$('a.look-tile[href="#vistazo-order-Petromyzontiformes"] .nm wbr') && $('a.look-tile[href="#vistazo-order-Petromyzontiformes"] .nm').innerHTML.includes('Petromyzonti<wbr>formes');
     await go('vistazo-order-Strigiformes'); await lookToEnd();

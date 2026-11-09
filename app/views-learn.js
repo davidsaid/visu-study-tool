@@ -100,7 +100,7 @@ V.vistazos = function () {
     return `<a class="look-tile ${isSug ? 'sug' : ''}" href="#${esc(App.lookRoute(node))}" ${isSug ? 'data-suggested' : ''} aria-label="${esc(label)}">
       ${isSug ? `<span class="lt-sug" aria-hidden="true">${L('Sugerido', 'Suggested')}</span>` : ''}${seen ? `<span class="lt-seen" aria-hidden="true" title="${L('visto', 'looked')}">✓</span>` : ''}
       ${m ? `<span class="lt-miss" aria-hidden="true" title="${esc(`${m} ${L('fallos abiertos', 'open mistakes')}`)}">${m}</span>` : ''}
-      ${App.medalSVG(solos(node) ? SOLO_MEDAL[node] : sci, sp.length ? mastered / sp.length : 0, 44, { earned: !!P().badges[node] })}
+      ${App.medalSVG(solos(node) ? SOLO_MEDAL[node] : sci, sp.length ? mastered / sp.length : 0, 68, { earned: !!P().badges[node] })}
       <span class="nm" aria-hidden="true">${name}</span>${line ? `<span class="pc" aria-hidden="true">${line}</span>` : ''}</a>`;
   };
   const orders = [...new Set(M().withPhotos.map(id => 'order:' + App.sp(id).order))].filter(o => App.canLook(o));   // tree order
