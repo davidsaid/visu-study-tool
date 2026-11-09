@@ -80,39 +80,36 @@ function orderSlide(node) {
     <div class="row mt">${App.canLook(node) ? `<a class="btn compact" href="#${esc(App.lookRoute(node))}">${L('Primer vistazo de este orden', 'First look at this order')}</a>` : ''}
       <a class="btn compact" href="#${esc(App.routeFor(node))}">${L('Abrir el grupo', 'Open the group')}</a></div></div>`;
 }
-/* The first-look menu: every group that has one, as tiles by class, then the single-species batches. Today's suggestion
-   comes first; each tile says whether it was looked at, how many of its species are new, and its open mistakes. */
+/* The first-look menu: one square tile per group, in tree order (orders, then the single-species batches), Today's
+   suggestion first. Each tile is a badge medal: its ring is the share of the group's species mastered (gold once an
+   order badge is earned), and a line says whether it was looked at, its species not started and its open mistakes. */
+const SOLO_MEDAL = { 'solos:peces': 'Pisc', 'solos:aves': 'Aves', 'solos:tetrapodos': 'Tetr' };
 V.vistazos = function () {
   App.focusMode(false);
-  const misses = lookMisses(), sug = App.nextLook() || (App.replayLook() && { node: App.replayLook().node }), started = id => App.skills().some(k => P().cards[E.cardId(id, k)]);
-  const tile = (node, big) => {
-    const ids = slidesOf(node), sp = solos(node) ? ids : E.scopePool(M(), node), fresh = sp.filter(id => !started(id)).length, m = misses[node] || 0;
-    const sci = node.split(':')[1], es = solos(node) ? '' : App.esForm('order', sci);
-    const name = solos(node) ? App.lookLabel(node) : `<i>${esc(sci).replace(/(i?formes)$/, '<wbr>$1')}</i>${es && es.toLowerCase() !== sci.toLowerCase() ? `<span class="lt-es muted">${esc(es)}</span>` : ''}`;
-    const chips = [looked().includes(node) ? `<span class="lt-chip ok">✓ ${L('visto', 'looked')}</span>` : '',
-      fresh ? `<span class="lt-chip">${fresh} ${L('sin empezar', 'not started')}</span>` : '',
-      m ? `<span class="lt-chip warn">${m} ${m === 1 ? L('fallo', 'mistake') : L('fallos', 'mistakes')}</span>` : ''].join('');
-    return `<a class="look-tile ${big ? 'big' : ''}" href="#${esc(App.lookRoute(node))}" ${node === (sug && sug.node) ? 'data-suggested' : ''}>${App.tile(sp[0], '')}
-      <span class="lt-text"><b>${name}</b><span class="tiny muted">${sp.length} ${sp.length === 1 ? L('especie', 'species') : L('especies', 'species')}</span><span class="lt-chips">${chips}</span></span></a>`;
+  const now = Date.now(), skills = App.skills(), misses = lookMisses(), started = id => skills.some(k => P().cards[E.cardId(id, k)]);
+  const sug = App.nextLook() || (App.replayLook() && { node: App.replayLook().node });
+  const tile = node => {
+    const sp = solos(node) || E.scopePool(M(), node), fresh = sp.filter(id => !started(id)).length, m = misses[node] || 0, seen = looked().includes(node);
+    const mastered = sp.filter(id => E.speciesStats(M(), P(), id, skills, now).mastered).length, sci = node.split(':')[1];
+    const short = solos(node) ? L(SOLO_NAME[node][0], SOLO_NAME[node][1]) : sci;
+    const name = solos(node) ? esc(short) : `<i>${esc(sci).replace(/(i?formes)$/, '<wbr>$1')}</i>`;
+    const line = solos(node) ? L('órdenes de 1 especie', 'one-species orders') : fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '';
+    const isSug = sug && node === sug.node;
+    const label = [short, `${mastered}/${sp.length} ${L('dominadas', 'mastered')}`, seen ? L('visto', 'looked') : '', fresh ? `${fresh} ${L('nuevas', 'new')}` : '',
+      m ? `${m} ${m === 1 ? L('fallo abierto', 'open mistake') : L('fallos abiertos', 'open mistakes')}` : '', isSug ? L('sugerido', 'suggested') : ''].filter(Boolean).join(', ');
+    return `<a class="look-tile ${isSug ? 'sug' : ''}" href="#${esc(App.lookRoute(node))}" ${isSug ? 'data-suggested' : ''} aria-label="${esc(label)}">
+      ${isSug ? `<span class="lt-sug" aria-hidden="true">${L('Sugerido', 'Suggested')}</span>` : ''}${seen ? `<span class="lt-seen" aria-hidden="true" title="${L('visto', 'looked')}">✓</span>` : ''}
+      ${m ? `<span class="lt-miss" aria-hidden="true" title="${esc(`${m} ${L('fallos abiertos', 'open mistakes')}`)}">${m}</span>` : ''}
+      ${App.medalSVG(solos(node) ? SOLO_MEDAL[node] : sci, sp.length ? mastered / sp.length : 0, 52, { earned: !!P().badges[node] })}
+      <span class="nm" aria-hidden="true">${name}</span>${line ? `<span class="pc" aria-hidden="true">${line}</span>` : ''}</a>`;
   };
-  const classes = E.groupItems(M(), M().withPhotos, ['class']).map(g => g.node);
-  const sections = classes.map(c => {
-    const orders = [...new Set(E.scopePool(M(), c).map(id => 'order:' + App.sp(id).order))].filter(o => App.canLook(o));   // not groupItems: it drops a class's only order
-    if (!orders.length) return '';
-    const es = App.esForm('class', c.split(':')[1]);
-    return `<section class="card"><div class="row"><h2 class="grow"><i>${esc(c.split(':')[1])}</i>${es ? ` · ${esc(es)}` : ''}</h2>
-      ${App.canLook(c) ? `<a class="small" href="#${esc(App.lookRoute(c))}">${L('Vistazo a sus órdenes', 'Look at its orders')}</a>` : ''}</div>
-      <div class="look-tiles">${orders.map(o => tile(o)).join('')}</div></section>`;
-  }).join('');
-  const batches = Object.keys(E.soloLooks(M()));
+  const orders = [...new Set(M().withPhotos.map(id => 'order:' + App.sp(id).order))].filter(o => App.canLook(o));   // tree order
+  const all = orders.concat(Object.keys(E.soloLooks(M())));
+  const list = sug ? [sug.node].concat(all.filter(n => n !== sug.node)) : all;
   App.main().innerHTML = `<p class="eyebrow">${L('Primer vistazo', 'First look')}</p><h1>${L('Elige un grupo', 'Pick a group')}</h1>
-    <p class="small muted">${L('Mira sus especies una a una, sin notas, con una pausa cada 4 para ver si las recuerdas. Puedes repetir cualquiera.',
-      'Look at its species one by one, no marks, with a pause every 4 to see if you remember them. You can repeat any of them.')}</p>
-    ${sug ? `<section class="card"><p class="eyebrow">${App.nextLook() ? L('Sugerido: el que más especies nuevas tiene', 'Suggested: the one with the most new species') : L('Sugerido: donde tienes más fallos abiertos', 'Suggested: where you have the most open mistakes')}</p>${tile(sug.node, true)}</section>` : ''}
-    ${sections}
-    ${batches.length ? `<section class="card"><h2>${L('Órdenes de una sola especie', 'Single-species orders')}</h2>
-      <p class="tiny muted">${L('Cada una es la única especie de su orden, así que no salen en el vistazo de ningún orden.', 'Each one is the only species of its order, so they don’t come up in any order’s first look.')}</p>
-      <div class="look-tiles">${batches.map(b => tile(b)).join('')}</div></section>` : ''}
+    <p class="small muted">${L('Mira sus especies una a una, sin notas, con una pausa cada 4 para ver si las recuerdas. Puedes repetir cualquiera. El anillo es la parte de sus especies que ya dominas; ✓, ya lo has visto; el número rojo, sus fallos abiertos.',
+      'Look at its species one by one, no marks, with a pause every 4 to see if you remember them. You can repeat any of them. The ring is the share of its species you’ve mastered; ✓, you’ve looked at it; the red number, its open mistakes.')}</p>
+    <section class="card"><div class="look-tiles">${list.map(tile).join('')}</div></section>
     <div id="aside-m"></div>`;
 };
 V.vistazo = function (node) {

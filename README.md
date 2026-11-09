@@ -27,9 +27,10 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   its orders, with the "-iformes" ("shaped like") naming rule. Every 4 animals, an ungraded
   "which one was…?" pause. It ends
   with an Easy round on that group only, even if you've used up the day's new cards (your saved
-  practice group and level don't change). Today's card opens a menu with a tile per group,
-  showing which ones you've looked at, how many species you haven't started and your open
-  mistakes, so any of them can be looked at again. Its suggestion comes first: the order with
+  practice group and level don't change). Today's card opens a menu of square tiles, one per
+  group, each a badge medal whose ring is the share of its species mastered, marked when
+  you've looked at it, with its open mistakes and species not started, so any group can be
+  looked at again. Its suggestion comes first: the order with
   the most species not started, skipping the ones you've finished looking at. Species that are
   alone in their order come afterwards, in three batches (fish, birds, other tetrapods). Once
   you've looked at everything, it suggests the group with the most open mistakes.

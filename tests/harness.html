@@ -549,7 +549,7 @@ const SCENARIOS = {
     const card = $('a.game[href="#vistazos"]');
     const shown = !!card && /Ya has visto todos los grupos/.test(card.textContent) && /Accipitriformes/.test(card.textContent);
     await click(card); await sleep(100);
-    const sug = $('[data-suggested]'), replay = !!sug && sug.getAttribute('href') === '#vistazo-order-Accipitriformes' && /1 fallo/.test(sug.textContent) && /visto/.test(sug.textContent);
+    const sug = $('[data-suggested]'), replay = !!sug && sug.getAttribute('href') === '#vistazo-order-Accipitriformes' && /1 fallo abierto/.test(sug.getAttribute('aria-label')) && /visto/.test(sug.getAttribute('aria-label'));
     await click(sug); const opens = win.location.hash === '#vistazo-order-Accipitriformes' && !!$('.look-name');
     report({ scenario: 'lookdone', shown, replay, opens });
   },
@@ -580,7 +580,7 @@ const SCENARIOS = {
     await go('vistazo-order-Strigiformes'); await lookToEnd();
     const pickOther = !!$('a.btn[href="#vistazos"]');
     await go('vistazos');
-    const chip = /visto/.test(($('a.look-tile[href="#vistazo-order-Strigiformes"]') || {}).textContent || '');
+    const chip = !!$('a.look-tile[href="#vistazo-order-Strigiformes"] .lt-seen');
     report({ scenario: 'lookmenu', all, tab, pickOther, chip, n: got.length });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
