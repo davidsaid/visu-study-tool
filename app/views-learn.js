@@ -80,8 +80,8 @@ function orderSlide(node) {
     <div class="row mt">${App.canLook(node) ? `<a class="btn compact" href="#${esc(App.lookRoute(node))}">${L('Primer vistazo de este orden', 'First look at this order')}</a>` : ''}
       <a class="btn compact" href="#${esc(App.routeFor(node))}">${L('Abrir el grupo', 'Open the group')}</a></div></div>`;
 }
-/* The first-look menu: one square tile per group, in tree order (orders, then the single-species batches), Today's
-   suggestion first. Each tile is a badge medal: its ring is the share of the group's species mastered (gold once an
+/* The first-look menu: one square tile per group, Today's suggestion first, then the most species not started first
+   (ties in tree order: orders, then the single-species batches). Each tile is a badge medal: its ring is the share of the group's species mastered (gold once an
    order badge is earned), and a line says whether it was looked at, its species not started and its open mistakes. */
 const SOLO_MEDAL = { 'solos:peces': 'Pisc', 'solos:aves': 'Aves', 'solos:tetrapodos': 'Tetr' };
 V.vistazos = function () {
@@ -93,7 +93,7 @@ V.vistazos = function () {
     const mastered = sp.filter(id => E.speciesStats(M(), P(), id, skills, now).mastered).length, sci = node.split(':')[1];
     const short = solos(node) ? L(SOLO_NAME[node][0], SOLO_NAME[node][1]) : sci;
     const name = solos(node) ? esc(short) : `<i>${esc(sci).replace(/(formes|dactyla|morphia)$/, '<wbr>$1')}</i>`;   // Strigi|formes, Perisso|dactyla: the stem, then the Greek or Latin ending
-    const line = solos(node) ? L('órdenes con 1 sola especie en el bestiario', 'orders with 1 species in the list') : fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '';
+    const line = [fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '', solos(node) ? `<span class="lt-solo">${L('órdenes con 1 sola especie en el bestiario', 'orders with 1 species in the list')}</span>` : ''].filter(Boolean).join('');
     const isSug = sug && node === sug.node;
     const label = [short, `${mastered}/${sp.length} ${L('dominadas', 'mastered')}`, seen ? L('visto', 'looked') : '', fresh ? `${fresh} ${L('nuevas', 'new')}` : '',
       m ? `${m} ${m === 1 ? L('fallo abierto', 'open mistake') : L('fallos abiertos', 'open mistakes')}` : '', isSug ? L('sugerido', 'suggested') : ''].filter(Boolean).join(', ');
@@ -104,7 +104,8 @@ V.vistazos = function () {
       <span class="nm" aria-hidden="true">${name}</span>${line ? `<span class="pc" aria-hidden="true">${line}</span>` : ''}</a>`;
   };
   const orders = [...new Set(M().withPhotos.map(id => 'order:' + App.sp(id).order))].filter(o => App.canLook(o));   // tree order
-  const all = orders.concat(Object.keys(E.soloLooks(M())));
+  const fresh = node => (solos(node) || E.scopePool(M(), node)).filter(id => !started(id)).length;
+  const all = orders.concat(Object.keys(E.soloLooks(M()))).map(node => ({ node, n: fresh(node) })).sort((a, b) => b.n - a.n).map(x => x.node);   // stable sort
   const list = sug ? [sug.node].concat(all.filter(n => n !== sug.node)) : all;
   App.main().innerHTML = `<p class="eyebrow">${L('Primer vistazo', 'First look')}</p><h1>${L('Elige un grupo', 'Pick a group')}</h1>
     <p class="small muted">${L('Mira sus especies una a una, sin notas, con una pausa cada 4 para ver si las recuerdas. Puedes repetir cualquiera. El anillo es la parte de sus especies que ya dominas; ✓, ya lo has visto; el número rojo, sus fallos abiertos.',

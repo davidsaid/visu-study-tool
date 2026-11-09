@@ -673,6 +673,7 @@ input.numin[type="number"] { width: 6rem; }
 .look-tile svg { width: 68px; height: 68px; flex: none; }
 .look-tile .nm { font-size: .92rem; font-weight: 700; line-height: 1.15; overflow-wrap: anywhere; }
 .look-tile .pc { font-size: .78rem; line-height: 1.2; color: var(--muted); }
+.look-tile .lt-solo { display: block; font-size: .68rem; line-height: 1.15; }
 .lt-seen { position: absolute; top: .4rem; right: .55rem; color: var(--ok); font-weight: 700; font-size: 1rem; }
 .lt-miss { position: absolute; top: .4rem; left: .45rem; min-width: 1.45rem; height: 1.45rem; padding: 0 .3rem; border-radius: 999px; background: var(--error); color: var(--paper); font-size: .78rem; font-weight: 700; line-height: 1.45rem; }
 .look-tile.sug { padding-top: 1.1rem; } .look-tile.sug .lt-seen, .look-tile.sug .lt-miss { top: 1.4rem; }

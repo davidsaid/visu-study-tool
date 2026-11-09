@@ -30,7 +30,8 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   practice group and level don't change). Today's card opens a menu of square tiles, one per
   group, each a badge medal whose ring is the share of its species mastered, marked when
   you've looked at it, with its open mistakes and species not started, so any group can be
-  looked at again. Its suggestion comes first: the order with
+  looked at again. The groups with the most species not started come first, after its
+  suggestion: the order with
   the most species not started, skipping the ones you've finished looking at. Species that are
   alone in their order in the list come afterwards, in three batches ("other fish", "other
   birds", "other tetrapods"). Once
