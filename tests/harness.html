@@ -583,12 +583,15 @@ const SCENARIOS = {
     const fits = tiles.every(t => { const b = t.getBoundingClientRect(); return Array.from(t.children).every(c => { const r = c.getBoundingClientRect(); return r.top >= b.top - 0.5 && r.bottom <= b.bottom + 0.5; }); });
     const newOf = a => Eng().soloLooks(App().M)[a.slice(9).replace('-', ':')] ? Eng().soloLooks(App().M)[a.slice(9).replace('-', ':')].length : Eng().scopePool(App().M, 'order:' + a.slice(15)).length;   // nothing started yet: all species are new
     const counts = got.slice(1).map(r => newOf('#' + r)), sorted = counts.every((c, i) => !i || c <= counts[i - 1]);
+    /* Every tile shows its group's cartoon (app/badge-icons.js), clipped inside the ring; so do the Insignias medals. */
+    const icons = tiles.every(t => !!t.querySelector('svg.medal-ic g[clip-path] title'));
     const wbr = !!$('a.look-tile[href="#vistazo-order-Petromyzontiformes"] .nm wbr') && $('a.look-tile[href="#vistazo-order-Petromyzontiformes"] .nm').innerHTML.includes('Petromyzonti<wbr>formes');
     await go('vistazo-order-Strigiformes'); await lookToEnd();
     const pickOther = !!$('a.btn[href="#vistazos"]');
     await go('vistazos');
     const chip = !!$('a.look-tile[href="#vistazo-order-Strigiformes"] .lt-seen');
-    report({ scenario: 'lookmenu', all, tab, fixed, fits, wbr, sorted, pickOther, chip, n: got.length, counts: counts.slice(0, 8) });
+    await go('insignias'); const medalIcons = doc.querySelectorAll('.medal svg.medal-ic').length, textMedals = doc.querySelectorAll('.medal svg:not(.medal-ic)').length;   // 30 orders + 9 classes; the 3 habit badges keep their text
+    report({ scenario: 'lookmenu', all, tab, fixed, fits, wbr, sorted, icons, medalIcons, textMedals, pickOther, chip, n: got.length, counts: counts.slice(0, 8) });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

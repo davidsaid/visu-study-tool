@@ -310,7 +310,7 @@ function groupCard(id) {
     <h1 class="ptitle" tabindex="-1">${esc(n.scientific || id)}</h1>${vern && vern !== n.scientific ? `<p class="alt lg">${esc(vern)}</p>` : ''}${gradeBand(id)}
     ${g && g.summary && I.t(g.summary) ? `<p class="etym mt">${esc(I.t(g.summary))}${cs} ${draft}</p>` : ''}
     ${g && g.etymology && I.t(g.etymology) ? `<div class="name-key"><p class="eyebrow">${L('Qué dice el nombre', 'What the name says')}</p><p>${esc(I.t(g.etymology))}${cs}</p></div>` : ''}
-    <div class="mast-box">${badge ? App.medalSVG(n.scientific, earned ? 1 : prog, 64, { earned: !!earned }) : App.ring(gs.meter, 56)}<div><div class="pctn">${pct(gs.meter)}</div>
+    <div class="mast-box">${badge ? App.medalSVG(n.scientific, earned ? 1 : prog, 64, { earned: !!earned, node: id }) : App.ring(gs.meter, 56)}<div><div class="pctn">${pct(gs.meter)}</div>
       <p class="small tight">${gs.mastered} ${L('de', 'of')} ${gs.total} ${L('especies dominadas', 'species mastered')}</p>
       ${badge ? `<p class="small tight"><b>${L('Insignia', 'Badge')}:</b> ${esc(App.badgeName(id))} · ${earned ? L('conseguida', 'earned') : pct(prog)}</p>` : ''}
       ${n.rank === 'class' || n.rank === 'order' ? `<p class="small tight"><b>${L('Reconocer el grupo', 'Recognising the group')}:</b> ${pct(E.cardMeter(P().cards[E.groupCardId(id)], Date.now()))}</p>` : ''}
@@ -369,13 +369,13 @@ V.insignias = function () {
     const e = earned[b.def.id], stale = e && (!b.tier || TIER_RANK[b.tier] < TIER_RANK[e.tier]);
     const href = b.def.node ? `#${esc(App.routeFor(b.def.node))}` : b.def.id === 'mock:passed' ? '#simulacro' : '#hoy';
     const state = e ? `${L('conseguida', 'earned')}${e.tier && b.def.kind === 'class' ? ' · ' + L(...TIER_NAME[e.tier]) : ''}${stale ? ' · ' + L('pide repaso', 'needs review') : ''}` : pct(b.progress);
-    return `<a class="medal" href="${href}">${App.medalSVG(App.badgeText(b.def.id), e ? 1 : b.progress, 76, { earned: !!e, stale })}
+    return `<a class="medal" href="${href}">${App.medalSVG(App.badgeText(b.def.id), e ? 1 : b.progress, 76, { earned: !!e, stale, node: b.def.node })}
       <div class="nm">${esc(App.badgeName(b.def.id))}${b.def.node && App.isGradeNode(b.def.node) ? '*' : ''}</div><div class="pc">${state}</div></a>`;
   };
   const nextItem = b => `<div class="next-item"><div class="row"><b class="grow">${esc(App.badgeName(b.def.id))}</b><span class="small">${pct(b.progress)}</span></div>
     <div class="bar"><span style="width:${b.progress * 100}%"></span></div><p class="tiny muted">${desc(b)}</p></div>`;
   const earnedIds = Object.keys(earned).filter(id => st[id] || !M().nodes[id]);
-  const earnedItem = id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44)}<b>${esc(App.badgeName(id))}</b><span class="tiny muted">${esc(I.fmtDate(earned[id].at))}</span></div>`;
+  const earnedItem = id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44, { node: id })}<b>${esc(App.badgeName(id))}</b><span class="tiny muted">${esc(I.fmtDate(earned[id].at))}</span></div>`;
   App.main().innerHTML = `<p class="eyebrow">${L('Insignias', 'Badges')}</p><h1>${L('Cada insignia es una rama del árbol', 'Every badge is a branch of the tree')}</h1>
     <p class="small muted">${L('Domina las especies bajo un nodo y la rama es tuya. Sin clasificaciones: solo compites contigo.',
         'Master the species under a node and the branch is yours. No leaderboards: you only compete with yourself.')}</p>

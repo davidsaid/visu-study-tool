@@ -220,7 +220,7 @@ V.hoy = function () {
       <p class="tiny muted mt">${L('Un día sin estudiar a la semana gasta un comodín; la racha sigue.',
           'One missed day a week spends a freeze; the streak survives.')}</p></section>
   </div>
-  ${nb ? `<section class="card next-badge" aria-labelledby="nb">${App.medalSVG(M().nodes[nb.def.node].scientific, nb.progress, 64)}
+  ${nb ? `<section class="card next-badge" aria-labelledby="nb">${App.medalSVG(M().nodes[nb.def.node].scientific, nb.progress, 64, { node: nb.def.node })}
     <div><p class="eyebrow" id="nb">${L('Insignia a tu alcance', 'Badge within reach')}</p><h2>${L('Dominio de', 'Mastery of')} ${esc(M().nodes[nb.def.node].scientific)}</h2>
       <p class="small">${L(`Domina sus ${nb.total} especies. Te faltan ${nbMissing.length}:`, `Master its ${nb.total} species. ${nbMissing.length} to go:`)}</p>
       <div class="thumbs">${nbMissing.slice(0, 12).map(id => `<a href="#${esc(App.routeFor(id))}" title="${esc(App.spName(id))}">${App.tile(id)}</a>`).join('')}</div></div></section>` : ''}
@@ -696,7 +696,7 @@ V.resumen = function () {
     <section class="card"><p class="eyebrow">${L('Racha', 'Streak')}</p><div class="big-num gold">${st}</div><p class="small">${st === 1 ? L('día', 'day') : L('días', 'days')}</p></section></div>
   <div class="note-box">${sess.level === 3 ? L(`Tus ${ok} aciertos en Difícil cuentan para «dominada».`, `Your ${ok} correct answers on Hard count toward “mastered”.`) : L('Estos aciertos suben tu progreso. Para «dominada», repítelos en Difícil.',
       'These answers raise your progress. For “mastered”, repeat them on Hard.')}</div>
-  ${sess.newBadges && sess.newBadges.length ? `<section class="card"><h2>${L('Insignia nueva', 'New badge')}</h2><div class="earned-list">${sess.newBadges.map(id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44)}<b>${esc(App.badgeName(id))}</b></div>`).join('')}</div></section>` : ''}
+  ${sess.newBadges && sess.newBadges.length ? `<section class="card"><h2>${L('Insignia nueva', 'New badge')}</h2><div class="earned-list">${sess.newBadges.map(id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44, { node: id })}<b>${esc(App.badgeName(id))}</b></div>`).join('')}</div></section>` : ''}
   ${misses.length ? `<section class="card"><h2>${L('Para repasar', 'To review')}</h2><div class="thumbs">${misses.slice(0, 12).map(r => r.node
       ? `<a href="#${esc(App.routeFor(r.node))}" title="${esc(App.label(r.node))}">${App.tile(r.sp)}</a>` : `<a href="#${esc(App.routeFor(r.sp))}" title="${esc(App.spName(r.sp))}">${App.tile(r.sp)}</a>`).join('')}</div></section>` : ''}
   <div class="actions"><a class="btn primary big" href="#nivel">${L('Otra ronda', 'Another round')}</a><a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div><div id="aside-m"></div>`;
@@ -875,7 +875,7 @@ V.simulacroResultados = function () {
     <h1>${mk.passed ? L('Simulacro superado', 'Mock passed') : L('Aún no: sigue practicando', 'Not yet: keep practising')}</h1>
     <div class="kpis mt-lg"><section class="card"><p class="eyebrow">${L('Nota', 'Mark')}</p><div class="big-num ${mk.passed ? '' : 'gold'}">${score(mk)}<span class="small">/10</span></div><p class="small">${esc(mk.ok)}/${esc(mk.total)} ${L('casillas correctas', 'boxes correct')}</p></section>
       <section class="card"><p class="eyebrow">${L('Por casilla', 'By box')}</p><div class="skillbars">${per.map(([k, v]) => `<span>${I.sk(k)}</span><div class="bar"><span style="width:${v * 100}%"></span></div><span class="tiny muted">${pct(v)}</span>`).join('')}</div></section></div>
-    ${newB.length ? `<section class="card"><h2>${L('Insignia nueva', 'New badge')}</h2><div class="earned-list">${newB.map(id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44)}<b>${esc(App.badgeName(id))}</b></div>`).join('')}</div></section>` : ''}
+    ${newB.length ? `<section class="card"><h2>${L('Insignia nueva', 'New badge')}</h2><div class="earned-list">${newB.map(id => `<div class="item">${App.medalSVG(App.badgeText(id), 1, 44, { node: id })}<b>${esc(App.badgeName(id))}</b></div>`).join('')}</div></section>` : ''}
     <section class="card"><h2>${L('Tu hoja, foto a foto', 'Your sheet, photo by photo')}</h2>
       <ol class="mock-list">${mk.items.map(row).join('')}</ol></section>
     <div class="actions"><a class="btn primary big" href="#simulacro">${L('Otro simulacro', 'Another mock')}</a><a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div><div id="aside-m"></div>`;

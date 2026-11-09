@@ -231,12 +231,19 @@ App.ring = (v, size) => {
   const r = 8, C = 2 * Math.PI * r;
   return `<svg class="ring ${v >= 1 ? 'full' : ''}" viewBox="0 0 22 22" width="${size || 22}" height="${size || 22}" aria-hidden="true"><circle class="bg" cx="11" cy="11" r="${r}" fill="none" stroke-width="3.2"/>${v > 0 ? `<circle class="fg" cx="11" cy="11" r="${r}" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="${(C * Math.min(1, v)).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 11 11)"/>` : ''}</svg>`;
 };
+/* A badge medal: a progress ring around the group's cartoon (app/badge-icons.js, by `opts.node`) or, without one, its
+   first letters. The cartoons are drawn for a light disc, so that disc stays light in both themes. */
+let medalN = 0;
 App.medalSVG = (text, prog, size, opts) => {
   const r = 30, C = 2 * Math.PI * r, earned = prog >= 1 || (opts && opts.earned), stale = opts && opts.stale;
-  return `<svg viewBox="0 0 76 76" width="${size || 76}" height="${size || 76}" aria-hidden="true">
-    <circle cx="38" cy="38" r="${r}" fill="${earned ? 'var(--gold-soft)' : 'var(--paper)'}" stroke="var(--m0)" stroke-width="6" ${stale ? 'stroke-dasharray="4 3"' : ''}/>
-    <circle cx="38" cy="38" r="${r}" fill="none" stroke="${earned ? 'var(--gold)' : 'var(--accent)'}" stroke-width="6" stroke-linecap="round" stroke-dasharray="${C * Math.min(1, prog || 0)} ${C}" transform="rotate(-90 38 38)"/>
-    <text x="38" y="43" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-style="italic" font-weight="700" font-size="14" fill="${earned ? 'var(--gold)' : 'var(--ink)'}">${esc(String(text || '').slice(0, 4))}</text></svg>`;
+  const icon = opts && opts.node && (window.VISU_ICONS || {})[opts.node], clip = icon ? `mc${++medalN}` : '';
+  const inner = icon ? `<clipPath id="${clip}"><circle cx="38" cy="38" r="27"/></clipPath><g clip-path="url(#${clip})"><title>${esc(App.spName(icon.sp))}</title>
+      <g transform="translate(11 11) scale(.54)">${icon.svg}</g></g>`
+    : `<text x="38" y="43" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-style="italic" font-weight="700" font-size="14" fill="${earned ? 'var(--gold)' : 'var(--ink)'}">${esc(String(text || '').slice(0, 4))}</text>`;
+  return `<svg viewBox="0 0 76 76" width="${size || 76}" height="${size || 76}" aria-hidden="true" ${icon ? 'class="medal-ic"' : ''}>
+    <circle cx="38" cy="38" r="${r}" fill="${icon ? '#e4e9f4' : earned ? 'var(--gold-soft)' : 'var(--paper)'}" stroke="var(--m0)" stroke-width="6" ${stale ? 'stroke-dasharray="4 3"' : ''}/>
+    ${inner}
+    <circle cx="38" cy="38" r="${r}" fill="none" stroke="${earned ? 'var(--gold)' : 'var(--accent)'}" stroke-width="6" stroke-linecap="round" stroke-dasharray="${C * Math.min(1, prog || 0)} ${C}" transform="rotate(-90 38 38)"/></svg>`;
 };
 App.lvDots = n => `<span class="lvl-dots" aria-hidden="true">${[1, 2, 3].map(i => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</span>`;
 

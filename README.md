@@ -28,7 +28,8 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   "which one was…?" pause. It ends
   with an Easy round on that group only, even if you've used up the day's new cards (your saved
   practice group and level don't change). Today's card opens a menu of square tiles, one per
-  group, each a badge medal whose ring is the share of its species mastered, marked when
+  group, each a badge medal (a cartoon of an iconic species of the group) whose ring is the
+  share of its species mastered, marked when
   you've looked at it, with its open mistakes and species not started, so any group can be
   looked at again. The groups with the most species not started come first, after its
   suggestion: the order with
