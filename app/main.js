@@ -52,6 +52,7 @@ App.render = function (full) {
   else if (r === 'cual-es') { if (!(resume && App.reverseState()) && (!full || !App.reverseState())) App.newReverse(); V.cual(); }
   else if (r === 'simulacro') { if (!full || !App.mockState() || App.mockState().done) App.newMock(); V.simulacro(); }
   else if (r === 'simulacro-resultados') V.simulacroResultados();
+  else if (r === 'vistazos') V.vistazos();
   else if (r.startsWith('vistazo-solos-') && E.soloLooks(App.M)['solos:' + r.slice(14)]) V.vistazo('solos:' + r.slice(14));
   else if (r.startsWith('vistazo-') && BYROUTE['grupo-' + r.slice(8)]) V.vistazo(BYROUTE['grupo-' + r.slice(8)]);
   else if (r === 'nivel') V.nivel();

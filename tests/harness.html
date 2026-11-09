@@ -343,7 +343,8 @@ const SCENARIOS = {
   /* "Primer vistazo": Today suggests a group; an order shows its species one by one, a class its orders; the end starts an Easy check of that group. */
   'vistazo': async () => {
     seedStorage(seen); await open('hoy');
-    const suggested = (doc.querySelector('a.game[href^="#vistazo-"]') || {}).getAttribute?.('href') || null;
+    const menuCard = !!$('a.game[href="#vistazos"]'); await go('vistazos');
+    const suggested = menuCard ? ($('[data-suggested]') || {}).getAttribute?.('href') || null : null;
     await go('grupo-order-Accipitriformes');
     const button = !!doc.querySelector('a[href="#vistazo-order-Accipitriformes"]');
     await go('vistazo-order-Accipitriformes');
@@ -363,8 +364,8 @@ const SCENARIOS = {
     /* A finished look is remembered, also after a reload, and Today moves on to another order. */
     const sug = suggested && suggested.slice(1), sugNode = sug && App().M.nodes['order:' + sug.replace(/^vistazo-order-/, '')] && 'order:' + sug.replace(/^vistazo-order-/, '');
     await go(sug); await lookToEnd();
-    await go('hoy'); await reload();
-    const next = (doc.querySelector('a.game[href^="#vistazo-"]') || {}).getAttribute?.('href') || null;
+    await go('vistazos'); await reload();
+    const next = ($('[data-suggested]') || {}).getAttribute?.('href') || null;
     const remembered = ['order:Accipitriformes', sugNode].every(x => (win.VISU_STORE.data.ui.looked || []).includes(x)) && !!next && next !== suggested;
     await go('vistazo-class-Aves');
     const orders = doc.querySelectorAll('.look-order .car').length >= 1 && App().lookState().slides.every(x => x.startsWith('order:'));
@@ -545,10 +546,11 @@ const SCENARIOS = {
     win.VISU_STORE.data.ui.looked = allOrders; win.VISU_STORE.save();
     App().set().level = 3; win.VISU_STORE.save(); await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('wrong');
     await go('hoy');
-    const card = $('.game.done'), link = card && card.querySelector('a[href^="#vistazo-"]');
-    const shown = !!card && /ya has visto todos los grupos/.test(card.textContent) && !$('a.game[href^="#vistazo-"]');
-    const replay = !!link && link.getAttribute('href') === '#vistazo-order-Accipitriformes' && !!card.querySelector('a[href="#explorar"]');
-    await click(link); const opens = win.location.hash === '#vistazo-order-Accipitriformes' && !!$('.look-name');
+    const card = $('a.game[href="#vistazos"]');
+    const shown = !!card && /Ya has visto todos los grupos/.test(card.textContent) && /Accipitriformes/.test(card.textContent);
+    await click(card); await sleep(100);
+    const sug = $('[data-suggested]'), replay = !!sug && sug.getAttribute('href') === '#vistazo-order-Accipitriformes' && /1 fallo/.test(sug.textContent) && /visto/.test(sug.textContent);
+    await click(sug); const opens = win.location.hash === '#vistazo-order-Accipitriformes' && !!$('.look-name');
     report({ scenario: 'lookdone', shown, replay, opens });
   },
   /* Species alone in their order: once the orders are done, Today offers their first look in batches (fish first). */
@@ -557,15 +559,29 @@ const SCENARIOS = {
     const SL = Eng().soloLooks(App().M);
     win.VISU_STORE.data.ui.looked = Object.keys(App().M.nodes).filter(n => n.startsWith('order:')); win.VISU_STORE.save();
     await go('sesion'); await go('hoy');   // not a first visit any more
-    const card = $('a.game[href="#vistazo-solos-peces"]'), offered = !!card && /Peces: órdenes de una sola especie/.test(card.textContent);
+    const offered = /Peces: órdenes de una sola especie/.test(($('a.game[href="#vistazos"]') || {}).textContent || '');
+    await go('vistazos'); const card = $('[data-suggested]');
     await click(card); await sleep(100);
     const st = App().lookState(), slides = st.slides.join() === SL['solos:peces'].join() && !!$('.look-slide .car') && !$('a.btn[href^="#grupo-"]');
     await lookToEnd();
     const endCheck = $('[data-lookcheck="foto"]'); await click(endCheck); await sleep(250);
     const ss = App().sessionState(), check = ss.level === 1 && ss.items.length > 0 && ss.items.every(x => SL['solos:peces'].includes(x.sp));
-    await go('hoy'); await reload();
-    const remembered = (win.VISU_STORE.data.ui.looked || []).includes('solos:peces') && !!$('a.game[href="#vistazo-solos-aves"]');
+    await go('vistazos'); await reload();
+    const remembered = (win.VISU_STORE.data.ui.looked || []).includes('solos:peces') && ($('[data-suggested]') || {}).getAttribute?.('href') === '#vistazo-solos-aves';
     report({ scenario: 'solos', offered, slides, check, remembered });
+  },
+  /* The first-look menu: every order that has a look, the three single-species batches, and the way back from a look. */
+  'lookmenu': async () => {
+    seedStorage(seen); await open('hoy'); await click('a.game[href="#vistazos"]'); await sleep(100);
+    const want = Eng().groupItems(App().M, App().M.withPhotos, ['order']).map(g => g.node).filter(App().canLook).map(App().lookRoute).concat(Object.keys(Eng().soloLooks(App().M)).map(App().lookRoute));
+    const got = Array.from(doc.querySelectorAll('.card .look-tiles a.look-tile')).map(a => a.getAttribute('href').slice(1));
+    const all = want.length > 0 && want.every(r => got.includes(r)) && got.length === want.length;
+    const tab = !!$('#tabbar a[href="#hoy"][aria-current="page"]');
+    await go('vistazo-order-Strigiformes'); await lookToEnd();
+    const pickOther = !!$('a.btn[href="#vistazos"]');
+    await go('vistazos');
+    const chip = /visto/.test(($('a.look-tile[href="#vistazo-order-Strigiformes"]') || {}).textContent || '');
+    report({ scenario: 'lookmenu', all, tab, pickOther, chip, n: got.length });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

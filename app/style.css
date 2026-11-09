@@ -197,7 +197,6 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .game { display: grid; grid-template-columns: 44px 1fr auto; gap: .7rem; align-items: center; padding: .7rem .8rem; border-radius: 12px; border: 1px solid var(--line);
   background: var(--surface); text-decoration: none; color: var(--ink); min-height: 64px; }
 .game:hover { border-color: var(--accent); }
-.game.done:hover { border-color: var(--line); }
 .game svg { width: 36px; height: 36px; color: var(--accent); }
 .game b { display: block; }
 .game .arrow { color: var(--muted); font-size: 1.3rem; }
@@ -664,3 +663,16 @@ input.numin[type="number"] { width: 6rem; }
 @media (max-width: 560px) { .zoom { width: 100vw; max-height: 100vh; height: 100vh; border-radius: 0; border: 0; padding-top: 3rem; } .zoom[open] { display: flex; flex-direction: column; justify-content: center; } .zoom .car .car-frame { --maxh: calc(100vh - 8rem); } }
 .back-to-practice { display: inline-flex; margin: 0 0 .8rem; min-height: 44px; }
 #card-m { scroll-margin-top: 72px; }
+
+/* First-look menu (#vistazos): one tile per group. */
+.look-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .6rem; margin-top: .6rem; }
+.look-tile { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); color: var(--ink); text-decoration: none; }
+.look-tile:hover, .look-tile:focus-visible { border-color: var(--accent); }
+.look-tile .tile { aspect-ratio: 4 / 3; }
+.look-tile .lt-text { display: flex; flex-direction: column; gap: .2rem; padding: .5rem .6rem .6rem; }
+.look-tile b { overflow-wrap: anywhere; } .look-tile .lt-es { display: block; font-weight: 400; font-size: .85rem; }
+.look-tile.big { flex-direction: row; } .look-tile.big .tile { width: 40%; max-width: 220px; flex: none; }
+.lt-chips { display: flex; flex-wrap: wrap; gap: .25rem; }
+.lt-chip { font-size: .75rem; padding: .05rem .45rem; border-radius: 999px; background: var(--accent-soft); color: var(--ink); }
+.lt-chip.ok { background: var(--ok-soft); color: var(--ok); }
+.lt-chip.warn { background: var(--error-soft); color: var(--error); }

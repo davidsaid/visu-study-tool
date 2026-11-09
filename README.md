@@ -27,10 +27,12 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   its orders, with the "-iformes" ("shaped like") naming rule. Every 4 animals, an ungraded
   "which one was…?" pause. It ends
   with an Easy round on that group only, even if you've used up the day's new cards (your saved
-  practice group and level don't change). Today
-  suggests the order with the most species not seen yet, skipping the orders you've finished looking at. Species that are
+  practice group and level don't change). Today's card opens a menu with a tile per group,
+  showing which ones you've looked at, how many species you haven't started and your open
+  mistakes, so any of them can be looked at again. Its suggestion comes first: the order with
+  the most species not started, skipping the ones you've finished looking at. Species that are
   alone in their order come afterwards, in three batches (fish, birds, other tetrapods). Once
-  you've looked at everything, it suggests looking again at the group with the most open mistakes.
+  you've looked at everything, it suggests the group with the most open mistakes.
 - **"¿Qué grupo es?"**: see up to four animals of one class or order and name the group, on the
   same three levels, with its own spaced repetition. The way in for someone who doesn't know the
   animals yet: classes first, then the largest orders. A class's card can quiz just its orders.

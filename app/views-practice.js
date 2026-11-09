@@ -191,12 +191,11 @@ V.hoy = function () {
   <section class="card"><p class="eyebrow">${L('Otras formas de practicar', 'Other ways to practise')}</p><div class="games">
     ${misses ? `<a class="game" href="#fallos">${ICON.clock}<span><b>${L('Mis fallos', 'My mistakes')}</b><span class="small muted">${L(`${misses} ${misses === 1 ? 'tarjeta que fallaste' : 'tarjetas que fallaste'} en los últimos 7 días y aún no has acertado dos días distintos.`,
         `${misses} ${misses === 1 ? 'card' : 'cards'} you missed in the last 7 days and haven’t yet got right on two different days.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
-    ${look ? `<a class="game" href="#${esc(App.lookRoute(look.node))}">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}: ${App.lookLabel(look.node)}</b><span class="small muted">${L(`Mira sus especies una a una, sin preguntas. Tiene ${look.n} que aún no has visto.`,
-        `Look at its species one by one, no questions. ${look.n} you haven’t seen yet.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>`
-      : !fresh ? `<div class="game done">${ICON.explorar}<span><b>${L('Primer vistazo: ya has visto todos los grupos', 'First look: you’ve seen every group')}</b><span class="small muted">${replay
-        ? `${L(`Vuelve a mirar <a href="#${esc(App.lookRoute(replay.node))}">${App.lookLabel(replay.node)}</a>: es donde tienes más fallos abiertos (${replay.misses}).`,
-          `Look again at <a href="#${esc(App.lookRoute(replay.node))}">${App.lookLabel(replay.node)}</a>: it’s where you have the most open mistakes (${replay.misses}).`)} `
-        : ''}${L('Para repetir otro, ábrelo en <a href="#explorar">Explorar</a> y pulsa «Primer vistazo».', 'To repeat another, open it in <a href="#explorar">Explore</a> and tap “First look”.')}</span></span></div>` : ''}
+    <a class="game" href="#vistazos">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}</b><span class="small muted">${look
+      ? L(`Elige un grupo y mira sus especies una a una, sin notas. Sugerido: ${App.lookLabel(look.node)}, con ${look.n} sin empezar.`,
+        `Pick a group and look at its species one by one, no marks. Suggested: ${App.lookLabel(look.node)}, ${look.n} not started.`)
+      : L(`Ya has visto todos los grupos: elige uno para repasarlo.${replay ? ` Sugerido: ${App.lookLabel(replay.node)}, con ${replay.misses} ${replay.misses === 1 ? 'fallo abierto' : 'fallos abiertos'}.` : ''}`,
+        `You’ve seen every group: pick one to go over again.${replay ? ` Suggested: ${App.lookLabel(replay.node)}, ${replay.misses} open ${replay.misses === 1 ? 'mistake' : 'mistakes'}.` : ''}`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
         'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#parejas">${ICON.pair}<span><b>${L('¿Este o este?', 'This one or that one?')}</b><span class="small muted">${L('Una foto y dos especies que se parecen: ¿cuál es? Empieza por las que tú has confundido.',

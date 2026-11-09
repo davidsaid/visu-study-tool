@@ -270,7 +270,7 @@ App.ICON = ICON;
 /* ---------- shell ---------- */
 const TABS = [['hoy', 'Hoy', 'Today'], ['explorar', 'Explorar', 'Explore'], ['insignias', 'Insignias', 'Badges'], ['como-funciona', 'Cómo funciona', 'How it works', 'como'], ['ajustes', 'Ajustes', 'Settings']];
 App.tabOf = r => {
-  if (/^(nivel|sesion|hoja|cual-es|resumen|simulacro.*)$/.test(r)) return 'hoy';
+  if (/^(nivel|sesion|hoja|cual-es|resumen|simulacro.*|vistazos)$/.test(r)) return 'hoy';
   if (r === 'explorar' || r.startsWith('ficha-') || r.startsWith('grupo-')) return 'explorar';
   if (r === 'como-funciona-plan') return 'como-funciona';
   return r;
