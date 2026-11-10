@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "es": "Clado de aves reconocido por estudios genéticos (Hackett et al. 2008; Prum et al. 2015): chotacabras, guácharo, nictibios, podargos, egotelos, vencejos y colibríes. En el bestiario: Caprimulgiformes y Apodiformes.",
+    "en": "A bird clade recognised by genetic studies (Hackett et al. 2008; Prum et al. 2015): nightjars, the oilbird, potoos, frogmouths, owlet-nightjars, swifts and hummingbirds. In the list: Caprimulgiformes and Apodiformes."
+  },
+  "traits": {
+    "es": [
+      "Patas pequeñas y débiles",
+      "El letargo (torpor) y otras rarezas del metabolismo son frecuentes"
+    ],
+    "en": [
+      "Small, weak feet",
+      "Torpor and other metabolic peculiarities are common"
+    ]
+  },
+  "contrast": {
+    "es": "Su parentesco no se ve a simple vista: vencejos y colibríes son diurnos y acróbatas del aire, y los chotacabras, nocturnos y crípticos. Dentro del clado, los vencejos y colibríes están más cerca de los egotelos que de los chotacabras.",
+    "en": "Their kinship doesn't show at a glance: swifts and hummingbirds are diurnal aerial acrobats, nightjars nocturnal and cryptic. Within the clade, swifts and hummingbirds are closer to the owlet-nightjars than to the nightjars."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Strisores",
+      "url": "https://en.wikipedia.org/wiki/Strisores",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "title": "Wikipedia (es): Strisores",
+      "url": "https://es.wikipedia.org/wiki/Strisores",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "title": "Prum et al. (2015), A comprehensive phylogeny of birds (Aves) using targeted next-generation DNA sequencing. Nature 526",
+      "url": "https://doi.org/10.1038/nature15697",
+      "license": "All rights reserved (cited)",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "status": "draft"
+}

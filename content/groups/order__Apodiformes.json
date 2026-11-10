@@ -1,0 +1,53 @@
+{
+  "summary": {
+    "es": "Vencejos, colibríes y vencejos arborícolas: casi 450 especies, el orden de aves más diverso después de los paseriformes. Con los chotacabras (Caprimulgiformes) forman el clado Strisores. Miembros: vencejo común y colibrí zunzuncito.",
+    "en": "Swifts, hummingbirds and treeswifts: nearly 450 species, the most diverse bird order after the passerines. With the nightjars (Caprimulgiformes) they form the clade Strisores. Members: common swift and bee hummingbird."
+  },
+  "traits": {
+    "es": [
+      "Patas diminutas, cubiertas de piel desnuda en vez de escamas, que apenas sirven más que para posarse",
+      "Alas largas con un húmero corto y robusto",
+      "Colibríes: vuelo cernido, capaces de quedarse quietos en el aire"
+    ],
+    "en": [
+      "Tiny feet, covered in bare skin rather than scales, of little use except for perching",
+      "Long wings with a short, stout humerus",
+      "Hummingbirds: hovering flight, able to stand still in the air"
+    ]
+  },
+  "contrast": {
+    "es": "Los vencejos se parecen a las golondrinas (Passeriformes) por convergencia, no por parentesco: sus parientes más cercanos son los colibríes.",
+    "en": "Swifts look like swallows (Passeriformes) through convergence, not kinship: their closest relatives are the hummingbirds."
+  },
+  "etymology": {
+    "es": "Del griego a-, «sin», y pous, «pie», más -iformes: «sin pies», por sus patas diminutas.",
+    "en": "From Greek a-, 'without', and pous, 'foot', plus -iformes: 'footless', after their tiny feet."
+  },
+  "sources": [
+    {
+      "title": "Wikipedia (en): Apodiformes",
+      "url": "https://en.wikipedia.org/wiki/Apodiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "title": "Wikipedia (es): Apodiformes",
+      "url": "https://es.wikipedia.org/wiki/Apodiformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "title": "Wikipedia (en): Swift (bird)",
+      "url": "https://en.wikipedia.org/wiki/Swift_(bird)",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "title": "Wiktionary: -iformes",
+      "url": "https://en.wiktionary.org/wiki/-iformes",
+      "license": "CC BY-SA 4.0",
+      "retrieved": "2026-11-01"
+    }
+  ],
+  "status": "draft"
+}

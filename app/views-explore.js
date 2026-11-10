@@ -285,7 +285,7 @@ function speciesCard(id) {
   const photoRef = p => `<li class="photo-ref"><b>${L('Fotografía', 'Photograph')}</b>: ${esc(p.author || '')}${p.license ? `, ${App.extLink(p.license_url, esc(p.license))}` : ''}.
     ${I.url(p.source_url) ? App.extLink(p.source_url, `${esc(App.sourceName(p))} ↗`) : ''}</li>`;
   const photoRefs = App.photosOf(id).map(photoRef).join('');
-  return `<article class="plate">${head}${status}${draft && !c.field_marks ? `<p>${draft}</p>` : ''}${gradeBand(id)}${correctionsHTML(s.corrections)}${body}${videoBox(id)}
+  return `<article class="plate">${head}${status}${draft && !c.field_marks ? `<p>${draft}</p>` : ''}${gradeBand(id)}${App.changesHTML(id)}${correctionsHTML(s.corrections)}${body}${videoBox(id)}
     <h2 class="sec">${L('Tus cinco casillas', 'Your five boxes')}</h2>${App.skillBars([id])}<p class="tiny muted">${I.MASTERY_RULE()}</p>
     <section class="refs"><h2 class="sec">${L('Referencias', 'References')}</h2>${cite.order.length ? cite.refs() : ''}${photoRefs ? `<ol>${photoRefs}</ol>` : ''}
     <p class="tiny muted">${L('Clase, orden, nombre científico y nombre vulgar', 'Class, order, scientific and common name')}:

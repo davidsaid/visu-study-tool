@@ -20,6 +20,8 @@ CURATION = ROOT / "curation"
 SPECIES_COLUMNS = ["clase", "orden", "infraorden", "nombre_cientifico", "nombre_vulgar"]
 SPECIES_REQUIRED = ["clase", "orden", "nombre_cientifico", "nombre_vulgar"]
 VIDEO_COLUMNS = ["species_id", "url", "channel", "channel_url", "title", "checked"]
+CHANGE_COLUMNS = ["fecha", "nombre_cientifico", "campo", "antes", "ahora"]
+CHANGE_FIELDS = {"clase": "class", "orden": "order", "infraorden": "infraorder", "nombre_vulgar": "common_es"}
 COLLECTION_ID = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
 
@@ -170,8 +172,37 @@ def parse_videos(path, ids):
     return out
 
 
+def parse_changes(path, species):
+    """A collection's changes.csv: answers that changed in a new version of the list, so students who learnt the old
+    answer can study those species again. Optional file. Each row must match species.csv: `ahora` is the value there now.
+    Returns {species_id: [{"field", "before", "after", "date"}]}."""
+    if not Path(path).exists():
+        return {}
+    by_id, out, errors = {s["id"]: s for s in species}, {}, []
+    for r in read_csv(path, CHANGE_COLUMNS):
+        where = f"fila {r['_line']} (row {r['_line']})"
+        sid = species_id(" ".join(r["nombre_cientifico"].split()))
+        field = CHANGE_FIELDS.get(r["campo"])
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", r["fecha"]):
+            errors.append(f"{where}: la fecha '{r['fecha']}' debe ser como 2026-11-04 (date must look like 2026-11-04)")
+        elif sid not in by_id:
+            errors.append(f"{where}: '{r['nombre_cientifico']}' no está en species.csv (not in species.csv)")
+        elif not field:
+            errors.append(f"{where}: el campo '{r['campo']}' debe ser uno de {', '.join(CHANGE_FIELDS)} (unknown field)")
+        elif (by_id[sid][field] or "") != r["ahora"]:
+            errors.append(f"{where}: '{r['ahora']}' no coincide con species.csv, que dice '{by_id[sid][field] or ''}' "
+                          f"('ahora' must match species.csv)")
+        elif not r["antes"] or r["antes"] == r["ahora"]:
+            errors.append(f"{where}: 'antes' debe ser el valor anterior, distinto de 'ahora' ('antes' must be the old value)")
+        else:
+            out.setdefault(sid, []).append({"field": field, "before": r["antes"], "after": r["ahora"], "date": r["fecha"]})
+    if errors:
+        raise BuildError(f"{rel(path)}: {len(errors)} error(es):\n  " + "\n  ".join(errors))
+    return out
+
+
 def parse_collection(folder):
-    """One collection: collections/<id>/collection.csv (key,value) and species.csv, plus videos.csv if present."""
+    """One collection: collections/<id>/collection.csv (key,value) and species.csv, plus videos.csv and changes.csv if present."""
     folder = Path(folder)
     cid = folder.name
     if not COLLECTION_ID.match(cid):
@@ -187,7 +218,8 @@ def parse_collection(folder):
         raise BuildError(f"{rel(folder / 'collection.csv')}: 'orden' must be a whole number")
     return {"id": cid, "name": {"es": meta["nombre_es"], "en": meta["nombre_en"]},
             "edition": meta.get("edicion") or None, "order": order, "species": species,
-            "videos": parse_videos(folder / "videos.csv", {s["id"] for s in species})}
+            "videos": parse_videos(folder / "videos.csv", {s["id"] for s in species}),
+            "changes": parse_changes(folder / "changes.csv", species)}
 
 
 def load_collections(root=COLLECTIONS):

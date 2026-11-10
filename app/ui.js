@@ -93,6 +93,25 @@ App.nameMeaning = (id, skill) => {
   const es = gid ? App.esForm(skill, gid.split(':')[1]) : '';
   return text || es ? { key: gid || id, name: gid ? gid.split(':')[1] : s.binomial, es, text, draft: !!(c && c.status === 'draft'), sources: c && c.sources } : null;
 };
+/* Answers that changed in a newer version of the list (changes.csv): old → new, with the date. With `skill`, only that
+   box's change; with `given`, only if the answer given was the old one, said as such (she may have learnt it). */
+const CHANGE_SKILL = { class: 'class', order: 'order', common_es: 'common' };
+const CHANGE_LABEL = { class: ['Clase', 'Class'], order: ['Orden', 'Order'], infraorder: ['Infraorden', 'Infraorder'], common_es: ['Nombre vulgar', 'Common name'] };
+App.changeDate = (d, short) => I.fmtDate(d + 'T12:00', { day: 'numeric', month: short ? 'short' : 'long', year: 'numeric' });
+App.changesHTML = (id, opts = {}) => {
+  const W = E.gradeKey;
+  const list = ((App.sp(id) || {}).changes || []).filter(c => !opts.skill || CHANGE_SKILL[c.field] === opts.skill)
+    .filter(c => opts.given == null || W(opts.given) === W(c.before));
+  if (!list.length) return '';
+  const sci = f => f !== 'common_es';
+  const val = (f, v) => (sci(f) ? `<i>${esc(v)}</i>` : esc(v));
+  if (opts.given != null) {
+    return `<section class="change-note mt" role="note"><p class="eyebrow">${L('Cambio en el bestiario', 'Change in the list')}</p>${list.map(c => `<p>${L(`${val(c.field, c.before)} era la respuesta antes del ${esc(App.changeDate(c.date))}, cuando cambió el bestiario. Ahora es ${val(c.field, c.after)}.`,
+      `${val(c.field, c.before)} was the answer before ${esc(App.changeDate(c.date))}, when the list changed. It is now ${val(c.field, c.after)}.`)}</p>`).join('')}</section>`;
+  }
+  return `<section class="change-note${opts.mt === false ? '' : ' mt'}"><p class="eyebrow">${L('Cambio en el bestiario', 'Change in the list')} · ${esc(App.changeDate(list[0].date))}</p>
+    ${list.map(c => `<p>${esc(L(...CHANGE_LABEL[c.field]))}: <s>${val(c.field, c.before)}</s> → <b>${val(c.field, c.after)}</b></p>`).join('')}</section>`;
+};
 /* The block shown after a mistake: the meaning of each box involved, once per name, then the names of the
    species it was confused with, for contrast. */
 App.nameKeyHTML = (id, skills, confused, confusedSkill = 'genus') => {
@@ -237,7 +256,7 @@ let medalN = 0;
 App.medalSVG = (text, prog, size, opts) => {
   const r = 30, C = 2 * Math.PI * r, earned = prog >= 1 || (opts && opts.earned), stale = opts && opts.stale;
   const icon = opts && opts.node && (window.VISU_ICONS || {})[opts.node], clip = icon ? `mc${++medalN}` : '';
-  const inner = icon ? `<clipPath id="${clip}"><circle cx="38" cy="38" r="27"/></clipPath><g clip-path="url(#${clip})"><title>${esc(App.spName(icon.sp))}</title>
+  const inner = icon ? `<clipPath id="${clip}"><circle cx="38" cy="38" r="27"/></clipPath><g clip-path="url(#${clip})"><title>${esc(icon.sp ? App.spName(icon.sp) : I.t(icon.title))}</title>
       <g transform="translate(11 11) scale(.54)">${icon.svg}</g></g>`
     : `<text x="38" y="43" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-style="italic" font-weight="700" font-size="14" fill="${earned ? 'var(--gold)' : 'var(--ink)'}">${esc(String(text || '').slice(0, 4))}</text>`;
   return `<svg viewBox="0 0 76 76" width="${size || 76}" height="${size || 76}" aria-hidden="true" ${icon ? 'class="medal-ic"' : ''}>

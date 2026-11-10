@@ -368,6 +368,11 @@ test('real data', () => {
   ok('a finished batch puts its species first among the new ones', E.buildSession(RM, PS, { now: now2, skills: ['species'], size: SL['solos:aves'].length, introduce: true }).every(x => SL['solos:aves'].includes(x.sp)));
   const pooled = E.buildSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, pool: SL['solos:peces'], introduce: true, size: 50 });
   ok('a pool limits the session to that batch', pooled.length > 0 && pooled.every(x => SL['solos:peces'].includes(x.sp)));
+  /* Bestiary changes (changes.csv, 2026-11-10): one batch keyed by the latest date; looking at it puts its species first. */
+  const CH = E.changeLook(RM);
+  ok('the changed species form one batch keyed by date', !!CH && CH.node === 'cambios:' + CH.date && CH.ids.length > 0 && CH.ids.every(id => (RM.species[id].changes || []).length), JSON.stringify(CH));
+  const PC = E.emptyProgress(now2); PC.ui.looked = [CH.node];
+  ok('a finished changes look puts its species first among the new ones', E.buildSession(RM, PC, { now: now2, skills: ['order'], size: CH.ids.length, introduce: true }).every(x => CH.ids.includes(x.sp)));
   const facts = RM.order.reduce((a, id) => a.concat((V.bestiary.species[id].facts || []).map(f => [id, f])), []);
   const unsourced = facts.filter(([, f]) => !Array.isArray(f.src) || !f.src.length).length;
   const unknownSrc = facts.filter(([, f]) => (f.src || []).some(s => !V.bestiary.sources[s])).length;

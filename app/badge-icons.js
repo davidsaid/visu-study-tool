@@ -1,6 +1,7 @@
 /* VISU · badge icons: one cartoon of an iconic species per class, order and single-species batch (vertebrates).
    Drawn by hand as SVG for this project (MIT, like the code); decoration only, but each keeps the species' real field
-   marks. viewBox 0 0 100 100, drawn to sit inside a circle of radius 44. Keyed by tree node id; a node without an icon
+   marks. viewBox 0 0 100 100, drawn to sit inside a circle of radius 44. Keyed by tree node id (plus `cambios`, the changes
+   in the list, drawn as a list page with `title` instead of `sp`); a node without an icon
    keeps the text medal. `sp` is the species drawn (named in the medal's tooltip). Classic script: defines window.VISU_ICONS. */
 (function () {
 'use strict';
@@ -89,6 +90,14 @@ const I = {
   <path d="M50 64 L50 70 M50 70 C47 73 44 72 43 70 M50 70 C53 73 56 72 57 70" stroke="#2a1d16" stroke-width="1.6" fill="none" stroke-linecap="round"/>` },
 
  /* ---------- single-species batches ---------- */
+ /* The changes in the list (any year): a list page, one answer struck out and its replacement. */
+ 'cambios': { title: { es: 'Cambios en el bestiario', en: 'Changes in the list' }, svg: `
+  <rect x="24" y="14" width="52" height="70" rx="5" fill="#fbfaf6" stroke="#9aa3b5" stroke-width="2" transform="rotate(-6 50 49)"/>
+  <g transform="rotate(-6 50 49)" stroke-linecap="round">
+   <path d="M32 28 L66 28 M32 38 L60 38 M32 70 L62 70" stroke="#c3c8d3" stroke-width="3.4"/>
+   <path d="M32 49 L64 49" stroke="#9aa3b5" stroke-width="3.4"/><path d="M28 49 L68 49" stroke="#d8352a" stroke-width="2.6"/>
+   <path d="M32 59 L58 59" stroke="#2f8a4a" stroke-width="3.6"/>
+   <path d="M74 46 C84 50 84 58 70 60 M70 60 L75 55 M70 60 L76 63" stroke="#3b4c9b" stroke-width="2.6" fill="none"/></g>` },
  'solos:peces': { sp: 'lophius_piscatorius', svg: `
   <path d="M40 22 C40 10 52 6 56 14" stroke="#6b5a44" stroke-width="2" fill="none"/><circle cx="57" cy="15" r="4" fill="#ffe27a"/><circle cx="57" cy="15" r="7" fill="#ffe27a" opacity=".35"/>
   <path d="M78 54 L94 40 L90 56 L94 72 Z" fill="#8a7458"/>
@@ -307,7 +316,22 @@ const I = {
   <path d="M30 47 L42 47" stroke="#f4f4f0" stroke-width="2.4" stroke-linecap="round"/>
   ${EYE(31, 33, 2.8)}
   <path d="M22 36 C14 36 10 40 12 42 C16 43 22 42 24 40Z" fill="#f2c230"/>` },
- 'order:Caprimulgiformes': { sp: 'mellisuga_helenae', svg: `
+ 'order:Caprimulgiformes': { sp: 'caprimulgus_europaeus', svg: `
+  <path d="M6 72 C30 66 70 66 96 70" stroke="#6b4e34" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M30 70 L36 62 M60 68 L64 62" stroke="#6b4e34" stroke-width="2" stroke-linecap="round"/>
+  <path d="M60 58 C74 56 86 58 94 62 C86 66 74 66 60 64Z" fill="#7d6a55"/>
+  <path d="M84 60 L92 62 L84 64Z" fill="#f2f0ea"/>
+  <ellipse cx="50" cy="56" rx="26" ry="11" fill="#9a8670"/>
+  <path d="M36 50 C50 44 66 48 76 56 C62 56 48 58 36 56Z" fill="#7d6a55"/>
+  <path d="M40 52 l4 3 M48 50 l4 3 M56 51 l4 3 M64 53 l4 3" stroke="#4e3f30" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M30 58 C40 64 56 66 70 62" stroke="#c9b79c" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="3 3"/>
+  <circle cx="28" cy="50" r="12" fill="#9a8670"/>
+  <path d="M18 46 C24 42 32 42 38 46" stroke="#c9b79c" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M20 54 L34 56" stroke="#f2f0ea" stroke-width="2.2" stroke-linecap="round"/>
+  ${EYE(25, 48, 3.4)}
+  <path d="M16 51 L12 52 L16 53.5Z" fill="#3a2e24"/>
+  <path d="M16 50 L9 47 M16 51 L8 50" stroke="#3a2e24" stroke-width=".9" stroke-linecap="round"/>` },
+ 'order:Apodiformes': { sp: 'mellisuga_helenae', svg: `
   <path d="M70 70 C76 60 88 60 90 70 C86 74 80 76 76 82Z" fill="#e0607a"/><path d="M80 84 C78 90 74 94 70 96" stroke="#5e9c3a" stroke-width="3" fill="none"/>
   <path d="M40 46 C34 26 46 14 58 22 C52 30 48 40 46 50Z" fill="#c9e2f2" opacity=".85"/>
   <path d="M52 46 C62 30 78 28 82 38 C72 40 62 46 56 52Z" fill="#c9e2f2" opacity=".85"/>

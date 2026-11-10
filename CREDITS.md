@@ -211,6 +211,7 @@ Badge icons (the cartoons in the medals, `app/badge-icons.js`) were drawn for th
 | Procavia capensis — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Procavia_capensis> | 2026-11-01 |
 | Procyon lotor — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Procyon_lotor> | 2026-11-01 |
 | Pronghorn — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Pronghorn> | 2026-11-01 |
+| Prum et al. (2015), A comprehensive phylogeny of birds (Aves) using targeted next-generation DNA sequencing. Nature 526 | All rights reserved (cited) | <https://doi.org/10.1038/nature15697> | 2026-11-10 |
 | Pteropus conspicillatus — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Pteropus_conspicillatus> | 2026-11-01 |
 | Pteropus — Wikipedia (en) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Pteropus> | 2026-11-01 |
 | Puma concolor — Wikipedia (es) | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Puma_concolor> | 2026-11-01 |
@@ -787,7 +788,7 @@ Badge icons (the cartoons in the medals, `app/badge-icons.js`) were drawn for th
 | Wikipedia (en): Anglerfish | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Anglerfish> | 2026-11-01 |
 | Wikipedia (en): Anseriformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Anseriformes> | 2026-11-01 |
 | Wikipedia (en): Anteater | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Anteater> | 2026-11-01 |
-| Wikipedia (en): Apodiformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Apodiformes> | 2026-11-01 |
+| Wikipedia (en): Apodiformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Apodiformes> | 2026-11-10 |
 | Wikipedia (en): Archelosauria | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Archelosauria> | 2026-11-01 |
 | Wikipedia (en): Archosaur | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Archosaur> | 2026-11-01 |
 | Wikipedia (en): Artiodactyla | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Artiodactyla> | 2026-11-01 |
@@ -921,9 +922,10 @@ Badge icons (the cartoons in the medals, `app/badge-icons.js`) were drawn for th
 | Wikipedia (en): Squamata | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Squamata> | 2026-11-01 |
 | Wikipedia (en): Squatiniformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Squatiniformes> | 2026-11-01 |
 | Wikipedia (en): Stork | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Stork> | 2026-11-01 |
-| Wikipedia (en): Strisores | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Strisores> | 2026-11-01 |
+| Wikipedia (en): Strisores | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Strisores> | 2026-11-10 |
 | Wikipedia (en): Struthioniformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Struthioniformes> | 2026-11-01 |
 | Wikipedia (en): Suliformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Suliformes> | 2026-11-01 |
+| Wikipedia (en): Swift (bird) | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Swift_(bird)> | 2026-11-10 |
 | Wikipedia (en): Syngnathiformes | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Syngnathiformes> | 2026-11-01 |
 | Wikipedia (en): Teleost | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Teleost> | 2026-11-01 |
 | Wikipedia (en): Tetrapod | CC BY-SA 4.0 | <https://en.wikipedia.org/wiki/Tetrapod> | 2026-11-01 |
@@ -944,7 +946,7 @@ Badge icons (the cartoons in the medals, `app/badge-icons.js`) were drawn for th
 | Wikipedia (es): Anguilliformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Anguilliformes> | 2026-11-01 |
 | Wikipedia (es): Anseriformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Anseriformes> | 2026-11-01 |
 | Wikipedia (es): Anura | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Anura> | 2026-11-01 |
-| Wikipedia (es): Apodiformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Apodiformes> | 2026-11-01 |
+| Wikipedia (es): Apodiformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Apodiformes> | 2026-11-10 |
 | Wikipedia (es): Apteryx | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Apteryx> | 2026-11-01 |
 | Wikipedia (es): Archelosauria | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Archelosauria> | 2026-11-01 |
 | Wikipedia (es): Archosauria | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Archosauria> | 2026-11-01 |
@@ -1067,7 +1069,7 @@ Badge icons (the cartoons in the medals, `app/badge-icons.js`) were drawn for th
 | Wikipedia (es): Squamata | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Squamata> | 2026-11-01 |
 | Wikipedia (es): Squatiniformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Squatiniformes> | 2026-11-01 |
 | Wikipedia (es): Strigiformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Strigiformes> | 2026-11-01 |
-| Wikipedia (es): Strisores | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Strisores> | 2026-11-01 |
+| Wikipedia (es): Strisores | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Strisores> | 2026-11-10 |
 | Wikipedia (es): Struthioniformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Struthioniformes> | 2026-11-01 |
 | Wikipedia (es): Suliformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Suliformes> | 2026-11-01 |
 | Wikipedia (es): Syngnathiformes | CC BY-SA 4.0 | <https://es.wikipedia.org/wiki/Syngnathiformes> | 2026-11-01 |

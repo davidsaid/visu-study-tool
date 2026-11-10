@@ -20,7 +20,7 @@ sys.path.insert(0, str(PIPELINE))
 import build  # noqa: E402
 import facts  # noqa: E402
 import media  # noqa: E402
-from common import COLLECTIONS, ROOT, SNAPSHOT, BuildError, load_collections, parse_species, parse_videos, read_csv  # noqa: E402
+from common import COLLECTIONS, ROOT, SNAPSHOT, BuildError, load_collections, parse_changes, parse_species, parse_videos, read_csv  # noqa: E402
 
 VERT = COLLECTIONS / "vertebrados"
 FIXTURES = ROOT / "tests" / "fixtures"
@@ -383,6 +383,38 @@ class LinkStatus(unittest.TestCase):
             p.write_text("species_id,url,channel,channel_url,title,checked\nbubo_bubo,javascript:alert(1),C,https://x.org,T,\n", encoding="utf-8")
             with self.assertRaisesRegex(BuildError, "http"):
                 parse_videos(p, {"bubo_bubo"})
+
+
+class Changes(unittest.TestCase):
+    """changes.csv lists answers that changed in a new version of the list; each row must match species.csv now."""
+    SPECIES = [{"id": "apus_apus", "class": "Aves", "order": "Apodiformes", "infraorder": None, "common_es": "Vencejo común"}]
+
+    def parse(self, rows):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "changes.csv"
+            p.write_text("fecha,nombre_cientifico,campo,antes,ahora\n" + rows, encoding="utf-8")
+            return parse_changes(p, self.SPECIES)
+
+    def test_a_change_is_attached_to_its_species(self):
+        got = self.parse("2026-11-04,Apus apus,orden,Caprimulgiformes,Apodiformes\n")
+        self.assertEqual(got, {"apus_apus": [{"field": "order", "before": "Caprimulgiformes", "after": "Apodiformes", "date": "2026-11-04"}]})
+
+    def test_no_file_means_no_changes(self):
+        self.assertEqual(parse_changes(Path("/nonexistent/changes.csv"), self.SPECIES), {})
+
+    def test_now_must_match_the_species_list(self):
+        with self.assertRaisesRegex(BuildError, "species.csv"):
+            self.parse("2026-11-04,Apus apus,orden,Apodiformes,Caprimulgiformes\n")
+
+    def test_unknown_species_field_or_date_fails(self):
+        for row in ("2026-11-04,Bubo bubo,orden,A,B\n", "2026-11-04,Apus apus,genero,A,Apodiformes\n",
+                    "4/11/2026,Apus apus,orden,Caprimulgiformes,Apodiformes\n", "2026-11-04,Apus apus,orden,,Apodiformes\n"):
+            with self.subTest(row=row), self.assertRaises(BuildError):
+                self.parse(row)
+
+    def test_the_vertebrate_changes_reach_the_data(self):
+        col = [c for c in load_collections() if c["id"] == "vertebrados"][0]
+        self.assertEqual(sorted(col["changes"]), ["apus_apus", "mellisuga_helenae"])
 
 
 class CourseNotes(unittest.TestCase):

@@ -631,6 +631,8 @@ body.focus-mode .main { padding-bottom: 2rem; }
 .gthumb .tile { aspect-ratio: 1 / 1; }
 .corrections .correction { border-left: 4px solid var(--gold); background: var(--gold-soft); border-radius: 0 10px 10px 0; padding: .5rem .8rem; margin: .5rem 0; }
 .corrections .correction p { margin: .2rem 0; }
+.change-note { border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 0 10px 10px 0; padding: .5rem .8rem; }
+.change-note p { margin: .2rem 0; }
 .numin { min-height: 44px; border: 1px solid var(--rule); border-radius: 10px; padding: 0 .6rem; font: inherit; background: var(--surface); color: var(--ink); max-width: 11rem; }
 input.numin[type="number"] { width: 6rem; }
 .mock-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }

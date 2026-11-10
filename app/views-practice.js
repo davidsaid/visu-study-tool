@@ -192,7 +192,8 @@ V.hoy = function () {
     ${misses ? `<a class="game" href="#fallos">${ICON.clock}<span><b>${L('Mis fallos', 'My mistakes')}</b><span class="small muted">${L(`${misses} ${misses === 1 ? 'tarjeta que fallaste' : 'tarjetas que fallaste'} en los últimos 7 días y aún no has acertado dos días distintos.`,
         `${misses} ${misses === 1 ? 'card' : 'cards'} you missed in the last 7 days and haven’t yet got right on two different days.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>` : ''}
     <a class="game" href="#vistazos">${ICON.explorar}<span><b>${L('Primer vistazo', 'First look')}</b><span class="small muted">${look
-      ? L(`Elige un grupo y mira sus especies una a una, sin notas. Sugerido: ${App.lookLabel(look.node)}, con ${look.n} sin empezar.`,
+      ? look.changes ? L(`Elige un grupo y mira sus especies una a una, sin notas. Sugerido: ${App.lookLabel(look.node)}.`, `Pick a group and look at its species one by one, no marks. Suggested: ${App.lookLabel(look.node)}.`)
+      : L(`Elige un grupo y mira sus especies una a una, sin notas. Sugerido: ${App.lookLabel(look.node)}, con ${look.n} sin empezar.`,
         `Pick a group and look at its species one by one, no marks. Suggested: ${App.lookLabel(look.node)}, ${look.n} not started.`)
       : L(`Ya has visto todos los grupos: elige uno para repasarlo.${replay ? ` Sugerido: ${App.lookLabel(replay.node)}, con ${replay.misses} ${replay.misses === 1 ? 'fallo abierto' : 'fallos abiertos'}.` : ''}`,
         `You’ve seen every group: pick one to go over again.${replay ? ` Suggested: ${App.lookLabel(replay.node)}, ${replay.misses} open ${replay.misses === 1 ? 'mistake' : 'mistakes'}.` : ''}`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>
@@ -571,7 +572,7 @@ function feedbackHTML(it) {
   return `<div role="alert">${App.mistakeHead(L('Fallo', 'Miss'), title)}
     <div class="quiz-photo mt">${quizPhoto(it)}</div>
     <p><b>${esc(s.common_es)}</b> · <i>${esc(s.binomial)}</i> · ${esc(s.order)} · ${esc(s.class)}</p>
-    ${App.nameKeyHTML(it.sp, [it.skill])}${g && g.contrast ? keyBox(I.t(g.contrast), g.status === 'draft') : ''}${after()}</div>`;
+    ${given ? App.changesHTML(it.sp, { skill: it.skill, given }) : ''}${App.nameKeyHTML(it.sp, [it.skill])}${g && g.contrast ? keyBox(I.t(g.contrast), g.status === 'draft') : ''}${after()}</div>`;
 }
 /* Session controls. "¿Cuál es?" shares the confidence buttons, which also check the answer; route() tells them apart. */
 const onCual = () => route() === 'cual-es';

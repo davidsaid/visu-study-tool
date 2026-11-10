@@ -54,6 +54,7 @@ App.render = function (full) {
   else if (r === 'simulacro-resultados') V.simulacroResultados();
   else if (r === 'vistazos') V.vistazos();
   else if (r.startsWith('vistazo-solos-') && E.soloLooks(App.M)['solos:' + r.slice(14)]) V.vistazo('solos:' + r.slice(14));
+  else if (r.startsWith('vistazo-cambios-') && E.changeLook(App.M) && E.changeLook(App.M).node === 'cambios:' + r.slice(16)) V.vistazo('cambios:' + r.slice(16));
   else if (r.startsWith('vistazo-') && BYROUTE['grupo-' + r.slice(8)]) V.vistazo(BYROUTE['grupo-' + r.slice(8)]);
   else if (r === 'nivel') V.nivel();
   else if (r === 'explorar') V.explore(Store.data.ui.exploreSel || App.M.root, false);

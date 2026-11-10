@@ -18,6 +18,7 @@ carpeta, dentro de [`collections/`](collections/):
 | `species.csv` | Una fila por especie: lo que la herramienta pregunta y da por correcto |
 | `collection.csv` | El nombre de la colección en español y en inglés, la edición y su posición en el menú |
 | `videos.csv` | Opcional: un vídeo público por especie, con el canal que lo publicó |
+| `changes.csv` | Opcional: las respuestas que cambiaron en una versión nueva de la lista |
 
 Cada colección guarda su propio progreso: cambiar de colección en la web no borra nada.
 
@@ -64,6 +65,30 @@ lynx_pardinus,https://www.youtube.com/watch?v=…,Nombre del canal,https://www.y
 vídeo necesita su canal y el enlace al canal, para dar el crédito a quien lo publicó. Elige
 vídeos públicos que muestren al animal vivo; la comprobación revisa que el enlace funciona y
 que el vídeo se puede ver dentro de la web.
+
+## `changes.csv`
+
+Si una versión nueva de la lista cambia la clase, el orden, el infraorden o el nombre vulgar de
+una especie, quien ya la había estudiado recuerda la respuesta antigua. Anota el cambio aquí
+además de en `species.csv`:
+
+```csv
+fecha,nombre_cientifico,campo,antes,ahora
+2026-11-04,Apus apus,orden,Caprimulgiformes,Apodiformes
+```
+
+| Columna | Notas |
+|---------|-------|
+| `fecha` | La de la versión nueva de la lista, como `2026-11-04` |
+| `nombre_cientifico` | Como en `species.csv` |
+| `campo` | `clase`, `orden`, `infraorden` o `nombre_vulgar` |
+| `antes` | La respuesta anterior |
+| `ahora` | La respuesta nueva: tiene que coincidir con `species.csv`, o la comprobación se detiene |
+
+Con estas filas, la web ofrece un «Primer vistazo» solo de las especies que cambiaron, y lo
+sugiere en Hoy a quien ya había empezado alguna. En la ficha y en ese vistazo, cada especie
+muestra el cambio (antes → ahora), y si alguien responde lo antiguo, se le dice que era la
+respuesta anterior. Al empezar un curso nuevo puedes vaciar el archivo (deja la cabecera).
 
 ## Actualizar una lista, paso a paso
 
@@ -128,7 +153,8 @@ El identificador de cada foto aparece en su pie, en la ficha de la especie.
 Nada se borra al cambiar una lista. Las especies que siguen igual conservan su progreso, y las
 nuevas aparecen como nuevas. Si cambias el **nombre científico** de una especie, la
 herramienta la trata como una especie nueva y su progreso empieza de cero. Si cambias su
-orden, clase o nombre vulgar, conserva el progreso, y la pregunta pasa a pedir el valor nuevo.
+orden, clase o nombre vulgar, conserva el progreso, y la pregunta pasa a pedir el valor nuevo;
+anótalo en `changes.csv` para que quien aprendió el antiguo pueda repasarlo.
 
 ---
 
@@ -137,7 +163,10 @@ orden, clase o nombre vulgar, conserva el progreso, y la pregunta pasa a pedir e
 Each collection is a folder under `collections/` with `species.csv` (class, order,
 infraorder, scientific name, Spanish common name: the answers the tool accepts),
 `collection.csv` (Spanish and English names, edition, menu position) and an optional
-`videos.csv` (one public video per species, credited to its channel). Never rename a published
+`videos.csv` (one public video per species, credited to its channel). An optional `changes.csv`
+(`fecha,nombre_cientifico,campo,antes,ahora`) records answers that changed in a new version of
+the list; `ahora` must match `species.csv`. The site then offers a first look at just those
+species, shows old → new on their cards, and names an old answer as such. Never rename a published
 collection's folder: students' progress is stored under that name.
 
 To update or add a collection, edit or create those files on GitHub and open a pull request.

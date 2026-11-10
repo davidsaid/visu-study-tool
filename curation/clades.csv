@@ -97,7 +97,9 @@ clade:galloanserae,clade:neognathae,Galloanserae,Galloanseres,Landfowl and water
 order:Galliformes,clade:galloanserae,Galliformes,Galliformes,Landfowl,https://en.wikipedia.org/wiki/Galliformes
 order:Anseriformes,clade:galloanserae,Anseriformes,Anseriformes,Waterfowl,https://en.wikipedia.org/wiki/Anseriformes
 clade:neoaves,clade:neognathae,Neoaves,Neoaves,Neoaves,https://en.wikipedia.org/wiki/Neoaves
-order:Caprimulgiformes,clade:neoaves,Caprimulgiformes,Caprimulgiformes,Nightjars and allies,https://en.wikipedia.org/wiki/Caprimulgiformes
+clade:strisores,clade:neoaves,Strisores,Strisores,Strisores,https://en.wikipedia.org/wiki/Strisores
+order:Caprimulgiformes,clade:strisores,Caprimulgiformes,Caprimulgiformes,Nightjars and allies,https://en.wikipedia.org/wiki/Caprimulgiformes
+order:Apodiformes,clade:strisores,Apodiformes,Apodiformes,Swifts and hummingbirds,https://en.wikipedia.org/wiki/Apodiformes
 order:Columbiformes,clade:neoaves,Columbiformes,Columbiformes,Pigeons and doves,https://en.wikipedia.org/wiki/Columbiformes
 order:Cuculiformes,clade:neoaves,Cuculiformes,Cuculiformes,Cuckoos,https://en.wikipedia.org/wiki/Cuckoo
 order:Otidiformes,clade:neoaves,Otidiformes,Otidiformes,Bustards,https://en.wikipedia.org/wiki/Bustard

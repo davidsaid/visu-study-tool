@@ -12,16 +12,24 @@ const M = () => App.M, P = () => Store.data, SET = () => Store.data.settings;
 /* A class shows one slide per order (a few of its species and what they share); any other group, one slide per
    species (its photos, names and first field marks). The route carries the group, so a reload keeps it. */
 let look = null;
-const solos = node => E.soloLooks(M())[node];
+/* Batches are first looks that are not a tree group: the single-species batches ('solos:…') and the species whose answer
+   changed in a new version of the list ('cambios:<date>', see E.changeLook). */
+const changes = () => E.changeLook(M());
+const isChanges = node => !!changes() && changes().node === node;
+const solos = node => (isChanges(node) ? changes().ids : E.soloLooks(M())[node]);
 const SOLO_NAME = { 'solos:peces': ['Otros peces', 'Other fish'], 'solos:aves': ['Otras aves', 'Other birds'], 'solos:tetrapodos': ['Otros tetrápodos', 'Other tetrapods'] };
+const batchName = node => (isChanges(node) ? L('Cambios en el bestiario', 'Changes in the list') : L(...SOLO_NAME[node]));
 App.lookRoute = node => 'vistazo-' + (solos(node) ? node.replace(':', '-') : App.routeFor(node).replace(/^grupo-/, ''));
-App.lookLabel = node => (SOLO_NAME[node] ? L(`${SOLO_NAME[node][0]}: órdenes con una sola especie en el bestiario`, `${SOLO_NAME[node][1]}: orders with a single species in the list`) : `<i>${esc(node.split(':')[1])}</i>`);
+App.lookLabel = node => (isChanges(node) ? L(`Cambios en el bestiario: especies cuya respuesta cambió el ${esc(App.changeDate(changes().date))}`, `Changes in the list: species whose answer changed on ${esc(App.changeDate(changes().date))}`)
+  : SOLO_NAME[node] ? L(`${SOLO_NAME[node][0]}: órdenes con una sola especie en el bestiario`, `${SOLO_NAME[node][1]}: orders with a single species in the list`) : `<i>${esc(node.split(':')[1])}</i>`);
+App.lookChanges = changes;
 App.canLook = node => { if (solos(node)) return true; const n = M().nodes[node]; return !!n && !App.sp(node) && (n.rank === 'class' ? orderSlides(node).length > 1 : E.scopePool(M(), node).length > 1 && n.rank !== 'clade'); };
 const orderSlides = node => E.groupItems(M(), E.scopePool(M(), node), ['order']).map(g => g.node);
 const isClassLook = node => !solos(node) && M().nodes[node].rank === 'class';
 function slidesOf(node) { return solos(node) ? solos(node) : M().nodes[node].rank === 'class' ? orderSlides(node) : E.scopePool(M(), node); }
-/* What Today suggests: the order with the most species not seen yet (at least two with photos), skipping the
-   orders whose first look was finished; once those are done, the single-species batches. */
+/* What Today suggests: first, the changes in the list if she had started one of those species (she may have learnt the
+   old answer) and hasn't looked at them yet; then the order with the most species not seen yet (at least two with
+   photos), skipping the orders whose first look was finished; once those are done, the single-species batches. */
 const looked = () => P().ui.looked || [];
 App.nextLook = function () {
   const unseen = id => !App.skills().some(k => P().cards[E.cardId(id, k)]);
@@ -29,14 +37,17 @@ App.nextLook = function () {
     .filter(g => g.total > 1 && g.n > 0 && !looked().includes(g.node) && App.canLook(g.node)).sort((a, b) => b.n - a.n)[0];
   const solo = Object.keys(E.soloLooks(M())).map(node => ({ node, n: solos(node).filter(unseen).length, total: solos(node).length }))
     .find(g => g.n > 0 && !looked().includes(g.node));
-  return best || solo || null;
+  const ch = changes(), changed = ch && !looked().includes(ch.node) && ch.ids.some(id => !unseen(id)) ? { node: ch.node, n: ch.ids.filter(unseen).length, total: ch.ids.length, changes: true } : null;
+  return changed || best || solo || null;
 };
-/* Open mistakes (the Mis fallos rule) per first-look group: its order, or its batch for a species alone in its order. */
+/* Open mistakes (the Mis fallos rule) per first-look group: its order, or its batch for a species alone in its order;
+   a changed species also counts for the changes batch. */
 function lookMisses() {
-  const n = {}, batchOf = {};
+  const n = {}, batchOf = {}, ch = changes();
   Object.entries(E.soloLooks(M())).forEach(([node, ids]) => ids.forEach(id => { batchOf[id] = node; }));
   E.buildMistakes(M(), P(), { now: Date.now(), skills: App.skills(), size: Infinity }).forEach(m => {
     const node = batchOf[m.sp] || 'order:' + App.sp(m.sp).order; n[node] = (n[node] || 0) + 1;
+    if (ch && ch.ids.includes(m.sp)) n[ch.node] = (n[ch.node] || 0) + 1;
   });
   return n;
 }
@@ -54,7 +65,7 @@ function speciesSlide(id) {
     <div class="look-text"><p class="kicker"><span>${esc(s.class)}${es('class', s.class)}</span><span>${esc(s.order)}${es('order', s.order)}</span></p>
       <h2 class="look-name">${esc(App.spName(id))}</h2><p class="binom"><i>${esc(s.binomial)}</i></p>
       ${marks.length ? `<ul class="small list-tight">${marks.map(t => `<li>${esc(t)}</li>`).join('')}</ul>${App.draftTag(c.status === 'draft')}` : ''}
-      ${App.nameKeyHTML(id, ['genus'])}
+      ${App.changesHTML(id)}${App.nameKeyHTML(id, ['genus'])}
       <p class="mt">${App.cardLink(id, '')}</p></div></div>`;
 }
 /* What an order's name says. Many orders (every fish and bird order of the vertebrate list, 69 of 99) are a typical genus + "-iformes"
@@ -84,6 +95,7 @@ function orderSlide(node) {
    (ties in tree order: orders, then the single-species batches). Each tile is a badge medal: its ring is the share of the group's species mastered (gold once an
    order badge is earned), and a line says whether it was looked at, its species not started and its open mistakes. */
 const SOLO_MEDAL = { 'solos:peces': 'Pisc', 'solos:aves': 'Aves', 'solos:tetrapodos': 'Tetr' };
+const medalText = node => (isChanges(node) ? 'Δ' : SOLO_MEDAL[node]);
 V.vistazos = function () {
   App.focusMode(false);
   const now = Date.now(), skills = App.skills(), misses = lookMisses(), started = id => skills.some(k => P().cards[E.cardId(id, k)]);
@@ -91,22 +103,25 @@ V.vistazos = function () {
   const tile = node => {
     const sp = solos(node) || E.scopePool(M(), node), fresh = sp.filter(id => !started(id)).length, m = misses[node] || 0, seen = looked().includes(node);
     const mastered = sp.filter(id => E.speciesStats(M(), P(), id, skills, now).mastered).length, sci = node.split(':')[1];
-    const short = solos(node) ? L(SOLO_NAME[node][0], SOLO_NAME[node][1]) : sci;
+    const short = solos(node) ? batchName(node) : sci;
     const name = solos(node) ? esc(short) : `<i>${esc(sci).replace(/(formes|dactyla|morphia)$/, '<wbr>$1')}</i>`;   // Strigi|formes, Perisso|dactyla: the stem, then the Greek or Latin ending
-    const line = [fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '', solos(node) ? `<span class="lt-solo">${L('órdenes con 1 sola especie en el bestiario', 'orders with 1 species in the list')}</span>` : ''].filter(Boolean).join('');
+    const sub = isChanges(node) ? L(`${sp.length} especies cambiaron el ${App.changeDate(changes().date, true)}`, `${sp.length} species changed on ${App.changeDate(changes().date, true)}`)
+      : L('órdenes con 1 sola especie en el bestiario', 'orders with 1 species in the list');
+    const line = [fresh ? `${fresh} ${L(fresh === 1 ? 'nueva' : 'nuevas', 'new')}` : '', solos(node) ? `<span class="lt-solo">${esc(sub)}</span>` : ''].filter(Boolean).join('');
     const isSug = sug && node === sug.node;
     const label = [short, `${mastered}/${sp.length} ${L('dominadas', 'mastered')}`, seen ? L('visto', 'looked') : '', fresh ? `${fresh} ${L('nuevas', 'new')}` : '',
       m ? `${m} ${m === 1 ? L('fallo abierto', 'open mistake') : L('fallos abiertos', 'open mistakes')}` : '', isSug ? L('sugerido', 'suggested') : ''].filter(Boolean).join(', ');
     return `<a class="look-tile ${isSug ? 'sug' : ''}" href="#${esc(App.lookRoute(node))}" ${isSug ? 'data-suggested' : ''} aria-label="${esc(label)}">
       ${isSug ? `<span class="lt-sug" aria-hidden="true">${L('Sugerido', 'Suggested')}</span>` : ''}${seen ? `<span class="lt-seen" aria-hidden="true" title="${L('visto', 'looked')}">✓</span>` : ''}
       ${m ? `<span class="lt-miss" aria-hidden="true" title="${esc(`${m} ${L('fallos abiertos', 'open mistakes')}`)}">${m}</span>` : ''}
-      ${App.medalSVG(solos(node) ? SOLO_MEDAL[node] : sci, sp.length ? mastered / sp.length : 0, 68, { earned: !!P().badges[node], node })}
+      ${App.medalSVG(solos(node) ? medalText(node) : sci, sp.length ? mastered / sp.length : 0, 68, { earned: !!P().badges[node], node: isChanges(node) ? 'cambios' : node })}
       <span class="nm" aria-hidden="true">${name}</span>${line ? `<span class="pc" aria-hidden="true">${line}</span>` : ''}</a>`;
   };
   const orders = [...new Set(M().withPhotos.map(id => 'order:' + App.sp(id).order))].filter(o => App.canLook(o));   // tree order
   const fresh = node => (solos(node) || E.scopePool(M(), node)).filter(id => !started(id)).length;
   const all = orders.concat(Object.keys(E.soloLooks(M()))).map(node => ({ node, n: fresh(node) })).sort((a, b) => b.n - a.n).map(x => x.node);   // stable sort
-  const list = sug ? [sug.node].concat(all.filter(n => n !== sug.node)) : all;
+  const ch = changes(), pinned = [sug && sug.node, ch && ch.node].filter((n, i, a) => n && a.indexOf(n) === i);   // the suggestion, then the changes in the list
+  const list = pinned.concat(all.filter(n => !pinned.includes(n)));
   App.main().innerHTML = `<p class="eyebrow">${L('Primer vistazo', 'First look')}</p><h1>${L('Elige un grupo', 'Pick a group')}</h1>
     <p class="small muted">${L('Mira sus especies una a una, sin notas, con una pausa cada 4 para ver si las recuerdas. Puedes repetir cualquiera. El anillo es la parte de sus especies que ya dominas; ✓, ya lo has visto; el número rojo, sus fallos abiertos.',
       'Look at its species one by one, no marks, with a pause every 4 to see if you remember them. You can repeat any of them. The ring is the share of its species you’ve mastered; ✓, you’ve looked at it; the red number, its open mistakes.')}</p>
@@ -117,7 +132,7 @@ V.vistazo = function (node) {
   App.focusMode(true);
   if (!look || look.node !== node) look = { node, slides: slidesOf(node), i: 0, quiz: null, asked: {} };
   const { slides } = look, n = slides.length, end = look.i >= n, cls = isClassLook(node), solo = !!solos(node), back = 'vistazos';
-  const name = solo ? App.lookLabel(node) : `<i>${esc(M().nodes[node].scientific || node)}</i>${App.esForm(M().nodes[node].rank, M().nodes[node].scientific) ? ` · ${esc(App.esForm(M().nodes[node].rank, M().nodes[node].scientific))}` : ''}`;
+  const name = isChanges(node) ? esc(batchName(node)) : solo ? App.lookLabel(node) : `<i>${esc(M().nodes[node].scientific || node)}</i>${App.esForm(M().nodes[node].rank, M().nodes[node].scientific) ? ` · ${esc(App.esForm(M().nodes[node].rank, M().nodes[node].scientific))}` : ''}`;
   const nav = `<div class="row look-nav"><button class="btn" id="lookprev" ${look.i ? '' : 'disabled'}>‹ ${L('Anterior', 'Previous')}</button>
     <button class="btn primary grow" id="looknext">${look.i === n - 1 ? L('Terminar', 'Finish') : `${L('Siguiente', 'Next')} ›`}</button></div>`;
   const check = cls ? `<a class="btn primary big" href="#grupos" data-lookcheck="grupo">${L('¿Qué grupo es? Sus órdenes', 'Which group is it? Its orders')}</a>`
@@ -129,7 +144,9 @@ V.vistazo = function (node) {
     : look.quiz ? quizHTML(look.quiz) : `${cls ? orderSlide(slides[look.i]) : speciesSlide(slides[look.i])}${nav}`;
   App.main().innerHTML = `<div class="session-wrap">${App.sessTop(Math.min(look.i, n) / n, n, Math.min(look.i, n - 1), back)}
     <p class="eyebrow">${L('Primer vistazo', 'First look')} · ${cls ? L('sus órdenes', 'its orders') : L('sus especies', 'its species')}</p><h1>${name}</h1>
-    ${solo ? `<p class="small">${L('Cada una es la única especie de su orden en el bestiario, así que no salen en el vistazo de ningún orden.', 'Each one is the only species of its order in the list, so they don’t come up in any order’s first look.')}</p>` : ''}
+    ${isChanges(node) ? `<p class="small">${L(`El ${esc(App.changeDate(changes().date))} cambió la respuesta de estas especies en el bestiario. Si aprendiste la anterior, este repaso te ayuda a sustituirla: fíjate en el recuadro de cada una.`,
+      `On ${esc(App.changeDate(changes().date))} the list changed the answer for these species. If you learnt the old one, this helps you replace it: look at the box on each.`)}</p>`
+      : solo ? `<p class="small">${L('Cada una es la única especie de su orden en el bestiario, así que no salen en el vistazo de ningún orden.', 'Each one is the only species of its order in the list, so they don’t come up in any order’s first look.')}</p>` : ''}
     <p class="small muted">${L(`Sin notas: mira y lee, y pasa las fotos de cada animal. Cada ${QUIZ_EVERY}, una pausa para ver si lo recuerdas.`, `No marks: look and read, and flip through each animal’s photos. Every ${QUIZ_EVERY}, a pause to see if you remember.`)}</p>
     ${body}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = '';

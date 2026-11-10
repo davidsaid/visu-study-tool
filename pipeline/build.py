@@ -318,7 +318,7 @@ def video(v, links, sid, report):
     return dict(credit, url=url, status=VIDEO_STATUS[rec["status"]], checked=links["checked"])
 
 
-def build_species(species, snap, classify, corrections, videos, report):
+def build_species(species, snap, classify, corrections, videos, report, changes=None):
     accepted = [c for c in corrections if c["status"] == "accepted"]
     out = OrderedDict()
     for s in species:
@@ -346,6 +346,8 @@ def build_species(species, snap, classify, corrections, videos, report):
             "keys": keys, "video": video(videos.get(s["id"]), snap["links"], s["id"], report), "facts": fact_list,
             "corrections": [correction(c) for c in accepted if c["species_id"] == s["id"]],
         }
+        if (changes or {}).get(s["id"]):
+            out[s["id"]]["changes"] = changes[s["id"]]
     return out
 
 
@@ -603,7 +605,7 @@ def build(out=ROOT, collections_dir=COLLECTIONS, snapshot_dir=SNAPSHOT):
         species = col["species"]
         ids = {s["id"] for s in species}
         col_corr = [c for c in corrections if not c["species_id"] or c["species_id"] in ids]
-        species_out = build_species(species, snap, classify, col_corr, col["videos"], report)
+        species_out = build_species(species, snap, classify, col_corr, col["videos"], report, col["changes"])
         tree = build_tree(species, warnings, clade_rows, col["name"])
         content = compile_content(tree, warnings, registry, report, used_content, {s["class"] for s in species_out.values()})
         for s in species_out.values():

@@ -573,7 +573,8 @@ const SCENARIOS = {
   /* The first-look menu: every order that has a look, the three single-species batches, and the way back from a look. */
   'lookmenu': async () => {
     seedStorage(seen); await open('hoy'); await click('a.game[href="#vistazos"]'); await sleep(100);
-    const want = Eng().groupItems(App().M, App().M.withPhotos, ['order']).map(g => g.node).filter(App().canLook).map(App().lookRoute).concat(Object.keys(Eng().soloLooks(App().M)).map(App().lookRoute));
+    const want = Eng().groupItems(App().M, App().M.withPhotos, ['order']).map(g => g.node).filter(App().canLook).map(App().lookRoute).concat(Object.keys(Eng().soloLooks(App().M)).map(App().lookRoute))
+      .concat(Eng().changeLook(App().M) ? [App().lookRoute(Eng().changeLook(App().M).node)] : []);
     const got = Array.from(doc.querySelectorAll('.card .look-tiles a.look-tile')).map(a => a.getAttribute('href').slice(1));
     const all = want.length > 0 && want.every(r => got.includes(r)) && got.length === want.length;
     const tab = !!$('#tabbar a[href="#hoy"][aria-current="page"]');
@@ -582,7 +583,7 @@ const SCENARIOS = {
     const fixed = tiles.every(t => t.offsetWidth === 150 && t.offsetHeight === 150);
     const fits = tiles.every(t => { const b = t.getBoundingClientRect(); return Array.from(t.children).every(c => { const r = c.getBoundingClientRect(); return r.top >= b.top - 0.5 && r.bottom <= b.bottom + 0.5; }); });
     const newOf = a => Eng().soloLooks(App().M)[a.slice(9).replace('-', ':')] ? Eng().soloLooks(App().M)[a.slice(9).replace('-', ':')].length : Eng().scopePool(App().M, 'order:' + a.slice(15)).length;   // nothing started yet: all species are new
-    const counts = got.slice(1).map(r => newOf('#' + r)), sorted = counts.every((c, i) => !i || c <= counts[i - 1]);
+    const counts = got.slice(1).filter(r => !r.startsWith('vistazo-cambios-')).map(r => newOf('#' + r)), sorted = counts.every((c, i) => !i || c <= counts[i - 1]);   // the changes tile is pinned after the suggestion
     /* Every tile shows its group's cartoon (app/badge-icons.js), clipped inside the ring; so do the Insignias medals. */
     const icons = tiles.every(t => !!t.querySelector('svg.medal-ic g[clip-path] title'));
     const wbr = !!$('a.look-tile[href="#vistazo-order-Petromyzontiformes"] .nm wbr') && $('a.look-tile[href="#vistazo-order-Petromyzontiformes"] .nm').innerHTML.includes('Petromyzonti<wbr>formes');
@@ -590,8 +591,31 @@ const SCENARIOS = {
     const pickOther = !!$('a.btn[href="#vistazos"]');
     await go('vistazos');
     const chip = !!$('a.look-tile[href="#vistazo-order-Strigiformes"] .lt-seen');
-    await go('insignias'); const medalIcons = doc.querySelectorAll('.medal svg.medal-ic').length, textMedals = doc.querySelectorAll('.medal svg:not(.medal-ic)').length;   // 30 orders + 9 classes; the 3 habit badges keep their text
+    await go('insignias'); const medalIcons = doc.querySelectorAll('.medal svg.medal-ic').length, textMedals = doc.querySelectorAll('.medal svg:not(.medal-ic)').length;   // 29 orders + 9 classes; the 3 habit badges keep their text
     report({ scenario: 'lookmenu', all, tab, fixed, fits, wbr, sorted, icons, medalIcons, textMedals, pickOther, chip, n: got.length, counts: counts.slice(0, 8) });
+  },
+  /* Bestiary changes (changes.csv): the old answer is named as such after a miss; once a changed species was started,
+     Today suggests a first look at the changed species, each slide and card showing old → new; looked once, it steps aside. */
+  'cambios': async () => {
+    seedStorage(seen); await open('hoy');
+    const ch = Eng().changeLook(App().M), node = ch && ch.node, route = node && '#' + App().lookRoute(node);
+    await go('vistazos');
+    const tile = !!$(`a.look-tile[href="${route}"]`) && !$(`a.look-tile[href="${route}"][data-suggested]`);
+    App().set().level = 3; win.VISU_STORE.save(); await go('sesion'); setItem('apus_apus', 'order'); await answerTyped('Caprimulgiformes');
+    const oldNamed = /era la respuesta antes del/.test(($('.change-note') || {}).textContent || '') && /Apodiformes/.test($('.change-note').textContent);
+    await click('#nextbtn'); setItem('mellisuga_helenae', 'order'); await answerTyped('wrong');
+    const onlyOld = !$('.change-note');
+    await go('hoy');
+    const offered = /Cambios en el bestiario/.test(($('a.game[href="#vistazos"]') || {}).textContent || '');
+    await go('vistazos'); const sug = $('[data-suggested]'), suggested = !!sug && sug.getAttribute('href') === route;
+    await click(sug); await sleep(100);
+    const st = App().lookState(), slides = st.slides.slice().sort().join() === 'apus_apus,mellisuga_helenae' && /Caprimulgiformes/.test(($('.look-slide .change-note') || {}).textContent || '');
+    await lookToEnd(); await click('[data-lookcheck="foto"]'); await sleep(250);
+    const ss = App().sessionState(), check = ss.items.length > 0 && ss.items.every(x => ch.ids.includes(x.sp));
+    await go('ficha-apus_apus'); const card = /Apodiformes/.test(($('.plate .change-note') || {}).textContent || '');
+    await go('vistazos'); await reload();
+    const stepsAside = (win.VISU_STORE.data.ui.looked || []).includes(node) && ($('[data-suggested]') || {}).getAttribute?.('href') !== route && !!$(`a.look-tile[href="${route}"] .lt-seen`);
+    report({ scenario: 'cambios', node, tile, oldNamed, onlyOld, offered, suggested, slides, check, card, stepsAside });
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

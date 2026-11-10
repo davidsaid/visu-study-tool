@@ -6,7 +6,7 @@ Content files used by no collection: none.
 
 # Collection «Vertebrados» (vertebrados)
 
-308 species, 141 internal tree nodes, 12 deep-path steps.
+308 species, 143 internal tree nodes, 12 deep-path steps.
 
 ## Fact coverage
 

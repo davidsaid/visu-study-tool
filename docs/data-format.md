@@ -35,6 +35,7 @@ classic scripts, in order, before the app.
 | `collections/<id>/species.csv` | Collection maintainers, once a year | One row per species: `clase, orden, infraorden, nombre_cientifico, nombre_vulgar`. These values are canonical: they are the exam answers. A species in two collections must have the same class, order and infraorder in both |
 | `collections/<id>/collection.csv` | Collection maintainers | `key,value` rows: `nombre_es`, `nombre_en` (required), `edicion` (e.g. `2026-27`), `orden` (menu position; the lowest is the default). The folder name is the collection id (`a-z`, `0-9`, `-`) and must never change once published: progress is stored under it |
 | `collections/<id>/videos.csv` | Collection maintainers | Optional. `species_id, url, channel, channel_url, title, checked`: one public video per species. `channel` and `channel_url` are required, to credit the author |
+| `collections/<id>/changes.csv` | Collection maintainers | Optional. `fecha, nombre_cientifico, campo, antes, ahora`: an answer that changed in a new version of the list (`campo`: `clase`, `orden`, `infraorden` or `nombre_vulgar`; `fecha` like `2026-11-04`). `ahora` must equal the species' value in `species.csv` and differ from `antes`, or the build stops. Published as the species' `changes` |
 | `curation/clades.csv` | Maintainers | The clade backbone shared by every collection: `node_id, parent_id, scientific, name_es, name_en, source_url`. The prefix of `node_id` says what a row is: `deep:` (path from Life towards the root clades), `clade:` (backbone), `class:` / `order:` / `infraorder:` (attaches a group of the lists to its parent and names it), `grade:` (a class of the lists that is not a clade, such as Reptilia). A collection's tree keeps only the rows above its own classes. See `pipeline/README.md` |
 | `curation/synonyms.csv` | Maintainers | `binomial, synonym, verdict (same_taxon/parent_of_split), note`: overrides the rule that decides whether a dataset row found under another name may be used |
 | `curation/corrections.csv` | Maintainers | Notes where a list's value differs from a current authority, or from what another course writes: `species_id, field, bestiary_value, suggested_value, confidence (certain/suggested/contested/course), source_url, note_es, note_en, status (pending/accepted/rejected), collection`. `bestiary_value` is the list's value (the answer the tool accepts); `field` is a `species.csv` column (`nombre_cientifico`, `orden`, `nombre_vulgar`). A `course` row says the course of `collection` (a collection id, required for these rows) writes `suggested_value`; the card names that course and says the tool accepts `bestiary_value`, instead of "write what the bestiary says". Only `accepted` rows are shown on cards |
@@ -86,7 +87,9 @@ all its outputs to temporary files and renames them only when every step has suc
                status: "ok" | "link_only" | "broken" | "unchecked",   // link_only: plays on YouTube only
                checked: "2026-11-01" },                         // unchecked: not in links.json yet (checked = videos.csv date)
       facts: [ Fact, ... ],
-      corrections: [ Correction, ... ]                           // accepted only
+      corrections: [ Correction, ... ],                          // accepted only
+      changes: [ { field: "order", before: "Caprimulgiformes",    // only if changes.csv lists the species
+                   after: "Apodiformes", date: "2026-11-04" } ]
     }
   },
   tree: {

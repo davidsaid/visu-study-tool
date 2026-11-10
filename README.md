@@ -125,7 +125,7 @@ contribution needs, and the tests it must pass.
 | Path | Contents |
 |------|----------|
 | `index.html`, `app/` | The website. Plain HTML, CSS and JavaScript, no build step |
-| `collections/` | One folder per collection: `species.csv`, `collection.csv`, `videos.csv` |
+| `collections/` | One folder per collection: `species.csv`, `collection.csv`, `videos.csv`, `changes.csv` |
 | `data/` | Generated data the website loads (`collections.js`, and per collection `bestiary.js`, `media.js`, `content.js`). Do not edit |
 | `media/` | Photos, 3–4 per species, with credits in [`media/CREDITS.md`](media/CREDITS.md) |
 | `curation/` | Clade backbone, name notes, photo overrides (CSV), shared by every collection |

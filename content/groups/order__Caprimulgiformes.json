@@ -1,25 +1,25 @@
 {
   "summary": {
-    "es": "En el bestiario, este orden se usa en sentido amplio, equivalente al clado Strisores: chotacabras, guácharo, vencejos y colibríes. Los estudios filogenéticos han mostrado que vencejos y colibríes (Apodiformes) están emparentados con los chotacabras. Miembros: chotacabras europeo, guácharo, vencejo común y colibrí zunzuncito.",
-    "en": "In the bestiary this order is used in a broad sense, equivalent to the clade Strisores: nightjars, the oilbird, swifts and hummingbirds. Phylogenetic studies have shown that swifts and hummingbirds (Apodiformes) are related to nightjars. Members: European nightjar, oilbird, common swift and bee hummingbird."
+    "es": "Chotacabras y aves afines, casi todas nocturnas o crepusculares. Con vencejos y colibríes (Apodiformes) forman el clado Strisores, que solo los estudios genéticos han revelado. Algunas clasificaciones (como la del IOC) dan al guácharo un orden propio, Steatornithiformes. Miembros: chotacabras europeo y guácharo.",
+    "en": "Nightjars and their allies, nearly all nocturnal or crepuscular. With swifts and hummingbirds (Apodiformes) they form the clade Strisores, revealed only by genetic studies. Some classifications (such as the IOC's) give the oilbird an order of its own, Steatornithiformes. Members: European nightjar and oilbird."
   },
   "traits": {
     "es": [
-      "Patas pequeñas y débiles, poco aptas para caminar (Apodiformes significa «sin pies»)",
+      "Patas pequeñas y débiles, poco aptas para caminar",
       "Alas largas, a menudo puntiagudas",
       "Chotacabras: pico corto con una comisura muy amplia y una uña en forma de peine en el dedo medio",
-      "Chotacabras y guácharo, nocturnos, con plumaje críptico como corteza u hojas secas; el guácharo se orienta por ecolocalización"
+      "Nocturnos, con plumaje críptico como corteza u hojas secas; el guácharo se orienta por ecolocalización"
     ],
     "en": [
-      "Small, weak feet of little use for walking (Apodiformes means 'footless')",
+      "Small, weak feet of little use for walking",
       "Long, often pointed wings",
       "Nightjars: short bill with a very wide gape and a comb-like claw on the middle toe",
-      "Nightjars and the oilbird are nocturnal, with cryptic bark- or leaf-like plumage; the oilbird echolocates"
+      "Nocturnal, with cryptic bark- or leaf-like plumage; the oilbird echolocates"
     ]
   },
   "contrast": {
-    "es": "Antes se pensaba que los chotacabras eran parientes de las rapaces nocturnas (Strigiformes), e incluso se incluían en ellas; hoy se agrupan con vencejos y colibríes.",
-    "en": "Nightjars were once thought to be close to owls (Strigiformes) and were even placed within them; today they are grouped with swifts and hummingbirds."
+    "es": "Antes se pensaba que los chotacabras eran parientes de las rapaces nocturnas (Strigiformes), e incluso se incluían en ellas; hoy se agrupan con vencejos y colibríes (Apodiformes) en Strisores.",
+    "en": "Nightjars were once thought to be close to owls (Strigiformes) and were even placed within them; today they are grouped with swifts and hummingbirds (Apodiformes) in Strisores."
   },
   "etymology": {
     "es": "«Con forma de Caprimulgus»: del latín capra, «cabra», y mulgere, «ordeñar»: «chotacabras», por el viejo mito de que maman la leche de las cabras.",

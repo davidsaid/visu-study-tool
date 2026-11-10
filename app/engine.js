@@ -388,7 +388,8 @@ function sessionSplit(dueN, newN, size, cap) {
 /* Species in groups whose "Primer vistazo" was finished: they are the first new species to practise. */
 function lookedSpecies(M, P) {
   const out = new Set(), solos = soloLooks(M);
-  ((P.ui && P.ui.looked) || []).forEach(node => { (M.nodes[node] ? speciesUnder(M, node) : solos[node] || []).forEach(id => out.add(id)); });
+  const ch = changeLook(M);
+  ((P.ui && P.ui.looked) || []).forEach(node => { (M.nodes[node] ? speciesUnder(M, node) : solos[node] || (ch && ch.node === node ? ch.ids : [])).forEach(id => out.add(id)); });
   return out;
 }
 /* Species alone in their order (counting species with photos) have no order to look at, so their first look comes in three
@@ -404,6 +405,14 @@ function soloLooks(M) {
   });
   const out = {}; SOLO_BATCHES.filter(k => by[k]).forEach(k => { out[k] = by[k]; });   // batches in this order, the order Today offers them
   return (M._solos = out);
+}
+/* Species whose answer changed in a new version of the list (changes.csv), for students who learnt the old one: one
+   first-look batch keyed by the latest change date ('cambios:2026-11-04'), so a later change makes it new again. */
+function changeLook(M) {
+  if (M._changes !== undefined) return M._changes;
+  const ids = M.withPhotos.filter(id => (M.species[id].changes || []).length);
+  const date = ids.flatMap(id => M.species[id].changes.map(c => c.date)).sort().pop();
+  return (M._changes = ids.length ? { node: 'cambios:' + date, ids, date } : null);
 }
 /* New species a day so that every species not started yet is started 3 days before the exam (the last days are for
    reviewing). Null without an exam date, or when the date is too close for new species. */
@@ -789,7 +798,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool, soloLooks,
+  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool, soloLooks, changeLook,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };
