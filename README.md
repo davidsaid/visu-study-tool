@@ -87,7 +87,8 @@ is sent anywhere. That means:
 - Another browser, another device, private mode, clearing your browsing data, or using a
   different copy (online vs downloaded) will not show your progress.
 - **Save a copy** regularly (*Guardar copia*). It is a small file you keep. *Recuperar copia*
-  loads it back in any browser.
+  loads it back in any browser. If that browser already has progress, it offers to *combine* the
+  two (every answer from both is kept) or to *replace* it.
 - Each collection keeps its own progress, and its own copies.
 
 The website explains this in plain words on its **Cómo funciona / How it works** page, along with

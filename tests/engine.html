@@ -373,6 +373,29 @@ test('real data', () => {
   ok('the changed species form one batch keyed by date', !!CH && CH.node === 'cambios:' + CH.date && CH.ids.length > 0 && CH.ids.every(id => (RM.species[id].changes || []).length), JSON.stringify(CH));
   const PC = E.emptyProgress(now2); PC.ui.looked = [CH.node];
   ok('a finished changes look puts its species first among the new ones', E.buildSession(RM, PC, { now: now2, skills: ['order'], size: CH.ids.length, introduce: true }).every(x => CH.ids.includes(x.sp)));
+  /* Merging two browsers' progress (2026-11-13): logs joined once, a card answered on both sides replayed in time order. */
+  const T0 = Date.UTC(2026, 10, 1, 9), H = 3600e3, ans = (P, card, ts, kind, game) => {
+    if (game !== 'par') P.cards[card] = E.applyAnswer(P.cards[card], { level: 3, kind, hints: 0, conf: 'sure' }, ts).card;
+    P.log.push({ ts, card, game: game || 'foto', level: 3, rating: null, hints: 0, conf: 'sure', kind }); P.days[E.ymd(ts)] = (P.days[E.ymd(ts)] || 0) + 1;
+  };
+  const MA = E.emptyProgress(T0), MB = E.emptyProgress(T0), ALL = E.emptyProgress(T0);
+  [[MA, 'lynx_pardinus:genus', 0, 'right'], [MB, 'lynx_pardinus:genus', 30, 'wrong'], [MA, 'lynx_pardinus:genus', 80, 'right'], [MB, 'bubo_bubo:order', 5, 'right'], [MA, 'bubo_bubo:species', 2, 'right', 'par']]
+    .forEach(([P, c, h, k, g]) => { ans(P, c, T0 + h * H, k, g); });
+  [['lynx_pardinus:genus', 0, 'right'], ['bubo_bubo:species', 2, 'right', 'par'], ['bubo_bubo:order', 5, 'right'], ['lynx_pardinus:genus', 30, 'wrong'], ['lynx_pardinus:genus', 80, 'right']].forEach(([c, h, k, g]) => ans(ALL, c, T0 + h * H, k, g));
+  MA.badges['class:Aves'] = { tier: 'bronze', at: T0 + 9 * H }; MB.badges['class:Aves'] = { tier: 'silver', at: T0 + 50 * H }; MB.ui.looked = ['order:Strigiformes']; MB.settings.examDate = '2026-12-15'; MA.settings.lang = 'en';
+  const MG = E.mergeProgress(MA, MB, T0 + 100 * H);
+  eq('merge: every answer of both sides, once, in time order', MG.progress.log.map(r => r.ts), ALL.log.map(r => r.ts));
+  eq('merge: a card answered on both sides equals answering it all in one browser', MG.progress.cards['lynx_pardinus:genus'], ALL.cards['lynx_pardinus:genus']);
+  eq('merge: a card from one side keeps its state', MG.progress.cards['bubo_bubo:order'], MB.cards['bubo_bubo:order']);
+  ok('merge: badges keep the higher tier, first looks join, this browser keeps its settings, a missing exam date is filled',
+    MG.progress.badges['class:Aves'].tier === 'silver' && MG.progress.ui.looked.includes('order:Strigiformes') && MG.progress.settings.lang === 'en' && MG.progress.settings.examDate === '2026-12-15');
+  eq('merge: 2 answers new to this browser', MG.added, 2);
+  const MG2 = E.mergeProgress(MG.progress, MB, T0 + 100 * H);
+  ok('merge: merging the same copy again changes nothing', MG2.added === 0 && JSON.stringify(MG2.progress) === JSON.stringify(MG.progress));
+  const OLD = JSON.parse(JSON.stringify(MA)); OLD.log = OLD.log.slice(0, 1); OLD.cards = { 'lynx_pardinus:genus': E.applyAnswer(null, { level: 3, kind: 'right', hints: 0, conf: 'sure' }, T0).card };
+  ok('merge: an older copy of the same browser adds nothing', JSON.stringify(E.mergeProgress(MA, OLD, T0).progress.cards) === JSON.stringify(MA.cards) && E.mergeProgress(MA, OLD, T0).added === 0);
+  const iss = []; E.normalizeProgress(JSON.parse(JSON.stringify(MG.progress)), T0, iss);
+  eq('merge: the result passes validation', iss, []);
   const facts = RM.order.reduce((a, id) => a.concat((V.bestiary.species[id].facts || []).map(f => [id, f])), []);
   const unsourced = facts.filter(([, f]) => !Array.isArray(f.src) || !f.src.length).length;
   const unknownSrc = facts.filter(([, f]) => (f.src || []).some(s => !V.bestiary.sources[s])).length;

@@ -772,6 +772,51 @@ function normalizeProgress(p, now, issues) {
   }
   return out;
 }
+/* Merges two progress objects of the same collection (two browsers, or a copy from the other one). Every answer is in
+   the log, so the logs are joined without duplicates and a card answered in both is rebuilt by replaying its answers in
+   time order; a card whose answers all come from one side keeps that side's state as it is. `base` is this browser's
+   progress: its settings, theme and screen state stay. Merging the same copy twice changes nothing.
+   Returns { progress, added: answers new to `base` }. */
+const BADGE_RANK = { bronze: 1, silver: 2, gold: 3 };
+const SCHEDULING_GAMES = ['foto', 'hoja', 'mock', 'grupo'];   // the games that record answers through applyAnswer
+function mergeProgress(base, other, now) {
+  const rowKey = r => JSON.stringify([r.ts, r.card, r.game, r.level, r.rating, r.hints, r.conf, r.kind, r.with || null, r.typed || null]);
+  const keysA = new Set(base.log.map(rowKey));
+  const out = JSON.parse(JSON.stringify(base));
+  const extra = other.log.filter(r => !keysA.has(rowKey(r)));
+  const seenExtra = new Set(), added = extra.filter(r => { const k = rowKey(r); if (seenExtra.has(k)) return false; seenExtra.add(k); return true; });
+  out.log = base.log.concat(added).sort((a, b) => a.ts - b.ts).slice(-MAX_LOG);
+  /* Cards: rows per card on each side decide which state wins, or whether to replay. */
+  const keysB = new Set(other.log.map(rowKey)), byCard = {};
+  out.log.forEach(r => { if (SCHEDULING_GAMES.includes(r.game)) (byCard[r.card] = byCard[r.card] || []).push(r); });
+  const ids = new Set(Object.keys(base.cards).concat(Object.keys(other.cards), Object.keys(byCard)));
+  ids.forEach(id => {
+    const rows = byCard[id] || [], a = base.cards[id], b = other.cards[id];
+    const allA = rows.every(r => keysA.has(rowKey(r))), allB = rows.every(r => keysB.has(rowKey(r)));
+    if (a && allA) out.cards[id] = JSON.parse(JSON.stringify(a));
+    else if (b && allB) out.cards[id] = JSON.parse(JSON.stringify(b));
+    else if (rows.length) out.cards[id] = rows.reduce((c, r) => applyAnswer(c, { level: r.level, kind: r.kind, hints: r.hints || 0, conf: r.conf }, r.ts).card, null);
+    else out.cards[id] = JSON.parse(JSON.stringify(((a && a.p && a.p.last) || 0) >= ((b && b.p && b.p.last) || 0) ? a || b : b));
+  });
+  /* Study days: the larger count of either side, or of the joined log (two browsers on the same day). */
+  const logDays = {};
+  out.log.forEach(r => { const d = ymd(r.ts); logDays[d] = (logDays[d] || 0) + 1; });
+  Object.keys(Object.assign({}, other.days, logDays)).forEach(d => { out.days[d] = Math.max(out.days[d] || 0, other.days[d] || 0, logDays[d] || 0); });
+  Object.keys(other.badges).forEach(k => {
+    const x = out.badges[k], y = other.badges[k];
+    if (!x || BADGE_RANK[y.tier] > BADGE_RANK[x.tier] || (y.tier === x.tier && y.at < x.at)) out.badges[k] = Object.assign({}, y);
+  });
+  const mockKey = m => `${m.at}|${m.id || ''}`, mocks = new Set(out.mocks.map(mockKey));
+  out.mocks = out.mocks.concat(other.mocks.filter(m => !mocks.has(mockKey(m))).map(m => JSON.parse(JSON.stringify(m)))).sort((a, b) => a.at - b.at).slice(-MAX_MOCKS);
+  out.stats.sessions = Math.max(base.stats.sessions || 0, other.stats.sessions || 0);   // only "at least one" is used (habit:first_page)
+  out.createdAt = Math.min(base.createdAt || now, other.createdAt || now);
+  out.meta.seenNotice = base.meta.seenNotice || other.meta.seenNotice;
+  Object.keys(other.meta.readiness).forEach(d => { out.meta.readiness[d] = Math.max(out.meta.readiness[d] || 0, other.meta.readiness[d]); });
+  if (!out.settings.examDate && other.settings.examDate) out.settings.examDate = other.settings.examDate;
+  const looked = (base.ui.looked || []).concat((other.ui.looked || []).filter(n => !(base.ui.looked || []).includes(n)));
+  if (looked.length) out.ui.looked = looked.slice(0, MAX_LOOKED);
+  return { progress: out, added: added.length };
+}
 function makeExport(P, now, edition, collection) {
   return { app: 'visu-study-tool', format: 'visu-progress', schemaVersion: SCHEMA_VERSION, exportedAt: new Date(now).toISOString(),
     collection: collection || 'vertebrados', edition: edition || null, progress: P };
@@ -798,7 +843,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool, soloLooks, changeLook,
+  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool, soloLooks, changeLook, mergeProgress,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

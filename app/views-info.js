@@ -82,8 +82,10 @@ V.como = function () {
       'Open the site in the browser or on the device where you want to carry on.')}</li>
     <li>${L('Pulsa <b>«Recuperar copia»</b> y elige el archivo <b>visu-progreso-….json</b>.',
         'Press <b>“Restore a copy”</b> and pick the <b>visu-progreso-….json</b> file.')}</li>
-    <li>${L('Listo: tu progreso vuelve a estar aquí. Sustituye al que hubiera en este navegador.',
-        'Done: your progress is back. It replaces whatever was in this browser.')}</li></ol>
+    <li>${L('Si este navegador ya tiene progreso, elige <b>«Combinar»</b> para juntar los dos (no se pierde nada) o <b>«Reemplazar»</b> para quedarte solo con el de la copia. Si no tiene, la copia se carga sin más.',
+        'If this browser already has progress, choose <b>“Combine”</b> to join both (nothing is lost) or <b>“Replace”</b> to keep only the copy’s. If it has none, the copy just loads.')}</li></ol>
+  <div class="note-box info"><b>${L('¿Estudias en dos navegadores?', 'Studying in two browsers?')}</b> ${L('En el primero, «Guardar copia». En el segundo, «Recuperar copia» y «Combinar». Luego, en el segundo, «Guardar copia», y en el primero, «Recuperar copia» y «Combinar»: los dos quedan iguales.',
+      'In the first, “Save a copy”. In the second, “Restore a copy” and “Combine”. Then save a copy in the second and restore it in the first with “Combine”: both end up the same.')}</div>
   <div class="note-box info"><b>${L('¿Cuándo?', 'When?')}</b> ${L('Una vez a la semana, y siempre <b>antes</b> de cambiar de navegador o de dispositivo, de borrar los datos del navegador o de pasar de la versión en internet a la descargada. La barra «Última copia» te avisa si hace más de 7 días.',
       'Once a week, and always <b>before</b> switching browser or device, clearing browser data, or moving between the online and downloaded versions. The “Last copy” bar reminds you after 7 days.')}</div>
   <section class="card">${App.backupHTML()}</section>

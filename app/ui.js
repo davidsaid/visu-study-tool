@@ -391,19 +391,53 @@ App.importText = text => {
     if (err.issues && window.console) console.warn('VISU import rejected:', err.issues.slice(0, 20));
     return false;
   }
-  /* Rendering happens outside the try above: a screen error is not a bad file. */
-  res.progress.meta.seenNotice = true;
-  res.progress.meta.lastBackup = res.exportedAt || Date.now();
-  const ok = Store.replace(res.progress);
-  I.lang = Store.data.settings.lang === 'en' ? 'en' : 'es';
-  App.applyTheme();
+  /* With progress here already, ask whether to combine the two or replace this browser's; otherwise just load it. */
+  if (Store.data.log.length && res.progress.log.length) { askImport(res); return true; }
+  return finishImport(res, 'replace');
+};
+/* Rendering happens outside the parsing above: a screen error is not a bad file. */
+function finishImport(res, how) {
   const when = res.exportedAt ? I.fmtDate(res.exportedAt) : '?';
-  App.toast(ok ? L(`Copia recuperada: ${res.answers} respuestas. Era del ${esc(when)}.`, `Copy restored: ${res.answers} answers. It was from ${esc(when)}.`)
-    : L('Copia leída, pero este navegador no deja guardarla: se perderá al cerrar.',
-        'Copy read, but this browser won’t let us keep it: it will be lost when you close.'));
+  let ok, msg;
+  if (how === 'merge') {
+    const m = E.mergeProgress(Store.data, res.progress, Date.now());
+    m.progress.meta.seenNotice = true;
+    ok = Store.replace(m.progress);
+    msg = L(`Progreso combinado: ${m.added} ${m.added === 1 ? 'respuesta nueva' : 'respuestas nuevas'} de la copia del ${esc(when)}. Para tener lo mismo en el otro navegador, guarda aquí una copia y combínala allí.`,
+      `Progress combined: ${m.added} new ${m.added === 1 ? 'answer' : 'answers'} from the copy of ${esc(when)}. To have the same in the other browser, save a copy here and combine it there.`);
+  } else {
+    res.progress.meta.seenNotice = true;
+    res.progress.meta.lastBackup = res.exportedAt || Date.now();
+    ok = Store.replace(res.progress);
+    I.lang = Store.data.settings.lang === 'en' ? 'en' : 'es';
+    App.applyTheme();
+    msg = L(`Copia recuperada: ${res.answers} respuestas. Era del ${esc(when)}.`, `Copy restored: ${res.answers} answers. It was from ${esc(when)}.`);
+  }
+  App.toast(ok ? msg : L('Copia leída, pero este navegador no deja guardarla: se perderá al cerrar.', 'Copy read, but this browser won’t let us keep it: it will be lost when you close.'));
   App.render(true);
   return true;
-};
+}
+/* The choice, in a modal dialog: combine (the default, nothing is lost), replace, or leave everything as it is. */
+function askImport(res) {
+  let d = document.getElementById('importask');
+  if (!d) { d = document.createElement('dialog'); d.id = 'importask'; d.className = 'importask'; document.body.appendChild(d); }
+  const here = Store.data.log.length, when = res.exportedAt ? I.fmtDate(res.exportedAt) : '?';
+  d.setAttribute('aria-labelledby', 'ia-h');
+  d.innerHTML = `<h2 id="ia-h">${L('¿Combinar o reemplazar?', 'Combine or replace?')}</h2>
+    <p class="small">${L(`Este navegador ya tiene progreso (${here} ${here === 1 ? 'respuesta' : 'respuestas'}). La copia tiene ${res.answers}, y es del ${esc(when)}.`,
+      `This browser already has progress (${here} ${here === 1 ? 'answer' : 'answers'}). The copy has ${res.answers}, from ${esc(when)}.`)}</p>
+    <div class="ia-opts">
+      <button class="btn primary big" data-importhow="merge"><span><b>${L('Combinar', 'Combine')}</b><span class="small">${L('Junta las respuestas de los dos. No se pierde nada. Para usar dos navegadores.', 'Joins the answers of both. Nothing is lost. For using two browsers.')}</span></span></button>
+      <button class="btn big" data-importhow="replace"><span><b>${L('Reemplazar', 'Replace')}</b><span class="small">${L('Borra el progreso de este navegador y deja solo el de la copia.', 'Deletes this browser’s progress and keeps only the copy’s.')}</span></span></button>
+      <button class="btn" data-importhow="cancel">${L('Cancelar', 'Cancel')}</button></div>`;
+  d.onclick = e => {
+    const b = e.target.closest('[data-importhow]'); if (!b) return;
+    d.close();
+    if (b.dataset.importhow !== 'cancel') finishImport(res, b.dataset.importhow);
+  };
+  d.showModal();
+  d.querySelector('[data-importhow="merge"]').focus();
+}
 document.getElementById('importfile').addEventListener('change', e => {
   const f = e.target.files[0]; if (!f) return;
   const rd = new FileReader();

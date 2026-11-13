@@ -169,6 +169,31 @@ const SCENARIOS = {
     report({ scenario: 'collections', vert, art, importOtherRefused: imported === false, toast, back,
       storedKeys: Object.keys(localStorage).filter(k => k.startsWith('visu-')).sort() });
   },
+  /* Restoring a copy over existing progress (2026-11-13): a dialog offers Combine (focused) or Replace; Cancel keeps
+     everything; combining the same copy again adds nothing; an empty browser loads the copy without asking. */
+  'merge': async () => {
+    seedStorage(seen); await open('hoy');
+    App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('right');
+    const mine = win.VISU_STORE.data.log.length;
+    const other = Eng().emptyProgress(Date.now()); other.meta.seenNotice = true;
+    other.cards['bubo_bubo:order'] = Eng().applyAnswer(null, { level: 3, kind: 'right', hints: 0, conf: 'sure' }, Date.now() - 864e5).card;
+    other.log.push({ ts: Date.now() - 864e5, card: 'bubo_bubo:order', game: 'foto', level: 3, rating: 3, hints: 0, conf: 'sure', kind: 'right' });
+    other.days[Eng().ymd(Date.now() - 864e5)] = 1;
+    const copy = JSON.stringify(Eng().makeExport(other, Date.now(), null, App().collection()));
+    await go('ajustes'); App().importText(copy); await sleep(80);
+    const dlg = $('#importask'), asked = !!dlg && dlg.open && doc.activeElement === $('[data-importhow="merge"]');
+    await click('[data-importhow="cancel"]'); const cancelled = !$('#importask').open && win.VISU_STORE.data.log.length === mine;
+    App().importText(copy); await sleep(80); await click('[data-importhow="merge"]'); await sleep(150);
+    const S = win.VISU_STORE.data, combined = S.log.length === mine + 1 && !!S.cards['bubo_bubo:order'] && !!S.cards['milvus_milvus:genus']
+      && /Progreso combinado: 1 respuesta nueva/.test($('#toast').textContent) && JSON.parse(localStorage.getItem(KEY)).log.length === mine + 1;
+    App().importText(copy); await sleep(80); await click('[data-importhow="merge"]'); await sleep(150);
+    const again = win.VISU_STORE.data.log.length === mine + 1 && /0 respuestas nuevas/.test($('#toast').textContent);
+    App().importText(copy); await sleep(80); await click('[data-importhow="replace"]'); await sleep(150);
+    const replaced = win.VISU_STORE.data.log.length === 1 && !win.VISU_STORE.data.cards['milvus_milvus:genus'];
+    seedStorage(seen); await reload(); await go('ajustes'); App().importText(copy); await sleep(150);   // a hash-only src change fires no load
+    const emptyLoads = !($('#importask') && $('#importask').open) && win.VISU_STORE.data.log.length === 1;
+    report({ scenario: 'merge', asked, cancelled, combined, again, replaced, emptyLoads });
+  },
   /* The photo asked about stays on screen with its credit: wrong-species comparison, and mock results. */
   'credits': async () => {
     seedStorage({ meta: { seenNotice: true }, settings: { mockSize: 5 } }); await open('hoy');
@@ -616,6 +641,11 @@ const SCENARIOS = {
     await go('vistazos'); await reload();
     const stepsAside = (win.VISU_STORE.data.ui.looked || []).includes(node) && ($('[data-suggested]') || {}).getAttribute?.('href') !== route && !!$(`a.look-tile[href="${route}"] .lt-seen`);
     report({ scenario: 'cambios', node, tile, oldNamed, onlyOld, offered, suggested, slides, check, card, stepsAside });
+  },
+  'merge-shot': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('right');
+    const other = JSON.parse(JSON.stringify(win.VISU_STORE.data)); other.log[0].ts -= 864e5;
+    await go('ajustes'); App().importText(JSON.stringify(Eng().makeExport(other, Date.now(), null, App().collection())));
   },
   'vistazo-shot': async () => { seedStorage(seen); await open(Q.get('at') || 'vistazo-order-Accipitriformes'); },
   /* "¿Cuál sobra?": four photos, names hidden; a wrong pick explains both orders; the level switch starts a new round. */

@@ -60,7 +60,7 @@ S.save = function () {
   try { localStorage.setItem(KEY, JSON.stringify(S.data)); S.error = null; return true; }
   catch (e) { S.error = e && e.name === 'QuotaExceededError' ? 'quota' : 'write'; return false; }
 };
-S.replace = function (progress) { S.data = progress; return S.save(); };
+S.replace = function (progress) { S.data = progress; return S.save(); };   // also used to store a merged copy (E.mergeProgress)
 /* Opens another collection: remembered for next time, then the page reloads with its data. */
 S.switchCollection = function (id) {
   let remembered = false;
