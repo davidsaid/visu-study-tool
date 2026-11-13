@@ -2,7 +2,8 @@
 
    Keys: 'visu-progress-v1' for the vertebrate collection (the key used before there were collections,
    so existing progress needs no migration) and 'visu-progress-v1:<id>' for any other collection.
-   'visu-collection' remembers which collection is open (app/collection.js).
+   'visu-collection' remembers which collection is open (app/collection.js). 'visu-undo-v1' ('visu-undo-v1:<id>') keeps the
+   progress as it was before the last restored copy changed it, so Ajustes can go back to it.
 
    Stored shape (also the "progress" member of an exported file):
    { schemaVersion, createdAt, settings, cards, log, days, badges, mocks, stats, meta, ui }
@@ -20,6 +21,9 @@ const BASE = 'visu-progress-v1';
 const COLLECTION = window.VISU_COLLECTION || 'vertebrados';
 const KEY = COLLECTION === 'vertebrados' ? BASE : `${BASE}:${COLLECTION}`;
 const S = { ok: true, data: null, error: null, key: KEY, collection: COLLECTION };
+/* Restoring a copy first keeps this browser's progress here, so the change can be undone ('visu-undo-v1', or
+   'visu-undo-v1:<id>'; a different prefix, so it is never taken for a collection's progress). */
+const UNDO_KEY = KEY.replace(BASE, 'visu-undo-v1');
 
 /* A collection opened for the first time keeps the language, theme and "seen the notice" of another one. */
 function inheritPrefs(P) {
@@ -61,6 +65,29 @@ S.save = function () {
   catch (e) { S.error = e && e.name === 'QuotaExceededError' ? 'quota' : 'write'; return false; }
 };
 S.replace = function (progress) { S.data = progress; return S.save(); };   // also used to store a merged copy (E.mergeProgress)
+/* Keeps the current progress before an import changes it. True if kept; false if the browser refused (then the caller
+   stops); null when this browser can't store anything anyway. info = { how: 'merge'|'replace', copyAt }. */
+S.saveUndo = function (info) {
+  if (!S.ok) return null;
+  try { localStorage.setItem(UNDO_KEY, JSON.stringify({ at: Date.now(), how: info.how, copyAt: info.copyAt || null, progress: S.data })); return true; }
+  catch (e) { return false; }
+};
+/* The kept progress, validated like any copy: { at, how, copyAt, answers, progress }, or null. */
+S.undoInfo = function () {
+  let u = null;
+  try { u = JSON.parse(localStorage.getItem(UNDO_KEY)); } catch (e) { return null; }
+  if (!u || typeof u !== 'object' || !u.progress) return null;
+  const progress = E.normalizeProgress(u.progress, Date.now());
+  return { at: +u.at || null, how: u.how === 'merge' ? 'merge' : 'replace', copyAt: +u.copyAt || null, answers: progress.log.length, progress };
+};
+/* Goes back to the kept progress and forgets it. */
+S.undoImport = function () {
+  const u = S.undoInfo(); if (!u) return false;
+  S.data = u.progress;
+  const ok = S.save();
+  if (ok) { try { localStorage.removeItem(UNDO_KEY); } catch (e) { /* stays offered */ } }
+  return ok;
+};
 /* Opens another collection: remembered for next time, then the page reloads with its data. */
 S.switchCollection = function (id) {
   let remembered = false;

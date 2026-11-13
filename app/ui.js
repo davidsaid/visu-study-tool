@@ -391,13 +391,19 @@ App.importText = text => {
     if (err.issues && window.console) console.warn('VISU import rejected:', err.issues.slice(0, 20));
     return false;
   }
-  /* With progress here already, ask whether to combine the two or replace this browser's; otherwise just load it. */
-  if (Store.data.log.length && res.progress.log.length) { askImport(res); return true; }
+  /* With progress here already, always ask (an empty or old copy would wipe it otherwise); with none, just load it. */
+  if (Store.data.log.length) { askImport(res); return true; }
   return finishImport(res, 'replace');
 };
-/* Rendering happens outside the parsing above: a screen error is not a bad file. */
+/* Rendering happens outside the parsing above: a screen error is not a bad file. This browser's progress is kept
+   first (Store.saveUndo), so the toast and Ajustes can undo the change; if the browser refuses to keep it, nothing changes. */
 function finishImport(res, how) {
   const when = res.exportedAt ? I.fmtDate(res.exportedAt) : '?';
+  if (Store.data.log.length && Store.saveUndo({ how, copyAt: res.exportedAt }) === false) {
+    App.toast(L('No se ha cambiado nada: este navegador no deja guardar una copia de seguridad de tu progreso actual. Pulsa antes «Guardar copia».',
+      'Nothing changed: this browser won’t keep a backup of your current progress. Press “Save a copy” first.'));
+    return false;
+  }
   let ok, msg;
   if (how === 'merge') {
     const m = E.mergeProgress(Store.data, res.progress, Date.now());
@@ -413,23 +419,33 @@ function finishImport(res, how) {
     App.applyTheme();
     msg = L(`Copia recuperada: ${res.answers} respuestas. Era del ${esc(when)}.`, `Copy restored: ${res.answers} answers. It was from ${esc(when)}.`);
   }
-  App.toast(ok ? msg : L('Copia leída, pero este navegador no deja guardarla: se perderá al cerrar.', 'Copy read, but this browser won’t let us keep it: it will be lost when you close.'));
+  const undo = Store.undoInfo() ? ` <button class="btn compact" data-undoimport>${L('Deshacer', 'Undo')}</button>` : '';
+  App.toast(ok ? msg + undo : L('Copia leída, pero este navegador no deja guardarla: se perderá al cerrar.', 'Copy read, but this browser won’t let us keep it: it will be lost when you close.'));
   App.render(true);
   return true;
 }
-/* The choice, in a modal dialog: combine (the default, nothing is lost), replace, or leave everything as it is. */
+/* The choice, in a modal dialog: combine (the default, nothing is lost), replace, or leave everything as it is. A copy
+   with no answers, or fewer than this browser, is called out: replacing with it loses progress (2026-11-13: a copy saved
+   right after opening the site, with 0 answers, wiped a browser's progress). */
 function askImport(res) {
   let d = document.getElementById('importask');
   if (!d) { d = document.createElement('dialog'); d.id = 'importask'; d.className = 'importask'; document.body.appendChild(d); }
   const here = Store.data.log.length, when = res.exportedAt ? I.fmtDate(res.exportedAt) : '?';
+  const lastHere = Store.data.log.reduce((a, r) => Math.max(a, r.ts), 0), n = (k, es1, esN, en1, enN) => `${k} ${L(k === 1 ? es1 : esN, k === 1 ? en1 : enN)}`;
+  const warn = !res.answers ? L(`Esta copia <b>no tiene ninguna respuesta</b>: se guardó antes de empezar a estudiar. Si reemplazas, perderás todo el progreso de este navegador.`,
+      `This copy <b>has no answers</b>: it was saved before any studying. Replacing would lose all of this browser’s progress.`)
+    : res.answers < here ? L(`Esta copia tiene <b>menos respuestas</b> que este navegador; quizá es una copia antigua. Si reemplazas, perderás al menos ${n(here - res.answers, 'respuesta', 'respuestas', 'answer', 'answers')}.`,
+      `This copy has <b>fewer answers</b> than this browser; it may be an old copy. Replacing would lose at least ${n(here - res.answers, 'respuesta', 'respuestas', 'answer', 'answers')}.`) : '';
   d.setAttribute('aria-labelledby', 'ia-h');
   d.innerHTML = `<h2 id="ia-h">${L('¿Combinar o reemplazar?', 'Combine or replace?')}</h2>
-    <p class="small">${L(`Este navegador ya tiene progreso (${here} ${here === 1 ? 'respuesta' : 'respuestas'}). La copia tiene ${res.answers}, y es del ${esc(when)}.`,
-      `This browser already has progress (${here} ${here === 1 ? 'answer' : 'answers'}). The copy has ${res.answers}, from ${esc(when)}.`)}</p>
+    <ul class="small ia-facts"><li>${L('Este navegador', 'This browser')}: <b>${n(here, 'respuesta', 'respuestas', 'answer', 'answers')}</b>${lastHere ? `, ${L('la última del', 'the last on')} ${esc(I.fmtDate(lastHere))}` : ''}</li>
+      <li>${L('La copia', 'The copy')}: <b>${n(res.answers, 'respuesta', 'respuestas', 'answer', 'answers')}</b>, ${L('guardada el', 'saved on')} ${esc(when)}</li></ul>
+    ${warn ? `<p class="small ia-warn" role="alert">${warn}</p>` : ''}
     <div class="ia-opts">
       <button class="btn primary big" data-importhow="merge"><span><b>${L('Combinar', 'Combine')}</b><span class="small">${L('Junta las respuestas de los dos. No se pierde nada. Para usar dos navegadores.', 'Joins the answers of both. Nothing is lost. For using two browsers.')}</span></span></button>
-      <button class="btn big" data-importhow="replace"><span><b>${L('Reemplazar', 'Replace')}</b><span class="small">${L('Borra el progreso de este navegador y deja solo el de la copia.', 'Deletes this browser’s progress and keeps only the copy’s.')}</span></span></button>
-      <button class="btn" data-importhow="cancel">${L('Cancelar', 'Cancel')}</button></div>`;
+      <button class="btn big ${warn ? 'ia-risky' : ''}" data-importhow="replace"><span><b>${warn ? L('Reemplazar de todos modos', 'Replace anyway') : L('Reemplazar', 'Replace')}</b><span class="small">${L('Borra el progreso de este navegador y deja solo el de la copia.', 'Deletes this browser’s progress and keeps only the copy’s.')}</span></span></button>
+      <button class="btn" data-importhow="cancel">${L('Cancelar', 'Cancel')}</button></div>
+    <p class="tiny muted">${L('Antes de cambiar nada, tu progreso actual se guarda aquí: podrás deshacerlo desde Ajustes.', 'Before anything changes, your current progress is kept here: you can undo it from Settings.')}</p>`;
   d.onclick = e => {
     const b = e.target.closest('[data-importhow]'); if (!b) return;
     d.close();
@@ -438,6 +454,14 @@ function askImport(res) {
   d.showModal();
   d.querySelector('[data-importhow="merge"]').focus();
 }
+App.undoImport = () => {
+  const ok = Store.undoImport();
+  I.lang = Store.data.settings.lang === 'en' ? 'en' : 'es';
+  App.applyTheme();
+  App.toast(ok ? L('Has vuelto al progreso que tenías antes de recuperar la copia.', 'You’re back to the progress you had before restoring the copy.')
+    : L('No se pudo volver al progreso anterior.', 'Couldn’t go back to the earlier progress.'));
+  App.render(true);
+};
 document.getElementById('importfile').addEventListener('change', e => {
   const f = e.target.files[0]; if (!f) return;
   const rd = new FileReader();
@@ -451,8 +475,17 @@ App.backupHTML = () => {
       'Your progress is saved in this browser, on this device.') : L('Este navegador no deja guardar. Guarda una copia antes de cerrar.',
       'This browser won’t let us save. Save a copy before closing.')}</span></div>
     <p class="small m0">${L('Última copia', 'Last copy')}: <b class="${nudge ? 'gold' : ''}">${esc(r.txt)}</b>${nudge ? ` · ${L('conviene hacer una', 'time to make one')}` : ''}</p>
-    <div class="btns"><button class="btn primary" data-export>${ICON.download}${L('Guardar copia', 'Save a copy')}</button><button class="btn" data-import>${ICON.upload}${L('Recuperar copia', 'Restore a copy')}</button></div></div>`;
+    <div class="btns"><button class="btn primary" data-export>${ICON.download}${L('Guardar copia', 'Save a copy')}</button><button class="btn" data-import>${ICON.upload}${L('Recuperar copia', 'Restore a copy')}</button></div>${undoHTML()}</div>`;
 };
+/* While a kept progress exists: what it was and a button to go back to it. */
+function undoHTML() {
+  const u = Store.undoInfo(); if (!u) return '';
+  const d = x => esc(I.fmtDate(x, { day: 'numeric', month: 'short' })), copy = u.copyAt ? L(` del ${d(u.copyAt)}`, ` from ${d(u.copyAt)}`) : '';
+  const did = u.how === 'merge' ? L(`combinaste tu progreso con una copia${copy}`, `you combined your progress with a copy${copy}`) : L(`reemplazaste tu progreso por una copia${copy}`, `you replaced your progress with a copy${copy}`);
+  const ans = `${u.answers} ${u.answers === 1 ? L('respuesta', 'answer') : L('respuestas', 'answers')}`;
+  return `<p class="small mt">${L(`El ${d(u.at)} ${did}. Tu progreso de antes (${ans}) sigue guardado aquí.`, `On ${d(u.at)} ${did}. Your progress from before (${ans}) is still kept here.`)}
+    <button class="btn compact" data-undoimport>${L('Volver al progreso anterior', 'Go back to the earlier progress')}</button></p>`;
+}
 
 /* ---------- citations: numbered per card, popover with the source ---------- */
 App.citeReg = {};
@@ -463,6 +496,7 @@ App.closePop = closePop;
 document.addEventListener('click', e => {
   const ex = e.target.closest('[data-export]'); if (ex) { e.preventDefault(); App.exportBackup(); return; }
   const im = e.target.closest('[data-import]'); if (im) { e.preventDefault(); document.getElementById('importfile').click(); return; }
+  const un = e.target.closest('[data-undoimport]'); if (un) { e.preventDefault(); App.undoImport(); return; }
   const b = e.target.closest('.cite');
   if (b) {
     e.preventDefault();

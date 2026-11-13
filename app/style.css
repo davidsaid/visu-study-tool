@@ -689,3 +689,6 @@ input.numin[type="number"] { width: 6rem; }
 .ia-opts .btn.big { text-align: left; justify-content: flex-start; }
 .ia-opts .btn.big > span { display: flex; flex-direction: column; gap: .15rem; }
 .ia-opts .btn.big .small { font-weight: 400; }
+.ia-facts { margin: .4rem 0; padding-left: 1.1rem; }
+.ia-warn { border-left: 4px solid var(--error); background: var(--error-soft); border-radius: 0 10px 10px 0; padding: .5rem .8rem; }
+.ia-opts .btn.ia-risky { border-color: var(--error); }

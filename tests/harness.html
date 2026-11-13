@@ -642,6 +642,37 @@ const SCENARIOS = {
     const stepsAside = (win.VISU_STORE.data.ui.looked || []).includes(node) && ($('[data-suggested]') || {}).getAttribute?.('href') !== route && !!$(`a.look-tile[href="${route}"] .lt-seen`);
     report({ scenario: 'cambios', node, tile, oldNamed, onlyOld, offered, suggested, slides, check, card, stepsAside });
   },
+  /* A copy with no answers (saved right after opening the site) over real progress (2026-11-13: it wiped a browser):
+     the dialog always opens and warns; replacing keeps the old progress, which the toast and Ajustes can bring back;
+     if the browser won't keep that backup, nothing changes. */
+  'poison': async () => {
+    seedStorage(seen); await open('hoy');
+    App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('right'); await click('#nextbtn'); setItem('bubo_bubo', 'order'); await answerTyped('right');
+    const mine = win.VISU_STORE.data.log.length;
+    const empty = Eng().emptyProgress(Date.now() - 9 * 864e5); empty.meta.seenNotice = true;
+    const copy = JSON.stringify(Eng().makeExport(empty, Date.now() - 9 * 864e5, '2026-27', App().collection()));
+    await go('ajustes'); App().importText(copy); await sleep(80);
+    const asked = !!$('#importask') && $('#importask').open && /no tiene ninguna respuesta/.test($('#importask .ia-warn').textContent) && /Reemplazar de todos modos/.test($('[data-importhow="replace"]').textContent);
+    await click('[data-importhow="replace"]'); await sleep(150);
+    const wiped = win.VISU_STORE.data.log.length === 0, toastUndo = !!$('#toast [data-undoimport]');
+    await go('ajustes'); const offered = !!$('main [data-undoimport]') && new RegExp(mine + ' respuestas').test($('main [data-undoimport]').parentElement.textContent);
+    await click('main [data-undoimport]'); await sleep(150);
+    const restored = win.VISU_STORE.data.log.length === mine && JSON.parse(localStorage.getItem(KEY)).log.length === mine && !$('main [data-undoimport]') && localStorage.getItem('visu-undo-v1') === null;
+    const saved = win.VISU_STORE.saveUndo; win.VISU_STORE.saveUndo = () => false;
+    App().importText(copy); await sleep(80); await click('[data-importhow="replace"]'); await sleep(150);
+    const refused = win.VISU_STORE.data.log.length === mine && /No se ha cambiado nada/.test($('#toast').textContent);
+    win.VISU_STORE.saveUndo = saved;
+    const fewer = Eng().makeExport(JSON.parse(JSON.stringify(win.VISU_STORE.data)), Date.now(), null, App().collection()); fewer.progress.log = fewer.progress.log.slice(0, 1);
+    App().importText(JSON.stringify(fewer)); await sleep(80);
+    const older = /menos respuestas/.test(($('#importask .ia-warn') || {}).textContent || ''); await click('[data-importhow="cancel"]');
+    report({ scenario: 'poison', asked, wiped, toastUndo, offered, restored, refused, older });
+  },
+  'poison-shot': async () => {
+    seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('right');
+    const empty = Eng().emptyProgress(Date.now() - 9 * 864e5); await go('ajustes');
+    App().importText(JSON.stringify(Eng().makeExport(empty, Date.now() - 9 * 864e5, null, App().collection())));
+    if (Q.get('then') === 'replace') { await sleep(80); await click('[data-importhow="replace"]'); }
+  },
   'merge-shot': async () => {
     seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'genus'); await answerTyped('right');
     const other = JSON.parse(JSON.stringify(win.VISU_STORE.data)); other.log[0].ts -= 864e5;
