@@ -22,34 +22,36 @@ const BYROUTE = {};
 Object.keys(App.M.nodes).forEach(id => { BYROUTE[App.routeFor(id)] = id; });
 App.M.order.forEach(id => { BYROUTE[App.routeFor(id)] = id; });
 
-/* A card opened from a practice screen remembers where it came from: the card shows "Volver a la
-   práctica", and going back (that button or the browser's back) resumes the same question instead of
-   starting a new session. */
+/* A card opened from a practice screen opens over it (App.cardPop), so the question stays where it was: leaving the
+   route lost the session too easily (David, 2026-11-13). A modified click still opens it in a new tab. */
 const PRACTICE = ['sesion', 'sesion-repaso', 'fallos', 'grupos', 'grupos-repaso', 'sobra', 'parejas', 'hoja', 'cual-es', 'resumen', 'simulacro-resultados'];
 document.addEventListener('click', e => {
   const a = e.target.closest && e.target.closest('a[href^="#ficha-"], a[href^="#grupo-"]');
   const here = (location.hash || '#hoy').slice(1);
-  if (a && (PRACTICE.includes(here) || here.startsWith('vistazo-'))) App.returnTo = here;
+  if (!a || !(PRACTICE.includes(here) || here.startsWith('vistazo-')) || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+  let r = a.getAttribute('href').slice(1);
+  try { r = decodeURIComponent(r); } catch (err) { /* keep raw */ }
+  if (!BYROUTE[r]) return;
+  e.preventDefault();
+  App.cardPop(BYROUTE[r]);
 }, true);
 
 App.render = function (full) {
   let r = (location.hash || '#hoy').slice(1);
   try { r = decodeURIComponent(r); } catch (e) { /* keep raw */ }
-  const resume = !!App.returnTo && r === App.returnTo;
-  if (resume || (!BYROUTE[r] && r !== App.returnTo)) App.returnTo = null;
   App.closePop();
   App.shell(r);
   document.getElementById('app').classList.remove('explore');
   App.aside().innerHTML = '';
   const s = App.sessionState();
-  if (r === 'sesion' || r === 'sesion-repaso') { if (!(resume && s && s.game === 'foto') && (!full || !s || s.game !== 'foto')) App.newSession('foto', { force: r === 'sesion-repaso' }); V.session(); }
-  else if (r === 'fallos') { if (!(resume && s && s.mistakes) && (!full || !s || !s.mistakes)) App.newSession('foto', { mistakes: true }); V.session(); }
-  else if (r === 'grupos' || r === 'grupos-repaso') { if (!(resume && s && s.game === 'grupo') && (!full || !s || s.game !== 'grupo')) App.newSession('grupo', { force: r === 'grupos-repaso' }); V.session(); }
-  else if (r === 'hoja') { if (!(resume && s && s.game === 'hoja') && (!full || !s || s.game !== 'hoja')) App.newSession('hoja'); V.session(); }
+  if (r === 'sesion' || r === 'sesion-repaso') { if (!full || !s || s.game !== 'foto') App.newSession('foto'); V.session(); }
+  else if (r === 'fallos') { if (!full || !s || !s.mistakes) App.newSession('foto', { mistakes: true }); V.session(); }
+  else if (r === 'grupos' || r === 'grupos-repaso') { if (!full || !s || s.game !== 'grupo') App.newSession('grupo'); V.session(); }
+  else if (r === 'hoja') { if (!full || !s || s.game !== 'hoja') App.newSession('hoja'); V.session(); }
   else if (r === 'resumen') V.resumen();
-  else if (r === 'parejas') { if (!(resume && App.pairState()) && (!full || !App.pairState())) App.newPairs(); V.parejas(); }
-  else if (r === 'sobra') { if (!(resume && App.oddState()) && (!full || !App.oddState())) App.newOdd(); V.sobra(); }
-  else if (r === 'cual-es') { if (!(resume && App.reverseState()) && (!full || !App.reverseState())) App.newReverse(); V.cual(); }
+  else if (r === 'parejas') { if (!full || !App.pairState()) App.newPairs(); V.parejas(); }
+  else if (r === 'sobra') { if (!full || !App.oddState()) App.newOdd(); V.sobra(); }
+  else if (r === 'cual-es') { if (!full || !App.reverseState()) App.newReverse(); V.cual(); }
   else if (r === 'simulacro') { if (!full || !App.mockState() || App.mockState().done) App.newMock(); V.simulacro(); }
   else if (r === 'simulacro-resultados') V.simulacroResultados();
   else if (r === 'vistazos') V.vistazos();
@@ -58,7 +60,7 @@ App.render = function (full) {
   else if (r.startsWith('vistazo-') && BYROUTE['grupo-' + r.slice(8)]) V.vistazo(BYROUTE['grupo-' + r.slice(8)]);
   else if (r === 'nivel') V.nivel();
   else if (r === 'explorar') V.explore(Store.data.ui.exploreSel || App.M.root, false);
-  else if (BYROUTE[r]) V.explore(BYROUTE[r], !full);
+  else if (BYROUTE[r]) { if (App.sp(BYROUTE[r]) && !full) Store.recordView([BYROUTE[r]]); V.explore(BYROUTE[r], !full); }
   else if (r === 'insignias') V.insignias();
   else if (r === 'ajustes') V.ajustes();
   else if (r === 'como-funciona' || r === 'como-funciona-plan') V.como();

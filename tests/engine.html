@@ -166,33 +166,75 @@ test('mastery rule', () => {
 test('sessions', () => {
   const now = Date.UTC(2026, 10, 1, 10);
   const P = E.emptyProgress(now);
-  P.settings.newPerDay = 2;
   const skills = ['class', 'order', 'genus', 'species', 'common'];
+  const spOf = items => [...new Set(items.map(x => x.sp))].sort();
+  const perSp = items => Math.max(...Object.values(items.reduce((a, x) => { a[x.sp] = (a[x.sp] || 0) + 1; return a; }, {})));
+  /* Quiz order and two boxes per species (David, 2026-11-13). */
   let items = E.buildSession(M, P, { now, skills, size: 20, rng: E.rngFrom(1) });
-  eq('first session: newPerDay × 5 new cards', items.length, 10);
-  ok('first session: new species come in tree order (first order first)', items.every(x => ['milvus_milvus', 'milvus_migrans'].includes(x.sp)), items.map(x => x.sp).join());
+  eq('first session: 20 questions, two boxes each of ten species', [items.length, spOf(items).length, perSp(items)], [20, 10, 2]);
   ok('no species twice in a row', items.every((x, i) => !i || items[i - 1].sp !== x.sp), items.map(x => x.sp).join());
-  P.cards['tyto_alba:genus'] = E.applyAnswer(null, { level: 1, kind: 'wrong' }, now - 5 * 60 * 1000).card;
-  items = E.buildSession(M, P, { now, skills, size: 3, rng: E.rngFrom(2) });
-  ok('due cards come first', items.some(x => x.sp === 'tyto_alba' && x.skill === 'genus'), JSON.stringify(items));
-  ok('species without photos are never asked', E.buildSession(M, P, { now, skills, size: 99, force: true }).every(x => x.sp !== 'petromyzon_marinus'));
+  ok('species without photos are never asked', E.buildSession(M, P, { now, skills, size: 99 }).every(x => x.sp !== 'petromyzon_marinus'));
   const scoped = E.buildSession(M, E.emptyProgress(now), { now, skills, size: 50, scope: 'order:Carnivora', rng: E.rngFrom(3) });
-  ok('group scope only asks that group', scoped.length && scoped.every(x => M.species[x.sp].order === 'Carnivora'));
-  /* A pile of due reviews keeps a third of the session for new species (David, 2026-11-08). */
-  eq('split: reviews alone leave a third for new cards', E.sessionSplit(500, 50, 20), { due: 13, fresh: 7 });
-  eq('split: room new cards don\'t use goes to reviews', E.sessionSplit(500, 2, 20), { due: 18, fresh: 2 });
-  eq('split: room reviews don\'t use goes to new cards', E.sessionSplit(3, 50, 20), { due: 3, fresh: 17 });
-  const pile = E.emptyProgress(now); pile.settings.newPerDay = 10;
-  ['milvus_milvus', 'milvus_migrans', 'buteo_buteo', 'aquila_chrysaetos'].forEach(id => skills.forEach(k => { pile.cards[id + ':' + k] = { p: { first: now - 3 * E.DAY, due: now - 60000 } }; }));
-  const mixed = E.buildSession(M, pile, { now, skills, size: 20, rng: E.rngFrom(4) });
-  eq('with 20 reviews due, 7 of 20 cards are still new', mixed.filter(x => !pile.cards[x.sp + ':' + x.skill]).length, 7);
-  pile.ui.looked = ['order:Carnivora'];
-  ok('new species come first from groups she has had a first look at', E.buildSession(M, pile, { now, skills, size: 20, rng: E.rngFrom(5) }).filter(x => !pile.cards[x.sp + ':' + x.skill]).every(x => M.species[x.sp].order === 'Carnivora'));
-  const exam = E.emptyProgress(now); exam.settings.examDate = E.ymd(now + 12 * E.DAY);
-  const pace = E.suggestNewPerDay(M, exam, skills, now), withPhotos = M.withPhotos.length;
-  eq('pace: every species not started, over the days until 3 days before the exam', pace && [pace.remaining, pace.days, pace.perDay], [withPhotos, 9, Math.ceil(withPhotos / 9)]);
-  exam.settings.examDate = E.ymd(now + 2 * E.DAY);
-  eq('pace: none when the exam is 3 days away or less', E.suggestNewPerDay(M, exam, skills, now), null);
+  eq('group scope only asks that group, two boxes each', [scoped.length, scoped.every(x => M.species[x.sp].order === 'Carnivora')], [6, true]);
+  const PV = E.emptyProgress(now); M.withPhotos.forEach(id => { if (id !== 'tyto_alba') PV.views[id] = 3; });
+  eq('fewest views: the species seen least comes first', spOf(E.buildSession(M, PV, { now, skills, size: 2, rng: E.rngFrom(7) })), ['tyto_alba']);
+  const PL = E.emptyProgress(now); PL.ui.looked = ['order:Accipitriformes'];
+  ok('fewest views: a group whose first look was finished counts as seen', E.buildSession(M, PL, { now, skills, size: 16, rng: E.rngFrom(8) }).every(x => M.species[x.sp].order !== 'Accipitriformes'));
+  eq('exposures: views (at least 1 after a first look), plus the answers from before views were counted', (() => {
+    const X = E.emptyProgress(now); X.meta.viewsFrom = now - DAY; X.views.lynx_pardinus = 2; X.ui.looked = ['order:Carnivora'];
+    [3, 2, 1].forEach(h => X.log.push({ ts: now - 2 * DAY - h, card: 'lynx_pardinus:genus', game: 'foto', level: 1, kind: 'right' }));
+    X.log.push({ ts: now - 2 * DAY, card: 'lynx_pardinus:order', game: 'foto', level: 1, kind: 'right' });
+    X.log.push({ ts: now - 60000, card: 'panthera_leo:order', game: 'foto', level: 1, kind: 'right' });   // after: counted as a view already
+    const x = E.exposures(M, X, skills); return [x.lynx_pardinus, x.panthera_leo, x.tyto_alba]; })(), [5, 1, 0]);
+  eq('a copy from before views were counted starts counting at load; a new one counts from its creation',
+    [E.normalizeProgress({ log: [] }, now).meta.viewsFrom, E.normalizeProgress(E.emptyProgress(now - DAY), now).meta.viewsFrom], [now, now - DAY]);
+  /* The worked examples (David, 2026-11-13): a quiz of 2 species. Answers are logged and views recorded as the app does. */
+  const ex = (P0, ids, kind, at) => ids.forEach(id => { P0.views[id] = (P0.views[id] || 0) + 1; P0.viewedAt[id] = at;
+    ['genus', 'species'].forEach(k => { P0.cards[id + ':' + k] = E.applyAnswer(P0.cards[id + ':' + k], { level: 1, kind, conf: 'sure' }, at).card;
+      P0.log.push({ ts: at, card: id + ':' + k, game: 'foto', level: 1, kind }); }); });
+  const quiz = (P0, sortBy, t) => spOf(E.buildSession(M, P0, { now: t, skills, size: 4, sortBy, pool: ['tyto_alba', 'panthera_onca', 'buteo_buteo', 'lynx_pardinus'], rng: E.rngFrom(t % 97) }));
+  const V1 = E.emptyProgress(now); V1.views = { tyto_alba: 1, panthera_onca: 1, buteo_buteo: 2, lynx_pardinus: 2 };
+  V1.viewedAt = { tyto_alba: now - 9 * DAY, panthera_onca: now - 9 * DAY, buteo_buteo: now - 8 * DAY, lynx_pardinus: now - 7 * DAY };
+  const r1 = quiz(V1, 'views', now); ex(V1, r1, 'wrong', now);
+  const r2 = quiz(V1, 'views', now + 60000); ex(V1, r2, 'wrong', now + 60000);
+  const r3 = quiz(V1, 'views', now + 120000);
+  eq('fewest views: all wrong, and still the next quiz moves on (least recently seen breaks the tie)', [r1, r2, r3],
+    [['panthera_onca', 'tyto_alba'], ['buteo_buteo', 'lynx_pardinus'], ['panthera_onca', 'tyto_alba']]);
+  const F1 = E.emptyProgress(now), miss = (id, k, kind, at) => F1.log.push({ ts: at, card: id + ':' + k, game: 'foto', level: 1, kind });
+  F1.views = { tyto_alba: 2, panthera_onca: 2, buteo_buteo: 2, lynx_pardinus: 2 };
+  F1.viewedAt = { tyto_alba: now - 9 * DAY, panthera_onca: now - 8 * DAY, buteo_buteo: now - 7 * DAY, lynx_pardinus: now - 6 * DAY };
+  miss('tyto_alba', 'genus', 'wrong', now - 9 * DAY); miss('panthera_onca', 'order', 'wrong', now - 8 * DAY); miss('buteo_buteo', 'genus', 'wrong', now - 7 * DAY);
+  miss('buteo_buteo', 'species', 'wrong', now - 7 * DAY); miss('lynx_pardinus', 'class', 'wrong', now - 6 * DAY); miss('lynx_pardinus', 'class', 'right', now - 6 * DAY + 1);
+  const f1 = quiz(F1, 'mistakes', now);
+  eq('most mistakes: only open mistakes are in play (a right answer since closes one)', f1, ['panthera_onca', 'tyto_alba']);
+  const fb = E.buildSession(M, F1, { now, skills, size: 2, sortBy: 'mistakes', pool: ['buteo_buteo'] });
+  eq('most mistakes: a species’ open boxes are asked first', fb.map(x => x.skill).sort(), ['genus', 'species']);
+  F1.views.tyto_alba++; F1.viewedAt.tyto_alba = now; miss('tyto_alba', 'genus', 'right', now);   // right: closed
+  F1.views.panthera_onca++; F1.viewedAt.panthera_onca = now; miss('panthera_onca', 'order', 'wrong', now);   // wrong again: still open, one more view
+  eq('most mistakes: a closed one leaves, one missed again waits behind those seen less', quiz(F1, 'mistakes', now + 60000), ['buteo_buteo', 'panthera_onca']);
+  const none = E.emptyProgress(now);
+  eq('most mistakes: no open mistakes, no quiz', E.buildSession(M, none, { now, skills, size: 20, sortBy: 'mistakes' }).length, 0);
+  const G1 = E.emptyProgress(now), mastered = { p: { seen: 3, ok: 3, streak: 3, first: now - 30 * DAY, last: now - DAY, due: now + 9 * DAY }, m: { due: now + 9 * DAY, s: 10, d: 5, st: 2, last: now - DAY, reps: 3, lapses: 0 } };
+  skills.forEach(k => { G1.cards['lynx_pardinus:' + k] = JSON.parse(JSON.stringify(mastered)); });
+  G1.views = { tyto_alba: 1, panthera_onca: 2, buteo_buteo: 2, lynx_pardinus: 0 };
+  const g1 = quiz(G1, 'progress', now);
+  ok('least progress: a mastered species is out, even with the fewest views', g1.length === 2 && g1.includes('tyto_alba') && !g1.includes('lynx_pardinus'), g1.join());
+  ok('least progress: a mastered species whose recall has faded is back in play', quiz(G1, 'progress', now + 20 * DAY).includes('lynx_pardinus'));
+  G1.views.panthera_onca = 1; G1.viewedAt = { tyto_alba: now - DAY, panthera_onca: now - DAY };
+  skills.forEach(k => { G1.cards['tyto_alba:' + k] = { p: { seen: 2, ok: 2, streak: 2, first: now - 3 * DAY, last: now - DAY, due: now + DAY } }; });
+  eq('least progress: equal views and equally recent, the lower progress first', spOf(E.buildSession(M, G1, { now, skills, size: 2, sortBy: 'progress', pool: ['tyto_alba', 'panthera_onca'] })), ['panthera_onca']);
+  const PT = E.emptyProgress(now); M.withPhotos.forEach(id => { PT.views[id] = 1; PT.viewedAt[id] = now - DAY; }); PT.views.buteo_buteo = 0; PT.views.tyto_alba = 0;
+  PT.cards['buteo_buteo:class'] = { p: { seen: 0, first: now - DAY, due: now - 1000 } };
+  eq('a remaining tie goes to the earliest due', spOf(E.buildSession(M, PT, { now, skills, size: 2, rng: E.rngFrom(11) })), ['buteo_buteo']);
+  const PW = E.emptyProgress(now); ['class', 'order', 'genus'].forEach(k => { PW.cards['lynx_pardinus:' + k] = { p: { seen: 2, ok: 2, streak: 2, first: now - DAY, due: now + DAY } }; });
+  eq('a species’ weakest boxes are asked', E.buildSession(M, PW, { now, skills, size: 2, pool: ['lynx_pardinus'] }).map(x => x.skill).sort(), ['common', 'species']);
+  ok('seen at least once: viewed, in a finished first look, or answered', E.speciesViewed(M, PL, 'milvus_milvus') && E.speciesViewed(M, PV, 'lynx_pardinus') && !E.speciesViewed(M, PV, 'tyto_alba') && E.speciesViewed(M, PW, 'lynx_pardinus'));
+  eq('no daily limit on new species, in any order', ['progress', 'views'].map(s => spOf(E.buildSession(M, E.emptyProgress(now), { now, skills, size: 20, sortBy: s })).length), [10, 10]);
+  const intro = E.buildSession(M, E.emptyProgress(now), { now, skills, size: 50, scope: 'order:Carnivora', sortBy: 'mistakes', introduce: true });
+  ok('the check after a first look takes the group by views, whatever the order', intro.length === 6 && intro.every(x => M.species[x.sp].order === 'Carnivora'));
+  const sheet = E.buildSheetSession(M, PV, { now, skills, size: 3, rng: E.rngFrom(12) });
+  eq('exam sheet: one item per species, in the chosen order', [sheet.length, sheet[0].sp, new Set(sheet.map(x => x.sp)).size], [3, 'tyto_alba', 3]);
+  eq('¿Cuál es?: in the chosen order', E.buildReverse(M, PV, { now, skills, size: 1 }), ['tyto_alba']);
   /* "Mis fallos": misses of the last 7 days, until right on two different days since. */
   const ML = E.emptyProgress(now), row = (card, kind, ts) => ML.log.push({ ts, card, game: 'foto', level: 2, kind });
   row('milvus_milvus:genus', 'wrong', now - E.DAY); row('milvus_milvus:genus', 'right', now - E.DAY + 60000);
@@ -202,11 +244,8 @@ test('sessions', () => {
   eq('mistakes: recent misses not yet right on two different days', E.buildMistakes(M, ML, { now, skills: ['genus', 'order', 'class', 'common'], rng: E.rngFrom(6) }).map(x => x.sp + ':' + x.skill).sort(),
     ['lynx_pardinus:class', 'lynx_pardinus:common', 'milvus_milvus:genus']);
   eq('mistakes: only the exam boxes she studies', E.buildMistakes(M, ML, { now, skills: ['genus'] }).map(x => x.sp + ':' + x.skill), ['milvus_milvus:genus']);
-  const spent = E.emptyProgress(now); spent.settings.newPerDay = 1;
-  E.SKILLS.forEach(k => { spent.cards['milvus_milvus:' + k] = { p: { first: now, due: now + E.DAY } }; });
-  eq('with the day\'s new cards used up, a session has none', E.buildSession(M, spent, { now, skills, size: 50, scope: 'order:Carnivora' }).length, 0);
-  const intro = E.buildSession(M, spent, { now, skills, size: 50, scope: 'order:Carnivora', introduce: true });
-  ok('the check after a first look introduces the group anyway', intro.length && intro.every(x => M.species[x.sp].order === 'Carnivora'));
+  ML.log.push({ ts: now - 60000, card: 'lynx_pardinus:genus', game: 'foto', level: 2, kind: 'wrong' });
+  eq('mistakes: at most two boxes per species', E.buildMistakes(M, ML, { now, skills, rng: E.rngFrom(13) }).filter(x => x.sp === 'lynx_pardinus').length, 2);
   const days = {}; [0, 1, 3, 4].forEach(d => { days[E.ymd(now - d * DAY)] = 1; });
   eq('streak forgives one missed day', E.streak(days, now), 4);
   days[E.ymd(now - 2 * DAY)] = 0; delete days[E.ymd(now - 4 * DAY)]; delete days[E.ymd(now - 3 * DAY)];
@@ -259,7 +298,7 @@ test('export/import', () => {
   const XSS = '"><img src=x onerror="window.PWNED=1">';
   const withP = f => { const d = JSON.parse(file); f(d.progress); return d; };
   const payloads = {
-    'settings.newPerDay': withP(p => { p.settings.newPerDay = XSS; }),
+    'settings.sessionSize': withP(p => { p.settings.sessionSize = XSS; }),
     'mocks[0].score10': withP(p => { p.mocks[0] = { id: 'm1', at: now, items: [], ok: XSS, total: 1, score10: XSS, passed: true }; }),
     'mocks[0].items[0].sp': withP(p => { p.mocks[0].items = [{ sp: XSS, typed: {}, ok: {} }]; }),
     'log card not a string': withP(p => { p.log.push({ ts: now, card: { split: 1 }, kind: 'wrong' }); }),
@@ -274,9 +313,10 @@ test('export/import', () => {
     const P2 = E.normalizeProgress(JSON.parse(JSON.stringify(payloads[k].progress)), now);
     ok(`stored ${k} comes back without the payload`, !JSON.stringify(P2).includes('onerror') && Object.getPrototypeOf(P2.badges) === Object.prototype, JSON.stringify(P2).slice(0, 200));
   });
-  const S2 = E.normalizeProgress(payloads['settings.newPerDay'].progress, now).settings;
-  eq('a bad setting falls back to its default', S2.newPerDay, 10);
-  eq('numbers in strings are coerced', E.normalizeProgress({ settings: { newPerDay: '15', level: 3 }, createdAt: '2026-11-01T10:00:00Z' }, now).settings.newPerDay, 15);
+  const S2 = E.normalizeProgress(payloads['settings.sessionSize'].progress, now).settings;
+  eq('a bad setting falls back to its default', S2.sessionSize, 20);
+  eq('numbers in strings are coerced', E.normalizeProgress({ settings: { sessionSize: '15', level: 3 }, createdAt: '2026-11-01T10:00:00Z' }, now).settings.sessionSize, 15);
+  eq('an old copy’s daily limit is dropped quietly', [E.normalizeProgress({ settings: { newPerDay: 38 } }, now).settings.newPerDay, (() => { const i = []; E.normalizeProgress({ settings: { newPerDay: 38 } }, now, i); return i.length; })()], [undefined, 0]);
   eq('ISO dates are coerced to ms', E.normalizeProgress({ createdAt: '2026-11-01T10:00:00Z' }, now).createdAt, Date.UTC(2026, 10, 1, 10));
   eq('long typed text is cut to 80 characters', E.normalizeProgress({ log: [{ ts: now, card: 'milvus_milvus:genus', kind: 'wrong', typed: 'x'.repeat(500) }] }, now).log[0].typed.length, 80);
   const badLooked = []; E.normalizeProgress({ ui: { looked: ['order:Accipitriformes', '<img onerror=x>'] } }, now, badLooked);
@@ -334,33 +374,47 @@ test('real data', () => {
   eq('groups: one per class and per order with photos', groups.length, nClass + nOrder);
   ok('groups: every group is a tree node, and its members share its name', groups.every(g => RM.nodes[g.node] && g.members.every(id => E.answerFor(RM, id, g.skill) === g.node.split(':')[1])), groups.filter(g => !RM.nodes[g.node]).map(g => g.node).join());
   ok('groups: card ids pass the progress whitelist', groups.every(g => E.normalizeProgress({ cards: { [g.card]: { p: { seen: 1 } } } }, now2).cards[g.card]));
-  const gs = E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, size: 20 });
-  eq('group session: new groups capped at the daily allowance, classes first', [gs.length, gs.slice(0, nClass).every(g => g.skill === 'class')], [10, true]);
+  const gs = E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, size: 20, sortBy: 'progress' });
+  ok('group session: the check after a first look goes by views, whatever the order', E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, size: 5, sortBy: 'mistakes', introduce: true }).length === 5);
+  eq('group session: no daily limit, classes first', [gs.length, gs.slice(0, nClass).every(g => g.skill === 'class')], [20, true]);
+  const PGV = E.emptyProgress(now2); E.groupItems(RM, RM.withPhotos, GS).forEach(g => { PGV.cards[g.card] = { p: { seen: g.node === 'order:Strigiformes' ? 0 : 2 } }; });
+  eq('group session: the group asked least comes first', E.buildGroupSession(RM, PGV, { now: now2, skills: GS, size: 1 }).map(g => g.node), ['order:Strigiformes']);
   const og = E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: ['order'], scope: 'class:Aves', size: 10 });
   ok('group session: larger groups come first', og.every((g, i) => !i || og[i - 1].members.length >= g.members.length) && og[0].members.length > 1);
   bad = [];
-  [1, 2, 3].forEach(lv => E.buildOddOne(RM, { level: lv, size: 40, rng }).forEach(q => {
+  [1, 2, 3].forEach(lv => E.buildOddOne(RM, E.emptyProgress(now2), { level: lv, size: 40, rng, now: now2, skills: E.SKILLS }).forEach(q => {
     const o = q.node.split(':')[1], oc = RM.species[q.three[0]].class, odd = RM.species[q.odd];
     const fine = q.three.every(x => RM.species[x].order === o) && odd.order !== o && q.opts.length === 4 && new Set(q.opts).size === 4
       && (lv !== 1 || odd.class !== oc) && (lv !== 2 || odd.class === oc);
     if (!fine) bad.push(`${q.node}@${lv}`);
   }));
   ok('odd one out: three of one order, one of another, by level (other class / same class / closest)', !bad.length, bad.slice(0, 5).join());
+  const PO = E.emptyProgress(now2), carn = E.speciesUnder(RM, 'order:Carnivora').filter(id => RM.withPhotos.includes(id)), least = carn.slice(5, 8);
+  RM.withPhotos.forEach(id => { if (!least.includes(id)) PO.views[id] = 4; });
+  const oq = E.buildOddOne(RM, PO, { level: 2, size: 1, scope: 'class:Mammalia', rng, now: now2, skills: E.SKILLS })[0];
+  eq('odd one out: the order with the least seen species first, and its three least seen', [oq.node, oq.three.slice().sort()], ['order:Carnivora', least.slice().sort()]);
   /* "¿Este o este?": own confusions first, settled after three right drill answers in a row; look-alikes fill the rest. */
   const PP = E.emptyProgress(now2), conf = (sp, o, t) => ({ ts: t, card: sp + ':species', game: 'foto', level: 3, rating: 1, hints: 0, conf: null, kind: 'wrong_species', with: [o] });
   const drill = (sp, o, right, t) => ({ ts: t, card: sp + ':species', game: 'par', level: null, rating: null, hints: 0, conf: null, kind: right ? 'right' : 'wrong_species', with: [o] });
   PP.log.push(conf('milvus_milvus', 'milvus_migrans', 1), conf('bubo_bubo', 'strix_aluco', 2));
-  const pr = E.buildPairs(RM, PP, { size: 10, rng });
-  eq('pairs: own confusions first, most recent first', pr.slice(0, 2).map(p => [p.a, p.b, p.mine]), [['bubo_bubo', 'strix_aluco', true], ['milvus_milvus', 'milvus_migrans', true]]);
-  ok('pairs: the rest are look-alikes from the cards, both with photos, shown species is one of the two', pr.length === 10 && pr.slice(2).every(p => !p.mine && RM.photos[p.a].length && RM.photos[p.b].length) && pr.every(p => p.show === p.a || p.show === p.b));
+  const pr = E.buildPairs(RM, PP, { size: 10, rng, now: now2, skills: E.SKILLS, sortBy: 'mistakes' });
+  eq('pairs, most mistakes: her confusions, the one seen longer ago first', pr.slice(0, 2).map(p => [p.a, p.b, p.mine]), [['milvus_milvus', 'milvus_migrans', true], ['bubo_bubo', 'strix_aluco', true]]);
+  ok('pairs, most mistakes: only pairs with an open mistake are in play', pr.every(p => p.mine || ['milvus_milvus', 'bubo_bubo'].some(id => p.a === id || p.b === id)), pr.map(p => p.a + '|' + p.b).join());
+  const pv = E.buildPairs(RM, PP, { size: 10, rng, now: now2, skills: E.SKILLS });
+  ok('pairs, fewest views: look-alikes from the cards fill the round, both with photos, shown species is one of the two', pv.length === 10 && pv.every(p => RM.photos[p.a].length && RM.photos[p.b].length) && pv.every(p => p.show === p.a || p.show === p.b));
+  const PPV = JSON.parse(JSON.stringify(PP)); RM.withPhotos.forEach(id => { PPV.views[id] = 2; }); PPV.views.bubo_bubo = 9; PPV.views.strix_aluco = 9;
+  ok('pairs, fewest views: a confusion between much-seen species waits', !E.buildPairs(RM, PPV, { size: 3, rng, now: now2, skills: E.SKILLS }).some(p => p.a === 'bubo_bubo' && p.b === 'strix_aluco'));
   PP.log.push(drill('milvus_migrans', 'milvus_milvus', true, 3), drill('milvus_milvus', 'milvus_migrans', true, 4), drill('milvus_migrans', 'milvus_milvus', true, 5));
   eq('pairs: three right answers in a row settle a confusion', E.openConfusions(RM, PP).map(e => e.a), ['bubo_bubo']);
   PP.log.push(drill('strix_aluco', 'bubo_bubo', true, 6), drill('strix_aluco', 'bubo_bubo', false, 7));
   eq('pairs: a miss in the drill resets the count', E.openConfusions(RM, PP).map(e => [e.a, e.streak]), [['bubo_bubo', 0]]);
+  const vi = []; const VN = E.normalizeProgress({ views: { lynx_pardinus: 4, bubo_bubo: '2' }, settings: { sortBy: 'mistakes' } }, now2, vi);
+  eq('views and the quiz order survive validation', [VN.views, VN.settings.sortBy, vi], [{ lynx_pardinus: 4, bubo_bubo: 2 }, 'mistakes', []]);
+  const vb = []; const VB = E.normalizeProgress({ views: JSON.parse('{"__proto__": 1, "Bad Id": 2, "lynx_pardinus": -1}'), settings: { sortBy: 'random' } }, now2, vb);
+  eq('bad views and an unknown order are rejected', [JSON.stringify(VB.views), Object.getPrototypeOf(VB.views) === Object.prototype, VB.settings.sortBy, vb.length], ['{}', true, 'views', 4]);
+  eq('old progress without views or an order loads with the defaults', [E.normalizeProgress({}, now2).views, E.normalizeProgress({}, now2).settings.sortBy], [{}, 'views']);
   ok('pairs: drill rows survive validation', E.normalizeProgress(JSON.parse(JSON.stringify(PP)), now2).log.length === PP.log.length);
-  ok('group session: practising one class never asks for the class itself', E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, scope: 'class:Aves', size: 50, force: true }).every(g => g.skill === 'order'));
-  const PG = E.emptyProgress(now2); PG.cards['order:Accipitriformes:group'] = { p: { seen: 1, ok: 1, streak: 1, due: now2 + 6e5, first: now2, last: now2 }, m: null };
-  eq('group cards don’t use up the species’ new cards for the day', E.todayPlan(RM, PG, { now: now2, skills: GS }).newAvailable, E.todayPlan(RM, E.emptyProgress(now2), { now: now2, skills: GS }).newAvailable);
+  ok('group session: practising one class never asks for the class itself', E.buildGroupSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, scope: 'class:Aves', size: 50 }).every(g => g.skill === 'order'));
   const gl = E.normalizeProgress({ log: [{ ts: now2, card: 'class:Aves:group', game: 'grupo', kind: 'wrong', level: 3 }], settings: { game: 'grupo' } }, now2);
   eq('a group answer and the group game survive validation', [gl.log.length && gl.log[0].game, gl.settings.game], ['grupo', 'grupo']);
   ok('every class of the list has a badge, Reptilia included', classes.every(c => Object.keys(E.badgeStatus(RM, E.emptyProgress(Date.now()), ['class'], Date.now())).includes('class:' + c)));
@@ -370,14 +424,16 @@ test('real data', () => {
   ok('every single-species order is in one first-look batch', soloIds.length > 0 && batched.length === soloIds.length && soloIds.every(id => batched.includes(id)), JSON.stringify(Object.keys(SL)));
   ok('the bird batch is birds, the fish batch no tetrapods', (SL['solos:aves'] || []).every(id => RM.species[id].class === 'Aves') && (SL['solos:peces'] || []).every(id => !['Aves', 'Mammalia', 'Reptilia', 'Amphibia'].includes(RM.species[id].class)));
   const PS = E.emptyProgress(now2); PS.ui.looked = ['solos:aves'];
-  ok('a finished batch puts its species first among the new ones', E.buildSession(RM, PS, { now: now2, skills: ['species'], size: SL['solos:aves'].length, introduce: true }).every(x => SL['solos:aves'].includes(x.sp)));
+  const exS = E.exposures(RM, PS, ['species']);
+  ok('a finished batch counts its species as seen once', SL['solos:aves'].every(id => exS[id] === 1) && RM.withPhotos.filter(id => !SL['solos:aves'].includes(id)).every(id => exS[id] === 0));
   const pooled = E.buildSession(RM, E.emptyProgress(now2), { now: now2, skills: GS, pool: SL['solos:peces'], introduce: true, size: 50 });
   ok('a pool limits the session to that batch', pooled.length > 0 && pooled.every(x => SL['solos:peces'].includes(x.sp)));
   /* Bestiary changes (changes.csv, 2026-11-10): one batch keyed by the latest date; looking at it puts its species first. */
   const CH = E.changeLook(RM);
   ok('the changed species form one batch keyed by date', !!CH && CH.node === 'cambios:' + CH.date && CH.ids.length > 0 && CH.ids.every(id => (RM.species[id].changes || []).length), JSON.stringify(CH));
   const PC = E.emptyProgress(now2); PC.ui.looked = [CH.node];
-  ok('a finished changes look puts its species first among the new ones', E.buildSession(RM, PC, { now: now2, skills: ['order'], size: CH.ids.length, introduce: true }).every(x => CH.ids.includes(x.sp)));
+  const exC = E.exposures(RM, PC, ['order']);
+  ok('a finished changes look counts its species as seen once', CH.ids.every(id => exC[id] === 1));
   /* Merging two browsers' progress (2026-11-13): logs joined once, a card answered on both sides replayed in time order. */
   const T0 = Date.UTC(2026, 10, 1, 9), H = 3600e3, ans = (P, card, ts, kind, game) => {
     if (game !== 'par') P.cards[card] = E.applyAnswer(P.cards[card], { level: 3, kind, hints: 0, conf: 'sure' }, ts).card;
@@ -388,7 +444,9 @@ test('real data', () => {
     .forEach(([P, c, h, k, g]) => { ans(P, c, T0 + h * H, k, g); });
   [['lynx_pardinus:genus', 0, 'right'], ['bubo_bubo:species', 2, 'right', 'par'], ['bubo_bubo:order', 5, 'right'], ['lynx_pardinus:genus', 30, 'wrong'], ['lynx_pardinus:genus', 80, 'right']].forEach(([c, h, k, g]) => ans(ALL, c, T0 + h * H, k, g));
   MA.badges['class:Aves'] = { tier: 'bronze', at: T0 + 9 * H }; MB.badges['class:Aves'] = { tier: 'silver', at: T0 + 50 * H }; MB.ui.looked = ['order:Strigiformes']; MB.settings.examDate = '2026-12-15'; MA.settings.lang = 'en';
+  MA.views = { lynx_pardinus: 3, bubo_bubo: 1 }; MB.views = { lynx_pardinus: 1, tyto_alba: 2 };
   const MG = E.mergeProgress(MA, MB, T0 + 100 * H);
+  eq('merge: views keep the larger count of each species', MG.progress.views, { lynx_pardinus: 3, bubo_bubo: 1, tyto_alba: 2 });
   eq('merge: every answer of both sides, once, in time order', MG.progress.log.map(r => r.ts), ALL.log.map(r => r.ts));
   eq('merge: a card answered on both sides equals answering it all in one browser', MG.progress.cards['lynx_pardinus:genus'], ALL.cards['lynx_pardinus:genus']);
   eq('merge: a card from one side keeps its state', MG.progress.cards['bubo_bubo:order'], MB.cards['bubo_bubo:order']);

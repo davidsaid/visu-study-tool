@@ -86,14 +86,30 @@ V.explore = function (id, fromClick) {
     ${P().log.length ? '' : `<p class="tiny muted">${L('Todo empieza a cero: los anillos se llenan a medida que practicas.',
         'Everything starts at zero: the rings fill up as you practise.')}</p>`}</div><div id="card-m" class="card-host" tabindex="-1"></div>`;
   App.aside().innerHTML = App.DESK.matches ? '<div class="card-host" id="card-d" tabindex="-1"></div>' : '';
-  const host = cardHost();
-  const back = App.returnTo ? `<a class="btn primary back-to-practice" href="#${esc(App.returnTo)}">← ${L('Volver a la práctica', 'Back to practice')}</a>` : '';
-  host.innerHTML = back + (App.sp(id) ? speciesCard(id) : groupCard(id));
-  if (back && !App.DESK.matches) host.scrollIntoView({ block: 'start' });   // on a phone the card is below the tree
+  cardHost().innerHTML = App.sp(id) ? speciesCard(id) : groupCard(id);
   if (fromClick) {
     const r = document.querySelector('#tree .trow.sel'); if (r) r.focus({ preventScroll: true });
     if (App.DESK.matches) App.aside().scrollTop = 0;
   }
+};
+/* A card opened from a practice screen (main.js): over the question, in a dialog closed with ✕, Escape or a click
+   outside, so the session stays as it was. Its links to other cards open in the same dialog; buttons that would start
+   another round are hidden (style.css). */
+App.cardPop = function (id) {
+  let d = document.getElementById('cardpop');
+  if (!d) {
+    d = document.createElement('dialog'); d.id = 'cardpop'; d.className = 'cardpop';
+    d.addEventListener('click', e => { if (e.target === d || e.target.closest('[data-cardpop-close]')) d.close(); });
+    d.addEventListener('close', () => { d.innerHTML = ''; });
+    document.body.appendChild(d);
+  }
+  if (App.sp(id)) Store.recordView([id]);
+  d.innerHTML = `<button type="button" class="zoom-close" data-cardpop-close aria-label="${L('Cerrar la ficha y volver', 'Close the card and go back')}">✕</button>
+    <div class="card-host">${App.sp(id) ? speciesCard(id) : groupCard(id)}</div>`;
+  d.setAttribute('aria-label', App.label(id));
+  if (!d.open) d.showModal();
+  d.scrollTop = 0;
+  const h = d.querySelector('.ptitle'); if (h) h.focus({ preventScroll: true });
 };
 /* ---------- search ---------- */
 /* Any part of the scientific name or of either common name; accents, ü, ñ and capitals don't matter here

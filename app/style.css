@@ -663,7 +663,18 @@ input.numin[type="number"] { width: 6rem; }
 .zoom .car .car-frame { --maxh: calc(96vh - 7rem); cursor: default; }
 .zoom-close { position: absolute; top: .4rem; right: .5rem; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 1.1rem; cursor: pointer; }
 @media (max-width: 560px) { .zoom { width: 100vw; max-height: 100vh; height: 100vh; border-radius: 0; border: 0; padding-top: 3rem; } .zoom[open] { display: flex; flex-direction: column; justify-content: center; } .zoom .car .car-frame { --maxh: calc(100vh - 8rem); } }
-.back-to-practice { display: inline-flex; margin: 0 0 .8rem; min-height: 44px; }
+/* A card opened during practice (App.cardPop): over the question; its buttons that start another round are hidden. */
+.cardpop { width: min(96vw, 920px); max-width: none; max-height: 92vh; padding: 3rem 1.2rem 1.2rem; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); color: var(--ink); overflow: auto; }
+.cardpop::backdrop { background: rgba(0, 0, 0, .6); }
+.cardpop .zoom-close { position: sticky; top: 0; float: right; margin: -2.4rem -.6rem 0 0; z-index: 2; }
+.cardpop .card-host { margin: 0; border: 0; padding: 0; }
+.cardpop [data-practise], .cardpop [data-groupgame], .cardpop .practise-btn { display: none; }
+@media (max-width: 560px) { .cardpop { width: 100vw; max-height: 100vh; height: 100vh; border-radius: 0; border: 0; padding: 3rem .9rem 1rem; } }
+.seg.sort-chips { display: flex; flex-wrap: wrap; gap: .4rem; border: 0; border-radius: 0; overflow: visible; margin-bottom: .3rem; }
+.seg.sort-chips button { border: 1px solid var(--line); border-radius: 999px; }
+.cardpop .ptitle:focus { outline: none; }
+.sort-desc { margin: 0 0 1rem; }
+.tier-bar { margin: .7rem 0 .3rem; }
 #card-m { scroll-margin-top: 72px; }
 
 /* First-look menu (#vistazos): fixed 150 px square badge tiles (2 a row on most phones, 1 on 360 px ones). */

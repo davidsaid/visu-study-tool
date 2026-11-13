@@ -6,14 +6,18 @@
    progress as it was before the last restored copy changed it, so Ajustes can go back to it.
 
    Stored shape (also the "progress" member of an exported file):
-   { schemaVersion, createdAt, settings, cards, log, days, badges, mocks, stats, meta, ui }
+   { schemaVersion, createdAt, settings, cards, log, days, views, badges, mocks, stats, meta, ui }
    - cards["lynx_pardinus:genus"] = { p: progress counter (Easy/Medium/Hard), m: FSRS state (Hard without hints only) }
      cards["order:Accipitriformes:group"] = the same, for naming a group from several photos (since schemaVersion 2)
      p = { seen, ok, streak, due, first, last }    m = { due, s, d, ed, sd, reps, lapses, ls, st, last }  (times in ms)
    - log: append-only, one row per answered box:
      { ts, card, game: foto|hoja|mock|cual|grupo|par, level: 1|2|3, rating: FSRS rating or null, hints, conf: guess|unsure|sure|null,
        kind: right|misspelling|wrong|wrong_species, with: [species] (wrong_species, and the pair's other species in 'par'), typed (wrong answers only) }
-   - days["2026-11-01"] = answers that day (streak); badges[id] = { tier, at }; mocks = finished Mock VISU results. */
+   - days["2026-11-01"] = answers that day (streak); badges[id] = { tier, at }; mocks = finished Mock VISU results.
+   - views["lynx_pardinus"] = times shown with its name: first-look slides, opened cards, one per quiz it appears in;
+     viewedAt[id] = the last time; meta.viewsFrom = when counting started, answers before it count as views
+     (since 2026-11-13; see E.exposures).
+   - settings.sortBy = views|mistakes|progress: what comes first in the practice games (since 2026-11-13). */
 (function () {
 'use strict';
 const E = window.VISU_ENGINE;
@@ -139,6 +143,13 @@ S.recordPair = function (a, now) {
   S.data.log.push({ ts: now, card: E.cardId(a.shown, 'species'), game: 'par', level: null, rating: null, hints: 0, conf: null,
     kind: a.right ? 'right' : 'wrong_species', with: [a.other] });
   S.recordDay(now);
+};
+/* A species shown with its name: a first-look slide, an opened card, or one appearance in a quiz (its first answer
+   there). Feeds the "vistas" bar and the quiz order (E.exposures; viewedAt breaks ties). */
+S.recordView = function (ids, now) {
+  const v = S.data.views, at = S.data.viewedAt, t = now || Date.now();
+  ids.forEach(id => { v[id] = (v[id] || 0) + 1; at[id] = t; });
+  S.save();
 };
 /* Games that schedule nothing and log nothing ("¿Cuál sobra?") still count as a study day. */
 S.recordDay = function (now) {

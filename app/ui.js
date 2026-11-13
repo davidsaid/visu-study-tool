@@ -38,6 +38,17 @@ App.draftTag = on => (on ? `<span class="draft">${L('borrador', 'draft')}</span>
 /* `html` is trusted markup (already escaped). Without a usable URL, just the text. */
 App.extLink = (url, html, cls) => (I.url(url) ? `<a ${cls ? `class="${cls}" ` : ''}href="${esc(I.url(url))}" target="_blank" rel="noopener">${html}</a>` : html);
 App.cardLink = (id, cls = 'big') => `<a class="btn ${cls}" href="#${esc(App.routeFor(id))}">${L('Abrir ficha', 'Open card')}</a>`;
+/* What comes first in the practice games (settings.sortBy, E.SORTS). One choice, set in Settings and on every game's
+   start, so changing it in one place changes it everywhere (David, 2026-11-13). */
+App.sortName = k => ({ views: L('Menos vistas', 'Fewest views'), mistakes: L('Más fallos', 'Most mistakes'), progress: L('Menos progreso', 'Least progress') }[k]);
+/* Exposure first in all three (E.rankSpecies): what she has seen least comes first, so whatever she answers, the next
+   round moves on. */
+App.sortDesc = k => ({ views: L('Todas las especies, primero las que menos veces has visto. Lo que acabas de ver espera su turno, aciertes o falles.', 'Every species, the ones you’ve seen least first. What you’ve just seen waits its turn, right or wrong.'),
+  mistakes: L('Solo las especies con un fallo abierto (fallaste la última vez), primero las que menos has visto. Acertarla cierra el fallo.', 'Only species with an open mistake (missed last time), the ones you’ve seen least first. Getting it right closes the mistake.'),
+  progress: L('Solo las especies que aún no dominas, primero las que menos has visto.', 'Only species you haven’t mastered yet, the ones you’ve seen least first.') }[k]);
+App.sortChips = () => `<div class="seg sort-chips" role="group" aria-label="${L('Qué sale antes', 'What comes first')}">${E.SORTS.map(k =>
+  `<button type="button" data-sortby="${k}" aria-pressed="${Store.data.settings.sortBy === k}">${App.sortName(k)}</button>`).join('')}</div>
+  <p class="tiny muted sort-desc">${App.sortDesc(Store.data.settings.sortBy)}</p>`;
 App.mistakeHead = (eyebrow, title) => `<div class="mistake-head"><p class="eyebrow">${eyebrow}</p><h1>${title}</h1></div>`;
 /* Collections (data/collections.js): the list, and the one open now (app/collection.js chose it). */
 App.collections = () => ((window.VISU && window.VISU.collections && window.VISU.collections.list) || []);

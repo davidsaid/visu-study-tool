@@ -9,7 +9,12 @@ const M = () => App.M, P = () => Store.data, SET = () => Store.data.settings;
 const DAY = E.DAY;
 
 /* ---------- shared bits ---------- */
-function statsOf(id) { return E.speciesStats(M(), P(), id, App.skills(), Date.now()); }
+/* A species seen at least once shows as started, 1 %, even before any answer (David, 2026-11-13): display only. */
+function statsOf(id) {
+  const st = E.speciesStats(M(), P(), id, App.skills(), Date.now());
+  if (st.meter < 0.01 && E.speciesViewed(M(), P(), id)) st.meter = 0.01;
+  return st;
+}
 App.statsOf = statsOf;
 function lastConfusion() {
   const log = P().log;
@@ -75,9 +80,9 @@ function confBlock(conf, locked) {
       : L('Toca una para comprobar; hasta entonces puedes cambiar tu elección. Tu seguridad ajusta cuándo vuelve la tarjeta.', 'Tap one to check; until then you can change your pick. Your confidence tunes when the card comes back.')}</p>
     <div class="options">${b('guess', 'Lo adivino', 'I’m guessing')}${b('unsure', 'Dudo', 'Not sure')}${b('sure', 'Lo sé seguro', 'I know it')}</div></div>`;
 }
-function backIn(due, requeued) {
-  if (requeued) return L('Vuelve en esta sesión, dentro de unas pocas tarjetas', 'It comes back in this session, a few cards from now');
+function backIn(due) {
   if (!due) return '';
+  if (due - Date.now() < 36e5) return L('Vuelve en tu próxima sesión', 'It comes back in your next session');
   return `${L('Volverá en', 'Back in')} <b>${I.inTime(due - Date.now())}</b>`;
 }
 const clockIcon = () => ICON.clock.replace('<svg', '<svg class="inline-ic"');
@@ -116,14 +121,14 @@ function comparePlate(yours, correct, idx, yoursIdx, tags) {
     ${tip || diff ? '' : `<p class="small muted">${L('Pista de esta pareja: pendiente de redactar. Mientras, compara las dos fichas.', 'Tip for this pair: not written yet. Meanwhile, compare the two cards.')}</p>`}
     ${split ? `<p class="tiny muted">${L('En el árbol se separan en', 'In the tree they split at')} <a href="#${esc(App.routeFor(split))}">${esc(App.label(split))}</a>.</p>` : ''}</section>`;
 }
-function calloutsHTML(conf, due, requeued) {
+function calloutsHTML(conf, due) {
   const t = { sure: L('Dijiste «Lo sé seguro»: un error con mucha seguridad es el que más se repite en el examen, así que vuelve pronto.',
       'You said “I know it”: a confident error is the one most likely to repeat in the exam, so it comes back soon.'),
     unsure: L('Dijiste «Dudo»: tu instinto avisaba. Fíate de la pista la próxima vez.',
         'You said “Not sure”: your instinct was warning you. Trust the tip next time.'),
     guess: L('Lo has adivinado: la tratamos como nueva y vuelve pronto.', 'You guessed: it is treated as new and returns soon.') }[conf || 'guess'];
   return `<div class="callouts"><div class="callout confidence">${ICON.gauge}<div><b>${L('Tu seguridad', 'Your confidence')}</b><p class="small">${t}</p></div></div>
-    <div class="callout again">${ICON.clock}<div><b>${L('La verás de nuevo', 'You’ll see it again')}</b><p class="small">${backIn(due, requeued)}. ${L('Después, cada vez más espaciada.', 'Then at growing intervals.')}</p></div></div></div>`;
+    <div class="callout again">${ICON.clock}<div><b>${L('La verás de nuevo', 'You’ll see it again')}</b><p class="small">${backIn(due)}. ${L('Después, cada vez más espaciada.', 'Then at growing intervals.')}</p></div></div></div>`;
 }
 
 /* ---------- HOY ---------- */
@@ -149,10 +154,12 @@ function nextBadge() {
 V.hoy = function () {
   App.focusMode(false);
   const now = Date.now(), set = SET(), skills = App.skills(), fresh = P().log.length === 0;
-  const plan = E.todayPlan(M(), P(), { now, skills });
-  const split = E.sessionSplit(plan.dueNow, plan.newAvailable, set.sessionSize), total = split.due + split.fresh;
-  const mins = Math.max(1, Math.round((split.due * 12 + split.fresh * 25) / 60));
-  const pace = E.suggestNewPerDay(M(), P(), skills, now);
+  const scope = P().ui.scope && M().nodes[P().ui.scope] ? P().ui.scope : null;
+  /* The next session as it would be built now (its order is random only within ties). */
+  const preview = E.buildSession(M(), P(), { now, skills, scope, size: set.sessionSize, sortBy: set.sortBy });
+  const isNew = x => !P().cards[E.cardId(x.sp, x.skill)], total = preview.length, freshN = preview.filter(isNew).length;
+  const quizSp = new Set(preview.map(x => x.sp)).size, newSp = new Set(preview.filter(x => !skills.some(k => P().cards[E.cardId(x.sp, k)])).map(x => x.sp)).size;
+  const mins = Math.max(1, Math.round(((total - freshN) * 12 + freshN * 25) / 60));
   const misses = fresh ? 0 : E.buildMistakes(M(), P(), { now, skills, size: 999 }).length;
   const at = E.readinessAt(P(), now), r = E.readiness(M(), P(), skills, at);
   if (!fresh) { P().meta.readiness[E.ymd(now)] = Math.round(r * 1000) / 1000; Store.save(); }
@@ -164,25 +171,21 @@ V.hoy = function () {
   const nb = nextBadge(), look = App.nextLook(), replay = look || fresh ? null : App.replayLook(), openConf = E.openConfusions(M(), P()).length;
   const dueGroups = E.groupItems(M(), M().withPhotos, skills).filter(g => { const d = E.dueOf(P().cards[g.card]); return d != null && d <= now; }).length;
   const nbMissing = nb ? E.speciesUnder(M(), nb.def.node).filter(id => !statsOf(id).mastered) : [];
-  const dueW = total ? split.due / total * 100 : 0;
+  const oldW = quizSp ? (quizSp - newSp) / quizSp * 100 : 0;
   const scopeNote = P().ui.scope && M().nodes[P().ui.scope] ? `<p class="lvl-now">${L('Practicando solo', 'Practising only')}: <b>${esc(App.label(P().ui.scope))}</b> · <a href="#nivel">${L('cambiar', 'change')}</a></p>` : '';
   let sessionBody;
+  const order = `<p class="small">${L('Qué sale antes', 'What comes first')}: <b>${App.sortName(set.sortBy)}</b> · <a href="#nivel">${L('cambiar', 'change')}</a></p>`;
   if (fresh) sessionBody = `<h2 id="sesh">${L('Empieza por aquí', 'Start here')}</h2>
-    <p class="small">${L(`Te presentamos ${Math.min(set.newPerDay, M().withPhotos.length)} especies nuevas al día, orden a orden. Cada una tiene cinco casillas: clase, orden, género, especie y nombre vulgar.`, `We introduce ${Math.min(set.newPerDay, M().withPhotos.length)} new species a day, order by order. Each one has five boxes: class, order, genus, species and common name.`)}</p>
+    <p class="small">${L('Cada especie tiene cinco casillas: clase, orden, género, especie y nombre vulgar. Cada sesión te pregunta hasta dos por especie, y tú eliges qué especies salen antes: las que menos has visto, las que más fallas o las que menos dominas.',
+        'Each species has five boxes: class, order, genus, species and common name. Each session asks up to two per species, and you choose which species come first: the ones you’ve seen least, missed most or know least.')}</p>
     <a class="btn primary big" href="#nivel">${L('Elegir nivel y empezar', 'Choose a level and start')}</a>`;
-  else if (!total) sessionBody = `<h2 id="sesh">${L('Nada pendiente ahora', 'Nothing due right now')}</h2>
-    <p class="small">${plan.dueToday ? L(`${plan.dueToday} repasos vuelven más tarde hoy.`, `${plan.dueToday} reviews come back later today.`) : L('Has hecho los repasos y las nuevas de hoy.',
-        'You’ve done today’s reviews and new cards.')} ${L('Puedes repasar igualmente.', 'You can review anyway.')} <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>
-    <a class="btn primary big" href="#sesion-repaso">${L('Repasar igualmente', 'Review anyway')}</a>`;
-  else sessionBody = `<h2 id="sesh">${total} ${L('tarjetas', 'cards')} · ≈ ${mins} min</h2>
-    <div class="split" aria-hidden="true"><span class="due" style="width:${dueW}%"></span><span class="new" style="width:${100 - dueW}%"></span></div>
-    <div class="legend"><span><i class="dot due"></i>${split.due} ${L('repasos pendientes', 'reviews due')}</span><span><i class="dot new"></i>${split.fresh} ${L('nuevas', 'new')}</span></div>
-    <a class="btn primary big" href="#nivel">${L('Elegir nivel y empezar', 'Choose a level and start')}</a>
+  else if (!total) sessionBody = `<h2 id="sesh">${L('No hay especies con foto aquí', 'No species with photos here')}</h2>${scopeNote ? '' : `<p class="small"><a href="#nivel">${L('Elegir otro grupo', 'Pick another group')}</a></p>`}`;
+  else sessionBody = `<h2 id="sesh">${total} ${L('preguntas', 'questions')} · ≈ ${mins} min</h2>
+    <div class="split" aria-hidden="true"><span class="due" style="width:${oldW}%"></span><span class="new" style="width:${100 - oldW}%"></span></div>
+    <div class="legend"><span><i class="dot due"></i>${quizSp - newSp} ${L(quizSp - newSp === 1 ? 'especie ya empezada' : 'especies ya empezadas', 'species started')}</span><span><i class="dot new"></i>${newSp} ${L(newSp === 1 ? 'especie nueva' : 'especies nuevas', 'new species')}</span></div>
+    ${order}<a class="btn primary big" href="#nivel">${L('Elegir nivel y empezar', 'Choose a level and start')}</a>
     <p class="lvl-now">${L('Último nivel', 'Last level')}: <b>${I.lvName(set.level)}</b> · <a href="#sesion">${L('repetir sin preguntar', 'repeat without asking')}</a> · <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>`;
-  /* With an exam date: how many new species a day would start every remaining one 3 days before it. */
-  if (pace && pace.perDay > set.newPerDay && !fresh) sessionBody += `<div class="note-box info mt">${L(`Te quedan <b>${pace.remaining}</b> especies por empezar y <b>${pace.days}</b> días para presentarlas (los 3 últimos antes del examen son para repasar). Harían falta unas <b>${pace.perDay}</b> nuevas al día; ahora tienes ${set.newPerDay}.`,
-      `You have <b>${pace.remaining}</b> species left to start and <b>${pace.days}</b> days to start them (the last 3 before the exam are for reviewing). That takes about <b>${pace.perDay}</b> new a day; you have ${set.newPerDay} now.`)}
-    <div class="row mt"><button class="btn compact" data-pace="${Math.min(60, pace.perDay)}">${L(`Usar ${Math.min(60, pace.perDay)} al día`, `Use ${Math.min(60, pace.perDay)} a day`)}</button><a class="small" href="#ajustes">${L('Elegir otro número', 'Pick another number')}</a></div></div>`;
+  /* Today shows no count of boxes due (David, 2026-11-13): the order she chooses decides the session. */
   App.main().innerHTML = `
   <div class="today-head"><div><p class="eyebrow">${esc(dateStr)}</p><h1>${fresh ? L('Te damos la bienvenida a la Herramienta de estudio para VISU',
       'Welcome to the VISU Study Tool') : L('Esto es lo que toca hoy', 'Here’s today’s plan')}</h1></div>
@@ -199,8 +202,8 @@ V.hoy = function () {
         `You’ve seen every group: pick one to go over again.${replay ? ` Suggested: ${App.lookLabel(replay.node)}, ${replay.misses} open ${replay.misses === 1 ? 'mistake' : 'mistakes'}.` : ''}`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#grupos">${ICON.groupPhotos}<span><b>${L('¿Qué grupo es?', 'Which group is it?')}</b><span class="small muted">${L('Varias fotos de un mismo grupo: nombra su clase u orden. Para empezar a conocer el bestiario.',
         'Several photos from one group: name its class or order. A way to get to know the list.')}${dueGroups ? ` <b>${L(`${dueGroups} para repasar.`, `${dueGroups} due.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
-    <a class="game" href="#parejas">${ICON.pair}<span><b>${L('¿Este o este?', 'This one or that one?')}</b><span class="small muted">${L('Una foto y dos especies que se parecen: ¿cuál es? Empieza por las que tú has confundido.',
-        'One photo and two look-alike species: which is it? Your own confusions come first.')}${openConf ? ` <b>${openConf === 1 ? L('1 confusión abierta.', '1 open confusion.') : L(`${openConf} confusiones abiertas.`, `${openConf} open confusions.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
+    <a class="game" href="#parejas">${ICON.pair}<span><b>${L('¿Este o este?', 'This one or that one?')}</b><span class="small muted">${L('Una foto y dos especies que se parecen: ¿cuál es? Con «Más fallos», primero las que tú has confundido.',
+        'One photo and two look-alike species: which is it? With “Most mistakes”, your own confusions come first.')}${openConf ? ` <b>${openConf === 1 ? L('1 confusión abierta.', '1 open confusion.') : L(`${openConf} confusiones abiertas.`, `${openConf} open confusions.`)}</b>` : ''}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#sobra">${ICON.oddOne}<span><b>${L('¿Cuál sobra?', 'Odd one out')}</b><span class="small muted">${L('Cuatro fotos: tres son del mismo orden y una no. Para fijarte en lo que comparte cada orden.',
         'Four photos: three share an order and one doesn’t. To notice what each order has in common.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#cual-es">${ICON.namePhoto}<span><b>${L('¿Cuál es?', 'Which one is it?')}</b><span class="small muted">${L('Ves un nombre científico y eliges la foto correcta entre cuatro.',
@@ -227,9 +230,17 @@ V.hoy = function () {
       <div class="thumbs">${nbMissing.slice(0, 12).map(id => `<a href="#${esc(App.routeFor(id))}" title="${esc(App.spName(id))}">${App.tile(id)}</a>`).join('')}</div></div></section>` : ''}
   <div id="aside-m"></div>`;
   const conf = lastConfusion();
-  const tiers = { seen: 0, bronze: 0, silver: 0, gold: 0 };
-  M().order.forEach(id => { const t = statsOf(id).tier; if (t !== 'none') tiers.seen++; if (t === 'bronze' || t === 'silver' || t === 'gold') tiers.bronze++; if (t === 'silver' || t === 'gold') tiers.silver++; if (t === 'gold') tiers.gold++; });
+  /* Three bars (David, 2026-11-13): seen at all, answered at least once, at least one box right; then the tiers. */
+  const tiers = { viewed: 0, seen: 0, right: 0, bronze: 0, silver: 0, gold: 0 }, shown = E.exposures(M(), P(), skills);
+  M().order.forEach(id => {
+    const t = statsOf(id).tier;
+    if (shown[id] > 0) tiers.viewed++;
+    if (t !== 'none') tiers.seen++;
+    if (skills.some(k => { const c = P().cards[E.cardId(id, k)]; return c && c.p && c.p.ok > 0; })) tiers.right++;
+    if (t === 'bronze' || t === 'silver' || t === 'gold') tiers.bronze++; if (t === 'silver' || t === 'gold') tiers.silver++; if (t === 'gold') tiers.gold++;
+  });
   const nSp = M().order.length;
+  const tierBar = (n, es, en, hint) => `<p class="tier-bar"><b>${n}</b> ${L(`de ${nSp} ${es}`, `of ${nSp} ${en}`)}${hint ? `<br><span class="tiny muted">${hint}</span>` : ''}</p><div class="bar"><span style="width:${n / nSp * 100}%"></span></div>`;
   App.asideHost().innerHTML = `
   <section class="card"><p class="eyebrow">${L('Confusión pendiente', 'Open confusion')}</p>
     ${conf ? `<div class="confusion-mini"><figure>${App.tile(conf.yours, null, 'r43')}<figcaption class="small"><i>${esc(App.sp(conf.yours).binomial)}</i></figcaption></figure><span class="vs">vs</span>
@@ -239,7 +250,9 @@ V.hoy = function () {
     : `<p class="small muted">${L('Aún no hay ninguna. Cuando confundas dos especies, aparecerán aquí juntas, con la clave para distinguirlas.',
         'None yet. When you mix up two species, they’ll show up here side by side, with the key to tell them apart.')}</p>`}</section>
   <section class="card"><p class="eyebrow">${L('Tu colección', 'Your collection')}</p>
-    <p><b>${tiers.seen}</b> ${L(`de ${nSp} especies vistas`, `of ${nSp} species seen`)}</p><div class="bar"><span style="width:${tiers.seen / nSp * 100}%"></span></div>
+    ${tierBar(tiers.viewed, 'especies vistas', 'species seen', L('En un primer vistazo, en su ficha o al ver la respuesta en un juego.', 'In a first look, on its card or in a game’s answer.'))}
+    ${tierBar(tiers.seen, 'practicadas', 'practised', L('Respondidas al menos una vez, bien o mal.', 'Answered at least once, right or wrong.'))}
+    ${tierBar(tiers.right, 'acertadas', 'answered right', L('Al menos una casilla bien.', 'At least one box right.'))}
     <div class="tiers"><div class="tier"><b>${tiers.bronze}</b>${L('bronce', 'bronze')}</div><div class="tier"><b>${tiers.silver}</b>${L('plata', 'silver')}</div><div class="tier"><b>${tiers.gold}</b>${L('oro', 'gold')}</div></div>
     <p class="tiny muted">${L('Bronce: las cinco casillas acertadas una vez. Plata: las cinco dominadas. Oro: dominadas con 21 días de estabilidad.',
         'Bronze: all five boxes right once. Silver: all five mastered. Gold: mastered with 21 days of stability.')}</p>
@@ -290,6 +303,7 @@ V.nivel = function () {
     <div class="seg-cards" role="group" aria-label="${L('Juego', 'Game')}">${games.map(([k, t, d, ic]) => `<button class="pick" data-game="${k}" aria-pressed="${set.game === k}"><span class="t">${t}</span><span class="d">${d}</span>${gameIcon(ic)}</button>`).join('')}</div>
     <h2>${L('2. Nivel', '2. Level')}</h2>
     <div class="seg-cards ${sheet ? 'dim' : ''}" role="group" aria-label="${L('Nivel', 'Level')}" ${sheet ? 'aria-disabled="true"' : ''}>${[1, 2, 3].map(k => `<button class="pick" data-level="${k}" aria-pressed="${set.level === k}" ${sheet ? 'disabled' : ''}><span class="t">${App.lvDots(k)}${I.lvName(k)}</span><span class="d">${rev ? revLevelDesc(k) : I.lvDes(k)}</span>${rev ? levelMock(1) : levelMock(k)}</button>`).join('')}</div>
+    <h2>${L('3. Qué sale antes', '3. What comes first')}</h2>${App.sortChips()}
     <div class="note-box"><b>${L('Regla', 'Rule')}:</b> ${rev ? REV_NOTE() : I.MASTERY_RULE()}</div>
     <div class="note-box info">${rev ? L('Antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Tocar una comprueba tu respuesta, y queda anotada junto a ella.',
         'Before the answer we ask how sure you were: “I’m guessing”, “Not sure” or “I know it”. Tapping one checks your answer, and it is logged with it.') : L('En todos los niveles, antes de ver la solución te preguntamos cuánta seguridad tenías: «Lo adivino», «Dudo» o «Lo sé seguro». Tocar una comprueba tu respuesta. Así repasas antes lo que creías saber y no sabías.',
@@ -302,10 +316,19 @@ V.nivel = function () {
     <p class="small"><b>${I.lvName(3)}</b>: ${L('lo mismo que pide el examen: foto y respuesta escrita, y la ortografía cuenta.',
         'exactly what the exam asks: a photo and a typed answer, and spelling counts.')}</p></section>`;
 };
-App.on('click', '[data-pace]', b => { SET().newPerDay = +b.dataset.pace; Store.save(); App.redraw(V.hoy, '#sesh'); });
 App.on('click', '[data-game]', b => { SET().game = b.dataset.game; Store.save(); App.redraw(V.nivel, `[data-game="${b.dataset.game}"]`); });
 App.on('click', '[data-level]', b => { SET().level = +b.dataset.level; Store.save(); App.redraw(V.nivel, `[data-level="${b.dataset.level}"]`); });
 App.on('click', '#clearscope', () => { P().ui.scope = null; Store.save(); V.nivel(); });
+/* The order chips: Settings, the level picker and the two games without one (they start a new round in the new order). */
+App.on('click', '[data-sortby]', b => {
+  SET().sortBy = b.dataset.sortby; Store.save();
+  const r = route(), sel = `[data-sortby="${b.dataset.sortby}"]`;
+  if (r === 'sobra') { App.newOdd(); App.redraw(V.sobra, sel); }
+  else if (r === 'parejas') { App.newPairs(); App.redraw(V.parejas, sel); }
+  else if (r === 'ajustes') App.redraw(V.ajustes, sel);
+  else if (r === 'nivel') App.redraw(V.nivel, sel);
+  else App.render(false);   // a session or a game: start it again in the new order
+});
 
 /* ---------- SESSION (photo → one box, or the exam sheet) ---------- */
 let sess = null;
@@ -315,10 +338,11 @@ App.newSession = function (game, opts) {
   const once = App.onceSession || {};   // a one-off round (the check after a first look) overrides the saved group and level
   App.onceSession = null;
   const now = Date.now(), set = SET(), skills = App.skills(), saved = once.scope || P().ui.scope, scope = saved && M().nodes[saved] ? saved : null;
-  const base = { now, skills, scope, pool: once.pool, size: set.sessionSize, force: !!opts.force, introduce: !!(once.scope || once.pool) };
+  const base = { now, skills, scope, pool: once.pool, size: set.sessionSize, sortBy: set.sortBy, introduce: !!(once.scope || once.pool) };
   const items = opts.mistakes ? E.buildMistakes(M(), P(), base) : game === 'hoja' ? E.buildSheetSession(M(), P(), Object.assign(base, { size: Math.max(5, Math.round(set.sessionSize / 2)) }))
     : game === 'grupo' ? E.buildGroupSession(M(), P(), base) : E.buildSession(M(), P(), base);
-  sess = { game, mistakes: !!opts.mistakes, level: game === 'hoja' ? 3 : once.level || set.level, items, i: 0, results: [], startedAt: now, done: false };
+  sess = { game, mistakes: !!opts.mistakes, level: game === 'hoja' ? 3 : once.level || set.level, items, i: 0, results: [], startedAt: now, done: false,
+    viewed: new Set(), sortBy: opts.mistakes || base.introduce ? null : set.sortBy, size: game === 'hoja' ? Math.max(5, Math.round(set.sessionSize / 2)) : set.sessionSize };
   resetItem();
   return sess;
 };
@@ -406,8 +430,13 @@ V.session = function () {
   if (sess.phase === 'reveal') after = m === 'sheet' ? sheetResultHTML(it) : revealOK(it);
   if (sess.phase === 'retry' && m === 'mc' && sess.picked != null) after = `<div class="answer-space" aria-hidden="true"></div><div class="conf answer-bar"><button class="btn primary big grow" id="retrycheck">${L('Comprobar', 'Check')}</button></div>`;
   if (sess.phase === 'retried') after = retriedHTML(it);
-  const retryNote = retrying ? `<div class="note-box info"><b>${L('Otra vez, sin mirar', 'Once more, from memory')}.</b> ${L('No cuenta para tu progreso: es para fijarlo. Volverá también dentro de unas tarjetas.', 'It doesn’t count toward your progress: it’s to make it stick. It also comes back a few cards from now.')}</div>` : '';
-  App.main().innerHTML = `<div class="session-wrap">${top}${retryNote}
+  const nIn = new Set(sess.items.map(x => x.sp)).size, one = nIn === 1;
+  const shortNote = sess.i === 0 && sess.phase === 'ask' && sess.game !== 'grupo' && (sess.sortBy === 'mistakes' || sess.sortBy === 'progress') && sess.items.length < sess.size
+    ? `<div class="note-box info">${L(`Con «${App.sortName(sess.sortBy)}» solo hay ${nIn} ${sess.sortBy === 'mistakes' ? (one ? 'especie con fallos abiertos' : 'especies con fallos abiertos') : (one ? 'especie sin dominar' : 'especies sin dominar')} aquí, así que esta ronda es más corta.`,
+        `With “${App.sortName(sess.sortBy)}” there ${one ? 'is' : 'are'} only ${nIn} ${sess.sortBy === 'mistakes' ? 'species with open mistakes' : 'species not mastered'} here, so this round is shorter.`)}
+        <button class="linkbtn" data-sortby="views">${L(`Cambiar a «${App.sortName('views')}»`, `Switch to “${App.sortName('views')}”`)}</button></div>` : '';
+  const retryNote = retrying ? `<div class="note-box info"><b>${L('Otra vez, sin mirar', 'Once more, from memory')}.</b> ${L('No cuenta para tu progreso: es para fijarlo. El fallo queda anotado y la pregunta volverá en otra sesión.', 'It doesn’t count toward your progress: it’s to make it stick. The miss is recorded and the question comes back in another session.')}</div>` : '';
+  App.main().innerHTML = `<div class="session-wrap">${top}${shortNote}${retryNote}
     ${it.card ? groupGrid(sess.phase === 'reveal' || sess.phase === 'retried') : `<div class="quiz-photo">${quizPhoto(it, L('Foto del animal que hay que identificar', 'Photo of the animal to identify'))}</div>`}
     ${pills}<p class="prompt">${esc(promptText(it))}</p>${body}${after}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = App.DESK.matches ? sessionAside(it) : '';
@@ -453,11 +482,14 @@ function emptySession() {
       <div class="actions"><a class="btn primary big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div></div><div id="aside-m"></div>`;
     return;
   }
-  App.main().innerHTML = `<div class="session-wrap">${sessTop(0, 0, 0)}<h1>${L('No hay tarjetas para esta sesión', 'No cards for this session')}</h1>
-    <p>${M().withPhotos.length ? L('Ya has hecho los repasos y las nuevas de hoy. Puedes repasar igualmente o cambiar de grupo.',
-        'You’ve done today’s reviews and new cards. You can review anyway or change the group.') : L('Todavía no hay ninguna especie con foto.',
-        'There are no species with photos yet.')} <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>
-    <div class="actions"><a class="btn primary big" href="#${sess && sess.game === 'grupo' ? 'grupos-repaso' : 'sesion-repaso'}">${L('Repasar igualmente', 'Review anyway')}</a>
+  /* Nothing in play: no open mistakes, or everything mastered. */
+  const sb = sess && sess.sortBy;
+  const why = !M().withPhotos.length ? L('Todavía no hay ninguna especie con foto.', 'There are no species with photos yet.')
+    : sb === 'mistakes' ? L('No tienes ningún fallo abierto aquí: o no has fallado nada, o acertaste la última vez todo lo que habías fallado.', 'You have no open mistakes here: either you haven’t missed anything, or you got right last time everything you had missed.')
+    : L('Aquí lo tienes todo dominado.', 'You’ve mastered everything here.');
+  App.main().innerHTML = `<div class="session-wrap">${sessTop(0, 0, 0)}<h1>${L('No hay preguntas en este orden', 'No questions in this order')}</h1>
+    <p>${why} <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></p>
+    <div class="actions">${M().withPhotos.length ? `<button class="btn primary big" data-sortby="views">${L(`Practicar con «${App.sortName('views')}»`, `Practise with “${App.sortName('views')}”`)}</button>` : ''}
       <a class="btn big" href="#hoy">${L('Volver a Hoy', 'Back to Today')}</a></div></div><div id="aside-m"></div>`;
 }
 function sessionAside(it) {
@@ -521,13 +553,13 @@ function revealOK(it) {
   if (it.card) {
     return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
       <div class="group-cmp mt">${groupBlock(it.node, 'correct', L('Lo que tienen en común', 'What they have in common'))}</div>
-      <p class="small">${levelCountNote()}</p><p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}.</p>
+      <p class="small">${levelCountNote()}</p><p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due)}.</p>
       <div class="row mt"><button class="btn primary grow" id="nextbtn">${nextLabel(last)}</button>${groupLink(it.node, '')}</div></div>`;
   }
   return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Correcto!', 'Correct!')}</p>
     <h2><i>${esc(s.binomial)}</i> · ${esc(s.common_es)}</h2><p class="small">${esc(s.class)} › ${esc(s.order)}</p>
     <p class="small">${levelCountNote()}</p>
-    <p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}.</p>
+    <p class="small">${clockIcon()} ${backIn(sess.outcome && sess.outcome.due)}.</p>
     <div class="row mt"><button class="btn primary grow" id="nextbtn">${nextLabel(last)}</button>${App.cardLink(it.sp, '')}</div></div>`;
 }
 /* After the retry: right, or the answer once more. The first answer was already recorded; this one is not. */
@@ -535,11 +567,11 @@ function retriedHTML(it) {
   const r = sess.retryRes, last = sess.i === sess.items.length - 1, ans = E.answerFor(M(), it.sp, it.skill), sci = it.skill !== 'common';
   const next = `<div class="row mt"><button class="btn primary grow" id="nextbtn">${nextLabel(last)}</button></div>`;
   if (r.kind === 'right') return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok answer-bar" role="status"><p class="eyebrow">${L('¡Ahora sí!', 'Got it now!')}</p>
-    <p class="small">${L('Volverá dentro de unas tarjetas y en tus repasos.', 'It comes back a few cards from now and in your reviews.')}</p>${next}</div>`;
+    <p class="small">${L('El fallo queda anotado: volverá en otra sesión.', 'The miss is recorded: it comes back in another session.')}</p>${next}</div>`;
   const typed = mode() === 'typed' ? sess.typed.trim() : '';
   return `<div class="answer-space" aria-hidden="true"></div><div class="reveal-ok partial answer-bar" role="status"><p class="eyebrow">${L('Todavía no', 'Not yet')}</p>
     ${typed && r.kind === 'misspelling' ? diffRow(typed, ans, sci) : `<p>${L('Es', 'It is')} ${sciWrap(sci, ans)}.</p>`}
-    <p class="small">${L('Volverá dentro de unas tarjetas.', 'It comes back a few cards from now.')}</p>${next}</div>`;
+    <p class="small">${L('Volverá en otra sesión.', 'It comes back in another session.')}</p>${next}</div>`;
 }
 function feedbackHTML(it) {
   const r = sess.res, s = App.sp(it.sp), ans = E.answerFor(M(), it.sp, it.skill), sci = it.skill !== 'common';
@@ -547,7 +579,7 @@ function feedbackHTML(it) {
   const retry = `<button class="btn primary big" id="retrybtn">${L('Inténtalo otra vez', 'Try it again')}</button>`;
   const nextBtn = `${retry}<button class="btn big" id="nextbtn">${left <= 0 ? L('Saltar y ver el resumen', 'Skip and see the summary') : L('Saltar', 'Skip')}</button>`;
   const given = sess.mc ? (sess.picked != null ? sess.mc.options[sess.picked].value : '') : sess.typed.trim();
-  const after = (extra) => `${calloutsHTML(sess.conf, sess.outcome && sess.outcome.due, sess.outcome && sess.outcome.requeued)}
+  const after = (extra) => `${calloutsHTML(sess.conf, sess.outcome && sess.outcome.due)}
     <div class="actions">${nextBtn}${it.card ? groupLink(it.node, 'big') : App.cardLink(it.sp)}${extra || ''}</div>`;
   if (r.kind === 'misspelling') {
     /* A misspelling shows only what she typed next to the correct spelling. No explanation. */
@@ -590,7 +622,8 @@ App.on('submit', '#typedform', (f, e) => {
   sess.phase = 'confidence'; App.redraw(V.session, '[data-conf]');
 });
 /* "Try it again": after a miss and its explanation, the same question once more from memory, on a fresh photo (or
-   reshuffled options). Ungraded: the miss is recorded and the card still comes back later (David, 2026-11-08). */
+   reshuffled options), once. Ungraded: the miss is recorded and the card comes back in a later session (David, 2026-11-08;
+   no longer later in the same session since 2026-11-13). */
 App.on('click', '#retrybtn', () => {
   const it = curItem();
   Object.assign(sess, { phase: 'retry', picked: null, typed: '', hints: 0, retryRes: null });
@@ -628,6 +661,7 @@ function resolve(it) {
   if (mode() === 'sheet') {
     sess.sheetRes = {};
     let requeue = false;
+    Store.recordView([it.sp], now);
     App.skills().forEach(k => {
       const r = E.classify(M(), sess.sheet[k] || '', it.sp, k);
       sess.sheetRes[k] = r;
@@ -643,13 +677,11 @@ function resolve(it) {
     const typed = mode() === 'mc' ? sess.mc.options[sess.picked].value : sess.typed;
     const rec = Store.recordAnswer({ sp: it.sp, skill: it.skill, level: sess.lv, kind: sess.res.kind, hints: sess.hints, conf: sess.conf,
       game: it.card ? 'grupo' : 'foto', card: it.card, typed, with: sess.res.with }, now);
-    let requeued = false;
-    if ((sess.res.kind !== 'right' || sess.conf === 'guess') && (it.requeued || 0) < 2) {
-      const at = Math.min(sess.items.length, sess.i + 1 + E.requeueGap());
-      sess.items.splice(at, 0, Object.assign({}, it, { requeued: (it.requeued || 0) + 1 }));
-      requeued = true;
-    }
-    sess.outcome = { due: rec.due, requeued };
+    /* A miss isn't put back into this session: "Inténtalo otra vez" asks it once more straight away, and then the quiz
+       moves on, so it keeps the length she chose (David, 2026-11-13). */
+    if (it.card) Store.recordView(sess.gshow, now);   // the group's photos are named now
+    else if (!sess.viewed.has(it.sp)) { sess.viewed.add(it.sp); Store.recordView([it.sp], now); }   // one view per quiz, however many boxes
+    sess.outcome = { due: rec.due };
     sess.results.push({ sp: it.sp, skill: it.skill, kind: sess.res.kind, node: it.card && it.node });
   }
   sess.phase = 'reveal';
@@ -708,7 +740,7 @@ V.resumen = function () {
 let rsess = null;
 App.newReverse = function () {
   const now = Date.now(), lv = SET().level, scope = P().ui.scope && M().nodes[P().ui.scope] ? P().ui.scope : null;
-  const items = E.buildReverse(M(), P(), { now, scope, size: 10 });
+  const items = E.buildReverse(M(), P(), { now, scope, size: 10, skills: App.skills(), sortBy: SET().sortBy });
   rsess = { level: lv, items, i: 0, results: [], done: false };
   resetRev();
   return rsess;
@@ -778,6 +810,7 @@ function checkReverse() {
   const right = rsess.picked === t;
   rsess.results.push(right);
   Store.recordReverse({ sp: t, level: rsess.level, kind: right ? 'right' : 'wrong_species', conf: rsess.conf, with: right ? null : rsess.picked });
+  Store.recordView(right ? [t] : [t, rsess.picked]);
   V.cual(); App.main().focus();
   revealScroll(right);
 }
@@ -847,6 +880,7 @@ function finishMock() {
   const sc = E.mockScore(msess.answers);
   const rec = Object.assign({ id: msess.id, at: Date.now(), skills: App.skills(), items: msess.answers }, sc);
   P().mocks.push(rec);
+  Store.recordView(msess.answers.map(x => x.sp));   // the results name every photo
   if (P().mocks.length > 20) P().mocks.splice(0, P().mocks.length - 20);
   P().stats.sessions = (P().stats.sessions || 0) + 1;
   msess.newBadges = App.awardBadges();

@@ -69,6 +69,8 @@ all its outputs to temporary files and renames them only when every step has suc
   is refused as a whole, with a message, and the current progress is left untouched.
 - **Card id** (in the learner's progress): `<species_id>:<skill>`, where skill is one of
   `class, order, genus, species, common`.
+- **Views** (in the learner's progress, since 2026-11-13): `views: { <species_id>: count }`, the times
+  a species was shown with its answer outside a graded box. Merging two copies keeps the larger count.
 
 ## `VISU.bestiary`
 

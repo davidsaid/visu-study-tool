@@ -236,26 +236,26 @@ const SCENARIOS = {
     report({ scenario: 'credits', compare, mock });
   },
   'hard': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; win.VISU_STORE.save(); await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="3"]'); await click('#startbtn'); await sleep(1500); },
-  /* From a mistake to the animal's card and back to the same question (button, then browser back). */
+  /* From a mistake to the animal's card, which opens over the question, and back to the same question (David, 2026-11-13). */
   'cardlink': async () => {
     seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common');
     await answerTyped('Milano negro');
-    const sessBefore = App().sessionState(), iBefore = sessBefore.i;
-    const links = [...doc.querySelectorAll('.session-wrap a[href="#ficha-milvus_milvus"]')].length;
+    const sessBefore = App().sessionState(), iBefore = sessBefore.i, views0 = win.VISU_STORE.data.views.milvus_milvus || 0;
     const nameLink = !!doc.querySelector('.twoup .correct .vern a[href="#ficha-milvus_milvus"]');
     await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(250);
-    const card = { onCard: location.hash === '' && doc.location.hash === '#ficha-milvus_milvus', back: !!doc.querySelector('.back-to-practice'),
-      title: (doc.querySelector('.plate h1, .plate h2') || {}).textContent };
-    await click('.back-to-practice'); await sleep(250);
+    const dlg = doc.getElementById('cardpop'), pr = dlg && dlg.querySelector('[data-practise]');
+    const pop = { open: !!dlg && dlg.open, route: doc.location.hash === '#sesion', title: !!dlg && /Milano real/.test(dlg.querySelector('.ptitle').textContent),
+      noPractise: !pr || win.getComputedStyle(pr).display === 'none', counted: win.VISU_STORE.data.views.milvus_milvus === views0 + 1 };
+    const other = dlg.querySelector('.conf-list a[href^="#ficha-"]');
+    if (other) { await click(other); await sleep(150); }
+    const inside = !!other && dlg.open && doc.location.hash === '#sesion' && !/Milano real/.test(dlg.querySelector('.ptitle').textContent);
+    await click('[data-cardpop-close]'); await sleep(150);
     const s1 = App().sessionState();
-    const viaButton = { sameSession: s1 === sessBefore, sameItem: s1.i === iBefore, stillFeedback: !!doc.querySelector('.mistake-head') };
-    await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(250);
-    win.history.back(); await sleep(400);
-    const s2 = App().sessionState();
-    const viaBrowserBack = { sameSession: s2 === sessBefore, sameItem: s2.i === iBefore, stillFeedback: !!doc.querySelector('.mistake-head') };
+    const back = !dlg.open && s1 === sessBefore && s1.i === iBefore && !!doc.querySelector('.mistake-head');
+    await click('.twoup .correct .vern a'); await sleep(150); const nameOpens = dlg.open; await click('[data-cardpop-close]');
     await go('hoy'); await go('ficha-lynx_pardinus');
-    const noBackLater = !doc.querySelector('.back-to-practice');
-    report({ scenario: 'cardlink', links, nameLink, card, viaButton, viaBrowserBack, noBackLater });
+    const plain = !dlg.open && doc.location.hash === '#ficha-lynx_pardinus' && /Lince/.test(doc.querySelector('.plate .ptitle').textContent);
+    report({ scenario: 'cardlink', nameLink, pop, inside, back, nameOpens, plain });
   },
   /* "What the name says": on the species card, the group card, and after a miss, a misspelling and a wrong pick. */
   'names': async () => {
@@ -420,11 +420,11 @@ const SCENARIOS = {
     const orders = doc.querySelectorAll('.look-order .car').length >= 1 && App().lookState().slides.every(x => x.startsWith('order:'));
     report({ scenario: 'vistazo', suggested: !!suggested && /^#vistazo-order-/.test(suggested), button, first, second, check, unlocked, free, remembered, orders, n });
   },
-  /* The check after a first look shows that group even when today's new cards are used up (a long day of practice). */
+  /* The check after a first look asks that group, whatever the chosen order. */
   'vistazo-quota': async () => {
     seedStorage(seen); await open('hoy');
     const P = win.VISU_STORE.data, later = Date.now() + 864e5;
-    P.settings.newPerDay = 1;
+    P.settings.sortBy = 'mistakes';   // nothing in play under it: the check must not care
     ['class', 'order', 'genus', 'species', 'common'].forEach(k => { P.cards['milvus_milvus:' + k] = { p: { first: Date.now(), due: later } }; });
     P.cards['order:Accipitriformes:group'] = { p: { first: Date.now(), due: later } };
     await go('vistazo-order-Strigiformes'); await lookToEnd();
@@ -441,13 +441,13 @@ const SCENARIOS = {
   'plan': async () => {
     seedStorage(Object.assign({}, seen, { log: [{ ts: Date.now() - 864e5, card: 'milvus_milvus:class', game: 'foto', level: 1, kind: 'right' }] })); await open('hoy');
     const today = !!$('a[href="#como-funciona-plan"]');
-    await go('ajustes'); const settings = !!$('#set-newPerDay').closest('.switch-row').querySelector('a[href="#como-funciona-plan"]');
+    await go('ajustes'); const settings = !!$('.sort-chips').previousElementSibling.querySelector('a[href="#como-funciona-plan"]');
     await click('a[href="#como-funciona-plan"]'); await sleep(150);
-    const h = $('#plan'), section = !!h && /plan de estudio/.test(h.textContent) && /10 especies nuevas al día \(50 tarjetas\)/.test(h.parentNode.textContent);
+    const h = $('#plan'), section = !!h && /plan de estudio/.test(h.textContent) && /No hay límite de especies nuevas al día/.test(h.parentNode.textContent) && /Menos vistas/.test(h.parentNode.textContent);
     const top = h.getBoundingClientRect().top, scrolled = win.scrollY > 200 && top > 40 && top < 120, tab = !!$('.tab[href="#como-funciona"][aria-current="page"]');
-    App().set().newPerDay = 1; App().set().level = 1; win.VISU_STORE.save();
-    const P = win.VISU_STORE.data; ['class', 'order', 'genus', 'species', 'common'].forEach(k => { P.cards['milvus_milvus:' + k] = { p: { first: Date.now(), due: Date.now() + 864e5 } }; });
-    await go('sesion'); const empty = !!$('.session-wrap a[href="#como-funciona-plan"]') && !$('[data-opt]');
+    App().set().level = 1; App().set().sortBy = 'mistakes'; win.VISU_STORE.save();
+    await go('sesion');   // no open mistakes: nothing in play
+    const empty = !!$('.session-wrap a[href="#como-funciona-plan"]') && !$('[data-opt]');
     report({ scenario: "plan", today, settings, section, scrolled, tab, empty });
   },
   /* Explore's search: scientific or common name, accents and capitals ignored; Enter opens the first match. */
@@ -493,23 +493,23 @@ const SCENARIOS = {
   },
   'answerbar-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 1; win.VISU_STORE.save(); await go('cual-es'); await sleep(100);
     await click(doc.querySelectorAll('[data-pick]')[0]); if (Q.get('check')) { const t = App().reverseState().items[0]; await click(doc.querySelector(`[data-pick="${t}"]`)); await click('[data-conf="sure"]'); } },
-  /* Today with a pile of due reviews: a third of the session stays new, new species come from groups she looked at,
-     and with an exam date Today suggests a daily pace (David, 2026-11-08). */
+  /* Today: the next session in the chosen order, two boxes per species, and no count of boxes due (David, 2026-11-13). */
   'pace': async () => {
     seedStorage(seen); await open('hoy');
     const P = win.VISU_STORE.data, E = Eng(), now = Date.now(), skills = App().skills();
     App().M.withPhotos.filter(id => App().sp(id).class === 'Aves').slice(0, 30).forEach(id => skills.forEach(k => { P.cards[id + ':' + k] = E.applyAnswer(null, { level: 1, kind: 'right' }, now - 2 * E.DAY).card; }));
     P.log.push({ ts: now - 2 * E.DAY, card: 'milvus_milvus:class', game: 'foto', level: 1, kind: 'right' });
-    P.settings.examDate = E.ymd(now + 12 * E.DAY); P.ui.looked = ['order:Carnivora']; P.settings.theme = 'light'; win.VISU_STORE.save(); App().applyTheme();
+    P.settings.examDate = E.ymd(now + 12 * E.DAY); P.settings.sortBy = 'progress'; win.VISU_STORE.save();
     await go('explorar'); await go('hoy');
-    const split = /13 repasos pendientes/.test($('.legend').textContent) && /7 nuevas/.test($('.legend').textContent);
-    const btn = $('[data-pace]'), note = !!btn && /días para presentarlas/.test(btn.closest('.note-box').textContent);
-    const nb = btn && btn.closest('.note-box'), readable = !!nb && getComputedStyle(nb).color === 'rgb(243, 244, 251)';   // the dark card's light text, also in the light theme
-    const want = btn && +btn.dataset.pace; if (btn) await click(btn);
-    const applied = P.settings.newPerDay === want && !$('[data-pace]');
-    await go('sesion'); const fresh = App().sessionState().items.filter(x => !P.cards[x.sp + ':' + x.skill]);
-    const lookedFirst = fresh.length === 7 && fresh.every(x => App().sp(x.sp).order === 'Carnivora');
-    report({ scenario: 'pace', split, note, readable, applied, lookedFirst });
+    const lg = $('.legend').textContent, m = /(\d+) especies ya empezadas.*?(\d+) especies nuevas/.exec(lg), card = $('.session-card').textContent;
+    const split = /20 preguntas/.test($('#sesh').textContent) && !!m && +m[1] + +m[2] === 10 && /Menos progreso/.test(card);
+    const noDue = !/tocan hoy|casillas tocan|repasos pendientes/.test(card) && !$('[data-pace]');
+    P.settings.sortBy = 'views'; win.VISU_STORE.save(); await go('explorar'); await go('hoy');
+    const views = /Menos vistas/.test($('.session-card').textContent);
+    await go('sesion'); const items = App().sessionState().items, per = {}; items.forEach(x => { per[x.sp] = (per[x.sp] || 0) + 1; });
+    const twoEach = items.length === 20 && Object.keys(per).length === 10 && Object.values(per).every(n => n <= 2);
+    const newFirst = Object.keys(per).every(id => !skills.some(k => P.cards[id + ':' + k]));   // nothing seen yet beats 30 practised birds
+    report({ scenario: 'pace', split, noDue, views, twoEach, newFirst });
   },
   /* First look: what the names say on each slide, the -iformes rule on order slides, and a pause every 4 slides. */
   'lookquiz': async () => {
@@ -726,7 +726,8 @@ const SCENARIOS = {
   /* "¿Este o este?": an own confusion comes first; a miss shows both side by side part by part and comes back; the answer is logged as a drill row. */
   'parejas': async () => {
     const t = Date.now() - 6e4;
-    seedStorage(Object.assign({ log: [{ ts: t, card: 'milvus_milvus:species', game: 'foto', level: 3, rating: 1, hints: 0, conf: 'sure', kind: 'wrong_species', with: ['milvus_migrans'] }] }, seen));
+    seedStorage(Object.assign({ log: [{ ts: t, card: 'milvus_milvus:species', game: 'foto', level: 3, rating: 1, hints: 0, conf: 'sure', kind: 'wrong_species', with: ['milvus_migrans'] }],
+      settings: { sortBy: 'mistakes' } }, seen));
     await open('hoy');
     const today = /1 confusión abierta/.test((doc.querySelector('a.game[href="#parejas"]') || {}).textContent || '') && !!doc.querySelector('.confusion-mini') && !!doc.querySelector('a.btn[href="#parejas"]');
     await click('a.game[href="#parejas"]'); await sleep(200);
@@ -735,14 +736,60 @@ const SCENARIOS = {
     const ask = !!doc.querySelector('.quiz-photo .car') && doc.querySelectorAll('[data-pairpick]').length === 2 && doc.querySelector('#paircheck').disabled;
     const wrong = p.show === p.a ? p.b : p.a, n0 = st.items.length;
     await click(`[data-pairpick="${wrong}"]`); await click('#paircheck');
-    const miss = !!doc.querySelector('.mistake-head') && doc.querySelectorAll('.twoup .car').length === 2 && doc.querySelectorAll('.diff .dlab').length > 0 && App().pairState().items.length === n0 + 1;
+    const miss = !!doc.querySelector('.mistake-head') && doc.querySelectorAll('.twoup .car').length === 2 && doc.querySelectorAll('.diff .dlab').length > 0 && App().pairState().items.length === n0;   // no longer put back into the round
     const row = win.VISU_STORE.data.log.slice(-1)[0];
     const logged = row.game === 'par' && row.kind === 'wrong_species' && row.card === p.show + ':species' && row.with[0] === wrong;
-    await click('#pairnext');
-    const p2 = App().pairState().items[1];
+    const onlyOpen = App().pairState().items.every(x => x.mine || [x.a, x.b].includes('milvus_milvus'));   // "most mistakes": only pairs with an open mistake
+    App().set().sortBy = 'views'; App().newPairs(); App().views.parejas();
+    const p2 = App().pairState().items[0];
     await click(`[data-pairpick="${p2.show}"]`); await click('#paircheck');
     const right = !!doc.querySelector('.reveal-ok') && /Esta foto/.test(doc.querySelector('.twoup .correct .lbl').textContent) && win.VISU_STORE.data.log.slice(-1)[0].kind === 'right';
-    report({ scenario: 'parejas', today, mine, ask, miss, logged, right });
+    report({ scenario: 'parejas', today, mine, ask, miss, logged, onlyOpen, right });
+  },
+  /* Practice control (David, 2026-11-13): one order chosen on the level picker, in Settings and in the games without a
+     picker; a Reptilia quiz covers at least ten species; a miss neither grows the quiz nor repeats more than once; three bars. */
+  'practicectl': async () => {
+    seedStorage(seen); await open('nivel');
+    const pressed = k => ($(`[data-sortby="${k}"]`) || {}).getAttribute && $(`[data-sortby="${k}"]`).getAttribute('aria-pressed') === 'true';
+    const chips = doc.querySelectorAll('[data-sortby]').length === 3 && pressed('views');
+    await click('[data-sortby="mistakes"]');
+    const picked = App().set().sortBy === 'mistakes' && pressed('mistakes') && /fallo abierto/.test($('.sort-desc').textContent);
+    await go('ajustes'); const settings = pressed('mistakes');
+    await click('[data-sortby="progress"]'); const fromSettings = App().set().sortBy === 'progress' && pressed('progress') && doc.location.hash === '#ajustes';
+    await go('sobra'); const sobra = pressed('progress'); await click('[data-sortby="views"]'); const sobraRound = App().set().sortBy === 'views' && App().oddState().i === 0 && !!$('[data-oddpick]');
+    await go('parejas'); const parejas = pressed('views');
+    await reload(); const remembered = win.VISU_STORE.data.settings.sortBy === 'views';
+    const P = win.VISU_STORE.data; P.ui.scope = 'class:Reptilia'; App().set().level = 3; win.VISU_STORE.save();
+    await go('sesion');
+    const s = () => App().sessionState(), items = s().items.slice(), per = {}; items.forEach(x => { per[x.sp] = (per[x.sp] || 0) + 1; });
+    const reptiles = items.length === 20 && Object.keys(per).length >= 10 && Object.values(per).every(n => n <= 2) && items.every(x => App().sp(x.sp).class === 'Reptilia');
+    const n0 = s().items.length; await answerTyped('wrong');
+    const notRequeued = s().items.length === n0 && !/en esta sesión/.test(doc.body.textContent);
+    await click('#retrybtn'); await type('#typedin', 'zzzz'); doc.getElementById('typedform').requestSubmit(); await sleep(80);
+    const once = s().phase === 'retried' && !$('#retrybtn') && !!$('#nextbtn') && s().items.length === n0;
+    P.ui.scope = null; win.VISU_STORE.save(); await go('hoy');
+    const bars = [...doc.querySelectorAll('.tier-bar')].map(b => b.textContent);
+    const three = bars.length === 3 && /de \d+ especies vistas/.test(bars[0]) && /practicadas/.test(bars[1]) && /acertadas/.test(bars[2]);
+    const counts = bars.map(b => +/^\s*(\d+)/.exec(b)[1]);
+    report({ scenario: 'practicectl', chips, picked, settings, fromSettings, sobra, sobraRound, parejas, remembered, reptiles, notRequeued, once, three, counts });
+  },
+  'cardpop-shot': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; await go('sesion'); setItem('milvus_milvus', 'common'); await answerTyped('Milano negro');
+    await click('.session-wrap .actions a[href="#ficha-milvus_milvus"]'); await sleep(400); },
+  /* Exposure first (David, 2026-11-13): an order with nothing in play says so and offers "Menos vistas"; a round with few
+     species in play says it is shorter; a species seen but never answered shows 1 %. */
+  'orderedge': async () => {
+    seedStorage(Object.assign({}, seen, { settings: { sortBy: 'mistakes' }, ui: { looked: ['order:Carnivora'] } })); await open('hoy');
+    await go('sesion');
+    const empty = /No hay preguntas en este orden/.test($('h1').textContent) && /ningún fallo abierto aquí/.test(doc.body.textContent) && !!$('[data-sortby="views"]');
+    await click('[data-sortby="views"]'); await sleep(150);
+    const switched = App().set().sortBy === 'views' && App().sessionState().items.length === 20 && doc.location.hash === '#sesion';
+    const P = win.VISU_STORE.data; App().set().sortBy = 'mistakes';
+    P.log.push({ ts: Date.now() - 6e4, card: 'milvus_milvus:genus', game: 'foto', level: 2, kind: 'wrong' }); win.VISU_STORE.save();
+    await go('hoy'); await go('sesion');
+    const its = App().sessionState().items;
+    const short = its.length === 2 && its.every(x => x.sp === 'milvus_milvus') && its.some(x => x.skill === 'genus') && /solo hay 1 especie con fallos abiertos/.test(doc.body.textContent);
+    await go('ficha-lynx_pardinus'); const onePct = /Progreso 1\s?%/.test($('.plate .status-row').textContent);
+    report({ scenario: 'orderedge', empty, switched, short, onePct });
   },
   'parejas-shot': async () => {
     seedStorage(Object.assign({ log: [{ ts: Date.now() - 6e4, card: 'milvus_milvus:species', game: 'foto', level: 3, rating: 1, hints: 0, conf: 'sure', kind: 'wrong_species', with: ['milvus_migrans'] }] }, seen));

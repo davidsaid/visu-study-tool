@@ -358,40 +358,13 @@ function readinessAt(P, now) {
 const ymd = ts => { const d = new Date(ts); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
 const startOfDay = ts => { const d = new Date(ts); d.setHours(0, 0, 0, 0); return +d; };
 
-/* New cards started today; species and group cards have separate allowances. */
-function newIntroducedToday(P, now, groups) {
-  const t0 = startOfDay(now);
-  let n = 0; for (const k in P.cards) { const p = P.cards[k].p; if (p && p.first >= t0 && isGroupCard(k) === !!groups) n++; }
-  return n;
-}
-/* What Today offers: due cards and how many new ones may still be introduced. */
-function todayPlan(M, P, opts) {
-  const now = opts.now, skills = opts.skills;
-  const pool = scopePool(M, opts.scope);
-  const endOfDay = startOfDay(now) + DAY;
-  let dueNow = 0, dueToday = 0, unseen = [];
-  pool.forEach(id => skills.forEach(k => {
-    const c = P.cards[cardId(id, k)], d = dueOf(c);
-    if (d == null) unseen.push({ sp: id, skill: k });
-    else { if (d <= now) dueNow++; if (d < endOfDay) dueToday++; }
-  }));
-  const allowance = Math.max(0, P.settings.newPerDay * skills.length - newIntroducedToday(P, now));
-  return { dueNow, dueToday, newAvailable: Math.min(allowance, unseen.length), unseen: unseen.length, pool: pool.length };
-}
 function scopePool(M, scope) {
   const base = M.withPhotos;
   if (!scope || !M.nodes[scope]) return base;
   const under = new Set(speciesUnder(M, scope));
   return base.filter(id => under.has(id));
 }
-/* How a session of `size` cards splits between reviews and new cards: new cards get up to `cap` (a third of the session
-   by default) while the day's allowance lasts, so a pile of due reviews never shuts new species out; room one kind
-   doesn't use goes to the other (David, 2026-11-08). */
-function sessionSplit(dueN, newN, size, cap) {
-  const fresh = Math.min(newN, cap == null ? Math.ceil(size / 3) : cap), due = Math.min(dueN, size - fresh);
-  return { due, fresh: Math.min(newN, size - due) };
-}
-/* Species in groups whose "Primer vistazo" was finished: they are the first new species to practise. */
+/* Species in groups whose "Primer vistazo" was finished. */
 function lookedSpecies(M, P) {
   const out = new Set(), solos = soloLooks(M);
   const ch = changeLook(M);
@@ -420,38 +393,79 @@ function changeLook(M) {
   const date = ids.flatMap(id => M.species[id].changes.map(c => c.date)).sort().pop();
   return (M._changes = ids.length ? { node: 'cambios:' + date, ids, date } : null);
 }
-/* New species a day so that every species not started yet is started 3 days before the exam (the last days are for
-   reviewing). Null without an exam date, or when the date is too close for new species. */
-function suggestNewPerDay(M, P, skills, now) {
-  const ex = P.settings.examDate ? new Date(P.settings.examDate + 'T09:00:00').getTime() : NaN;
-  const days = Math.round((startOfDay(ex) - startOfDay(now)) / DAY) - 3;
-  if (!(days > 0)) return null;
-  const remaining = M.withPhotos.filter(id => skills.every(k => !P.cards[cardId(id, k)])).length;
-  return remaining ? { remaining, days, perDay: Math.ceil(remaining / days) } : null;
+/* ---------------------------------------------------------------- quiz order */
+/* Exposure first, correctness second (David, 2026-11-13), in every practice game except the mock. The species she has seen
+   the fewest times come first; a tie goes to the one seen least recently, so nothing she has just seen comes straight back,
+   whatever she answered. Correctness decides which species are in play and breaks the remaining ties:
+   'views' (Menos vistas): all of them, the weakest first. 'mistakes' (Más fallos): species with an open mistake (a box whose
+   last answer was wrong), the most open mistakes first. 'progress' (Menos progreso): species not mastered, the lowest meter
+   first. Answers still reschedule cards; due dates break what is left, then chance. */
+const SORTS = ['views', 'mistakes', 'progress'];
+const sortOf = opts => (SORTS.includes(opts.sortBy) ? opts.sortBy : 'views');
+/* A quiz asks at most two boxes per species, so it covers more species (David, 2026-11-13). */
+const BOXES_PER_SPECIES = 2;
+const cmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
+const dueOrInf = c => { const d = dueOf(c); return d == null ? Infinity : d; };
+const BOX_GAMES = ['foto', 'hoja', 'mock'];   // the games that answer a species' box (not ¿Cuál es? or ¿Este o este?)
+/* Per species, from the log: answers before views were counted (per box, the most), the last time it was shown, and per
+   card whether its last answer in a box game was wrong (an open mistake). */
+function logFacts(P) {
+  const from = (P.meta && P.meta.viewsFrom) || 0, perBox = {}, last = {}, open = {};
+  P.log.forEach(r => {
+    const sp = r.card.split(':')[0];
+    if (!isGroupCard(r.card)) {
+      last[sp] = Math.max(last[sp] || 0, r.ts);
+      if (r.ts < from) perBox[r.card] = (perBox[r.card] || 0) + 1;
+    }
+    if (isGroupCard(r.card) || BOX_GAMES.includes(r.game) || r.game === 'grupo') open[r.card] = r.kind !== 'right';
+  });
+  const early = {};
+  Object.keys(perBox).forEach(k => { const sp = k.split(':')[0]; early[sp] = Math.max(early[sp] || 0, perBox[k]); });
+  return { early, last, open };
 }
-/* Photo → one box. Due cards first (most overdue first), then new cards: species from groups she has had a first look
-   at, then the rest in tree order, so new species arrive order by order and look-alikes get mixed together. */
+/* How many times each species has been shown with its name: P.views (first-look slides, opened cards, quiz appearances)
+   plus the answers from before views were counted. A species in a finished first look counts at least once. */
+function exposures(M, P, skills, facts) {
+  const looked = lookedSpecies(M, P), views = P.views || {}, f = facts || logFacts(P), out = {};
+  M.order.forEach(id => { out[id] = Math.max(views[id] || 0, looked.has(id) ? 1 : 0) + (f.early[id] || 0); });
+  return out;
+}
+/* Seen at least once (the 1 % shown on cards and rings): viewed, in a finished first look, or answered. */
+function speciesViewed(M, P, id) {
+  if ((P.views && P.views[id]) || SKILLS.some(k => P.cards[cardId(id, k)])) return true;
+  const key = ((P.ui && P.ui.looked) || []).join('|');
+  if (!M._looked || M._looked.key !== key) M._looked = { key, set: lookedSpecies(M, P) };
+  return M._looked.set.has(id);
+}
+const lastSeen = (P, f, id) => Math.max((P.viewedAt && P.viewedAt[id]) || 0, f.last[id] || 0);
+const openBoxes = (f, id, skills) => skills.filter(k => f.open[cardId(id, k)]);
+/* `pool` in the chosen order, without the species out of play (`keepAll`: with them, after the others).
+   opts = { sortBy, skills, now, rng, keepAll }. */
+function rankSpecies(M, P, pool, opts) {
+  const sort = sortOf(opts), skills = opts.skills, now = opts.now, f = logFacts(P), seen = exposures(M, P, skills, f);
+  const inPlay = sort === 'mistakes' ? id => openBoxes(f, id, skills).length > 0 : sort === 'progress' ? id => !speciesStats(M, P, id, skills, now).mastered : () => true;
+  const measure = id => (sort === 'mistakes' ? -openBoxes(f, id, skills).length : speciesStats(M, P, id, skills, now).meter);
+  const due = id => skills.reduce((a, k) => Math.min(a, dueOrInf(P.cards[cardId(id, k)])), Infinity);
+  return shuffle(opts.keepAll ? pool : pool.filter(inPlay), opts.rng || Math.random).map(id => ({ id, o: inPlay(id) ? 0 : 1, v: seen[id], l: lastSeen(P, f, id), k: measure(id), d: due(id) }))
+    .sort((a, b) => a.o - b.o || cmp(a.v, b.v) || cmp(a.l, b.l) || cmp(a.k, b.k) || cmp(a.d, b.d)).map(r => r.id);
+}
+/* A species' boxes for one quiz: its open mistakes first under "most mistakes", then the lowest progress, then the
+   earliest due; ties at random. */
+function weakestBoxes(P, id, opts, f) {
+  const by = sortOf(opts) === 'mistakes';
+  return shuffle(opts.skills, opts.rng || Math.random).map(k => { const c = P.cards[cardId(id, k)]; return { k, m: by && f.open[cardId(id, k)] ? 0 : 1, v: cardMeter(c, opts.now), d: dueOrInf(c) }; })
+    .sort((a, b) => cmp(a.m, b.m) || cmp(a.v, b.v) || cmp(a.d, b.d)).map(x => x.k);
+}
+/* Photo → one box: species in the chosen order, up to two boxes each, until the session is full. The check after a
+   first look (`introduce`) always takes the fewest views first: the species just seen. `pool`: a first look's own
+   species (the single-species batches). */
 function buildSession(M, P, opts) {
-  const now = opts.now, skills = opts.skills, size = opts.size || 20, rng = opts.rng || Math.random;
-  const pool = opts.pool || scopePool(M, opts.scope);   // `pool`: a first look's own species (the single-species batches)
-  const due = [], fresh = [];
-  pool.forEach(id => skills.forEach(k => {
-    const c = P.cards[cardId(id, k)], d = dueOf(c);
-    if (d == null) fresh.push({ sp: id, skill: k });
-    else if (d <= now) due.push({ sp: id, skill: k, due: d });
-  }));
-  due.sort((a, b) => a.due - b.due);
-  const looked = lookedSpecies(M, P);
-  fresh.sort((a, b) => (looked.has(b.sp) ? 1 : 0) - (looked.has(a.sp) ? 1 : 0));   // stable: tree order within each part
-  /* `introduce`: the check after a first look shows that group whatever is left of the day's new cards. */
-  const allowance = opts.introduce ? size : Math.max(0, P.settings.newPerDay * skills.length - newIntroducedToday(P, now));
-  const split = sessionSplit(due.length, Math.min(allowance, fresh.length), size, opts.introduce ? size : undefined);
-  let items = due.slice(0, split.due).map(x => ({ sp: x.sp, skill: x.skill }));
-  items = items.concat(fresh.slice(0, split.fresh));
-  if (!items.length && opts.force) {
-    const all = [];
-    pool.forEach(id => skills.forEach(k => all.push({ sp: id, skill: k, due: dueOf(P.cards[cardId(id, k)]) || 0 })));
-    items = all.sort((a, b) => a.due - b.due).slice(0, size).map(x => ({ sp: x.sp, skill: x.skill }));
+  const size = opts.size || 20, rng = opts.rng || Math.random;
+  const o = Object.assign({}, opts, { rng, sortBy: opts.introduce ? 'views' : opts.sortBy });
+  const per = Math.min(BOXES_PER_SPECIES, o.skills.length), f = logFacts(P), items = [];
+  for (const id of rankSpecies(M, P, opts.pool || scopePool(M, opts.scope), o)) {
+    if (items.length >= size) break;
+    weakestBoxes(P, id, o, f).slice(0, Math.min(per, size - items.length)).forEach(k => items.push({ sp: id, skill: k }));
   }
   return spreadSpecies(shuffle(items, rng));
 }
@@ -471,25 +485,31 @@ function groupItems(M, pool, skills) {
   /* A group holding the whole pool (the class when practising one class) would be no question. */
   return Array.from(out.values()).filter(g => g.members.length < pool.length || pool.length === 1);
 }
-/* Due groups first (most overdue first), then new ones within the day's allowance: classes before orders, larger
-   groups first, so the first questions show several different animals. */
+/* Groups by the same rule as species, on the group's own card: the times it was asked, then the least recently asked;
+   in play under "most mistakes", groups whose last answer was wrong; under "least progress", groups not mastered.
+   Remaining ties: the earliest due, then classes before orders and larger groups first, so the first questions show
+   several different animals. No daily limit on new groups (David, 2026-11-13). The check after a first look
+   (`introduce`) always goes by views. */
 function buildGroupSession(M, P, opts) {
-  const now = opts.now, size = opts.size || 20, rng = opts.rng || Math.random;
-  const all = groupItems(M, scopePool(M, opts.scope), opts.skills), due = g => dueOf(P.cards[g.card]);
-  const ready = shuffle(all.filter(g => due(g) != null && due(g) <= now), rng).sort((a, b) => due(a) - due(b));
-  const fresh = all.filter(g => due(g) == null).sort((a, b) => GROUP_SKILLS.indexOf(a.skill) - GROUP_SKILLS.indexOf(b.skill) || b.members.length - a.members.length);
-  const allowance = opts.introduce ? size : Math.max(0, P.settings.newPerDay - newIntroducedToday(P, now, true));
-  let items = ready.slice(0, size).concat(fresh.slice(0, Math.max(0, Math.min(allowance, size - ready.length))));
-  if (!items.length && opts.force) items = shuffle(all, rng).sort((a, b) => (due(a) || 0) - (due(b) || 0)).slice(0, size);
-  return items;
+  const now = opts.now, size = opts.size || 20, rng = opts.rng || Math.random, sort = opts.introduce ? 'views' : sortOf(opts), f = logFacts(P);
+  const card = g => P.cards[g.card], pp = g => (card(g) && card(g).p) || {};
+  const inPlay = sort === 'mistakes' ? g => !!f.open[g.card] : sort === 'progress' ? g => !cardMastered(card(g), now) : () => true;
+  return shuffle(groupItems(M, scopePool(M, opts.scope), opts.skills).filter(inPlay), rng)
+    .map(g => ({ g, v: pp(g).seen || 0, l: pp(g).last || 0, k: cardMeter(card(g), now), d: dueOrInf(card(g)) }))
+    .sort((a, b) => cmp(a.v, b.v) || cmp(a.l, b.l) || cmp(a.k, b.k) || cmp(a.d, b.d) || GROUP_SKILLS.indexOf(a.g.skill) - GROUP_SKILLS.indexOf(b.g.skill) || b.g.members.length - a.g.members.length).map(x => x.g).slice(0, size);
 }
 /* "¿Cuál sobra?": three species of one order and one of another. The odd one is from another class (Easy), from
-   the same class (Medium) or the closest species of another order (Hard). Only orders with three species with photos. */
-function buildOddOne(M, opts) {
-  const rng = opts.rng || Math.random, lv = opts.level || 2;
-  const groups = shuffle(groupItems(M, scopePool(M, opts.scope), ['order']).filter(g => g.members.length >= 3), rng).slice(0, opts.size || 10);
-  return groups.map(g => {
-    const three = shuffle(g.members, rng).slice(0, 3), T = M.species[three[0]];
+   the same class (Medium) or the closest species of another order (Hard). Only orders with three species with photos.
+   The three are the order's first species in the chosen order (species out of play after those in play), and the
+   orders whose three come first go first. */
+function buildOddOne(M, P, opts) {
+  const rng = opts.rng || Math.random, lv = opts.level || 2, pool = scopePool(M, opts.scope);
+  const pos = new Map(rankSpecies(M, P, pool, Object.assign({}, opts, { rng, keepAll: true })).map((id, i) => [id, i]));
+  const groups = groupItems(M, pool, ['order']).filter(g => g.members.length >= 3)
+    .map(g => { const best = g.members.slice().sort((a, b) => pos.get(a) - pos.get(b)).slice(0, 3); return { g, best, k: best.reduce((a, id) => a + pos.get(id), 0) }; })
+    .sort((a, b) => a.k - b.k).slice(0, opts.size || 10);
+  return groups.map(({ g, best }) => {
+    const three = shuffle(best, rng), T = M.species[three[0]];
     const others = M.withPhotos.filter(x => M.species[x].order !== T.order);
     let cand = lv === 1 ? others.filter(x => M.species[x].class !== T.class) : lv === 2 ? others.filter(x => M.species[x].class === T.class) : [];
     if (!cand.length) {
@@ -500,9 +520,12 @@ function buildOddOne(M, opts) {
     return { node: g.node, three, odd, opts: shuffle(three.concat(odd), rng) };
   });
 }
-/* "¿Este o este?": pairs of species to tell apart. The student's own confusions come first (any wrong_species answer),
-   most recent first; a pair is settled after three right answers in a row in this drill. Look-alike pairs from the
-   cards fill the rest. Drill rows log the other species of the pair in `with`, right or wrong. */
+/* "¿Este o este?": pairs of species to tell apart: the student's own confusions (any wrong_species answer), most recent
+   first, and look-alike pairs from the cards; a confusion is settled after three right answers in a row in this drill.
+   The pairs then follow the species rule: the fewest views of the two together, then the least recently seen; under
+   "most mistakes" only her open confusions and pairs with an open mistake are in play, under "least progress" only
+   pairs with a species not mastered; on a remaining tie her own confusions first. Drill rows log the other species of
+   the pair in `with`, right or wrong. */
 const pairKey = (a, b) => (a < b ? `${a}|${b}` : `${b}|${a}`);
 function pairStates(M, P) {
   const st = new Map();
@@ -519,13 +542,17 @@ function pairStates(M, P) {
 const openConfusions = (M, P) => Array.from(pairStates(M, P).values()).filter(e => e.n > 0 && e.streak < 3).sort((x, y) => y.at - x.at);
 function buildPairs(M, P, opts) {
   const rng = opts.rng || Math.random, size = opts.size || 10, st = pairStates(M, P), photo = id => M.photos[id] && M.photos[id].length;
-  const mine = openConfusions(M, P).filter(e => photo(e.a) && photo(e.b)).slice(0, size).map(e => ({ a: e.a, b: e.b, mine: true }));
+  const mine = openConfusions(M, P).filter(e => photo(e.a) && photo(e.b)).map(e => ({ a: e.a, b: e.b, mine: true }));
   const byName = new Map(M.order.map(id => [M.species[id].binomial, id])), seen = new Set(mine.map(e => pairKey(e.a, e.b))), look = [];
   M.withPhotos.forEach(id => (((M.content.species || {})[id] || {}).lookalikes || []).forEach(x => {
     const o = x && byName.get(x.binomial), k = o && pairKey(id, o);
     if (o && o !== id && photo(o) && !seen.has(k) && !((st.get(k) || {}).streak >= 3)) { seen.add(k); look.push({ a: id, b: o, mine: false }); }
   }));
-  return mine.concat(shuffle(look, rng)).slice(0, size).map(p => Object.assign(p, { show: rng() < 0.5 ? p.a : p.b }));
+  const sort = sortOf(opts), skills = opts.skills || SKILLS, f = logFacts(P), shown = exposures(M, P, skills, f);
+  const inPlay = sort === 'mistakes' ? p => p.mine || openBoxes(f, p.a, skills).length + openBoxes(f, p.b, skills).length > 0
+    : sort === 'progress' ? p => [p.a, p.b].some(id => !speciesStats(M, P, id, skills, opts.now).mastered) : () => true;
+  const all = mine.concat(shuffle(look, rng)).filter(inPlay).map((p, i) => ({ p, v: shown[p.a] + shown[p.b], l: Math.max(lastSeen(P, f, p.a), lastSeen(P, f, p.b)), i }));
+  return all.sort((x, y) => cmp(x.v, y.v) || cmp(x.l, y.l) || x.i - y.i).slice(0, size).map(x => Object.assign(x.p, { show: rng() < 0.5 ? x.p.a : x.p.b }));
 }
 /* Avoid the same animal twice in a row: the second photo would give the answer away. */
 function spreadSpecies(items) {
@@ -537,16 +564,15 @@ function spreadSpecies(items) {
   }
   return out;
 }
-/* Exam sheet: one species per item; due species first, then new ones. */
+/* Exam sheet: one species per item, in the chosen order. */
 function buildSheetSession(M, P, opts) {
-  const items = buildSession(M, P, Object.assign({}, opts, { size: (opts.size || 10) * opts.skills.length }));
-  const seen = new Set(), out = [];
-  items.forEach(x => { if (!seen.has(x.sp)) { seen.add(x.sp); out.push({ sp: x.sp, skill: 'sheet' }); } });
-  return out.slice(0, opts.size || 10);
+  const o = Object.assign({}, opts, { sortBy: opts.introduce ? 'views' : opts.sortBy });
+  return rankSpecies(M, P, opts.pool || scopePool(M, opts.scope), o).slice(0, opts.size || 10).map(sp => ({ sp, skill: 'sheet' }));
 }
 function buildMock(M, n, rng) { return shuffle(M.withPhotos, rng || Math.random).slice(0, n).map(sp => ({ sp, skill: 'sheet' })); }
 /* "Mis fallos": the species cards she missed in the last `days` days that she hasn't since got right on two
-   different days (successive relearning, research report). Most recent misses first, then spread out. */
+   different days (successive relearning, research report). Most recent misses first, at most two boxes per species,
+   then spread out. */
 function buildMistakes(M, P, opts) {
   const now = opts.now, days = opts.days || 7, size = opts.size || 20, since = now - days * DAY;
   const photo = new Set(M.withPhotos), skills = new Set(opts.skills), state = {};
@@ -556,18 +582,14 @@ function buildMistakes(M, P, opts) {
     const st = state[r.card] || (state[r.card] = { sp, skill, miss: 0, rightDays: new Set() });
     if (r.kind !== 'right') { st.miss = r.ts; st.rightDays = new Set(); } else if (st.miss) st.rightDays.add(ymd(r.ts));
   });
-  const items = Object.values(state).filter(s => s.miss >= since && s.rightDays.size < 2).sort((a, b) => b.miss - a.miss);
+  const per = {}, items = Object.values(state).filter(s => s.miss >= since && s.rightDays.size < 2).sort((a, b) => b.miss - a.miss)
+    .filter(s => (per[s.sp] = (per[s.sp] || 0) + 1) <= BOXES_PER_SPECIES);
   return spreadSpecies(shuffle(items.slice(0, size).map(s => ({ sp: s.sp, skill: s.skill })), opts.rng || Math.random));
 }
-/* "¿Cuál es?": only species with photos; due species first, the rest at random. */
+/* "¿Cuál es?": only species with photos, in the chosen order. It schedules nothing, so it has no daily cap. */
 function buildReverse(M, P, opts) {
-  const rng = opts.rng || Math.random, pool = scopePool(M, opts.scope);
-  const score = id => dueOf(P.cards[cardId(id, 'species')]) || Infinity;
-  const seenFirst = shuffle(pool, rng).sort((a, b) => (score(a) <= opts.now ? 0 : 1) - (score(b) <= opts.now ? 0 : 1));
-  return seenFirst.slice(0, opts.size || 10);
+  return rankSpecies(M, P, scopePool(M, opts.scope), opts).slice(0, opts.size || 10);
 }
-/* Where a missed item goes back into the running session (3–5 items later). */
-const requeueGap = rng => 3 + Math.floor((rng || Math.random)() * 3);
 
 /* ---------------------------------------------------------------- streak and badges */
 /* Consecutive study days. A single missed day is forgiven once a week (a "freeze");
@@ -631,11 +653,11 @@ function mockScore(items) {
 /* ---------------------------------------------------------------- progress object, export, import */
 function defaultSettings() {
   return { lang: 'es', theme: 'auto', level: 2, game: 'foto', skills: { class: true, order: true, genus: true, species: true, common: true },
-    examDate: null, newPerDay: 10, sessionSize: 20, mockSize: 20, revShowCommon: true };
+    examDate: null, sessionSize: 20, mockSize: 20, revShowCommon: true, sortBy: 'views' };
 }
 function emptyProgress(now) {
-  return { schemaVersion: SCHEMA_VERSION, createdAt: now, settings: defaultSettings(), cards: {}, log: [], days: {},
-    badges: {}, mocks: [], stats: { sessions: 0 }, meta: { lastBackup: null, seenNotice: false, readiness: {} }, ui: {} };
+  return { schemaVersion: SCHEMA_VERSION, createdAt: now, settings: defaultSettings(), cards: {}, log: [], days: {}, views: {}, viewedAt: {},
+    badges: {}, mocks: [], stats: { sessions: 0 }, meta: { lastBackup: null, seenNotice: false, readiness: {}, viewsFrom: now }, ui: {} };
 }
 const isObj = x => x && typeof x === 'object' && !Array.isArray(x);
 
@@ -648,7 +670,7 @@ const NODE_ID = /^[A-Za-z0-9_.-]{1,80}(:[A-Za-z0-9_.-]{1,80})?$/;
 const BADGE_ID = /^[a-z]+:[A-Za-z0-9_.-]{1,100}$/;   // the colon keeps "__proto__" out
 const YMD = /^\d{4}-\d{2}-\d{2}$/;
 const TIME_MAX = 8.64e15;
-const MAX_LOG = 100000, MAX_MOCKS = 20, MAX_MOCK_ITEMS = 200, MAX_TYPED = 80, MAX_LOOKED = 2000;
+const MAX_LOG = 100000, MAX_MOCKS = 20, MAX_MOCK_ITEMS = 200, MAX_TYPED = 80, MAX_LOOKED = 2000, MAX_VIEWS = 20000;
 const own = (o, k) => isObj(o) && Object.prototype.hasOwnProperty.call(o, k) && o[k] !== undefined;
 const toNum = (v, min, max, int) => {
   const n = typeof v === 'number' ? v : typeof v === 'string' && /^\s*-?\d+(\.\d+)?\s*$/.test(v) ? Number(v) : NaN;
@@ -746,8 +768,9 @@ function normalizeProgress(p, now, issues) {
     lang: field(s, 'lang', T.oneOf(['es', 'en']), d.lang, issues, S), theme: field(s, 'theme', T.oneOf(['auto', 'light', 'dark']), d.theme, issues, S),
     level: field(s, 'level', T.oneOf([1, 2, 3]), d.level, issues, S), game: field(s, 'game', T.oneOf(['foto', 'cual', 'hoja', 'grupo']), d.game, issues, S),
     skills: {}, examDate: field(s, 'examDate', T.id(YMD), null, issues, S),
-    newPerDay: field(s, 'newPerDay', T.int(1, 60), d.newPerDay, issues, S), sessionSize: field(s, 'sessionSize', T.int(5, 100), d.sessionSize, issues, S),
-    mockSize: field(s, 'mockSize', T.int(5, 100), d.mockSize, issues, S), revShowCommon: field(s, 'revShowCommon', T.bool, d.revShowCommon, issues, S)
+    sessionSize: field(s, 'sessionSize', T.int(5, 100), d.sessionSize, issues, S),
+    mockSize: field(s, 'mockSize', T.int(5, 100), d.mockSize, issues, S), revShowCommon: field(s, 'revShowCommon', T.bool, d.revShowCommon, issues, S),
+    sortBy: field(s, 'sortBy', T.oneOf(SORTS), d.sortBy, issues, S)   // since 2026-11-13
   };
   SKILLS.forEach(k => { out.settings.skills[k] = field(s.skills, k, T.bool, d.skills[k], issues, S + 'skills.'); });
   if (!SKILLS.some(k => out.settings.skills[k])) out.settings.skills = d.skills;
@@ -758,6 +781,15 @@ function normalizeProgress(p, now, issues) {
     if (c) out.cards[k] = c;
   });
   if (Array.isArray(p.log)) p.log.slice(-MAX_LOG).forEach((r, i) => { const row = cleanLogRow(r, issues, `log[${i}].`); if (row) out.log.push(row); });
+  /* Views (since 2026-11-13): times each species was shown with its name, and when last. */
+  [['views', T.int(0, 1e7)], ['viewedAt', T.time]].forEach(([key, check]) => {
+    if (!own(p, key)) return;
+    if (isObj(p[key]) && Object.keys(p[key]).length <= MAX_VIEWS) Object.keys(p[key]).forEach(k => {
+      const n = SPECIES_ID.test(k) && k !== '__proto__' ? check(p[key][k]) : undefined;
+      if (n === undefined) issues.push(key + '.' + k.slice(0, 40)); else out[key][k] = n;
+    });
+    else issues.push(key);
+  });
   if (isObj(p.days)) Object.keys(p.days).forEach(k => { const n = YMD.test(k) ? toNum(p.days[k], 0, 1e6, true) : undefined; if (n === undefined) issues.push('days.' + k.slice(0, 20)); else out.days[k] = n; });
   if (isObj(p.badges)) Object.keys(p.badges).forEach(k => {
     const b = p.badges[k], tier = field(b, 'tier', T.oneOf(['bronze', 'silver', 'gold']), undefined, issues, `badges.${k.slice(0, 40)}.`),
@@ -770,6 +802,8 @@ function normalizeProgress(p, now, issues) {
   const meta = isObj(p.meta) ? p.meta : {};
   out.meta.lastBackup = field(meta, 'lastBackup', T.time, null, issues, 'meta.');
   out.meta.seenNotice = field(meta, 'seenNotice', T.bool, false, issues, 'meta.');
+  /* Answers logged before views were counted count as views (E.exposures). A copy from before then starts counting now. */
+  out.meta.viewsFrom = own(p, 'views') ? field(meta, 'viewsFrom', T.time, 0, issues, 'meta.') : now;
   if (isObj(meta.readiness)) Object.keys(meta.readiness).forEach(k => { const n = YMD.test(k) ? toNum(meta.readiness[k], 0, 1, false) : undefined; if (n === undefined) issues.push('meta.readiness.' + k.slice(0, 20)); else out.meta.readiness[k] = n; });
   const ui = isObj(p.ui) ? p.ui : {};
   ['scope', 'exploreSel'].forEach(k => { const v = field(ui, k, T.id(NODE_ID), null, issues, 'ui.'); if (v !== null) out.ui[k] = v; });
@@ -809,6 +843,9 @@ function mergeProgress(base, other, now) {
   /* Study days: the larger count of either side, or of the joined log (two browsers on the same day). */
   const logDays = {};
   out.log.forEach(r => { const d = ymd(r.ts); logDays[d] = (logDays[d] || 0) + 1; });
+  Object.keys(other.views).forEach(id => { out.views[id] = Math.max(out.views[id] || 0, other.views[id]); });   // the larger count: both may hold the same views
+  Object.keys(other.viewedAt).forEach(id => { out.viewedAt[id] = Math.max(out.viewedAt[id] || 0, other.viewedAt[id]); });
+  out.meta.viewsFrom = Math.min(base.meta.viewsFrom || 0, other.meta.viewsFrom || 0);   // an older start counts fewer answers twice
   Object.keys(Object.assign({}, other.days, logDays)).forEach(d => { out.days[d] = Math.max(out.days[d] || 0, other.days[d] || 0, logDays[d] || 0); });
   Object.keys(other.badges).forEach(k => {
     const x = out.badges[k], y = other.badges[k];
@@ -851,7 +888,7 @@ window.VISU_ENGINE = {
   gradeKey, osa, threshold, classify,
   rngFrom, shuffle, reverseDistractors, mcOptions,
   rating, applyAnswer, dueOf, retrievability, cardMastered, cardMeter, cardId, speciesStats, groupStats, readiness, readinessAt,
-  ymd, startOfDay, todayPlan, sessionSplit, suggestNewPerDay, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, requeueGap, scopePool, soloLooks, changeLook, mergeProgress,
+  ymd, startOfDay, SORTS, BOXES_PER_SPECIES, exposures, speciesViewed, rankSpecies, buildSession, GROUP_SKILLS, groupCardId, isGroupCard, groupItems, buildGroupSession, buildOddOne, openConfusions, buildPairs, buildSheetSession, buildMock, buildMistakes, buildReverse, scopePool, soloLooks, changeLook, mergeProgress,
   streak, badgeStatus, newlyEarned, mockScore,
   emptyProgress, normalizeProgress, makeExport, parseImport
 };

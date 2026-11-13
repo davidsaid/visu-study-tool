@@ -20,13 +20,21 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   Each question opens on a random photo of the animal, and you can flip through all its photos,
   so you learn the animal rather than one picture. Tap a photo to see it large. Spelling and accents count; capital letters
   don't.
-- **Spaced repetition** ([FSRS](https://github.com/open-spaced-repetition/ts-fsrs)): what
-  you're about to forget comes back first.
+- **You choose what comes first**, in Settings or before each game: every species, only the
+  ones with an open mistake, or only the ones you haven't mastered. Within that, what you've seen
+  least always comes first, so each round moves on to other species whether you answer right or
+  wrong. Each quiz
+  asks at most two boxes per species, so 20 questions cover at least 10 species, and a miss
+  doesn't make the quiz longer. **Spaced repetition**
+  ([FSRS](https://github.com/open-spaced-repetition/ts-fsrs)) still schedules every box; due
+  dates break ties.
+- **Three progress bars**: species seen (in a first look, on its card or in a game's answer),
+  practised (answered at least once) and answered right (at least one box).
 - **"Primer vistazo"** (first look): page through a group with nothing graded. An order shows
   its species one by one (photos, names, first field marks, what the name says); a class shows
   its orders, with the "-iformes" ("shaped like") naming rule. Every 4 animals, an ungraded
   "which one was…?" pause. It ends
-  with an Easy round on that group only, even if you've used up the day's new cards (your saved
+  with an Easy round on that group only, its least seen species first (your saved
   practice group and level don't change). Today's card opens a menu of square tiles, one per
   group, each a badge medal (a cartoon of an iconic species of the group) whose ring is the
   share of its species mastered, marked when
@@ -44,12 +52,13 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
 - **"¿Cuál sobra?"** (odd one out): four photos, three from one order; pick the one that isn't.
   The odd one comes from another class (Easy), the same class (Medium) or is the closest relative
   of another order (Hard). The answer shows both orders and what each has in common.
-- **"¿Este o este?"** (this one or that one?): one photo and two look-alike species. Your own
-  confusions come first; a pair is settled after three right answers in a row. Look-alike pairs
+- **"¿Este o este?"** (this one or that one?): one photo and two look-alike species. With
+  "most mistakes", your own confusions come first; a pair is settled after three right answers in a row. Look-alike pairs
   from the cards fill the round. Every answer shows the two side by side, part by part.
 - **"¿Cuál es?"**: see a scientific name and pick the right photo out of four; each option
   can be flipped through all its photos. The harder the level, the more closely related the
   other animals.
+- **A card opened during a quiz** opens over the question; close it and carry on where you were.
 - **Mistakes teach.** If you confuse two species, you see them side by side with what tells
   them apart, and their field marks lined up part by part (head, tail, colouring…) next to
   their size. Every mistake also shows **what the name says**: what the Latin or Greek of the
@@ -177,6 +186,7 @@ especies vienen en **colecciones**, una por examen; la primera tiene 308 vertebr
   servidores. Si cambias de navegador o de dispositivo, o borras los datos del navegador,
   no lo verás: **guarda una copia** cada semana con *Guardar copia*. Cada colección guarda
   su propio progreso.
+- Tú eliges qué sale antes al practicar: las especies que menos has visto, las que más fallas o las que menos dominas. Cada ronda pregunta como mucho dos casillas por especie.
 - Empieza con un **primer vistazo** a un grupo (sin preguntas), practica en tres niveles, juega a **¿Qué grupo es?** (varias fotos de una clase u orden: nombra
   el grupo; la mejor forma de empezar) y a **¿Cuál es?**, explora el árbol de la vida rama a rama (completo, o en **modo estudio**, con cada clase de la lista como raíz de su propio árbol)
   y haz simulacros con la hoja de cinco casillas. Cada pregunta muestra una foto al azar del

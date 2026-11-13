@@ -36,7 +36,6 @@ function diagramSVG() {
 
 V.como = function () {
   App.focusMode(false);
-  const n = Store.data.settings.newPerDay;
   const online = /^https?:$/.test(location.protocol);
   App.main().innerHTML = `<article class="how"><p class="eyebrow">${L('Cómo funciona', 'How it works')}</p><h1>${L('Dónde se guarda tu progreso y cómo no perderlo',
       'Where your progress is saved, and how not to lose it')}</h1>
@@ -103,32 +102,34 @@ V.como = function () {
   <h2>${L('Cómo se mide tu progreso', 'How your progress is measured')}</h2>
   <p>${L('Cada especie tiene cinco tarjetas, una por casilla del examen: clase, orden, género, especie y nombre vulgar. Cuentan la ortografía, las tildes, la ñ y la ü; las mayúsculas y los espacios de más, no.',
       'Each species has five cards, one per exam box: class, order, genus, species and common name. Spelling, accents, ñ and ü count; capitals and extra spaces don’t.')}</p>
-  <ul><li><b>${L('Fácil y Medio', 'Easy and Medium')}</b>: ${L('suben tu progreso hasta el 50 % y vuelven a enseñarte lo que fallas en la misma sesión.',
-      'take your progress up to 50% and show you again what you miss in the same session.')}</li>
+  <ul><li><b>${L('Fácil y Medio', 'Easy and Medium')}</b>: ${L('suben tu progreso hasta el 50 %.',
+      'take your progress up to 50%.')}</li>
     <li><b>${L('Difícil, sin pistas', 'Hard, without hints')}</b>: ${L('alimenta el planificador FSRS, que decide cuándo repasar cada tarjeta. Una tarjeta está <b>dominada</b> cuando FSRS calcula que la recuerdas con un 90 % de probabilidad y su estabilidad pasa de 7 días.',
         'feeds the FSRS scheduler, which decides when each card is reviewed. A card is <b>mastered</b> when FSRS estimates a 90% chance you recall it and its stability exceeds 7 days.')}</li>
     <li><b>${L('Preparación', 'Readiness')}</b>: ${L('lo que FSRS predice que recordarías el día del examen (o dentro de 7 días si no has puesto fecha), de media sobre todas las tarjetas.',
         'what FSRS predicts you’d remember on exam day (or in 7 days if no date is set), averaged over every card.')}</li></ul>
 
   <h2 id="plan">${L('Cómo funciona tu plan de estudio', 'How your study plan works')}</h2>
-  <p>${L('Cada día, Hoy te propone una sesión con dos tipos de tarjetas:', 'Every day, Today offers a session with two kinds of cards:')}</p>
-  <ul><li><b>${L('Repasos', 'Reviews')}</b>: ${L('tarjetas que ya has visto y a las que les toca volver, las más atrasadas antes. No tienen límite: llenan la sesión salvo el hueco de las nuevas.',
-        'cards you’ve already seen whose time to come back has arrived, the most overdue first. They have no limit: they fill the session except for the room kept for new ones.')}</li>
-    <li><b>${L('Nuevas', 'New')}</b>: ${L(`hasta ${n} especies nuevas al día (${n * 5} tarjetas). Cada sesión les guarda hasta un tercio de sus tarjetas, aunque haya muchos repasos pendientes. Primero salen las especies de los grupos a los que ya has echado un primer vistazo; después, el resto en el orden del árbol, un orden tras otro. Si has puesto la fecha del examen, Hoy te dice cuántas nuevas al día harían falta para empezarlas todas 3 días antes. Cámbialo en Ajustes → «Especies nuevas al día». Más especies al día significa más repasos los días siguientes. «¿Qué grupo es?» tiene su propio límite: ${n} grupos nuevos al día.`,
-        `up to ${n} new species a day (${n * 5} cards). Each session keeps up to a third of its cards for them, even with many reviews due. Species from groups you’ve had a first look at come first; then the rest in the order of the tree, one order after another. If you’ve set the exam date, Today tells you how many new ones a day it would take to start them all 3 days before. Change it in Settings → “New species per day”. More species a day means more reviews on the days after. “Which group is it?” has its own limit: ${n} new groups a day.`)}</li></ul>
-  <p>${L('Si eliges practicar solo un grupo, solo salen sus especies. Si una sesión dice «No hay tarjetas para esta sesión», ya has hecho los repasos y las nuevas de hoy: «Repasar igualmente» adelanta tarjetas antes de su momento.',
-      'If you choose to practise one group only, only its species come up. If a session says “No cards for this session”, you’ve done today’s reviews and new cards: “Review anyway” brings cards back early.')}</p>
+  <p>${L('Cada sesión te pregunta hasta dos casillas por especie, así que una sesión de 20 preguntas recorre al menos 10 especies. Tú eliges qué especies salen antes, en Ajustes o antes de cada juego:',
+      'Each session asks up to two boxes per species, so a 20-question session covers at least 10 species. You choose which species come first, in Settings or before each game:')}</p>
+  <ul>${E.SORTS.map(k => `<li><b>${App.sortName(k)}</b>: ${App.sortDesc(k)}</li>`).join('')}</ul>
+  <p>${L('En los tres órdenes, lo que menos veces has visto sale primero, y si hay empate, lo que viste hace más tiempo. Así cada ronda pasa a otras especies, aciertes o falles. Una vista es cada vez que ves una especie con su nombre: en un primer vistazo, en su ficha o en una ronda (una por ronda, aunque te pregunte dos casillas). De cada especie salen primero sus casillas más flojas; con «Más fallos», las que fallaste.',
+      'In all three orders, what you’ve seen least comes first, and on a tie, what you saw longest ago. So every round moves on to other species, right or wrong. A view is every time you see a species with its name: in a first look, on its card or in a round (one per round, even if it asks two boxes). Each species’ weakest boxes come first; with “Most mistakes”, the ones you missed.')}</p>
+  <p>${L('Un fallo abierto es una casilla que fallaste la última vez que te la preguntaron; acertarla lo cierra. Una especie está dominada cuando sus cinco casillas lo están (ver arriba); si pasa tiempo sin practicarla, deja de estarlo y vuelve a «Menos progreso». Si en un orden no queda ninguna especie, te lo decimos y puedes pasar a «Menos vistas».',
+      'An open mistake is a box you missed the last time it was asked; getting it right closes it. A species is mastered when its five boxes are (see above); if time passes without practising it, it stops being mastered and returns to “Least progress”. If an order has no species left, we tell you and you can switch to “Fewest views”.')}</p>
+  <p>${L('No hay límite de especies nuevas al día: con «Menos vistas» salen todas las que aún no has visto. El calendario de repasos sigue funcionando (cada respuesta decide cuándo le toca volver a esa casilla), pero ya no manda: decide el orden que elijas, y las fechas solo desempatan. Si eliges practicar solo un grupo, solo salen sus especies.',
+      'There’s no daily limit on new species: with “Fewest views”, every one you haven’t seen comes up. The review schedule still works (every answer decides when that box is due again), but it no longer decides: the order you choose does, and due dates only break ties. If you choose to practise one group only, only its species come up.')}</p>
   <h3>${L('Cuándo vuelve cada tarjeta', 'When each card comes back')}</h3>
-  <ul><li><b>${L('Fácil y Medio', 'Easy and Medium')}</b>: ${L('si fallas, vuelve en la misma sesión. Si aciertas, a los 10 minutos; con dos aciertos seguidos, al día siguiente; con tres o más, a los tres días. Un acierto con «Lo adivino» vuelve a los 10 minutos.',
-        'if you miss, it comes back in the same session. If you’re right, in 10 minutes; after two right in a row, the next day; after three or more, in three days. A right answer marked “I’m guessing” comes back in 10 minutes.')}</li>
+  <ul><li><b>${L('Fácil y Medio', 'Easy and Medium')}</b>: ${L('si fallas, «Inténtalo otra vez» te la pregunta una vez más al momento, y le toca volver enseguida: en tu próxima sesión. Si aciertas, a los 10 minutos; con dos aciertos seguidos, al día siguiente; con tres o más, a los tres días. Un acierto con «Lo adivino» vuelve a los 10 minutos.',
+        'if you miss, “Try it again” asks it once more on the spot, and it is due again straight away: in your next session. If you’re right, in 10 minutes; after two right in a row, the next day; after three or more, in three days. A right answer marked “I’m guessing” comes back in 10 minutes.')}</li>
     <li><b>${L('Difícil sin pistas, la hoja de examen y el simulacro', 'Hard without hints, the exam sheet and the mock')}</b>: ${L('FSRS la programa para cuando calcula que la probabilidad de recordarla baja al 90 %. «Lo sé seguro» alarga el intervalo y «Lo adivino» lo acorta.',
         'FSRS schedules it for when it estimates your chance of remembering it drops to 90%. “I know it” lengthens the interval and “I’m guessing” shortens it.')}</li></ul>
   <h3>${L('Camino recomendado', 'Suggested path')}</h3>
-  <ol class="steps-ol"><li>${L('<b>Primer vistazo</b> a un orden: sus especies una a una, sin preguntas. Al terminar, una ronda en Fácil con ese grupo, aunque ya hayas gastado las nuevas de hoy. Las especies que son las únicas de su orden en el bestiario vienen después, en tres tandas: otros peces, otras aves y otros tetrápodos. Cuando lo hayas visto todo, Hoy te sugiere volver al grupo donde tienes más fallos abiertos. Desde «Primer vistazo» en Hoy puedes elegir cualquier grupo y repetirlo.',
-        'A <b>first look</b> at an order: its species one by one, no questions. At the end, a round on Easy with that group, even if you’ve used up today’s new cards. Species that are the only ones of their order in the list come afterwards, in three batches: other fish, other birds and other tetrapods. Once you’ve seen everything, Today suggests going back to the group with the most open mistakes. From “First look” on Today you can pick any group and repeat it.')}</li>
+  <ol class="steps-ol"><li>${L('<b>Primer vistazo</b> a un orden: sus especies una a una, sin preguntas. Al terminar, una ronda en Fácil con ese grupo, primero sus especies menos vistas. Las especies que son las únicas de su orden en el bestiario vienen después, en tres tandas: otros peces, otras aves y otros tetrápodos. Cuando lo hayas visto todo, Hoy te sugiere volver al grupo donde tienes más fallos abiertos. Desde «Primer vistazo» en Hoy puedes elegir cualquier grupo y repetirlo.',
+        'A <b>first look</b> at an order: its species one by one, no questions. At the end, a round on Easy with that group, its least seen species first. Species that are the only ones of their order in the list come afterwards, in three batches: other fish, other birds and other tetrapods. Once you’ve seen everything, Today suggests going back to the group with the most open mistakes. From “First look” on Today you can pick any group and repeat it.')}</li>
     <li>${L('<b>Fácil</b> y luego <b>Medio</b>, hasta que los nombres te suenen.', '<b>Easy</b>, then <b>Medium</b>, until the names feel familiar.')}</li>
     <li>${L('<b>Difícil sin pistas</b>: solo esto cuenta para «dominada».', '<b>Hard without hints</b>: only this counts toward “mastered”.')}</li>
-    <li>${L('Cada día, haz primero los repasos: son los que mantienen lo aprendido.', 'Every day, do the reviews first: they keep what you’ve learnt.')}</li></ol>
+    <li>${L('Cuando lo hayas visto todo, alterna «Más fallos» y «Menos progreso»: mantienen lo aprendido.', 'Once you’ve seen everything, alternate “Most mistakes” and “Least progress”: they keep what you’ve learnt.')}</li></ol>
   <p>${L('<b>Mis fallos</b> reúne lo que fallaste en los últimos 7 días y aún no has acertado dos días distintos; cuenta como una sesión normal. Tras un fallo, «Inténtalo otra vez» te lo pregunta de nuevo al momento, sin nota.',
       '<b>My mistakes</b> gathers what you missed in the last 7 days and haven’t yet got right on two different days; it counts as a normal session. After a miss, “Try it again” asks it once more on the spot, ungraded.')}</p>
   <p>${L('<b>Primer vistazo</b>, <b>¿Cuál es?</b>, <b>¿Cuál sobra?</b> y <b>¿Este o este?</b> sirven para familiarizarte: cuentan como día de estudio, pero no cambian cuándo vuelve cada tarjeta.',
@@ -187,9 +188,11 @@ V.ajustes = function () {
       <span class="tiny muted">${L('La preparación se calcula para ese día. Sin fecha, para dentro de 7 días.',
         'Readiness is forecast for that day. Without a date, for 7 days from now.')}</span></label>
       <input type="date" id="set-exam" class="numin" value="${esc(set.examDate || '')}"></div>
-    ${num('newPerDay', L('Especies nuevas al día', 'New species per day'), 1, 60, `${L('Cada especie trae cinco tarjetas. Los repasos no tienen límite.',
-        'Each species brings five cards. Reviews have no limit.')} <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a>`)}
-    ${num('sessionSize', L('Tarjetas por sesión', 'Cards per session'), 5, 100)}
+    <div class="switch-row sep"><span class="grow"><b>${L('Qué sale antes al practicar', 'What comes first when you practise')}</b><br>
+      <span class="tiny muted">${L('En todos los juegos menos el simulacro. También puedes cambiarlo antes de cada juego.', 'In every game except the mock. You can also change it before each game.')}
+        <a href="#como-funciona-plan">${L('Cómo funciona tu plan', 'How your plan works')}</a></span></span></div>
+    ${App.sortChips()}
+    ${num('sessionSize', L('Preguntas por sesión', 'Questions per session'), 5, 100, L('Hasta dos por especie.', 'Up to two per species.'))}
     ${num('mockSize', L('Fotos en el simulacro', 'Photos in the mock'), 5, 100)}</section>
   <section class="card"><h2>${L('Idioma y tema', 'Language and theme')}</h2>
     <div class="row my"><span class="grow">${L('Idioma', 'Language')}</span>${seg('data-lang', [['es', 'Español'], ['en', 'English']], I.lang)}</div>

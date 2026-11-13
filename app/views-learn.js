@@ -130,8 +130,12 @@ V.vistazos = function () {
 };
 V.vistazo = function (node) {
   App.focusMode(true);
-  if (!look || look.node !== node) look = { node, slides: slidesOf(node), i: 0, quiz: null, asked: {} };
+  if (!look || look.node !== node) look = { node, slides: slidesOf(node), i: 0, quiz: null, asked: {}, counted: {} };
   const { slides } = look, n = slides.length, end = look.i >= n, cls = isClassLook(node), solo = !!solos(node), back = 'vistazos';
+  if (!end && !look.quiz && !look.counted[look.i]) {   // each slide counts once per pass: the species it names (an order slide, the four it shows)
+    look.counted[look.i] = true;
+    Store.recordView(cls ? E.scopePool(M(), slides[look.i]).slice(0, 4) : [slides[look.i]]);
+  }
   const name = isChanges(node) ? esc(batchName(node)) : solo ? App.lookLabel(node) : `<i>${esc(M().nodes[node].scientific || node)}</i>${App.esForm(M().nodes[node].rank, M().nodes[node].scientific) ? ` · ${esc(App.esForm(M().nodes[node].rank, M().nodes[node].scientific))}` : ''}`;
   const nav = `<div class="row look-nav"><button class="btn" id="lookprev" ${look.i ? '' : 'disabled'}>‹ ${L('Anterior', 'Previous')}</button>
     <button class="btn primary grow" id="looknext">${look.i === n - 1 ? L('Terminar', 'Finish') : `${L('Siguiente', 'Next')} ›`}</button></div>`;
@@ -200,7 +204,7 @@ const step = d => {
 };
 App.on('click', '#lookprev', () => step(-1));
 App.on('click', '#looknext', () => step(1));
-App.on('click', '#lookagain', () => { Object.assign(look, { i: 0, quiz: null, asked: {} }); V.vistazo(look.node); });
+App.on('click', '#lookagain', () => { Object.assign(look, { i: 0, quiz: null, asked: {}, counted: {} }); V.vistazo(look.node); });
 /* The check is one round on this group only: the saved practice group and level stay as they were. */
 App.on('click', '[data-lookcheck]', b => { App.onceSession = Object.assign(solos(look.node) ? { pool: look.slides } : { scope: look.node }, { level: b.dataset.lookcheck === 'foto' ? 1 : null }); });
 App.lookState = () => look;
@@ -215,8 +219,9 @@ const oddLevelDesc = k => ({
 }[k]);
 App.newOdd = function (level) {
   const lv = level || SET().level, scope = P().ui.scope && M().nodes[P().ui.scope] ? P().ui.scope : null;
-  const items = E.buildOddOne(M(), { level: lv, scope, size: 10 });
-  odd = { level: lv, items: items.length ? items : E.buildOddOne(M(), { level: lv, size: 10 }), i: 0, ok: 0 };
+  const o = { level: lv, size: 10, now: Date.now(), skills: App.skills(), sortBy: SET().sortBy };
+  const items = E.buildOddOne(M(), P(), Object.assign({ scope }, o));
+  odd = { level: lv, items: items.length ? items : E.buildOddOne(M(), P(), o), i: 0, ok: 0 };
   resetOdd();
   return odd;
 };
@@ -255,7 +260,7 @@ V.sobra = function () {
       <div class="actions"><button class="btn primary big" id="oddnext">${last ? L('Ver resultado', 'See result') : L('Siguiente', 'Next')}</button></div></div>`;
   App.main().innerHTML = `<div class="session-wrap">${App.sessTop((odd.i + (rev ? 1 : 0)) / n, n, odd.i)}
     <p class="eyebrow">${L('¿Cuál sobra?', 'Odd one out')}</p><h1 class="prompt">${L('Tres son del mismo orden. ¿Cuál no?', 'Three are from the same order. Which one isn’t?')}</h1>
-    ${levels}<p class="tiny muted">${oddLevelDesc(odd.level)} ${L('No programa repasos: es para fijarse en lo que comparte cada orden.', 'It schedules no reviews: it trains what each order shares.')}</p>
+    ${levels}${odd.i === 0 && !rev ? App.sortChips() : ''}<p class="tiny muted">${oddLevelDesc(odd.level)} ${L('No programa repasos: es para fijarse en lo que comparte cada orden.', 'It schedules no reviews: it trains what each order shares.')}</p>
     ${grid}${result}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = '';
   q.opts.forEach((o, i) => { App.carouselStep[`odd-${i}`] = k => { odd.photo[o] = k; }; });
@@ -269,6 +274,7 @@ App.on('click', '#oddcheck', () => {
   if (!odd.picked) return;
   odd.phase = 'reveal';
   if (odd.picked === odd.items[odd.i].odd) odd.ok++;
+  Store.recordView(odd.items[odd.i].opts);   // their names and orders show now; also counts the study day
   Store.recordDay();
   V.sobra(); App.main().focus();
 });
@@ -277,11 +283,12 @@ App.on('click', '#oddagain', () => { App.newOdd(odd.level); V.sobra(); });
 App.on('click', '[data-oddlevel]', b => { SET().level = +b.dataset.oddlevel; Store.save(); App.newOdd(SET().level); App.redraw(V.sobra, `[data-oddlevel="${SET().level}"]`); });
 
 /* ---------- ¿ESTE O ESTE? ---------- */
-/* One photo and the two species of a pair; the answer always shows them side by side, part by part. A miss comes
-   back three cards later, once. Practice only: logged so a pair can be settled, nothing scheduled. */
+/* One photo and the two species of a pair; the answer always shows them side by side, part by part. A miss isn't put
+   back into the round (David, 2026-11-13): open confusions come back in later rounds. Practice only: logged so a pair
+   can be settled, nothing scheduled. */
 let pairs = null;
 App.newPairs = function () {
-  pairs = { items: E.buildPairs(M(), P(), { size: 10 }), i: 0, ok: 0, settled: 0 };
+  pairs = { items: E.buildPairs(M(), P(), { size: 10, now: Date.now(), skills: App.skills(), sortBy: SET().sortBy }), i: 0, ok: 0, settled: 0 };
   resetPair();
   return pairs;
 };
@@ -317,7 +324,7 @@ V.parejas = function () {
       <div class="actions"><button class="btn primary big" id="pairnext">${pairs.i === n - 1 ? L('Ver resultado', 'See result') : L('Siguiente', 'Next')}</button></div></div>`;
   App.main().innerHTML = `<div class="session-wrap">${App.sessTop((pairs.i + (rev ? 1 : 0)) / n, n, pairs.i)}
     <p class="eyebrow">${L('¿Este o este?', 'This one or that one?')}${p.mine ? ` · <span class="gold">${L('una confusión tuya', 'one of your confusions')}</span>` : ''}</p>
-    ${rev ? '' : `<div class="quiz-photo">${App.carousel(p.show, { key: 'pair', idx: pairs.photo, alt: L('Foto del animal', 'Photo of the animal'), credit: 'later' })}</div>`}
+    ${pairs.i === 0 && !rev ? App.sortChips() : ''}${rev ? '' : `<div class="quiz-photo">${App.carousel(p.show, { key: 'pair', idx: pairs.photo, alt: L('Foto del animal', 'Photo of the animal'), credit: 'later' })}</div>`}
     <p class="prompt">${L('¿Cuál de las dos es?', 'Which of the two is it?')}</p>
     <div class="options" role="group" aria-label="${L('Opciones', 'Options')}">${pairs.order.map(opt).join('')}</div>${result}</div><div id="aside-m"></div>`;
   App.aside().innerHTML = '';
@@ -330,7 +337,7 @@ App.on('click', '#paircheck', () => {
   const right = pairs.picked === p.show;
   pairs.phase = 'reveal';
   if (right) pairs.ok++;
-  else if (!p.requeued) pairs.items.splice(Math.min(pairs.items.length, pairs.i + 4), 0, Object.assign({}, p, { requeued: true, show: Math.random() < 0.5 ? p.a : p.b }));
+  Store.recordView([p.a, p.b]);
   Store.recordPair({ shown: p.show, other: p.show === p.a ? p.b : p.a, right });
   V.parejas(); App.main().focus();
 });
