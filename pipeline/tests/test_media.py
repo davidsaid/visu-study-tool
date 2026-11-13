@@ -41,14 +41,24 @@ class ManifestTest(unittest.TestCase):
             self.assertRegex(name, r"^[0-9a-f]{12}\.jpg$")
             self.assertEqual(r["file"], f"media/{r['species_id']}/{name}")
 
-    def test_at_most_four_photos_and_one_per_observation(self):
+    def test_at_most_four_practice_and_two_exam_photos_and_one_per_observation(self):
         per = {}
         for r in RECORDS:
             per.setdefault(r["species_id"], []).append(r)
         for sid, recs in per.items():
-            self.assertLessEqual(len(recs), media.PHOTOS_PER_SPECIES, sid)
+            sets = [media.photo_set(r) for r in recs]
+            self.assertLessEqual(sets.count("practice"), media.PHOTOS_PER_SPECIES, sid)
+            self.assertLessEqual(sets.count("exam"), media.EXAM_PHOTOS, sid)
+            self.assertEqual(set(sets) - {"practice", "exam"}, set(), sid)
+            # an exam photo is never a practice photo, nor another photo of a practice observation
             pages = [r["page_url"] for r in recs if r["source"] == "inaturalist"]
             self.assertEqual(len(pages), len(set(pages)), sid)
+            self.assertEqual(len({r["id"] for r in recs}), len(recs), sid)
+
+    def test_most_species_have_exam_photos(self):
+        species = {sid for sid, _ in media.load_species(REPO)}
+        with_exam = {r["species_id"] for r in RECORDS if media.photo_set(r) == "exam"}
+        self.assertGreaterEqual(len(with_exam & species), 0.9 * len(species))
 
     def test_files_have_no_exif_and_are_rgb(self):
         from PIL import Image
@@ -72,7 +82,8 @@ class EmitTest(unittest.TestCase):
             for rec in recs:
                 self.assertEqual(list(rec), media.CONTRACT_FIELDS)
                 self.assertTrue((REPO / rec["file"]).is_file())
-                self.assertEqual(rec["modified"], "resized")
+                self.assertIn(rec["modified"], ("resized", "cropped and resized"))
+                self.assertIn(rec["set"], ("practice", "exam"))
 
 
 class RenderImageTest(unittest.TestCase):
@@ -88,6 +99,27 @@ class RenderImageTest(unittest.TestCase):
             self.assertEqual(media.render_image(buf.getvalue(), dest, 1200), (1200, 800))
             with Image.open(dest) as im:
                 self.assertEqual((im.size, len(im.getexif())), ((1200, 800), 0))
+
+    def test_trim_cuts_the_picture_before_resizing(self):
+        """A trim removes part of the picture itself (a caption naming the species), not just its display."""
+        import io
+        import tempfile
+        from PIL import Image
+        im = Image.new("RGB", (1000, 1000), (255, 255, 255))
+        im.paste((200, 0, 0), (0, 900, 1000, 1000))   # a red "caption" band at the bottom
+        buf = io.BytesIO()
+        im.save(buf, "PNG")
+        with tempfile.TemporaryDirectory() as d:
+            dest = Path(d) / "x.jpg"
+            self.assertEqual(media.render_image(buf.getvalue(), dest, 1200, [0, 0, 1, 0.9]), (1000, 900))
+            with Image.open(dest) as out:
+                r, g, b = out.getpixel((500, 895))
+                self.assertGreater(min(r, g, b), 200)   # the bottom row is white: the band is gone
+
+    def test_trimmed_records_are_marked_cropped(self):
+        for r in RECORDS:
+            if r.get("trim"):
+                self.assertEqual(r["modified"], "cropped and resized", r["id"])
 
 
 class LicenceParsingTest(unittest.TestCase):

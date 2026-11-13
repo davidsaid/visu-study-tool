@@ -28,11 +28,17 @@ function buildModel(bestiary, media, content) {
   })(root);
   Object.keys(species).forEach(id => { if (!order.includes(id)) order.push(id); });
 
-  const photos = {};
-  order.forEach(id => { photos[id] = (Array.isArray(media[id]) ? media[id] : []).filter(p => p && p.file); });
+  /* Exam photos (set "exam") are held out of practice: only the mock exam shows them, so it asks about
+     photos she has never seen. Every other screen uses `photos`. */
+  const photos = {}, examPhotos = {};
+  order.forEach(id => {
+    const all = (Array.isArray(media[id]) ? media[id] : []).filter(p => p && p.file);
+    photos[id] = all.filter(p => p.set !== 'exam');
+    examPhotos[id] = all.filter(p => p.set === 'exam');
+  });
 
   const M = {
-    bestiary, media, content, nodes, species, root, order, photos,
+    bestiary, media, content, nodes, species, root, order, photos, examPhotos,
     deepPath: tree.deep_path || [],
     sources: (bestiary && bestiary.sources) || {},
     withPhotos: order.filter(id => photos[id].length),
@@ -713,7 +719,9 @@ function cleanMock(mk, issues, path) {
       ok[k] = field(x.ok, k, T.bool, false, issues, `${path}items[${i}].ok.`);
     });
     const ph = field(x, 'ph', T.int(0, 99), undefined, issues, `${path}items[${i}].`);   // photo shown, since 2026-11-01
-    items.push(ph === undefined ? { sp, typed, ok } : { sp, typed, ok, ph });
+    const ex = field(x, 'ex', T.bool, false, issues, `${path}items[${i}].`);   // ph counts in the exam photos, since 2026-11-13
+    const item = ph === undefined ? { sp, typed, ok } : { sp, typed, ok, ph };
+    items.push(ex ? Object.assign(item, { ex }) : item);
   });
   const out = { id: field(mk, 'id', T.id(/^[\w-]{1,40}$/), null, issues, path), at };
   if (own(mk, 'skills')) {

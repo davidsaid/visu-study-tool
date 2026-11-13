@@ -207,7 +207,7 @@ V.hoy = function () {
         'See a scientific name and pick the right photo out of four.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
     <a class="game" href="#hoja">${ICON.sheet}<span><b>${L('Hoja de examen', 'Exam sheet')}</b><span class="small muted">${L('Una foto, cinco casillas: clase, orden, género, especie y nombre vulgar.',
         'One photo, five boxes: class, order, genus, species and common name.')}</span></span><span class="arrow" aria-hidden="true">›</span></a>
-    <a class="game" href="#simulacro">${ICON.gauge}<span><b>${L('Simulacro de VISU', 'Mock VISU')}</b><span class="small muted">${L(`${Math.min(set.mockSize, M().withPhotos.length)} fotos con la hoja completa y sin correcciones hasta el final.`, `${Math.min(set.mockSize, M().withPhotos.length)} photos with the full sheet and no feedback until the end.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>
+    <a class="game" href="#simulacro">${ICON.gauge}<span><b>${L('Simulacro de VISU', 'Mock VISU')}</b><span class="small muted">${L(`${Math.min(set.mockSize, M().withPhotos.length)} fotos que no salen al practicar, con la hoja completa y sin correcciones hasta el final.`, `${Math.min(set.mockSize, M().withPhotos.length)} photos you never see in practice, with the full sheet and no feedback until the end.`)}</span></span><span class="arrow" aria-hidden="true">›</span></a>
   </div></section>
   <div class="kpis">
     <section class="card" aria-labelledby="rd"><p class="eyebrow" id="rd">${L('Preparación', 'Readiness')}</p>
@@ -805,7 +805,7 @@ App.on('click', '#revnext', () => {
 let msess = null;
 App.newMock = function () {
   const n = Math.min(SET().mockSize, M().withPhotos.length);
-  msess = { id: 'mock-' + Date.now().toString(36), items: E.buildMock(M(), n).map(x => Object.assign(x, { photoIdx: App.randomPhoto(x.sp) })), i: 0, answers: [], startedAt: Date.now() };
+  msess = { id: 'mock-' + Date.now().toString(36), items: E.buildMock(M(), n).map(x => Object.assign(x, { photoIdx: App.randomPhoto(x.sp, 'exam') })), i: 0, answers: [], startedAt: Date.now() };
   return msess;
 };
 App.mockState = () => msess;
@@ -820,13 +820,13 @@ V.simulacro = function () {
   const it = msess.items[msess.i], total = msess.items.length, last = msess.i === total - 1, skills = App.skills();
   App.main().innerHTML = `<div class="session-wrap">${sessTop(msess.i / total, total, msess.i)}
     <div class="row">${levelPill(3)}<span class="skillpill">${L('Simulacro', 'Mock VISU')}</span><span class="tiny muted">${L('Sin correcciones hasta el final.', 'No feedback until the end.')}</span></div>
-    <div class="quiz-photo mt">${App.carousel(it.sp, { key: 'mock', alt: L('Foto del animal que hay que identificar',
+    <div class="quiz-photo mt">${App.carousel(it.sp, { key: 'mock', set: 'exam', alt: L('Foto del animal que hay que identificar',
         'Photo of the animal to identify'), idx: it.photoIdx })}</div>
     <form id="mockform" class="sheet" novalidate>${skills.map(k => `<div class="f"><label for="f-${k}">${I.sk(k)}</label>${fieldInput(k, '', false)}</div>`).join('')}
       <p class="rule">${L('Cuentan la ortografía y las tildes; las mayúsculas, no.', 'Spelling and accents count; capitals don’t.')}</p>
       <button class="btn primary big">${last ? L('Terminar y corregir', 'Finish and mark') : L('Siguiente', 'Next')}</button></form></div><div id="aside-m"></div>`;
-  App.aside().innerHTML = App.DESK.matches ? `<section class="card"><p class="eyebrow">${L('Simulacro de VISU', 'Mock VISU')}</p><p class="small">${L('Como el examen: la hoja completa y ninguna ayuda. Puedes pasar las fotos del animal. La nota sale al final, sobre 10; con un 5 está superado.',
-      'Like the exam: the full sheet and no help. You can flip through the animal’s photos. The mark comes at the end, out of 10; 5 is a pass.')}</p><p class="small">${L('Cada casilla cuenta como respuesta en Difícil.',
+  App.aside().innerHTML = App.DESK.matches ? `<section class="card"><p class="eyebrow">${L('Simulacro de VISU', 'Mock VISU')}</p><p class="small">${L('Como el examen: la hoja completa, ninguna ayuda y fotos que no has visto al practicar. Puedes pasar las fotos del animal. La nota sale al final, sobre 10; con un 5 está superado.',
+      'Like the exam: the full sheet, no help, and photos you have not seen in practice. You can flip through the animal’s photos. The mark comes at the end, out of 10; 5 is a pass.')}</p><p class="small">${L('Cada casilla cuenta como respuesta en Difícil.',
       'Every box counts as an answer on Hard.')}</p></section>` : '';
   const first = App.main().querySelector('#mockform input'); if (first && App.DESK.matches) first.focus({ preventScroll: true });
 };
@@ -839,7 +839,7 @@ App.on('submit', '#mockform', (f, e) => {
     ok[k] = r.kind === 'right';
     Store.recordAnswer({ sp: it.sp, skill: k, level: 3, kind: r.kind, hints: 0, conf: null, game: 'mock', typed: typed[k], with: r.with }, now);
   });
-  msess.answers.push({ sp: it.sp, typed, ok, ph: it.photoIdx });
+  msess.answers.push({ sp: it.sp, typed, ok, ph: it.photoIdx, ex: true });
   if (msess.i === msess.items.length - 1) { finishMock(); location.hash = 'simulacro-resultados'; return; }
   msess.i++; V.simulacro(); window.scrollTo(0, 0);
 });
@@ -862,10 +862,10 @@ V.simulacroResultados = function () {
   }
   const score = m => esc(String(m.score10).replace('.', I.lang === 'es' ? ',' : '.'));
   const row = x => {
-    const n = skills.filter(k => x.ok[k]).length, sp = App.sp(x.sp), ps = App.photosOf(x.sp);
+    const n = skills.filter(k => x.ok[k]).length, sp = App.sp(x.sp), set = x.ex ? 'exam' : undefined, ps = App.photosOf(x.sp, set);
     const miss = k => `<div class="diffrow"><span class="muted small">${I.sk(k)}</span><span class="diff ${sciSkill(k) ? 'sci' : ''}">${esc((x.typed[k] || '').trim()) || '—'}</span>
       <span class="muted small">${L('Correcto', 'Correct')}</span><span class="diff ${sciSkill(k) ? 'sci' : ''}">${esc(E.answerFor(M(), x.sp, k))}</span></div>`;
-    return `<li class="${n === skills.length ? 'allok' : ''}"><a href="#${esc(App.routeFor(x.sp))}">${App.tile(x.sp, App.spName(x.sp), '', x.ph || 0)}</a>
+    return `<li class="${n === skills.length ? 'allok' : ''}"><a href="#${esc(App.routeFor(x.sp))}">${App.tile(x.sp, App.spName(x.sp), '', x.ph || 0, set)}</a>
       <div><p><b>${esc(sp ? sp.common_es : x.sp)}</b> · <i>${esc(sp ? sp.binomial : '')}</i> · ${n}/${skills.length}</p>
       ${skills.filter(k => !x.ok[k]).map(miss).join('')}${App.credit(ps[(x.ph || 0) % Math.max(1, ps.length)])}</div></li>`;
   };

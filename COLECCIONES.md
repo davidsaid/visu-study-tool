@@ -137,16 +137,23 @@ y la ñ, y la comprobación lo detiene y pide guardarlo como «CSV UTF-8».
 ## Fotos
 
 Cada especie tiene de 3 a 4 fotos con licencia libre, elegidas automáticamente (iNaturalist y
-Wikimedia Commons). Si una foto es mala (no se ve el animal, está muerto, es otra especie…), o
-si quieres fijar una concreta, añade una fila en
+Wikimedia Commons), y 2 fotos más **de examen**, que solo salen en el simulacro: así el simulacro
+pregunta por fotos que el estudiante no ha visto al practicar. Si una foto es mala (no se ve el
+animal, está muerto, es otra especie…), o si quieres fijar una concreta, añade una fila en
 [`curation/media_overrides.csv`](curation/media_overrides.csv):
 
 | `species_id` | `action` | `media_id_or_url` | `value` |
 |--------------|----------|-------------------|---------|
 | `buteo_buteo` | `exclude` | `inat-123456` | |
 | `buteo_buteo` | `pin` | `https://commons.wikimedia.org/wiki/File:…` | |
+| `buteo_buteo` | `exam` | `https://www.inaturalist.org/observations/…` | |
 
-El identificador de cada foto aparece en su pie, en la ficha de la especie.
+`pin` fija una foto de práctica y `exam` una de examen. `trim` recorta el propio archivo
+(`"x,y,w,h"` en fracciones), por ejemplo para quitar un pie que dice el nombre de la especie. El identificador de cada foto aparece en
+su pie, en la ficha de la especie, y todas están en [`media/CREDITS.md`](media/CREDITS.md).
+Las especies a las que aún les faltan fotos de examen están en
+[`reports/exam-photos-wanted.csv`](reports/exam-photos-wanted.csv). Solo valen fotos con licencia
+CC0, CC BY, CC BY-SA, CC BY-NC o CC BY-NC-SA, o de dominio público.
 
 ## Qué pasa con el progreso de los estudiantes
 
@@ -173,5 +180,7 @@ To update or add a collection, edit or create those files on GitHub and open a p
 The checks fetch the new species' data and photos, commit the regenerated site to the pull
 request, and post a report. Fix any errors, then merge, and the public site updates itself.
 From Excel, save as "CSV UTF-8"; a semicolon-separated file is fine, other encodings are
-refused with a message. Fix bad photos in `curation/media_overrides.csv`. A species in two
+refused with a message. Fix bad photos in `curation/media_overrides.csv` (`pin` a practice
+photo, `exam` one of the two exam photos that only the mock exam shows; species still short of
+exam photos are listed in `reports/exam-photos-wanted.csv`). A species in two
 collections must have the same class, order and infraorder in both.

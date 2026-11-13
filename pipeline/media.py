@@ -3,6 +3,7 @@
 Commands (run from anywhere with the repo's virtualenv):
 
     .venv/bin/python pipeline/media.py select   # network: rank candidates, write curation/media_manifest.json
+    .venv/bin/python pipeline/media.py select --exam-only   # keep the practice photos, (re)choose only the exam photos
     .venv/bin/python pipeline/media.py fetch    # download originals into .cache/media/, render media/<species>/<hash>.jpg
     .venv/bin/python pipeline/media.py emit     # write data/<collection>/media.js from the manifest (also: media.emit(repo_root))
     .venv/bin/python pipeline/media.py report   # write reports/media-report.md and media/CREDITS.md
@@ -11,7 +12,11 @@ Sources: iNaturalist research-grade observations (CC0 / CC BY / CC BY-SA photos,
 `inaturalist-open-data` bucket) and Wikimedia Commons (Wikidata P18 plus Quality and Featured images in
 the species category). NC and ND licences are never selected. See docs/data-format.md, `VISU.media`.
 
-Maintainer overrides live in curation/media_overrides.csv (pin / exclude / crop) and survive re-runs.
+Each species gets two sets of photos: up to PHOTOS_PER_SPECIES practice photos, shown everywhere, and up to
+EXAM_PHOTOS exam photos, shown only in the mock exam so that it tests photos she has never practised on. Exam
+photos come from the candidates left after the practice ones, preferring other observers than the practice set's.
+
+Maintainer overrides live in curation/media_overrides.csv (pin / exam / exclude / crop / trim) and survive re-runs.
 """
 from __future__ import annotations
 
@@ -39,9 +44,10 @@ UA = "visu-study-tool-media/1.0 (zoology study site; https://github.com/davidsai
 
 PHOTOS_PER_SPECIES = 4
 MIN_PHOTOS = 3
+EXAM_PHOTOS = 2        # held out from practice; the mock exam shows only these (see app/engine.js buildModel)
 MAX_SIDE = 1200
 JPEG_QUALITY = 78
-BUDGET_MB = 250
+BUDGET_MB = 330         # 250 MB before the exam photos (2026-11-13)
 MIN_MATCHED_SHARE = 0.5   # render() refuses a list of 20+ species of which fewer have photos
 
 INAT_LICENSES = {
@@ -166,10 +172,12 @@ def load_species(repo: pathlib.Path) -> list[tuple[str, str]]:
 OVERRIDES_HEADER = ["species_id", "action", "media_id_or_url", "value"]
 OVERRIDES_TEMPLATE = (
     "species_id,action,media_id_or_url,value\n"
-    "# Lines starting with # are ignored. action is pin, exclude or crop.\n"
+    "# Lines starting with # are ignored. action is pin, exam, exclude or crop.\n"
     "#   pin:     always use this photo (a media id from media/CREDITS.md, a Commons File: URL or an iNat observation URL)\n"
+    "#   exam:    like pin, but as one of the exam photos, which practice never shows\n"
     "#   exclude: never use this photo; put the reason in value\n"
     "#   crop:    value is \"x,y,w,h\" (quoted) as fractions of the photo, used by thumbnails only\n"
+    "#   trim:    value is \"x,y,w,h\" (quoted) as fractions; cut from the file itself (e.g. a caption that names the species)\n"
     "# lynx_pardinus,exclude,inat-187857126,head cut off\n"
 )
 
@@ -182,9 +190,9 @@ def load_overrides(repo: pathlib.Path) -> list[dict]:
     rows = read_csv(p, OVERRIDES_HEADER, comment="#")
     for r in rows:
         r["action"] = r["action"].lower()
-        if r["action"] not in ("pin", "exclude", "crop"):
+        if r["action"] not in ("pin", "exam", "exclude", "crop", "trim"):
             raise BuildError(f"curation/media_overrides.csv row {r['_line']}: unknown action {r['action']!r} "
-                             f"(must be pin, exclude or crop)")
+                             f"(must be pin, exam, exclude, crop or trim)")
     return rows
 
 
@@ -488,7 +496,19 @@ def rejected(c: dict, relaxed: bool) -> bool:
     return bool(pattern.search(c["title"] + " | " + " | ".join(c["categories"])))
 
 
-def choose(cands: list[dict], pinned: list[dict], n: int = PHOTOS_PER_SPECIES) -> list[dict]:
+def observer_of(c: dict) -> str:
+    """Who took the photo, for candidates (which carry it) and manifest records (which don't)."""
+    if c.get("observer"):
+        return c["observer"]
+    if c["source"] == "inaturalist" and (c.get("author_url") or "").startswith("https://www.inaturalist.org/people/"):
+        return "inat:" + c["author_url"].rsplit("/", 1)[1]
+    return f"{'inat' if c['source'] == 'inaturalist' else 'commons'}:{(c.get('author') or '').lower()}"
+
+
+def choose(cands: list[dict], pinned: list[dict], n: int = PHOTOS_PER_SPECIES, minimum: int = MIN_PHOTOS,
+           avoid_observers: frozenset = frozenset()) -> list[dict]:
+    """The n best candidates after the pinned ones, one per observer while possible (and none of
+    avoid_observers on the first pass); candidates scoring below 0 only to reach `minimum`."""
     chosen = list(pinned)[:n]
     pool = [c for c in cands if c["id"] not in {p["id"] for p in chosen}]
     for c in pool:
@@ -496,9 +516,9 @@ def choose(cands: list[dict], pinned: list[dict], n: int = PHOTOS_PER_SPECIES) -
     pool.sort(key=lambda c: -c["score"])
     for allow_repeat_observer, floor in ((False, 0.0), (True, 0.0), (True, -99)):
         while len(chosen) < n:
-            if floor < -1 and len(chosen) >= MIN_PHOTOS:
+            if floor < -1 and len(chosen) >= minimum:
                 break
-            used_obs = {c["observer"] for c in chosen}
+            used_obs = {c["observer"] for c in chosen} | (avoid_observers if not allow_repeat_observer else set())
             used_roles = {r for c in chosen for r in c["role"]}
             best, best_s = None, None
             for c in pool:
@@ -518,10 +538,11 @@ def choose(cands: list[dict], pinned: list[dict], n: int = PHOTOS_PER_SPECIES) -
 MANIFEST_FIELDS = ["id", "species_id", "file", "w", "h", "author", "author_url", "license", "license_url",
                    "source", "source_url", "page_url", "original_url", "download_url", "attribution_text",
                    "retrieved", "role", "role_source", "orig_w", "orig_h", "quality", "score", "selection",
-                   "modified", "crop", "title"]
+                   "modified", "crop", "title", "set", "trim"]
 
 
-def cmd_select(repo: pathlib.Path, only: list[str] | None = None, refresh: bool = False) -> None:
+def cmd_select(repo: pathlib.Path, only: list[str] | None = None, refresh: bool = False,
+               exam_only: bool = False) -> None:
     p = paths(repo)
     api = Api(p["cache"], refresh)
     retrieved = dt.date.today().isoformat()
@@ -549,7 +570,7 @@ def cmd_select(repo: pathlib.Path, only: list[str] | None = None, refresh: bool 
         if not w:
             sp_notes.append("no Wikidata item under this name")
         good_inat = sum(1 for c in cands if final_score(c) > 0)
-        cands += commons_candidates(api, binomial, w, retrieved, broad=good_inat < 6)
+        cands += commons_candidates(api, binomial, w, retrieved, broad=good_inat < PHOTOS_PER_SPECIES + EXAM_PHOTOS + 2)
         for o in rows:
             if o["action"] == "exclude" and not any(matches(c, o["media_id_or_url"]) for c in cands):
                 sp_notes.append(f"exclude matched no candidate: {o['media_id_or_url']}")
@@ -560,36 +581,55 @@ def cmd_select(repo: pathlib.Path, only: list[str] | None = None, refresh: bool 
             if len(relaxed) > len(strict):
                 sp_notes.append("few candidates: museum/archival Commons files allowed")
             strict = relaxed
-        pinned = []
-        for o in rows:
-            if o["action"] != "pin":
-                continue
-            ref = o["media_id_or_url"]
-            hit = next((c for c in cands if matches(c, ref)), None) or old_records.get(ref.strip())
-            hit = hit or commons_pin(api, ref, retrieved) or inat_pin(api, ref, retrieved)
-            if hit:
-                pinned.append({**hit, "selection": "manual"})
-            else:
-                sp_notes.append(f"pin not found: {ref}")
-        chosen = choose(strict, pinned)
+        def pins(action: str) -> list[dict]:
+            out = []
+            for o in rows:
+                if o["action"] != action:
+                    continue
+                ref = o["media_id_or_url"]
+                hit = next((c for c in cands if matches(c, ref)), None) or old_records.get(ref.strip())
+                hit = hit or commons_pin(api, ref, retrieved) or inat_pin(api, ref, retrieved)
+                if hit:
+                    out.append({**hit, "selection": "manual"})
+                else:
+                    sp_notes.append(f"{action} not found: {ref}")
+            return out
+
+        if exam_only:
+            practice = [dict(r) for r in keep.get(sid, []) if r.get("set", "practice") == "practice"]
+        else:
+            practice = choose(strict, pins("pin"))
+        for c in practice:
+            c["set"] = "practice"
+        # Exam photos: never a practice photo or another photo of the same observation; other observers first.
+        taken = {c["id"] for c in practice} | {c.get("page_url") for c in practice if c["source"] == "inaturalist"}
+        exam_pool = [c for c in strict if c["id"] not in taken and c.get("page_url") not in taken]
+        exam_pins = [c for c in pins("exam") if c["id"] not in taken]
+        exam = choose(exam_pool, exam_pins, EXAM_PHOTOS, EXAM_PHOTOS, frozenset(map(observer_of, practice)))
+        for c in exam:
+            c["set"] = "exam"
+        if len(exam) < EXAM_PHOTOS:
+            sp_notes.append(f"only {len(exam)} exam photo(s)")
+        chosen = practice + exam
         for c in chosen:
             c.setdefault("selection", "auto")
-            c.setdefault("score", round(final_score(c), 3))
+            if "score" not in c:
+                c["score"] = round(final_score(c), 3)
             c["species_id"] = sid
-            c["modified"] = "resized"
-            c["crop"] = None
+            c["crop"] = c["trim"] = None
             prev = old_records.get(c["id"])
             if prev and prev.get("file"):
                 c.update({k: prev[k] for k in ("file", "w", "h")})
             for o in rows:
-                if o["action"] == "crop" and matches(c, o["media_id_or_url"]):
-                    c["crop"] = [float(x) for x in o["value"].split(",")]
+                if o["action"] in ("crop", "trim") and matches(c, o["media_id_or_url"]):
+                    c[o["action"]] = [float(x) for x in o["value"].split(",")]
+            c["modified"] = "cropped and resized" if c["trim"] else "resized"
         keep[sid] = [{k: c.get(k) for k in MANIFEST_FIELDS} for c in chosen]
         notes[sid] = sp_notes
         all_candidates[sid] = sorted(({k: c.get(k) for k in ("id", "source", "source_url", "score", "base_score",
                                                               "orig_w", "orig_h", "author", "title")} for c in strict),
                                      key=lambda c: -(c["score"] if c["score"] is not None else -99))
-        print(f"{i + 1}/{len(species)} {binomial}: {len(chosen)} chosen from {len(strict)} "
+        print(f"{i + 1}/{len(species)} {binomial}: {len(practice)} + {len(exam)} exam chosen from {len(strict)} "
               f"({sum(c['source'] == 'inaturalist' for c in chosen)} iNat) {'; '.join(sp_notes)}", flush=True)
 
     order = [sid for sid, _ in load_species(repo)]
@@ -612,11 +652,15 @@ def opaque_name(media_id: str) -> str:
     return hashlib.sha1(("visu-media:" + media_id).encode()).hexdigest()[:12] + ".jpg"
 
 
-def render_image(src: bytes, dest: pathlib.Path, max_side: int) -> tuple[int, int]:
+def render_image(src: bytes, dest: pathlib.Path, max_side: int, trim: list[float] | None = None) -> tuple[int, int]:
+    """Re-encode src as a clean JPEG no larger than max_side; trim = [x, y, w, h] fractions cuts the picture first."""
     from PIL import Image, ImageCms, ImageOps
 
     im = Image.open(io.BytesIO(src))
     im = ImageOps.exif_transpose(im)
+    if trim:
+        x, y, w, h = trim
+        im = im.crop((round(x * im.width), round(y * im.height), round((x + w) * im.width), round((y + h) * im.height)))
     icc = im.info.get("icc_profile")
     if im.mode in ("P", "PA", "LA", "RGBA", "I;16", "I", "F", "1", "L"):
         im = im.convert("RGBA" if "A" in im.mode or im.mode == "P" else "RGB")
@@ -682,7 +726,9 @@ def cmd_fetch(repo: pathlib.Path, max_side: int = MAX_SIDE, rerender: bool = Fal
     failures = []
 
     def work(rec: dict) -> None:
-        file_rel = f"media/{rec['species_id']}/{opaque_name(rec['id'])}"
+        # A trimmed photo gets its own file name, so changing the trim renders it again.
+        name = opaque_name(rec["id"] + (f"#trim={rec['trim']}" if rec.get("trim") else ""))
+        file_rel = f"media/{rec['species_id']}/{name}"
         dest = repo / file_rel
         if dest.exists() and rec.get("file") == file_rel and rec.get("w") and not rerender:
             return
@@ -692,7 +738,7 @@ def cmd_fetch(repo: pathlib.Path, max_side: int = MAX_SIDE, rerender: bool = Fal
             if not cached.exists():
                 data = http_get(url)
                 cached.write_bytes(data)
-            w, h = render_image(cached.read_bytes(), dest, max_side)
+            w, h = render_image(cached.read_bytes(), dest, max_side, rec.get("trim"))
         except Exception as e:  # noqa: BLE001 - report and continue with the other photos
             failures.append((rec["id"], url, repr(e)))
             rec["file"] = None
@@ -734,10 +780,16 @@ def cmd_fetch(repo: pathlib.Path, max_side: int = MAX_SIDE, rerender: bool = Fal
 
 # ---------------------------------------------------------------- emit
 
-CONTRACT_FIELDS = ["id", "file", "w", "h", "author", "license", "license_url", "source", "source_url", "modified", "crop"]
+CONTRACT_FIELDS = ["id", "file", "w", "h", "author", "license", "license_url", "source", "source_url", "modified", "crop",
+                   "set"]
 
 
 URL_FIELDS = ("license_url", "source_url")
+
+
+def photo_set(r: dict) -> str:
+    """"practice" or "exam"; records selected before 2026-11-13 have no set and are practice photos."""
+    return r.get("set") or "practice"
 
 
 def render(repo_root: pathlib.Path, species: list[tuple[str, str]] | None = None) -> str:
@@ -765,7 +817,7 @@ def render(repo_root: pathlib.Path, species: list[tuple[str, str]] | None = None
         if r.get("file") and r["species_id"] in media:
             for k in URL_FIELDS:
                 check_url(r.get(k), f"curation/media_manifest.json {r['id']}, {k}")
-            media[r["species_id"]].append({k: r.get(k) for k in CONTRACT_FIELDS})
+            media[r["species_id"]].append({**{k: r.get(k) for k in CONTRACT_FIELDS}, "set": photo_set(r)})
     body = json.dumps(media, ensure_ascii=False, separators=(",", ":"))
     return ("// Generated by pipeline/media.py from curation/media_manifest.json. Do not edit by hand.\n"
             "window.VISU = window.VISU || {};\n"
@@ -792,7 +844,8 @@ def write_credits(repo: pathlib.Path, manifest: dict) -> None:
              "Generated by `pipeline/media.py report`. Every photo in `media/` is listed here with its author, licence",
              "and source. All photos were **modified: resized and re-encoded** (longest side "
              f"{MAX_SIDE} px, JPEG, metadata removed). Photos under CC BY-SA keep that licence.", "",
-             "Media ids (first column) are what `curation/media_overrides.csv` uses.", ""]
+             "Media ids (first column) are what `curation/media_overrides.csv` uses. Photos marked *mock exam only*",
+             "are held out of practice and shown only in the mock exam.", ""]
     by_sp: dict[str, list] = {}
     for r in manifest["records"]:
         if r.get("file"):
@@ -801,15 +854,36 @@ def write_credits(repo: pathlib.Path, manifest: dict) -> None:
         recs = by_sp.get(sid)
         if not recs:
             continue
-        lines += [f"## *{binomial}*", "", "| Media id | File | Author | Licence | Source |", "|---|---|---|---|---|"]
+        lines += [f"## *{binomial}*", "", "| Media id | File | Used in | Author | Licence | Source |",
+                  "|---|---|---|---|---|---|"]
         for r in recs:
             author = f"[{md_escape(r['author'])}]({r['author_url']})" if r.get("author_url") else md_escape(r["author"])
             lic = f"[{r['license']}]({r['license_url']})" if r.get("license_url") else r["license"]
             src = "iNaturalist" if r["source"] == "inaturalist" else "Wikimedia Commons"
-            lines.append(f"| `{r['id']}` | `{r['file'].split('/')[-1]}` | {author} | {lic}, modified: resized "
+            used = "mock exam only" if photo_set(r) == "exam" else "practice"
+            lines.append(f"| `{r['id']}` | `{r['file'].split('/')[-1]}` | {used} | {author} | {lic}, modified: {r.get('modified') or 'resized'} "
                          f"| [{src}]({r['source_url']}) |")
         lines.append("")
     p["credits"].write_text("\n".join(lines), encoding="utf-8")
+
+
+EXAM_WANTED = "reports/exam-photos-wanted.csv"
+
+
+def write_exam_wanted(repo: pathlib.Path, few_exam: list[tuple[str, str, int]], manifest: dict) -> None:
+    """The species still short of exam photos, as a CSV a person can work through. A photo found for one
+    goes into curation/media_overrides.csv as `<species_id>,exam,<Commons File: URL or iNat observation URL>,`."""
+    import csv
+    common = {s["id"]: s.get("common_es", "") for s in all_species(paths(repo)["collections"])}
+    with (repo / EXAM_WANTED).open("w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["species_id", "nombre_cientifico", "nombre_vulgar", "exam_photos", "wanted", "notes"])
+        for sid, binomial, n in few_exam:
+            notes = [x for x in manifest.get("species_notes", {}).get(sid, [])
+                     if not x.startswith(("exclude matched no candidate", "only "))]
+            w.writerow([sid, binomial, common.get(sid, ""), n, EXAM_PHOTOS - n, "; ".join(
+                ["searched iNaturalist and Wikimedia Commons; the remaining candidates were rejected by eye "
+                 "(see curation/media_overrides.csv)"] + notes)])
 
 
 def cmd_report(repo: pathlib.Path) -> None:
@@ -820,15 +894,19 @@ def cmd_report(repo: pathlib.Path) -> None:
     per: dict[str, list] = {sid: [] for sid, _ in species}
     for r in recs:
         per.setdefault(r["species_id"], []).append(r)
-    counts = sorted(len(v) for v in per.values())
-    median = counts[len(counts) // 2] if counts else 0
     lic: dict[str, int] = {}
     src: dict[str, int] = {}
     for r in recs:
         lic[r["license"]] = lic.get(r["license"], 0) + 1
         src[r["source"]] = src.get(r["source"], 0) + 1
     total = sum((repo / r["file"]).stat().st_size for r in recs if (repo / r["file"]).exists())
-    few = [(sid, b, len(per[sid])) for sid, b in species if len(per[sid]) < MIN_PHOTOS]
+    practice = {sid: [r for r in v if photo_set(r) == "practice"] for sid, v in per.items()}
+    exam = {sid: [r for r in v if photo_set(r) == "exam"] for sid, v in per.items()}
+    counts = sorted(len(practice[sid]) for sid, _ in species)
+    median = counts[len(counts) // 2] if counts else 0
+    few = [(sid, b, len(practice[sid])) for sid, b in species if len(practice[sid]) < MIN_PHOTOS]
+    few_exam = [(sid, b, len(exam[sid])) for sid, b in species if len(exam[sid]) < EXAM_PHOTOS]
+    write_exam_wanted(repo, few_exam, manifest)
     extreme = []
     for sid, b in species:
         bad = [r for r in per[sid] if r.get("w") and r.get("h") and (r["w"] / r["h"] < 0.8 or r["w"] / r["h"] > 2.0)]
@@ -842,14 +920,19 @@ def cmd_report(repo: pathlib.Path) -> None:
         "## Summary", "",
         f"- Species: {len(species)}; photos: {len(recs)}; total size: {total / 1e6:.1f} MB "
         f"(budget {BUDGET_MB} MB).",
-        f"- Photos per species: min {counts[0] if counts else 0}, median {median}, max {counts[-1] if counts else 0}.",
+        f"- Practice photos per species: min {counts[0] if counts else 0}, median {median}, max {counts[-1] if counts else 0}.",
+        f"- Exam photos (shown only in the mock exam): {sum(len(v) for v in exam.values())}; "
+        f"species with {EXAM_PHOTOS} or more: {sum(len(exam[sid]) >= EXAM_PHOTOS for sid, _ in species)} of {len(species)}.",
         f"- Sources: " + ", ".join(f"{k} {v}" for k, v in sorted(src.items())) + ".",
         f"- Overrides applied: " + ", ".join(f"{a} {sum(o['action'] == a for o in overrides)}"
-                                             for a in ("pin", "exclude", "crop")) + ".", "",
+                                             for a in ("pin", "exam", "exclude", "crop", "trim")) + ".", "",
         "## Licences", "", "| Licence | Photos |", "|---|---|",
         *[f"| {k} | {v} |" for k, v in sorted(lic.items(), key=lambda kv: -kv[1])], "",
-        f"## Species with fewer than {MIN_PHOTOS} photos ({len(few)})", "",
+        f"## Species with fewer than {MIN_PHOTOS} practice photos ({len(few)})", "",
         *([f"- *{b}* (`{sid}`): {n}" for sid, b, n in few] or ["None."]), "",
+        f"## Species with fewer than {EXAM_PHOTOS} exam photos ({len(few_exam)})", "",
+        f"Also in `{EXAM_WANTED}`, for whoever looks for more photos.", "",
+        *([f"- *{b}* (`{sid}`): {n}" for sid, b, n in few_exam] or ["None."]), "",
         f"## Species with an extreme aspect ratio (taller than 4:5 or wider than 2:1) ({len(extreme)})", "",
         *([f"- *{b}*: {d}" for b, d in extreme] or ["None."]), "",
         "## Name-resolution and selection notes", "",
@@ -868,6 +951,8 @@ def main(argv: list[str] | None = None) -> None:
     s = sub.add_parser("select")
     s.add_argument("--only", nargs="*", help="species ids to (re)select; others keep their manifest records")
     s.add_argument("--refresh", action="store_true", help="ignore the API cache in .cache/media/api")
+    s.add_argument("--exam-only", action="store_true",
+                   help="keep each species' practice photos as they are; (re)choose only its exam photos")
     f = sub.add_parser("fetch")
     f.add_argument("--max-side", type=int, default=MAX_SIDE)
     f.add_argument("--rerender", action="store_true")
@@ -882,7 +967,7 @@ def main(argv: list[str] | None = None) -> None:
 
 def run(a: argparse.Namespace) -> None:
     if a.cmd == "select":
-        cmd_select(REPO, a.only, a.refresh)
+        cmd_select(REPO, a.only, a.refresh, a.exam_only)
     elif a.cmd == "fetch":
         cmd_fetch(REPO, a.max_side, a.rerender)
     elif a.cmd == "emit":

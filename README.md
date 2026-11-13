@@ -64,7 +64,8 @@ species list (see [COLECCIONES.md](COLECCIONES.md)).
   don't matter there). Every group and species has a card: photos,
   a video, distribution, diet, size, sexual dimorphism, sex determination, conservation
   status, field marks, look-alikes and the meaning of its names. **Every fact, photo and video names its source.**
-- **Mock exam** with the five-field answer sheet.
+- **Mock exam** with the five-field answer sheet, on photos held out of practice (two per species), so it
+  tests animals rather than remembered pictures.
 - Spanish and English.
 
 ## Use it
@@ -179,7 +180,7 @@ especies vienen en **colecciones**, una por examen; la primera tiene 308 vertebr
 - Empieza con un **primer vistazo** a un grupo (sin preguntas), practica en tres niveles, juega a **¿Qué grupo es?** (varias fotos de una clase u orden: nombra
   el grupo; la mejor forma de empezar) y a **¿Cuál es?**, explora el árbol de la vida rama a rama (completo, o en **modo estudio**, con cada clase de la lista como raíz de su propio árbol)
   y haz simulacros con la hoja de cinco casillas. Cada pregunta muestra una foto al azar del
-  animal. Cuentan la ortografía y las tildes; las mayúsculas, no.
+  animal; el simulacro usa fotos que no salen al practicar. Cuentan la ortografía y las tildes; las mayúsculas, no.
 - Cada ficha y cada fallo explican **qué dice el nombre**: qué significa el latín o el griego de
   la clase, el orden, el género y la especie, para recordarlos mejor.
 - Cada dato, cada foto y cada vídeo indica su fuente.

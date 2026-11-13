@@ -70,11 +70,15 @@ App.holdsGrade = id => {
 };
 
 /* ---------- photos: never cropped unless the media record has a crop box ---------- */
-App.photosOf = id => M().photos[id] || [];
+/* set 'exam': the mock exam's held-out photos, or the practice ones for a species that has none. */
+App.photosOf = (id, set) => {
+  const ex = set === 'exam' ? M().examPhotos[id] || [] : [];
+  return ex.length ? ex : M().photos[id] || [];
+};
 App.hasPhoto = id => App.photosOf(id).length > 0;
 /* Quiz photos are drawn at random for each question (repeats allowed), so what she learns is the
    animal, not one picture's composition or its place in a session. */
-App.randomPhoto = id => Math.floor(Math.random() * Math.max(1, App.photosOf(id).length));
+App.randomPhoto = (id, set) => Math.floor(Math.random() * Math.max(1, App.photosOf(id, set).length));
 /* The Spanish form of a class or order name (Chondrichthyes → Condrictios), as said in Spain. Only in the
    Spanish interface, and only when it differs from the Latin. */
 App.esForm = (rank, sci) => {
@@ -146,8 +150,8 @@ function cropAttrs(p) {
   const inset = `inset(${(y * 100).toFixed(2)}% ${((1 - x - w) * 100).toFixed(2)}% ${((1 - y - h) * 100).toFixed(2)}% ${(x * 100).toFixed(2)}%)`;
   return { style: `object-view-box:${inset}`, ar: p.w && p.h ? `${Math.round(p.w * w)}/${Math.round(p.h * h)}` : null };
 }
-App.tile = (id, alt, cls, idx) => {
-  const ps = App.photosOf(id), p = ps.length ? ps[(idx || 0) % ps.length] : null;
+App.tile = (id, alt, cls, idx, set) => {
+  const ps = App.photosOf(id, set), p = ps.length ? ps[(idx || 0) % ps.length] : null;
   return `<span class="tile ${cls || ''}">${p ? `<img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt == null ? App.spName(id) : alt)}" loading="lazy" style="${cropAttrs(p).style}">` : App.placeholder(id)}</span>`;
 };
 /* The animal photo widget, used wherever an animal is shown large: every photo of the species in a fixed
@@ -158,13 +162,14 @@ App.tile = (id, alt, cls, idx) => {
      idx     the photo to start on;  alt  the image's alt text (default: the species name);
      credit  true: the photo's credit under the frame, kept in step; 'later': a note that it appears after
              answering (it would give the name away); absent: none;
-     inner   extra HTML inside the frame, under the arrows (e.g. the button that picks a photo). */
+     inner   extra HTML inside the frame, under the arrows (e.g. the button that picks a photo);
+     set     'exam' shows the mock exam's held-out photos (App.photosOf). */
 App.carouselStep = {};
 const LATER = () => `<p class="credit">${L('El crédito de la foto aparece al responder (el pie revelaría el nombre).',
     'The photo credit appears after you answer (the caption would give the name away).')}</p>`;
 App.creditLater = LATER;
 App.carousel = (id, o) => {
-  const ps = App.photosOf(id), n = ps.length;
+  const ps = App.photosOf(id, o.set), n = ps.length;
   if (!n) return `<div class="pframe r43">${App.placeholder(id)}</div>`;
   const idx = ((o.idx || 0) % n + n) % n, p = ps[idx];
   const alt = o.alt != null ? o.alt : App.spName(id);
@@ -175,14 +180,14 @@ App.carousel = (id, o) => {
   const zoom = o.key === 'zoom' ? '' : btn('car-zoom', 'data-car-zoom', L('Ver la foto en grande', 'View the photo larger'), '⤢');
   const credit = o.credit === true ? `<div class="car-credit" data-live="1">${App.credit(p)}</div>`
     : o.credit === 'later' ? `<div class="car-credit">${LATER()}</div>` : '';
-  return `<div class="car" data-car="${esc(o.key || '')}" data-sp="${esc(id)}" data-idx="${idx}" data-credit="${o.credit === true ? 'live' : ''}"
+  return `<div class="car" data-car="${esc(o.key || '')}" data-sp="${esc(id)}" data-set="${esc(o.set || '')}" data-idx="${idx}" data-credit="${o.credit === true ? 'live' : ''}"
     role="group" aria-roledescription="${L('carrusel', 'carousel')}" aria-label="${L('Foto', 'Photo')} ${idx + 1} ${L('de', 'of')} ${n}">
     <div class="pframe car-frame"><img src="${esc(p.file)}" data-sp="${esc(id)}" alt="${esc(alt)}" style="${cropAttrs(p).style}" decoding="async"></div>
     ${o.inner || ''}${nav}${zoom}</div>${credit}`;
 };
 /* Show photo i in a widget, in place, and tell its view. */
 App.carouselShow = (car, i) => {
-  const ps = App.photosOf(car.dataset.sp), n = ps.length;
+  const ps = App.photosOf(car.dataset.sp, car.dataset.set), n = ps.length;
   if (n < 2) return;
   i = (i % n + n) % n;
   const p = ps[i], img = car.querySelector('.car-frame img');
@@ -212,7 +217,7 @@ App.carouselStep.zoom = i => { if (zoomSrc && zoomSrc.isConnected) App.carouselS
 App.openZoom = car => {
   const d = zoomDlg(), img = car.querySelector('.car-frame img');
   zoomSrc = car;
-  d.innerHTML = `<button type="button" class="zoom-close" data-zoom-close aria-label="${L('Cerrar', 'Close')}">✕</button>${App.carousel(car.dataset.sp, { key: 'zoom', idx: +car.dataset.idx, alt: img ? img.alt : '', credit: car.dataset.credit === 'live' || undefined })}`;
+  d.innerHTML = `<button type="button" class="zoom-close" data-zoom-close aria-label="${L('Cerrar', 'Close')}">✕</button>${App.carousel(car.dataset.sp, { key: 'zoom', set: car.dataset.set, idx: +car.dataset.idx, alt: img ? img.alt : '', credit: car.dataset.credit === 'live' || undefined })}`;
   d.setAttribute('aria-label', L('Foto en grande', 'Large photo'));
   d.showModal();
 };

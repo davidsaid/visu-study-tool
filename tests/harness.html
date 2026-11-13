@@ -194,6 +194,30 @@ const SCENARIOS = {
     const emptyLoads = !($('#importask') && $('#importask').open) && win.VISU_STORE.data.log.length === 1;
     report({ scenario: 'merge', asked, cancelled, combined, again, replaced, emptyLoads });
   },
+  /* Exam photos: the mock shows only them (in its carousel, its zoom and its results); practice never does. */
+  'examphotos': async () => {
+    seedStorage({ meta: { seenNotice: true }, settings: { mockSize: 10 } }); await open('hoy');
+    const M = App().M, exam = new Set(Object.values(M.examPhotos).flat().map(p => p.file));
+    const src = () => [...doc.querySelectorAll('main img')].map(i => i.getAttribute('src'));
+    const seenPractice = new Set();
+    App().set().level = 3;
+    for (let k = 0; k < 12; k++) { await go('hoy'); App().newSession('foto', { force: true }); await go('sesion'); src().forEach(f => seenPractice.add(f)); }
+    for (const id of ['lynx_pardinus', 'milvus_milvus', 'bubo_bubo']) { await go('ficha-' + id); src().forEach(f => seenPractice.add(f)); }
+    await go('simulacro');
+    const mockShown = [];
+    const items = App().mockState().items;
+    for (let i = 0; i < items.length; i++) {
+      const n = App().photosOf(items[i].sp, 'exam').length;
+      for (let j = 0; j < n; j++) { mockShown.push($('.car[data-car="mock"] .car-frame img').getAttribute('src')); await click('.car[data-car="mock"] [data-car-step="1"]').catch(() => {}); }
+      if (i === 0) { await click('.car[data-car="mock"] [data-car-zoom]'); mockShown.push(doc.querySelector('#zoom .car-frame img').getAttribute('src')); doc.getElementById('zoom').close(); }
+      doc.getElementById('mockform').requestSubmit(); await sleep(150);
+    }
+    const resultShown = [...doc.querySelectorAll('.mock-list li img')].map(i => i.getAttribute('src'));
+    const withExam = items.filter(x => M.examPhotos[x.sp].length).length;
+    report({ scenario: 'examphotos', examCount: exam.size, practiceNeverExam: [...seenPractice].every(f => !exam.has(f)) && seenPractice.size > 5, seen: seenPractice.size,
+      mockOnlyExam: withExam === items.length && mockShown.every(f => exam.has(f)), resultsExam: resultShown.length === items.length && resultShown.every(f => exam.has(f)),
+      saved: win.VISU_STORE.data.mocks.slice(-1)[0].items.every(x => x.ex === true) });
+  },
   /* The photo asked about stays on screen with its credit: wrong-species comparison, and mock results. */
   'credits': async () => {
     seedStorage({ meta: { seenNotice: true }, settings: { mockSize: 5 } }); await open('hoy');
@@ -208,7 +232,7 @@ const SCENARIOS = {
     for (let i = 0; i < 5; i++) { doc.getElementById('mockform').requestSubmit(); await sleep(150); }
     const lis = [...doc.querySelectorAll('.mock-list li')];
     const mock = { items: lis.length, credited: lis.filter(li => li.querySelector('.credit')).length,
-      samePhotos: lis.every((li, i) => { const ps = App().photosOf(items[i].sp); return li.querySelector('img').getAttribute('src') === ps[items[i].ph % ps.length].file; }) };
+      samePhotos: lis.every((li, i) => { const ps = App().photosOf(items[i].sp, 'exam'); return li.querySelector('img').getAttribute('src') === ps[items[i].ph % ps.length].file; }) };
     report({ scenario: 'credits', compare, mock });
   },
   'hard': async () => { seedStorage(seen); await open('hoy'); App().set().level = 3; win.VISU_STORE.save(); await go('nivel'); await click('[data-game="foto"]'); await click('[data-level="3"]'); await click('#startbtn'); await sleep(1500); },

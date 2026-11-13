@@ -39,7 +39,7 @@ classic scripts, in order, before the app.
 | `curation/clades.csv` | Maintainers | The clade backbone shared by every collection: `node_id, parent_id, scientific, name_es, name_en, source_url`. The prefix of `node_id` says what a row is: `deep:` (path from Life towards the root clades), `clade:` (backbone), `class:` / `order:` / `infraorder:` (attaches a group of the lists to its parent and names it), `grade:` (a class of the lists that is not a clade, such as Reptilia). A collection's tree keeps only the rows above its own classes. See `pipeline/README.md` |
 | `curation/synonyms.csv` | Maintainers | `binomial, synonym, verdict (same_taxon/parent_of_split), note`: overrides the rule that decides whether a dataset row found under another name may be used |
 | `curation/corrections.csv` | Maintainers | Notes where a list's value differs from a current authority, or from what another course writes: `species_id, field, bestiary_value, suggested_value, confidence (certain/suggested/contested/course), source_url, note_es, note_en, status (pending/accepted/rejected), collection`. `bestiary_value` is the list's value (the answer the tool accepts); `field` is a `species.csv` column (`nombre_cientifico`, `orden`, `nombre_vulgar`). A `course` row says the course of `collection` (a collection id, required for these rows) writes `suggested_value`; the card names that course and says the tool accepts `bestiary_value`, instead of "write what the bestiary says". Only `accepted` rows are shown on cards |
-| `curation/media_overrides.csv` | Collection maintainers | `species_id, action (pin/exclude/crop), media_id_or_url, value`. Survives yearly re-runs |
+| `curation/media_overrides.csv` | Collection maintainers | `species_id, action (pin/exam/exclude/crop/trim), media_id_or_url, value`. Survives yearly re-runs |
 | `content/species/<species_id>.json` | Authors (LLM draft, then a person) | Field marks, look-alikes, dimorphism, etymology. See below |
 | `content/groups/<node_id>.json` | Authors | Summary, diagnostic traits, "do not confuse with". See below |
 
@@ -134,11 +134,16 @@ split species mapped to its old parent are dropped, not shown.
 ```js
 { "lynx_pardinus": [ { id: "inat-187857126", file: "media/lynx_pardinus/3f9a1c.jpg",
     w: 1024, h: 768, author: "Nils", license: "CC BY 4.0", license_url, source: "inaturalist|commons",
-    source_url, modified: "resized", crop: null } ] }
+    source_url, modified: "resized", crop: null, set: "practice" } ] }
 ```
 
+`set` is `"practice"` (up to 4 per species, shown everywhere) or `"exam"` (up to 2, held out:
+only the mock exam shows them, falling back to the practice photos for a species without any).
+
 File names are opaque, so they never reveal the answer. `crop` is `[x, y, w, h]` as fractions
-of the photo or `null`. Without a crop, the app never crops the photo.
+of the photo or `null`. Without a crop, the app never crops the photo. A `trim` override, by contrast,
+cuts the file itself when it is rendered (for a caption that names the species); such a photo has
+`modified: "cropped and resized"` instead of `"resized"`.
 
 `pipeline/media.py` produces this file (`select` → `fetch` → `emit` → `report`). Its
 intermediate, `curation/media_manifest.json`, holds one record per photo with the fields above

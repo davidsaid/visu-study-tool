@@ -18,6 +18,7 @@ run "$here" carousel '"mistakeStillShown": true' '"pickedStillKept": true' \
   '"carousel": true' '"typedKept": true' '"flipped": true' \
   '"altHidesName": true' '"creditHidden": true' '"imgLoaded": true' '"wrapPrev": "4 / 4"' '"creditChanged": true'
 run "$here" random '"stableOnRerender": true'
+run "$here" examphotos '"practiceNeverExam": true' '"mockOnlyExam": true' '"resultsExam": true' '"saved": true'
 run "$here" credits '"sameFile": true' '"samePhotos": true' '"credited": 5'
 run "$here" cardlink '"nameLink": true' '"back": true' '"stillFeedback": true' '"noBackLater": true'
 run "$here" names '"matches": true' '"groupShown": true' '"missOrder": true' '"spelling": true' '"wrongSpecies": true' '"esClass": true' '"esCard": true' '"esReptiles": true' '"noEsInEnglish": true'

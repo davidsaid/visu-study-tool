@@ -247,6 +247,8 @@ test('export/import', () => {
   eq('a copy from before collections is refused elsewhere', colCode(JSON.stringify(legacy), 'artropodos-prueba'), 'other_collection:vertebrados');
   const withPh = E.normalizeProgress({ mocks: [{ id: 'm2', at: now, items: [{ sp: 'lynx_pardinus', typed: {}, ok: {}, ph: 2 }, { sp: 'bubo_bubo', typed: {}, ok: {} }] }] }, now);
   eq('a mock item keeps the photo it showed', withPh.mocks[0].items.map(x => x.ph), [2, undefined]);
+  const withEx = E.normalizeProgress({ mocks: [{ id: 'm3', at: now, items: [{ sp: 'lynx_pardinus', typed: {}, ok: {}, ph: 1, ex: true }, { sp: 'bubo_bubo', typed: {}, ok: {}, ph: 0 }] }] }, now);
+  eq('a mock item keeps whether its photo was an exam photo', withEx.mocks[0].items.map(x => x.ex), [true, undefined]);
   eq('a malformed collection name counts as vertebrados', colCode(JSON.stringify(Object.assign(JSON.parse(artFile), { collection: '<x>' })), 'vertebrados'), 'ok');
   const dirty = JSON.parse(file); dirty.progress.cards['bad key'] = {}; dirty.progress.cards['x:species'] = 5; dirty.progress.log = 'nope';
   eq('import refuses a file with malformed cards', code(JSON.stringify(dirty)), 'invalid');
@@ -293,6 +295,9 @@ test('real data', () => {
   if (!V.bestiary) { log(false, 'data/vertebrados/bestiary.js loaded'); return; }
   const RM = E.buildModel(V.bestiary, V.media, V.content);
   eq('every species is in the model', RM.order.length, Object.keys(V.bestiary.species).length);
+  const all = Object.values(V.media).flat(), exFiles = new Set(all.filter(p => p.set === 'exam').map(p => p.file));
+  ok('exam photos exist and are held out of practice', exFiles.size && RM.order.every(id => RM.photos[id].every(p => !exFiles.has(p.file))));
+  eq('every photo is either practice or exam', RM.order.reduce((n, id) => n + RM.photos[id].length + RM.examPhotos[id].length, 0), all.filter(p => p.file).length);
   ok('every species is reachable in the tree', RM.order.every(id => RM.nodes[id]), RM.order.filter(id => !RM.nodes[id]).slice(0, 5).join());
   let bad = [];
   RM.order.forEach(id => ['class', 'order', 'genus', 'species', 'common', 'binomial'].forEach(k => { const v = E.answerFor(RM, id, k); if (!v || E.classify(RM, v, id, k).kind !== 'right') bad.push(`${id}:${k}`); }));
